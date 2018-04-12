@@ -1,7 +1,7 @@
 import textile
 from credentials import *
 
-message_text = """Dear (name of Google contact):
+message_text = """Dear {}:
 
 I am writing in response to your notice for the Data Scientist, Google Cloud position at your Sunnyvale office. I am a doctoral candidate in Computer Science at Stanford University, specializing in the application of recurrent neural networks in cloud computing. Google is a leader in data science and artificial intelligence, and I am confident, together, we would be a great match.
 
@@ -11,7 +11,9 @@ Although I have strong methodological strengths and my doctoral degree underscor
 
 I want you to know that I am excited to submit my application to Google. Attached, please find a copy of my resume. I look forward to speaking with you soon so that we can discuss the position further. 
 
-Warm regards,"""
+Warm regards,""".format(name_of_contact)
+
+print(message_text)
 
 
 
