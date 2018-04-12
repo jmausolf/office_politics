@@ -10,6 +10,7 @@ from messages import *
 job = "Data Scientist"
 company = "Google"
 subject = "{} Position - {}".format(job, company)
+resume_filename = "Resume_Matthew_Zachary_Hartman.pdf"
 
 msg = MIMEMultipart()
 msg['Subject'] = subject
@@ -32,8 +33,8 @@ msg.attach(message_body)
 
 
 # This is the binary part(The Attachment):
-part = MIMEApplication(open("Resume_Matthew_Zachary_Hartman.pdf","rb").read())
-part.add_header('Content-Disposition', 'attachment', filename="file.pdf")
+part = MIMEApplication(open(resume_filename,"rb").read())
+part.add_header('Content-Disposition', 'attachment', filename=resume_filename)
 msg.attach(part)
 print(msg)
 
