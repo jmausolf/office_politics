@@ -21,14 +21,14 @@ msg.preamble = ''
 print(msg.preamble)
 
 # This is the textual part:
-message_body = MIMEText(message_text)
+message_body = MIMEText(message_html, 'html')
 msg.attach(message_body)
 
 #part1 = MIMEText(sig_text, 'plain')
-part2 = MIMEText(sig_html, 'html')
+#part2 = MIMEText(sig_html, 'html')
 
 #msg.attach(part1)
-msg.attach(part2)
+#msg.attach(part2)
 
 
 # This is the binary part(The Attachment):
