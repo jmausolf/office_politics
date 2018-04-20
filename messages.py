@@ -1,15 +1,14 @@
 import textile
 from credentials import *
 
-message_text = """Dear {}:
+message_text = """Dear {0}:
+I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in Computer Science at Stanford University, specializing in the application of recurrent neural networks in cloud computing. {3} is a leader in data science and artificial intelligence, and I am confident, together, we would be a great match.
 
-I am writing in response to your notice for the Data Scientist, Google Cloud position at your Sunnyvale office. I am a doctoral candidate in Computer Science at Stanford University, specializing in the application of recurrent neural networks in cloud computing. Google is a leader in data science and artificial intelligence, and I am confident, together, we would be a great match.
+As a computer scientist, I have both the theoretical knowledge and applied experience to make a difference at {3}. As you can see from my resume, I have not only developed enhanced RNN algorithms in Java, but also used Python, Scala, and SQL to apply deep neural nets and streamline ETL pipelines as a data science intern for both {4}. Collectively, my background in computer science, statistics, and mathematical modeling gives me first hand experience into the crux of today’s complex computational puzzles in data science and their applications at the frontiers of artificial intelligence.
 
-As a computer scientist, I have both the theoretical knowledge and applied experience to make a difference at Google. As you can see from my resume, I have not only developed enhanced RNN algorithms in Java, but also used Python, Scala, and SQL to apply deep neural nets and streamline ETL pipelines as a data science intern for both Facebook and LinkedIn. Collectively, my background in computer science, statistics, and mathematical modeling gives me first hand experience into the crux of today’s complex computational puzzles in data science and their applications at the frontiers of artificial intelligence.
+Although I have strong methodological strengths and my doctoral degree underscores my ability to tackle complex problems, I also strive to work as a team player, whether its by collaborating with colleagues at {4} to communicate data-driven solutions or spearheading fundraising initiatives and leading a diverse set of students during my tenure as president of the Harvard Republican Club. I think you will agree that my computational background—combined with my outgoing charisma and penchant for collaborative leadership—makes me a valuable recruit for the data scientist position at {3}.
 
-Although I have strong methodological strengths and my doctoral degree underscores my ability to tackle complex problems, I also strive to work as a team player, whether its by collaborating with colleagues at Facebook and LinkedIn to communicate data-driven solutions or spearheading fundraising initiatives and leading a diverse set of students during my tenure as president of the Harvard Republican Club. I think you will agree that my computational background—combined with my outgoing charisma and penchant for collaborative leadership—makes me a valuable recruit for the data scientist position at Google.
-
-I want you to know that I am excited to submit my application to Google. Attached, please find a copy of my resume. I look forward to speaking with you soon so that we can discuss the position further. 
+I want you to know that I am excited to submit my application to {3}. Attached, please find a copy of my resume. I look forward to speaking with you soon so that we can discuss the position further. 
 
 Warm regards,""".format(name_of_contact)
 

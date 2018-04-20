@@ -3,7 +3,7 @@ from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from smtplib import SMTP
 from credentials import *
-from messages import *
+from org_messages import *
 
 
 
