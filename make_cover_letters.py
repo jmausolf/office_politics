@@ -142,7 +142,7 @@ def make_html_text_cl(profile,
 	#Make Text Sig/Full Text Message
 	sig_text = make_text_sig(name, title, school, phone, gmail_user)
 	message_text = message_text_body+'\n\n'+sig_text
-	print(message_text)
+	#print(message_text)
 
 	#Make HTML Sig
 	sig_html = make_html_sig(name, title, school, phone, gmail_user)
@@ -151,7 +151,7 @@ def make_html_text_cl(profile,
 	#(needed to keep the internships consistent)
 	message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial">{}\n\n{}</div></html>
 	""".format(textile.textile( message_text_body ), sig_html)
-	print(message_html)
+	#print(message_html)
 
 	return message_text, message_html
 
