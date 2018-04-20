@@ -1,0 +1,253 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{amsmath} % bold math
+
+%Reset Margins (WIDE)
+%\addtolength{\oddsidemargin}{-.875in}
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+
+\addtolength{\oddsidemargin}{-.75in}
+\addtolength{\evensidemargin}{-.75in}
+\addtolength{\textwidth}{1.50in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{2.75in}
+
+
+%\addtolength{\oddsidemargin}{-.5in}
+%\addtolength{\evensidemargin}{-.5in}
+%\addtolength{\textwidth}{2in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{2in}
+
+\usepackage[inline]{enumitem}
+%\usepackage{enumitem}
+%\usepackage{booktabs}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%Ragged bottom
+%\raggedbottom
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%\usepackage{fancyhdr} % For Header/Footer
+
+%---- Itemized columns
+\usepackage{array,booktabs}
+\makeatletter
+\newcolumntype{i}[1]{%
+    >{\minipage[t]{\linewidth}\let\\\tabularnewline
+      \itemize
+      \addtolength{\rightskip}{0pt plus 50pt}% for raggedright
+      \setlength{\itemsep}{-\parsep}}%
+    p{#1}%
+    <{\@finalstrut\@arstrutbox\enditemize\endminipage}}
+\makeatother
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+
+
+%\pagestyle{empty} % non-numbered pages
+
+% We use \sloppy to suppress word division and permit larger interword
+% spacing so that lines are broken between words.
+\sloppy
+
+
+%% Page Style to put numbers at the top.
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
+% Turn on the style
+%\pagestyle{fancy}
+% Clear the header and footer
+%\fancyhead{}
+%\fancyfoot{}
+% Set the right side of the footer to be the page number
+%\fancyfoot[R]{\thepage}
+
+% Redefine plain style, which is used for titlepage and chapter beginnings
+%\fancyhf{} % sets both header and footer to nothing
+%\renewcommand{\headrulewidth}{0pt}
+%\fancyfoot[R]{\small\thepage}
+%\fancyfoot[L]{\small\emph{Last updated - February 2017}}
+
+%\fancyhead[R]{\thepage}
+%\fancyhead[L]{February 2017}
+
+%Turn off page numbers
+\pagenumbering{gobble}
+
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge  \textsc{ID_NAME}}
+		\smallskip \par
+		\begin{tabular}{rl}
+		\small
+		\begin{tabular}{rl}
+			\textsc{Address:}   & 	GS_ADDRESS \\
+													& 	GS_CSZIP					\\
+			\textsc{Phone:}     & 	+1 ID_PHONE						\\
+    	\textsc{email:}     & \href{mailto:ID_EMAIL}{ID_EMAIL}	\\
+		\end{tabular}
+		\end{tabular}
+		\bigskip
+		\par}
+
+
+
+
+%--------------------SECTIONS-----------------------------------
+
+
+
+%--------------------Section: Education--------------------
+\section{Education}
+\begin{supertabular}{p{2cm} p{1.0cm} p{13.9cm}}
+	\textsc{2019}		&		\textsc{Ph.D.} & \textsc{GRADSCHOOL}, Computer Science \\
+					&&		 \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}] 
+							 \item \footnotesize \textsc{Thesis:} \emph{Adaptive Computational Offloading in the RNN Algorithm} 
+							 \item \footnotesize  \textsc{Methods:} Recurrent Neural Networks, Artificial Intelligence, Parallel Computing
+							 \end{enumerate*}  \\
+	\textsc{2015} 	& 	\textsc{M.S.} & \textsc{GRADSCHOOL}, Statistics, \small GPA: 3.95  \\
+	\textsc{2013} 	& 	\textsc{B.S.} & \textsc{UGSCHOOL}, Mathematics with High Honors, \small \emph{summa cum laude}, GPA 3.90 \\
+	\multicolumn{2}{c}{} \\
+\end{supertabular}
+
+
+%--------------------Languages--------------------
+\section{Skills}
+\begin{supertabular}{p{3.4cm} p{13.9cm}}
+
+	\textsc{Computing}			& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+																\item \small \textsc{Python, Java, C++, Scala, R, Spark, Hadoop, SQL}
+																\item \small \textsc{HTML, CSS, JavaScript, Markdown, JSON, Flask, Django, Shiny}
+																\item \small \textsc{Vim, Atom, Sublime, {\fb \LaTeX}, Git, SSH, Linux, Mac OSX, Windows }
+																\end{enumerate*} \vspace{2mm} \\
+
+
+	\textsc{Analysis}				& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+                                \item \small Machine Learning; Recurrent Neural Networks; Parallel Computing, Tera and Giga Data, Time Series, Longitudinal Models; NLP, Web-Scraping \end{enumerate*}  \vspace{1mm} \\
+
+
+
+\end{supertabular}
+
+
+
+
+%--------------------Section: Professional Experience--------------------
+\section{Professional Experience}
+\begin{supertabular}{l p{0.55cm} p{13.9cm}}
+	\textsc{2015-Present}				&& \textsc{GRADSCHOOL}, GS_CITYSTATE \\
+	\small\textsc{}							&& \small	\emph{Graduate Research Assistant}, Department of Computer Science \\
+															&& \begin{enumerate*}[label =$\diamond$,itemjoin={\newline}]
+																	\item \footnotesize Developed an enhanced LSTM algorithm in Java $\mathbf{Java}$ for deep learning. Supervised junior programmers.
+																	\item \footnotesize Applied machine learning, multivariate regression, and data wrangling in $\mathbf{Python}$, $\mathbf{Spark}$, and $\mathbf{C++}$.
+																	\end{enumerate*} \vspace{2mm} \\
+
+	\multicolumn{2}{c}{} \\
+
+	\textsc{Jun-Sep 2018}	&& \textsc{INTERNSHIP1}, IC1_CITYSTATE \\
+												&& \small	\emph{Data Science Intern} \\
+												&& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+														\item \footnotesize Reduced computational complexity while improving precision in modeling facial recognition on a distributed $\mathbf{Spark}$ cluster using $\mathbf{Python}$ and $\mathbf{Scala}$.														\end{enumerate*} \\
+	\multicolumn{2}{c}{} \\
+	
+
+
+
+	\textsc{Jun-Sep 2017}	&& \textsc{INTERNSHIP2}, IC2_CITYSTATE \\
+												&& \small	\emph{Data Science Intern} \\
+												&& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+														\item \footnotesize Improved backend development of a machine learning ETL pipeline with $\mathbf{Python}$, $\mathbf{Luigi}$, and $\mathbf{SQL}$.														\end{enumerate*} \\
+	\multicolumn{2}{c}{} \\
+	
+
+
+	\textsc{2012-2013}		&& \textsc{UGSCHOOL}, UG_CITYSTATE \\
+	\textsc{}							&& \small	\emph{Research Assistant}, Department of Mathematics \\
+												&& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+														\item \footnotesize Conducted original research, synthesized literature, and assisted with proofs on network topologies.
+														\end{enumerate*} \\
+	\multicolumn{2}{c}{} \\
+
+
+\end{supertabular}
+
+
+
+
+
+%--------------------Honors--------------------
+\section{Leadership, Awards, and Honors}
+\begin{supertabular}{p{3.4cm} p{13.9cm}}
+
+\textsc{2014-2019} 					& \textsc{GRADSCHOOL} \\
+														& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+																\item \footnotesize Marshall Scholar, Python Hackathon Facilitator, KDD Presenter
+																\end{enumerate*} \vspace{2mm} \\
+
+	\textsc{2009-2013} 				& \textsc{UGSCHOOL} \\
+														& \begin{enumerate*}[label =$\diamond$, itemjoin={\newline}]
+																\item \footnotesize  Graduated \emph{summa cum laude}, Phi Beta Kappa, Dean's List
+																\item \footnotesize  Spreadheaded fundraisers and managed campus events as President of TREATMENT
+																\end{enumerate*} \vspace{2mm} \\
+
+
+
+\end{supertabular}
+
+
+
+%--------------------Languages--------------------
+\section{Additional Information}
+\begin{supertabular}{p{3.4cm} p{13.9cm}}
+	\textsc{Languages}			& \small\textsc{English} (native), \textsc{French} (proficient), \textsc{Mandarin} (elementary) \vspace{1mm} \\
+
+	\textsc{Office}					& \small\textsc{Microsoft}: \footnotesize Word, PowerPoint, Access, Outlook, Excel;	\small\textsc{Adobe}: \footnotesize Acrobat Pro, Adobe Photoshop, Lightroom; \small\textsc{Google}: \footnotesize Slides, Sheets, Documents, Gmail, Drive; \small\textsc{Project management:} \footnotesize SAP, CRM, Trello, Slack; \small\textsc{Other:} \footnotesize Tableau, Gephi, Atlas.ti \vspace{1mm} \\
+	\textsc{Interests:} 		& \small Squash, Cycling, Travel, Hiking, Backpacking, Winter Sports \\
+
+\end{supertabular}
+
+\end{document}

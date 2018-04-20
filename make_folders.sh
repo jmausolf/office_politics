@@ -22,9 +22,10 @@
 
 for profile in P0{1DH,2DL,3NH,4NL,5RH,6RL}; do
     for topic in {data_science,management_consulting,quant}; do
-        mkdir -p "$profile/$topic"
-        cp messages.py "$profile/$topic"
-        cp Resume_Matthew_Zachary_Hartman.pdf "$profile/$topic"
+        mkdir -p "$profile/$topic/tex"
+        #cp messages.py "$profile/$topic"
+        cp resume_template.tex "$profile/$topic/tex"
+        #cp Resume_Matthew_Zachary_Hartman.pdf "$profile/$topic" 
     done
 done
 
