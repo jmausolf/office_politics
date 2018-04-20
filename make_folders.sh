@@ -29,7 +29,7 @@ for profile in P0{1DH,2DL,3NH,4NL,5RH,6RL}; do
 done
 
 
-
+mkdir -p logs
 
 
 # set counter value to 0
