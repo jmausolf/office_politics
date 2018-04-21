@@ -117,7 +117,7 @@ def make_text_cl(profile,
 		message_text = message_body
 
 	#print(message_text)
-	return message_text
+	return message_text, internships
 
 
 
@@ -137,7 +137,9 @@ def make_html_text_cl(profile,
 				):
 
 	#Make Text CL (no sig)
-	message_text_body = make_text_cl(profile, job_type, contact, job, office, company, name, title, school, phone, gmail_user, add_sig=False)
+	message_output = make_text_cl(profile, job_type, contact, job, office, company, name, title, school, phone, gmail_user, add_sig=False)
+	message_text_body = message_output[0]
+	internships = message_output[1]
 
 	#Make Text Sig/Full Text Message
 	sig_text = make_text_sig(name, title, school, phone, gmail_user)
@@ -153,7 +155,7 @@ def make_html_text_cl(profile,
 	""".format(textile.textile( message_text_body ), sig_html)
 	#print(message_html)
 
-	return message_text, message_html
+	return message_text, message_html, internships
 
 
 
