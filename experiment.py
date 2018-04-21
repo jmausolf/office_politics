@@ -1,5 +1,6 @@
 import random
 import pandas as pd
+import numpy as np
 from new_messages import *
 import textwrap
 import inspect
@@ -16,16 +17,73 @@ def join_profiles_credentials():
 	df = pd.merge(cred, prof, on=['profile'])
 	return df
 
-def join_experiment_profiles(experiment_file):
-	experiment = pd.read_csv(experiment_file)
-	profiles = join_profiles_credentials()
-	df = pd.merge(experiment, profiles, on=['profile'])
 
+
+def select_ga(row):
+
+	profile = row[0]
+	job_type = row[1]
+	region = row[2]
+
+	ga = pd.read_csv("ga_school_key.csv")
+	criteria = ((ga['region']==region) & 
+				(ga['job_type']==job_type) & 
+				(ga['prestige']==profile[-1]))
+	ga = ga.loc[criteria] 
+
+	#Random Selection of Schools Meeting Criteria
+	rows = np.random.choice(ga.index.values, 1)
+	df = ga.ix[rows]
+	df = df.drop(['region', 'job_type', 'prestige'], axis=1)
+
+	keys = df.columns.tolist()
+	vals = df.values.tolist()[0]
+	return vals
+
+
+def select_ug(row):
+
+	profile = row[0]
+	region = row[1]
+	school = row[2]
+
+	ug = pd.read_csv("ug_school_key.csv")
+	criteria = ((ug['profile']==profile) & 
+				(ug['region']==region) & 
+				(ug['ba_school']!=school))
+	ug = ug.loc[criteria] 
+	
+	#Random Selection of Schools Meeting Criteria
+	rows = np.random.choice(ug.index.values, 1)
+	df = ug.ix[rows]
+	df = df.drop(['region', 'profile'], axis=1)
+
+	keys = df.columns.tolist()
+	vals = df.values.tolist()[0]
+	return vals
+
+
+
+def join_experiment_profiles(experiment_file):
+	ex = pd.read_csv(experiment_file)
+
+	#Select GA Schools
+	ga_keys = ['department','school','school_short','school_ctyst','school_cszip','school_address','title']
+	ex[ga_keys] = ex[['profile', 'job_type', 'region']].apply(lambda row: pd.Series(select_ga(row)), axis=1)
+
+	#Select UG Schools
+	ug_keys = ['ba_school', 'ba_school_short', 'ba_ctyst', 'experiment', 'prestige']
+	ex[ug_keys] = ex[['profile', 'region', 'school']].apply(lambda row: pd.Series(select_ug(row)), axis=1)
+
+
+	profiles = join_profiles_credentials()
+	df = pd.merge(ex, profiles, on=['profile'])
+	#print(df)
 	return df
 
 
 
-
+#join_experiment_profiles("experiment_test.csv")
 
 
 
@@ -43,7 +101,7 @@ def send_email_iter(row):
 		print(message)
 		meta = send_email(
 					profile=row['profile'],
-					job_type=row['category'],
+					job_type=row['job_type'],
 					contact=row['contact_name'],
 					job=row['position'],
 					office=row['office'], 
