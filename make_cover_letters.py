@@ -82,22 +82,22 @@ def make_text_cl(profile,
 				company,
 				name, 
 				title, 
-				school, 
+				school,
+				department,
+				treatment,
 				phone, 
 				gmail_user,
 				add_sig=True
 				):
 
-	#intern_key = data_science_high_prestige
+
 	ik = "{}_{}".format(job_type, profile[-1])
-	#print(ik)
-	#from internship_key import internship_keys
 	intern_key = internship_keys[ik]
 	internships = sub_cover_letter_internship(company, intern_key)
 
-	#method_name = 'install' # set by the command line options
-	#method_name = 'P05RH_data_science' # set by the command line options
-	method_name = "{}_{}".format(profile, job_type)
+
+	#method_name = "{}_{}".format(profile, job_type)
+	method_name = "{}".format(job_type)
 	my_cls = cl()
 
 	cl_text = None
@@ -107,7 +107,7 @@ def make_text_cl(profile,
 		raise NotImplementedError("Class `{}` does not implement `{}`"
 			.format(cl().__class__.__name__, method_name))
 
-	message_body = cl_text(contact, job, office, company, internships)
+	message_body = cl_text(contact, job, office, company, internships, school, department, treatment)
 
 	if add_sig is True:
 		message_sig = make_text_sig(name, title, school, phone, gmail_user)
@@ -131,13 +131,15 @@ def make_html_text_cl(profile,
 				company,
 				name, 
 				title, 
-				school, 
+				school,
+				department,
+				treatment,
 				phone, 
 				gmail_user
 				):
 
 	#Make Text CL (no sig)
-	message_output = make_text_cl(profile, job_type, contact, job, office, company, name, title, school, phone, gmail_user, add_sig=False)
+	message_output = make_text_cl(profile, job_type, contact, job, office, company, name, title, school, department, treatment, phone, gmail_user, add_sig=False)
 	message_text_body = message_output[0]
 	internships = message_output[1]
 
@@ -160,7 +162,7 @@ def make_html_text_cl(profile,
 
 
 
-
+"""
 def join_profiles_credentials():
 	cred = pd.read_csv("credentials.csv")
 	prof = pd.read_csv("profiles.csv")
@@ -176,7 +178,7 @@ def join_experiment_profiles(experiment_file):
 	#df['intern_key'] = internship_keys['data_science_H']
 	print(df)
 	return df
-
+"""
 
 
 

@@ -3,6 +3,7 @@ from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from smtplib import SMTP
 from make_cover_letters import *
+from make_resumes import *
 from credentials import *
 import inspect
 
@@ -17,7 +18,14 @@ def send_email(profile,
 			company,
 			name, 
 			title, 
-			school, 
+			school,
+			school_ctyst,
+			school_cszip,
+			school_address,
+			department,
+			ba_school, 
+			ba_ctyst,
+			treatment,
 			phone, 
 			gmail_user,
 			gmail_pass,
@@ -48,7 +56,9 @@ def send_email(profile,
 		company, 
 		name, 
 		title, 
-		school, 
+		school,
+		department,
+		treatment, 
 		phone, 
 		gmail_user
 		)
@@ -64,10 +74,24 @@ def send_email(profile,
 
 	#TODO
 	#Insert Write Resume Code
+	make_resume(profile,
+				job_type,
+				name, 
+				phone,
+				gmail_user,
+				school, 
+				school_ctyst,
+				school_cszip,
+				school_address,
+				department,
+				ba_school, 
+				ba_ctyst, 
+				internships,
+				treatment)
 
 	#Resume
 	resume_filename = "Resume_{}.pdf".format(name.replace(' ', '_'))
-	resume_path = "{}/{}/{}".format(profile, job_type, resume_filename)
+	resume_path = "{}/{}/tex/{}".format(profile, job_type, resume_filename)
 
 	#Attach Resume
 	part = MIMEApplication(open(resume_path,"rb").read())
@@ -107,4 +131,4 @@ def send_email(profile,
 
 	return meta.replace('\n', '|')
 
-#message("P05RH", "data_science", contact, job, office, company, name, title, school, phone, gmail_user, gmail_pass, contact_email)
+#send_email("P05RH", "data_science", contact, job, office, company, name, title, school, "harvard", phone, gmail_user, gmail_pass, contact_email)
