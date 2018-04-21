@@ -57,9 +57,13 @@ def send_email(profile,
 
 	text = MIMEText(message_output[0], 'plain')
 	html = MIMEText(message_output[1], 'html')
+	internships = message_output[2]
 
 	msg.attach(text)
 	msg.attach(html)
+
+	#TODO
+	#Insert Write Resume Code
 
 	#Resume
 	resume_filename = "Resume_{}.pdf".format(name.replace(' ', '_'))
