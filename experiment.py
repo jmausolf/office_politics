@@ -72,7 +72,7 @@ def join_experiment_profiles(experiment_file):
 	ex[ga_keys] = ex[['profile', 'job_type', 'region']].apply(lambda row: pd.Series(select_ga(row)), axis=1)
 
 	#Select UG Schools
-	ug_keys = ['ba_school', 'ba_school_short', 'ba_ctyst', 'experiment', 'prestige']
+	ug_keys = ['ba_school', 'ba_school_short', 'ba_ctyst', 'treatment', 'prestige']
 	ex[ug_keys] = ex[['profile', 'region', 'school']].apply(lambda row: pd.Series(select_ug(row)), axis=1)
 
 
@@ -108,7 +108,14 @@ def send_email_iter(row):
 					company=row['company'],
 					name=row['name'], 
 					title=row['title'], 
-					school=row['school'], 
+					school=row['school'],
+					school_ctyst=row['school_ctyst'],
+					school_cszip=row['school_cszip'],
+					school_address=row['school_address'],
+					department=row['department'],
+					ba_school=row['ba_school'], 
+					ba_ctyst=row['ba_ctyst'],
+					treatment=row['treatment'],
 					phone=row['phone'], 
 					gmail_user=row['gmail_user'],
 					gmail_pass=row['gmail_pass'],
