@@ -137,7 +137,7 @@ def send_email_iter(row):
 
 def deploy_emails(experiment_csv):
 
-	df = join_experiment_profiles("experiment_test.csv")
+	df = join_experiment_profiles(experiment_csv)
 	#print(df)
 
 	df['metadata'] = df.apply(send_email_iter, axis=1)
@@ -150,6 +150,7 @@ def deploy_emails(experiment_csv):
 
 
 deploy_emails("experiment_test.csv")
+
 
 
 
