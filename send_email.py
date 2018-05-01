@@ -35,16 +35,19 @@ def send_email(profile,
 	
 	subject = "{} Position - {}".format(job, company)
 
-	#msg = MIMEMultipart()
-	msg = MIMEMultipart('alternative')
-	msg['Subject'] = subject
-	msg['From'] = (name)
-	msg['To'] = (contact_email)
+
+	msgRoot = MIMEMultipart('mixed')
+	msgRoot['Subject'] = subject
+	msgRoot['From'] = name
+	msgRoot['To'] = contact_email
+	msgRoot.preamble = ''
 	
 
-	# That is what u see if dont have an email reader:
-	msg.preamble = ''
-	#print(msg.preamble)
+	#Create alternative portion to allow adding 
+	#both plain and HTML versions of the cover letter
+	msgAlt = MIMEMultipart('alternative')
+	msgRoot.attach(msgAlt)
+
 
 	#Message (Text Version & HTML Version)
 	message_output = make_html_text_cl(
@@ -69,11 +72,12 @@ def send_email(profile,
 	html = MIMEText(message_output[1], 'html')
 	internships = message_output[2]
 
-	msg.attach(text)
-	msg.attach(html)
+	#Insert Message Cover Letter
+	msgAlt.attach(text)
+	msgAlt.attach(html)
 
-	#TODO
-	#Insert Write Resume Code
+
+	#Write Resume Code
 	make_resume(profile,
 				job_type,
 				name, 
@@ -96,26 +100,27 @@ def send_email(profile,
 	#Attach Resume
 	part = MIMEApplication(open(resume_path,"rb").read())
 	part.add_header('Content-Disposition', 'attachment', filename=resume_filename)
-	msg.attach(part)
-	#print(msg)
-	#print("[*] composing email message to {} - {} | {}".format(contact, contact_email, subject))
+	msgRoot.attach(part)
+
+
 
 	#Print Metadata
 	txt = message_output[0]
 	snip = "{}...{}".format(txt[0:35], txt[-40:]).replace('\n', '')
+
+
 	meta = inspect.cleandoc("""
 					Subject : {}
 					From : {}
 					To : {}
 					Attachment: {}
 					Text: {}
-			""".format(	msg['Subject'], 
-						msg['From'], 
-						msg['To'], 
+			""".format(	msgRoot['Subject'], 
+						msgRoot['From'], 
+						msgRoot['To'], 
 						resume_path, 
 						snip))
 
-	#print(meta)
 
 
 	# Create an instance in SMTP server
@@ -125,10 +130,10 @@ def send_email(profile,
 	smtp.login(gmail_user, gmail_pass)
 
 	# Send the email
-	smtp.sendmail(msg.get('From'),msg["To"],msg.as_string())
+	smtp.sendmail(msgRoot['From'], msgRoot["To"], msgRoot.as_string())
 	smtp.quit()
 
 
 	return meta.replace('\n', '|')
 
-#send_email("P05RH", "data_science", contact, job, office, company, name, title, school, "harvard", phone, gmail_user, gmail_pass, contact_email)
+
