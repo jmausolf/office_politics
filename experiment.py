@@ -8,7 +8,9 @@ import textile
 from internship_key import internship_keys
 from make_cover_letters import *
 from send_email import *
+import pdb
 
+#pdb.set_trace()
 
 def join_profiles_credentials():
 	cred = pd.read_csv("credentials.csv")
@@ -24,11 +26,15 @@ def select_ga(row):
 	profile = row[0]
 	job_type = row[1]
 	region = row[2]
+	proximal = row[3]
 
+	#Select Match from Region or Proximal Region
 	ga = pd.read_csv("ga_school_key.csv")
-	criteria = ((ga['region']==region) & 
-				(ga['job_type']==job_type) & 
+	criteria = (((ga['region']==region) |
+				 (ga['region']==proximal)) & 
+				(ga['job_type']==job_type) & 					
 				(ga['prestige']==profile[-1]))
+	print(criteria)
 	ga = ga.loc[criteria] 
 
 	#Random Selection of Schools Meeting Criteria
@@ -69,7 +75,7 @@ def join_experiment_profiles(experiment_file):
 
 	#Select GA Schools
 	ga_keys = ['department','school','school_short','school_ctyst','school_cszip','school_address','title']
-	ex[ga_keys] = ex[['profile', 'job_type', 'region']].apply(lambda row: pd.Series(select_ga(row)), axis=1)
+	ex[ga_keys] = ex[['profile', 'job_type', 'region', 'proximal_region']].apply(lambda row: pd.Series(select_ga(row)), axis=1)
 
 	#Select UG Schools
 	ug_keys = ['ba_school', 'ba_school_short', 'ba_ctyst', 'treatment', 'prestige']
@@ -78,7 +84,7 @@ def join_experiment_profiles(experiment_file):
 
 	profiles = join_profiles_credentials()
 	df = pd.merge(ex, profiles, on=['profile'])
-	#print(df)
+	print(df)
 	return df
 
 
