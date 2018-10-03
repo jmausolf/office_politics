@@ -353,8 +353,8 @@ def send_email_iter(row):
 					school_cszip=row['school_cszip'],
 					school_address=row['school_address'],
 					department=row['department'],
-					ug_school=row['ug_school'], 
-					ug_ctyst=row['ug_ctyst'],
+					ba_school=row['ug_school'], 
+					ba_ctyst=row['ug_ctyst'],
 					treatment=row['treatment'],
 					phone=row['phone'], 
 					gmail_user=row['gmail_user'],
@@ -394,23 +394,26 @@ def deploy_emails(experiment_csv):
 	ex_out = "{}_output.csv".format(experiment_csv.split(".")[0])
 	df.to_csv(ex_out, index=False)
 
+	#After sorting, need to remove additional cols to match send_email_iter_above
+	#or modify send email iter
+
 	#Matched Pairs A
 	df_A = df.loc[(df['matched_pair']=='a')].copy()
 	#print(df_A)
-	deploy_matched_pairs_emails(df_A, experiment_csv, "A")
+	#deploy_matched_pairs_emails(df_A, experiment_csv, "A")
 
 
 	time.sleep(3)
 
 	#Matched Pairs B
 	df_B = df.loc[(df['matched_pair']=='b')].copy()
-	deploy_matched_pairs_emails(df_B, experiment_csv, "B")
+	#deploy_matched_pairs_emails(df_B, experiment_csv, "B")
 	#print(df_B)
 	#TODO
 	#split DF into day1_app1, day2_app2
 	#apply exp to day1df, wait, apply to day2df
 
-	#df['metadata'] = df.apply(send_email_iter, axis=1)
+	df_A['metadata'] = df_A.apply(send_email_iter, axis=1)
 	#print(df)
 
 	#write result file
