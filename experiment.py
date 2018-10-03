@@ -9,6 +9,7 @@ from internship_key import internship_keys
 from make_cover_letters import *
 from send_email import *
 import pdb
+import time
 
 #pdb.set_trace()
 
@@ -96,6 +97,9 @@ def select_ga3(row, count):
 					(gaf['prestige']==profile[-1]))
 		ga = gaf.loc[criteria]
 
+		#Add Pair Label
+		ga['matched_pair'] = 'a'
+
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
 		df = ga.ix[rows]
@@ -108,6 +112,7 @@ def select_ga3(row, count):
 
 		#Return Results
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
+		print(df)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
 		return vals
@@ -122,6 +127,9 @@ def select_ga3(row, count):
 					(gaf['job_type']==job_type) & 					
 					(gaf['prestige']==profile[-1]))
 		ga = gaf.loc[criteria]
+
+		#Add Pair Label
+		ga['matched_pair'] = 'b' 
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
@@ -250,21 +258,13 @@ def join_experiment_profiles(experiment_file):
 
 def join_ex_pair(ex_df, cid):
 
-
-	count = 0
-	print(cid)
+	#Experiment Pair DF
 	ex = ex_df.loc[(ex_df['cid']==cid)].reset_index()
-	#print(ex.shape)
-
-
-
-	#ex1 = ex.iloc[1]
-
 
 
 	#Select GA Schools
 	ga_vals = ['department', 'ga_sid', 'school', 'school_short', 'school_ctyst', 
-			   'school_cszip', 'school_address', 'title']
+			   'school_cszip', 'school_address', 'title', 'matched_pair']
 	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
 
 
@@ -274,12 +274,8 @@ def join_ex_pair(ex_df, cid):
 	ug_keys = ['profile', 'region', 'school']
 
 
-	#TODO
-	#Now that 1 and 2 are working, do diff actions for first and second pair
-	#run first pair as is, but drop school selected school ids
-	#write new df
-	#for second df, sample from tmp df created in pair 1
-
+	#Determine Unique GA/UG Profiles for Matched Pairs 
+	#(Meeting Profile Criteria)
 	pairs = []
 	for i in list(ex.index):
 		print(ex)
@@ -297,81 +293,34 @@ def join_ex_pair(ex_df, cid):
 
 
 	df = pd.concat(pairs)
-
 	return df
 
 
 
 def join_experiment_profiles_counter(experiment_file):
-	#ex = pd.read_csv(experiment_file)
+
 	ex_full = pd.read_csv(experiment_file)
-	#print(ex_full)
-
-
 	cids = ex_full.cid.unique()
-	print(cids)
+	print("[*] generating {} requested matched pairs...".format(len(cids)))
 
-	
+	#Join All Experiment Matched Pairs
 	matched_pairs = []
 	for c in cids:
-		#print(c)
 		pair = join_ex_pair(ex_full, c)
-		print(pair)
-		#print(pair)
 		matched_pairs.append(pair)
-
-
-	#df = pd.concat(matched_pairs)
-	#print(df)
 	
 
-	"""
-	#print(ex.iloc[[1]])
-	ex = ex_full.iloc[0:2]
-	#ex = ex_full.iloc[[0]]
-	#print(ex.shape)
+	ex_all = pd.concat(matched_pairs)
+	profiles = join_profiles_credentials()
+	df = pd.merge(ex_all, profiles, on=['profile'])
 
-	#perhaps do it by cid, for c in cid, ret 2 vals
-	#ex_ci
+	#Sort by ID
+	df['sort'] = df['id'].str.extract('(\d+)', expand=False).astype(int)
+	df.sort_values('sort',inplace=True, ascending=True)
+	df = df.drop('sort', axis=1)
 
-	#Select GA Schools
-	ga_vals = ['department', 'ga_sid', 'school', 'school_short', 'school_ctyst', 
-			   'school_cszip', 'school_address', 'title']
-	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
-
-	ex[ga_vals] = ex[ga_keys].apply(
-							 lambda row: pd.Series(select_ga(row)), axis=1)
-	#ex[ga_vals] = pd.Series(select_ga(ex.iloc[[1]]))
-
-
-	#print(ex)
-	#print(ex.shape)
-
-	#Select UG Schools
-	ug_vals = ['ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst', 
-			   'treatment', 'prestige']
-	ug_keys = ['profile', 'region', 'school']
-
-	ex[ug_vals] = ex[ug_keys].apply(
-							 lambda row: pd.Series(select_ug(row)), axis=1)
-	#ex[ug_vals] = pd.Series(select_ug(ex.iloc[[1]]))
-	"""
-
-	#df0 = join_ex_pair(ex_full, 'c01')
-	#print(df0)
-
-
-	#df1 = join_ex_pair(ex_full, 'c02')
-	#print(df1)
-
-
-	#print(ex)
-	#print(ex.shape)
-
-	#profiles = join_profiles_credentials()
-	#df = pd.merge(ex, profiles, on=['profile'])
-	#print(df)
-	#return df
+	#TODO Sort Columns
+	return df
 
 
 #join_experiment_profiles("experiment_test.csv")
@@ -423,6 +372,16 @@ def send_email_iter(row):
 		return 'error::'+str(e)
 
 
+def deploy_matched_pairs_emails(df, experiment_csv, pair_version):
+
+	df['metadata'] = df.apply(send_email_iter, axis=1)
+	print(df)
+
+	#write result file
+	outfile = "logs/results_log_{0}_pairs_{1}".format(
+												experiment_csv, 
+												pair_version)
+	df.to_csv(outfile, index=False)
 
 
 
@@ -430,11 +389,23 @@ def deploy_emails(experiment_csv):
 
 	#df = join_experiment_profiles(experiment_csv)
 	df = join_experiment_profiles_counter(experiment_csv)
-	#print(df)
+	print(df)
 
 	ex_out = "{}_output.csv".format(experiment_csv.split(".")[0])
-	#df.to_csv(ex_out, index=False)
+	df.to_csv(ex_out, index=False)
 
+	#Matched Pairs A
+	df_A = df.loc[(df['matched_pair']=='a')].copy()
+	#print(df_A)
+	deploy_matched_pairs_emails(df_A, experiment_csv, "A")
+
+
+	time.sleep(3)
+
+	#Matched Pairs B
+	df_B = df.loc[(df['matched_pair']=='b')].copy()
+	deploy_matched_pairs_emails(df_B, experiment_csv, "B")
+	#print(df_B)
 	#TODO
 	#split DF into day1_app1, day2_app2
 	#apply exp to day1df, wait, apply to day2df
