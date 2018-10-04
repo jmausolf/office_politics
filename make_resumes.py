@@ -18,10 +18,10 @@ def compile_xelatex(path, tex_file):
 	os.chdir(owd)
 
 
-
 def remove_non_ascii_2(text):
 	import re
 	return re.sub(r'[^\x00-\x7F]+', "", text)
+
 
 def read_tex(tex_file):
 	text = str(tex_file)
@@ -53,27 +53,6 @@ def modify_resume(path, tex_file, pairs, name, replace=False):
 	output.close()
 
 
-"""
-resume_pairs = [
-	["GRADSCHOOL", "Massachusetts Institute of Technology"],
-	["GS_CITYSTATE", "Cambridge, MA"],
-	["GS_CSZIP", "Cambridge, MA 02139"],
-	["GS_ADDRESS", "77 Massachusetts Ave, Sera 204"],
-	["UGSCHOOL", "University of Michigan"],
-	["UG_CITYSTATE", "Ann Arbor, MI"],
-	["INTERNSHIP1", "Google"],
-	["IC1_CITYSTATE", "Mountain View, CA"],
-	["INTERNSHIP2", "Twitter"],
-	["IC2_CITYSTATE", "San Francisco, CA"],
-	["TREATMENT", "Michigan College Republicans"],
-	["ID_NAME", "Matthew Zachary Hartman"],
-	["ID_PHONE", "336-948-0756"],
-	["ID_EMAIL", "matthewzhartman@gmail.com"]
-]
-"""
-
-
-
 def make_resume_pairs(
 					profile,
 					job_type,
@@ -87,24 +66,13 @@ def make_resume_pairs(
 					department,
 					ba_school, 
 					ba_ctyst, 
-					internships,
+					internship1,
+					int1_ctyst,
+					internship2,
+					int2_ctyst,
 					treatment 
 					):
 
-	#todo
-	#get internvars from internphrase
-	ik = "{}_{}".format(job_type, profile[-1])
-	intern_key = internship_keys[ik]
-	ints = internships.replace(' and ', ',').strip().split(',')
-
-	int1=ints[0]
-	int2=ints[1]
-	int1_ctyst=intern_key[int1][1]
-	int2_ctyst=intern_key[int2][1]
-
-	#todo
-	#get treatment from profile+jobregion+dictlookup
-	#experiment = "the Harvard Republican Club"
 
 	keys = ["GRADSCHOOL", "GS_CITYSTATE", "GS_CSZIP", "GS_ADDRESS", "GADEPARTMENT",
 			"UGSCHOOL", "UG_CITYSTATE",
@@ -113,28 +81,12 @@ def make_resume_pairs(
 
 	vals = [school, school_ctyst, school_cszip, school_address, department,
 			ba_school, ba_ctyst,
-			int1, int1_ctyst, int2, int2_ctyst,
+			internship1, int1_ctyst, internship2, int2_ctyst,
 			treatment, name, phone, gmail_user]
 
 
 	resume_pairs = list(map(list, zip(keys, vals)))
-	#print(resume_pairs)
 	return resume_pairs
-
-
-
-
-#TODO
-#Next task to write code to gen the resume pairs
-
-#name = "Matthew Zachary Hartman"
-#outfile = "Resume_{}.tex".format(name.replace(' ', '_'))
-
-
-#modify_resume("P04NL/quant/tex/", "resume_template.tex", rp, name)
-
-#compile new resume
-#compile_xelatex("P04NL/quant/tex/", outfile)
 
 
 def make_resume(profile,
@@ -149,7 +101,10 @@ def make_resume(profile,
 				department,
 				ba_school, 
 				ba_ctyst, 
-				internships,
+				internship1,
+				int1_ctyst,
+				internship2,
+				int2_ctyst,
 				treatment):
 
 	rp = make_resume_pairs(profile,
@@ -164,9 +119,11 @@ def make_resume(profile,
 					department,
 					ba_school, 
 					ba_ctyst, 
-					internships,
+					internship1,
+					int1_ctyst,
+					internship2,
+					int2_ctyst,
 					treatment)
-
 
 
 	path = "{}/{}/tex".format(profile, job_type)
@@ -177,6 +134,6 @@ def make_resume(profile,
 	#compile new resume
 	compile_xelatex(path, outfile)
 
-	#move compiled latex?
+
 
 
