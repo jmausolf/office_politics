@@ -8,7 +8,11 @@ from credentials import *
 import inspect
 
 
-
+#TODO, directly pass internships into send_email
+#currently generated within from a sub function
+#sub_cover_letter_internship
+#which uses a dict, job type, and prestige
+#in the make cover letter .py file
 
 def send_email(profile, 
 			job_type,
