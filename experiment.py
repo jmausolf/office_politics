@@ -21,60 +21,7 @@ def join_profiles_credentials():
 	return df
 
 
-
-def select_ga(row):
-
-	profile = row[0]
-	job_type = row[1]
-	region = row[2]
-	proximal = row[3]
-
-	#Select Match from Region or Proximal Region
-	ga = pd.read_csv("ga_school_key.csv")
-	criteria = (((ga['region']==region) |
-				 (ga['region']==proximal)) & 
-				(ga['job_type']==job_type) & 					
-				(ga['prestige']==profile[-1]))
-	#print(criteria)
-	ga = ga.loc[criteria] 
-
-	#Random Selection of Schools Meeting Criteria
-	rows = np.random.choice(ga.index.values, 1)
-	df = ga.ix[rows]
-	df = df.drop(['region', 'job_type', 'prestige'], axis=1)
-
-	keys = df.columns.tolist()
-	vals = df.values.tolist()[0]
-	return vals
-
-
-def select_ug(row):
-
-	profile = row[0]
-	region = row[1]
-	school = row[2]
-
-	ug = pd.read_csv("ug_school_key.csv")
-	criteria = ((ug['profile']==profile) & 
-				(ug['region']==region) & 
-				(ug['ug_school']!=school))
-	ug = ug.loc[criteria] 
-	
-	#Random Selection of Schools Meeting Criteria
-	rows = np.random.choice(ug.index.values, 1)
-
-	df = ug.ix[rows]
-	df = df.drop(['region', 'profile'], axis=1)
-
-	keys = df.columns.tolist()
-	vals = df.values.tolist()[0]
-	return vals
-
-
-
-
-
-def select_ga3(row, count):
+def select_ga(row, count):
 
 	profile = row[0]
 	job_type = row[1]
@@ -140,8 +87,7 @@ def select_ga3(row, count):
 
 
 
-
-def select_ug3(row, count):
+def select_ug(row, count):
 
 	profile = row[0]
 	region = row[1]
@@ -191,44 +137,64 @@ def select_ug3(row, count):
 		vals = df.values.tolist()[0]
 		return vals		
 
-
 	else:
 		pass
 
 
+def select_int(row, count):
+
+	job_type = row[0]
+	prestige = row[1]
+	company = row[2]
+
+	#First Matched Pair
+	if count == 0:
+		intf = pd.read_csv("int_key.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria] 
+		
+		#Random Selection of Internships Meeting Criteria
+		rows = np.random.choice(int_df.index.values, 2, replace=False)
+		df = int_df.ix[rows]
+		#Drop Selections from Internship to Avoid Selection for Pair 2
+		int_selection = df['int_id'].values.tolist()
+		tmp = intf[((intf.int_id != int_selection[0]) &
+				    (intf.int_id != int_selection[1]))]
+		tmp.to_csv("int_key_tmp.csv", index=False)
 
 
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships
 
 
+	#Second Matched Pair
+	elif count == 1:
+		intf = pd.read_csv("int_key_tmp.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria] 
+		
+		#Random Selection of Schools Meeting Criteria
+		rows = np.random.choice(int_df.index.values, 2, replace=False)
+		df = int_df.ix[rows]
 
 
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships	
 
-
-def join_experiment_profiles(experiment_file):
-	ex = pd.read_csv(experiment_file)
-
-
-	#Select GA Schools
-	ga_vals = ['department', 'ga_sid', 'school', 'school_short', 'school_ctyst', 
-			   'school_cszip', 'school_address', 'title']
-	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
-
-	ex[ga_vals] = ex[ga_keys].apply(
-							 lambda row: pd.Series(select_ga(row)), axis=1)
-
-	#Select UG Schools
-	ug_vals = ['ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst', 
-			   'treatment', 'prestige']
-	ug_keys = ['profile', 'region', 'school']
-
-	ex[ug_vals] = ex[ug_keys].apply(
-							 lambda row: pd.Series(select_ug(row)), axis=1)
-
-
-	profiles = join_profiles_credentials()
-	df = pd.merge(ex, profiles, on=['profile'])
-	return df
-
+	else:
+		pass
 
 
 
@@ -237,6 +203,7 @@ def join_ex_pair(ex_df, cid):
 
 	#Experiment Pair DF
 	ex = ex_df.loc[(ex_df['cid']==cid)].reset_index()
+	#print(ex)
 
 
 	#Select GA Schools
@@ -251,6 +218,12 @@ def join_ex_pair(ex_df, cid):
 	ug_keys = ['profile', 'region', 'school']
 
 
+	#Select Internships
+	int_vals = ['int_id1', 'internship1', 'int1_ctyst', 
+				'int_id2', 'internship2', 'int2_ctyst']
+	int_keys = ['job_type', 'prestige', 'company']
+
+
 	#Determine Unique GA/UG Profiles for Matched Pairs 
 	#(Meeting Profile Criteria)
 	pairs = []
@@ -258,19 +231,22 @@ def join_ex_pair(ex_df, cid):
 		row = ex.iloc[[i]].copy()
 
 		#Grad School
-		ga_result = select_ga3(row[ga_keys].values.tolist()[0], i)
+		ga_result = select_ga(row[ga_keys].values.tolist()[0], i)
 		row[ga_vals] = pd.DataFrame([ga_result], index=row.index)
 
 		#Undergrad
-		ug_result = select_ug3(row[ug_keys].values.tolist()[0], i)
+		ug_result = select_ug(row[ug_keys].values.tolist()[0], i)
 		row[ug_vals] = pd.DataFrame([ug_result], index=row.index)
+
+		#Internship
+		int_result = select_int(row[int_keys].values.tolist()[0], i)
+		row[int_vals] = pd.DataFrame([int_result], index=row.index)
 
 		pairs.append(row)
 
 
 	df = pd.concat(pairs)
 	return df
-
 
 
 def join_experiment_profiles_counter(experiment_file):
