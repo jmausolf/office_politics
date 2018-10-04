@@ -50,9 +50,6 @@ def select_ga(row):
 
 def select_ug(row):
 
-	#TODO
-	#build in a counter,
-
 	profile = row[0]
 	region = row[1]
 	school = row[2]
@@ -65,14 +62,12 @@ def select_ug(row):
 	
 	#Random Selection of Schools Meeting Criteria
 	rows = np.random.choice(ug.index.values, 1)
-	#print(rows)
+
 	df = ug.ix[rows]
 	df = df.drop(['region', 'profile'], axis=1)
-	#print(df)
 
 	keys = df.columns.tolist()
 	vals = df.values.tolist()[0]
-	#print(vals)
 	return vals
 
 
@@ -95,7 +90,7 @@ def select_ga3(row, count):
 					 (gaf['region']==proximal)) & 
 					(gaf['job_type']==job_type) & 					
 					(gaf['prestige']==profile[-1]))
-		ga = gaf.loc[criteria]
+		ga = gaf.loc[criteria].copy()
 
 		#Add Pair Label
 		ga['matched_pair'] = 'a'
@@ -112,7 +107,6 @@ def select_ga3(row, count):
 
 		#Return Results
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
-		print(df)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
 		return vals
@@ -126,7 +120,7 @@ def select_ga3(row, count):
 					 (gaf['region']==proximal)) & 
 					(gaf['job_type']==job_type) & 					
 					(gaf['prestige']==profile[-1]))
-		ga = gaf.loc[criteria]
+		ga = gaf.loc[criteria].copy()
 
 		#Add Pair Label
 		ga['matched_pair'] = 'b' 
@@ -212,9 +206,6 @@ def select_ug3(row, count):
 
 def join_experiment_profiles(experiment_file):
 	ex = pd.read_csv(experiment_file)
-	#print(ex.shape)
-
-	#perhaps do it by cid, for c in cid, ret 2 vals
 
 
 	#Select GA Schools
@@ -225,9 +216,6 @@ def join_experiment_profiles(experiment_file):
 	ex[ga_vals] = ex[ga_keys].apply(
 							 lambda row: pd.Series(select_ga(row)), axis=1)
 
-	print(ex)
-	print(ex.shape)
-
 	#Select UG Schools
 	ug_vals = ['ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst', 
 			   'treatment', 'prestige']
@@ -237,21 +225,10 @@ def join_experiment_profiles(experiment_file):
 							 lambda row: pd.Series(select_ug(row)), axis=1)
 
 
-	print(ex)
-	print(ex.shape)
-
 	profiles = join_profiles_credentials()
 	df = pd.merge(ex, profiles, on=['profile'])
-	#print(df)
 	return df
 
-
-	#Currently this function runs s.t. it does all ga, then all ug, same list basis each time
-	#need to try to reorg an intermediary function that gets ga and ug for a row
-	#reorg the lamda then with a counter function
-	#if count == 0, start with base lists
-	#if count > 0, subtract ug/ga lines from list, save as tmp list, sample from this list
-	#then ga/ug will not be the same for the same profile
 
 
 
@@ -278,7 +255,6 @@ def join_ex_pair(ex_df, cid):
 	#(Meeting Profile Criteria)
 	pairs = []
 	for i in list(ex.index):
-		print(ex)
 		row = ex.iloc[[i]].copy()
 
 		#Grad School
@@ -378,8 +354,9 @@ def deploy_matched_pairs_emails(df, experiment_csv, pair_version):
 	print(df)
 
 	#write result file
-	outfile = "logs/results_log_{0}_pairs_{1}".format(
-												experiment_csv, 
+	infile = experiment_csv.split('.')[0]
+	outfile = "logs/results_log_{0}_pairs_{1}.csv".format(
+												infile, 
 												pair_version)
 	df.to_csv(outfile, index=False)
 
@@ -387,38 +364,29 @@ def deploy_matched_pairs_emails(df, experiment_csv, pair_version):
 
 def deploy_emails(experiment_csv):
 
-	#df = join_experiment_profiles(experiment_csv)
 	df = join_experiment_profiles_counter(experiment_csv)
 	print(df)
 
 	ex_out = "{}_output.csv".format(experiment_csv.split(".")[0])
 	df.to_csv(ex_out, index=False)
 
-	#After sorting, need to remove additional cols to match send_email_iter_above
-	#or modify send email iter
-
 	#Matched Pairs A
 	df_A = df.loc[(df['matched_pair']=='a')].copy()
-	#print(df_A)
 	#deploy_matched_pairs_emails(df_A, experiment_csv, "A")
 
 
-	time.sleep(3)
+	import sys
+	import time
+	for i in range(10,0,-1):
+	    sys.stdout.write(str(i)+' ')
+	    sys.stdout.flush()
+	    time.sleep(1)
+
 
 	#Matched Pairs B
 	df_B = df.loc[(df['matched_pair']=='b')].copy()
 	#deploy_matched_pairs_emails(df_B, experiment_csv, "B")
-	#print(df_B)
-	#TODO
-	#split DF into day1_app1, day2_app2
-	#apply exp to day1df, wait, apply to day2df
 
-	df_A['metadata'] = df_A.apply(send_email_iter, axis=1)
-	#print(df)
-
-	#write result file
-	#outfile = "logs/results_log_{}".format(experiment_csv)
-	#df.to_csv(outfile, index=False)
 
 
 
