@@ -351,7 +351,6 @@ def send_email_iter(row):
 def deploy_matched_pairs_emails(df, experiment_csv, pair_version):
 
 	df['metadata'] = df.apply(send_email_iter, axis=1)
-	print(df)
 
 	#write result file
 	infile = experiment_csv.split('.')[0]
@@ -372,7 +371,7 @@ def deploy_emails(experiment_csv):
 
 	#Matched Pairs A
 	df_A = df.loc[(df['matched_pair']=='a')].copy()
-	#deploy_matched_pairs_emails(df_A, experiment_csv, "A")
+	deploy_matched_pairs_emails(df_A, experiment_csv, "A")
 
 
 	import sys
@@ -385,7 +384,7 @@ def deploy_emails(experiment_csv):
 
 	#Matched Pairs B
 	df_B = df.loc[(df['matched_pair']=='b')].copy()
-	#deploy_matched_pairs_emails(df_B, experiment_csv, "B")
+	deploy_matched_pairs_emails(df_B, experiment_csv, "B")
 
 
 
