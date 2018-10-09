@@ -33,6 +33,12 @@ def rep_pair(r, list_pair):
 	return r.replace(list_pair[0], list_pair[1])
 
 
+def article_strip(school):
+	stmp = school.lower().replace('the ', '').title()
+	clean_school = re.sub(r"\s{2,}", ' ', stmp).lstrip(' ')
+	return clean_school
+
+
 def modify_resume(path, tex_file, pairs, name, replace=False):
 
 	infile = "{}/{}".format(path, tex_file)
@@ -107,12 +113,15 @@ def make_resume(profile,
 				int2_ctyst,
 				treatment):
 
+	#Remove Articles from School Name
+	school_clean = article_strip(school)
+
 	rp = make_resume_pairs(profile,
 					job_type,
 					name, 
 					phone,
 					gmail_user,
-					school, 
+					school_clean, 
 					school_ctyst,
 					school_cszip,
 					school_address,
