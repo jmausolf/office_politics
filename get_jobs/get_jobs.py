@@ -5,6 +5,8 @@ from selenium.webdriver.common.keys import Keys
 import pandas as pd
 import datetime
 import ast
+import csv
+import os
 import pdb
 
 
@@ -24,10 +26,27 @@ def url_str(text):
     return text.replace(' ', '+')
 
 
-def qry_indeed_jobs(job_keyword, company, seconds):
+def error_logger(company, job_keyword, url):
 
-    #print(seconds)
-    #pdb.set_trace()
+    pdb.set_trace()
+
+    date = get_date()
+    outfile = 'error_no_results_{}.csv'.format(date)
+    exists = os.path.isfile('./{}'.format(outfile))
+
+    with open(outfile, "a") as f:
+        writer = csv.writer(f)
+
+        if exists:
+            writer.writerow([company, job_keyword, url, date])
+        else:
+            writer.writerow(['company', 'job_keyword', 'url', 'date'])
+            writer.writerow([company, job_keyword, url, date])
+
+
+
+
+def search_url(job_keyword, company):
 
     url_stem = "https://www.indeed.com/jobs?q="
     job = url_str(job_keyword)
@@ -36,8 +55,15 @@ def qry_indeed_jobs(job_keyword, company, seconds):
     jt = "jt=fulltime"
     qry = "{}+{}&{}&{}".format(job, cid, loc, jt)
     url = url_stem+qry
+    return url
+
+
+def qry_indeed_jobs(job_keyword, company, seconds):
+
+    url = search_url(job_keyword, company)
     driver.get(url)
     time.sleep(rt(seconds))
+    return url
 
 
 def indeed_home():
@@ -102,7 +128,7 @@ def load_job_cards(counter, filestem='indeed_jobs'):
     posts = driver.find_elements_by_xpath("//div[@class='  row  result clickcard']")
     job_names = [j.find_element_by_css_selector("a[class='turnstileLink']").get_attribute('title') for j in posts]
     #print(job_names)
-    
+
 
     if len(job_names) >= 1:
         pass
@@ -128,19 +154,15 @@ def load_job_cards(counter, filestem='indeed_jobs'):
 
 
 def get_jobs(job_keyword, company, counter, seconds):
-
-    #print(seconds)
     #pdb.set_trace()
-    qry_indeed_jobs(job_keyword, company, seconds)
+    qry_url = qry_indeed_jobs(job_keyword, company, seconds)
 
     if load_job_cards(counter, filestem) is True:
         pass
     elif load_job_cards(counter, filestem) is False:
-        print("[*] error searching for jobs at {}".format(company))
-        #TODO resolve error, research
-        #indeed_home()
-        #query_job_search(job_keyword, company)
-        #load_job_cards(counter)
+        print("[*] error searching for jobs at {}...".format(company))
+        pdb.set_trace()
+        error_logger(company, job_keyword, qry_url)
         pass
 
 
@@ -157,7 +179,12 @@ def iterator(row):
         counter+=1
         #print(company, k, counter)
         print("[*] searching for {} jobs at {}...".format(k, company))
-        get_jobs(k, company, counter, seconds)
+        try:
+            get_jobs(k, company, counter, seconds)
+        except Exception as e:
+            print('[*] ERROR: {}'.format(e))
+            error_logger(company, k, search_url(company, k))
+            pass
 
 
 
