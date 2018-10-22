@@ -1,13 +1,11 @@
-import selenium, time, argparse
-import numpy as np
+import selenium, time, datetime, argparse
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import ast, csv, os, pdb
+import numpy as np
 import pandas as pd
-import datetime
-import ast
-import csv
-import os
-import pdb
+
+
 
 
 def get_date():
@@ -27,9 +25,6 @@ def url_str(text):
 
 
 def error_logger(company, job_keyword, url):
-
-    pdb.set_trace()
-
     date = get_date()
     outfile = 'error_no_results_{}.csv'.format(date)
     exists = os.path.isfile('./{}'.format(outfile))
@@ -44,10 +39,7 @@ def error_logger(company, job_keyword, url):
             writer.writerow([company, job_keyword, url, date])
 
 
-
-
 def search_url(job_keyword, company):
-
     url_stem = "https://www.indeed.com/jobs?q="
     job = url_str(job_keyword)
     cid = "company%3A{}".format(url_str(company))
@@ -59,7 +51,6 @@ def search_url(job_keyword, company):
 
 
 def qry_indeed_jobs(job_keyword, company, seconds):
-
     url = search_url(job_keyword, company)
     driver.get(url)
     time.sleep(rt(seconds))
@@ -71,9 +62,8 @@ def indeed_home():
     driver.get(url)
     time.sleep(rt(2))
 
-def query_job_home(job_keyword, company, city=None):
 
-    #pdb.set_trace()
+def query_job_home(job_keyword, company, city=None):
 
     #What Job?
     search_what = "{} company:{}".format(job_keyword, company)
@@ -90,10 +80,7 @@ def query_job_home(job_keyword, company, city=None):
     time.sleep(rt(2))
 
 
-
 def query_job_search(job_keyword, company, city=None):
-
-    #pdb.set_trace()
 
     #What Job?
     search_what = "{} company:{}".format(job_keyword, company)
@@ -123,12 +110,8 @@ def scroll_page(n, delay=3):
 
 def load_job_cards(counter, filestem='indeed_jobs'):
 
-    #TODO
-    #Try again if no posts/job names for query
     posts = driver.find_elements_by_xpath("//div[@class='  row  result clickcard']")
     job_names = [j.find_element_by_css_selector("a[class='turnstileLink']").get_attribute('title') for j in posts]
-    #print(job_names)
-
 
     if len(job_names) >= 1:
         pass
@@ -136,14 +119,11 @@ def load_job_cards(counter, filestem='indeed_jobs'):
         return False
 
     companies = [c.find_element_by_css_selector("span[class='company']").text for c in posts]
-
     locations = [l.find_element_by_css_selector("span[class='location']").text for l in posts]
-
     jobs = {'job':job_names,'company':companies,'location':locations}
     df = pd.DataFrame(jobs)
 
     f = "{}_{}.csv".format(filestem, get_date())
-
     if counter == 1:
         df.to_csv(f, index=False, header=True)
     else:
@@ -152,32 +132,25 @@ def load_job_cards(counter, filestem='indeed_jobs'):
     return True
 
 
-
 def get_jobs(job_keyword, company, counter, seconds):
-    #pdb.set_trace()
     qry_url = qry_indeed_jobs(job_keyword, company, seconds)
 
     if load_job_cards(counter, filestem) is True:
         pass
     elif load_job_cards(counter, filestem) is False:
         print("[*] error searching for jobs at {}...".format(company))
-        pdb.set_trace()
         error_logger(company, job_keyword, qry_url)
         pass
 
 
 def iterator(row):
-    #pdb.set_trace()
     company = row[0]
     job_type = row[1]
     keywords = ast.literal_eval(row[2])
     counter = row[3]
 
-    #pdb.set_trace()
-
     for k in keywords:
         counter+=1
-        #print(company, k, counter)
         print("[*] searching for {} jobs at {}...".format(k, company))
         try:
             get_jobs(k, company, counter, seconds)
@@ -187,8 +160,6 @@ def iterator(row):
             pass
 
 
-
-
 def perform_job_search(job_params):
     print("[*] DEPLOYING JOB SEARCH")
 
@@ -196,10 +167,8 @@ def perform_job_search(job_params):
         df = pd.read_csv(job_params)
         df['counter'] = df.index
         print(df)
-
         df.apply(iterator, axis=1)
 
-        
         #Inspect Results
         f = "{}_{}.csv".format(filestem, get_date())
         print(pd.read_csv(f))
@@ -223,11 +192,8 @@ if __name__=="__main__":
     parser.add_argument("-s", "--seconds", default=5, type=int, help="number of seconds delay")
     args = parser.parse_args()
 
-    #Start Share War Loop
+    #Start Get Jobs Scraper
     starttime=time.time()
-
-    #while True:
-    #Start Driver, Get URLS, Close
     driver = webdriver.Firefox()
     driver.implicitly_wait(0)
 
@@ -242,10 +208,6 @@ if __name__=="__main__":
 
     #Run Main App
     perform_job_search(args.param)
-
-    #pdb.set_trace()
-
-
     time.sleep(rt(5))
     driver.close()
 
