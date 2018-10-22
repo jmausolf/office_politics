@@ -5,6 +5,7 @@ from new_messages import *
 import textwrap
 import inspect
 import textile
+import re
 from internship_key import internship_keys
 from make_cover_letters import *
 from send_email import *
@@ -12,6 +13,11 @@ import pdb
 import time
 
 #pdb.set_trace()
+
+def article_strip(school):
+	stmp = school.lower().replace('the ', '').title()
+	clean_school = re.sub(r"\s{2,}", ' ', stmp).lstrip(' ')
+	return clean_school
 
 def join_profiles_credentials():
 	cred = pd.read_csv("credentials.csv")
@@ -56,6 +62,7 @@ def select_ga(row, count):
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
+		#print(vals)
 		return vals
 
 
@@ -80,6 +87,7 @@ def select_ga(row, count):
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
+		#print(vals)
 		return vals
 
 	else:
@@ -92,13 +100,16 @@ def select_ug(row, count):
 	profile = row[0]
 	region = row[1]
 	school = row[2]
+	print(school)
 
 	#First Matched Pair
 	if count == 0:
+		print("ug if")
 		ugf = pd.read_csv("ug_school_key.csv")
 		criteria = ((ugf['profile']==profile) & 
 					(ugf['region']==region) & 
-					(ugf['ug_school']!=school))
+					(ugf['sid']!=school))
+		#print(criteria)
 		ug = ugf.loc[criteria] 
 		
 		#Random Selection of Schools Meeting Criteria
@@ -112,7 +123,7 @@ def select_ug(row, count):
 
 
 		#Return Results
-		df = df.drop(['region', 'profile'], axis=1)
+		df = df.drop(['region', 'profile', 'sid'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
 		return vals
@@ -120,19 +131,32 @@ def select_ug(row, count):
 
 	#Second Matched Pair
 	elif count == 1:
+		print("ug elif")
 		ugf = pd.read_csv("ug_school_key_tmp.csv")
 		criteria = ((ugf['profile']==profile) & 
 					(ugf['region']==region) & 
-					(ugf['ug_school']!=school))
-		ug = ugf.loc[criteria] 
+					(ugf['sid']!=school))
+		#print(criteria)
+		ug = ugf.loc[criteria]
+		print(ug)
 		
 		#Random Selection of Schools Meeting Criteria
-		rows = np.random.choice(ug.index.values, 1)
-		df = ug.ix[rows]
-
+		import pdb 
+		#pdb.set_trace()
+		try:
+			rows = np.random.choice(ug.index.values, 1)
+			df = ug.ix[rows]
+		except:
+			pdb.set_trace()
+			print('except')
+			criteria = ((ugf['profile']==profile) & 
+						(ugf['sid']!=school))
+			ug = ugf.loc[criteria]
+			rows = np.random.choice(ug.index.values, 1)
+			df = ug.ix[rows]
 
 		#Return Results
-		df = df.drop(['region', 'profile'], axis=1)
+		df = df.drop(['region', 'profile', 'sid'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
 		return vals		
@@ -207,15 +231,16 @@ def join_ex_pair(ex_df, cid):
 
 
 	#Select GA Schools
-	ga_vals = ['department', 'ga_sid', 'school', 'school_short', 'school_ctyst', 
-			   'school_cszip', 'school_address', 'title', 'matched_pair']
+	ga_vals = ['department', 'sid', 'ga_sid', 'school', 'school_short', 
+			   'school_ctyst', 'school_cszip', 'school_address', 
+			   'title', 'matched_pair']
 	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
 
 
 	#Select UG Schools
 	ug_vals = ['ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst', 
 			   'treatment', 'prestige']
-	ug_keys = ['profile', 'region', 'school']
+	ug_keys = ['profile', 'region', 'sid']
 
 
 	#Select Internships
@@ -232,10 +257,14 @@ def join_ex_pair(ex_df, cid):
 
 		#Grad School
 		ga_result = select_ga(row[ga_keys].values.tolist()[0], i)
+		print(ga_result)
 		row[ga_vals] = pd.DataFrame([ga_result], index=row.index)
 
 		#Undergrad
+		import pdb
+		#pdb.set_trace()
 		ug_result = select_ug(row[ug_keys].values.tolist()[0], i)
+		print(ug_result)
 		row[ug_vals] = pd.DataFrame([ug_result], index=row.index)
 
 		#Internship
@@ -250,7 +279,8 @@ def join_ex_pair(ex_df, cid):
 
 
 def join_experiment_profiles_counter(experiment_file):
-
+	import pdb
+	#pdb.set_trace()
 	ex_full = pd.read_csv(experiment_file)
 	cids = ex_full.cid.unique()
 	print("[*] generating {} requested matched pairs...".format(len(cids)))
@@ -258,6 +288,7 @@ def join_experiment_profiles_counter(experiment_file):
 	#Join All Experiment Matched Pairs
 	matched_pairs = []
 	for c in cids:
+		print(c)
 		pair = join_ex_pair(ex_full, c)
 		matched_pairs.append(pair)
 	
