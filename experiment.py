@@ -47,12 +47,7 @@ def select_ga(row, count):
 						  (gaf['region']==proximal)) & 
 						(gaf['job_type']==job_type) & 					
 						(gaf['prestige']==profile[-1]))
-		'''
-		criteria = (((gaf['region']==region) |
-					 (gaf['region']==proximal)) & 
-					(gaf['job_type']==job_type) & 					
-					(gaf['prestige']==profile[-1]))
-		'''
+
 		try:
 			ga = gaf.loc[criteria_base].copy()
 		except:
@@ -76,7 +71,6 @@ def select_ga(row, count):
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
-		#print(vals)
 		return vals
 
 
@@ -92,12 +86,7 @@ def select_ga(row, count):
 						  (gaf['region']==proximal)) & 
 						(gaf['job_type']==job_type) & 					
 						(gaf['prestige']==profile[-1]))
-		'''
-		criteria = (((gaf['region']==region) |
-					 (gaf['region']==proximal)) & 
-					(gaf['job_type']==job_type) & 					
-					(gaf['prestige']==profile[-1]))
-		'''
+
 		try:
 			ga = gaf.loc[criteria_base].copy()
 		except:
@@ -115,7 +104,6 @@ def select_ga(row, count):
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
-		#print(vals)
 		return vals
 
 	else:
@@ -128,16 +116,13 @@ def select_ug(row, count):
 	profile = row[0]
 	region = row[1]
 	school = row[2]
-	#print(school)
 
 	#First Matched Pair
 	if count == 0:
-		#print("ug if")
 		ugf = pd.read_csv("ug_school_key.csv")
 		criteria = ((ugf['profile']==profile) & 
 					(ugf['region']==region) & 
 					(ugf['sid']!=school))
-		#print(criteria)
 		ug = ugf.loc[criteria] 
 		
 		#Random Selection of Schools Meeting Criteria
@@ -159,29 +144,15 @@ def select_ug(row, count):
 
 	#Second Matched Pair
 	elif count == 1:
-		#print("ug elif")
 		ugf = pd.read_csv("ug_school_key_tmp.csv")
 		criteria = ((ugf['profile']==profile) & 
 					(ugf['region']==region) & 
 					(ugf['sid']!=school))
-		#print(criteria)
 		ug = ugf.loc[criteria]
-		#print(ug)
 		
 		#Random Selection of Schools Meeting Criteria
-		import pdb 
-		#pdb.set_trace()
-		try:
-			rows = np.random.choice(ug.index.values, 1)
-			df = ug.ix[rows]
-		except:
-			#pdb.set_trace()
-			print('except ug')
-			criteria = ((ugf['profile']==profile) & 
-						(ugf['sid']!=school))
-			ug = ugf.loc[criteria]
-			rows = np.random.choice(ug.index.values, 1)
-			df = ug.ix[rows]
+		rows = np.random.choice(ug.index.values, 1)
+		df = ug.ix[rows]
 
 		#Return Results
 		df = df.drop(['region', 'profile', 'sid'], axis=1)
@@ -255,8 +226,6 @@ def join_ex_pair(ex_df, cid):
 
 	#Experiment Pair DF
 	ex = ex_df.loc[(ex_df['cid']==cid)].reset_index()
-	#print(ex)
-
 
 	#Select GA Schools
 	ga_vals = ['department', 'sid', 'ga_sid', 'school', 'school_short', 
@@ -285,14 +254,11 @@ def join_ex_pair(ex_df, cid):
 
 		#Grad School
 		ga_result = select_ga(row[ga_keys].values.tolist()[0], i)
-		#print(ga_result)
 		row[ga_vals] = pd.DataFrame([ga_result], index=row.index)
 
 		#Undergrad
 		import pdb
-		#pdb.set_trace()
 		ug_result = select_ug(row[ug_keys].values.tolist()[0], i)
-		#print(ug_result)
 		row[ug_vals] = pd.DataFrame([ug_result], index=row.index)
 
 		#Internship
@@ -316,7 +282,6 @@ def join_experiment_profiles_counter(experiment_file):
 	#Join All Experiment Matched Pairs
 	matched_pairs = []
 	for c in cids:
-		#print(c)
 		pair = join_ex_pair(ex_full, c)
 		matched_pairs.append(pair)
 	
