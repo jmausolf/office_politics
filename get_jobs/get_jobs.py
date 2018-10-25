@@ -1,5 +1,6 @@
 import selenium, time, datetime, argparse
 from selenium import webdriver
+from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
 import ast, csv, os, pdb
 import numpy as np
@@ -106,19 +107,30 @@ def scroll_page(n, delay=3):
         time.sleep(rt(delay))
 
 
+
+
+def find_css(element, css):
+    return element.find_element_by_css_selector(css)
+
+
 def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
 
-    #TODO PEP8 Shorten Code
-    posts = d.find_elements_by_xpath("//div[@class='  row  result clickcard']")
-    job_names = [j.find_element_by_css_selector("a[class='turnstileLink']").get_attribute('title') for j in posts]
+    #Job Posts
+    post_loc = "xpath", "//div[@class='  row  result clickcard']"
+    posts = d.find_elements(*post_loc)
+
+    #Job Names
+    job_pat = "a[class='turnstileLink']"
+    job_names = [find_css(j, job_pat).get_attribute('title') for j in posts]
 
     if len(job_names) >= 1:
         pass
     else:
         return False
 
-    companies = [c.find_element_by_css_selector("span[class='company']").text for c in posts]
-    locations = [l.find_element_by_css_selector("span[class='location']").text for l in posts]
+    # Job Companies and Locations
+    companies = [find_css(c, "span[class='company']").text for c in posts]
+    locations = [find_css(l, "span[class='location']").text for l in posts]
     jobs = {'job':job_names,'company':companies,'location':locations}
     df = pd.DataFrame(jobs)
 
@@ -131,7 +143,6 @@ def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
         df.to_csv(f, index=False, header=True)
     else:
         df.to_csv(f, index=False, header=False, mode='a')
-
     return True
 
 
@@ -188,10 +199,10 @@ def perform_job_search(job_params):
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--time", default=3600, type=float, help="time in seconds")
-    parser.add_argument("-p", "--param", default='job_params.csv', type=str, help="name of job search parameters file")
-    parser.add_argument("-o", "--output", default='indeed_jobs', type=str, help="name of output file stem")
-    parser.add_argument("-s", "--seconds", default=5, type=int, help="number of seconds delay")
+    parser.add_argument("-t", "--time", default=3600, type=float)
+    parser.add_argument("-p", "--param", default='job_params.csv', type=str)
+    parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
+    parser.add_argument("-s", "--seconds", default=5, type=int)
     args = parser.parse_args()
 
     #Start Get Jobs Scraper
