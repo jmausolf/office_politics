@@ -1,6 +1,5 @@
 import selenium, time, datetime, argparse
 from selenium import webdriver
-from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
 import ast, csv, os, pdb
 import numpy as np
