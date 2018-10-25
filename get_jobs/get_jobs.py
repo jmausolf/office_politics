@@ -6,8 +6,6 @@ import numpy as np
 import pandas as pd
 
 
-
-
 def get_date():
     #Get Date for Filenames
     now = datetime.datetime.now()
@@ -52,14 +50,14 @@ def search_url(job_keyword, company):
 
 def qry_indeed_jobs(job_keyword, company, seconds):
     url = search_url(job_keyword, company)
-    driver.get(url)
+    d.get(url)
     time.sleep(rt(seconds))
     return url
 
 
 def indeed_home():
     url = "https://www.indeed.com/"
-    driver.get(url)
+    d.get(url)
     time.sleep(rt(2))
 
 
@@ -67,12 +65,12 @@ def query_job_home(job_keyword, company, city=None):
 
     #What Job?
     search_what = "{} company:{}".format(job_keyword, company)
-    what_job = driver.find_element_by_xpath("//input[@id='text-input-what']")
+    what_job = d.find_element_by_xpath("//input[@id='text-input-what']")
     what_job.send_keys(search_what)
     time.sleep(rt(3))
 
     #Where?
-    where_job = driver.find_element_by_xpath("//input[@id='text-input-where']")
+    where_job = d.find_element_by_xpath("//input[@id='text-input-where']")
     time.sleep(rt(3))
     where_job.clear()
     where_job.send_keys("Anywhere")
@@ -84,14 +82,14 @@ def query_job_search(job_keyword, company, city=None):
 
     #What Job?
     search_what = "{} company:{}".format(job_keyword, company)
-    what_job = driver.find_element_by_xpath("//input[@id='what']")
+    what_job = d.find_element_by_xpath("//input[@id='what']")
     what_job.clear()
     what_job.send_keys(search_what)
     what_job.send_keys(Keys.RETURN)
     time.sleep(rt(3))
 
     #Where?
-    where_job = driver.find_element_by_xpath("//input[@id='where']")
+    where_job = d.find_element_by_xpath("//input[@id='where']")
     time.sleep(rt(3))
     where_job.clear()
     where_job.send_keys("Anywhere")
@@ -104,13 +102,14 @@ def scroll_page(n, delay=3):
     print("[*] scrolling through all items in closet...")
     for i in range(1, n+1):
         scroll +=1
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        d.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(rt(delay))
 
 
-def load_job_cards(counter, filestem='indeed_jobs'):
+def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
 
-    posts = driver.find_elements_by_xpath("//div[@class='  row  result clickcard']")
+    #TODO PEP8 Shorten Code
+    posts = d.find_elements_by_xpath("//div[@class='  row  result clickcard']")
     job_names = [j.find_element_by_css_selector("a[class='turnstileLink']").get_attribute('title') for j in posts]
 
     if len(job_names) >= 1:
@@ -123,6 +122,10 @@ def load_job_cards(counter, filestem='indeed_jobs'):
     jobs = {'job':job_names,'company':companies,'location':locations}
     df = pd.DataFrame(jobs)
 
+    #Pass Job Keyword and Job Type to Output File
+    df['job_keyword'] = job_key
+    df['job_type'] = job_type
+
     f = "{}_{}.csv".format(filestem, get_date())
     if counter == 1:
         df.to_csv(f, index=False, header=True)
@@ -132,14 +135,14 @@ def load_job_cards(counter, filestem='indeed_jobs'):
     return True
 
 
-def get_jobs(job_keyword, company, counter, seconds):
-    qry_url = qry_indeed_jobs(job_keyword, company, seconds)
+def get_jobs(job_key, job_type, company, count, seconds):
+    qry_url = qry_indeed_jobs(job_key, company, seconds)
 
-    if load_job_cards(counter, filestem) is True:
+    if load_job_cards(count, job_key, job_type, filestem=filestem) is True:
         pass
-    elif load_job_cards(counter, filestem) is False:
+    elif load_job_cards(count, job_key, job_type, filestem=filestem) is False:
         print("[*] error searching for jobs at {}...".format(company))
-        error_logger(company, job_keyword, qry_url)
+        error_logger(company, job_key, qry_url)
         pass
 
 
@@ -153,7 +156,7 @@ def iterator(row):
         counter+=1
         print("[*] searching for {} jobs at {}...".format(k, company))
         try:
-            get_jobs(k, company, counter, seconds)
+            get_jobs(k, job_type, company, counter, seconds)
         except Exception as e:
             print('[*] ERROR: {}'.format(e))
             error_logger(company, k, search_url(company, k))
@@ -166,6 +169,7 @@ def perform_job_search(job_params):
     try:
         df = pd.read_csv(job_params)
         df['counter'] = df.index
+
         print(df)
         df.apply(iterator, axis=1)
 
@@ -182,8 +186,6 @@ def perform_job_search(job_params):
 
 
 
-
-
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--time", default=3600, type=float, help="time in seconds")
@@ -194,8 +196,8 @@ if __name__=="__main__":
 
     #Start Get Jobs Scraper
     starttime=time.time()
-    driver = webdriver.Firefox()
-    driver.implicitly_wait(0)
+    d = webdriver.Firefox()
+    d.implicitly_wait(0)
 
     #Time Delay: While Loop
     random_loop_time = rt(args.time)
@@ -209,7 +211,7 @@ if __name__=="__main__":
     #Run Main App
     perform_job_search(args.param)
     time.sleep(rt(5))
-    driver.close()
+    d.close()
 
 
 
