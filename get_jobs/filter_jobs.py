@@ -145,6 +145,10 @@ def job_selector(df, job_cols):
 				 )
 	df.loc[ideal_crit, 'ideal_job'] = True
 
+	#Summarize Ideal Jobs (How Many by Company)
+	df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
+
+
 	#Make Clean Location
 	cl = 'clean_location'
 	df[cl] = df.apply(clean_location, axis=1)
@@ -163,12 +167,31 @@ def job_selector(df, job_cols):
 	#Calculate Job Description Length
 	df['job_descr_len'] = df.apply(title_length, axis=1)
 
-
 	#Ranking
-	df['rank'] = df.groupby(['company', 'ideal_job'])['job_descr_len'].rank(method="first", ascending=True)
+	gb = ['company', 'ideal_job']
+	rc = 'job_descr_len'
+	df['rank'] = df.groupby(gb)[rc].rank(method="first", ascending=True)
 
+	#Sort Values
 	df.sort_values(by=['company', 'ideal_job', 'rank'], inplace=True)
 
+	#Job Selection Criteria
+	keep_crit = (
+					#Ideal Count >=1
+					(
+						( df['ideal_count'] > 0 ) &
+						( df['ideal_job'] == True ) &
+						( df['is_ctyst'] == True) &
+						( df['rank'] == 1) 
+
+					)
+
+					#Ideal Count ==0
+					#pass
+				)
+
+	#Keep Rows Matching Criteria
+	df = df.loc[keep_crit]
 
 	print(df)
 	df.to_csv('test.csv')
