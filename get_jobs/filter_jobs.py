@@ -2,7 +2,7 @@ import ast, csv, os, pdb
 import numpy as np
 import pandas as pd
 import re
-
+from string import punctuation
 
 #Rules:
 '''
@@ -102,11 +102,14 @@ def clean_location(row, col='location'):
 def clean_job(row, col='job'):
 	job = row[col]
 
+
 	#Additional Term Cleaning
 	job = remove_non_ascii_2(job)
 	job = parens_content_replace(job)
 
 	#TODO IF CITY exists in job, replace city with ''
+	city = row['office']
+	job = job.replace(city, '').strip().strip(punctuation)
 
 	job = job.replace(', ', '- ')
 	job = job.replace('- ', ' - ').replace(' -', ' - ')
@@ -152,8 +155,6 @@ def job_selector(df, job_cols):
 	df.loc[ctyst_crit, 'is_ctyst'] = True
 
 	#New City, ST Columns
-	#df['office'], df['office_state'] = df[''].str.split(delim, 1).str
-
 	df = split_vars('clean_location', 'office', 'office_state', ',', df)
 
 	#Make Clean Job Column
