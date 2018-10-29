@@ -3,6 +3,10 @@ import numpy as np
 import pandas as pd
 import re
 from string import punctuation
+import warnings
+
+# Suppress Grouping Warning
+warnings.filterwarnings("ignore", 'This pattern has match groups')
 
 #Rules:
 '''
@@ -18,21 +22,23 @@ Job title would be short
 
 '''
 
-df = pd.read_csv('indeed_jobs_2018-10-25.csv')
-#print(df)
-#print(df.shape)
+
+
 
 
 def remove_non_ascii_2(text):
     return re.sub(r'[^\x00-\x7F]+', "", text)
 
+
 def remove_punct(text):
     tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]', "", text)
     return re.sub(r'\s{2,}', " ", tmp)
 
+
 def remove_zip(text):
 	tmp = re.sub(r'\d{5}(?:[-\s]\d{4})?', "", text)
 	return re.sub(r'\s{2,}', " ", tmp).strip()
+
 
 def comma_replace(text):
     tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;._`|~\\[<=>@\\^-]', ",", text)
@@ -44,22 +50,15 @@ def select_punct_strip(text):
     tmp = re.sub(r'[]\\?!#$%(){}+*:;,._`\\|~\\[<=>@\\^]', "", text)
     return re.sub(r'\s{2,}', " ", tmp)
 
+
 def parens_content_replace(text):
 	return re.sub(r'\(.*?\)', '', text)
 
 
-#Isolate City, ST
-
-#^(.+)[,\\s]+(.+?)([A-Z]{2})$
-#Isolate City
 def split_vars(ovar, nvar1, nvar2, delim, df):
     df[nvar1], df[nvar2] = df[ovar].str.split(delim, 1).str
-    #df.drop([ovar], axis=1, inplace=True)
     return df
 
-
-#Filter Job (Search for Exact or Ideal Term)
-#TODO (Insert Ideal Term into CSV in GETJOBS.PY)
 
 def title_length(row, col='job'):
 	#gen a numeric column with the str count of characters of the job title
@@ -67,10 +66,10 @@ def title_length(row, col='job'):
 	return len(row[col])
 
 
-
 def job_type_to_key(job_type):
 	key = job_type.lower().replace('_', ' ')
 	return key
+
 
 def job_match(row, col='job_keyword', stem=False, n=4):
 	job = row['job'].lower()
@@ -90,38 +89,36 @@ def job_match(row, col='job_keyword', stem=False, n=4):
 
 def clean_location(row, col='location'):
 	l = row[col]
-
-	#Additional Term Cleaning
 	l = remove_non_ascii_2(l)
 	l = parens_content_replace(l)
 	l = remove_zip(l)
-
 	return l
 
 
 def clean_job(row, col='job'):
 	job = row[col]
 
-
 	#Additional Term Cleaning
 	job = remove_non_ascii_2(job)
 	job = parens_content_replace(job)
 
-	#TODO IF CITY exists in job, replace city with ''
+	#IF CITY exists in job, replace city with ''
 	city = row['office']
 	job = job.replace(city, '').strip().strip(punctuation)
-
 	job = job.replace(', ', '- ')
 	job = job.replace('- ', ' - ').replace(' -', ' - ')
 	job = select_punct_strip(job)
-	#job = comma_rep(remove_non_ascii_2(job)).title()
-	#print(job)
 	return job
 
 
+def job_selector(infile, job_cols):
 
+	date = infile.split('.csv')[0].split('_')[2]
+	outfile = 'filtered_jobs_{}.csv'.format(date)
 
-def job_selector(df, job_cols):
+	#Select Infile
+	#df = pd.read_csv('indeed_jobs_2018-10-25.csv')
+	df = pd.read_csv(infile)
 
 	#Input Quality Check
 	j = job_cols
@@ -162,7 +159,7 @@ def job_selector(df, job_cols):
 	df = split_vars('clean_location', 'office', 'office_state', ',', df)
 
 	#Make Clean Job Column
-	df['clean_job'] = df.apply(clean_job, axis=1)
+	df['position'] = df.apply(clean_job, axis=1)
 
 	#Calculate Job Description Length
 	df['job_descr_len'] = df.apply(title_length, axis=1)
@@ -191,13 +188,53 @@ def job_selector(df, job_cols):
 				)
 
 	#Keep Rows Matching Criteria
-	df = df.loc[keep_crit]
+	df = df.loc[keep_crit].reset_index()
 
-	print(df)
-	df.to_csv('test.csv')
+	#print(df)
+	df.to_csv(outfile, index=False)
 	return df
 
+#job_selector(df, ['job_type', 'job_keyword'])
+
+def index_to_n(index_number):
+
+	#Set to 1 index versus 0
+	i = int(index_number)+1
+
+	#Return as String
+	if i <= 9:
+		return 'c0'+str(i)
+	else:
+		return 'c'+str(i)
+
+def make_cid(row):
+	index = row['index']
+	return index_to_n(index)
+
+def employers(infile, outfile):
+
+	#df = pd.read_csv(infile)
+	date = infile.split('.csv')[0].split('_')[2]
+	print(date)
+
+	df = job_selector(infile, ['job_type', 'job_keyword'])
+
+	#print(df)
 
 
-job_selector(df, ['job_type', 'job_keyword'])
-#ideal_job(df, ['job_type'])
+	#Make Cleaned File
+	keep_cols = ['company', 'position', 'office', 'office_state']
+	df_clean = df[keep_cols].copy()
+
+	# Add Company ID Column
+	df_clean['index'] = df_clean.index
+	df_clean['cid'] = df_clean.apply(make_cid, axis=1)
+	df_clean.drop(['index'], axis=1, inplace=True)
+	print(df_clean)
+
+employers('indeed_jobs_2018-10-25.csv', 'indeed_jobs_2018-10-25')
+
+
+
+
+
