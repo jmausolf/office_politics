@@ -8,23 +8,6 @@ import warnings
 # Suppress Grouping Warning
 warnings.filterwarnings("ignore", 'This pattern has match groups')
 
-#Rules:
-'''
-Hopefully there is at least one job (or 15) per company
-Would like to keep the best job option
-Ideal job would match the job description (have the type/key in job title)
-Job title would be short
-
-
-
-
-
-
-'''
-
-
-
-
 
 def remove_non_ascii_2(text):
     return re.sub(r'[^\x00-\x7F]+', "", text)
@@ -61,8 +44,6 @@ def split_vars(ovar, nvar1, nvar2, delim, df):
 
 
 def title_length(row, col='job'):
-	#gen a numeric column with the str count of characters of the job title
-	#df['job_char'] = df['job'].str.len()
 	return len(row[col])
 
 
@@ -71,9 +52,14 @@ def job_type_to_key(job_type):
 	return key
 
 
-def job_match(row, col='job_keyword', stem=False, n=4):
+def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
 	job = row['job'].lower()
-	job_type = row[col]
+
+	if inject is False:
+		job_type = row[col]
+	else:
+		job_type = col
+
 	key = job_type_to_key(job_type)
 
 	#Additional Term Cleaning
@@ -85,6 +71,35 @@ def job_match(row, col='job_keyword', stem=False, n=4):
 		key = key[:-n]
 
 	return key in job
+
+
+def bk_or(*b):
+             return (np.logical_or(*b))
+
+def bkup_job_iterator(keywords, df):
+
+	bk = pd.DataFrame(index=df.index.copy())
+	#bk = df.copy()
+	#bk_crit = []
+	for k in keywords:
+
+		crit = df.apply(job_match, axis=1, col=k, inject=True)
+		#bk_crit.append(crit)
+
+		bk = pd.concat([bk, crit], axis=1)
+
+	bk.columns = keywords
+	#print(bk)
+
+	bk['bk_crit'] = bk.any(axis='columns')
+	#print(bk)
+	#print(len(bk_crit))
+	#print(bk_crit)
+
+
+	#eturn any(bk_crit)
+	return bk.any(axis='columns')
+
 
 
 def clean_location(row, col='location'):
@@ -111,6 +126,23 @@ def clean_job(row, col='job'):
 	return job
 
 
+def index_to_n(index_number):
+
+	#Set to 1 index versus 0
+	i = int(index_number)+1
+
+	#Return as String
+	if i <= 9:
+		return 'c0'+str(i)
+	else:
+		return 'c'+str(i)
+
+
+def make_cid(row):
+	index = row['index']
+	return index_to_n(index)
+
+
 def job_selector(infile, job_cols):
 
 	date = infile.split('.csv')[0].split('_')[2]
@@ -122,6 +154,7 @@ def job_selector(infile, job_cols):
 
 	#Input Quality Check
 	j = job_cols
+	print(j)
 	condition0 = ( ( len(j) == 2 ) )
 	assert condition0, "please provide exactly two columns as a list"
 
@@ -146,6 +179,7 @@ def job_selector(infile, job_cols):
 	df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
 
 
+
 	#Make Clean Location
 	cl = 'clean_location'
 	df[cl] = df.apply(clean_location, axis=1)
@@ -161,6 +195,29 @@ def job_selector(infile, job_cols):
 	#Make Clean Job Column
 	df['position'] = df.apply(clean_job, axis=1)
 
+	#Perform Secondary Jobs
+	df['backup_job'] = False
+
+	#bk_crit =  (
+	#			df.apply(job_match, axis=1, col='Research', inject=True) |
+	#			df.apply(job_match, axis=1, col='Data', inject=True)			
+	#			)
+
+	#print(type(bk_crit))
+	#print(bk_crit)
+	bk_crit = bkup_job_iterator(['Research', 'Data'], df)
+	#bk_crit = df['position'].isin(['Research', 'Data Scientist', 'Data Science'])
+	#print(bk_crit)
+	#bk_crit = df.isin(bk)
+	#df.loc[bk_crit, 'backup_job'] = True
+
+	#bk_crit =  (
+	#			df.apply(job_match, axis=1, col='Research', inject=True) |
+	#			df.apply(job_match, axis=1, col='Data', inject=True)			
+	#			)
+
+	df.loc[bk_crit, 'backup_job'] = True
+
 	#Calculate Job Description Length
 	df['job_descr_len'] = df.apply(title_length, axis=1)
 
@@ -169,70 +226,79 @@ def job_selector(infile, job_cols):
 	rc = 'job_descr_len'
 	df['rank'] = df.groupby(gb)[rc].rank(method="first", ascending=True)
 
+
+	#Create New Column (Secondary)
+	#In cases where an ideal job does not exist
+	#Only create for rows where ideal_count == 0
+	#which is only for companies where an ideal job dne
+	#perhaps brainstorm related keys in the job_params file...
+
 	#Sort Values
 	df.sort_values(by=['company', 'ideal_job', 'rank'], inplace=True)
+	df.to_csv('tmp.csv', index=False)
 
 	#Job Selection Criteria
-	keep_crit = (
-					#Ideal Count >=1
+	keep_crit = (	
+					#Select Ideal Job w/ Shortest Title and City/State
 					(
 						( df['ideal_count'] > 0 ) &
 						( df['ideal_job'] == True ) &
 						( df['is_ctyst'] == True) &
 						( df['rank'] == 1) 
 
-					)
+					) 
 
-					#Ideal Count ==0
+					#TODO Need Alt Criteria
+					#IF ideal does not exist
+					#Avoid equal treatment of conditions
+					#Select Job w/ Shortest Title and City/State
+					#(
+					#	( df['ideal_count'] == 0 ) &
+					#	( df['is_ctyst'] == True) &
+					#	( df['rank'] == 1) 			   
+					#)
 					#pass
 				)
 
 	#Keep Rows Matching Criteria
 	df = df.loc[keep_crit].reset_index()
 
-	#print(df)
+	print(df)
 	df.to_csv(outfile, index=False)
 	return df
 
-#job_selector(df, ['job_type', 'job_keyword'])
 
-def index_to_n(index_number):
 
-	#Set to 1 index versus 0
-	i = int(index_number)+1
 
-	#Return as String
-	if i <= 9:
-		return 'c0'+str(i)
-	else:
-		return 'c'+str(i)
+def get_employers(infile, outfile=None):
 
-def make_cid(row):
-	index = row['index']
-	return index_to_n(index)
+	#Outfile
+	if outfile is None:
+		date = infile.split('.csv')[0].split('_')[2]
+		outfile = '../employers_key.csv'
 
-def employers(infile, outfile):
-
-	#df = pd.read_csv(infile)
-	date = infile.split('.csv')[0].split('_')[2]
-	print(date)
-
-	df = job_selector(infile, ['job_type', 'job_keyword'])
+	jobs = job_selector(infile, ['job_type', 'job_keyword'])
 
 	#print(df)
 
 
 	#Make Cleaned File
 	keep_cols = ['company', 'position', 'office', 'office_state']
-	df_clean = df[keep_cols].copy()
+	df_tmp = jobs[keep_cols].copy()
 
 	# Add Company ID Column
-	df_clean['index'] = df_clean.index
-	df_clean['cid'] = df_clean.apply(make_cid, axis=1)
-	df_clean.drop(['index'], axis=1, inplace=True)
-	print(df_clean)
+	df_tmp['index'] = df_tmp.index
+	cid = df_tmp.apply(make_cid, axis=1)
+	df = pd.concat([cid, df_tmp[keep_cols]], axis=1)
+	cols = ['cid', 'company', 'position', 'office', 'office_state']
+	df.columns = cols
+	print(df)
 
-employers('indeed_jobs_2018-10-25.csv', 'indeed_jobs_2018-10-25')
+	df.to_csv(outfile, index=False)
+
+
+#get_employers('indeed_jobs_2018-10-25.csv')
+get_employers('indeed_jobs_test.csv')
 
 
 
