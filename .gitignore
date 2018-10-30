@@ -1,0 +1,14 @@
+*.csv
+*.pdf
+*.tex
+*.log
+*.mbox
+*.txt
+*.pyc
+*.DS_Store
+P01DH/
+P02DL/
+P03NH/
+P04NL/
+P05RH/
+P06RL/
