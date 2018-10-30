@@ -47,20 +47,30 @@ def title_length(row, col='job'):
 	return len(row[col])
 
 
-def job_type_to_key(job_type):
-	key = job_type.lower().replace('_', ' ')
-	return key
+def job_type_to_key(job_type, lower=True):
+	if lower is True:
+		return job_type.lower().replace('_', ' ')
+	else:
+		return job_type.replace('_', ' ')
 
 
 def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
-	job = row['job'].lower()
 
+	#Determine Type of Keyword
+	#From a Row or Direct Inject
 	if inject is False:
 		job_type = row[col]
 	else:
 		job_type = col
 
-	key = job_type_to_key(job_type)
+	#Case for Job Search
+	#Based on Case of Key
+	if job_type.isupper():
+		job = row['job']
+		key = job_type_to_key(job_type, lower=False)
+	else:
+		job = row['job'].lower()
+		key = job_type_to_key(job_type, lower=True)
 
 	#Additional Term Cleaning
 	job = remove_punct(remove_non_ascii_2(job))
@@ -69,6 +79,7 @@ def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
 	#Isolate Stem
 	if stem is True:
 		key = key[:-n]
+		print(key)
 
 	return key in job
 
@@ -79,25 +90,28 @@ def bk_or(*b):
 def bkup_job_iterator(keywords, df):
 
 	bk = pd.DataFrame(index=df.index.copy())
-	#bk = df.copy()
-	#bk_crit = []
+	cols = []
 	for k in keywords:
 
+		#Full Key Search
 		crit = df.apply(job_match, axis=1, col=k, inject=True)
-		#bk_crit.append(crit)
-
 		bk = pd.concat([bk, crit], axis=1)
+		cols.append(k)
 
-	bk.columns = keywords
-	#print(bk)
+		#Stemmed Key Search
+		if len(k) > 4:
+			stem_n = len(k)//3
+			crit = df.apply(job_match, axis=1, col=k, inject=True, 
+						stem=True, n=stem_n)
+			bk = pd.concat([bk, crit], axis=1)
+			cols.append('{}_stemmed'.format(k))
+		else:
+			pass
 
+	bk.columns = cols
 	bk['bk_crit'] = bk.any(axis='columns')
 	#print(bk)
-	#print(len(bk_crit))
-	#print(bk_crit)
 
-
-	#eturn any(bk_crit)
 	return bk.any(axis='columns')
 
 
@@ -178,7 +192,16 @@ def job_selector(infile, job_cols):
 	#Summarize Ideal Jobs (How Many by Company)
 	df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
 
+	#Perform Backup Jobs
+	df['bkup_job'] = False
+	bk_crit = bkup_job_iterator(['Research', 'Scientist', 'Data', 'AI'], df)
+	df.loc[bk_crit, 'bkup_job'] = True
 
+	#Ensure Backup Jobs Are True Only If Not Also Ideal Jobs
+	df.loc[( df['ideal_job'] == True ), 'bkup_job'] = False
+
+	#Summarize Backup Jobs (How Many by Company)
+	df['bkup_count'] = df.groupby(['company'])['bkup_job'].transform('sum')
 
 	#Make Clean Location
 	cl = 'clean_location'
@@ -195,34 +218,13 @@ def job_selector(infile, job_cols):
 	#Make Clean Job Column
 	df['position'] = df.apply(clean_job, axis=1)
 
-	#Perform Secondary Jobs
-	df['backup_job'] = False
-
-	#bk_crit =  (
-	#			df.apply(job_match, axis=1, col='Research', inject=True) |
-	#			df.apply(job_match, axis=1, col='Data', inject=True)			
-	#			)
-
-	#print(type(bk_crit))
-	#print(bk_crit)
-	bk_crit = bkup_job_iterator(['Research', 'Data'], df)
-	#bk_crit = df['position'].isin(['Research', 'Data Scientist', 'Data Science'])
-	#print(bk_crit)
-	#bk_crit = df.isin(bk)
-	#df.loc[bk_crit, 'backup_job'] = True
-
-	#bk_crit =  (
-	#			df.apply(job_match, axis=1, col='Research', inject=True) |
-	#			df.apply(job_match, axis=1, col='Data', inject=True)			
-	#			)
-
-	df.loc[bk_crit, 'backup_job'] = True
-
 	#Calculate Job Description Length
 	df['job_descr_len'] = df.apply(title_length, axis=1)
 
+
+
 	#Ranking
-	gb = ['company', 'ideal_job']
+	gb = ['company', 'ideal_job', 'bkup_job']
 	rc = 'job_descr_len'
 	df['rank'] = df.groupby(gb)[rc].rank(method="first", ascending=True)
 
@@ -246,17 +248,20 @@ def job_selector(infile, job_cols):
 						( df['is_ctyst'] == True) &
 						( df['rank'] == 1) 
 
-					) 
+					) ^
 
 					#TODO Need Alt Criteria
 					#IF ideal does not exist
 					#Avoid equal treatment of conditions
 					#Select Job w/ Shortest Title and City/State
-					#(
-					#	( df['ideal_count'] == 0 ) &
-					#	( df['is_ctyst'] == True) &
-					#	( df['rank'] == 1) 			   
-					#)
+					(
+						( df['ideal_count'] == 0 ) &
+						( df['bkup_count'] > 0 ) &
+						( df['bkup_job'] == True ) &
+						( df['ideal_job'] == False ) &
+						( df['is_ctyst'] == True) &
+						( df['rank'] == 1) 			   
+					)
 					#pass
 				)
 
