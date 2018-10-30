@@ -173,13 +173,17 @@ def iterator(row):
             pass
 
 
-def perform_job_search(job_params):
+def perform_job_search(companies, job_params):
     print("[*] DEPLOYING JOB SEARCH")
 
-    try:
-        df = pd.read_csv(job_params)
-        df['counter'] = df.index
+    #Join Companies and Job Params, Drop Backup Keys
+    cid = pd.read_csv(companies)
+    key = pd.read_csv(job_params)
+    df = cid.merge(key, on='job_type')
+    df = df.drop(['backup_keys'], axis=1)
 
+    try:
+        df['counter'] = df.index
         print(df)
         df.apply(iterator, axis=1)
 
@@ -200,6 +204,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--time", default=3600, type=float)
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
+    parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
     parser.add_argument("-s", "--seconds", default=5, type=int)
     args = parser.parse_args()
@@ -219,7 +224,7 @@ if __name__=="__main__":
     filestem = args.output
 
     #Run Main App
-    perform_job_search(args.param)
+    perform_job_search(args.cid, args.param)
     time.sleep(rt(5))
     d.close()
 
