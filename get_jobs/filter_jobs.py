@@ -79,15 +79,50 @@ def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
 	#Isolate Stem
 	if stem is True:
 		key = key[:-n]
-		print(key)
 
 	return key in job
 
 
-def bk_or(*b):
-             return (np.logical_or(*b))
+def bkup_jobs(bkup_key, job, stem=False):
 
-def bkup_job_iterator(keywords, df):
+	if bkup_key.isupper():
+		job = job
+		key = job_type_to_key(bkup_key, lower=False)
+	else:
+		job = job.lower()
+		key = job_type_to_key(bkup_key, lower=True)
+
+	#Additional Term Cleaning
+	job = remove_punct(remove_non_ascii_2(job))
+	key = remove_punct(remove_non_ascii_2(key))
+
+	#Isolate Stem
+	if stem is True:
+		if len(key) > 4:
+			n = len(key)//3
+			key = key[:-n]
+		else:
+			pass
+
+	return key in job
+
+
+def job_match_bkup(row, col='backup_keys'):
+
+	bkup_keys = ast.literal_eval(row[col])
+	job = row['job']
+
+	#Result Original
+	r1 = [bkup_jobs(key, job) for key in bkup_keys]
+
+	#Result Stemmed
+	r2 = [bkup_jobs(key, job, stem=True) for key in bkup_keys]
+
+	results = r1+r2
+	return any(results)
+	
+
+def bkup_job_iterator(df, keywords):
 
 	bk = pd.DataFrame(index=df.index.copy())
 	cols = []
@@ -110,10 +145,7 @@ def bkup_job_iterator(keywords, df):
 
 	bk.columns = cols
 	bk['bk_crit'] = bk.any(axis='columns')
-	#print(bk)
-
 	return bk.any(axis='columns')
-
 
 
 def clean_location(row, col='location'):
@@ -160,15 +192,14 @@ def make_cid(row):
 def job_selector(infile, job_cols):
 
 	date = infile.split('.csv')[0].split('_')[2]
-	outfile = 'filtered_jobs_{}.csv'.format(date)
+	outfile_all = 'all_filtered_jobs_{}.csv'.format(date)
+	outfile_select = 'selected_filtered_jobs_{}.csv'.format(date)
 
 	#Select Infile
-	#df = pd.read_csv('indeed_jobs_2018-10-25.csv')
-	df = pd.read_csv(infile)
+	df = merge_companies_job_params(infile)
 
 	#Input Quality Check
 	j = job_cols
-	print(j)
 	condition0 = ( ( len(j) == 2 ) )
 	assert condition0, "please provide exactly two columns as a list"
 
@@ -194,7 +225,7 @@ def job_selector(infile, job_cols):
 
 	#Perform Backup Jobs
 	df['bkup_job'] = False
-	bk_crit = bkup_job_iterator(['Research', 'Scientist', 'Data', 'AI'], df)
+	bk_crit = df.apply(job_match_bkup, axis=1)
 	df.loc[bk_crit, 'bkup_job'] = True
 
 	#Ensure Backup Jobs Are True Only If Not Also Ideal Jobs
@@ -221,23 +252,14 @@ def job_selector(infile, job_cols):
 	#Calculate Job Description Length
 	df['job_descr_len'] = df.apply(title_length, axis=1)
 
-
-
 	#Ranking
 	gb = ['company', 'ideal_job', 'bkup_job']
 	rc = 'job_descr_len'
 	df['rank'] = df.groupby(gb)[rc].rank(method="first", ascending=True)
 
-
-	#Create New Column (Secondary)
-	#In cases where an ideal job does not exist
-	#Only create for rows where ideal_count == 0
-	#which is only for companies where an ideal job dne
-	#perhaps brainstorm related keys in the job_params file...
-
 	#Sort Values
 	df.sort_values(by=['company', 'ideal_job', 'rank'], inplace=True)
-	df.to_csv('tmp.csv', index=False)
+	df.to_csv(outfile_all, index=False)
 
 	#Job Selection Criteria
 	keep_crit = (	
@@ -250,9 +272,6 @@ def job_selector(infile, job_cols):
 
 					) ^
 
-					#TODO Need Alt Criteria
-					#IF ideal does not exist
-					#Avoid equal treatment of conditions
 					#Select Job w/ Shortest Title and City/State
 					(
 						( df['ideal_count'] == 0 ) &
@@ -262,14 +281,20 @@ def job_selector(infile, job_cols):
 						( df['is_ctyst'] == True) &
 						( df['rank'] == 1) 			   
 					)
-					#pass
 				)
 
 	#Keep Rows Matching Criteria
-	df = df.loc[keep_crit].reset_index()
+	df = df.loc[keep_crit]
+	df.to_csv(outfile_select, index=False)
+	return df
 
-	print(df)
-	df.to_csv(outfile, index=False)
+
+def merge_companies_job_params(jobsfile, 
+							   job_params='job_params.csv'):
+
+	jobs = pd.read_csv(jobsfile)
+	key = pd.read_csv(job_params)
+	df = jobs.merge(key, on='job_type')
 	return df
 
 
@@ -284,12 +309,9 @@ def get_employers(infile, outfile=None):
 
 	jobs = job_selector(infile, ['job_type', 'job_keyword'])
 
-	#print(df)
-
-
 	#Make Cleaned File
 	keep_cols = ['company', 'position', 'office', 'office_state']
-	df_tmp = jobs[keep_cols].copy()
+	df_tmp = jobs[keep_cols].copy().reset_index()
 
 	# Add Company ID Column
 	df_tmp['index'] = df_tmp.index
@@ -303,7 +325,8 @@ def get_employers(infile, outfile=None):
 
 
 #get_employers('indeed_jobs_2018-10-25.csv')
-get_employers('indeed_jobs_test.csv')
+get_employers('indeed_jobs_2018-10-30.csv')
+#get_employers('indeed_jobs_test.csv')
 
 
 
