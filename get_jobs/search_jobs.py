@@ -140,9 +140,10 @@ def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
     f = "{}_{}.csv".format(filestem, get_date())
     if counter == 1:
         df.to_csv(f, index=False, header=True)
+        return True
     else:
         df.to_csv(f, index=False, header=False, mode='a')
-    return True
+        return True
 
 
 def get_jobs(job_key, job_type, company, count, seconds):
@@ -150,10 +151,12 @@ def get_jobs(job_key, job_type, company, count, seconds):
 
     if load_job_cards(count, job_key, job_type, filestem=filestem) is True:
         pass
-    elif load_job_cards(count, job_key, job_type, filestem=filestem) is False:
+    else:
         print("[*] error searching for jobs at {}...".format(company))
         error_logger(company, job_key, qry_url)
-        pass
+        #import pdb; pdb.set_trace()
+
+
 
 
 def iterator(row):
@@ -170,7 +173,7 @@ def iterator(row):
         except Exception as e:
             print('[*] ERROR: {}'.format(e))
             error_logger(company, k, search_url(company, k))
-            pass
+            continue
 
 
 def perform_job_search(companies, job_params):
@@ -200,22 +203,19 @@ def perform_job_search(companies, job_params):
 
 
 
+
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--time", default=3600, type=float)
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
     parser.add_argument("-s", "--seconds", default=5, type=int)
     args = parser.parse_args()
-
+    
     #Start Get Jobs Scraper
     starttime=time.time()
     d = webdriver.Firefox()
     d.implicitly_wait(0)
-
-    #Time Delay: While Loop
-    random_loop_time = rt(args.time)
 
     #Set Global Parameters
     global seconds
@@ -227,8 +227,7 @@ if __name__=="__main__":
     perform_job_search(args.cid, args.param)
     time.sleep(rt(5))
     d.close()
-
-
+    
 
 
 

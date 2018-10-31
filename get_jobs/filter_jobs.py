@@ -315,8 +315,6 @@ def merge_companies_job_params(jobsfile,
 	return df
 
 
-
-
 def get_employers(infile, outfile=None):
 
 	#Outfile
@@ -341,10 +339,6 @@ def get_employers(infile, outfile=None):
 	df.to_csv(outfile, index=False)
 
 
-#get_employers('indeed_jobs_2018-10-25.csv')
-#get_employers('indeed_jobs_2018-10-30.csv')
-#get_employers('indeed_jobs_test.csv')
-get_employers('indeed_jobs_errors.csv')
 
 
 
