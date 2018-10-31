@@ -194,6 +194,7 @@ def job_selector(infile, job_cols):
 	date = infile.split('.csv')[0].split('_')[2]
 	outfile_all = 'all_filtered_jobs_{}.csv'.format(date)
 	outfile_select = 'selected_filtered_jobs_{}.csv'.format(date)
+	outfile_errors = 'errors_filtered_jobs_{}.csv'.format(date)
 
 	#Select Infile
 	df = merge_companies_job_params(infile)
@@ -283,6 +284,22 @@ def job_selector(infile, job_cols):
 					)
 				)
 
+	#Log Companies Lacking an Ideal or Backup Job
+	missing_jobs = 	(
+						( df['ideal_count'] == 0 ) &
+						( df['bkup_count'] == 0 ) 
+ 
+					)
+
+
+	#Job Filter Null Results
+	errors = df.loc[missing_jobs]
+	if errors.shape[0] > 0:
+		errors.to_csv(outfile_errors, index=False)
+	else:
+		pass
+
+
 	#Keep Rows Matching Criteria
 	df = df.loc[keep_crit]
 	df.to_csv(outfile_select, index=False)
@@ -325,8 +342,9 @@ def get_employers(infile, outfile=None):
 
 
 #get_employers('indeed_jobs_2018-10-25.csv')
-get_employers('indeed_jobs_2018-10-30.csv')
+#get_employers('indeed_jobs_2018-10-30.csv')
 #get_employers('indeed_jobs_test.csv')
+get_employers('indeed_jobs_errors.csv')
 
 
 
