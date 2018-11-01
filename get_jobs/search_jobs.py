@@ -117,7 +117,8 @@ def find_css(element, css):
     return element.find_element_by_css_selector(css)
 
 
-def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
+def load_job_tiles(counter, job_key, job_type, 
+                   company, filestem='indeed_jobs'):
 
     #Job Posts
     post_loc = "xpath", "//div[@class='  row  result clickcard']"
@@ -141,6 +142,7 @@ def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
     #Pass Job Keyword and Job Type to Output File
     df['job_keyword'] = job_key
     df['job_type'] = job_type
+    df['qry_company'] = company
 
     f = "{}_{}.csv".format(filestem, get_date())
     exists = os.path.isfile('./{}'.format(f))
@@ -158,7 +160,9 @@ def load_job_cards(counter, job_key, job_type, filestem='indeed_jobs'):
 def get_jobs(job_key, job_type, company, count, seconds):
     qry_url = qry_indeed_jobs(job_key, company, seconds)
 
-    if load_job_cards(count, job_key, job_type, filestem=filestem) is True:
+    job_tiles = load_job_tiles(count, job_key, job_type, 
+                               company, filestem=filestem)
+    if job_tiles is True:
         pass
     else:
         print("[*] error searching for jobs at {}...".format(company))
@@ -174,7 +178,7 @@ def iterator(row):
     job_type = row[1]
     keywords = ast.literal_eval(row[2])
     counter = row[3]
-    company_id = row[4]
+    #company_id = row[4]
 
     #print(row)
 
@@ -182,7 +186,7 @@ def iterator(row):
     n = len(keywords)
     try:
 
-        is_collected = check_collected(company_id)
+        is_collected = check_collected(company)
         if is_collected is True:
             print("company is already collected...")
             return
@@ -200,7 +204,7 @@ def iterator(row):
                         writer = csv.writer(f)
                         writer.writerow(row.tolist())
 
-                        update_remaining_jobs(company_id)
+                        update_remaining_jobs(company)
 
                 else:
                     pass
@@ -214,17 +218,17 @@ def iterator(row):
 
 
 
-def update_remaining_jobs(company_id):
+def update_remaining_jobs(company):
 
     df = pd.read_csv('tmp_to_collect.csv')
-    to_collect = df[df.cid != company_id]
+    to_collect = df[df.company != company]
     to_collect.to_csv('tmp_to_collect.csv', index=False)
 
 
-def check_collected(company_id):
+def check_collected(company):
 
     df = pd.read_csv('tmp_collected.csv')
-    collected = df[df.cid == company_id]
+    collected = df[df.company == company]
     #print(collected)
     #print(collected.shape[0])
     if collected.shape[0] > 0:
@@ -267,6 +271,7 @@ def perform_job_search(jobs):
         to_collect = remaining_jobs(jobs, attempts)
         print(to_collect)
         to_collect.apply(iterator, axis=1)
+        import pdb; pdb.set_trace()
 
         #Inspect Results
         f = "{}_{}.csv".format(filestem, get_date())
@@ -318,7 +323,7 @@ if __name__=="__main__":
     df = cid.merge(key, on='job_type')
     df = df.drop(['backup_keys'], axis=1)
     df['counter'] = df.index
-    df['cid'] = df.index
+    #df['cid'] = df.index
 
     #Run Main App
     #while complete is False:
