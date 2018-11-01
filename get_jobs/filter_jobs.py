@@ -9,16 +9,6 @@ import warnings
 warnings.filterwarnings("ignore", 'This pattern has match groups')
 
 
-#TODO Need to
-#(1) add intended company col to input file
-#(2) create a cleaned company filter such that case is left as is 
-	#(which will retain Walmart eCommerce or ConocoPhilips (which title case would not))
-	#but convert all caps > 4, to title case so WALGREENS becomes Walgreens
-#(3) create a filter to see if .lower company in intended company, if not exclude from ideal/backup job
-#(4) grouping needs to be by intended company, not scraper company, otherwise, Walmart / Walmart eCommerece, etc 
-		#treated as discrete companies
-
-
 def remove_non_ascii_2(text):
     return re.sub(r'[^\x00-\x7F]+', "", text)
 
@@ -411,7 +401,7 @@ def get_employers(infile, outfile=None):
 	jobs = job_selector(infile, ['job_type', 'job_keyword'])
 
 	#Make Cleaned File
-	keep_cols = ['company', 'position', 'office', 'office_state']
+	keep_cols = ['qry_company', 'position', 'office', 'office_state']
 	df_tmp = jobs[keep_cols].copy().reset_index()
 
 	# Add Company ID Column
@@ -424,14 +414,5 @@ def get_employers(infile, outfile=None):
 
 	df.to_csv(outfile, index=False)
 
-
-
-
-
-
-# Filter Indeed Jobs
-#indeed_jobs = "{}_{}.csv".format('indeed_jobs_bk', get_date())
-get_employers('indeed_jobs_bk_2018-11-01.csv')
-#get_employers('indeed_jobs_2018-11-01.csv')
 
 
