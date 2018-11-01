@@ -24,7 +24,7 @@ def remove_non_ascii_2(text):
 
 
 def remove_punct(text):
-    tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]', "", text)
+    tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]', " ", text)
     return re.sub(r'\s{2,}', " ", tmp)
 
 
@@ -34,13 +34,13 @@ def remove_zip(text):
 
 
 def comma_replace(text):
-    tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;._`|~\\[<=>@\\^-]', ",", text)
+    tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;._`|~\\[<=>@\\^-]', " , ", text)
     return re.sub(r'\s{2,}', " ", tmp)
 
 
 def select_punct_strip(text):
 	#exceptions:: / \ - &
-    tmp = re.sub(r'[]\\?!#$%(){}+*:;,._`\\|~\\[<=>@\\^]', "", text)
+    tmp = re.sub(r'[]\\?!#$%(){}+*:;,._`\\|~\\[<=>@\\^]', " ", text)
     return re.sub(r'\s{2,}', " ", tmp)
 
 
@@ -181,6 +181,37 @@ def clean_job(row, col='job'):
 	job = select_punct_strip(job)
 	return job
 
+def clean_company(row, col='web_company'):
+	c = row[col]
+	c = remove_non_ascii_2(c)	
+	c = remove_punct(c)
+
+	if c.isupper() and len(c) > 4:
+		c = c.title()
+
+	return c
+
+
+def company_match(row, 
+				  qry_col='qry_company', 
+				  res_col='company',
+				  exact=True):
+	'''qry_col = company queried for :: res_col = result from web'''
+
+	qry_company = row[qry_col].lower()
+	res_company = row[res_col].lower()
+
+	if exact is True:
+		if qry_company == res_company:
+			return True	
+		else:
+			return False
+	else:
+		if qry_company != res_company and qry_company in res_company:
+			return True
+		else:
+			return False
+
 
 def index_to_n(index_number):
 
@@ -221,6 +252,26 @@ def job_selector(infile, job_cols):
 				 )
 	assert condition1, "please provide only string columns in list"
 
+	#Rename Company and Make Clean Company Column
+	df.rename(columns={'company':'web_company'}, inplace=True)
+	df['company'] = df.apply(clean_company, axis=1)
+
+	#Match Companies
+	df['cid_match'] = df.apply(company_match, axis=1, exact=True)
+	df['maybe_cid_match'] = df.apply(company_match, axis=1, exact=False)
+
+	#Summarize Company Matches
+
+	#Exact Matches
+	gb = ['qry_company']
+	cm = 'cid_match'
+	df['cid_match_count'] = df.groupby(gb)[cm].transform('sum')
+
+	#Possible Matches
+	cm = 'maybe_cid_match'
+	df['maybe_cid_match_count'] = df.groupby(gb)[cm].transform('sum')
+
+
 	#Find Ideal Jobs
 	df['ideal_job'] = False
 	ideal_crit = (
@@ -232,7 +283,10 @@ def job_selector(infile, job_cols):
 	df.loc[ideal_crit, 'ideal_job'] = True
 
 	#Summarize Ideal Jobs (How Many by Company)
-	df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
+	#df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
+	df['ideal_count'] = df.groupby(['qry_company'])['ideal_job'].transform('sum')
+
+
 
 	#Perform Backup Jobs
 	df['bkup_job'] = False
@@ -243,7 +297,7 @@ def job_selector(infile, job_cols):
 	df.loc[( df['ideal_job'] == True ), 'bkup_job'] = False
 
 	#Summarize Backup Jobs (How Many by Company)
-	df['bkup_count'] = df.groupby(['company'])['bkup_job'].transform('sum')
+	df['bkup_count'] = df.groupby(['qry_company'])['bkup_job'].transform('sum')
 
 	#Make Clean Location
 	cl = 'clean_location'
@@ -264,33 +318,55 @@ def job_selector(infile, job_cols):
 	df['job_descr_len'] = df.apply(title_length, axis=1)
 
 	#Ranking
-	gb = ['company', 'ideal_job', 'bkup_job']
+	gb = ['qry_company', 'ideal_job', 'bkup_job', 'cid_match']
 	rc = 'job_descr_len'
 	df['rank'] = df.groupby(gb)[rc].rank(method="first", ascending=True)
 
 	#Sort Values
-	df.sort_values(by=['company', 'ideal_job', 'rank'], inplace=True)
+	df.sort_values(by=['qry_company', 'ideal_job', 'rank'], inplace=True)
 	df.to_csv(outfile_all, index=False)
 
 	#Job Selection Criteria
 	keep_crit = (	
 					#Select Ideal Job w/ Shortest Title and City/State
+					#Where Company Completely Matches
 					(
 						( df['ideal_count'] > 0 ) &
 						( df['ideal_job'] == True ) &
 						( df['is_ctyst'] == True) &
+						( df['cid_match'] == True) &
 						( df['rank'] == 1) 
 
 					) ^
 
-					#Select Job w/ Shortest Title and City/State
+					#If No Company Completely Matches
+					#Select Ideal Job w/ Shortest Title and City/State
+					#Where Company Maybe Matches
+					(
+						( df['ideal_count'] > 0 ) &
+						( df['ideal_job'] == True ) &
+						( df['is_ctyst'] == True) &
+						( df['cid_match'] == False) &
+						( df['cid_match_count'] == 0) &
+						( df['maybe_cid_match'] == True) &
+						( df['maybe_cid_match_count'] > 0) &
+						( df['rank'] == 1) 
+
+					) ^
+
+					#Otherwise
+					#Select Backup Job w/ Shortest Title and City/State
 					(
 						( df['ideal_count'] == 0 ) &
 						( df['bkup_count'] > 0 ) &
 						( df['bkup_job'] == True ) &
 						( df['ideal_job'] == False ) &
 						( df['is_ctyst'] == True) &
-						( df['rank'] == 1) 			   
+						( df['rank'] == 1) &
+						(
+							( df['cid_match'] == True) |
+							( df['maybe_cid_match'] == True)
+						)		   
 					)
 				)
 
@@ -352,5 +428,10 @@ def get_employers(infile, outfile=None):
 
 
 
+
+# Filter Indeed Jobs
+#indeed_jobs = "{}_{}.csv".format('indeed_jobs_bk', get_date())
+get_employers('indeed_jobs_bk_2018-11-01.csv')
+#get_employers('indeed_jobs_2018-11-01.csv')
 
 
