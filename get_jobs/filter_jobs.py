@@ -9,6 +9,16 @@ import warnings
 warnings.filterwarnings("ignore", 'This pattern has match groups')
 
 
+#TODO Need to
+#(1) add intended company col to input file
+#(2) create a cleaned company filter such that case is left as is 
+	#(which will retain Walmart eCommerce or ConocoPhilips (which title case would not))
+	#but convert all caps > 4, to title case so WALGREENS becomes Walgreens
+#(3) create a filter to see if .lower company in intended company, if not exclude from ideal/backup job
+#(4) grouping needs to be by intended company, not scraper company, otherwise, Walmart / Walmart eCommerece, etc 
+		#treated as discrete companies
+
+
 def remove_non_ascii_2(text):
     return re.sub(r'[^\x00-\x7F]+', "", text)
 
