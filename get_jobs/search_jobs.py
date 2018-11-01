@@ -271,7 +271,7 @@ def perform_job_search(jobs):
         to_collect = remaining_jobs(jobs, attempts)
         print(to_collect)
         to_collect.apply(iterator, axis=1)
-        import pdb; pdb.set_trace()
+        #import pdb; pdb.set_trace()
 
         #Inspect Results
         f = "{}_{}.csv".format(filestem, get_date())
@@ -330,9 +330,11 @@ if __name__=="__main__":
     while attempts < 3 and complete is False:
 
         perform_job_search(df)
-        
+            
     time.sleep(rt(5))
     d.close()
+
+
     
 
 
