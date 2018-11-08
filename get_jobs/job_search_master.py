@@ -64,49 +64,109 @@ def get_jobs_scraper(params,
 
 #TODO Make One That Runs for List of Scraped CSVS...
 
+def dedupe_company_jobs(df):
+
+	#Make Rank
+	gb = ['company']
+	rc = 'job_type_rank'
+	df['rank'] = df.groupby(gb)[rc].rank(method="first", ascending=True)
+
+
+	#Filter Criteria
+	keep_crit = (	( df['rank'] == 1) ) 
+	df = df.loc[keep_crit]
+	return df
+
+
+def make_clean_df(df_in):
+
+	#Sort by Job Type and Company
+	df_in.sort_values(by=['job_type', 'company'], inplace=True)
+
+	#Make Cleaned File
+	keep_cols = ['company', 'position', 'office', 'office_state', 
+			'job_type']
+	df_tmp = df_in[keep_cols].copy().reset_index()
+
+	# Add Company ID Column
+	df_tmp['index'] = df_tmp.index
+	cid = df_tmp.apply(make_cid, axis=1)
+	df = pd.concat([cid, df_tmp[keep_cols]], axis=1)
+	cols = ['cid', 'company', 'position', 'office', 'office_state', 
+			'job_type']
+	df.columns = cols
+	return df
+
 def main(master_company,
 		 params,
 		 cid,
 		 output,
 		 seconds,
-		 pyver):
+		 pyver,
+		 scrape=False):
+
+	#Define Intermediate Output File
+	f = "../employers_key_{}.csv".format(get_date())
+	exists = os.path.isfile('./{}'.format(f))
+
+	#Define Final Output File
+	final_outfile = '../employers_key.csv'
 
 
-	company_csvs = make_company_csvs(master_company)
-	print(company_csvs)
+	if scrape is True:
 
-	for c in company_csvs:
+		company_csvs = make_company_csvs(master_company)
+		print(company_csvs)
 
-		#Extract Job Rank
-		jt_rank = c.replace('companies_', '').replace('.csv', '')
+		for c in company_csvs:
 
-		#Run Webscraper for Each Company/Job Type CSV
-		scraper_out = 'indeed_jobs_{}'.format(jt_rank)
-		get_jobs_scraper(params, c, scraper_out, seconds, pyver)
+			#Extract Job Rank
+			jt_rank = c.replace('companies_', '').replace('.csv', '')
 
-		#Run Filter
-		scraper_stem = scraper_out.replace('.csv', '')
-		indeed_jobs = "{}_{}.csv".format(scraper_stem, get_date())
-		filter_out = 'filtered_employers_{}.csv'.format(jt_rank)		
-		df = get_employers(indeed_jobs, filter_out)
+			#Run Webscraper for Each Company/Job Type CSV
+			scraper_out = 'indeed_jobs_{}'.format(jt_rank)
+			get_jobs_scraper(params, c, scraper_out, seconds, pyver)
 
-		#Add Column Job_Type_Rank
-		jt_rank = c.replace('companies_', '').replace('.csv', '')
-		df['job_type_rank'] = jt_rank
+			#Run Filter
+			scraper_stem = scraper_out.replace('.csv', '')
+			indeed_jobs = "{}_{}.csv".format(scraper_stem, get_date())
+			filter_out = 'filtered_employers_{}.csv'.format(jt_rank)		
+			df = get_employers(indeed_jobs, filter_out)
 
-		#Create Appended DF
-		f = "../employers_key_{}.csv".format(get_date())
-		exists = os.path.isfile('./{}'.format(f))
-		if not exists:
-			df.to_csv(f, index=False, header=True)
-		else:
-			df.to_csv(f, index=False, header=False, mode='a')
-		
+			#Add Column Job_Type_Rank
+			jt_rank = c.replace('companies_', '').replace('.csv', '')
+			df['job_type_rank'] = jt_rank
 
+			#Create Appended DF
+			if not exists:
+				df.to_csv(f, index=False, header=True)
+			else:
+				df.to_csv(f, index=False, header=False, mode='a')
+			
 
-	#TODO
-	#Function to wipe cid, dedupe created f by company id, keep only
-	#the job with the highest ranked job_type
+			#Dedupe the Filtered Jobs
+			df = dedupe_company_jobs(df)
+
+			#Clean Results and Reset CID
+			df = make_clean_df(df)
+
+			#Write Out Results
+			df.to_csv(final_outfile, index=False, header=True)
+
+	else:
+		#Dedupe the Filtered Jobs
+		#assert exists
+		df = pd.read_csv(f)
+		df = dedupe_company_jobs(df)
+		#print(df)
+
+		#Clean Results and Reset CID
+		df = make_clean_df(df)
+		print(df)		
+
+		#Write Out Results
+		df.to_csv(final_outfile, index=False, header=True)
+
 
 	#TODO Function to Create A Master Errors
 	#One that 
