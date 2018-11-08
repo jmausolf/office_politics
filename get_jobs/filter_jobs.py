@@ -384,7 +384,8 @@ def job_selector(infile, job_cols):
 
 def merge_companies_job_params(jobsfile, 
 							   job_params='job_params.csv'):
-
+	
+	print(jobsfile)
 	jobs = pd.read_csv(jobsfile)
 	key = pd.read_csv(job_params)
 	df = jobs.merge(key, on='job_type')
@@ -401,18 +402,22 @@ def get_employers(infile, outfile=None):
 	jobs = job_selector(infile, ['job_type', 'job_keyword'])
 
 	#Make Cleaned File
-	keep_cols = ['qry_company', 'position', 'office', 'office_state']
+	keep_cols = ['qry_company', 'position', 'office', 'office_state', 
+				 'job_type']
 	df_tmp = jobs[keep_cols].copy().reset_index()
 
 	# Add Company ID Column
 	df_tmp['index'] = df_tmp.index
 	cid = df_tmp.apply(make_cid, axis=1)
 	df = pd.concat([cid, df_tmp[keep_cols]], axis=1)
-	cols = ['cid', 'company', 'position', 'office', 'office_state']
+	cols = ['cid', 'company', 'position', 'office', 'office_state', 
+			'job_type']
 	df.columns = cols
 	print(df)
 
 	df.to_csv(outfile, index=False)
 
+	return df
 
 
+#get_employers('indeed_jobs_2018-11-01.csv')
