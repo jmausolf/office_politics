@@ -165,7 +165,8 @@ def get_jobs(job_key, job_type, company, count, seconds):
     if job_tiles is True:
         pass
     else:
-        print("[*] error searching for jobs at {}...".format(company))
+        print("[*] error searching for {} jobs at {}...".format(job_key, 
+                                                                company))
         error_logger(company, job_key, qry_url)
         #import pdb; pdb.set_trace()
 
