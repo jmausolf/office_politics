@@ -361,9 +361,19 @@ def job_selector(infile, job_cols):
 				)
 
 	#Log Companies Lacking an Ideal or Backup Job
-	missing_jobs = 	(
-						( df['ideal_count'] == 0 ) &
-						( df['bkup_count'] == 0 ) 
+	missing_jobs = 	(	
+						(	#Either No Ideal & No Backup Job
+							( df['ideal_count'] == 0 ) &
+							( df['bkup_count'] == 0 ) 
+
+						) |
+
+						(	#OR No Company Match or Maybe Match
+							( df['cid_match_count'] == 0 ) &
+							( df['maybe_cid_match_count'] == 0 )
+							
+						) 
+
  
 					)
 
