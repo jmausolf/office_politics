@@ -21,7 +21,10 @@ def rt(d):
 
 
 def url_str(text):
-    return text.replace(' ', '+')
+    text = text.replace(' ', '+')
+    text = text.replace('&', '%26')
+    text = text.replace("'", '%27')
+    return text
 
 
 def error_logger(company, job_keyword, url):
