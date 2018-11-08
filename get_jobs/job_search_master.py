@@ -21,9 +21,7 @@ def make_company_csvs(master_companies):
 	cols.remove('company')
 
 	company_csvs = []
-	#output_stems
 
-	#print(cols)
 	n = 1
 	for k in cols:
 
@@ -34,7 +32,6 @@ def make_company_csvs(master_companies):
 		col_names = ['company', 'job_type']
 		df_out.columns = col_names
 		print(df_out.shape)
-		#print(df_out)
 
 		#TODO
 		#remove rows that have NAN job_type
@@ -83,23 +80,14 @@ def main(master_company,
 		#Extract Job Rank
 		jt_rank = c.replace('companies_', '').replace('.csv', '')
 
-
 		#Run Webscraper for Each Company/Job Type CSV
-		#(only need a filestem)
 		scraper_out = 'indeed_jobs_{}'.format(jt_rank)
-		#print(scraper_out)
-		#ws_out = c.replace('companies_', 'indeed_jobs_')
 		get_jobs_scraper(params, c, scraper_out, seconds, pyver)
 
 		#Run Filter
 		scraper_stem = scraper_out.replace('.csv', '')
 		indeed_jobs = "{}_{}.csv".format(scraper_stem, get_date())
-		#print(indeed_jobs)
-		filter_out = 'filtered_employers_{}.csv'.format(jt_rank)
-		#print(filter_out)
-		#filter_out = c.replace('companies_', 'filtered_employers_')
-		
-		
+		filter_out = 'filtered_employers_{}.csv'.format(jt_rank)		
 		df = get_employers(indeed_jobs, filter_out)
 
 		#Add Column Job_Type_Rank
@@ -116,18 +104,18 @@ def main(master_company,
 		
 
 
+	#TODO
+	#Function to wipe cid, dedupe created f by company id, keep only
+	#the job with the highest ranked job_type
+
+	#TODO Function to Create A Master Errors
+	#One that 
+	#A takes the original master list less the above file to find missing companies
 
 
 
 
-#For c in company_csvs, run search_jobs.py
-	#run seach_jobs.py with given c.csv, at time run, spec output_stem
-		#create outfile name == X
-	#run filter(X, outfile=selected_employers_1, 2, 3...)
-	#ALT
-	#Create df
-	# do return df
-	#Create/Append rows to df created file
+
 
 #Concat Into One File
 if __name__=="__main__":
@@ -150,20 +138,4 @@ if __name__=="__main__":
           args.seconds,
           args.pyver)
 
-    '''
-    # Run Indeed Job Search
-    get_jobs_cmd = "{} search_jobs.py -p {} -c {} -o {} -s {}".format(
-                                                    args.pyver, 
-                                                    args.param, 
-                                                    args.cid, 
-                                                    args.output, 
-                                                    args.seconds)
-
-    print(get_jobs_cmd)
-    subprocess.call(get_jobs_cmd, shell=True)
-
-    # Filter Indeed Jobs
-    indeed_jobs = "{}_{}.csv".format(args.output, get_date())
-    get_employers(indeed_jobs)
-    '''
 
