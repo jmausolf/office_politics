@@ -1,13 +1,17 @@
 import ast, csv, os, pdb
 import numpy as np
 import pandas as pd
+from get_jobs.filter_jobs import index_to_n
 
 
-#Start with Employers.CSV
-#print(emp)
 
-
+################
 #0a TODO Join with Contact Name/Email by Company
+#and see if you can get the order in a logical way
+#################
+
+
+
 def get_regions(df,
 				state_col,
 				region_col='state',
@@ -24,14 +28,14 @@ def get_regions(df,
 
 
 #Assign Applicant Prestige
-def assign_prestige(df, probs=[.7,.3]):
-	df['prestige'] = np.random.choice(['High', 'Low'], df.shape[0], p=probs)
+def assign_prestige(df, probs=[.7,.3], col='prestige_level'):
+	df[col] = np.random.choice(['High', 'Low'], df.shape[0], p=probs)
 	return df
 
 
 #Assign Order
-def assign_order(df, probs=[.5,.5]):
-	df['order'] = np.random.choice([1, 2], df.shape[0], p=probs)
+def assign_order(df, probs=[.5,.5], col='order'):
+	df[col] = np.random.choice([1, 2], df.shape[0], p=probs)
 	return df
 
 def set_order(order_number, order_int=None):
@@ -53,7 +57,9 @@ def set_order(order_number, order_int=None):
 		return None
 
 #Assign Partisanship
-def assign_partisanship(df, condition, probs=[.5,.5], labels=None):
+def assign_partisanship(df, condition, 
+						probs=[.5,.5], labels=None,
+						col='party'):
 
 	qc = condition
 	qc_condition = ( 
@@ -68,10 +74,11 @@ def assign_partisanship(df, condition, probs=[.5,.5], labels=None):
 
 	if labels is None:
 		if condition == 'treatment':
-			df['party'] = np.random.choice(['DEM', 'REP'], df.shape[0], p=probs)
+			df[col] = np.random.choice(['DEM', 'REP'], 
+											df.shape[0], p=probs)
 			return df
 		elif condition == 'control':
-			df['party'] = 'NEU'
+			df[col] = 'NEU'
 
 	else:
 
@@ -90,13 +97,13 @@ def assign_partisanship(df, condition, probs=[.5,.5], labels=None):
 		if condition == 'treatment':
 			assert lb_conditionT, "labels should be a list of strings; "+\
 								  "label list should be same length as probs"
-			df['party'] = np.random.choice(labels, df.shape[0], p=probs)
+			df[col] = np.random.choice(labels, df.shape[0], p=probs)
 
 
 		elif condition == 'control':
 			assert lb_conditionC, "control can have only one label; "+\
 								  "label must be string format"
-			df['party'] = labels
+			df[col] = labels
 
 
 	return df
@@ -174,8 +181,50 @@ def make_pairs(df,
 
 
 #4Join Profile ID based on Prestige and Partisanship
+def add_profile_key(experiment_df, 
+					profile_key='profiles.csv', 
+					prestige_col='prestige_level',
+					party_col='party'):
+
+	pst = prestige_col
+	pid = party_col
+	key = pd.read_csv(profile_key)
+
+	df = experiment_df.merge(key,
+							 how='left',
+							 on=[pst, pid])
+
+	return df
+
+#Drop Extra Columns
+def cleanup_cols(df, rm_col_list):
+	'''
+	Removes columns from the data frame to conform to
+	ideal experimental protocol config needed in experiment.py
+
+	Removes:
+	(A) extraneous cols
+	(B) columns already joined later in the experiment
+	'''
+
+	cols = df.columns.tolist()
+	keep_cols = [c for c in cols if c not in rm_col_list]
+
+	return df[keep_cols].copy().reset_index(drop=True)
 
 
+
+def add_applicant_id(df, col='id'):
+
+	#Make Appplicant ID
+	df['index'] = df.index
+	df[col] = df['index'].apply(lambda x: index_to_n(x, 'a'))
+
+	#Change Column Order
+	df_id = df['id'].copy()
+	df = cleanup_cols(df, ['index', 'id'])
+	df = pd.concat([df_id, df], axis=1) 
+	return df 
 
 
 emp = pd.read_csv('employers_key.csv')
@@ -189,9 +238,14 @@ emp = make_pairs(emp,
 				 'cid',
 				 'order'
 				 )
+emp = add_profile_key(emp)
+
+rm_cols = ['state_name', 'state', 'prestige_level', 'party', 'order', 'name']
+emp = cleanup_cols(emp, rm_cols)
+emp = add_applicant_id(emp)
+
 print(emp)
-
-
+emp.to_csv('test_exp.csv', index=False)
 
 #TODO
 #Number all rows by id, a1, a2, ...
