@@ -12,6 +12,16 @@ from get_jobs import *
 
 ##Take Master Company CSV, Make A Series of Two Col Company/JobType CSVs
 
+##TODO Write a Cleanup Function to Run before Exec this Script
+#rm all_filtered_jobs_*
+#rm companies_*
+#rm errors_filtered_jobs_*
+#rm filtered_employers_*
+#rm indeed_jobs_*
+#rm selected_filtered_jobs_*
+#rm ../employers_key_2018-11-08.csv 
+
+#TODO when script finishes, move all those files to a subfolder output
 
 def make_company_csvs(master_companies):
 
@@ -62,7 +72,6 @@ def get_jobs_scraper(params,
     print(get_jobs_cmd)
     subprocess.call(get_jobs_cmd, shell=True)
 
-#TODO Make One That Runs for List of Scraped CSVS...
 
 def dedupe_company_jobs(df):
 
@@ -86,7 +95,7 @@ def make_clean_df(df_in):
 	#Make Cleaned File
 	keep_cols = ['company', 'position', 'office', 'office_state', 
 			'job_type']
-	df_tmp = df_in[keep_cols].copy().reset_index()
+	df_tmp = df_in[keep_cols].copy().reset_index(drop=True)
 
 	# Add Company ID Column
 	df_tmp['index'] = df_tmp.index
@@ -97,13 +106,45 @@ def make_clean_df(df_in):
 	df.columns = cols
 	return df
 
+
+def company_error_check(master_company, final_outfile, fname):
+
+	mc = master_company
+	fo = final_outfile
+	N = fo.shape[0]
+
+	full_df = mc.merge(fo, how='left')
+	errors = full_df[pd.isnull(full_df['job_type'])].reset_index(drop=True)
+	n = errors.shape[0]
+
+	if n > 0:
+		#Error Firms
+		print("[*] failed to find jobs for {} firms...".format(n))
+		print(errors)
+		outfile = 'total_errors_filtered_jobs_{}.csv'.format(get_date())
+		print("[*] writing errors to {}...".format(outfile))
+		errors.to_csv(outfile, index=False)
+
+		#Found Firms
+		print("[*] found jobs for {} firms, file: {}".format(N, fname))
+		print(fo)
+		print("[*] done.")
+
+
+	else:
+		#Found Firms
+		print("[*] found jobs for all {} firms, file: {}".format(N, fname))
+		print(fo)
+		print("[*] done.")
+
+
 def main(master_company,
 		 params,
 		 cid,
 		 output,
 		 seconds,
 		 pyver,
-		 scrape=False):
+		 scrape=True):
 
 	#Define Intermediate Output File
 	f = "../employers_key_{}.csv".format(get_date())
@@ -144,36 +185,38 @@ def main(master_company,
 				df.to_csv(f, index=False, header=False, mode='a')
 			
 
-			#Dedupe the Filtered Jobs
-			df = dedupe_company_jobs(df)
-
-			#Clean Results and Reset CID
-			df = make_clean_df(df)
-
-			#Write Out Results
-			df.to_csv(final_outfile, index=False, header=True)
-
-	else:
 		#Dedupe the Filtered Jobs
-		#assert exists
+		#import pdb; pdb.set_trace()
 		df = pd.read_csv(f)
 		df = dedupe_company_jobs(df)
-		#print(df)
 
 		#Clean Results and Reset CID
 		df = make_clean_df(df)
-		print(df)		
 
 		#Write Out Results
 		df.to_csv(final_outfile, index=False, header=True)
 
-
-	#TODO Function to Create A Master Errors
-	#One that 
-	#A takes the original master list less the above file to find missing companies
-
+		#Error Check
+		master_company = pd.read_csv(master_company)
+		company_error_check(master_company, df, f)
 
 
+	else:
+		#Dedupe the Filtered Jobs
+		assert exists is True, 'the expected job file does not exist...'+ \
+				'rerun using scape=True'
+		df = pd.read_csv(f)
+		df = dedupe_company_jobs(df)
+
+		#Clean Results and Reset CID
+		df = make_clean_df(df)	
+
+		#Write Out Results
+		df.to_csv(final_outfile, index=False, header=True)
+
+		#Error Check
+		master_company = pd.read_csv(master_company)
+		company_error_check(master_company, df, f)
 
 
 
