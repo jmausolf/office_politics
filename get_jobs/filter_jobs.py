@@ -302,6 +302,9 @@ def job_selector(infile, job_cols):
 	#New City, ST Columns
 	df = split_vars('clean_location', 'office', 'office_state', ',', df)
 
+	#TODO
+	#Strip Whitespace from 'office' and 'office state'
+
 	#Make Clean Job Column
 	df['position'] = df.apply(clean_job, axis=1)
 
