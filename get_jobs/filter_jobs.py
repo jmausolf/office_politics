@@ -39,8 +39,10 @@ def parens_content_replace(text):
 
 
 def split_vars(ovar, nvar1, nvar2, delim, df):
-    df[nvar1], df[nvar2] = df[ovar].str.split(delim, 1).str
-    return df
+	df[nvar1], df[nvar2] = df[ovar].str.split(delim, 1).str
+	df[nvar1] = df[nvar1].str.strip()
+	df[nvar2] = df[nvar2].str.strip()
+	return df
 
 
 def title_length(row, col='job'):
@@ -433,4 +435,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_2018-11-01.csv')
+#get_employers('indeed_jobs_3_2018-11-08.csv')

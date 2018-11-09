@@ -114,14 +114,14 @@ def company_error_check(master_company, final_outfile, fname):
 		errors.to_csv(outfile, index=False)
 
 		#Found Firms
-		print("[*] found jobs for {} firms, file: {}".format(N, fname))
+		print("[*] found jobs for {} firms, file: {}".format(N, fo))
 		print(fo)
 		print("[*] done.")
 
 
 	else:
 		#Found Firms
-		print("[*] found jobs for all {} firms, file: {}".format(N, fname))
+		print("[*] found jobs for all {} firms, file: {}".format(N, fo))
 		print(fo)
 		print("[*] done.")
 
@@ -171,6 +171,7 @@ def main(master_company,
 			df['job_type_rank'] = jt_rank
 
 			#Create Appended DF
+			exists = os.path.isfile('./{}'.format(f))
 			if not exists:
 				df.to_csv(f, index=False, header=True)
 			else:
@@ -195,6 +196,7 @@ def main(master_company,
 
 	else:
 		#Dedupe the Filtered Jobs
+		exists = os.path.isfile('./{}'.format(f))
 		assert exists is True, 'the expected job file does not exist...'+ \
 				'rerun using scape=True'
 		df = pd.read_csv(f)
