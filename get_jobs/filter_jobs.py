@@ -206,16 +206,16 @@ def company_match(row,
 			return False
 
 
-def index_to_n(index_number):
+def index_to_n(index_number, letter='c'):
 
 	#Set to 1 index versus 0
 	i = int(index_number)+1
 
 	#Return as String
 	if i <= 9:
-		return 'c0'+str(i)
+		return letter+'0'+str(i)
 	else:
-		return 'c'+str(i)
+		return letter+str(i)
 
 
 def make_cid(row):
