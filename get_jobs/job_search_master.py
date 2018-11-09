@@ -8,20 +8,8 @@ import subprocess
 from search_jobs import *
 from filter_jobs import *
 from get_jobs import *
+from cleanup_files import *
 
-
-##Take Master Company CSV, Make A Series of Two Col Company/JobType CSVs
-
-##TODO Write a Cleanup Function to Run before Exec this Script
-#rm all_filtered_jobs_*
-#rm companies_*
-#rm errors_filtered_jobs_*
-#rm filtered_employers_*
-#rm indeed_jobs_*
-#rm selected_filtered_jobs_*
-#rm ../employers_key_2018-11-08.csv 
-
-#TODO when script finishes, move all those files to a subfolder output
 
 def make_company_csvs(master_companies):
 
@@ -146,6 +134,10 @@ def main(master_company,
 		 pyver,
 		 scrape=True):
 
+
+	#Cleanup Files
+	cleanup_files()
+
 	#Define Intermediate Output File
 	f = "../employers_key_{}.csv".format(get_date())
 	exists = os.path.isfile('./{}'.format(f))
@@ -217,6 +209,10 @@ def main(master_company,
 		#Error Check
 		master_company = pd.read_csv(master_company)
 		company_error_check(master_company, df, f)
+
+
+	#Cleanup Files
+	cleanup_files()
 
 
 
