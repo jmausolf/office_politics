@@ -42,7 +42,7 @@ def cleanup_files(remove=True, subdir='output', force=False):
 	indeed_jobs = 'indeed_jobs_*_{}*'.format(date)
 	emp_key_tmp = '../employers_key_{}*'.format(date)
 	err_no_rest = 'error_no_results_{}*'.format(date)
-	total_error = 'total_errors_master_filtered_jobs_{}*'.format(date)
+	total_error = 'total_errors_filtered_jobs_{}*'.format(date)
 
 	rm_script = """
 		rm all_filtered_jobs_*
