@@ -9,7 +9,17 @@ from get_jobs.filter_jobs import index_to_n
 #0a TODO Join with Contact Name/Email by Company
 #and see if you can get the order in a logical way
 #################
+def convert_xlsx_csv(file):
+	print("Converting file: '{}' to .csv file...".format(file))
+	pd.read_excel(file).to_csv(str(file).replace("xlsx", "csv"))
 
+
+def convert_files_xlsx_csv(stem='police_ois_report'):
+	files = glob('downloads/*{}*.xlsx'.format(stem))
+	for file in files:
+		convert_xlsx_csv(file)
+
+		
 
 
 def get_regions(df,
@@ -28,8 +38,11 @@ def get_regions(df,
 
 
 #Assign Applicant Prestige
-def assign_prestige(df, probs=[.7,.3], col='prestige_level'):
-	df[col] = np.random.choice(['High', 'Low'], df.shape[0], p=probs)
+def assign_prestige(df, 
+					probs=[.7,.3],
+					labels=['High', 'Low'],
+					col='prestige_level'):
+	df[col] = np.random.choice(labels, df.shape[0], p=probs)
 	return df
 
 
@@ -226,10 +239,10 @@ def add_applicant_id(df, col='id'):
 	df = pd.concat([df_id, df], axis=1) 
 	return df 
 
-
+'''
 emp = pd.read_csv('employers_key.csv')
 emp = get_regions(emp, 'office_state')
-emp = assign_prestige(emp, probs=[.7, .3])
+emp = assign_prestige(emp, probs=[.7, .3], labels=['High', 'Low'])
 emp = assign_order(emp)
 emp = make_pairs(emp,
 				 ['DEM', 'REP'],
@@ -246,6 +259,38 @@ emp = add_applicant_id(emp)
 
 print(emp)
 emp.to_csv('test_exp.csv', index=False)
+'''
+
+def main(**kwargs):
+
+	kw = kwargs
+
+	print(kw)
+	print(kw['output'])
+	'''
+	emp = pd.read_csv('employers_key.csv')
+	emp = get_regions(emp, 'office_state')
+	emp = assign_prestige(emp, probs=[.7, .3], labels=['High', 'Low'])
+	emp = assign_order(emp)
+	emp = make_pairs(emp,
+					 ['DEM', 'REP'],
+					 [.4, .6],
+					 'NEU',
+					 'cid',
+					 'order'
+					 )
+	emp = add_profile_key(emp)
+
+	rm_cols = ['state_name', 'state', 'prestige_level', 'party', 'order', 'name']
+	emp = cleanup_cols(emp, rm_cols)
+	emp = add_applicant_id(emp)
+
+	print(emp)
+	emp.to_csv('test_exp.csv', index=False)
+	'''
+
+main(output="x")
+
 
 #TODO
 #Number all rows by id, a1, a2, ...

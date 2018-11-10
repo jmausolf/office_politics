@@ -4,7 +4,6 @@ from new_messages import *
 import textwrap
 import inspect
 import textile
-from internship_key import internship_keys
 
 
 def keep_or_replace(app_company, intern_company):

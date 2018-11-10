@@ -4,7 +4,6 @@ from email.mime.multipart import MIMEMultipart
 from smtplib import SMTP
 from make_cover_letters import *
 from make_resumes import *
-from credentials import *
 import inspect
 
 

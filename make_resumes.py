@@ -7,7 +7,6 @@ import textile
 import re
 import csv
 import argparse
-from internship_key import internship_keys
 
 
 
