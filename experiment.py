@@ -6,7 +6,6 @@ import textwrap
 import inspect
 import textile
 import re
-from internship_key import internship_keys
 from make_cover_letters import *
 from send_email import *
 import pdb
@@ -20,8 +19,8 @@ def article_strip(school):
 	return clean_school
 
 def join_profiles_credentials():
-	cred = pd.read_csv("credentials.csv")
-	prof = pd.read_csv("profiles.csv")
+	cred = pd.read_csv("keys/credentials.csv")
+	prof = pd.read_csv("keys/profiles.csv")
 
 	df = pd.merge(cred, prof, on=['profile'])
 	return df
@@ -37,7 +36,7 @@ def select_ga(row, count):
 	#First Matched Pair
 	if count == 0:
 		#Select Match from Region or Proximal Region
-		gaf = pd.read_csv("ga_school_key.csv")
+		gaf = pd.read_csv("keys/ga_school_key.csv")
 
 		criteria_base = ( (gaf['region']==region) & 
 						(gaf['job_type']==job_type) & 					
@@ -64,7 +63,7 @@ def select_ga(row, count):
 		#Drop Selection from GA to Avoid Selection for Pair 2
 		ga_selection = df['ga_sid'].values.tolist()[0]
 		tmp = gaf[gaf.ga_sid != ga_selection]
-		tmp.to_csv("ga_school_key_tmp.csv", index=False)
+		tmp.to_csv("keys/ga_school_key_tmp.csv", index=False)
 
 
 		#Return Results
@@ -77,7 +76,7 @@ def select_ga(row, count):
 	#Second Matched Pair
 	elif count == 1:
 		#Select Match from Region or Proximal Region
-		gaf = pd.read_csv("ga_school_key_tmp.csv")
+		gaf = pd.read_csv("keys/ga_school_key_tmp.csv")
 		criteria_base = ( (gaf['region']==region) & 
 						(gaf['job_type']==job_type) & 					
 						(gaf['prestige']==profile[-1]) )
@@ -119,7 +118,7 @@ def select_ug(row, count):
 
 	#First Matched Pair
 	if count == 0:
-		ugf = pd.read_csv("ug_school_key.csv")
+		ugf = pd.read_csv("keys/ug_school_key.csv")
 		criteria = ((ugf['profile']==profile) & 
 					(ugf['region']==region) & 
 					(ugf['sid']!=school))
@@ -132,7 +131,7 @@ def select_ug(row, count):
 		#Drop Selection from UG to Avoid Selection for Pair 2
 		ug_selection = df['ug_sid'].values.tolist()[0]
 		tmp = ugf[ugf.ug_sid != ug_selection]
-		tmp.to_csv("ug_school_key_tmp.csv", index=False)
+		tmp.to_csv("keys/ug_school_key_tmp.csv", index=False)
 
 
 		#Return Results
@@ -144,7 +143,7 @@ def select_ug(row, count):
 
 	#Second Matched Pair
 	elif count == 1:
-		ugf = pd.read_csv("ug_school_key_tmp.csv")
+		ugf = pd.read_csv("keys/ug_school_key_tmp.csv")
 		criteria = ((ugf['profile']==profile) & 
 					(ugf['region']==region) & 
 					(ugf['sid']!=school))
@@ -172,7 +171,7 @@ def select_int(row, count):
 
 	#First Matched Pair
 	if count == 0:
-		intf = pd.read_csv("int_key.csv")
+		intf = pd.read_csv("keys/int_key.csv")
 		criteria = ((intf['job_type']==job_type) & 
 					(intf['prestige']==prestige) & 
 					(intf['internship']!=company))
@@ -185,7 +184,7 @@ def select_int(row, count):
 		int_selection = df['int_id'].values.tolist()
 		tmp = intf[((intf.int_id != int_selection[0]) &
 				    (intf.int_id != int_selection[1]))]
-		tmp.to_csv("int_key_tmp.csv", index=False)
+		tmp.to_csv("keys/int_key_tmp.csv", index=False)
 
 
 		#Return Results
@@ -198,7 +197,7 @@ def select_int(row, count):
 
 	#Second Matched Pair
 	elif count == 1:
-		intf = pd.read_csv("int_key_tmp.csv")
+		intf = pd.read_csv("keys/int_key_tmp.csv")
 		criteria = ((intf['job_type']==job_type) & 
 					(intf['prestige']==prestige) & 
 					(intf['internship']!=company))
@@ -299,7 +298,6 @@ def join_experiment_profiles_counter(experiment_file):
 	return df
 
 
-#join_experiment_profiles("experiment_test.csv")
 
 
 
@@ -370,7 +368,7 @@ def deploy_emails(experiment_csv):
 	df = join_experiment_profiles_counter(experiment_csv)
 	print(df)
 
-	ex_out = "{}_output.csv".format(experiment_csv.split(".")[0])
+	ex_out = "logs/{}_output.csv".format(experiment_csv.split(".")[0])
 	df.to_csv(ex_out, index=False)
 
 	#Matched Pairs A
