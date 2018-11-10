@@ -8,8 +8,6 @@ from credentials import *
 import inspect
 
 
-
-
 def send_email(profile, 
 			job_type,
 			contact,
@@ -25,6 +23,10 @@ def send_email(profile,
 			department,
 			ba_school, 
 			ba_ctyst,
+			internship1,
+			int1_ctyst,
+			internship2,
+			int2_ctyst,
 			treatment,
 			phone, 
 			gmail_user,
@@ -48,7 +50,6 @@ def send_email(profile,
 	msgAlt = MIMEMultipart('alternative')
 	msgRoot.attach(msgAlt)
 
-
 	#Message (Text Version & HTML Version)
 	message_output = make_html_text_cl(
 		profile, 
@@ -61,6 +62,10 @@ def send_email(profile,
 		title, 
 		school,
 		department,
+		internship1,
+		int1_ctyst,
+		internship2,
+		int2_ctyst,
 		treatment, 
 		phone, 
 		gmail_user
@@ -70,12 +75,10 @@ def send_email(profile,
 
 	text = MIMEText(message_output[0], 'plain')
 	html = MIMEText(message_output[1], 'html')
-	internships = message_output[2]
 
 	#Insert Message Cover Letter
 	msgAlt.attach(text)
 	msgAlt.attach(html)
-
 
 	#Write Resume Code
 	make_resume(profile,
@@ -90,7 +93,10 @@ def send_email(profile,
 				department,
 				ba_school, 
 				ba_ctyst, 
-				internships,
+				internship1,
+				int1_ctyst,
+				internship2,
+				int2_ctyst,
 				treatment)
 
 	#Resume
@@ -102,12 +108,9 @@ def send_email(profile,
 	part.add_header('Content-Disposition', 'attachment', filename=resume_filename)
 	msgRoot.attach(part)
 
-
-
 	#Print Metadata
 	txt = message_output[0]
 	snip = "{}...{}".format(txt[0:35], txt[-40:]).replace('\n', '')
-
 
 	meta = inspect.cleandoc("""
 					Subject : {}
