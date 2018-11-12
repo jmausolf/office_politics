@@ -9,23 +9,25 @@ from get_jobs.filter_jobs import index_to_n
 #0a TODO Join with Contact Name/Email by Company
 #and see if you can get the order in a logical way
 #################
-def convert_xlsx_csv(file):
-	print("Converting file: '{}' to .csv file...".format(file))
-	pd.read_excel(file).to_csv(str(file).replace("xlsx", "csv"))
+def get_leads(df,
+				leads_key='keys/leadiro_matched_key.csv'
+				):
+
+	leads = pd.read_csv(leads_key)
+	df = df.merge(leads, how='left')
 
 
-def convert_files_xlsx_csv(stem='police_ois_report'):
-	files = glob('downloads/*{}*.xlsx'.format(stem))
-	for file in files:
-		convert_xlsx_csv(file)
+	#TODO Issue a Warning if name/email have NAN 
+	#after the merge
+	print(df)
+	return df
 
-		
 
 
 def get_regions(df,
 				state_col,
 				region_col='state',
-				region_key='region_key.csv'
+				region_key='keys/region_key.csv'
 				):
 
 	sc = state_col
@@ -76,9 +78,9 @@ def assign_partisanship(df, condition,
 
 	qc = condition
 	qc_condition = ( 
-					( isinstance(qc, str) is True ) &
-					( qc == 'treatment' or qc == 'control') 
-				 )
+						( isinstance(qc, str) is True ) &
+						( qc == 'treatment' or qc == 'control') 
+				   )
 	assert qc_condition, "condition should equal 'treatment' or 'control' "
 
 
@@ -195,7 +197,7 @@ def make_pairs(df,
 
 #4Join Profile ID based on Prestige and Partisanship
 def add_profile_key(experiment_df, 
-					profile_key='profiles.csv', 
+					profile_key='keys/profiles.csv', 
 					prestige_col='prestige_level',
 					party_col='party'):
 
@@ -239,8 +241,11 @@ def add_applicant_id(df, col='id'):
 	df = pd.concat([df_id, df], axis=1) 
 	return df 
 
+
+#emp = pd.read_csv('keys/employers_key.csv')
+#get_leads(emp)
+
 '''
-emp = pd.read_csv('employers_key.csv')
 emp = get_regions(emp, 'office_state')
 emp = assign_prestige(emp, probs=[.7, .3], labels=['High', 'Low'])
 emp = assign_order(emp)
@@ -261,35 +266,71 @@ print(emp)
 emp.to_csv('test_exp.csv', index=False)
 '''
 
-def main(**kwargs):
+def main(employers,
+		 state_col,
+		 prestige_probs,
+		 prestige_labs,
+		 treatment_probs,
+		 treatment_labs,
+		 control_lab,
+		 pair_key,
+		 order_var,
+		 rm_cols='default',
+		 outfile='experiment.csv'
+		):
 
-	kw = kwargs
 
-	print(kw)
-	print(kw['output'])
-	'''
-	emp = pd.read_csv('employers_key.csv')
-	emp = get_regions(emp, 'office_state')
-	emp = assign_prestige(emp, probs=[.7, .3], labels=['High', 'Low'])
+	#Load Employer Data
+	emp = pd.read_csv(employers)
+
+	#Get Leads
+	emp = get_leads(emp)
+
+	#Get Regions
+	emp = get_regions(emp, state_col)
+	emp = assign_prestige(emp, 
+						  probs=prestige_probs,
+						  labels=prestige_labs
+						  )
 	emp = assign_order(emp)
 	emp = make_pairs(emp,
-					 ['DEM', 'REP'],
-					 [.4, .6],
-					 'NEU',
-					 'cid',
-					 'order'
+					 treatment_labs,
+					 treatment_probs,
+					 control_lab,
+					 pair_key,
+					 order_var
 					 )
 	emp = add_profile_key(emp)
 
-	rm_cols = ['state_name', 'state', 'prestige_level', 'party', 'order', 'name']
+	#Remove Default Columns
+	if rm_cols == 'default':
+		rm_cols = ['state_name', 'state', 'prestige_level', 
+				   'party', 'order', 'name']
+	
+	#Or User Provided Column List
+	else:
+		assert isinstance(rm_cols, list), 'provide a list of cols to remove'
+
+
 	emp = cleanup_cols(emp, rm_cols)
 	emp = add_applicant_id(emp)
 
 	print(emp)
-	emp.to_csv('test_exp.csv', index=False)
-	'''
+	emp.to_csv(outfile, index=False)
+	
 
-main(output="x")
+
+main(employers='keys/employers_key.csv',
+     state_col='office_state',
+     prestige_probs=[.7, .3],
+     prestige_labs=['High', 'Low'],
+     treatment_probs=[.4, .6],
+     treatment_labs=['DEM', 'REP'],
+     control_lab='NEU',
+     pair_key='cid',
+     order_var='order',
+     rm_cols='default'
+	)
 
 
 #TODO
