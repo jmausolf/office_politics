@@ -6,16 +6,19 @@ import zipfile
 from fuzzywuzzy import process
 import warnings
 
+
+
 def remove_punct(text):
 	tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]', " ", text)
 	return re.sub(r'\s{2,}', " ", tmp)
+
 
 def cleanup_cols(df, rm_col_list):
 
 	cols = df.columns.tolist()
 	keep_cols = [c for c in cols if c not in rm_col_list]
-
 	return df[keep_cols].copy().reset_index(drop=True)
+
 
 def convert_xlsx_csv(file):
 	print('[*] converting file: {} to .csv file...'.format(file))
@@ -179,8 +182,6 @@ def fuzzy_match_df_cols(left_df, right_df,
 
 	df[rc]=pd.Series(name_match)
 	df['match_score']=pd.Series(ratio_match)
-
-	#df[rc] = df[rc, 'match_score'].apply(lambda x: x[0] if x[1] > 50 else 'none' )
 	df[rc] = df.apply(score_filter, axis=1, col=rc)
 
 	#Write Result

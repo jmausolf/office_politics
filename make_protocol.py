@@ -5,10 +5,6 @@ from get_jobs.filter_jobs import index_to_n
 
 
 
-################
-#0a TODO Join with Contact Name/Email by Company
-#and see if you can get the order in a logical way
-#################
 def get_leads(df,
 				leads_key='keys/leadiro_matched_key.csv'
 				):
@@ -21,7 +17,6 @@ def get_leads(df,
 	#after the merge
 	print(df)
 	return df
-
 
 
 def get_regions(df,
@@ -53,6 +48,7 @@ def assign_order(df, probs=[.5,.5], col='order'):
 	df[col] = np.random.choice([1, 2], df.shape[0], p=probs)
 	return df
 
+
 def set_order(order_number, order_int=None):
 	assert isinstance(order_number, int), "order must be an integer"
 
@@ -71,6 +67,7 @@ def set_order(order_number, order_int=None):
 	else:
 		return None
 
+
 #Assign Partisanship
 def assign_partisanship(df, condition, 
 						probs=[.5,.5], labels=None,
@@ -83,10 +80,7 @@ def assign_partisanship(df, condition,
 				   )
 	assert qc_condition, "condition should equal 'treatment' or 'control' "
 
-
-
-
-
+	#Assign Labels
 	if labels is None:
 		if condition == 'treatment':
 			df[col] = np.random.choice(['DEM', 'REP'], 
@@ -123,7 +117,7 @@ def assign_partisanship(df, condition,
 
 	return df
 
-#3
+
 def make_pairs(df,
 			   treatment_labs,
 			   treatment_probs,
@@ -195,7 +189,7 @@ def make_pairs(df,
 	return MP
 
 
-#4Join Profile ID based on Prestige and Partisanship
+#Join Profile ID based on Prestige and Partisanship
 def add_profile_key(experiment_df, 
 					profile_key='keys/profiles.csv', 
 					prestige_col='prestige_level',
@@ -210,6 +204,7 @@ def add_profile_key(experiment_df,
 							 on=[pst, pid])
 
 	return df
+
 
 #Drop Extra Columns
 def cleanup_cols(df, rm_col_list):
@@ -228,7 +223,6 @@ def cleanup_cols(df, rm_col_list):
 	return df[keep_cols].copy().reset_index(drop=True)
 
 
-
 def add_applicant_id(df, col='id'):
 
 	#Make Appplicant ID
@@ -239,32 +233,8 @@ def add_applicant_id(df, col='id'):
 	df_id = df['id'].copy()
 	df = cleanup_cols(df, ['index', 'id'])
 	df = pd.concat([df_id, df], axis=1) 
-	return df 
+	return df
 
-
-#emp = pd.read_csv('keys/employers_key.csv')
-#get_leads(emp)
-
-'''
-emp = get_regions(emp, 'office_state')
-emp = assign_prestige(emp, probs=[.7, .3], labels=['High', 'Low'])
-emp = assign_order(emp)
-emp = make_pairs(emp,
-				 ['DEM', 'REP'],
-				 [.4, .6],
-				 'NEU',
-				 'cid',
-				 'order'
-				 )
-emp = add_profile_key(emp)
-
-rm_cols = ['state_name', 'state', 'prestige_level', 'party', 'order', 'name']
-emp = cleanup_cols(emp, rm_cols)
-emp = add_applicant_id(emp)
-
-print(emp)
-emp.to_csv('test_exp.csv', index=False)
-'''
 
 def main(employers,
 		 state_col,
@@ -331,10 +301,6 @@ main(employers='keys/employers_key.csv',
      order_var='order',
      rm_cols='default'
 	)
-
-
-#TODO
-#Number all rows by id, a1, a2, ...
 
 
 
