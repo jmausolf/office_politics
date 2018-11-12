@@ -143,7 +143,7 @@ def main(master_company,
 	exists = os.path.isfile('./{}'.format(f))
 
 	#Define Final Output File
-	final_outfile = '../employers_key.csv'
+	final_outfile = '../keys/employers_key.csv'
 
 
 	if scrape is True:
