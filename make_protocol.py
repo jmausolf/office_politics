@@ -1,8 +1,16 @@
 import ast, csv, os, pdb
 import numpy as np
 import pandas as pd
+import datetime
 from get_jobs.filter_jobs import index_to_n
 
+
+
+def get_date():
+	#Get Date for Filenames
+	now = datetime.datetime.now()
+	date = now.strftime("%Y-%m-%d")
+	return date
 
 
 def get_leads(df,
@@ -236,6 +244,16 @@ def add_applicant_id(df, col='id'):
 	return df
 
 
+def store_details(df, **kwargs):
+
+	details = []
+	for k, v in kwargs.items():
+		df[k] = str(v)
+		details.append(k)
+
+	return [df, details]
+
+
 def main(employers,
 		 state_col,
 		 prestige_probs,
@@ -272,6 +290,30 @@ def main(employers,
 					 )
 	emp = add_profile_key(emp)
 
+	#Add Experiment Details to Full File
+	details = store_details(emp,
+						exp_date=get_date(),
+						exp_employers=employers,
+						exp_state_col=state_col,
+						exp_prestige_probs=prestige_probs,
+						exp_prestige_labs=prestige_labs,
+						exp_treatment_probs=treatment_probs,
+						exp_treatment_labs=treatment_labs,
+						exp_control_lab=control_lab,
+						exp_pair_key=pair_key,
+						exp_order_var=order_var,
+						exp_rm_cols=rm_cols
+						)
+
+
+
+	#Store Detailed File in Logs
+	emp = details[0]
+	stem = outfile.replace('.csv', '')
+	log = 'logs/protocol_{}_{}.csv'.format(stem, get_date())
+	log_exp_details = emp.to_csv(log)
+
+
 	#Remove Default Columns
 	if rm_cols == 'default':
 		rm_cols = ['state_name', 'state', 'prestige_level', 
@@ -281,7 +323,9 @@ def main(employers,
 	else:
 		assert isinstance(rm_cols, list), 'provide a list of cols to remove'
 
-
+	#Make Clean File to Run
+	log_cols = details[1]
+	rm_cols = rm_cols+log_cols
 	emp = cleanup_cols(emp, rm_cols)
 	emp = add_applicant_id(emp)
 
