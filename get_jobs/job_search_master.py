@@ -11,6 +11,13 @@ from get_jobs import *
 from cleanup_files import *
 
 
+def get_date():
+    #Get Date for Filenames
+    now = datetime.datetime.now()
+    date = now.strftime("%Y-%m-%d")
+    return date
+
+
 def make_company_csvs(master_companies):
 
 	#
@@ -43,19 +50,22 @@ def make_company_csvs(master_companies):
 	return company_csvs
 
 
-def get_jobs_scraper(params,
+def get_jobs_scraper(date,
+					 param,
 					 cid,
 					 output,
 					 seconds,
 					 pyver):
 
 	    # Run Indeed Job Search
-    get_jobs_cmd = "{} search_jobs.py -p {} -c {} -o {} -s {}".format(
-                        									   pyver, 
-                        									   params, 
-                        									   cid, 
-                        									   output, 
-                        									   seconds)
+    get_jobs_cmd = "{} search_jobs.py -d {} -p {} -c {} -o {} -s {}".format(
+                    pyver,
+                    date,
+                    param, 
+                    cid, 
+                    output, 
+                    seconds
+                    )
 
     print(get_jobs_cmd)
     subprocess.call(get_jobs_cmd, shell=True)
@@ -95,10 +105,10 @@ def make_clean_df(df_in):
 	return df
 
 
-def company_error_check(master_company, final_outfile, fname):
+def company_error_check(master_company, final_df, fname):
 
 	mc = master_company
-	fo = final_outfile
+	fo = final_df
 	N = fo.shape[0]
 
 	full_df = mc.merge(fo, how='left')
@@ -109,25 +119,26 @@ def company_error_check(master_company, final_outfile, fname):
 		#Error Firms
 		print("[*] failed to find jobs for {} firms...".format(n))
 		print(errors)
-		outfile = 'total_errors_filtered_jobs_{}.csv'.format(get_date())
+		outfile = 'total_errors_filtered_jobs_{}.csv'.format(date)
 		print("[*] writing errors to {}...".format(outfile))
 		errors.to_csv(outfile, index=False)
 
 		#Found Firms
-		print("[*] found jobs for {} firms, file: {}".format(N, fo))
+		print("[*] found jobs for {} firms, file: {}".format(N, fname))
 		print(fo)
 		print("[*] done.")
 
 
 	else:
 		#Found Firms
-		print("[*] found jobs for all {} firms, file: {}".format(N, fo))
+		print("[*] found jobs for all {} firms, file: {}".format(N, fname))
 		print(fo)
 		print("[*] done.")
 
 
 def main(master_company,
-		 params,
+		 date,
+		 param,
 		 cid,
 		 output,
 		 seconds,
@@ -136,10 +147,10 @@ def main(master_company,
 
 
 	#Cleanup Files
-	cleanup_files()
+	cleanup_files(date)
 
 	#Define Intermediate Output File
-	f = "../employers_key_{}.csv".format(get_date())
+	f = "../employers_key_{}.csv".format(date)
 	exists = os.path.isfile('./{}'.format(f))
 
 	#Define Final Output File
@@ -158,11 +169,11 @@ def main(master_company,
 
 			#Run Webscraper for Each Company/Job Type CSV
 			scraper_out = 'indeed_jobs_{}'.format(jt_rank)
-			get_jobs_scraper(params, c, scraper_out, seconds, pyver)
+			get_jobs_scraper(date, param, c, scraper_out, seconds, pyver)
 
 			#Run Filter
 			scraper_stem = scraper_out.replace('.csv', '')
-			indeed_jobs = "{}_{}.csv".format(scraper_stem, get_date())
+			indeed_jobs = "{}_{}.csv".format(scraper_stem, date)
 			filter_out = 'filtered_employers_{}.csv'.format(jt_rank)		
 			df = get_employers(indeed_jobs, filter_out)
 
@@ -191,7 +202,7 @@ def main(master_company,
 
 		#Error Check
 		master_company = pd.read_csv(master_company)
-		company_error_check(master_company, df, f)
+		company_error_check(master_company, df, final_outfile)
 
 
 	else:
@@ -210,11 +221,11 @@ def main(master_company,
 
 		#Error Check
 		master_company = pd.read_csv(master_company)
-		company_error_check(master_company, df, f)
+		company_error_check(master_company, df, final_outfile)
 
 
 	#Cleanup Files
-	cleanup_files()
+	cleanup_files(date)
 
 
 
@@ -223,6 +234,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
 
     #Search Jobs Args
+    parser.add_argument("-d", "--date", default=get_date(), type=str)
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
@@ -232,7 +244,8 @@ if __name__=="__main__":
     parser.add_argument("-py", "--pyver", default='python3', type=str)
     args = parser.parse_args()
 
-    main('master_companies.csv', 
+    main('master_companies.csv',
+    	  args.date,
           args.param, 
           args.cid, 
           args.output, 

@@ -14,6 +14,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
 
     #Search Jobs Args
+    parser.add_argument("-d", "--date", type=str)
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
@@ -26,7 +27,8 @@ if __name__=="__main__":
 
     # Run Indeed Job Search
     get_jobs_cmd = "{} search_jobs.py -p {} -c {} -o {} -s {}".format(
-                                                    args.pyver, 
+                                                    args.pyver,
+                                                    args.date,
                                                     args.param, 
                                                     args.cid, 
                                                     args.output, 
