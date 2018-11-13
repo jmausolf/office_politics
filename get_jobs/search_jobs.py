@@ -7,14 +7,6 @@ import pandas as pd
 
 
 
-
-def get_date():
-    #Get Date for Filenames
-    now = datetime.datetime.now()
-    date = now.strftime("%Y-%m-%d")
-    return date
-
-
 def rt(d):
     times = np.random.rand(1000)+np.random.rand(1000)+d
     return np.random.choice(times, 1).tolist()[0]
@@ -27,8 +19,7 @@ def url_str(text):
     return text
 
 
-def error_logger(company, job_keyword, url):
-    date = get_date()
+def error_logger(company, job_keyword, url, date):
     outfile = 'error_no_results_{}.csv'.format(date)
     exists = os.path.isfile('./{}'.format(outfile))
 
@@ -124,7 +115,8 @@ def load_job_tiles(counter, job_key, job_type,
                    company, filestem='indeed_jobs'):
 
     #Job Posts
-    post_loc = "xpath", "//div[@class='  row  result clickcard']"
+    p_pat = "//div[@class='jobsearch-SerpJobCard   row  result clickcard']"
+    post_loc = "xpath", p_pat
     posts = d.find_elements(*post_loc)
 
     #Job Names
@@ -147,7 +139,7 @@ def load_job_tiles(counter, job_key, job_type,
     df['job_type'] = job_type
     df['qry_company'] = company
 
-    f = "{}_{}.csv".format(filestem, get_date())
+    f = "{}_{}.csv".format(filestem, date)
     exists = os.path.isfile('./{}'.format(f))
     #print(exists)
     #if counter == 1:
@@ -160,7 +152,7 @@ def load_job_tiles(counter, job_key, job_type,
 
 
 
-def get_jobs(job_key, job_type, company, count, seconds):
+def get_jobs(job_key, job_type, company, count, seconds, date):
     qry_url = qry_indeed_jobs(job_key, company, seconds)
 
     job_tiles = load_job_tiles(count, job_key, job_type, 
@@ -170,7 +162,7 @@ def get_jobs(job_key, job_type, company, count, seconds):
     else:
         print("[*] error searching for {} jobs at {}...".format(job_key, 
                                                                 company))
-        error_logger(company, job_key, qry_url)
+        error_logger(company, job_key, qry_url, date)
         #import pdb; pdb.set_trace()
 
 
@@ -199,7 +191,7 @@ def iterator(row):
                 counter+=1
                 print("[*] searching for {} jobs at {}...".format(k, company))
                 
-                get_jobs(k, job_type, company, counter, seconds)
+                get_jobs(k, job_type, company, counter, seconds, date)
                 qc.append(k)
 
                 if len(qc) == n:
@@ -264,7 +256,7 @@ def remaining_jobs(jobs, attempts):
     return to_collect
 
 
-def perform_job_search(jobs):
+def perform_job_search(jobs, date):
     print("[*] DEPLOYING JOB SEARCH")
 
     global attempts
@@ -278,7 +270,7 @@ def perform_job_search(jobs):
         #import pdb; pdb.set_trace()
 
         #Inspect Results
-        f = "{}_{}.csv".format(filestem, get_date())
+        f = "{}_{}.csv".format(filestem, date)
         print(pd.read_csv(f))
         print("[*] successfully searched indeed jobs...experiment-on...")
         complete = True
@@ -297,6 +289,7 @@ def perform_job_search(jobs):
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("-d", "--date", type=str)
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
@@ -309,14 +302,16 @@ if __name__=="__main__":
     d.implicitly_wait(0)
 
     #Set Global Parameters
+    global date
     global seconds
     global filestem
-    #global attempts
     global complete
+
+    date = args.date
     seconds = args.seconds
     filestem = args.output
-    attempts = 0
     complete = False
+    attempts = 0
 
     #Create Master Collection File
     cid = pd.read_csv(args.cid)
@@ -333,7 +328,7 @@ if __name__=="__main__":
     #while complete is False:
     while attempts < 3 and complete is False:
 
-        perform_job_search(df)
+        perform_job_search(df, date)
             
     time.sleep(rt(5))
     d.close()
