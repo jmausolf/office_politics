@@ -238,7 +238,7 @@ if __name__=="__main__":
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
-    parser.add_argument("-s", "--seconds", default=5, type=int)
+    parser.add_argument("-s", "--seconds", default=4, type=int)
 
     #Get Jobs Args
     parser.add_argument("-py", "--pyver", default='python3', type=str)
