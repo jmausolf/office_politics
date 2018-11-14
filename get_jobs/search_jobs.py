@@ -151,15 +151,12 @@ def load_job_tiles(counter, job_key, job_type,
 
     f = "{}_{}.csv".format(filestem, date)
     exists = os.path.isfile('./{}'.format(f))
-    #print(exists)
-    #if counter == 1:
     if not exists:
         df.to_csv(f, index=False, header=True)
         return True
     else:
         df.to_csv(f, index=False, header=False, mode='a')
         return True
-
 
 
 def get_jobs(job_key, job_type, company, count, seconds, date):
@@ -173,10 +170,6 @@ def get_jobs(job_key, job_type, company, count, seconds, date):
         print("[*] error searching for {} jobs at {}...".format(job_key, 
                                                                 company))
         error_logger(company, job_key, qry_url, date)
-        #import pdb; pdb.set_trace()
-
-
-
 
 
 def iterator(row):
@@ -184,9 +177,6 @@ def iterator(row):
     job_type = row[1]
     keywords = ast.literal_eval(row[2])
     counter = row[3]
-    #company_id = row[4]
-
-    #print(row)
 
     qc = []
     n = len(keywords)
@@ -205,7 +195,6 @@ def iterator(row):
                 qc.append(k)
 
                 if len(qc) == n:
-                    #print("[*] adding {} to tmp_collected.csv...".format(company))
                     with open('tmp_collected.csv', 'a') as f:
                         writer = csv.writer(f)
                         writer.writerow(row.tolist())
@@ -220,12 +209,9 @@ def iterator(row):
         print('[*] ERROR: {}'.format(e))
         error_logger(company, k, search_url(company, k))
         return
-        #pass
-
 
 
 def update_remaining_jobs(company):
-
     df = pd.read_csv('tmp_to_collect.csv')
     to_collect = df[df.company != company]
     to_collect.to_csv('tmp_to_collect.csv', index=False)
@@ -235,15 +221,15 @@ def check_collected(company):
 
     df = pd.read_csv('tmp_collected.csv')
     collected = df[df.company == company]
-    #print(collected)
-    #print(collected.shape[0])
     if collected.shape[0] > 0:
         return True
     else:
         return False
 
+
 def check_nan(df):
     return df.isnull().values.any()
+
 
 def remaining_jobs(jobs, attempts):
 
@@ -277,7 +263,6 @@ def perform_job_search(jobs, date):
         to_collect = remaining_jobs(jobs, attempts)
         print(to_collect)
         to_collect.apply(iterator, axis=1)
-        #import pdb; pdb.set_trace()
 
         #Inspect Results
         f = "{}_{}.csv".format(filestem, date)
@@ -286,7 +271,6 @@ def perform_job_search(jobs, date):
         complete = True
 
     except:
-        #import pdb; pdb.set_trace()
         print("[*] ERROR in Job Search")
         attempts+=1
         to_collect = remaining_jobs(jobs, attempts)
@@ -332,10 +316,8 @@ if __name__=="__main__":
     df = cid.merge(key, on='job_type')
     df = df.drop(['backup_keys'], axis=1)
     df['counter'] = df.index
-    #df['cid'] = df.index
 
     #Run Main App
-    #while complete is False:
     while attempts < 3 and complete is False:
 
         perform_job_search(df, date)
