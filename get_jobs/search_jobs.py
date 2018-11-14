@@ -115,9 +115,19 @@ def load_job_tiles(counter, job_key, job_type,
                    company, filestem='indeed_jobs'):
 
     #Job Posts
-    p_pat = "//div[@class='jobsearch-SerpJobCard   row  result clickcard']"
-    post_loc = "xpath", p_pat
-    posts = d.find_elements(*post_loc)
+    #Source 1: Main Posts
+    pat1 = "//div[@class='jobsearch-SerpJobCard   row  result clickcard']"
+    main_post_loc = "xpath", pat1
+    main_posts = d.find_elements(*main_post_loc)
+
+    #Source 2: Last Post / First Post (If Only One Post Exists)
+    p2_class = 'jobsearch-SerpJobCard lastRow  row  result clickcard'
+    pat2 = "//div[@class='{}']".format(p2_class)
+    last_post_loc = "xpath", pat2
+    last_post = d.find_elements(*last_post_loc)
+
+    #All Posts
+    posts = main_posts+last_post
 
     #Job Names
     job_pat = "a[class='turnstileLink']"
