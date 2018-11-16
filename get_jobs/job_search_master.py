@@ -105,7 +105,7 @@ def make_clean_df(df_in):
 	return df
 
 
-def company_error_check(master_company, final_df, fname):
+def company_error_check(master_company, final_df, fname, date):
 
 	mc = master_company
 	fo = final_df
@@ -159,6 +159,7 @@ def main(master_company,
 
 	if scrape is True:
 
+		
 		company_csvs = make_company_csvs(master_company)
 		print(company_csvs)
 
@@ -199,10 +200,10 @@ def main(master_company,
 
 		#Write Out Results
 		df.to_csv(final_outfile, index=False, header=True)
-
+		
 		#Error Check
 		master_company = pd.read_csv(master_company)
-		company_error_check(master_company, df, final_outfile)
+		company_error_check(master_company, df, final_outfile, date)
 
 
 	else:
@@ -221,7 +222,7 @@ def main(master_company,
 
 		#Error Check
 		master_company = pd.read_csv(master_company)
-		company_error_check(master_company, df, final_outfile)
+		company_error_check(master_company, df, final_outfile, date)
 
 
 	#Cleanup Files
