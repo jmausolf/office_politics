@@ -57,7 +57,6 @@ def job_type_to_key(job_type, lower=True):
 
 
 def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
-
 	#Determine Type of Keyword
 	#From a Row or Direct Inject
 	if inject is False:
@@ -80,7 +79,11 @@ def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
 
 	#Isolate Stem
 	if stem is True:
-		key = key[:-n]
+		if len(key) > 4:
+			n = len(key)//3
+			key = key[:-n]
+		else:
+			pass
 
 	return key in job
 
@@ -435,4 +438,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_3_2018-11-08.csv')
+#get_employers('indeed_jobs_5_2018-11-14.csv', 'filter_test.csv')
