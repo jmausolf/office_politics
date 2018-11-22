@@ -268,18 +268,30 @@ def job_selector(infile, job_cols):
 	df['maybe_cid_match_count'] = df.groupby(gb)[cm].transform('sum')
 
 
+	#Intern Filter
+	df['internship'] = False
+	intern_crit = 	(
+						df['job'].str.contains(r'([iI]nternship)(s*\W*(?!\w))') |
+						df['job'].str.contains(r'([iI]ntern)(s*\W*(?!\w))') 
+
+					)
+	df.loc[intern_crit, 'internship'] = True
+
+
 	#Find Ideal Jobs
 	df['ideal_job'] = False
 	ideal_crit = (
-				  df.apply(job_match, axis=1, col=j[0]) |
-				  df.apply(job_match, axis=1, col=j[1]) |
-				  df.apply(job_match, axis=1, col=j[0], stem=True) |
-				  df.apply(job_match, axis=1, col=j[1], stem=True)
-				 )
+					(
+					  df.apply(job_match, axis=1, col=j[0]) |
+					  df.apply(job_match, axis=1, col=j[1]) |
+					  df.apply(job_match, axis=1, col=j[0], stem=True) |
+					  df.apply(job_match, axis=1, col=j[1], stem=True)
+					) &
+					( df['internship'] == False )
+				 )	
 	df.loc[ideal_crit, 'ideal_job'] = True
 
 	#Summarize Ideal Jobs (How Many by Company)
-	#df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
 	df['ideal_count'] = df.groupby(['qry_company'])['ideal_job'].transform('sum')
 
 
@@ -291,6 +303,9 @@ def job_selector(infile, job_cols):
 
 	#Ensure Backup Jobs Are True Only If Not Also Ideal Jobs
 	df.loc[( df['ideal_job'] == True ), 'bkup_job'] = False
+
+	#Remove Internships from Backup Jobs
+	df.loc[( df['internship'] == True), 'bkup_job'] = False	
 
 	#Summarize Backup Jobs (How Many by Company)
 	df['bkup_count'] = df.groupby(['qry_company'])['bkup_job'].transform('sum')
@@ -438,4 +453,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_5_2018-11-14.csv', 'filter_test.csv')
+#get_employers('indeed_jobs_4_2018-11-14.csv', 'filter_test.csv')
