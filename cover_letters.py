@@ -5,8 +5,9 @@ import inspect
 
 class cl(object):
 
+	## Data Science Cover Letters 
 
-	def P05RH_data_science(self, contact, job, office, company, internships, school, department, treatment):
+	def partisan_data_science(self, contact, job, office, company, internships, school, department, treatment):
 		message = inspect.cleandoc("""Dear {0}:
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5}, specializing in the application of recurrent neural networks in cloud computing. {3} is a leader in data science and artificial intelligence, and I am confident, together, we would be a great match.
@@ -23,7 +24,7 @@ class cl(object):
 		return message
 
 
-	def data_science(self, contact, job, office, company, internships, school, department, treatment):
+	def neutral_data_science(self, contact, job, office, company, internships, school, department, treatment):
 		message = inspect.cleandoc("""Dear {0}:
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5}, specializing in the application of recurrent neural networks in cloud computing. {3} is a leader in data science and artificial intelligence, and I am confident, together, we would be a great match.
@@ -38,6 +39,11 @@ class cl(object):
 			""".format(contact, job, office, company, internships, school, department, treatment))
 
 		return message
+
+	## Statistics Cover Letters
+
+
+	## MBA Cover Letters 
 
 
 
