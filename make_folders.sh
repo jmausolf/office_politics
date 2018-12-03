@@ -9,37 +9,44 @@
 ##################################
 
 
-#profiles='P01DH P02DL P03NH P04NL P05RH P06RL'
-
-#topics=datascience managementconsulting quant chemicalengineer
-
-#profiles=('P01DH' 'P02DL' 'P03NH' 'P04NL' 'P05RH' 'P06RL')
-
-#mkdir -p {P01DH,P02DL,P03NH,P04NL,P05RH,P06RL}/{folder1,folder2,folder3,folder4,folder5,folder6,folder7,folder8}
+#TODO 
+#Unique Resume Types for Jobs
+#Data Science, Stats, Quant are Roughly the Same Type
+#Managerment Consulting and Law Different?
 
 
-#mkdir -p {P01DH,P02DL,P03NH,P04NL,P05RH,P06RL}/{data_science,management_consulting,quant}
+#Copy Same Resume Template to Each Folder
+#for profile in P0{1DH,2DL,3NH,4NL,5RH,6RL}; do
+#    for topic in {data_science,management_consulting,quant}; do
+#        mkdir -p "$profile/$topic/tex"
+#        cp resume_template.tex "$profile/$topic/tex"
+#        #cp Resume_Matthew_Zachary_Hartman.pdf "$profile/$topic" 
+#    done
+#done
 
-for profile in P0{1DH,2DL,3NH,4NL,5RH,6RL}; do
-    for topic in {data_science,management_consulting,quant}; do
+
+#Copy Same Resume to Each Partisan Folder
+for profile in P0{1DH,2DL,5RH,6RL}; do
+  for topic in {data_science,stats,quant,mba,consultant,law}; do
         mkdir -p "$profile/$topic/tex"
-        #cp messages.py "$profile/$topic"
-        cp resume_template.tex "$profile/$topic/tex"
-        #cp Resume_Matthew_Zachary_Hartman.pdf "$profile/$topic" 
+        subpath="$profile/$topic/tex"
+        cp partisan_resume_template.tex $subpath
+        mv $subpath/partisan_resume_template.tex $subpath/resume_template.tex
+        echo 'copying partisan_resume_template.tex to ' $subpath
     done
 done
 
 
+#Copy Neutral Resume to Each Neutral Folder
+for profile in P0{3NH,4NL}; do
+  for topic in {data_science,stats,quant,mba,consultant,law}; do
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp neutral_resume_template.tex $subpath
+        mv $subpath/neutral_resume_template.tex $subpath/resume_template.tex
+        echo 'copying neutral_resume_template.tex to ' $subpath
+    done
+done
+
 mkdir -p logs
 
-
-# set counter value to 0
-#c=0
-# loop trough the array l1 (while the counter $c is less than the length of the array $l1)
-#while [ "$c" -lt "${#profiles[@]}" ]; do
-  # echo the corresponding value of array l2 to the file.txt in the directory
-  #echo "${topics[$c]}"
-  #echo "${profiles[$c]}${topics[$c]}"
-  # increment the counter
-  #let c=c+1
-#done

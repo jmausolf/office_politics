@@ -1,6 +1,7 @@
 import random
 import pandas as pd
-from new_messages import *
+#from new_messages import *
+from cover_letters import *
 import textwrap
 import inspect
 import textile
@@ -83,13 +84,15 @@ def make_text_cl(profile,
 				add_sig=True
 				):
 
-
 	internships = "{} and {}".format(internship1, internship2)
 
-	#method_name = "{}_{}".format(profile, job_type)
-	method_name = "{}".format(job_type)
-	my_cls = cl()
+	#Select Partisan or Neutral Cover Letter for Job Type
+	if profile == 'P03NH' or profile == 'P04NL':
+		method_name = "{}_{}".format('neutral', job_type)
+	else:
+		method_name = "{}_{}".format('partisan', job_type)
 
+	my_cls = cl()
 	cl_text = None
 	try:
 		cl_text = getattr(cl(), method_name)
