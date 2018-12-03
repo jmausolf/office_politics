@@ -30,7 +30,7 @@ for profile in P0{1DH,2DL,5RH,6RL}; do
   for topic in {data_science,stats,quant,mba,consultant,law}; do
         mkdir -p "$profile/$topic/tex"
         subpath="$profile/$topic/tex"
-        cp partisan_resume_template.tex $subpath
+        cp resume_templates/partisan_resume_template.tex $subpath
         mv $subpath/partisan_resume_template.tex $subpath/resume_template.tex
         echo 'copying partisan_resume_template.tex to ' $subpath
     done
@@ -42,7 +42,7 @@ for profile in P0{3NH,4NL}; do
   for topic in {data_science,stats,quant,mba,consultant,law}; do
         mkdir -p "$profile/$topic/tex"
         subpath="$profile/$topic/tex"
-        cp neutral_resume_template.tex $subpath
+        cp resume_templates/neutral_resume_template.tex $subpath
         mv $subpath/neutral_resume_template.tex $subpath/resume_template.tex
         echo 'copying neutral_resume_template.tex to ' $subpath
     done
