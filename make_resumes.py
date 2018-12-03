@@ -33,8 +33,9 @@ def rep_pair(r, list_pair):
 
 
 def article_strip(school):
-	stmp = school.lower().replace('the ', '').title()
-	clean_school = re.sub(r"\s{2,}", ' ', stmp).lstrip(' ')
+	s = school.lower().replace('the ', '').title()
+	s = ' '.join([w.lower() if len(w) <=2 else w for w in s.split(' ')])
+	clean_school = re.sub(r"\s{2,}", ' ', s).lstrip(' ')
 	return clean_school
 
 

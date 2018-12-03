@@ -11,12 +11,7 @@ from send_email import *
 import pdb
 import time
 
-#pdb.set_trace()
 
-def article_strip(school):
-	stmp = school.lower().replace('the ', '').title()
-	clean_school = re.sub(r"\s{2,}", ' ', stmp).lstrip(' ')
-	return clean_school
 
 def join_profiles_credentials():
 	cred = pd.read_csv("keys/credentials.csv")
