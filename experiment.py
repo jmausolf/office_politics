@@ -223,8 +223,8 @@ def join_ex_pair(ex_df, cid):
 
 	#Select GA Schools
 	ga_vals = ['department', 'sid', 'ga_sid', 'school', 'school_short', 
-			   'school_ctyst', 'school_cszip', 'school_address', 
-			   'title', 'matched_pair']
+			   'school_ctyst', 'school_cszip', 'school_address',
+			   'title', 'rgb', 'matched_pair']
 	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
 
 
@@ -334,6 +334,7 @@ def send_email_iter(row):
 					gmail_user=row['gmail_user'],
 					gmail_pass=row['gmail_pass'],
 					contact_email=row['contact_email'],
+					rgb=row['rgb'],
 					pair_version=row['matched_pair']
 					)
 		

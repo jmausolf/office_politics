@@ -31,6 +31,7 @@ def send_email(profile,
 			gmail_user,
 			gmail_pass,
 			contact_email,
+			rgb,
 			pair_version
 			):
 	
@@ -82,7 +83,9 @@ def send_email(profile,
 		int2_ctyst,
 		treatment, 
 		phone, 
-		gmail_user
+		gmail_user,
+		rgb,
+		pair_version
 		)
 
 
