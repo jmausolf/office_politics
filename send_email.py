@@ -30,12 +30,27 @@ def send_email(profile,
 			phone, 
 			gmail_user,
 			gmail_pass,
-			contact_email
+			contact_email,
+			pair_version
 			):
 	
 	
-	subject = "{} Position - {}".format(job, company)
+	#TODO Pass "Pair" to Email
+	#Need alt style for a number of elements in the email,
+	#such as the resume style, cover_letter style, subject line,
+	#signature, etc
 
+	#To avoid confounding whether one 'style' is better or worse
+	#with partisan or non-partisan, the 'style' needs to be randomized
+	#as well.
+
+	#By passing the pair 'a' or 'b' to the send_email 
+	#func, any style element can have at random an a and b version
+
+	if pair_version == 'A':
+		subject = "{} Position - {}".format(job, company)
+	elif pair_version == 'B':
+		subject = "{} - {} Position".format(company, job)
 
 	msgRoot = MIMEMultipart('mixed')
 	msgRoot['Subject'] = subject
@@ -96,7 +111,8 @@ def send_email(profile,
 				int1_ctyst,
 				internship2,
 				int2_ctyst,
-				treatment)
+				treatment,
+				pair_version)
 
 	#Resume
 	resume_filename = "Resume_{}.pdf".format(name.replace(' ', '_'))

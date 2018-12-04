@@ -111,7 +111,8 @@ def make_resume(profile,
 				int1_ctyst,
 				internship2,
 				int2_ctyst,
-				treatment):
+				treatment,
+				pair_version):
 
 	#Remove Articles from School Name
 	school_clean = article_strip(school)
@@ -137,8 +138,15 @@ def make_resume(profile,
 
 	path = "{}/{}/tex".format(profile, job_type)
 
+	#Select Resume Version
+	if pair_version == 'A':
+		resume_infile = "resume_template_A.tex"
+	elif pair_version == 'B':
+		resume_infile = "resume_template_B.tex"
+
+
 	outfile = "Resume_{}.tex".format(name.replace(' ', '_'))
-	modify_resume(path, "resume_template.tex", rp, name)
+	modify_resume(path, resume_infile, rp, name)
 
 	#compile new resume
 	compile_xelatex(path, outfile)
