@@ -27,13 +27,13 @@ class cl(object):
 	def data_science_B(self, contact, job, office, company, internships, school, department, treatment):
 		message = inspect.cleandoc("""Dear {0}:
 
-			I hope this email finds you well. I recently came across the {1} position at {3}'s {2} office. As a doctoral candidate in {6} at {5}, I research the application of nonparametric bound estimation for deep reinforcement learning, a type of computer vision. Given, {3}'s opportunities in data science and artificial intelligence, I would love to contribute my talents.
+			I hope this email finds you well. I recently came across the {1} position at {3}'s {2} office. As a doctoral candidate in {6} at {5}, I research the application of nonparametric bound estimation for deep reinforcement learning, a type of computer vision. Given, {3}'s opportunities in machine learning and data science, I would love to contribute my talents.
 
-			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have not only developed C++ libraries to optimize deep learning, but I have also used Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a data science intern for both {4}. In combination, my training in artificial intelligence, mathematics, and statistics, provides insight at the vanguard of data science.
+			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation research to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a summer data science intern for both {4}. In combination, my training in artificial intelligence, mathematics, and statistics, provides insight at the vanguard of data science.
 
-			Beyond my methodological prowess and acute facility to unpack and solve intricate data questions, I also embrace collaborative work, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities. Collectively, my abilities to excel in team environments, lead group inititiatives, and develop computational solutions demonstrate the value I could bring to {3}.
+			Beyond my methodological prowess and acute facility to unpack and solve intricate data questions, I also embrace collaborative work, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities. Collectively, my abilities to excel in team environments, lead group initiatives, and develop computational solutions demonstrate the value I could bring to {3}.
 
-			{0}, I am excited about this opportunity at {3} and eager to discuss next steps. To that end, I have attached a copy of my resume for review. I look forward to hearing from you soon.
+			{0}, I am excited about this opportunity at {3} and eager to discuss next steps. To that end, I have attached my resume for review. I hope to hear from you soon.
 
 			All the best,
 			""".format(contact, job, office, company, internships, school, department, treatment))
