@@ -49,7 +49,7 @@ def select_ga(row, count):
 			ga = gaf.loc[criteria_prox].copy()
 
 		#Add Pair Label
-		ga['matched_pair'] = 'a'
+		ga['matched_pair'] = 'A'
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
@@ -88,7 +88,7 @@ def select_ga(row, count):
 			ga = gaf.loc[criteria_prox].copy()
 
 		#Add Pair Label
-		ga['matched_pair'] = 'b' 
+		ga['matched_pair'] = 'B' 
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
@@ -299,11 +299,12 @@ def join_experiment_profiles_counter(experiment_file):
 
 def send_email_iter(row):
 
-	message = ("[*] sending email to {0:<10} at {1:<20} from {2:>10} - {3:>5}..."
+	message = ("[*] sending email to {0} at {1} from {2} - {3}, pair: {4}"
 			.format(row['contact_name'],
 					row['company'],
 					row['name'],
-					row['profile']
+					row['profile'],
+					row['matched_pair']
 				))
 
 	try:
@@ -332,7 +333,8 @@ def send_email_iter(row):
 					phone=row['phone'], 
 					gmail_user=row['gmail_user'],
 					gmail_pass=row['gmail_pass'],
-					contact_email=row['contact_email']
+					contact_email=row['contact_email'],
+					pair_version=row['matched_pair']
 					)
 		
 		return 'metadata::'+meta
@@ -367,7 +369,7 @@ def deploy_emails(experiment_csv):
 	df.to_csv(ex_out, index=False)
 
 	#Matched Pairs A
-	df_A = df.loc[(df['matched_pair']=='a')].copy()
+	df_A = df.loc[(df['matched_pair']=='A')].copy()
 	deploy_matched_pairs_emails(df_A, experiment_csv, "A")
 
 
@@ -380,7 +382,7 @@ def deploy_emails(experiment_csv):
 
 
 	#Matched Pairs B
-	df_B = df.loc[(df['matched_pair']=='b')].copy()
+	df_B = df.loc[(df['matched_pair']=='B')].copy()
 	deploy_matched_pairs_emails(df_B, experiment_csv, "B")
 
 
