@@ -115,11 +115,11 @@ def clean_leadiro(infile, outfile='leadiro_mathed_key.csv'):
 	df.drop(['tech_install_intent', 'revenue'], axis=1, inplace=True)
 
 	#Keep Cols
-	keep_cols = ['first_name', 'email', 'out_company']
+	keep_cols = ['first_name', 'last_name', 'email', 'out_company']
 	df = df[keep_cols].copy().reset_index(drop=True)
 
 	#Renamed Cols
-	cols = ['contact_name', 'email', 'company']
+	cols = ['contact_name', 'contact_last_name', 'contact_email', 'company']
 	df.columns = cols
 
 	#Keep Only One Contact Per Company

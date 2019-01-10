@@ -264,6 +264,7 @@ def main(employers,
 		 pair_key,
 		 order_var,
 		 rm_cols='default',
+		 order_cols='default',
 		 outfile='experiment.csv'
 		):
 
@@ -271,11 +272,13 @@ def main(employers,
 	#Load Employer Data
 	emp = pd.read_csv(employers)
 
+	#Get Regions
+	emp = get_regions(emp, state_col)
+
 	#Get Leads
 	emp = get_leads(emp)
 
-	#Get Regions
-	emp = get_regions(emp, state_col)
+	#Make Assignments
 	emp = assign_prestige(emp, 
 						  probs=prestige_probs,
 						  labels=prestige_labs
@@ -323,11 +326,27 @@ def main(employers,
 	else:
 		assert isinstance(rm_cols, list), 'provide a list of cols to remove'
 
+
 	#Make Clean File to Run
 	log_cols = details[1]
 	rm_cols = rm_cols+log_cols
 	emp = cleanup_cols(emp, rm_cols)
 	emp = add_applicant_id(emp)
+
+	#Order Remaining Columns
+	if order_cols is False:
+		pass
+	elif order_cols == 'default':
+		cols_order = ['id', 'cid', 'company',
+					  'contact_name', 'contact_last_name', 'contact_email',
+					  'office', 'office_state', 'region', 'proximal_region', 
+					  'position', 'job_type', 'profile']
+		emp = emp[cols_order]
+	else:
+		assert isinstance(order_cols, list), 'provide a column order list'+\
+											 'or set order_cols=False'
+		emp = emp[order_cols]
+
 
 	print(emp)
 	emp.to_csv(outfile, index=False)
@@ -343,8 +362,9 @@ main(employers='keys/employers_key.csv',
      control_lab='NEU',
      pair_key='cid',
      order_var='order',
-     rm_cols='default'
-	)
+     rm_cols='default',
+     order_cols='default'
+    )
 
 
 
