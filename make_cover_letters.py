@@ -85,6 +85,7 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 def make_text_cl(profile, 
 				job_type,
 				contact,
+				contact_last_name,
 				job,
 				office, 
 				company,
@@ -122,7 +123,7 @@ def make_text_cl(profile,
 		raise NotImplementedError("Class `{}` does not implement `{}`"
 			.format(cl().__class__.__name__, method_name))
 
-	message_body = cl_text(contact, job, office, company, 
+	message_body = cl_text(contact, contact_last_name, job, office, company, 
 						   internships, school, department, treatment)
 
 	if add_sig is True:
@@ -137,6 +138,7 @@ def make_text_cl(profile,
 def make_html_text_cl(profile, 
 				job_type,
 				contact,
+				contact_last_name,
 				job,
 				office, 
 				company,
@@ -159,6 +161,7 @@ def make_html_text_cl(profile,
 	message_text_body = make_text_cl(profile, 
 								  job_type,
 								  contact,
+								  contact_last_name,
 								  job,
 								  office,
 								  company,

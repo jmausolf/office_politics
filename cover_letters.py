@@ -7,8 +7,8 @@ class cl(object):
 
 	## Data Science Cover Letters 
 
-	def data_science_A(self, contact, job, office, company, internships, school, department, treatment):
-		message = inspect.cleandoc("""Dear {0}:
+	def data_science_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment):
+		message = inspect.cleandoc("""Dear {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5}, specializing in the application of recurrent neural networks in cloud computing. {3} is a leader in data science and artificial intelligence, and I am confident, together, we would be a great match.
 
@@ -24,7 +24,8 @@ class cl(object):
 		return message
 
 
-	def data_science_B(self, contact, job, office, company, internships, school, department, treatment):
+	def data_science_B(self, contact, contact_last_name, job, office, company, internships, school, department, treatment):
+		contact_full = "{} {}".format(contact, contact_last_name)
 		message = inspect.cleandoc("""Dear {0}:
 
 			I hope this email finds you well. I recently came across the {1} position at {3}'s {2} office. As a doctoral candidate in {6} at {5}, I research the application of nonparametric bound estimation for deep reinforcement learning, a type of computer vision. Given, {3}'s opportunities in machine learning and data science, I would love to contribute my talents.
@@ -36,7 +37,7 @@ class cl(object):
 			{0}, I am excited about this opportunity at {3} and eager to discuss next steps. To that end, I have attached my resume for review. I hope to hear from you soon.
 
 			All the best,
-			""".format(contact, job, office, company, internships, school, department, treatment))
+			""".format(contact_full, job, office, company, internships, school, department, treatment))
 
 		return message
 
