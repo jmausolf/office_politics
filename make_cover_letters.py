@@ -1,6 +1,5 @@
 import random
 import pandas as pd
-#from new_messages import *
 from cover_letters import *
 import textwrap
 import inspect
@@ -65,18 +64,19 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 		</div>
 		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond">{1}</font>
 		</div>
-		<div style="font-family:Tahoma;font-size:13px"><font face="Garamond" size="3" style="background-color:rgb(255,255,255);color:rgb({6})"><b>{2}</b></font></div>
+		<div style="font-family:Tahoma;font-size:13px"><font face="Copperplate" size="3" style="background-color:rgb(255,255,255);color:rgb({6})">{2}</b></font></div>
 		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond">M:<span>&nbsp;</span><a href="tel:{3}" value="{4}" style="color:rgb(17,131,204)" target="_blank">{3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(17,131,204)" target="_blank">{5}</a></font></div></div>
 		""".format(name, title, school, phone, phone_link, gmail_user, rgb)
 
 	elif pair_version == 'B':
+		rgb = '0,0,0'
 		sig_html = """
-		<div style="background-color:rgb(255,255,255)"><font face="Palatino" size="3">{0}</font>
+		<div style="background-color:rgb(255,255,255)"><font face="Helvetica" size="3">{0}</font>
 		</div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Palatino">{1}</font>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">{1}</font>
 		</div>
-		<div style="font-family:Tahoma;font-size:13px"><font face="Copperplate" size="3" style="background-color:rgb(255,255,255);color:rgb({6})">{2}</font></div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Palatino">C:<span>&nbsp;</span><a href="tel:{3}" value="{4}" style="color:rgb(17,85,204)" target="_blank">{3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(17,85,204)" target="_blank">{5}</a></font></div></div>
+		<div style="font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3" style="background-color:rgb(255,255,255);color:rgb({6})">{2}</font></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3"><span>&nbsp;</span><a href="tel:{3}" value="{4}" style="color:rgb(0,0,0)" target="_blank">{3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(0,0,0)" size="3" target="_blank">{5}</a></font></div></div>
 		""".format(name, title, school, phone, phone_link, gmail_user, rgb)
 
 	return sig_html
@@ -105,12 +105,6 @@ def make_text_cl(profile,
 				):
 
 	internships = "{} and {}".format(internship1, internship2)
-
-	#Select Partisan or Neutral Cover Letter for Job Type
-	#if profile == 'P03NH' or profile == 'P04NL':
-	#	method_name = "{}_{}".format('neutral', job_type)
-	#else:
-	#	method_name = "{}_{}".format('partisan', job_type)
 
 	#Select Version of Cover Letter for Job Type
 	method_name = "{}_{}".format(job_type, pair_version)
@@ -194,7 +188,7 @@ def make_html_text_cl(profile,
 		message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><font face="Garamond">{}\n\n{}</div></html>
 		""".format(textile.textile( message_text_body ), sig_html)
 	elif pair_version == 'B':
-		message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><font face="Palatino">{}\n\n{}</div></html>
+		message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><font face="Helvetica">{}\n\n{}</div></html>
 		""".format(textile.textile( message_text_body ), sig_html)
 
 	return message_text, message_html

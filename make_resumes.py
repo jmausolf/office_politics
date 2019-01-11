@@ -144,7 +144,6 @@ def make_resume(profile,
 	elif pair_version == 'B':
 		resume_infile = "resume_template_B.tex"
 
-
 	outfile = "Resume_{}.tex".format(name.replace(' ', '_'))
 	modify_resume(path, resume_infile, rp, name)
 
