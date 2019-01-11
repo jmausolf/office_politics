@@ -7,6 +7,14 @@ from make_resumes import *
 import inspect
 
 
+def abbreviate_middle(name):
+	split_name = name.split(' ')
+	f, m, l = split_name[0], split_name[1], split_name[2]
+	m = '{}.'.format(m[0])
+	name = '{} {} {}'.format(f, m, l)
+	return name
+
+
 def send_email(profile, 
 			job_type,
 			contact,
@@ -65,6 +73,15 @@ def send_email(profile,
 	#both plain and HTML versions of the cover letter
 	msgAlt = MIMEMultipart('alternative')
 	msgRoot.attach(msgAlt)
+
+
+	#Alter Full Name Format in CL/Email
+	#(Keep full name in the from field)
+	if pair_version == 'A':
+		pass
+	elif pair_version == 'B':
+		name = abbreviate_middle(name)
+
 
 	#Message (Text Version & HTML Version)
 	message_output = make_html_text_cl(
