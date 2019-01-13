@@ -117,6 +117,17 @@ def make_resume(profile,
 	#Remove Articles from School Name
 	school_clean = article_strip(school)
 
+
+	#Set Path
+	path = "{}/{}/tex".format(profile, job_type)
+
+	#Select Resume Version
+	if pair_version == 'A':
+		resume_infile = "resume_template_A.tex"
+	elif pair_version == 'B':
+		resume_infile = "resume_template_B.tex"
+		#phone = '({}'.format(phone.replace('-', ') ', 1))
+
 	rp = make_resume_pairs(profile,
 					job_type,
 					name, 
@@ -134,15 +145,6 @@ def make_resume(profile,
 					internship2,
 					int2_ctyst,
 					treatment)
-
-
-	path = "{}/{}/tex".format(profile, job_type)
-
-	#Select Resume Version
-	if pair_version == 'A':
-		resume_infile = "resume_template_A.tex"
-	elif pair_version == 'B':
-		resume_infile = "resume_template_B.tex"
 
 	outfile = "Resume_{}.tex".format(name.replace(' ', '_'))
 	modify_resume(path, resume_infile, rp, name)

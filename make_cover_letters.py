@@ -4,6 +4,12 @@ from cover_letters import *
 import textwrap
 import inspect
 import textile
+import re
+
+
+def remove_punct(text):
+	tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]', '', text)
+	return re.sub(r'\s', '', tmp)
 
 
 def keep_or_replace(app_company, intern_company):
@@ -36,18 +42,30 @@ def sub_cover_letter_internship(app_company, job_type_prestige):
 	return ic_phrase
 
 
-def make_text_sig(name, title, school, phone, gmail_user):
+def make_text_sig(name, title, school, phone, gmail_user, pair_version):
 
 	#Correct 'the' case in Universities
 	school = school.replace('the', 'The', 1)
 
-	sig_text = inspect.cleandoc("""
+	if pair_version == 'A':
 
-		{0}
-		{1}
-		{2}
-		C: {3} | {4}
-	""".format(name, title, school, phone, gmail_user))
+		sig_text = inspect.cleandoc("""
+
+			{0}
+			{1}
+			{2}
+			{3} | {4}
+		""".format(name, title, school, phone, gmail_user))
+
+	elif pair_version == 'B':
+
+		sig_text = inspect.cleandoc("""
+
+			{0}
+			{1}
+			{2}
+			Phone: {3}
+		""".format(name, title, school, phone))
 
 	return sig_text
 
@@ -56,8 +74,10 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 	#Correct 'the' case in Universities
 	school = school.replace('the', 'The', 1)
 
-	phone_link = "+1{}".format(phone.replace('-', ''))
-
+	#phone_link = "+1{}".format(phone.replace('-', ''))
+	phone_link = "+1{}".format(remove_punct(phone).strip())
+	print(phone_link)
+	
 	if pair_version == 'A':
 		sig_html = """
 		<div style="background-color:rgb(255,255,255)"><font face="Garamond" size="3">{0}</font>
@@ -65,19 +85,18 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond">{1}</font>
 		</div>
 		<div style="font-family:Tahoma;font-size:13px"><font face="Copperplate" size="3" style="background-color:rgb(255,255,255);color:rgb({6})">{2}</b></font></div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond">M:<span>&nbsp;</span><a href="tel:{3}" value="{4}" style="color:rgb(17,131,204)" target="_blank">{3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(17,131,204)" target="_blank">{5}</a></font></div></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond"></span><a href="tel:{4}" value="{4}" style="color:rgb(17,131,204)" target="_blank">+1 {3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(17,131,204)" target="_blank">{5}</a></font></div></div>
 		""".format(name, title, school, phone, phone_link, gmail_user, rgb)
 
 	elif pair_version == 'B':
-		rgb = '0,0,0'
 		sig_html = """
 		<div style="background-color:rgb(255,255,255)"><font face="Helvetica" size="3">{0}</font>
 		</div>
 		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">{1}</font>
 		</div>
-		<div style="font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3" style="background-color:rgb(255,255,255);color:rgb({6})">{2}</font></div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3"><span>&nbsp;</span><a href="tel:{3}" value="{4}" style="color:rgb(0,0,0)" target="_blank">{3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(0,0,0)" size="3" target="_blank">{5}</a></font></div></div>
-		""".format(name, title, school, phone, phone_link, gmail_user, rgb)
+		<div style="font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3" style="background-color:rgb(255,255,255);color:rgb('0,0,0')">{2}</font></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">Phone:<span>&nbsp;<a href="tel:{4}" value="{4}" style="color:rgb(0,0,0)" target="_blank">{3}</a><span>&nbsp;</span></font></div></div>
+		""".format(name, title, school, phone, phone_link)
 
 	return sig_html
 
@@ -121,7 +140,7 @@ def make_text_cl(profile,
 						   internships, school, department, treatment)
 
 	if add_sig is True:
-		message_sig = make_text_sig(name, title, school, phone, gmail_user)
+		message_sig = make_text_sig(name, title, school, phone, gmail_user, pair_version)
 		message_text = message_body+'\n\n'+message_sig
 	else:
 		message_text = message_body
@@ -175,7 +194,7 @@ def make_html_text_cl(profile,
 
 	#Make Text Sig/Full Text Message
 	sig_text = make_text_sig(name, title, school,
-							 phone, gmail_user)
+							 phone, gmail_user, pair_version)
 	message_text = message_text_body+'\n\n'+sig_text
 
 	#Make HTML Sig
