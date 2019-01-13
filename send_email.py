@@ -81,6 +81,7 @@ def send_email(profile,
 		pass
 	elif pair_version == 'B':
 		name = abbreviate_middle(name)
+		phone = '({}'.format(phone.replace('-', ') ', 1))
 
 
 	#Message (Text Version & HTML Version)
