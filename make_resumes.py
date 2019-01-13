@@ -52,7 +52,8 @@ def modify_resume(path, tex_file, pairs, name, replace=False):
 	if replace is True:
 		output = open(infile, "w")
 	else:
-		outfile = "Resume_{}.tex".format(name.replace(' ', '_'))
+		clean_name = name.replace(' ', '_').replace('.', '')
+		outfile = "Resume_{}.tex".format(clean_name)
 		output = open("{}/{}".format(path, outfile), "w")
 	
 	output.write(r)
@@ -146,7 +147,8 @@ def make_resume(profile,
 					int2_ctyst,
 					treatment)
 
-	outfile = "Resume_{}.tex".format(name.replace(' ', '_'))
+	clean_name = name.replace(' ', '_').replace('.', '')
+	outfile = "Resume_{}.tex".format(clean_name)
 	modify_resume(path, resume_infile, rp, name)
 
 	#compile new resume

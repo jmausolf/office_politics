@@ -138,7 +138,8 @@ def send_email(profile,
 				pair_version)
 
 	#Resume
-	resume_filename = "Resume_{}.pdf".format(name.replace(' ', '_'))
+	clean_name = name.replace(' ', '_').replace('.', '')
+	resume_filename = "Resume_{}.pdf".format(clean_name)
 	resume_path = "{}/{}/tex/{}".format(profile, job_type, resume_filename)
 
 	#Attach Resume
