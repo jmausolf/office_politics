@@ -1,0 +1,253 @@
+company,rank,source,job_type
+"Cravath, Swaine & Moore LLP",1,vault-law-100,law
+"Wachtell, Lipton, Rosen & Katz",2,vault-law-100,law
+"Skadden, Arps, Slate, Meagher & Flom LLP and Affiliates",3,vault-law-100,law
+Sullivan & Cromwell LLP,4,vault-law-100,law
+Latham & Watkins LLP,5,vault-law-100,law
+Davis Polk & Wardwell LLP,6,vault-law-100,law
+Simpson Thacher & Bartlett LLP,7,vault-law-100,law
+Kirkland & Ellis LLP,8,vault-law-100,law
+"Gibson, Dunn & Crutcher LLP",9,vault-law-100,law
+"Paul, Weiss, Rifkind, Wharton & Garrison LLP",10,vault-law-100,law
+"Weil, Gotshal & Manges LLP",11,vault-law-100,law
+"Quinn Emanuel Urquhart & Sullivan, LLP",12,vault-law-100,law
+Sidley Austin LLP,13,vault-law-100,law
+Cleary Gottlieb Steen & Hamilton LLP,14,vault-law-100,law
+Covington & Burling LLP,15,vault-law-100,law
+Jones Day,16,vault-law-100,law
+Williams & Connolly LLP,17,vault-law-100,law
+Debevoise & Plimpton LLP,18,vault-law-100,law
+White & Case LLP,19,vault-law-100,law
+WilmerHale,20,vault-law-100,law
+Ropes & Gray LLP,21,vault-law-100,law
+Paul Hastings LLP,22,vault-law-100,law
+Boies Schiller Flexner LLP,23,vault-law-100,law
+Morrison & Foerster LLP,24,vault-law-100,law
+Hogan Lovells US LLP,25,vault-law-100,law
+O'Melveny & Myers LLP,26,vault-law-100,law
+Cooley LLP,27,vault-law-100,law
+Proskauer Rose LLP,28,vault-law-100,law
+Akin Gump Strauss Hauer & Feld LLP,29,vault-law-100,law
+Arnold & Porter Kaye Scholer LLP,30,vault-law-100,law
+Baker McKenzie,31,vault-law-100,law
+Mayer Brown LLP,32,vault-law-100,law
+DLA Piper,33,vault-law-100,law
+K&L Gates LLP,34,vault-law-100,law
+Clifford Chance US LLP,35,vault-law-100,law
+Linklaters LLP,36,vault-law-100,law
+"Munger, Tolles & Olson LLP",37,vault-law-100,law
+"Orrick, Herrington & Sutcliffe LLP",38,vault-law-100,law
+Wilson Sonsini Goodrich & Rosati,39,vault-law-100,law
+"Milbank, Tweed, Hadley & McCloy LLP",40,vault-law-100,law
+Shearman & Sterling LLP,41,vault-law-100,law
+"Morgan, Lewis & Bockius LLP",42,vault-law-100,law
+King & Spalding LLP,43,vault-law-100,law
+Baker Botts LLP,44,vault-law-100,law
+Goodwin Procter LLP,45,vault-law-100,law
+Allen & Overy LLP,46,vault-law-100,law
+Winston & Strawn LLP,47,vault-law-100,law
+"Cadwalader, Wickersham & Taft LLP",48,vault-law-100,law
+"Fried, Frank, Harris, Shriver & Jacobson LLP",49,vault-law-100,law
+Perkins Coie LLP,50,vault-law-100,law
+Willkie Farr & Gallagher LLP,51,vault-law-100,law
+Dechert LLP,52,vault-law-100,law
+"Greenberg Traurig, LLP",53,vault-law-100,law
+Alston & Bird LLP,54,vault-law-100,law
+Jenner & Block LLP,55,vault-law-100,law
+Freshfields Bruckhaus Deringer LLP,56,vault-law-100,law
+McDermott Will & Emery LLP,57,vault-law-100,law
+Cahill Gordon & Reindel LLP,58,vault-law-100,law
+Holland & Knight LLP,59,vault-law-100,law
+Dentons,60,vault-law-100,law
+Susman Godfrey LLP,61,vault-law-100,law
+Pillsbury Winthrop Shaw Pittman LLP,62,vault-law-100,law
+Reed Smith LLP,63,vault-law-100,law
+Baker & Hostetler LLP,64,vault-law-100,law
+Vinson & Elkins LLP,65,vault-law-100,law
+Norton Rose Fulbright,66,vault-law-100,law
+Irell & Manella LLP,67,vault-law-100,law
+Nixon Peabody LLP,68,vault-law-100,law
+Crowell & Moring LLP,69,vault-law-100,law
+Fish & Richardson P.C.,70,vault-law-100,law
+Venable LLP,71,vault-law-100,law
+Steptoe & Johnson LLP,72,vault-law-100,law
+Bryan Cave Leighton Paisner LLP,73,vault-law-100,law
+Squire Patton Boggs,74,vault-law-100,law
+Foley & Lardner LLP,75,vault-law-100,law
+"Sheppard, Mullin, Richter & Hampton LLP",76,vault-law-100,law
+McGuireWoods LLP,77,vault-law-100,law
+Locke Lord LLP,78,vault-law-100,law
+Fenwick & West LLP,79,vault-law-100,law
+Arent Fox LLP,80,vault-law-100,law
+Hunton Andrews Kurth LLP,81,vault-law-100,law
+Katten Muchin Rosenman LLP,82,vault-law-100,law
+Schulte Roth & Zabel LLP,83,vault-law-100,law
+Seyfarth Shaw LLP,84,vault-law-100,law
+Pepper Hamilton LLP,85,vault-law-100,law
+Hughes Hubbard & Reed LLP,86,vault-law-100,law
+"Mintz, Levin, Cohn, Ferris, Glovsky and Popeo, P.C.",87,vault-law-100,law
+Fox Rothschild LLP,88,vault-law-100,law
+"Haynes and Boone, LLP",89,vault-law-100,law
+Duane Morris LLP,90,vault-law-100,law
+Drinker Biddle & Reath LLP,91,vault-law-100,law
+Blank Rome LLP,92,vault-law-100,law
+Troutman Sanders LLP,93,vault-law-100,law
+Davis Wright Tremaine LLP,94,vault-law-100,law
+Kilpatrick Townsend & Stockton LLP,95,vault-law-100,law
+Kramer Levin Naftalis & Frankel LLP,95,vault-law-100,law
+Ballard Spahr LLP,97,vault-law-100,law
+"Kellogg, Hansen, Todd, Figel & Frederick P.L.L.C.",98,vault-law-100,law
+Littler Mendelson P.C.,99,vault-law-100,law
+Wiley Rein LLP,100,vault-law-100,law
+McKinsey & Company,1,vault-consulting-50,consulting
+Bain & Company,2,vault-consulting-50,consulting
+"The Boston Consulting Group, Inc.",3,vault-consulting-50,consulting
+Deloitte Consulting LLP,4,vault-consulting-50,consulting
+Oliver Wyman,5,vault-consulting-50,consulting
+Putnam Associates,6,vault-consulting-50,consulting
+EY-Parthenon,7,vault-consulting-50,consulting
+PricewaterhouseCoopers Advisory Services LLC (PwC Advisory Services),8,vault-consulting-50,consulting
+The Bridgespan Group,9,vault-consulting-50,consulting
+Accenture,10,vault-consulting-50,consulting
+A.T. Kearney,11,vault-consulting-50,consulting
+KPMG LLP (Advisory),12,vault-consulting-50,consulting
+"Strategy&, part of the PwC network",13,vault-consulting-50,consulting
+L.E.K. Consulting,14,vault-consulting-50,consulting
+GE Healthcare Partners,15,vault-consulting-50,consulting
+The Brattle Group,16,vault-consulting-50,consulting
+Roland Berger,17,vault-consulting-50,consulting
+Insight Sourcing Group,18,vault-consulting-50,consulting
+"Analysis Group, Inc.",19,vault-consulting-50,consulting
+Alvarez & Marsal,20,vault-consulting-50,consulting
+Booz Allen Hamilton,21,vault-consulting-50,consulting
+The Keystone Group,22,vault-consulting-50,consulting
+ghSMART,23,vault-consulting-50,consulting
+ClearView Healthcare Partners,24,vault-consulting-50,consulting
+ZS,25,vault-consulting-50,consulting
+"Health Advances, LLC",26,vault-consulting-50,consulting
+LeapPoint,27,vault-consulting-50,consulting
+OC&C Strategy Consultants,28,vault-consulting-50,consulting
+Eagle Hill Consulting,29,vault-consulting-50,consulting
+Simon-Kucher & Partners,30,vault-consulting-50,consulting
+"Gartner, Inc.",31,vault-consulting-50,consulting
+Protiviti,32,vault-consulting-50,consulting
+"Trinity Partners, LLC",33,vault-consulting-50,consulting
+Clarkston Consulting,34,vault-consulting-50,consulting
+Ignyte Group,35,vault-consulting-50,consulting
+Bates White Economic Consulting,36,vault-consulting-50,consulting
+NERA Economic Consulting,37,vault-consulting-50,consulting
+Charles River Associates,38,vault-consulting-50,consulting
+The Chartis Group,39,vault-consulting-50,consulting
+Cicero Group,40,vault-consulting-50,consulting
+Innosight,41,vault-consulting-50,consulting
+Censeo Consulting Group,42,vault-consulting-50,consulting
+Keystone Strategy,43,vault-consulting-50,consulting
+The Cambridge Group,44,vault-consulting-50,consulting
+Arthur D. Little,45,vault-consulting-50,consulting
+"Smartronix, Inc.",46,vault-consulting-50,consulting
+Kenway Consulting,47,vault-consulting-50,consulting
+Pace Harmon,48,vault-consulting-50,consulting
+DayBlink Consulting,49,vault-consulting-50,consulting
+Vivaldi,50,vault-consulting-50,consulting
+Cornerstone Research,5,vault-best-boutique-consulting-firms,consulting
+Alira Health,23,vault-best-boutique-consulting-firms,consulting
+Goldman Sachs & Co.,1,vault-banking-50,banking
+Evercore,2,vault-banking-50,banking
+Centerview Partners,3,vault-banking-50,banking
+Morgan Stanley,4,vault-banking-50,banking
+"Greenhill & Co., Inc.",5,vault-banking-50,banking
+Moelis & Company,6,vault-banking-50,banking
+Perella Weinberg Partners,7,vault-banking-50,banking
+Guggenheim Securities,8,vault-banking-50,banking
+Bank of America Corp.,9,vault-banking-50,banking
+Lazard,10,vault-banking-50,banking
+Houlihan Lokey,11,vault-banking-50,banking
+William Blair,12,vault-banking-50,banking
+PJ SOLOMON,13,vault-banking-50,banking
+Harris Williams,14,vault-banking-50,banking
+"Cowen, Inc.",15,vault-banking-50,banking
+UBS,16,vault-banking-50,banking
+Loop Capital Markets,17,vault-banking-50,banking
+J.P. Morgan,18,vault-banking-50,banking
+Credit Suisse,19,vault-banking-50,banking
+Barclays Investment Bank (Americas),20,vault-banking-50,banking
+PJT Partners,21,vault-banking-50,banking
+Citi Institutional Clients Group,22,vault-banking-50,banking
+Jefferies,23,vault-banking-50,banking
+Rothschild,24,vault-banking-50,banking
+Allen & Company LLC,25,vault-banking-50,banking
+Qatalyst Partners,26,vault-banking-50,banking
+Deutsche Bank AG,27,vault-banking-50,banking
+RBC Capital Markets,28,vault-banking-50,banking
+Wells Fargo & Company,29,vault-banking-50,banking
+Macquarie Group (U.S.),30,vault-banking-50,banking
+Piper Jaffray Companies,31,vault-banking-50,banking
+BMO Capital Markets,32,vault-banking-50,banking
+Oppenheimer & Co.,33,vault-banking-50,banking
+Baird,34,vault-banking-50,banking
+Deloitte Corporate Finance LLC,35,vault-banking-50,banking
+BNP Paribas USA,36,vault-banking-50,banking
+"Nomura Holdings, Inc.",37,vault-banking-50,banking
+HSBC North America Holdings,38,vault-banking-50,banking
+Bank of New York Mellon Corporation,39,vault-banking-50,banking
+"LionTree Advisors, LLC",40,vault-banking-50,banking
+Royal Bank of Scotland Group plc,41,vault-banking-50,banking
+Cantor Fitzgerald,42,vault-banking-50,banking
+"Raymond James Financial, Inc.",43,vault-banking-50,banking
+"Tudor, Pickering, Holt & Co.",44,vault-banking-50,banking
+Societe Generale Corporate & Investment Banking,45,vault-banking-50,banking
+Stifel Financial Corp.,46,vault-banking-50,banking
+EY LLP (Financial Advisory Services),47,vault-banking-50,banking
+Brown Brothers Harriman,48,vault-banking-50,banking
+CIBC World Markets,49,vault-banking-50,banking
+Lloyds Banking Group PLC,50,vault-banking-50,banking
+PwC (PricewaterhouseCoopers) LLP,1,vault-accounting-50,accounting
+Deloitte,2,vault-accounting-50,accounting
+KPMG LLP,3,vault-accounting-50,accounting
+Grant Thornton LLP,4,vault-accounting-50,accounting
+BDO USA LLP,5,vault-accounting-50,accounting
+Plante Moran,6,vault-accounting-50,accounting
+Crowe LLP,7,vault-accounting-50,accounting
+"Baker Tilly Virchow Krause, LLP",8,vault-accounting-50,accounting
+Moss Adams LLP,9,vault-accounting-50,accounting
+RSM US LLP,10,vault-accounting-50,accounting
+Dixon Hughes Goodman LLP,11,vault-accounting-50,accounting
+Eide Bailly LLP,12,vault-accounting-50,accounting
+Friedman LLP,13,vault-accounting-50,accounting
+Frank Rimerman + Co. LLP,14,vault-accounting-50,accounting
+Brown Smith Wallace LLP,15,vault-accounting-50,accounting
+"CBIZ MHM, LLC",16,vault-accounting-50,accounting
+Elliott Davis,17,vault-accounting-50,accounting
+Armanino LLP,18,vault-accounting-50,accounting
+PKF O'Connor Davies,19,vault-accounting-50,accounting
+BPM,20,vault-accounting-50,accounting
+Withum,21,vault-accounting-50,accounting
+Schenck SC,22,vault-accounting-50,accounting
+"Sikich, LLP",23,vault-accounting-50,accounting
+Rehmann,24,vault-accounting-50,accounting
+Marks Paneth LLP,25,vault-accounting-50,accounting
+MBE CPAs,26,vault-accounting-50,accounting
+"Margolin, Winer & Evens LLP",27,vault-accounting-50,accounting
+Ernst & Young LLP (EY),28,vault-accounting-50,accounting
+CliftonLarsonAllen LLP,29,vault-accounting-50,accounting
+CohnReznick LLP,30,vault-accounting-50,accounting
+"BKD, LLP",31,vault-accounting-50,accounting
+Cherry Bekaert LLP,32,vault-accounting-50,accounting
+Marcum LLP,33,vault-accounting-50,accounting
+EisnerAmper LLP,34,vault-accounting-50,accounting
+Wipfli LLP,35,vault-accounting-50,accounting
+Cohen & Company,36,vault-accounting-50,accounting
+"UHY Advisors, Inc.",37,vault-accounting-50,accounting
+RubinBrown,38,vault-accounting-50,accounting
+Mazars USA LLP,39,vault-accounting-50,accounting
+The Siegfried Group,40,vault-accounting-50,accounting
+"Citrin Cooperman & Company, LLP",41,vault-accounting-50,accounting
+"Blum Shapiro & Co, P.C.",42,vault-accounting-50,accounting
+"Carr, Riggs & Ingram, LLC",43,vault-accounting-50,accounting
+Novogradac & Company LLP,44,vault-accounting-50,accounting
+"Anchin, Block & Anchin LLP",45,vault-accounting-50,accounting
+Warren Averett,46,vault-accounting-50,accounting
+Berdon LLP,47,vault-accounting-50,accounting
+Weaver LLP,48,vault-accounting-50,accounting
+"Blue & Co., LLC",49,vault-accounting-50,accounting
+Doeren Mayhew,50,vault-accounting-50,accounting

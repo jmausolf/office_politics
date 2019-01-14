@@ -1,0 +1,102 @@
+id,company,rank,source,job_type
+hedge_0,Bridgewater Associates,1,hedge_fund_100,quant
+hedge_1,AQR Capital Management,2,hedge_fund_100,quant
+hedge_2,J.P. Morgan Asset Management,3,hedge_fund_100,quant
+hedge_3,Renaissance Technologies,4,hedge_fund_100,quant
+hedge_4,Two Sigma,5,hedge_fund_100,quant
+hedge_5,D. E. Shaw & Co.,6,hedge_fund_100,quant
+hedge_6,Millennium Management,7,hedge_fund_100,quant
+hedge_7,Man Group,8,hedge_fund_100,quant
+hedge_8,Och-Ziff Capital Management Group,9,hedge_fund_100,quant
+hedge_9,Winton Group,10,hedge_fund_100,quant
+hedge_10,Elliott Management Corp.,11,hedge_fund_100,quant
+hedge_11,Baupost Group,12,hedge_fund_100,quant
+hedge_12,Adage Capital Management,13,hedge_fund_100,quant
+hedge_13,Viking Global Investors,14,hedge_fund_100,quant
+hedge_14,BlackRock,15,hedge_fund_100,quant
+hedge_15,Davidson Kempner Capital Management,16,hedge_fund_100,quant
+hedge_16,Citadel,17,hedge_fund_100,quant
+hedge_17,Marshall Wace,18,hedge_fund_100,quant
+hedge_18,Lone Pine Capital,19,hedge_fund_100,quant
+hedge_19,Credit Suisse Asset Management,20,hedge_fund_100,quant
+hedge_20,Farallon Capital Management,21,hedge_fund_100,quant
+hedge_21,GAM Holding,22,hedge_fund_100,quant
+hedge_22,King Street Capital Management,23,hedge_fund_100,quant
+hedge_23,Platinum Asset Management,24,hedge_fund_100,quant
+hedge_24,Hillhouse Capital Management,25,hedge_fund_100,quant
+hedge_25,ValueAct Capital Management,26,hedge_fund_100,quant
+hedge_26,Pacific Investment Management Co.,27,hedge_fund_100,quant
+hedge_27,Anchorage Capital Group,28,hedge_fund_100,quant
+hedge_28,York Capital Management,29,hedge_fund_100,quant
+hedge_29,Appaloosa Management,30,hedge_fund_100,quant
+hedge_30,Canyon Partners,31,hedge_fund_100,quant
+hedge_31,Third Point,32,hedge_fund_100,quant
+hedge_32,Egerton Capital (UK),33,hedge_fund_100,quant
+hedge_33,Brevan Howard Capital Management,34,hedge_fund_100,quant
+hedge_34,Centerbridge Partners,35,hedge_fund_100,quant
+hedge_35,BlueMountain Capital Management,36,hedge_fund_100,quant
+hedge_36,Cevian Capital,37,hedge_fund_100,quant
+hedge_37,Brummer & Partners,38,hedge_fund_100,quant
+hedge_38,Wellington Alternative Investments,39,hedge_fund_100,quant
+hedge_39,Moore Capital Management,40,hedge_fund_100,quant
+hedge_40,Fortress Investment Group,41,hedge_fund_100,quant
+hedge_41,Trian Fund Management,42,hedge_fund_100,quant
+hedge_42,Value Partners,43,hedge_fund_100,quant
+hedge_43,Goldman Sachs Asset Management,44,hedge_fund_100,quant
+hedge_44,Graham Capital Management,44,hedge_fund_100,quant
+hedge_45,Capula Investment Management,46,hedge_fund_100,quant
+hedge_46,TCI Fund Management,47,hedge_fund_100,quant
+hedge_47,Balyasny Asset Management,48,hedge_fund_100,quant
+hedge_48,Henderson AlphaGen,49,hedge_fund_100,quant
+hedge_49,Highfields Capital Management,50,hedge_fund_100,quant
+hedge_50,CQS,51,hedge_fund_100,quant
+hedge_51,GoldenTree Asset Management,52,hedge_fund_100,quant
+hedge_52,GSO Capital Partners,53,hedge_fund_100,quant
+hedge_53,Pershing Square Capital Management,54,hedge_fund_100,quant
+hedge_54,Beach Point Capital Management,55,hedge_fund_100,quant
+hedge_55,"Angelo, Gordon & Co.",56,hedge_fund_100,quant
+hedge_56,Lansdowne Partners (UK),57,hedge_fund_100,quant
+hedge_57,Bracebridge Capital,58,hedge_fund_100,quant
+hedge_58,Discovery Capital Management,59,hedge_fund_100,quant
+hedge_59,PointState Capital,60,hedge_fund_100,quant
+hedge_60,Magnetar Capital,61,hedge_fund_100,quant
+hedge_61,Nephila Capital,62,hedge_fund_100,quant
+hedge_62,CarVal Investors,63,hedge_fund_100,quant
+hedge_63,HBK Capital Management,64,hedge_fund_100,quant
+hedge_64,Tudor Investment Corp.,65,hedge_fund_100,quant
+hedge_65,Fir Tree Partners,66,hedge_fund_100,quant
+hedge_66,Carlson Capital,67,hedge_fund_100,quant
+hedge_67,Glenview Capital Management,67,hedge_fund_100,quant
+hedge_68,Paulson & Co.,69,hedge_fund_100,quant
+hedge_69,Tiger Global Management,70,hedge_fund_100,quant
+hedge_70,Marathon Asset Management,71,hedge_fund_100,quant
+hedge_71,Soroban Capital Partners,71,hedge_fund_100,quant
+hedge_72,Element Capital Management,73,hedge_fund_100,quant
+hedge_73,Maverick Capital,73,hedge_fund_100,quant
+hedge_74,Coatue Management,75,hedge_fund_100,quant
+hedge_75,"Grantham, Mayo, Van Otterloo",76,hedge_fund_100,quant
+hedge_76,Cerberus Capital Management,77,hedge_fund_100,quant
+hedge_77,Senator Investment Group,78,hedge_fund_100,quant
+hedge_78,Systematica Investments,79,hedge_fund_100,quant
+hedge_79,Greenlight Capital,80,hedge_fund_100,quant
+hedge_80,Caxton Associates,81,hedge_fund_100,quant
+hedge_81,Lazard Asset Management,82,hedge_fund_100,quant
+hedge_82,Candriam Investors Group,83,hedge_fund_100,quant
+hedge_83,Pictet Asset Management,84,hedge_fund_100,quant
+hedge_84,Silver Point Capital,85,hedge_fund_100,quant
+hedge_85,Odey Asset Management,86,hedge_fund_100,quant
+hedge_86,Capital Fund Management,87,hedge_fund_100,quant
+hedge_87,Eton Park Capital Management,88,hedge_fund_100,quant
+hedge_88,Blue Ridge Capital Holdings,89,hedge_fund_100,quant
+hedge_89,GSA Capital Partners,90,hedge_fund_100,quant
+hedge_90,Eminence Capital,91,hedge_fund_100,quant
+hedge_91,Pine River Capital Management,92,hedge_fund_100,quant
+hedge_92,MKP Capital Management,93,hedge_fund_100,quant
+hedge_93,Taconic Capital Advisors,94,hedge_fund_100,quant
+hedge_94,Arrowgrass Capital Partners,95,hedge_fund_100,quant
+hedge_95,JANA Partners,96,hedge_fund_100,quant
+hedge_96,Scopia Capital,97,hedge_fund_100,quant
+hedge_97,Redwood Capital Management,98,hedge_fund_100,quant
+hedge_98,Dymon Asia,99,hedge_fund_100,quant
+hedge_99,Indus Capital Partners,99,hedge_fund_100,quant
+hedge_100,Paloma International,99,hedge_fund_100,quant
