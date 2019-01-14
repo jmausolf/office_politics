@@ -146,77 +146,6 @@ def dedupe2(contains_dupes, threshold=70, scorer=fuzz.token_set_ratio):
     print(dupes)
 
 
-    #print(dedup)
-    #print(len(dedup))
-
-    '''
-    p2 = [(p, len(p)) for p in possibles]
-    p2_sort = sorted(p2, key=lambda x: x[1], reverse=True)
-    print(p2_sort)
-    #check_dupes = []
-    check_dupes = set()
-    check_dupes = set(['check duplicates'])
-    #for p in possibles:
-    p3 = [tuple(p[0]) for p in p2_sort]
-    #s1 = set(p3)
-    #print(s1)
-    #print(len(s1))
-    for p in p3:
-    	#print(check_dupes)
-    	p = tuple(p)
-    	#p = sorted(p)
-    	#print(p)
-    	if p in check_dupes:
-    		pass
-    	#elif p.issubset(check_dupes):
-    	#elif check_dupes.issubset(p):
-    	#elif set(p).issubset(check_dupes):
-    	#	print("in dupes")
-    	else:
-    		#rm = set()
-    		rm = []
-    		check_dupes.add(p)
-    		for c in check_dupes:
-    			cd = set(c)
-    			p2 = set(tuple(p))
-    			#print(cd)
-    			#print(p2)
-    			#if p in cd:
-    			#if p2.issubset(c):
-    			if len(p2.intersection(cd)) < 1: 
-    				print("in dupes")
-    				#print(cd)
-    				#print(p2)
-    			#if c(p):
-    				pass 
-	    		#print("not in dupes")
-	    		#check_dupes.append(p)
-	    		else:
-	    			#pass
-	    			#rm.add(p)
-	    			rm.append(p)
-	    	print(rm)
-	    	#check_dupes.difference(rm)
-	    	[check_dupes.remove(r) for r in rm]
-	    		#if check_dupes.isdisjoint(p):
-	    		#if check_dupes.issubset(p):
-	    		#if check_dupes.issuperset(p):
-    #for x in check_dupes:
-    #	print(x)
-    #print(rm)
-
-    print(len(possibles))
-    print(len(check_dupes))
-    #se = pd.Series(possibles)
-    #se.name = 'possibles'
-    #df = pd.DataFrame(se)
-    #df['possibles'] = df['possibles'].to_string()
-    #print(df.dtypes)
-    #df = df.drop_duplicates('possibles')
-    #print(df)
-    '''
-
-
     for e in extractor:
         keys[e] = 1
     extractor = keys.keys()
@@ -231,11 +160,13 @@ def dedupe2(contains_dupes, threshold=70, scorer=fuzz.token_set_ratio):
 def dedupe_fuzzy(df, col):
 
 	#Data Column to Dedupe
-	to_dedupe = df[col].tolist()
+	to_dedupe = df[col].tolist()[0:500]
 
 
+	#result =  list(dedupe2(to_dedupe, threshold=82, scorer=fuzz.WRatio))
+	#result =  list(dedupe2(to_dedupe, threshold=82, scorer=fuzz._token_set))
 	result =  list(dedupe2(to_dedupe, threshold=80))
-
+	#result2 =  list(dedupe2(to_dedupe, threshold=82, scorer=fuzz.WRatio))
 
 	#result = process.default_scorer(s1, s2)
 	dupes = list(set(to_dedupe).symmetric_difference(set(result)))

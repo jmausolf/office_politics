@@ -1,0 +1,253 @@
+company,job_type
+"Cravath, Swaine & Moore LLP",law
+"Wachtell, Lipton, Rosen & Katz",law
+"Skadden, Arps, Slate, Meagher & Flom LLP and Affiliates",law
+Sullivan & Cromwell LLP,law
+Latham & Watkins LLP,law
+Davis Polk & Wardwell LLP,law
+Simpson Thacher & Bartlett LLP,law
+Kirkland & Ellis LLP,law
+"Gibson, Dunn & Crutcher LLP",law
+"Paul, Weiss, Rifkind, Wharton & Garrison LLP",law
+"Weil, Gotshal & Manges LLP",law
+"Quinn Emanuel Urquhart & Sullivan, LLP",law
+Sidley Austin LLP,law
+Cleary Gottlieb Steen & Hamilton LLP,law
+Covington & Burling LLP,law
+Jones Day,law
+Williams & Connolly LLP,law
+Debevoise & Plimpton LLP,law
+White & Case LLP,law
+WilmerHale,law
+Ropes & Gray LLP,law
+Paul Hastings LLP,law
+Boies Schiller Flexner LLP,law
+Morrison & Foerster LLP,law
+Hogan Lovells US LLP,law
+O'Melveny & Myers LLP,law
+Cooley LLP,law
+Proskauer Rose LLP,law
+Akin Gump Strauss Hauer & Feld LLP,law
+Arnold & Porter Kaye Scholer LLP,law
+Baker McKenzie,law
+Mayer Brown LLP,law
+DLA Piper,law
+K&L Gates LLP,law
+Clifford Chance US LLP,law
+Linklaters LLP,law
+"Munger, Tolles & Olson LLP",law
+"Orrick, Herrington & Sutcliffe LLP",law
+Wilson Sonsini Goodrich & Rosati,law
+"Milbank, Tweed, Hadley & McCloy LLP",law
+Shearman & Sterling LLP,law
+"Morgan, Lewis & Bockius LLP",law
+King & Spalding LLP,law
+Baker Botts LLP,law
+Goodwin,law
+Allen & Overy LLP,law
+Winston & Strawn LLP,law
+"Cadwalader, Wickersham & Taft LLP",law
+"Fried, Frank, Harris, Shriver & Jacobson LLP",law
+Perkins Coie LLP,law
+Willkie Farr & Gallagher LLP,law
+Dechert LLP,law
+"Greenberg Traurig, LLP",law
+Alston & Bird LLP,law
+Jenner & Block LLP,law
+Freshfields Bruckhaus Deringer LLP,law
+McDermott Will & Emery LLP,law
+Cahill Gordon & Reindel LLP,law
+Holland & Knight LLP,law
+Dentons,law
+Susman Godfrey LLP,law
+Pillsbury Winthrop Shaw Pittman LLP,law
+Reed Smith LLP,law
+Baker & Hostetler LLP,law
+Vinson & Elkins LLP,law
+Norton Rose Fulbright,law
+Irell & Manella LLP,law
+Nixon Peabody LLP,law
+Crowell & Moring LLP,law
+Fish & Richardson P.C.,law
+Venable LLP,law
+Steptoe & Johnson LLP,law
+Bryan Cave Leighton Paisner LLP,law
+Squire Patton Boggs,law
+Foley & Lardner LLP,law
+"Sheppard, Mullin, Richter & Hampton LLP",law
+McGuireWoods LLP,law
+Locke Lord LLP,law
+Fenwick & West LLP,law
+Arent Fox LLP,law
+Hunton Andrews Kurth LLP,law
+Katten Muchin Rosenman LLP,law
+Schulte Roth & Zabel LLP,law
+Seyfarth Shaw LLP,law
+Pepper Hamilton LLP,law
+Hughes Hubbard & Reed LLP,law
+"Mintz, Levin, Cohn, Ferris, Glovsky and Popeo, P.C.",law
+Fox Rothschild LLP,law
+"Haynes and Boone, LLP",law
+Duane Morris LLP,law
+Drinker Biddle & Reath LLP,law
+Blank Rome LLP,law
+Troutman Sanders LLP,law
+Davis Wright Tremaine LLP,law
+Kilpatrick Townsend & Stockton LLP,law
+Kramer Levin Naftalis & Frankel LLP,law
+Ballard Spahr LLP,law
+"Kellogg, Hansen, Todd, Figel & Frederick P.L.L.C.",law
+Littler Mendelson P.C.,law
+Wiley Rein LLP,law
+McKinsey & Company,consulting
+Bain & Company,consulting
+"The Boston Consulting Group, Inc.",consulting
+Deloitte Consulting LLP,consulting
+Oliver Wyman,consulting
+Putnam Associates,consulting
+EY-Parthenon,consulting
+PricewaterhouseCoopers Advisory Services LLC (PwC Advisory Services),consulting
+The Bridgespan Group,consulting
+Accenture,consulting
+A.T. Kearney,consulting
+KPMG LLP (Advisory),consulting
+"Strategy&, part of the PwC network",consulting
+L.E.K. Consulting,consulting
+GE Healthcare Partners,consulting
+The Brattle Group,consulting
+Roland Berger,consulting
+Insight Sourcing Group,consulting
+"Analysis Group, Inc.",consulting
+Alvarez & Marsal,consulting
+Booz Allen Hamilton,consulting
+The Keystone Group,consulting
+ghSMART,consulting
+ClearView Healthcare Partners,consulting
+ZS,consulting
+"Health Advances, LLC",consulting
+LeapPoint,consulting
+OC&C Strategy Consultants,consulting
+Eagle Hill Consulting,consulting
+Simon-Kucher & Partners,consulting
+"Gartner, Inc.",consulting
+Protiviti,consulting
+"Trinity Partners, LLC",consulting
+Clarkston Consulting,consulting
+Ignyte Group,consulting
+Bates White Economic Consulting,consulting
+NERA Economic Consulting,consulting
+Charles River Associates,consulting
+The Chartis Group,consulting
+Cicero Group,consulting
+Innosight,consulting
+Censeo Consulting Group,consulting
+Keystone Strategy,consulting
+The Cambridge Group,consulting
+Arthur D. Little,consulting
+"Smartronix, Inc.",consulting
+Kenway Consulting,consulting
+Pace Harmon,consulting
+DayBlink Consulting,consulting
+Vivaldi,consulting
+Cornerstone Research,consulting
+Alira Health,consulting
+Goldman Sachs & Co.,banking
+Evercore,banking
+Centerview Partners,banking
+Morgan Stanley,banking
+"Greenhill & Co., Inc.",banking
+Moelis & Company,banking
+Perella Weinberg Partners,banking
+Guggenheim Securities,banking
+Bank of America Corp.,banking
+Lazard,banking
+Houlihan Lokey,banking
+William Blair,banking
+PJ SOLOMON,banking
+Harris Williams,banking
+"Cowen, Inc.",banking
+UBS,banking
+Loop Capital Markets,banking
+J.P. Morgan,banking
+Credit Suisse,banking
+Barclays Investment Bank (Americas),banking
+PJT Partners,banking
+Citi Institutional Clients Group,banking
+Jefferies,banking
+Rothschild,banking
+Allen & Company LLC,banking
+Qatalyst Partners,banking
+Deutsche Bank AG,banking
+RBC Capital Markets,banking
+Wells Fargo & Company,banking
+Macquarie Group (U.S.),banking
+Piper Jaffray Companies,banking
+BMO Capital Markets,banking
+Oppenheimer & Co.,banking
+Baird,banking
+Deloitte Corporate Finance LLC,banking
+BNP Paribas USA,banking
+"Nomura Holdings, Inc.",banking
+HSBC North America Holdings,banking
+Bank of New York Mellon Corporation,banking
+"LionTree Advisors, LLC",banking
+Royal Bank of Scotland Group plc,banking
+Cantor Fitzgerald,banking
+"Raymond James Financial, Inc.",banking
+"Tudor, Pickering, Holt & Co.",banking
+Societe Generale Corporate & Investment Banking,banking
+Stifel Financial Corp.,banking
+EY LLP (Financial Advisory Services),banking
+Brown Brothers Harriman,banking
+CIBC World Markets,banking
+Lloyds Banking Group PLC,banking
+PwC (PricewaterhouseCoopers) LLP,accounting
+Deloitte,accounting
+KPMG LLP,accounting
+Grant Thornton LLP,accounting
+BDO USA LLP,accounting
+Plante Moran,accounting
+Crowe LLP,accounting
+"Baker Tilly Virchow Krause, LLP",accounting
+Moss Adams LLP,accounting
+RSM US LLP,accounting
+Dixon Hughes Goodman LLP,accounting
+Eide Bailly LLP,accounting
+Friedman LLP,accounting
+Frank Rimerman + Co. LLP,accounting
+Brown Smith Wallace LLP,accounting
+"CBIZ MHM, LLC",accounting
+Elliott Davis,accounting
+Armanino LLP,accounting
+PKF O'Connor Davies,accounting
+BPM,accounting
+Withum,accounting
+Schenck SC,accounting
+"Sikich, LLP",accounting
+Rehmann,accounting
+Marks Paneth LLP,accounting
+MBE CPAs,accounting
+"Margolin, Winer & Evens LLP",accounting
+Ernst & Young LLP (EY),accounting
+CliftonLarsonAllen LLP,accounting
+CohnReznick LLP,accounting
+"BKD, LLP",accounting
+Cherry Bekaert LLP,accounting
+Marcum LLP,accounting
+EisnerAmper LLP,accounting
+Wipfli LLP,accounting
+Cohen & Company,accounting
+"UHY Advisors, Inc.",accounting
+RubinBrown,accounting
+Mazars USA LLP,accounting
+The Siegfried Group,accounting
+"Citrin Cooperman & Company, LLP",accounting
+"Blum Shapiro & Co, P.C.",accounting
+"Carr, Riggs & Ingram, LLC",accounting
+Novogradac & Company LLP,accounting
+"Anchin, Block & Anchin LLP",accounting
+Warren Averett,accounting
+Berdon LLP,accounting
+Weaver LLP,accounting
+"Blue & Co., LLC",accounting
+Doeren Mayhew,accounting
