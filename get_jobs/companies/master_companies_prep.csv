@@ -1,0 +1,1341 @@
+company,source,job_type_1,job_type_2,job_type_3,job_type_4,job_type_5,job_type_6,job_type_7,job_type_8
+Walmart,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Geico,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Apple,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ExxonMobil,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+McKesson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+UnitedHealth,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CVS Health,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+General Motors,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AT&T,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ford Motor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AmerisourceBergen,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Amazon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+General Electric,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Verizon Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cardinal Health,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Costco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Walgreens,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kroger,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Chevron,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fannie Mae,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+JP Morgan Chase,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Express Scripts Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Home Depot,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Boeing,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wells Fargo,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bank of America,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Google,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Microsoft,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Anthem,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Citigroup,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Comcast,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+IBM,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+State Farm Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Phillips 66,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Johnson & Johnson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Procter & Gamble,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Valero Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Target,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Freddie Mac,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lowe's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dell Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MetLife,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aetna,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PepsiCo,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Archer Daniels Midland,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+UPS,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Intel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Prudential Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Albertsons,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+United Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Marathon Petroleum,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Disney,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Humana,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pfizer,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AIG,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lockheed Martin,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sysco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FedEx,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hewlett Packard Enterprise,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cisco Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HP,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dow Chemical,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HCA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Coca-Cola,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+New York Life Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Centene,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Airlines,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nationwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Merck,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cigna,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Delta Air Lines,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Best Buy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Honeywell,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Caterpillar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Liberty Mutual Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Morgan Stanley,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Massachusetts Mutual Life Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Goldman Sachs,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Energy Transfer Equity,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TIAA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Oracle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tyson Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+United Continental,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Allstate,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Publix Super Markets,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Express,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TJX,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nike,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Exelon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+General Dynamics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Rite Aid,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Gilead Sciences,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CHS,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+3M,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Time Warner,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Charter Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Northwestern Mutual,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Facebook,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Travelers,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Capital One Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Twenty-First Century Fox,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+USAA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Philip Morris,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Deere,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kraft Heinz,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Avnet,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mondelez,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Macy's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AbbVie,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+McDonald's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DuPont,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Northrop Grumman,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ConocoPhillips,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Raytheon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Andeavor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Arrow Electronics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Quam,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Progressive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Duke Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Enterprise Products Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Amgen,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+US Foods Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+US Bancorp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aflac,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sears,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dollar General,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AutoNation,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Community Health Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Starbucks,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Eli Lilly,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Paper,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tenet Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Abbott Laboratories,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dollar Tree,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Whirlpool,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Southwest Airlines,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Emerson Electric,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Staples,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Plains GP,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Penske Automotive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Union Pacific,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Danaher,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Southern,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Manpower,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bristol-Myers Squibb,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Altria,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fluor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kohl's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lear,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Jabil,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hartford Financial Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Thermo Fisher Scientific,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kimberly-Clark,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Molina Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PG&E,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Supervalu,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cummins,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CenturyLink,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aecom,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Xerox,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Marriott,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Paccar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+General Mills,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PNC Financial Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Electric Power,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Icahn Enterprises,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nucor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NextEra Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Performance Food,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PBF Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Halliburton,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CarMax,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Freeport-McMoRan,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Whole Foods Market,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bank of New York Mellon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Gap,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Omn,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Genuine Parts,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DaVita,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Colgate-Palmolive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PPG Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Goodyear Tire & Rubber,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Synchrony Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DISH Network,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Visa,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nordstrom,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+INTL FCStone,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+WestRock,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+XPO Logistics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aramark,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CBS,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AES,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+WellCare Health Plans,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FirstEnergy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Conagra Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Synnex,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CDW,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Textron,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Waste,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Illinois Tool Works,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Office Depot,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Monsanto,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cognizant Technology Solutions,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Texas Instruments,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lincoln National,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Newell Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Land O'Lakes,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Marsh & McLennan,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ecolab,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+C H Robinson Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Loews,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CBRE,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kinder Morgan,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kellogg,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Western Digital,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Guardian Life Ins of America,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ross Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+L Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+JC Penney,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Farmers Insurance Exchange,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Reynolds American,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vi,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Becton Dickinson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Micron Technology,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Principal Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Arconic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NRG Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+VF,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Devon Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DR Horton,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bed Bath & Beyond,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Consolidated Edison,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Edison,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sherwin-Williams,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NGL Energy Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dominion Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ameriprise Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ADP,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hilton Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+First Data,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Henry Schein,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Toys 'R' Us,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+BB&T,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Reinsurance of America,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Core-Mark Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Biogen,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Las Vegas Sands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Stanley Black & Decker,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Parker-Hannifin,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Stryker,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Estee Lauder,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Celgene,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+BlackRock,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Xcel Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CSX,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Unum,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Jacobs Engineering,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lennar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+1 Automotive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Leucadia National,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Entergy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PayPal,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Applied Materials,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Voya Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mastercard,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Priceline,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Liberty Interactive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AutoZone,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+State Street,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DTE Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+L3 Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HollyFrontier,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Praxair,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Universal Health Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Discover Financial Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Occidental Petroleum,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+United States Steel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sempra Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Baxter,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+WW Grainger,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Autoliv,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Norfolk Southern,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Baker Hughes,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ally Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sonic Automotive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Owens & Minor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Huntsman,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Laboratoryof America,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Murphy USA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Advance Auto Parts,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fidelity National Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Air Products & Chemicals,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hormel Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hertz Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MGM Resorts,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Corning,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Republic Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alcoa,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fidelity National Information Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pacific Life,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+SunTrust Banks,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+LKQ,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+BorgWarner,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ball,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CST Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Public Service Enterprise,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Eastman Chemical,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+eBay,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mohawk Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Oneok,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Frontier Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Netflix,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Family Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Thrivent Financial for Lutherans,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Expedia,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lithia Motors,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Avis Budget,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Reliance Steel & Aluminum,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+GameStop,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tenneco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+O'Reilly Automotive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Peter Kiewit Sons',f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+United Natural Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+salesforce,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Boston Scientific,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Newmont Mining,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Genworth Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Live Nation Entertainment,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Veritiv,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+News,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Crown,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Global Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PVH,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Level 3 Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Navistar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Univar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Campbell Soup,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dick's Sporting Goods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Weyerhaeuser,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mutual of Omaha Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Chesapeake Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Anadarko Petroleum,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Interpublic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+J M Smucker,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Steel Dynamics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Foot Locker,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Western Refining,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+SpartanNash,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dean Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Zimmer Biomet,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pulte,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+W R Berkley,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Quanta Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+EOG Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Charles Schwab,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Eversource Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Anixter,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Emcor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Assurant,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CenterPoint Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Harris,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HD Supply,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PPL,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Quest Diagnostics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Williams,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+WEC Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hershey,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AGCO,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ralph Lauren,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Masco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wesco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+LifePoint Health,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+National Oilwell Varco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kindred Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mosaic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alliance Data Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Computer Sciences,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Huntington Ingalls Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Leidos,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Erie Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tesla,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ascena Retail,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Darden Restaurants,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Harman Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nvidia,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+RR Donnelley & Sons,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fifth Third Bancorp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Quintiles IMS,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Jones Lang LaSalle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dover,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Spirit AeroSystems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ryder System,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+A-Mark Precious Metals,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tractor Supply,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sealed Air,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Auto-Owners Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Yum China,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Calpine,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Owens-Illinois,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Targa Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+JetBlue Airways,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Jones Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Franklin Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Activision Blizzard,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+JB Hunt Transport Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Constellation Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NCR,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Asbury Automotive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Discovery Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Berry Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sanmina,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CalAtlantic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dr Pepper Snapple,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dillard's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HRG,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CMS Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Graybar Electric,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Builders FirstSource,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Yum Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Casey's General Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Amphenol,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Oshkosh,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+iHeartMedia,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TreeHouse Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alleghany,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Expeditors of Washington,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Avery Dennison,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ameren,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hanesbrands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Motorola Solutions,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+St Jude Medical,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Harley-Davidson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Regions Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Intercontinental Exchange,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alaska Air,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Old Republic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lam Research,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AK Steel Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Rockwell Automation,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Adobe Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Avon Products,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Terex,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NVR,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dana,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Realogy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Tower,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Packagingof America,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Citizens Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+United Rentals,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Clorox,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Genesis Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+M&T Bank,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ingredion,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+UGI,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Owens Corning,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+S&P Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Markel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wyndham Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Arthur J Gallagher,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Burlington Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+First American Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Symantec,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Patterson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Olin,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NetApp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Raymond James Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TravelCenters of America,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fiserv,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Host Hotels & Resorts,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Insight Enterprises,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mattel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AmTrust Financial Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cincinnati Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Simon Property,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Western Union,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+KeyCorp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Delek US,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Booz Allen Hamilton Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Chemours,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Western & Southern Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Celanese,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Windstream,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Seaboard,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Essendant,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Apache,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Airgas,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kelly Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Liberty Media,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Rockwell Collins,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Robert Half,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CH2M Hill,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Big Lots,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Michaels,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Toll Brothers,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Yahoo,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vistra Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ABM Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Northern Trust,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MasTec,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Blackstone,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Telephone & Data Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Domtar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Williams-Sonoma,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Westlake Chemical,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Post,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hasbro,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Juniper Networks,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fortune Brands Home & Security,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Brookdale Senior Living,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tutor Perini,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Navient,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Neiman Marcus,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ashland Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hanover Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CommScope Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Spectra Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cintas,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Zoetis,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Molson Coors Brewing,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Regeneron Pharmaceuticals,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ulta Beauty,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hess,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Magellan Health,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Intuit,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Under Armour,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+RPM,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cerner,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sonoco Products,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Securian Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Peabody Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+YRC Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Commercial Metals,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Marathon Oil,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Polaris Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Envision Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Trinity Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Thor Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Caesars Entertainment,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Levi Strauss,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FMC Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+VWR,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NiSource,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Coach,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Brunswick,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wynn Resorts,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Orbital ATK,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CIT,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Science Applications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hyatt Hotels,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+McCormick,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Diplomat Pharmacy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Barnes & Noble,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Electronic Arts,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FM Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Coty,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Smart & Final Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Quad/Graphics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dynegy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Graphic Packaging Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Select Medical,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Welltower,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Advanced Micro Devices,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+USG,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+KBR,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bloomin' Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MDU Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CSRA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Laureate Education,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Scana,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+T Rowe Price,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Watsco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Rush Enterprises,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Agilent Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+WhiteWave Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Valspar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Total System Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Torchmark,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cabela's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Beacon Roofing Supply,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+L Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sprouts Farmers Market,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Swift Transportation,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bemis,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tiffany,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Flowserve,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CNO Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fastenal,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sally Beauty,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Axle & Manufacturing,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Flowers Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Andersons,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Crown Castle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Boise Cascade,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ON Semiconductor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Chipotle Mexican Grill,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Amkor Technology,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Triumph,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+OneMain,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+General Cable,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ametek,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alon USA Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pioneer Natural Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Martin Marietta Materials,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ingles Markets,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Roper Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Huntington Bancshares,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Xylem,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Unified Grocers,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Leggett & Platt,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Dentsply Sirona,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CACI,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mead Johnson Nutrition,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CR Bard,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Snap-on,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HealthSouth,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nasdaq,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Avaya,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CF Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Carlisle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Equinix,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+LSC Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Colfax,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lennox,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Iasis Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Silgan,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Eagle Outfitters,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Moody's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Calumet Specialty Products Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CME,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+KB Home,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vulcan Materials,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Platform Specialty Products,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vantiv,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Skechers,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Zebra Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hub,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HSN,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Stericycle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+National General,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Taylor Morrison Home,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Urban Outfitters,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Resolute Forest Products,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ScanSource,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Camping World,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Iron Mountain,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hubbell,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pinnacle West Capital,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Church & Dwight,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Noble Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Albemarle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cooper-Standard,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+KKR,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Country Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ventas,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hexion,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Analog Devices,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Citrix Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Green Plains,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pitney Bowes,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Scripps Networks Interactive,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Darling Ingredients,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wayfair,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tailored Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sabre,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Global Payments,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Atmos Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tegna,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Diebold Nixdorf,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PolyOne,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TD Ameritrade Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Abercrombie & Fitch,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Greif,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alliant Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Water Works,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Acuity Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Skyworks Solutions,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FMC,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Amerco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CUNA Mutual,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Brinker,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Buckeye Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Warner Music,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Universal Forest Products,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American National Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mercury General,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Regal Beloit,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Varian Medical Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aaron's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Visteon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Carter's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Meritor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Regal Entertainment,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mednax,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TransDigm,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Landstar System,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Puget Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kar Auction Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Equifax,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+on,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+IAC/InterActiveCorp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Weis Markets,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Allegheny Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pinnacle Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tempur Sealy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+SkyWest,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Flavors & Fragrances,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+BMC Stock,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Brown-Forman,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alexion Pharmaceuticals,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+KapStone Paper & Packaging,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Time,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TriNet,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Steelcase,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+EchoStar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sentry Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Monster Beverage,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Gannett,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fossil,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Univision Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Meritage Homes,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MRC Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+H&R Block,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Penn National Gaming,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+SCI Funeral,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Brink's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Old Dominion Freight Line,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Triple-S,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+KLA-Tencor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Edwards Lifesciences,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Rent-A-Center,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Comerica,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Paychex,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+First Solar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Insperity,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Scotts Miracle-Gro,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+B/E Aerospace,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Westinghouse Air Brake Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cooper Tire & Rubber,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cinemark,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Keysight Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Convergys,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cracker Barrel Old Country Store,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PriceSmart,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Broadridge Financial Solutions,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Scientific Games,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Genesco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MSC Industrial Direct,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ryerson Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Acadia Healthcare,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hologic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Unisys,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Worthington Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sanderson Farms,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wabco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Panera Bread,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Metaldyne Performance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Medical Mutual of Ohio,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AMC Networks,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Clean Harbors,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hovnanian Enterprises,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TrueBlue,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Crane,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ServiceMaster Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sinclair Broadcast,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mutual of America Life Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+BGC Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DSW,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Intuitive Surgical,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ArcBest,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PC Connection,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AO Smith,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Greenbrier,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Great Plains Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bon-Ton Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+D Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Timken,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aleris,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Legg Mason,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hill-Rom,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Stifel Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Verso,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Qorvo,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ciena,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tetra Tech,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Caleres,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pool,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hyster-Yale Materials Handling,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Westar Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Public Storage,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Plexus,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Boston Properties,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+GNC,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HCP,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Penn Mutual Life Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TTM Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Prologis,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Twitter,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kemper,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Valmont Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Crestwood Equity Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Applied Industrial Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+VCA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Granite Construction,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vornado Realty Trust,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mettler-Toledo,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+A Schulman,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wolverine World Wide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Graham,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Chico's FAS,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Domino's Pizza,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Zions Bancorp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Southwest Gas,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tops Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hawaiian,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vectren,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Gartner,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+On Assignment,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Southwestern Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Parexel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Equity Residential,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+J Crew,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Synopsys,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Moog,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cabot,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ITT,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+TRI Pointe,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Maximus,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Illumina,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Amica Mutual Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alere,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Toro,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sprague Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+G-III Apparel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hawaiian Electric Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pinnacle Entertainment,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Columbia Sportswear,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+First Republic Bank,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Komatsu Mining,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Trimble,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Edgewell Personal Care,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Belden,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+DST Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+WGL,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+GGP,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Brocade Communications Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Akamai Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nationstar Mortgage,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Annaly,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kansas City Southern,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Revlon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Aptar,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MDC,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vishay Intertechnology,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Teradata,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Spirit Airlines,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+EnerSys,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Snyder's-Lance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Benchmark Electronics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+West,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Selective Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Party City Holdco,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cheesecake Factory,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Lincoln Electric,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Carlyle,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Enable Midstream Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Oceaneering,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Vista Outdoor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Middleby,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Herman Miller,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PerkinElmer,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+OGE Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PCM,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Louisiana-Pacific,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+MPM,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Knights of Columbus,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Apollo Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Donaldson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Equity Investment Life Holding,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Super Micro Computer,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Xilinx,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tupperware Brands,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Guess,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nu Skin Enterprises,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Magellan Midstream Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+HNI,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Maxim Integrated Products,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Affiliated Managers,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Express,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Boyd Gaming,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+GEO,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tribune Media,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Microchip Technology,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fitbit,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Waters,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Teledyne Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Digital Realty Trust,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+RH,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Fred's,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Universal,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CDK Global,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+IDEX,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cliffs Natural Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Curtiss-Wright,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Verisk Analytics,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NOW,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Apollo Education,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kennametal,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+H B Fuller,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+PharMerica,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Engility,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Sears Hometown & Outlet Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bio-Rad Laboratories,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Federated Mutual Insurance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Mueller Industries,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Red Hat,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NewMarket,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hospitality Properties Trust,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AvalonBay Communities,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Renewable Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Consol Energy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ferrellgas Partners,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Tower,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Autodesk,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+99 Cents Only Stores,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+E Trade Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Woodward,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Esterline Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Itron,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Werner Enterprises,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Stewart Information Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Hexcel,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Genesee & Wyoming,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Primoris Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Spx Flow,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+F5 Networks,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+VeriFone Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Texas Roadhouse,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+NLV Financial,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Buffalo Wild Wings,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Continental Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Arch Coal,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Roadrunner Transportation Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cooper,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+hhgregg,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Euronet Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Griffon,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CoreLogic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nuance Communications,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Matson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Popular,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alliance,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+REV,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Rexnord,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cypress Semiconductor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Portland General Electric,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Ply Gem,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cal-Maine Foods,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Alliance One,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+AMN Healthcare Services,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+American Greetings,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Blackhawk Network,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Pier 1 Imports,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Finish Line,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+BlueLinx,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+New Jersey Resources,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Deckers Outdoor,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Murphy Oil,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Teleflex,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Par Pacific,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+SL Green Realty,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+GMS,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+CoreCivic,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Deluxe,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Catalent,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+GoDaddy,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Wabash National,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Adtalem Global Education,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+United Refining,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Allison Transmission,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Atlas Air Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+ResMed,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Delta Tucker,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FleetCor Technologies,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Central Garden & Pet,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Beazer Homes USA,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+New York Community Bancorp,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Cadence Design Systems,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Carpenter Technology,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Marriott Vacations Worldwide,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+FTI Consulting,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Nordson,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Briggs & Stratton,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Kaman,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Overstock,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Regis,f1000list,data_science,stats,quant,mba,petroleum_geologist,chemical_engineer,consultant,law
+Bridgewater Associates,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+AQR,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+J PMorgan,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Renaissance Technologies,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Two Sigma,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+DEShaw,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Millennium,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Man,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Och-Ziff,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Winton,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Elliott,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Baupost,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Adage,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Viking Global Investors,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Davidson Kempner,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Citadel,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Marshall Wace,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Lone Pine Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Credit Suisse,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Farallon,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+GAM Holding,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+King Street,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Platinum,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Hillhouse,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+ValueAct,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Pacific Investment,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Anchorage Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+York,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Appaloosa,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Canyon Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Third Point,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Egerton Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Brevan Howard,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Centerbridge Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+BlueMountain,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Cevian Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Brummer & Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Wellington Alternative Investments,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Moore,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Fortress Investment,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Trian Fund,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Value Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Capula Investment,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+TCI Fund,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Balyasny,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Henderson AlphaGen,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Highfields,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+CQS,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+GoldenTree,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+GSO Capital Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Pershing Square,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Beach Point,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Angelo,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Lansdowne Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Bracebridge Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Discovery,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+PointState Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Magnetar Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Nephila Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+CarVal Investors,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+HBK,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Tudor Investment,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Fir Tree Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Carlson Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Glenview,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Paulson,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Tiger Global,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Marathon,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Soroban Capital Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Element,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Maverick Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Coatue,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Grantham,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Cerberus,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Senator Investment,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Systematica Investments,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Greenlight Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Caxton Associates,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Lazard,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Candriam Investors,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Pictet,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Silver Point Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Odey,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Capital Fund,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Eton Park,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Blue Ridge Capital Holdings,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+GSA Capital Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Eminence Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Pine River,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+MKP,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Taconic Capital Advisors,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Arrowgrass Capital Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+JANA Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Scopia Capital,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Redwood,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Dymon Asia,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Indus Capital Partners,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Paloma,hedge,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Cravath Swaine & Moore,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Wachtell Lipton Rosen & Katz,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Skadden Arps Slate Meagher & Flom and Affiliates,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Sullivan & Cromwell,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Latham & Watkins,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Davis Polk & Wardwell,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Simpson Thacher & Bartlett,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Kirkland & Ellis,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Gibson Dunn & Crutcher,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Paul Weiss Rifkind Wharton & Garrison,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Weil Gotshal & Manges,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Quinn Emanuel Urquhart & Sullivan,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Sidley Austin,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Cleary Gottlieb Steen & Hamilton,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Covington & Burling,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Jones Day,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Williams nnolly,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Debevoise & Plimpton,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+White & Case,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+WilmerHale,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Ropes & Gray,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Paul Hastings,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Boies Schiller Flexner,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Morrison & Foerster,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Hogan Lovells US,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+O'Melveny & Myers,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Cooley,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Proskauer Rose,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Akin Gump Strauss Hauer & Feld,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Arnold & Porter Kaye Scholer,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Baker McKenzie,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Mayer Brown,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+DLA Piper,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+K&L Gates,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Clifford Chance US,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Linklaters,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Munger Tolles & Olson,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Orrick Herrington & Sutcliffe,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Wilson Sonsini Goodrich & Rosati,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Milbank Tweed Hadley & McCloy,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Shearman & Sterling,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Morgan Lewis & Bockius,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+King & Spalding,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Baker Botts,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Goodwin,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Allen & Overy,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Winston & Strawn,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Cadwalader Wickersham & Taft,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Fried Frank Harris Shriver & Jacobson,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Perkins Coie,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Willkie Farr & Gallagher,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Dechert,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Greenberg Traurig,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Alston & Bird,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Jenner & Block,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Freshfields Bruckhaus Deringer,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+McDermott Will & Emery,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Cahill Gordon & Reindel,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Holland & Knight,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Dentons,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Susman Godfrey,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Pillsbury Winthrop Shaw Pittman,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Reed Smith,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Baker & Hostetler,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Vinson & Elkins,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Norton Rose Fulbright,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Irell & Manella,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Nixon Peabody,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Crowell & Moring,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Fish & Richardson,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Venable,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Steptoe & Johnson,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Bryan Cave Leighton Paisner,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Squire Patton Boggs,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Foley & Lardner,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Sheppard Mullin Richter & Hampton,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+McGuireWoods,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Locke Lord,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Fenwick & West,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Arent Fox,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Hunton Andrews Kurth,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Katten Muchin Rosenman,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Schulte Roth & Zabel,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Seyfarth Shaw,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Pepper Hamilton,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Hughes Hubbard & Reed,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Mintz Levin Cohn Ferris Glovsky and Popeo,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Fox Rothschild,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Haynes and Boone,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Duane Morris,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Drinker Biddle & Reath,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Blank Rome,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Troutman Sanders,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Davis Wright Tremaine,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Kilpatrick Townsend & Stockton,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Kramer Levin Naftalis & Frankel,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Ballard Spahr,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Kellogg Hansen Todd Figel & Frederick P L L C,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Littler Mendelson,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+Wiley Rein,law,law,data_science,stats,mba,quant,consultant,petroleum_geologist,chemical_engineer
+McKinsey mpany,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Bain mpany,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+The Boston Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Deloitte Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Oliver Wyman,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Putnam Associates,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+EY-Parthenon,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+PricewaterhouseCoopers Advisory Services,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+The Bridgespan,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Accenture,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+A T Kearney,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+KPMG,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Strategy& part of the PwC network,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+L E K Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+GE Healthcare Partners,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+The Brattle,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Roland Berger,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Insight Sourcing,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Analysis,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Alvarez & Marsal,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Booz Allen Hamilton,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+The Keystone,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+ghSMART,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+ClearView Healthcare Partners,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+ZS,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Health Advances,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+LeapPoint,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+OC&C Strategy Consultants,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Eagle Hill Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Simon-Kucher & Partners,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Protiviti,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Trinity Partners,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Clarkston Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Ignyte,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Bates White Economic Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+NERA Economic Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Charles River Associates,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+The Chartis,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Cicero,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Innosight,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Censeo Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Keystone Strategy,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+The Cambridge,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Arthur D Little,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Smartronix,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Kenway Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Pace Harmon,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+DayBlink Consulting,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Vivaldi,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Cornerstone Research,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Alira Health,consulting,consultant,data_science,stats,mba,quant,law,petroleum_geologist,chemical_engineer
+Evercore,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Centerview Partners,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Greenhill,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Moelis mpany,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Perella Weinberg Partners,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Guggenheim Securities,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Bank of America Corp,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Houlihan Lokey,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+William Blair,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Pj Solomon,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Harris Williams,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Cowen,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+UBS,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Loop Capital Markets,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+J P Morgan,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Barclays Investment Bank,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+PJT Partners,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Citi Institutional Clients,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Jefferies,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Rothschild,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Allen mpany,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Qatalyst Partners,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Deutsche Bank AG,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+RBC Capital Markets,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Wells Fargo mpany,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Macquarie,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Piper Jaffray Companies,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+BMO Capital Markets,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Oppenheimer,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Baird,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Deloitte Corporate Finance,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+BNP Paribas USA,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Nomura Holdings,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+HSBC North America Holdings,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Bank of New York Mellon Corporation,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+LionTree Advisors,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Royal Bank of Scotland plc,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Cantor Fitzgerald,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Tudor Pickering Holt,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Societe Generale Corporate & Investment Banking,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Stifel Financial Corp,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+EY,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Brown Brothers Harriman,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+CIBC World Markets,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+Lloyds Banking PLC,banking,quant,data_science,stats,mba,law,consultant,petroleum_geologist,chemical_engineer
+PwC,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Deloitte,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Grant Thornton,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Bdo Usa,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Plante Moran,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Crowe,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Baker Tilly Virchow Krause,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Moss Adams,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Rsm Us,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Dixon Hughes Goodman,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Eide Bailly,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Friedman,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Frank Rimerman Co,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Brown Smith Wallace,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Cbiz Mhm,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Elliott Davis,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Armanino,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+PKF O'Connor Davies,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+BPM,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Withum,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Schenck SC,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Sikich,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Rehmann,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Marks Paneth,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+MBE CPAs,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Margolin Winer & Evens,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Ernst & Young,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+CliftonLarsonAllen,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+CohnReznick,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+BKD,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Cherry Bekaert,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Marcum,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+EisnerAmper,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Wipfli,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Cohen mpany,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+UHY Advisors,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+RubinBrown,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Mazars USA,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+The Siegfried,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Citrin Cooperman mpany,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Blum Shapiro,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Carr Riggs & Ingram,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Novogradac mpany,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Anchin Block & Anchin,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Warren Averett,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Berdon,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Weaver,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Blue,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
+Doeren Mayhew,accounting,mba,data_science,stats,quant,law,consultant,petroleum_geologist,chemical_engineer
