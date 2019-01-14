@@ -7,9 +7,18 @@ from make_resumes import *
 import inspect
 
 
+def abbreviate_middle(name):
+	split_name = name.split(' ')
+	f, m, l = split_name[0], split_name[1], split_name[2]
+	m = '{}.'.format(m[0])
+	name = '{} {} {}'.format(f, m, l)
+	return name
+
+
 def send_email(profile, 
 			job_type,
 			contact,
+			contact_last_name,
 			job,
 			office, 
 			company,
@@ -65,11 +74,22 @@ def send_email(profile,
 	msgAlt = MIMEMultipart('alternative')
 	msgRoot.attach(msgAlt)
 
+
+	#Alter Full Name Format in CL/Email
+	#(Keep full name in the from field)
+	if pair_version == 'A':
+		pass
+	elif pair_version == 'B':
+		name = abbreviate_middle(name)
+		phone = '({}'.format(phone.replace('-', ') ', 1))
+
+
 	#Message (Text Version & HTML Version)
 	message_output = make_html_text_cl(
 		profile, 
 		job_type, 
-		contact, 
+		contact,
+		contact_last_name, 
 		job, 
 		office, 
 		company, 
@@ -118,7 +138,8 @@ def send_email(profile,
 				pair_version)
 
 	#Resume
-	resume_filename = "Resume_{}.pdf".format(name.replace(' ', '_'))
+	clean_name = name.replace(' ', '_').replace('.', '')
+	resume_filename = "Resume_{}.pdf".format(clean_name)
 	resume_path = "{}/{}/tex/{}".format(profile, job_type, resume_filename)
 
 	#Attach Resume

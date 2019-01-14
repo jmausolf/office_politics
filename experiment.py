@@ -313,6 +313,7 @@ def send_email_iter(row):
 					profile=row['profile'],
 					job_type=row['job_type'],
 					contact=row['contact_name'],
+					contact_last_name=row['contact_last_name'],
 					job=row['position'],
 					office=row['office'], 
 					company=row['company'],
