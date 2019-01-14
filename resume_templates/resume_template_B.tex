@@ -25,6 +25,9 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{2.75in}
 
+%Make Tab Space
+\newcommand\tab[1][0.25cm]{\hspace*{#1}}
+
 %\addtolength{\oddsidemargin}{-.5in}
 %\addtolength{\evensidemargin}{-.5in}
 %\addtolength{\textwidth}{2in}
@@ -42,13 +45,14 @@
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Palatino}
+\setmainfont{Helvetica}
 \setmonofont{Lucida Sans Typewriter}
 
 
 %CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\center}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
@@ -154,7 +158,7 @@
 		\begin{tabular}{rl}
 			\textsc{Address:}   & 	GS_ADDRESS \\
 													& 	GS_CSZIP					\\
-			\textsc{Phone:}     & 	+1 ID_PHONE						\\
+			\textsc{Phone:}     & 	ID_PHONE						\\
     	\textsc{Email:}     & \href{mailto:ID_EMAIL}{ID_EMAIL}	\\
 		\end{tabular}
 		\end{tabular}
@@ -170,77 +174,70 @@
 
 %--------------------Section: Education--------------------
 \section{Education}
-\begin{supertabular}{p{2cm} p{1.0cm} p{13.9cm}}
-	\textsc{2019}		&		\textsc{Ph.D.} & \textsc{GRADSCHOOL}, \small GADEPARTMENT \\
-					&&		 \begin{enumerate*}[label =$\circ$, itemjoin={\newline}] 
-							 \item \footnotesize \textsc{Thesis:} \emph{Nonparametric Bound Estimation in Deep Reinforcement Learning} 
-							 \item \footnotesize  \textsc{Methods:} Deep Reinforcement Learning, Artificial Intelligence, Algorithmic Efficiency
-							 \end{enumerate*}  \\
-	\textsc{2015} 	& 	\textsc{M.S.} & \textsc{GRADSCHOOL}, \small Statistics, GPA: 3.94  \\
-	\textsc{2012} 	& 	\textsc{B.S.} & \textsc{UGSCHOOL}, \small Applied Mathematics, \emph{summa cum laude}, GPA 3.91 \\
+\begin{supertabular}{p{1.5cm}p{13.9cm}>{\raggedleft\arraybackslash}p{1.5cm}}
+	\textsc{Ph.D.} & \textsc{GRADSCHOOL}, \small GADEPARTMENT 			
+	& 	\textsc{2019} \\
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}] 
+	\item \footnotesize \textsc{Thesis:} \emph{Nonparametric Bound Estimation in Deep Reinforcement Learning}, a thesis which develops and applies deep reinforcement learning, artificial intelligence, algorithmic efficiency. 
+	\end{enumerate*} 														
+	& \\
+	\textsc{M.S.} & \textsc{GRADSCHOOL}, \small Statistics, GPA: 3.94  	
+	& 	\textsc{2015} 	\\
+	\textsc{B.S.} & \textsc{UGSCHOOL}, \small Applied Mathematics, \emph{summa cum laude}, GPA 3.91 
+	&	\textsc{2012} 	\\
 	\multicolumn{2}{c}{} \\
 \end{supertabular}
-
-
-%--------------------Languages--------------------
-\section{Technical Skills}
-\begin{supertabular}{p{3.4cm} p{13.9cm}}
-
-	\textsc{Programming}			& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-																\item \small \textsc{Python, Java, C++, Julia, R, SQL, Hadoop, Spark}
-																\item \small \textsc{HTML, JavaScript, CSS, Markdown, JSON, Django, Shiny}
-																\item \small \textsc{Sublime, Emacs, Vim, {\fb \LaTeX}, Git, SSH, Linux, Mac OSX, Windows }
-																\end{enumerate*} \vspace{2mm} \\
-
-
-	\textsc{Analytics}				& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-                                \item \small Deep Reinforcement Learning; Machine Learning; Distributed Computing; Large Data; Time Series; Multilevel; NLP; Data-Mining \end{enumerate*}  \vspace{1mm} \\
-
-
-
-\end{supertabular}
-
 
 
 
 %--------------------Section: Professional Experience--------------------
 \section{Work Experience}
-\begin{supertabular}{l p{0.55cm} p{13.9cm}}
-	\textsc{2015-Present}				&& \textsc{GRADSCHOOL}, GS_CITYSTATE \\
-	\small\textsc{}							&& \small	\emph{Graduate Research Assistant}, \small Department of GADEPARTMENT \\
-															&& \begin{enumerate*}[label =$\circ$,itemjoin={\newline}]
-																	\item \footnotesize Authored a mathematical proof for nonparametric bound estimation and wrote a $\mathbf{C++}$ library to demonstrate utility for deep reinforcement learning. \end{enumerate*} \\ 
-																	%\item \footnotesize Maintained server data integrity and engineering for fellow researchers machine learning projects. \end{enumerate*} \\ 
+\begin{supertabular}{p{13.9cm}>{\raggedleft\arraybackslash}p{3.4cm}}
+	\textsc{GRADSCHOOL}, GS_CITYSTATE
+	& \textsc{2015-Present} \\
+
+	\small	\emph{Graduate Research Assistant}, \small Department of GADEPARTMENT & \\
+	\begin{enumerate*}[label =$\circ$,itemjoin={\newline}]
+		\item \footnotesize Authored a mathematical proof for nonparametric bound estimation and wrote a \emph{C++} library to demonstrate utility for deep reinforcement learning. 
+	\end{enumerate*} & \\ 
+	%\item \footnotesize Maintained server data integrity and engineering for fellow researchers machine learning projects. \end{enumerate*} \\ 
 
 	\multicolumn{2}{c}{} \\
 
-	\textsc{May-Aug 2018}	&& \textsc{INTERNSHIP1}, IC1_CITYSTATE \\
-												&& \small	\emph{Data Science Intern} \\
-												&& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-														\item \footnotesize Optimized ETL pipeline using $\mathbf{SQL}$ and improved the efficiency of deep learning through a combination of $\mathbf{Python}$ and $\mathbf{C++}$, reducing server costs in both memory and computation time.\end{enumerate*} \\
-	\multicolumn{2}{c}{} \\
-	
-
-
-
-	\textsc{May-Aug 2017}	&& \textsc{INTERNSHIP2}, IC2_CITYSTATE \\
-												&& \small	\emph{Data Science Intern} \\
-												&& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-														\item \footnotesize Harnessed $\mathbf{SQL}$, $\mathbf{Hadoop}$, and $\mathbf{Python}$ to drive impactful descriptive analytics.
-														\item \footnotesize Collaborated with data engineers and junior developers in the creation of $\mathbf{Python}$ and $\mathbf{Django}$ based machine learning dashboards, which I shared with project leads to improve product strategy. \end{enumerate*} \\
+	\textsc{INTERNSHIP1}, IC1_CITYSTATE 
+	& \textsc{May-Aug 2018} \\
+	\small	\emph{Data Science Intern} & \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize Optimized ETL pipeline using \emph{SQL} and improved the efficiency of deep learning through a combination of \emph{Python} and \emph{C++}, reducing server costs in both memory and computation time.
+	\end{enumerate*} & \\
 	\multicolumn{2}{c}{} \\
 	
 
 
-	\textsc{2011-2013}		&& \textsc{UGSCHOOL}, UG_CITYSTATE \\
-	\textsc{}							&& \small	\emph{Research Assistant}, Department of Applied Mathematics \\
-												&& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-														\item \footnotesize Distilled prior mathematical research and worked with graduate fellows to devise lemma's necessary for a paper on N-dimensional hypergraphs. 
-														\end{enumerate*} \\
+
+	\textsc{INTERNSHIP2}, IC2_CITYSTATE 
+	& \textsc{May-Aug 2017} \\
+	\small	\emph{Data Science Intern} & \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize Harnessed \emph{SQL}, \emph{Hadoop}, and \emph{Python} to drive impactful descriptive analytics.
+		\item \footnotesize Collaborated with data engineers and junior developers in the creation of \emph{Python} and \emph{Django} based machine learning dashboards, which I shared with project leads to improve product strategy.
+	\end{enumerate*} & \\
+	\multicolumn{2}{c}{} \\
+	
+
+
+	\textsc{UGSCHOOL}, UG_CITYSTATE
+	& \textsc{2011-2013} \\
+	\small	\emph{Research Assistant}, Department of Applied Mathematics & \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize Distilled prior mathematical research and worked with graduate fellows to devise lemma's necessary for a paper on N-dimensional hypergraphs. 
+	\end{enumerate*} & \\
 	\multicolumn{2}{c}{} \\
 
 
 \end{supertabular}
+
+
 
 
 
@@ -248,18 +245,20 @@
 
 %--------------------Honors--------------------
 \section{Honors, Awards, and Accomplishments}
-\begin{supertabular}{p{3.4cm} p{13.9cm}}
+\begin{supertabular}{p{13.9cm}>{\raggedleft\arraybackslash}p{3.4cm}}
 
-	\textsc{2014-2019} 				& \textsc{GRADSCHOOL} \\
-														& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-																\item \footnotesize Dissertation Improvement Grant, Department Hackathon Facilitator, KDD Presenter.
-																\end{enumerate*} \vspace{2mm} \\
+	\textsc{GRADSCHOOL} 
+	& \textsc{2014-2019} \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize Dissertation Improvement Grant, Department Hackathon Facilitator, KDD Presenter.
+	\end{enumerate*} \vspace{2mm} & \\
 
-	\textsc{2008-2012} 				& \textsc{UGSCHOOL} \\
-														& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
-																\item \footnotesize  Latin honors - \emph{summa cum laude}, Phi Kappa Phi, President's List.
-																\item \footnotesize  Directed fundraisers and organized campus activities as TREATMENT.
-																\end{enumerate*} \vspace{0mm} \\
+	\textsc{UGSCHOOL} 
+	& \textsc{2008-2012} \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize  Latin honors - \emph{summa cum laude}, Phi Kappa Phi, President's List.
+		\item \footnotesize  Directed fundraisers and organized campus activities as TREATMENT.
+	\end{enumerate*} \vspace{0mm} & \\
 
 
 
@@ -267,13 +266,44 @@
 
 
 
-%--------------------Languages--------------------
-\section{Supplemental Information}
-\begin{supertabular}{p{3.4cm} p{13.9cm}}
-	\emph{Foreign Languages}			& \small \emph{German} (advanced), \emph{Spanish} (beginner) \vspace{1mm} \\
 
-	\emph{Productivity}					& \small\emph{Google}: \footnotesize Sheets, Documents, Slides, Gmail; \small\emph{Microsoft}: \footnotesize Excel, Word, PowerPoint, Outlook, Acess;	\small\emph{Adobe}: \footnotesize Acrobat Pro, Photoshop, Illustrator; \small\emph{Project management:} \footnotesize SAP CRM, Asana, Slack; \small\textsc{Other:} \footnotesize Tableau, NVivo \vspace{1mm} \\
-	\emph{Hobbies:} 		& \small Running, Lacrosse, Hiking, Adventure Tourism, Skiing \\
+%--------------------Languages--------------------
+\section{Technical Skills}
+\begin{supertabular}{p{8.65cm} p{8.65cm}}
+
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+																\item \small \textsc{Python, Java, C++, Julia, R, SQL, Hadoop, Spark}
+																\item \small \textsc{HTML, JavaScript, CSS, Markdown, JSON, Django, Shiny}
+																\item \small \textsc{Sublime, Emacs, Vim, LaTex, Git, SSH, Linux, Mac OSX, Windows }
+																\end{enumerate*}
+
+
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+                                \item \small Deep Reinforcement Learning, Machine Learning; NLP
+                                \item \small Distributed Computing, Large Data, Data-Mining
+                                \item \small Time Series, Multilevel Modeling \end{enumerate*}  \vspace{1mm} \\
+
+
+
+\end{supertabular}
+
+
+
+%--------------------Other--------------------
+\section{Supplemental Qualifications}
+\begin{supertabular}{p{8.65cm} p{8.65cm}}
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \small \emph{Foreign Languages}: \footnotesize \emph{German} (advanced), \emph{Spanish} (beginner)
+	 	\item \small \emph{Business}: \footnotesize SAP CRM, Asana, Slack
+	 	\item \small \emph{Text}: \footnotesize Tableau, NVivo 
+	\end{enumerate*}
+
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+	 	\item \small \emph{Google Office}: \footnotesize Sheets, Documents, Slides, Gmail
+	 	\item \small \emph{Microsoft Office}: \footnotesize Excel, Word, PowerPoint, Outlook, Acess	
+	 	\item \small \emph{Adobe Office}: \footnotesize Acrobat Xi, Photoshop, Illustrator
+	\end{enumerate*} \\
+	%\emph{Hobbies:} 		& \small Running, Lacrosse, Hiking, Adventure Tourism, Skiing \\
 
 \end{supertabular}
 
