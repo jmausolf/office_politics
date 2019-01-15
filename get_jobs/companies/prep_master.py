@@ -232,7 +232,7 @@ def clean_forbes(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'glassdoor_'+df['index']
+    df['id'] = 'forbes_'+df['index']
     df = df[['id', 'company', 'rank', 'source', 'job_type']]
     print(df)
     return df
