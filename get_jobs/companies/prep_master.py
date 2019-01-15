@@ -210,6 +210,34 @@ def clean_nasdaq(source_file):
     return df
 
 
+## Clean Glassdoor List
+def clean_glassdoor(source_file):
+    clean_csv = modify_csv(source_file)
+    df = pd.read_csv(clean_csv)
+
+    #Make Id
+    df['index'] = df.index
+    df['index'] = df['index'].apply(lambda x: str(x))
+    df['id'] = 'glassdoor_'+df['index']
+    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    print(df)
+    return df
+
+
+## Clean Forbes List
+def clean_forbes(source_file):
+    clean_csv = modify_csv(source_file)
+    df = pd.read_csv(clean_csv)
+
+    #Make Id
+    df['index'] = df.index
+    df['index'] = df['index'].apply(lambda x: str(x))
+    df['id'] = 'glassdoor_'+df['index']
+    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    print(df)
+    return df
+
+
 #############################################
 ## Create Preparation File
 #############################################
@@ -219,8 +247,13 @@ df1 = clean_fortune_1000('fortune1000.csv')
 df2 = clean_hedge('hedge_fund_100_institutional_investors_alpha.csv')
 df3 = clean_vault('vault_jobs_2019-01-14.csv')
 df4 = clean_nasdaq('nasdaq_tech.csv')
+df5 = clean_glassdoor('glassdoor_jobs_2019-01-15.csv')
+df6 = clean_forbes('forbes_jobs_2019-01-15.csv')
 
-prep_df = pd.concat([df1, df2, df3, df4], axis=0)
+#TODO 
+#Make Multiple Job_Type Columns for Conditions
+
+prep_df = pd.concat([df1, df2, df3, df4, df5, df6], axis=0)
 prep_df.to_csv("clean/master_companies_prep.csv", index=False)
 print(prep_df)
 
