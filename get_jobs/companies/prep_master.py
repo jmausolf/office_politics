@@ -238,6 +238,38 @@ def clean_forbes(source_file):
     return df
 
 
+## Clean CNBC List
+def clean_cnbc(source_file):
+    clean_csv = modify_csv(source_file)
+    df = pd.read_csv(clean_csv)
+
+    #Add Columns
+    df['source'] = 'cnbc_disruptor50'
+    df['job_type'] = 'data_science'
+
+    #Make Id
+    df['index'] = df.index
+    df['index'] = df['index'].apply(lambda x: str(x))
+    df['id'] = 'cnbc_'+df['index']
+    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    print(df)
+    return df
+
+
+## Clean BI List
+def clean_bi(source_file):
+    clean_csv = modify_csv(source_file)
+    df = pd.read_csv(clean_csv)
+
+    #Make Id
+    df['index'] = df.index
+    df['index'] = df['index'].apply(lambda x: str(x))
+    df['id'] = 'bi_'+df['index']
+    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    print(df)
+    return df
+
+
 #############################################
 ## Create Preparation File
 #############################################
@@ -249,11 +281,13 @@ df3 = clean_vault('vault_jobs_2019-01-14.csv')
 df4 = clean_nasdaq('nasdaq_tech.csv')
 df5 = clean_glassdoor('glassdoor_jobs_2019-01-15.csv')
 df6 = clean_forbes('forbes_jobs_2019-01-15.csv')
+df7 = clean_cnbc('cnbc_disruptor50.csv')
+df8 = clean_bi('business_insider_jobs_2019-01-16.csv')
 
 #TODO 
 #Make Multiple Job_Type Columns for Conditions
 
-prep_df = pd.concat([df1, df2, df3, df4, df5, df6], axis=0)
+prep_df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8], axis=0)
 prep_df.to_csv("clean/master_companies_prep.csv", index=False)
 print(prep_df)
 

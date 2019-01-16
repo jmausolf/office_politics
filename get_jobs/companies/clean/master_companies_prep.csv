@@ -2209,3 +2209,78 @@ forbes_96,Endgame,97.0,forbes_cloud100,data_science
 forbes_97,Glint,98.0,forbes_cloud100,data_science
 forbes_98,Dialpad,99.0,forbes_cloud100,data_science
 forbes_99,Pendo,100.0,forbes_cloud100,data_science
+cnbc_0,SpaceX,1.0,cnbc_disruptor50,data_science
+cnbc_1,Uber,2.0,cnbc_disruptor50,data_science
+cnbc_2,Airbnb,3.0,cnbc_disruptor50,data_science
+cnbc_3,Didi Chuxing,4.0,cnbc_disruptor50,data_science
+cnbc_4,Lyft,5.0,cnbc_disruptor50,data_science
+cnbc_5,Grab,6.0,cnbc_disruptor50,data_science
+cnbc_6,23andMe,7.0,cnbc_disruptor50,data_science
+cnbc_7,Udacity,8.0,cnbc_disruptor50,data_science
+cnbc_8,Rent the Runway,9.0,cnbc_disruptor50,data_science
+cnbc_9,Coinbase,10.0,cnbc_disruptor50,data_science
+cnbc_10,TransferWise,11.0,cnbc_disruptor50,data_science
+cnbc_11,Oscar Health,12.0,cnbc_disruptor50,data_science
+cnbc_12,Payoneer,13.0,cnbc_disruptor50,data_science
+cnbc_13,SurveyMonkey,14.0,cnbc_disruptor50,data_science
+cnbc_14,Progyny,15.0,cnbc_disruptor50,data_science
+cnbc_15,Adyen,16.0,cnbc_disruptor50,data_science
+cnbc_16,TheRealReal,17.0,cnbc_disruptor50,data_science
+cnbc_17,Indigo Agriculture,18.0,cnbc_disruptor50,data_science
+cnbc_18,Ezetap,19.0,cnbc_disruptor50,data_science
+cnbc_19,Peloton,20.0,cnbc_disruptor50,data_science
+cnbc_20,Ginkgo Bioworks,21.0,cnbc_disruptor50,data_science
+cnbc_21,LISNR,22.0,cnbc_disruptor50,data_science
+cnbc_22,WeWork,23.0,cnbc_disruptor50,data_science
+cnbc_23,Ellevest,24.0,cnbc_disruptor50,data_science
+cnbc_24,Zipline International,25.0,cnbc_disruptor50,data_science
+cnbc_25,LanzaTech,26.0,cnbc_disruptor50,data_science
+cnbc_26,Crowdstrike,27.0,cnbc_disruptor50,data_science
+cnbc_27,Xiaomi,28.0,cnbc_disruptor50,data_science
+cnbc_28,Flirtey,29.0,cnbc_disruptor50,data_science
+cnbc_29,Veritas Genetics,30.0,cnbc_disruptor50,data_science
+cnbc_30,Houzz,31.0,cnbc_disruptor50,data_science
+cnbc_31,C3 IoT,32.0,cnbc_disruptor50,data_science
+cnbc_32,Palantir Technologies,33.0,cnbc_disruptor50,data_science
+cnbc_33,Darktrace,34.0,cnbc_disruptor50,data_science
+cnbc_34,Duolingo,35.0,cnbc_disruptor50,data_science
+cnbc_35,Pinterest,36.0,cnbc_disruptor50,data_science
+cnbc_36,Thinx,37.0,cnbc_disruptor50,data_science
+cnbc_37,Robinhood,38.0,cnbc_disruptor50,data_science
+cnbc_38,Uptake,39.0,cnbc_disruptor50,data_science
+cnbc_39,Drawbridge,40.0,cnbc_disruptor50,data_science
+cnbc_40,InMobi,41.0,cnbc_disruptor50,data_science
+cnbc_41,Coursera,42.0,cnbc_disruptor50,data_science
+cnbc_42,Stripe,43.0,cnbc_disruptor50,data_science
+cnbc_43,Illumio,44.0,cnbc_disruptor50,data_science
+cnbc_44,Fanatics,45.0,cnbc_disruptor50,data_science
+cnbc_45,Auris Health,46.0,cnbc_disruptor50,data_science
+cnbc_46,Luminar,47.0,cnbc_disruptor50,data_science
+cnbc_47,Apeel Sciences,48.0,cnbc_disruptor50,data_science
+cnbc_48,GitHub,49.0,cnbc_disruptor50,data_science
+cnbc_49,SoFi,50.0,cnbc_disruptor50,data_science
+bi_0,Credit Karma,21.0,business_insider25,data_science
+bi_1,Wish,21.0,business_insider25,data_science
+bi_2,Houzz,21.0,business_insider25,data_science
+bi_3,DoorDash,21.0,business_insider25,data_science
+bi_4,Snowflake,21.0,business_insider25,data_science
+bi_5,Intarcia Therapeutics,20.0,business_insider25,data_science
+bi_6,Peloton,19.0,business_insider25,data_science
+bi_7,SoFi,17.0,business_insider25,data_science
+bi_8,Compass,17.0,business_insider25,data_science
+bi_9,Machine Zone,16.0,business_insider25,data_science
+bi_10,Robinhood,15.0,business_insider25,data_science
+bi_11,Magic Leap,14.0,business_insider25,data_science
+bi_12,Tanium,13.0,business_insider25,data_science
+bi_13,Moderna Therapeutics,12.0,business_insider25,data_science
+bi_14,Slack,11.0,business_insider25,data_science
+bi_15,Instacart,10.0,business_insider25,data_science
+bi_16,Pinterest,9.0,business_insider25,data_science
+bi_17,Samumed,8.0,business_insider25,data_science
+bi_18,Lyft,7.0,business_insider25,data_science
+bi_19,Stripe,6.0,business_insider25,data_science
+bi_20,Palantir,5.0,business_insider25,data_science
+bi_21,WeWork,4.0,business_insider25,data_science
+bi_22,SpaceX,3.0,business_insider25,data_science
+bi_23,Airbnb,2.0,business_insider25,data_science
+bi_24,Uber,1.0,business_insider25,data_science
