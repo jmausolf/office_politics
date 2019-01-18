@@ -24,12 +24,30 @@ def remove_punct(text):
 
 
 def select_punct_strip(text):
-    #exceptions:: / \ - &
-    tmp = re.sub(r'[]\\?!#$%(){}+*:;,._`\\|~\\[<=>@\\^]', " ", text)
+    #exceptions:: / \ - & .
+    tmp = re.sub(r'[]\\?!#$%(){}+*:;,_`\\|~\\[<=>@\\^]', " ", text)
     return re.sub(r'\s{2,}', " ", tmp).strip()
 
 def parens_content_replace(text):
     return re.sub(r'\(.*?\)', '', text).strip()
+
+
+def remove_trailing_periods(text):
+    #Remove trailing periods 
+    #not following capital letters
+    pat = r'([A-Z][.]$)|([.]$)'
+    return re.sub(pat, r'\1', text)
+
+
+def remove_trailing_corp(text):
+    #pat = r'(\sCorporation$)|(\sCorp$)'
+    #pat = r'\sCorporation$|\sCorp$'
+    #pat = r'\sCorporation$'
+    t0 = re.sub(r'\sCorporation$', '', text)
+    t1 = re.sub(r' Corporation$', '', t0)
+    t2 = re.sub(r'\sCorp$', '', t1)
+    t3 = re.sub(r' Corp$', '', t2)
+    return t3
 
 
 def read_csv(csv_file):
@@ -57,11 +75,11 @@ def clean_col_names(df):
     df.columns = clean_cols
     return df
 
-
-def rm_company_stop_words(text, sw=None):
+#For Nasdaq
+def rm_nasdaq_stop_words(text, sw=None):
 
     if sw is None:
-        sw = ['LLC', 'LLP', 'Llp', 'LP', 'P.C.', 'Inc', 'International', ' Cos', 'Cos ', 'Group',
+        sw = ['LLC', 'LLP', 'Llp', 'LP', 'P.C.', ' International', ' Cos', 'Cos ', 'Group',
               'Management Co', 'Capital Management', 'Asset Management', 'Management', '& Co']
     else:
         pass
@@ -72,11 +90,11 @@ def rm_company_stop_words(text, sw=None):
     text = re.sub(r'\s{2,}', ' ', text).strip()
     return text
 
-def clean_stop_words(company_name, sw=None):
+def clean_nasdaq_stop_words(company_name, sw=None):
     c = company_name
     c = remove_non_ascii_space(c)    
     c = parens_content_replace(c)
-    c = rm_company_stop_words(c, sw=sw)    
+    c = rm_nasdaq_stop_words(c, sw=sw)    
     return c
 
 
@@ -133,8 +151,8 @@ def clean_fortune_1000(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'f1000_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'f1000_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
     df.to_csv(clean_csv, index=False)
     return df
@@ -152,8 +170,8 @@ def clean_hedge(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'hedge_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'hedge_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
     df.to_csv(clean_csv, index=False)
     return df
@@ -168,9 +186,10 @@ def clean_vault(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'vault_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'vault_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
+    df.to_csv(clean_csv, index=False)
     return df
 
 #clean_vault('vault_jobs_2019-01-14.csv')
@@ -191,15 +210,15 @@ def clean_nasdaq(source_file):
     df.sort_values(['rank'], ascending=True, inplace=True)
 
     #Clean Names
-    sw = [', Inc.', ', Inc', ' Inc.', ' Inc',
+    sw = [', Inc.', ' Inc.',
           ', Ltd.', ', Ltd', ' Ltd.', ' Ltd',
           ',  Corp.', ' Corp.',
           ', Co.', ' Co.']
-    df['company'] = df['name'].apply(clean_stop_words, sw=sw)
+    df['company'] = df['name'].apply(clean_nasdaq_stop_words, sw=sw)
 
     #Assign ID
-    df['id'] = 'nasdaq_'+df['symbol']
-    keep_cols = ['id', 'company', 'rank']
+    df['list_id'] = 'nasdaq_'+df['symbol']
+    keep_cols = ['list_id', 'company', 'rank']
     df = df[keep_cols]
     df['source'] = 'nasdaq_tech'
     df['job_type'] = 'data_science'
@@ -218,9 +237,10 @@ def clean_glassdoor(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'glassdoor_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'glassdoor_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
+    df.to_csv(clean_csv, index=False)
     return df
 
 
@@ -232,9 +252,10 @@ def clean_forbes(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'forbes_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'forbes_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
+    df.to_csv(clean_csv, index=False)
     return df
 
 
@@ -250,9 +271,10 @@ def clean_cnbc(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'cnbc_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'cnbc_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
+    df.to_csv(clean_csv, index=False)
     return df
 
 
@@ -264,9 +286,10 @@ def clean_bi(source_file):
     #Make Id
     df['index'] = df.index
     df['index'] = df['index'].apply(lambda x: str(x))
-    df['id'] = 'bi_'+df['index']
-    df = df[['id', 'company', 'rank', 'source', 'job_type']]
+    df['list_id'] = 'bi_'+df['index']
+    df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
     print(df)
+    df.to_csv(clean_csv, index=False)
     return df
 
 
@@ -302,16 +325,32 @@ print(prep_df)
 
 def rm_company_stop_words(text):
 
-    sw = ['LLC', 'LLP', 'Llp', 'LP', 'P.C.', 'Inc', 'International', ' Cos', 'Cos ', 'Group',
-            'Management Co', 'Capital Management', 'Asset Management', 'Management', '& Co']
+    sw = [' LLC', ' LLP', ' Llp', ' LP', ' P.C.', ' P.L.L.C.', ' PLC', ' Plc', ' plc',
+          ' Inc.', ' Incorporated', ' International', ' Cos', ' Group',
+          ' Holdings', ' Holding']
+            
+    #' Management Co.', ' Capital Management', ' Asset Management', ' Management', '& Co']
 
     for s in sw:
-        #print(text)
-        #print(s)
-        text = text.replace(s, '')
-        #print(text)
+        text = text.replace(s, ' ')
 
+
+    #Specific Words
+    text = text.replace(' Bancorp', ' Bank')
+    #text = remove_trailing_corp(text)
     text = re.sub(r'\s{2,}', " ", text).strip()
+
+
+    #Remove Trailing Corp
+    #text = re.sub(r'\sCorp$', '', text)
+
+    #TODO Need Exceptions
+    #News Corp
+    #if text == x, y, z:
+        #return text
+    #else
+
+
     return text
 
 
@@ -321,30 +360,112 @@ def clean_hedge(row, col='company'):
 
 def clean_company(row, col='company'):
     c = row[col]
-    c = remove_non_ascii_2(c)    
+
+    
+    
+    c = remove_non_ascii_2(c)
+        
     #c = remove_punct(c)
     c = parens_content_replace(c)
-    c = rm_company_stop_words(c)    
+    c = remove_trailing_corp(c) 
+    c = rm_company_stop_words(c)
+    c = remove_trailing_periods(c) 
     c = select_punct_strip(c)
+    #c = remove_trailing_periods(c)
 
     if c.isupper() and len(c) > 4:
         c = c.title()
 
     c = c.strip()
+    
     return c
 
+prep_df['company'] = prep_df.apply(clean_company, axis=1)
+prep_df.drop_duplicates('company', inplace=True)
 
-#df = pd.read_csv('hedge_fund_100_institutional_investors_alpha.csv')
-#print(df.shape)
-#print(df)
-#df['company'] = df.apply(clean_hedge, axis=1)
-#print(df)
-#dedupe_fuzzy(df, 'company')
+#########
+## Check Search URL's
 
-#df.drop_duplicates('company', inplace=True)
+def search_url(company, job_keyword):
+    url_stem = "https://www.indeed.com/jobs?q="
+    job = url_str(job_keyword)
+    cid = "company%3A{}".format(url_str(company))
+    loc = "l=Anywhere"
+    jt = "jt=fulltime"
+    qry = "{}+{}&{}&{}".format(job, cid, loc, jt)
+    url = url_stem+qry
+    return url
+
+def url_str(text):
+    text = text.replace(' ', '+')
+    text = text.replace('&', '%26')
+    text = text.replace("'", '%27')
+    return text
+
+
+
+#############################################
+## Make Multiple Job Types
+#############################################
+
+#Key = job_type (first one)
+job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'mba', 'consultant'],
+                  'quant':['quant', 'data_science', 'stats', 'consultant', 'mba'],
+                  'banking':['quant', 'data_science', 'mba', 'consultant', 'stats'],
+                  'accounting':['mba', 'stats', 'data_science', 'consultant', 'quant'],
+                  'consulting':['consultant', 'data_science', 'mba', 'stats', 'quant'],
+                  'law':['mba', 'consultant', 'data_science', 'stats', 'quant']
+}
+
+
+
+def job_col_names(job_types_dict, first_key):
+    vals = job_types_dict[first_key]
+    n = 1
+    job_cols = []
+    for v in vals:
+        jc = 'job_type_{}'.format(str(n))
+        job_cols.append(jc)
+        n+=1
+
+    return job_cols
+
+job_cols = job_col_names(job_types_dict, 'data_science')
+jobs_df = pd.DataFrame.from_dict(job_types_dict, orient='index')
+jobs_df.columns = job_cols
+jobs_df['job_type'] = jobs_df.index
+print(jobs_df)
+
+
+##Create Merge
+df = prep_df.merge(jobs_df, how='left', on='job_type')
+print(df)
+df.to_csv("clean/master_companies_test.csv", index=False)
+
+
+#df = prep_df.copy()
+#df['test'] = df['job_type'].map(job_types_dict)
+
+#df[job_cols] = df['job_type'].map(job_types_dict).apply(lambda x: x.split(','))
+#df[[job_cols]] = [1, 2, 3, 4, 5]
+#df['job_type'].map(job_types_dict)
+#df[['column_new_1', 'column_new_2', 'column_new_3']] = pd.DataFrame([[np.nan, 'dogs', 3]], index=df.index)
+
+#print(df)
+
+
+
+#    df[['party_id', 'partisan_score']] = df['cmte_id'].apply(
+#        lambda cid: pid(cid, cycle)).apply(pd.Series)
+
+
+#print(prep_df)
 #df = df.reset_index(drop=True)
 #print(df.shape)
 #df.to_csv("hedge_test2.csv", index=False)
+
+
+
 
 
 def show_possible_duplicates(contains_dupes, threshold=70, scorer=fuzz.token_set_ratio):
@@ -364,7 +485,8 @@ def show_possible_duplicates(contains_dupes, threshold=70, scorer=fuzz.token_set
         threshold: the numerical value (0,100) point at which we expect to find duplicates.
             Defaults to 70 out of 100
         scorer: Optional function for scoring matches between the query and
-            an individual processed choice. This should be a function
+            an indiv
+            ual processed choice. This should be a function
             of the form f(query, choice) -> int.
             By default, fuzz.token_set_ratio() is used and expects both query and
             choice to be strings.

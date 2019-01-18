@@ -1,4 +1,4 @@
-id,company,rank,source,job_type
+list_id,company,rank,source,job_type
 hedge_0,Bridgewater Associates,1,hedge_fund_100,quant
 hedge_1,AQR Capital Management,2,hedge_fund_100,quant
 hedge_2,J.P. Morgan Asset Management,3,hedge_fund_100,quant

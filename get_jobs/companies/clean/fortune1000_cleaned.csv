@@ -1,4 +1,4 @@
-id,company,rank,source,job_type
+list_id,company,rank,source,job_type
 f1000_0,Walmart,1,fortune1000,data_science
 f1000_1,Berkshire Hathaway,2,fortune1000,data_science
 f1000_2,Apple,3,fortune1000,data_science
