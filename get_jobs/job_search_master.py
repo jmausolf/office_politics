@@ -22,9 +22,12 @@ def make_company_csvs(master_companies):
 
 	#
 	df = pd.read_csv(master_companies)
+	print(df)
 	cols = df.columns.values.tolist()
-	cols.remove('company')
 
+	#Remove All Non Job_Type Cols
+	non_job_cols = ['list_id', 'company', 'rank', 'source']
+	cols = [c for c in cols if c not in non_job_cols]
 	company_csvs = []
 
 	n = 1
@@ -32,9 +35,9 @@ def make_company_csvs(master_companies):
 
 		#Filter Company and Job Type Cols
 		job_col = 'job_type_{}'.format(n)
-		keep_cols = ['company', job_col]
+		keep_cols = ['list_id', 'company', job_col]
 		df_out = df[keep_cols].copy()
-		col_names = ['company', 'job_type']
+		col_names = ['list_id', 'company', 'job_type']
 		df_out.columns = col_names
 		print(df_out.shape)
 
@@ -91,7 +94,7 @@ def make_clean_df(df_in):
 	df_in.sort_values(by=['job_type', 'company'], inplace=True)
 
 	#Make Cleaned File
-	keep_cols = ['company', 'position', 'office', 'office_state', 
+	keep_cols = ['list_id', 'company', 'position', 'office', 'office_state', 
 			'job_type']
 	df_tmp = df_in[keep_cols].copy().reset_index(drop=True)
 
@@ -99,7 +102,7 @@ def make_clean_df(df_in):
 	df_tmp['index'] = df_tmp.index
 	cid = df_tmp.apply(make_cid, axis=1)
 	df = pd.concat([cid, df_tmp[keep_cols]], axis=1)
-	cols = ['cid', 'company', 'position', 'office', 'office_state', 
+	cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 
 			'job_type']
 	df.columns = cols
 	return df
@@ -113,6 +116,9 @@ def company_error_check(master_company, final_df, fname, date):
 
 	full_df = mc.merge(fo, how='left')
 	errors = full_df[pd.isnull(full_df['job_type'])].reset_index(drop=True)
+	errors = errors.drop(['cid', 'position',
+						  'office', 'office_state', 'job_type'],
+						  axis=1)
 	n = errors.shape[0]
 
 	if n > 0:

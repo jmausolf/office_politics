@@ -49,6 +49,7 @@ def cleanup_files(date, remove=True, subdir='output', force=False):
 		rm errors_filtered_jobs_*
 		rm filtered_employers_*
 		rm selected_filtered_jobs_*
+		rm tmp_*.csv
 		rm {0}
 		rm {1}	
 		rm {2}	
@@ -66,6 +67,7 @@ def cleanup_files(date, remove=True, subdir='output', force=False):
 		mv errors_filtered_jobs_* {0}/. 2>/dev/null
 		mv filtered_employers_* {0}/. 2>/dev/null
 		mv selected_filtered_jobs_* {0}/. 2>/dev/null
+		mv tmp_*.csv {0}/. 2>/dev/null
 		mv {1} {0}/. 2>/dev/null
 		mv {2} {0}/. 2>/dev/null
 		mv {3} {0}/. 2>/dev/null
