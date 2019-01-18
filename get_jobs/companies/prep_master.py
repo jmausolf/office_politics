@@ -47,7 +47,7 @@ def remove_trailing_corp(text):
     t1 = re.sub(r' Corporation$', '', t0)
     t2 = re.sub(r'\sCorp$', '', t1)
     t3 = re.sub(r' Corp$', '', t2)
-    return t3
+    return t4
 
 
 def read_csv(csv_file):
