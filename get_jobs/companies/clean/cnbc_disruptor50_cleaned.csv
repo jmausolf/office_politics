@@ -1,51 +1,51 @@
-company,rank
-SpaceX,1
-Uber,2
-Airbnb,3
-Didi Chuxing,4
-Lyft,5
-Grab,6
-23andMe,7
-Udacity,8
-Rent the Runway,9
-Coinbase,10
-TransferWise,11
-Oscar Health,12
-Payoneer,13
-SurveyMonkey,14
-Progyny,15
-Adyen,16
-TheRealReal,17
-Indigo Agriculture,18
-Ezetap,19
-Peloton,20
-Ginkgo Bioworks,21
-LISNR,22
-WeWork,23
-Ellevest,24
-Zipline International,25
-LanzaTech,26
-Crowdstrike,27
-Xiaomi,28
-Flirtey,29
-Veritas Genetics,30
-Houzz,31
-C3 IoT,32
-Palantir Technologies,33
-Darktrace,34
-Duolingo,35
-Pinterest,36
-Thinx,37
-Robinhood,38
-Uptake,39
-Drawbridge,40
-InMobi,41
-Coursera,42
-Stripe,43
-Illumio,44
-Fanatics,45
-Auris Health,46
-Luminar,47
-Apeel Sciences,48
-GitHub,49
-SoFi,50
+list_id,company,rank,source,job_type
+cnbc_0,SpaceX,1,cnbc_disruptor50,data_science
+cnbc_1,Uber,2,cnbc_disruptor50,data_science
+cnbc_2,Airbnb,3,cnbc_disruptor50,data_science
+cnbc_3,Didi Chuxing,4,cnbc_disruptor50,data_science
+cnbc_4,Lyft,5,cnbc_disruptor50,data_science
+cnbc_5,Grab,6,cnbc_disruptor50,data_science
+cnbc_6,23andMe,7,cnbc_disruptor50,data_science
+cnbc_7,Udacity,8,cnbc_disruptor50,data_science
+cnbc_8,Rent the Runway,9,cnbc_disruptor50,data_science
+cnbc_9,Coinbase,10,cnbc_disruptor50,data_science
+cnbc_10,TransferWise,11,cnbc_disruptor50,data_science
+cnbc_11,Oscar Health,12,cnbc_disruptor50,data_science
+cnbc_12,Payoneer,13,cnbc_disruptor50,data_science
+cnbc_13,SurveyMonkey,14,cnbc_disruptor50,data_science
+cnbc_14,Progyny,15,cnbc_disruptor50,data_science
+cnbc_15,Adyen,16,cnbc_disruptor50,data_science
+cnbc_16,TheRealReal,17,cnbc_disruptor50,data_science
+cnbc_17,Indigo Agriculture,18,cnbc_disruptor50,data_science
+cnbc_18,Ezetap,19,cnbc_disruptor50,data_science
+cnbc_19,Peloton,20,cnbc_disruptor50,data_science
+cnbc_20,Ginkgo Bioworks,21,cnbc_disruptor50,data_science
+cnbc_21,LISNR,22,cnbc_disruptor50,data_science
+cnbc_22,WeWork,23,cnbc_disruptor50,data_science
+cnbc_23,Ellevest,24,cnbc_disruptor50,data_science
+cnbc_24,Zipline International,25,cnbc_disruptor50,data_science
+cnbc_25,LanzaTech,26,cnbc_disruptor50,data_science
+cnbc_26,Crowdstrike,27,cnbc_disruptor50,data_science
+cnbc_27,Xiaomi,28,cnbc_disruptor50,data_science
+cnbc_28,Flirtey,29,cnbc_disruptor50,data_science
+cnbc_29,Veritas Genetics,30,cnbc_disruptor50,data_science
+cnbc_30,Houzz,31,cnbc_disruptor50,data_science
+cnbc_31,C3 IoT,32,cnbc_disruptor50,data_science
+cnbc_32,Palantir Technologies,33,cnbc_disruptor50,data_science
+cnbc_33,Darktrace,34,cnbc_disruptor50,data_science
+cnbc_34,Duolingo,35,cnbc_disruptor50,data_science
+cnbc_35,Pinterest,36,cnbc_disruptor50,data_science
+cnbc_36,Thinx,37,cnbc_disruptor50,data_science
+cnbc_37,Robinhood,38,cnbc_disruptor50,data_science
+cnbc_38,Uptake,39,cnbc_disruptor50,data_science
+cnbc_39,Drawbridge,40,cnbc_disruptor50,data_science
+cnbc_40,InMobi,41,cnbc_disruptor50,data_science
+cnbc_41,Coursera,42,cnbc_disruptor50,data_science
+cnbc_42,Stripe,43,cnbc_disruptor50,data_science
+cnbc_43,Illumio,44,cnbc_disruptor50,data_science
+cnbc_44,Fanatics,45,cnbc_disruptor50,data_science
+cnbc_45,Auris Health,46,cnbc_disruptor50,data_science
+cnbc_46,Luminar,47,cnbc_disruptor50,data_science
+cnbc_47,Apeel Sciences,48,cnbc_disruptor50,data_science
+cnbc_48,GitHub,49,cnbc_disruptor50,data_science
+cnbc_49,SoFi,50,cnbc_disruptor50,data_science

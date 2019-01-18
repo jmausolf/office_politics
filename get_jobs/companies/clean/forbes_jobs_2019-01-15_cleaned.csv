@@ -1,101 +1,101 @@
-company,rank,source,job_type
-Stripe,1,forbes_cloud100,data_science
-Slack,2,forbes_cloud100,data_science
-Zoom Video Communications,3,forbes_cloud100,data_science
-Tanium,4,forbes_cloud100,data_science
-Procore Technologies,5,forbes_cloud100,data_science
-CrowdStrike,6,forbes_cloud100,data_science
-Qualtrics,7,forbes_cloud100,data_science
-Squarespace,8,forbes_cloud100,data_science
-Elastic,9,forbes_cloud100,data_science
-Eventbrite,10,forbes_cloud100,data_science
-Mailchimp,11,forbes_cloud100,data_science
-Cloudflare,12,forbes_cloud100,data_science
-SurveyMonkey,13,forbes_cloud100,data_science
-UiPath,14,forbes_cloud100,data_science
-Medallia,15,forbes_cloud100,data_science
-PagerDuty,16,forbes_cloud100,data_science
-Snowflake,17,forbes_cloud100,data_science
-Cylance,18,forbes_cloud100,data_science
-Datadog,19,forbes_cloud100,data_science
-Intercom,20,forbes_cloud100,data_science
-Rubrik,21,forbes_cloud100,data_science
-Yardi,22,forbes_cloud100,data_science
-InVision,23,forbes_cloud100,data_science
-nCino,24,forbes_cloud100,data_science
-AppDirect,25,forbes_cloud100,data_science
-Sprinklr,26,forbes_cloud100,data_science
-Apttus,27,forbes_cloud100,data_science
-Anaplan,28,forbes_cloud100,data_science
-Toast,29,forbes_cloud100,data_science
-Veeam,30,forbes_cloud100,data_science
-Confluent,31,forbes_cloud100,data_science
-HashiCorp,32,forbes_cloud100,data_science
-Gusto,33,forbes_cloud100,data_science
-Looker,34,forbes_cloud100,data_science
-Databricks,35,forbes_cloud100,data_science
-Darktrace,36,forbes_cloud100,data_science
-Uptake,37,forbes_cloud100,data_science
-Automation Anywhere,38,forbes_cloud100,data_science
-Automattic,39,forbes_cloud100,data_science
-PointClickCare,40,forbes_cloud100,data_science
-Sisense,41,forbes_cloud100,data_science
-AvidXchange,42,forbes_cloud100,data_science
-Vlocity,43,forbes_cloud100,data_science
-Lookout,44,forbes_cloud100,data_science
-Canva,45,forbes_cloud100,data_science
-ServiceTitan,46,forbes_cloud100,data_science
-Checkr,47,forbes_cloud100,data_science
-WalkMe,48,forbes_cloud100,data_science
-Acquia,49,forbes_cloud100,data_science
-Gainsight,50,forbes_cloud100,data_science
-Turbonomic,51,forbes_cloud100,data_science
-DataStax,52,forbes_cloud100,data_science
-Segment,53,forbes_cloud100,data_science
-Grand Rounds,54,forbes_cloud100,data_science
-SMS Assist,55,forbes_cloud100,data_science
-Fastly,56,forbes_cloud100,data_science
-Zapier,57,forbes_cloud100,data_science
-Welltok,58,forbes_cloud100,data_science
-Dataminr,59,forbes_cloud100,data_science
-Freshworks,60,forbes_cloud100,data_science
-ThoughtSpot,61,forbes_cloud100,data_science
-Workfront,62,forbes_cloud100,data_science
-Asana,63,forbes_cloud100,data_science
-FinancialForce,64,forbes_cloud100,data_science
-Fuze,65,forbes_cloud100,data_science
-Optimizely,66,forbes_cloud100,data_science
-BrowserStack,67,forbes_cloud100,data_science
-Auth0,68,forbes_cloud100,data_science
-Illumio,69,forbes_cloud100,data_science
-Hootsuite,70,forbes_cloud100,data_science
-Health Catalyst,71,forbes_cloud100,data_science
-iCims,72,forbes_cloud100,data_science
-DigitalOcean,73,forbes_cloud100,data_science
-JFrog,74,forbes_cloud100,data_science
-American Well,75,forbes_cloud100,data_science
-C3 IoT,76,forbes_cloud100,data_science
-NewVoiceMedia,77,forbes_cloud100,data_science
-ZipRecruiter,78,forbes_cloud100,data_science
-Onshape,79,forbes_cloud100,data_science
-Collibra,80,forbes_cloud100,data_science
-Airtable,81,forbes_cloud100,data_science
-Evernote,82,forbes_cloud100,data_science
-KeepTruckin,83,forbes_cloud100,data_science
-Pipedrive,84,forbes_cloud100,data_science
-Braze,85,forbes_cloud100,data_science
-Algolia,86,forbes_cloud100,data_science
-Sumo Logic,87,forbes_cloud100,data_science
-Carta,88,forbes_cloud100,data_science
-Netskope,89,forbes_cloud100,data_science
-Pindrop Security,90,forbes_cloud100,data_science
-Drift,91,forbes_cloud100,data_science
-Outreach,92,forbes_cloud100,data_science
-Podium,93,forbes_cloud100,data_science
-Exabeam,94,forbes_cloud100,data_science
-Cloudinary,95,forbes_cloud100,data_science
-Namely,96,forbes_cloud100,data_science
-Endgame,97,forbes_cloud100,data_science
-Glint,98,forbes_cloud100,data_science
-Dialpad,99,forbes_cloud100,data_science
-Pendo,100,forbes_cloud100,data_science
+list_id,company,rank,source,job_type
+forbes_0,Stripe,1,forbes_cloud100,data_science
+forbes_1,Slack,2,forbes_cloud100,data_science
+forbes_2,Zoom Video Communications,3,forbes_cloud100,data_science
+forbes_3,Tanium,4,forbes_cloud100,data_science
+forbes_4,Procore Technologies,5,forbes_cloud100,data_science
+forbes_5,CrowdStrike,6,forbes_cloud100,data_science
+forbes_6,Qualtrics,7,forbes_cloud100,data_science
+forbes_7,Squarespace,8,forbes_cloud100,data_science
+forbes_8,Elastic,9,forbes_cloud100,data_science
+forbes_9,Eventbrite,10,forbes_cloud100,data_science
+forbes_10,Mailchimp,11,forbes_cloud100,data_science
+forbes_11,Cloudflare,12,forbes_cloud100,data_science
+forbes_12,SurveyMonkey,13,forbes_cloud100,data_science
+forbes_13,UiPath,14,forbes_cloud100,data_science
+forbes_14,Medallia,15,forbes_cloud100,data_science
+forbes_15,PagerDuty,16,forbes_cloud100,data_science
+forbes_16,Snowflake,17,forbes_cloud100,data_science
+forbes_17,Cylance,18,forbes_cloud100,data_science
+forbes_18,Datadog,19,forbes_cloud100,data_science
+forbes_19,Intercom,20,forbes_cloud100,data_science
+forbes_20,Rubrik,21,forbes_cloud100,data_science
+forbes_21,Yardi,22,forbes_cloud100,data_science
+forbes_22,InVision,23,forbes_cloud100,data_science
+forbes_23,nCino,24,forbes_cloud100,data_science
+forbes_24,AppDirect,25,forbes_cloud100,data_science
+forbes_25,Sprinklr,26,forbes_cloud100,data_science
+forbes_26,Apttus,27,forbes_cloud100,data_science
+forbes_27,Anaplan,28,forbes_cloud100,data_science
+forbes_28,Toast,29,forbes_cloud100,data_science
+forbes_29,Veeam,30,forbes_cloud100,data_science
+forbes_30,Confluent,31,forbes_cloud100,data_science
+forbes_31,HashiCorp,32,forbes_cloud100,data_science
+forbes_32,Gusto,33,forbes_cloud100,data_science
+forbes_33,Looker,34,forbes_cloud100,data_science
+forbes_34,Databricks,35,forbes_cloud100,data_science
+forbes_35,Darktrace,36,forbes_cloud100,data_science
+forbes_36,Uptake,37,forbes_cloud100,data_science
+forbes_37,Automation Anywhere,38,forbes_cloud100,data_science
+forbes_38,Automattic,39,forbes_cloud100,data_science
+forbes_39,PointClickCare,40,forbes_cloud100,data_science
+forbes_40,Sisense,41,forbes_cloud100,data_science
+forbes_41,AvidXchange,42,forbes_cloud100,data_science
+forbes_42,Vlocity,43,forbes_cloud100,data_science
+forbes_43,Lookout,44,forbes_cloud100,data_science
+forbes_44,Canva,45,forbes_cloud100,data_science
+forbes_45,ServiceTitan,46,forbes_cloud100,data_science
+forbes_46,Checkr,47,forbes_cloud100,data_science
+forbes_47,WalkMe,48,forbes_cloud100,data_science
+forbes_48,Acquia,49,forbes_cloud100,data_science
+forbes_49,Gainsight,50,forbes_cloud100,data_science
+forbes_50,Turbonomic,51,forbes_cloud100,data_science
+forbes_51,DataStax,52,forbes_cloud100,data_science
+forbes_52,Segment,53,forbes_cloud100,data_science
+forbes_53,Grand Rounds,54,forbes_cloud100,data_science
+forbes_54,SMS Assist,55,forbes_cloud100,data_science
+forbes_55,Fastly,56,forbes_cloud100,data_science
+forbes_56,Zapier,57,forbes_cloud100,data_science
+forbes_57,Welltok,58,forbes_cloud100,data_science
+forbes_58,Dataminr,59,forbes_cloud100,data_science
+forbes_59,Freshworks,60,forbes_cloud100,data_science
+forbes_60,ThoughtSpot,61,forbes_cloud100,data_science
+forbes_61,Workfront,62,forbes_cloud100,data_science
+forbes_62,Asana,63,forbes_cloud100,data_science
+forbes_63,FinancialForce,64,forbes_cloud100,data_science
+forbes_64,Fuze,65,forbes_cloud100,data_science
+forbes_65,Optimizely,66,forbes_cloud100,data_science
+forbes_66,BrowserStack,67,forbes_cloud100,data_science
+forbes_67,Auth0,68,forbes_cloud100,data_science
+forbes_68,Illumio,69,forbes_cloud100,data_science
+forbes_69,Hootsuite,70,forbes_cloud100,data_science
+forbes_70,Health Catalyst,71,forbes_cloud100,data_science
+forbes_71,iCims,72,forbes_cloud100,data_science
+forbes_72,DigitalOcean,73,forbes_cloud100,data_science
+forbes_73,JFrog,74,forbes_cloud100,data_science
+forbes_74,American Well,75,forbes_cloud100,data_science
+forbes_75,C3 IoT,76,forbes_cloud100,data_science
+forbes_76,NewVoiceMedia,77,forbes_cloud100,data_science
+forbes_77,ZipRecruiter,78,forbes_cloud100,data_science
+forbes_78,Onshape,79,forbes_cloud100,data_science
+forbes_79,Collibra,80,forbes_cloud100,data_science
+forbes_80,Airtable,81,forbes_cloud100,data_science
+forbes_81,Evernote,82,forbes_cloud100,data_science
+forbes_82,KeepTruckin,83,forbes_cloud100,data_science
+forbes_83,Pipedrive,84,forbes_cloud100,data_science
+forbes_84,Braze,85,forbes_cloud100,data_science
+forbes_85,Algolia,86,forbes_cloud100,data_science
+forbes_86,Sumo Logic,87,forbes_cloud100,data_science
+forbes_87,Carta,88,forbes_cloud100,data_science
+forbes_88,Netskope,89,forbes_cloud100,data_science
+forbes_89,Pindrop Security,90,forbes_cloud100,data_science
+forbes_90,Drift,91,forbes_cloud100,data_science
+forbes_91,Outreach,92,forbes_cloud100,data_science
+forbes_92,Podium,93,forbes_cloud100,data_science
+forbes_93,Exabeam,94,forbes_cloud100,data_science
+forbes_94,Cloudinary,95,forbes_cloud100,data_science
+forbes_95,Namely,96,forbes_cloud100,data_science
+forbes_96,Endgame,97,forbes_cloud100,data_science
+forbes_97,Glint,98,forbes_cloud100,data_science
+forbes_98,Dialpad,99,forbes_cloud100,data_science
+forbes_99,Pendo,100,forbes_cloud100,data_science
