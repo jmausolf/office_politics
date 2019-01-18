@@ -8,6 +8,7 @@ from fuzzywuzzy import process
 import warnings
 import itertools
 import glob
+from replace_dict import *
 
 def remove_non_ascii_2(text):
     return re.sub(r'[^\x00-\x7F]+', "", text)
@@ -40,21 +41,35 @@ def remove_trailing_periods(text):
 
 
 def remove_trailing_corp(text):
-    #pat = r'(\sCorporation$)|(\sCorp$)'
-    #pat = r'\sCorporation$|\sCorp$'
-    #pat = r'\sCorporation$'
-    t0 = re.sub(r'\sCorporation$', '', text)
-    t1 = re.sub(r' Corporation$', '', t0)
-    t2 = re.sub(r'\sCorp$', '', t1)
-    t3 = re.sub(r' Corp$', '', t2)
-    return t4
+    corp_exceptions = ['News Corp', 'Science Applications International Corporation']
+
+    if text.title() in corp_exceptions:
+        return text
+    else:
+        text = re.sub(r'\sCorporation$', '', text)
+        text = re.sub(r' Corporation$', '', text)
+        text = re.sub(r'\sCorp$', '', text)
+        text = re.sub(r' Corp$', '', text)
+        return text
+
+
+def remove_trailing_inc(text):
+    text = re.sub(r'\s[Ii][Nn][Cc]$', '', text)
+    text = re.sub(r'\s[Ii][Nn][Cc][.]$', '', text)
+    return text
+
+def replace_bancorp(text):
+    bancorp_exceptions = ['Zions Bancorp', 'New York Community Bancorp']
+    if text.title() in bancorp_exceptions:
+        return text
+    else:
+        return text.replace(' Bancorp', ' Bank')
 
 
 def read_csv(csv_file):
     text = str(csv_file)
     print(text)
     f = open(text, 'rU').read()
-    #return remove_non_ascii_2(f)
     return f
 
 
@@ -120,7 +135,6 @@ def modify_csv(csv_file, path='source/', dest='clean/', outfile=True, replace=Fa
     
 
     r = remove_non_ascii_space(r)
-    #print(r)
         
     #write results
     if replace is True:
@@ -153,11 +167,8 @@ def clean_fortune_1000(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'f1000_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
-
-#clean_fortune_1000('fortune1000.csv')
 
 ## Clean Hedge Fund List
 def clean_hedge(source_file):
@@ -172,11 +183,9 @@ def clean_hedge(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'hedge_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
 
-#clean_hedge('hedge_fund_100_institutional_investors_alpha.csv')
 
 ## Clean Vault List
 def clean_vault(source_file):
@@ -188,11 +197,8 @@ def clean_vault(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'vault_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
-
-#clean_vault('vault_jobs_2019-01-14.csv')
 
 
 ## Clean Nasdaq List
@@ -224,7 +230,6 @@ def clean_nasdaq(source_file):
     df['job_type'] = 'data_science'
 
     #Save
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
 
@@ -239,7 +244,6 @@ def clean_glassdoor(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'glassdoor_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
 
@@ -254,7 +258,6 @@ def clean_forbes(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'forbes_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
 
@@ -273,7 +276,6 @@ def clean_cnbc(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'cnbc_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
 
@@ -288,7 +290,6 @@ def clean_bi(source_file):
     df['index'] = df['index'].apply(lambda x: str(x))
     df['list_id'] = 'bi_'+df['index']
     df = df[['list_id', 'company', 'rank', 'source', 'job_type']]
-    print(df)
     df.to_csv(clean_csv, index=False)
     return df
 
@@ -312,7 +313,7 @@ df8 = clean_bi('business_insider_jobs_2019-01-16.csv')
 
 prep_df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8], axis=0)
 prep_df.to_csv("clean/master_companies_prep.csv", index=False)
-print(prep_df)
+#print(prep_df)
 
 #Append Files
 
@@ -334,44 +335,23 @@ def rm_company_stop_words(text):
     for s in sw:
         text = text.replace(s, ' ')
 
-
-    #Specific Words
-    text = text.replace(' Bancorp', ' Bank')
-    #text = remove_trailing_corp(text)
-    text = re.sub(r'\s{2,}', " ", text).strip()
-
-
-    #Remove Trailing Corp
-    #text = re.sub(r'\sCorp$', '', text)
-
-    #TODO Need Exceptions
-    #News Corp
-    #if text == x, y, z:
-        #return text
-    #else
-
+        text = re.sub(r'\s{2,}', " ", text).strip()
 
     return text
 
 
-def clean_hedge(row, col='company'):
-    c = row[col]
-    return c
 
 def clean_company(row, col='company'):
     c = row[col]
-
-    
-    
-    c = remove_non_ascii_2(c)
-        
-    #c = remove_punct(c)
+   
+    c = remove_non_ascii_2(c)      
     c = parens_content_replace(c)
-    c = remove_trailing_corp(c) 
     c = rm_company_stop_words(c)
-    c = remove_trailing_periods(c) 
     c = select_punct_strip(c)
-    #c = remove_trailing_periods(c)
+    c = remove_trailing_periods(c)
+    c = remove_trailing_inc(c)
+    c = remove_trailing_corp(c)
+    c = replace_bancorp(c)
 
     if c.isupper() and len(c) > 4:
         c = c.title()
@@ -380,7 +360,11 @@ def clean_company(row, col='company'):
     
     return c
 
+## Clean Company
 prep_df['company'] = prep_df.apply(clean_company, axis=1)
+
+## Adhoc Value Replacements
+prep_df['company'] = prep_df['company'].replace(company_replacements)
 prep_df.drop_duplicates('company', inplace=True)
 
 #########
@@ -430,40 +414,25 @@ def job_col_names(job_types_dict, first_key):
 
     return job_cols
 
-job_cols = job_col_names(job_types_dict, 'data_science')
-jobs_df = pd.DataFrame.from_dict(job_types_dict, orient='index')
-jobs_df.columns = job_cols
-jobs_df['job_type'] = jobs_df.index
-print(jobs_df)
+
+def make_job_search_cols(prep_df, job_types_dict):
+
+    job_cols = job_col_names(job_types_dict, 'data_science')
+    jobs_df = pd.DataFrame.from_dict(job_types_dict, orient='index')
+    jobs_df.columns = job_cols
+    jobs_df['job_type'] = jobs_df.index
+
+    ##Merge
+    df = prep_df.merge(jobs_df, how='left', on='job_type')
+
+    #Drop Base Job_Type Key
+    df = df.drop(['job_type'], axis=1)
+    print(df)
+    df.to_csv("clean/master_companies_prep.csv", index=False)
+    return df
 
 
-##Create Merge
-df = prep_df.merge(jobs_df, how='left', on='job_type')
-print(df)
-df.to_csv("clean/master_companies_test.csv", index=False)
-
-
-#df = prep_df.copy()
-#df['test'] = df['job_type'].map(job_types_dict)
-
-#df[job_cols] = df['job_type'].map(job_types_dict).apply(lambda x: x.split(','))
-#df[[job_cols]] = [1, 2, 3, 4, 5]
-#df['job_type'].map(job_types_dict)
-#df[['column_new_1', 'column_new_2', 'column_new_3']] = pd.DataFrame([[np.nan, 'dogs', 3]], index=df.index)
-
-#print(df)
-
-
-
-#    df[['party_id', 'partisan_score']] = df['cmte_id'].apply(
-#        lambda cid: pid(cid, cycle)).apply(pd.Series)
-
-
-#print(prep_df)
-#df = df.reset_index(drop=True)
-#print(df.shape)
-#df.to_csv("hedge_test2.csv", index=False)
-
+make_job_search_cols(prep_df, job_types_dict)
 
 
 

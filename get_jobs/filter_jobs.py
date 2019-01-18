@@ -435,7 +435,7 @@ def get_employers(infile, outfile=None):
 	jobs = job_selector(infile, ['job_type', 'job_keyword'])
 
 	#Make Cleaned File
-	keep_cols = ['qry_company', 'position', 'office', 'office_state', 
+	keep_cols = ['list_id', 'qry_company', 'position', 'office', 'office_state', 
 				 'job_type']
 	df_tmp = jobs[keep_cols].copy().reset_index()
 
@@ -443,7 +443,7 @@ def get_employers(infile, outfile=None):
 	df_tmp['index'] = df_tmp.index
 	cid = df_tmp.apply(make_cid, axis=1)
 	df = pd.concat([cid, df_tmp[keep_cols]], axis=1)
-	cols = ['cid', 'company', 'position', 'office', 'office_state', 
+	cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 
 			'job_type']
 	df.columns = cols
 	print(df)
@@ -453,4 +453,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_4_2018-11-14.csv', 'filter_test.csv')
+#get_employers('indeed_jobs_1_2019-01-18.csv', 'filter_test.csv')

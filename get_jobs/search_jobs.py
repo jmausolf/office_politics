@@ -19,7 +19,7 @@ def url_str(text):
     return text
 
 
-def error_logger(company, job_keyword, url, date):
+def error_logger(list_id, company, job_keyword, url, date):
     outfile = 'error_no_results_{}.csv'.format(date)
     exists = os.path.isfile('./{}'.format(outfile))
 
@@ -27,10 +27,10 @@ def error_logger(company, job_keyword, url, date):
         writer = csv.writer(f)
 
         if exists:
-            writer.writerow([company, job_keyword, url, date])
+            writer.writerow([list_id, company, job_keyword, url, date])
         else:
-            writer.writerow(['company', 'job_keyword', 'url', 'date'])
-            writer.writerow([company, job_keyword, url, date])
+            writer.writerow(['list_id', 'company', 'job_keyword', 'url', 'date'])
+            writer.writerow([list_id, company, job_keyword, url, date])
 
     f.close()
     return
@@ -112,7 +112,7 @@ def find_css(element, css):
 
 
 def load_job_tiles(counter, job_key, job_type, 
-                   company, filestem='indeed_jobs'):
+                   company, list_id, filestem='indeed_jobs'):
 
     #Job Posts
     #Source 1: Main Posts
@@ -148,6 +148,7 @@ def load_job_tiles(counter, job_key, job_type,
     df['job_keyword'] = job_key
     df['job_type'] = job_type
     df['qry_company'] = company
+    df['list_id'] = list_id
 
     f = "{}_{}.csv".format(filestem, date)
     exists = os.path.isfile('./{}'.format(f))
@@ -159,24 +160,36 @@ def load_job_tiles(counter, job_key, job_type,
         return True
 
 
-def get_jobs(job_key, job_type, company, count, seconds, date):
+def get_jobs(job_key, job_type, company, list_id, count, seconds, date):
     qry_url = qry_indeed_jobs(job_key, company, seconds)
 
-    job_tiles = load_job_tiles(count, job_key, job_type, 
-                               company, filestem=filestem)
+    job_tiles = load_job_tiles(count,
+                               job_key, 
+                               job_type, 
+                               company,
+                               list_id,
+                               filestem=filestem)
     if job_tiles is True:
         pass
     else:
         print("[*] error searching for {} jobs at {}...".format(job_key, 
                                                                 company))
-        error_logger(company, job_key, qry_url, date)
+        error_logger(list_id, company, job_key, qry_url, date)
 
 
 def iterator(row):
+    #print(row)
+    list_id = row['list_id']
+    company = row['company']
+    job_type = row['job_type']
+    keywords = ast.literal_eval(row['keywords'])
+    counter = row['counter']
+    '''
     company = row[0]
     job_type = row[1]
     keywords = ast.literal_eval(row[2])
     counter = row[3]
+    '''
 
     qc = []
     n = len(keywords)
@@ -191,7 +204,7 @@ def iterator(row):
                 counter+=1
                 print("[*] searching for {} jobs at {}...".format(k, company))
                 
-                get_jobs(k, job_type, company, counter, seconds, date)
+                get_jobs(k, job_type, company, list_id, counter, seconds, date)
                 qc.append(k)
 
                 if len(qc) == n:
@@ -207,7 +220,7 @@ def iterator(row):
 
     except Exception as e:
         print('[*] ERROR: {}'.format(e))
-        error_logger(company, k, search_url(company, k))
+        error_logger(list_id, company, k, search_url(company, k))
         return
 
 
@@ -316,6 +329,7 @@ if __name__=="__main__":
     df = cid.merge(key, on='job_type')
     df = df.drop(['backup_keys'], axis=1)
     df['counter'] = df.index
+    print(df)
 
     #Run Main App
     while attempts < 3 and complete is False:
