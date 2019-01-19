@@ -337,7 +337,7 @@ def main(employers,
 	if order_cols is False:
 		pass
 	elif order_cols == 'default':
-		cols_order = ['id', 'cid', 'company',
+		cols_order = ['id', 'cid', 'list_id', 'company',
 					  'contact_name', 'contact_last_name', 'contact_email',
 					  'office', 'office_state', 'region', 'proximal_region', 
 					  'position', 'job_type', 'profile']
@@ -349,6 +349,7 @@ def main(employers,
 
 
 	print(emp)
+	print('[*] saving experimental protocol to {}'.format(outfile))
 	emp.to_csv(outfile, index=False)
 	
 
