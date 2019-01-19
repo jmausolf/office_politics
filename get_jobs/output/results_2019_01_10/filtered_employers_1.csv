@@ -1,0 +1,428 @@
+cid,list_id,company,position,office,office_state,job_type
+c01,glassdoor_25,23andMe,Scientist I/II - Biology,South San Francisco,CA,data_science
+c02,f1000_93,3M,Data Scientist,Maplewood,MN,data_science
+c03,f1000_239,ADP,Lead Data Scientist,New York,NY,data_science
+c04,f1000_54,AIG,Senior Developer for AI/Machine Learning,Fort Worth,TX,data_science
+c05,f1000_8,AT&T,Senior-Data Scientist,San Francisco,CA,data_science
+c06,f1000_110,AbbVie,Senior Data Scientist I - Bioinformatics Developer,Worcester,MA,data_science
+c07,f1000_134,Abbott Laboratories,Senior Data Analytics Engineer - Machine Learning,Alameda,CA,data_science
+c08,vault_109,Accenture,Customer Service New Associate,Austin,TX,consultant
+c09,nasdaq_ADBE,Adobe,Senior Data Scientist,San Jose,CA,data_science
+c10,f1000_291,Advance Auto Parts,Associate Data Scientist,Raleigh,NC,data_science
+c11,f1000_564,Advanced Micro Devices,Sr Machine Learning - HPC,Bellevue,WA,data_science
+c12,f1000_160,Aecom,Marine Scientist,Chelmsford,MA,data_science
+c13,f1000_42,Aetna,Sr Data Scientist,New York,NY,data_science
+c14,f1000_575,Agilent Technologies,Data Analyst,Wilmington,DE,data_science
+c15,cnbc_2,Airbnb,Software Engineer - Machine Learning - Trips Platform,San Francisco,CA,data_science
+c16,vault_28,Akin Gump Strauss Hauer & Feld,Marketing Technology Coordinator,Washington,DC,mba
+c17,f1000_48,Albertsons,Director of Data Science,Pleasanton,CA,data_science
+c18,f1000_834,Alere,Certifying Scientist,Santa Rosa,CA,data_science
+c19,f1000_955,Alliance,Data Scientist,Woodland,CA,data_science
+c20,f1000_83,Allstate,Data Science Manager,Charlotte,NC,data_science
+c21,f1000_285,Ally Financial,Cyber Security Data Engineer,Charlotte,NC,data_science
+c22,vault_119,Alvarez & Marsal,Tax Associate,Morristown,NJ,consultant
+c23,f1000_66,American Airlines,Consultant/Senior Consultant - IT Operations Research and Advanced Analytics,Fort Worth,TX,data_science
+c24,f1000_592,American Axle & Manufacturing,Lead Data Scientist,Southfield,MI,data_science
+c25,f1000_314,American Family Insurance,Senior Data Science Engineer,Madison,WI,data_science
+c26,f1000_238,Ameriprise Financial,Senior Software Engineer - Data Science Cloud,Minneapolis,MN,data_science
+c27,f1000_122,Amgen,Senior Associate Data Scientist,Thousand Oaks,CA,data_science
+c28,f1000_343,Anadarko Petroleum,Sr Reservoir Engineer DB Analytics & Data Science,Midland,TX,data_science
+c29,f1000_659,Analog Devices,Signal Processing Research Scientist,Boston,MA,data_science
+c30,vault_118,Analysis,ABA Consultant/ Coordinator,San Francisco Bay Area,CA,consultant
+c31,f1000_28,Anthem,Data Scientist,Chicago,IL,data_science
+c32,cnbc_47,Apeel Sciences,Field Application Scientist,Santa Barbara,CA,data_science
+c33,nasdaq_APPF,AppFolio,Sr Software Engineer - Machine Learning,Santa Barbara,CA,data_science
+c34,f1000_2,Apple,Sr Data Scientist,Santa Clara Valley,CA,data_science
+c35,f1000_264,Applied Materials,Data Scientist,Santa Clara,CA,data_science
+c36,f1000_44,Archer Daniels Midland,SR Research Analytical Chemist - - IL,Decatur,IL,data_science
+c37,f1000_227,Arconic,Data Scientist,Carson,CA,data_science
+c38,vault_219,Armanino,Tax Manager - Middle Market,San Jose,CA,mba
+c39,nasdaq_TEAM,Atlassian,Principal Data Scientist,San Francisco,CA,data_science
+c40,f1000_397,Auto-Owners Insurance,Data Scientist - Experienced,Lansing,MI,data_science
+c41,f1000_927,Autodesk,Principal AI Researcher,San Francisco,CA,data_science
+c42,f1000_244,BB&T,Senior Data Engineer,Winston-Salem,NC,data_science
+c43,vault_232,BKD,Business Analyst,Springfield,MO,mba
+c44,vault_221,BPM,IT Business Analyst,San Francisco Bay Area,CA,mba
+c45,nasdaq_BIDU,Baidu,Machine Learning Research Scientist,Sunnyvale,CA,data_science
+c46,vault_101,Bain & Company,Graphics Associate,Dallas,TX,consultant
+c47,vault_185,Baird,Baird Equity Asset Management Research Analyst,Milwaukee,WI,quant
+c48,f1000_284,Baker Hughes,Staff Data Scientist - - NV,Minden,NV,data_science
+c49,vault_209,Baker Tilly Virchow Krause,ERP Consulting Project Manager-Manufacturing,Milwaukee,WI,mba
+c50,f1000_305,Ball,Research & Development Analyst Senior,Albuquerque,NM,data_science
+c51,vault_96,Ballard Spahr,Data Analyst/Technical Writer,Philadelphia,PA,mba
+c52,f1000_25,Bank of America,Senior Data Scientist,Charlotte,NC,data_science
+c53,f1000_224,Becton Dickinson,Senior Manager Data Science,San Diego,CA,data_science
+c54,f1000_845,Belden,RESEARCH & DEVELOPMENT EARLY CAREER LEADERSHIP PROGRAM,St. Louis,MO,data_science
+c55,f1000_412,Berry Global,Senior Development Scientist,Lewisburg,TN,data_science
+c56,f1000_71,Best Buy,Associate Director - Data Science - Digital Fraud,Richfield,MN,data_science
+c57,f1000_247,Biogen,Associate Director - Enterprise Analytics & Data Science,Research Triangle Park,NC,data_science
+c58,glassdoor_91,Blizzard Entertainment,Senior Software Engineer - Big Data Platform,Irvine,CA,data_science
+c59,f1000_23,Boeing,Researcher 3,Englewood,CO,data_science
+c60,f1000_480,Booz Allen Hamilton,Data Scientist - Mid,Washington,DC,data_science
+c61,glassdoor_54,Boston Consulting,Expert Data Scientist,Seattle,WA,data_science
+c62,f1000_326,Boston Scientific,Senior Research Scientist,Arden Hills,MN,data_science
+c63,f1000_146,Bristol-Myers Squibb,Associate Director - Center of Observational Research and Data Sciences,Princeton,NJ,data_science
+c64,f1000_712,Brown-Forman,Associate Scientist - Product Insights,Louisville,KY,data_science
+c65,vault_72,Bryan Cave Leighton Paisner,Marketing Manager,Washington,DC,mba
+c66,f1000_614,CACI,Data Scientist,Austin,TX,data_science
+c67,f1000_213,CBRE,Data Analyst,Cincinnati,OH,data_science
+c68,f1000_192,CBS,Senior Manager Data Science,New York,NY,data_science
+c69,f1000_904,CDK Global,Data Services Specialist,Destin,FL,data_science
+c70,f1000_198,CDW,Technical Architect - Data Solutions,Tampa,FL,data_science
+c71,f1000_6,CVS Health,Data Scientist - Advisor,Woonsocket,RI,data_science
+c72,f1000_991,Cadence Design Systems,Machine Learning Software Architect,Pittsburgh,PA,data_science
+c73,nasdaq_CARG,CarGurus,Senior Data Science Engineer - Algorithmic,Cambridge,MA,data_science
+c74,f1000_173,CarMax,Sr Analyst - Data Scientist,Richmond,VA,data_science
+c75,f1000_14,Cardinal Health,Advisor - Data Science,Dublin,OH,data_science
+c76,forbes_87,Carta,Senior Data Product Engineer,New York,NY,data_science
+c77,nasdaq_CSLT,Castlight Health,MANAGER-AI,Mountain View,CA,data_science
+c78,f1000_978,Catalent,Associate Scientist,Saint Petersburg,FL,data_science
+c79,f1000_253,Celgene,Principal Data Scientist - Trial Planning & Analytics,Summit,NJ,data_science
+c80,f1000_65,Centene,Data Science Engineer III,St. Louis,MO,data_science
+c81,f1000_159,CenturyLink,SR DATA SCIENTIST,Broomfield,CO,data_science
+c82,f1000_529,Cerner,Manager Lead Data Architect - Baptist Health,Montgomery,AL,data_science
+c83,vault_137,Charles River Associates,Associate/Consulting Associate,Summit,NJ,consultant
+c84,f1000_356,Charles Schwab,Managing Director - Data Science,Austin,TX,data_science
+c85,f1000_481,Chemours,Manufacturing Technology Mechanical Engineer/Scientist,La Porte,TX,data_science
+c86,vault_233,Cherry Bekaert,Regional Marketing Specialist,Atlanta,GA,mba
+c87,f1000_598,Chipotle Mexican Grill,Data Scientist - Enterprise Analytics,Newport Beach,CA,data_science
+c88,f1000_69,Cigna,Head of Data Science,Bloomfield,CT,data_science
+c89,vault_123,ClearView Healthcare Partners,Life Sciences Data Analyst and Consultant,Newton,MA,consultant
+c90,vault_13,Cleary Gottlieb Steen & Hamilton,Research Analyst,New York,NY,mba
+c91,vault_230,CliftonLarsonAllen,Sr IT Project Manager,Minneapolis,MN,mba
+c92,f1000_452,Clorox,Senior Scientist,Pleasanton,CA,data_science
+c93,nasdaq_CLDR,Cloudera,Field Engineering Leader - Machine Learning,New York,NY,data_science
+c94,forbes_11,Cloudflare,Distributed Systems Engineer - Data,Austin,TX,data_science
+c95,vault_231,CohnReznick,Financial Modeling Analyst,Atlanta,GA,mba
+c96,cnbc_9,Coinbase,Senior Data Platform Engineer,San Francisco,CA,data_science
+c97,f1000_181,Colgate-Palmolive,Research/ Sr Research Scientist,Piscataway,NJ,data_science
+c98,f1000_30,Comcast,Principal Data Scientist,Philadelphia,PA,data_science
+c99,glassdoor_81,Compass,Data Scientist/Statistician,Tysons Corner,VA,data_science
+c100,f1000_196,Conagra Brands,Sr Data Scientist,Chicago,IL,data_science
+c101,forbes_30,Confluent,Data Science Engineer,Palo Alto,CA,data_science
+c102,vault_26,Cooley,Senior Financial Analyst,Northampton,MA,mba
+c103,f1000_947,Cooper,Senior Research Scientist,Livonia,MI,data_science
+c104,f1000_951,CoreLogic,Principal - Data Consulting,Irving,TX,data_science
+c105,f1000_297,Corning,Enterprise Data Scientist,Painted Post,NY,data_science
+c106,cnbc_41,Coursera,Senior Data Scientist - Growth,Mountain View,CA,data_science
+c107,vault_166,Cowen,Equity Research Associate,New York,NY,quant
+c108,f1000_766,Crane,Research Scientist - Optics,Alpharetta,GA,data_science
+c109,nasdaq_CRAY,Cray,Scientific Applications Specialist,Bloomington,MN,data_science
+c110,bi_0,Credit Karma,Senior Director - Data Science,San Francisco,CA,data_science
+c111,vault_170,Credit Suisse,Projections Modeller - Quantitative Strategies ,New York,NY,quant
+c112,nasdaq_CREE,Cree,Research Scientist - Epi R&D,Durham,NC,data_science
+c113,vault_208,Crowe,ERP Project Manager,Franklin,TN,mba
+c114,f1000_158,Cummins,Senior Data Scientist,Columbus,IN,data_science
+c115,forbes_17,Cylance,Staff Data Scientist,Irvine,CA,data_science
+c116,f1000_185,DISH Network,Data Science Manager,Denver,CO,data_science
+c117,vault_32,DLA Piper,Help Desk Analyst,Tampa,FL,mba
+c118,f1000_446,Dana,Data Scientist II,Boston,MA,data_science
+c119,f1000_143,Danaher,Sr Data Architect Big Data,San Jose,CA,data_science
+c120,forbes_34,Databricks,Full Stack Engineer - Databricks Workspace,San Francisco,CA,data_science
+c121,forbes_58,Dataminr,Data Scientist,New York,NY,data_science
+c122,vault_51,Dechert,Technical Support Analyst,San Francisco,CA,mba
+c123,f1000_104,Deere,Part-Time Student - Data Analytics - - IA,Waterloo,IA,data_science
+c124,vault_203,Deloitte,Analytics Project Manager,Arlington,VA,mba
+c125,f1000_70,Delta Air Lines,Full Stack Developer Data Science,Atlanta,GA,data_science
+c126,f1000_339,Dick's Sporting Goods,Data Scientist - Labor Planning & Analytics,Coraopolis,PA,data_science
+c127,forbes_72,DigitalOcean,Senior Data Engineer,New York,NY,data_science
+c128,f1000_276,Discover Financial Services,Lead Data Scientist,Riverwoods,IL,data_science
+c129,f1000_411,Discovery Communications,Data Science Analyst,New York,NY,data_science
+c130,f1000_51,Disney,Sr Retail Data Scientist,Kissimmee,FL,data_science
+c131,vault_212,Dixon Hughes Goodman,MARKET RESOURCE MANAGER,Tysons,VA,mba
+c132,nasdaq_DOCU,DocuSign,Director - Data Science,Seattle,WA,data_science
+c133,bi_3,DoorDash,Software Engineer - Data Science,San Francisco,CA,data_science
+c134,cnbc_39,Drawbridge,Sr Data Scientist,San Mateo,CA,data_science
+c135,f1000_112,DuPont,Agronomic Data Scientist,Johnston,IA,data_science
+c136,f1000_929,E Trade Financial,Senior Audit Specialist - Data Analytics,Arlington,VA,data_science
+c137,vault_198,EY,Quantitative Analyst - Financial Services Risk Management - Quantitative Advisory Services - Trading Book - Financial Services Office,New York,NY,quant
+c138,vault_128,Eagle Hill Consulting,Management Consultant,Arlington,VA,consultant
+c139,nasdaq_ETN,Eaton,HR Data Scientist,Cleveland,OH,data_science
+c140,f1000_234,Edison,Data Scientist,San Jose,CA,data_science
+c141,vault_213,Eide Bailly,NetSuite Project Manager,Minneapolis,MN,mba
+c142,f1000_555,Electronic Arts,Data Scientist,Redwood City,CA,data_science
+c143,f1000_131,Eli Lilly,Principal Research Sci-Machine Learn,Indianapolis,IN,data_science
+c144,nasdaq_EIGI,Endurance,Senior Data Scientist - Product,Waltham,MA,data_science
+c145,f1000_914,Engility,Data Scientist,Huntsville,AL,data_science
+c146,f1000_702,Equifax,Data Scientist,Atlanta,GA,data_science
+c147,f1000_824,Equity Residential,Senior Database Administrator,Chicago,IL,data_science
+c148,nasdaq_ERIC,Ericsson,Data Scientist,Plano,TX,data_science
+c149,vault_229,Ernst & Young,Project Manager,Nashville,TN,mba
+c150,f1000_252,Estee Lauder,Senior Scientist,Blaine,MN,data_science
+c151,forbes_93,Exabeam,Big Data Engineer,San Mateo,CA,data_science
+c152,f1000_316,Expedia,Senior Data Scientist,Bellevue,WA,data_science
+c153,f1000_892,Express,Sr Data Scientist,St. Louis,MO,data_science
+c154,f1000_21,Express Scripts,Sr Data Scientist,St. Louis,MO,data_science
+c155,f1000_3,ExxonMobil,Research Data Scientist,Houston,TX,data_science
+c156,f1000_556,FM Global,Sr Data Scientist-Predictive Analytics,Johnston,RI,data_science
+c157,f1000_680,FMC,Herbicide Discovery Scientist,Newark,DE,data_science
+c158,f1000_97,Facebook,Data Scientist - CoreApp,Menlo Park,CA,data_science
+c159,cnbc_44,Fanatics,Lead/Principal Data Scientist,San Mateo,CA,data_science
+c160,f1000_57,FedEx,Sr Analyst-Operations Research,Harrison,AR,data_science
+c161,f1000_841,First Republic Bank,Data Engineer,San Francisco,CA,data_science
+c162,f1000_470,Fiserv,Market Research Analyst - Advisory,Brookfield,WI,data_science
+c163,f1000_347,Foot Locker,SR DATA SCIENTIST,New York,NY,data_science
+c164,f1000_9,Ford Motor,Supervisor Data Scientist,Dearborn,MI,data_science
+c165,f1000_38,Freddie Mac,Senior Data Scientist,McLean,VA,data_science
+c166,vault_214,Friedman,Project Manager - Commercial Real Estate Brokerage,Farmington Hills,MI,mba
+c167,f1000_894,GEO,JAIL OFFICER,Ontario,CA,data_science
+c168,f1000_177,Gap,Scientist,Bethesda,MD,data_science
+c169,f1000_820,Gartner,Associate Data Scientist,Arlington,VA,data_science
+c170,f1000_1,Geico,Big Data Developer,Chevy Chase,MD,data_science
+c171,f1000_89,General Dynamics,Data Scientist,Fort Belvoir,VA,data_science
+c172,f1000_12,General Electric,Data Scientist,Evendale,OH,data_science
+c173,f1000_91,Gilead Sciences,Clinical Data Scientist,Foster City,CA,data_science
+c174,cnbc_20,Ginkgo Bioworks,Data Engineering Manager,Boston,MA,data_science
+c175,nasdaq_GLUU,Glu Mobile,Senior Data Analyst,San Francisco,CA,data_science
+c176,f1000_979,GoDaddy,Technical Product Manager - Data Science,Kirkland,WA,data_science
+c177,f1000_77,Goldman Sachs,Consumer Finance - Decision and Data Scientist,New York,NY,data_science
+c178,vault_44,Goodwin Procter,Security Analyst,Boston,MA,mba
+c179,glassdoor_57,Google,Data Scientist - Engineering,San Francisco,CA,data_science
+c180,glassdoor_17,Grand Rounds,Data Scientist,San Francisco,CA,data_science
+c181,vault_205,Grant Thornton,Project Mananger,Alexandria,VA,mba
+c182,vault_52,Greenberg Traurig,HRIS Analyst,Doral,FL,mba
+c183,f1000_703,Groupon,Data Scientist - Groupon Goods,Seattle,WA,data_science
+c184,nasdaq_GWRE,Guidewire Software,Data Scientist - Cyber Risk Analytics - - CA,San Mateo,CA,data_science
+c185,forbes_32,Gusto,Software Engineer - Data,San Francisco,CA,data_science
+c186,f1000_62,HCA,Data Scientist II,Nashville,TN,data_science
+c187,f1000_889,HNI,Data Scientist,Muscatine,IA,data_science
+c188,f1000_60,HP,Lead Data Scientist,Boise,ID,data_science
+c189,f1000_516,Hanover Insurance,Sr Data Scientist,Worcester,MA,data_science
+c190,f1000_362,Harris,Lead Data Strategist,Newport News,VA,data_science
+c191,forbes_70,Health Catalyst,Sr Data Scientist - Life Sciences,Boston,MA,data_science
+c192,f1000_368,Hershey,Director Customer & Consumer Data,Hershey,PA,data_science
+c193,f1000_58,Hewlett Packard Enterprise,Senior Data Scientist,Palo Alto,CA,data_science
+c194,f1000_754,Hologic,Operations Scientist 1-2,San Diego,CA,data_science
+c195,f1000_22,Home Depot,MGR DATA SCIENCE AND ANALYTICS,Atlanta,GA,data_science
+c196,f1000_72,Honeywell,Sr Data Scientist,Atlanta,GA,data_science
+c197,cnbc_30,Houzz,User Experience Researcher,Palo Alto,CA,data_science
+c198,f1000_52,Humana,Lead Data Scientist,Louisville,KY,data_science
+c199,f1000_31,IBM,Data Scientist,San Jose,CA,data_science
+c200,nasdaq_INFO,IHS Markit,Big Data Developer,Bellevue,WA,data_science
+c201,nasdaq_ICHR,Ichor,Research Scientist - Cell Biology,LaFayette,NY,data_science
+c202,f1000_832,Illumina,Scientist,San Diego,CA,data_science
+c203,glassdoor_46,Indigo,Data Scientist,Bellevue,WA,data_science
+c204,nasdaq_INOV,Inovalon,Data Analyst,Bowie,MD,data_science
+c205,nasdaq_INOV,Inovalon,Data Visualization Developer,Bowie,MD,data_science
+c206,f1000_472,Insight Enterprises,Marketing Modeling Analyst - Data Science,Tempe,AZ,data_science
+c207,bi_15,Instacart,Senior Data Scientist - Fulfillment,San Francisco,CA,data_science
+c208,f1000_46,Intel,Deep Learning Data Scientist,Santa Clara,CA,data_science
+c209,f1000_132,International Paper,Scientist III,Federal Way,WA,data_science
+c210,f1000_526,Intuit,Staff Data Scientist,Mountain View,CA,data_science
+c211,f1000_772,Intuitive Surgical,Computer Vision Scientist,Sunnyvale,CA,data_science
+c212,vault_54,Jenner & Block,Conflicts Analyst,Chicago,IL,mba
+c213,glassdoor_112,John Deere,Part-Time Student - Data Analytics - - IA,Waterloo,IA,data_science
+c214,vault_33,K&L Gates,Sr Financial Analyst,Pittsburgh,PA,mba
+c215,f1000_732,KLA-Tencor,Image Processing & Machine Learning Researcher,Milpitas,CA,data_science
+c216,vault_111,KPMG,Associate - Help Desk,St. Louis,MO,consultant
+c217,glassdoor_147,Kaiser Permanente,Clinical Lab Scientist,Fontana,CA,data_science
+c218,f1000_853,Kansas City Southern,Fuel Conservation Data Scientist,Kansas City,MO,data_science
+c219,f1000_701,Kar Auction Services,BI Data Engineer,Carmel,IN,data_science
+c220,vault_81,Katten Muchin Rosenman,Financial Analyst,Chicago,IL,mba
+c221,f1000_802,Kemper,Senior Data Scientist,Chicago,IL,data_science
+c222,vault_94,Kilpatrick Townsend & Stockton,IP Pricing Analyst,Atlanta,GA,mba
+c223,f1000_154,Kimberly-Clark,Sr Analyst - Data Science,Neenah,WI,data_science
+c224,f1000_105,Kraft Heinz,Senior Data Scientist - People Analytics,Chicago,IL,data_science
+c225,f1000_272,L3 Technologies,Engineer/Scientist 5 - Navigation,Norfolk,VA,data_science
+c226,nasdaq_LN,LINE,Senior Data Scientist,Crescent Springs,KY,data_science
+c227,vault_4,Latham & Watkins,Financial Analyst Pricing & Rate Analysis,Los Angeles,CA,mba
+c228,glassdoor_73,Lawrence Livermore National Laboratory,Data Scientist,Livermore,CA,data_science
+c229,f1000_541,Levi Strauss,Sr Data Engineer IT eCommerce,San Francisco,CA,data_science
+c230,nasdaq_LPSN,LivePerson,Sr Principal NLU Scientist,Seattle,WA,data_science
+c231,f1000_55,Lockheed Martin,Data Scientist,Fort Worth,TX,data_science
+c232,nasdaq_LOGM,LogMein,Senior Data Scientist - Customer Success,Boston,MA,data_science
+c233,cnbc_4,Lyft,Software Engineer - Machine Learning,San Francisco,CA,data_science
+c234,f1000_454,M&T Bank,Sr Big Data Engineer,Cheektowaga,NY,data_science
+c235,glassdoor_117,MD Anderson Cancer Center,Research Scientist - Leukemia,Houston,TX,data_science
+c236,f1000_296,MGM Resorts,Manager of Data Science,Las Vegas,NV,data_science
+c237,vault_181,Macquarie,Energy Quantitative Analyst,Houston,TX,quant
+c238,f1000_109,Macy's,Staff Machine Learning Engineer,San Francisco,CA,data_science
+c239,bi_11,Magic Leap,Senior Human Vision Scientist,Plantation,FL,data_science
+c240,f1000_162,Marriott,Director-Advanced Data Science,Bethesda,MD,data_science
+c241,glassdoor_133,Massachusetts General Hospital,Research Technician,Charlestown,MA,data_science
+c242,f1000_266,Mastercard,Senior Analyst - Data Scientist,San Francisco,CA,data_science
+c243,vault_31,Mayer Brown,Global IT Project Manager,Chicago,IL,mba
+c244,f1000_552,McCormick,Scientist - Scientist II - OR Senior Scientist - Dairy Product Development,Hunt Valley,MD,data_science
+c245,vault_56,McDermott Will & Emery,Senior HRIS Analyst,Chicago,IL,mba
+c246,f1000_111,McDonald's,IoT Data and Analytics Architect,Chicago,IL,data_science
+c247,vault_76,McGuireWoods,Lead - IT Service Desk Analyst,Richmond,VA,mba
+c248,f1000_4,McKesson,Data Engineer,Phoenix,AZ,data_science
+c249,vault_100,McKinsey & Company,Supply Chain Associate,Atlanta,GA,consultant
+c250,nasdaq_MDSO,Medidata Solutions,Senior Software Engineer - Data Science,New York,NY,data_science
+c251,glassdoor_115,Memorial Sloan Kettering,Ops Research Engineer/Data Scientist,New York,NY,data_science
+c252,f1000_68,Merck,Sr Specialist - Data Scientist,West Point,PA,data_science
+c253,f1000_41,MetLife,Manager - Data Science,Cary,NC,data_science
+c254,f1000_27,Microsoft,Data Scientist,Redmond,WA,data_science
+c255,vault_39,Milbank Tweed Hadley & McCloy,Marketing Technology Specialist,New York,NY,mba
+c256,bi_13,Moderna Therapeutics,Sr /Scientist - Immuno-Oncology Research,Cambridge,MA,data_science
+c257,f1000_108,Mondelez,Senior Scientist I - Data Science,East Hanover,NJ,data_science
+c258,f1000_203,Monsanto,Genomics Data Scientist,St. Louis,MO,data_science
+c259,f1000_630,Moody's,Data Scientist,San Francisco,CA,data_science
+c260,f1000_75,Morgan Stanley,Data Scientist,New York,NY,data_science
+c261,vault_210,Moss Adams,Marketing Senior Specialist - TCL,Seattle,WA,mba
+c262,f1000_432,Motorola Solutions,Jr Software Engineer - Machine Learning,Schaumburg,IL,data_science
+c263,vault_36,Munger Tolles & Olson,Litigation Analyst,San Francisco,CA,mba
+c264,nasdaq_NICE,NICE,Senior Machine Learning Engineer,Salt Lake City,UT,data_science
+c265,forbes_95,Namely,Principal Data Scientist,New York,NY,data_science
+c266,f1000_374,National Oilwell Varco,Senior Data Scientist,Houston,TX,data_science
+c267,f1000_67,Nationwide,Research Assistant - Genomic Medicine,Columbus,OH,data_science
+c268,glassdoor_78,Navy Federal Credit Union,Senior Marketing Data Scientist,Vienna,VA,data_science
+c269,f1000_467,NetApp,Senior Data Science,Sunnyvale,CA,data_science
+c270,f1000_313,Netflix,Senior Data Scientist - Customer Experience,Los Gatos,CA,data_science
+c271,nasdaq_NEWR,New Relic,Senior Software Engineer - Data Infrastructure,San Francisco,CA,data_science
+c272,glassdoor_113,NewYork-Presbyterian Hospital,Program Director Research Science Value Institute,Manhattan,NY,data_science
+c273,f1000_207,Newell Brands,Data Scientist - Supply Chain,Atlanta,GA,data_science
+c274,f1000_169,NextEra Energy,Sr Data Scientist,Saint Paul,MN,data_science
+c275,f1000_87,Nike,Lead Data Scientist,Beaverton,OR,data_science
+c276,vault_67,Nixon Peabody,Senior Financial Analyst,Rochester,NY,mba
+c277,nasdaq_NOK,Nokia,Data Scientist - NSW,Pembroke Pines,FL,data_science
+c278,f1000_187,Nordstrom,Senior Data Engineer,Seattle,WA,data_science
+c279,f1000_113,Northrop Grumman,Sr Principal Data Scientist,McLean,VA,data_science
+c280,nasdaq_NTNX,Nutanix,Sr MTS Engineer - Machine Learning Platform Components,San Jose,CA,data_science
+c281,f1000_386,Nvidia,Sr Data Scientist,Santa Clara,CA,data_science
+c282,vault_104,Oliver Wyman,NERA - Associate Director Global Recruitment,New York,NY,consultant
+c283,nasdaq_OMCL,Omnicell,Senior Data Scientist,Mountain View,CA,data_science
+c284,forbes_65,Optimizely,Senior Software Engineer - Machine Learning,San Francisco,CA,data_science
+c285,f1000_80,Oracle,Principal Data Scientist,Santa Clara,CA,data_science
+c286,forbes_91,Outreach,Full Stack Engineer - Data Science Team,Seattle,WA,data_science
+c287,f1000_364,PPL,Senior Data Scientist/Lead Data Scientist,Washington,DC,data_science
+c288,f1000_163,Paccar,Lead Data Scientist,Renton,WA,data_science
+c289,f1000_301,Pacific Life,Sr Data Engineer,Newport Beach,CA,data_science
+c290,nasdaq_PANW,Palo Alto Networks,Sr Data Scientist,Santa Clara,CA,data_science
+c291,vault_9,Paul Weiss Rifkind Wharton & Garrison,E-Discovery Analyst,New York,NY,mba
+c292,f1000_263,PayPal,Data Scientist,San Jose,CA,data_science
+c293,glassdoor_111,Paycom,Data Engineer,Oklahoma City,OK,data_science
+c294,cnbc_19,Peloton,Health Economics Modeling Scientist - REMOTE OPPORTUNITY,Parsippany,NJ,data_science
+c295,f1000_43,PepsiCo,R&D Senior Data Scientist,Barrington,IL,data_science
+c296,f1000_874,PerkinElmer,Clinical Lab Scientist,Bridgeville,PA,data_science
+c297,nasdaq_PRSP,Perspecta,Data Scientist III,Springfield,VA,data_science
+c298,f1000_53,Pfizer,Senior Data Scientist,Groton,CT,data_science
+c299,nasdaq_PS,Pluralsight,Data Scientist,South Jordan,UT,data_science
+c300,f1000_267,Priceline,Senior Analyst - Hotel Data Analytics,Norwalk,CT,data_science
+c301,f1000_35,Procter & Gamble,DATA SCIENTIST - MARKETING FOCUS,Cincinnati,OH,data_science
+c302,nasdaq_PFPT,Proofpoint,Senior Data Scientist,Broomfield,CO,data_science
+c303,vault_131,Protiviti,IT Audit Senior Consultant,Seattle,WA,consultant
+c304,nasdaq_PSTG,Pure Storage,Senior Data Scientist Machine Learning Engineer,Mountain View,CA,data_science
+c305,vault_202,PwC,eCommerce Project Manager,Indianapolis,IN,mba
+c306,f1000_118,Qualcomm,Sr Data Scientist,San Diego,CA,data_science
+c307,forbes_6,Qualtrics,Sr UX Data Scientist,Seattle,WA,data_science
+c308,f1000_365,Quest Diagnostics,Senior Data Scientist Manager,Secaucus,NJ,data_science
+c309,f1000_370,Ralph Lauren,Manager - Big Data Architect,Lyndhurst,NJ,data_science
+c310,f1000_115,Raytheon,Global Security Data Scientist,Burlington,MA,data_science
+c311,vault_225,Rehmann,Marketing Generalist,Troy,MI,mba
+c312,f1000_923,Renewable Energy,Geospatial Data Science Postdoctoral Researcher,Golden,CO,data_science
+c313,f1000_491,Rockwell Collins,Sr Data Scientist - Advanced Technologies,Cedar Rapids,IA,data_science
+c314,vault_20,Ropes & Gray,Records Analyst,Boston,MA,mba
+c315,vault_211,Rsm Us,Cerner IT Project Manager,Atlanta,GA,mba
+c316,vault_239,RubinBrown,IT - Support Analyst,Chicago,IL,mba
+c317,glassdoor_70,Ryan,Research Assistant - Center for Bionic Medicine - Full-time,Chicago,IL,data_science
+c318,f1000_458,S&P Global,Senior Data Scientist,New York,NY,data_science
+c319,glassdoor_76,SAP,Senior Data Scientist Job,Palo Alto,CA,data_science
+c320,nasdaq_SSNC,SS&C Technologies,AI Web Developer,Sandy Hook,CT,data_science
+c321,f1000_667,Sabre,Principal Data Scientist,Southlake,TX,data_science
+c322,glassdoor_60,Salesforce,Director - Data Science,San Francisco,CA,data_science
+c323,nasdaq_STX,Seagate Technology,Data Engineer II,Longmont,CO,data_science
+c324,f1000_396,Sealed Air,Principal Data Scientist,Charlotte,NC,data_science
+c325,nasdaq_SEND,SendGrid,Senior Data Platform Engineer,Redwood City,CA,data_science
+c326,f1000_728,Service,Data Scientist,Manhattan,NY,data_science
+c327,nasdaq_NOW,ServiceNow,Principal Data Scientist,Kirkland,WA,data_science
+c328,vault_40,Shearman & Sterling,Senior Business Analyst & Global Project Coordinator Corporate,New York,NY,mba
+c329,vault_224,Sikich,Construction Project Manager,Atlanta,GA,mba
+c330,vault_129,Simon-Kucher & Partners,Life Sciences Consultant,Boston,MA,consultant
+c331,vault_6,Simpson Thacher & Bartlett,Conflicts Analyst-1-Exempt,New York,NY,mba
+c332,forbes_1,Slack,Data Science Manager - Product Analytics,San Francisco,CA,data_science
+c333,glassdoor_63,Slalom,Data Scientist,Portland,OR,data_science
+c334,vault_145,Smartronix,Cloud Consultant,Herndon,VA,consultant
+c335,nasdaq_SNAP,Snap,Data Scientist,West Valley City,UT,data_science
+c336,forbes_16,Snowflake,Data Scientist - Finance,San Mateo,CA,data_science
+c337,cnbc_49,SoFi,Engineer - Data Science,Murray,UT,data_science
+c338,f1000_144,Southern,Sr Data Scientist,Costa Mesa,CA,data_science
+c339,f1000_349,SpartanNash,Data Scientist - Supply Chain,Grand Rapids,MI,data_science
+c340,nasdaq_SPLK,Splunk,Senior Data Scientist,San Jose,CA,data_science
+c341,nasdaq_SQ,Square,Data Scientist - Risk,San Francisco,CA,data_science
+c342,forbes_7,Squarespace,Senior Data Scientist - Product,New York,NY,data_science
+c343,f1000_249,Stanley Black & Decker,Lead Data Scientist,Hartford,CT,data_science
+c344,f1000_139,Staples,Associate Data Scientist,Lincolnshire,IL,data_science
+c345,f1000_130,Starbucks,senior data scientist - Supply Chain Advanced Analytics - SSC - - WA,Seattle,WA,data_science
+c346,f1000_32,State Farm Insurance,Data Scientist,Bloomington,IL,data_science
+c347,f1000_270,State Street,Machine Learning Researcher Global Exchange - Assistant Vice President,Cambridge,MA,data_science
+c348,f1000_251,Stryker,ML/AI Engineering Co-Op,Allendale,NJ,data_science
+c349,forbes_86,Sumo Logic,Security Researcher,Redwood City,CA,data_science
+c350,f1000_464,Symantec,Sr Principal Data Scientist LifeLock Consumer Product,Mountain View,CA,data_science
+c351,nasdaq_SYNA,Synaptics,Principal - BI and Data Analytics,San Jose,CA,data_science
+c352,f1000_826,Synopsys,Staff R&D Engineer-Machine Learning,Mountain View,CA,data_science
+c353,f1000_56,Sysco,Principal Data Scientist,Houston,TX,data_science
+c354,glassdoor_108,T-Mobile,Principal Data Scientist,Bellevue,WA,data_science
+c355,f1000_37,Target,Lead Data Scientist - Marketing/Ad Tech,Sunnyvale,CA,data_science
+c356,f1000_106,Tech Data,Sr Data Scientist,Clearwater,FL,data_science
+c357,f1000_858,Teradata,Data Engineer III,San Diego,CA,data_science
+c358,f1000_382,Tesla,Data Scientist,Fremont,CA,data_science
+c359,f1000_788,Tetra Tech,Staff Engineer/Scientist,Long Beach,CA,data_science
+c360,vault_102,The Boston Consulting,Global meetings associate,Boston,MA,consultant
+c361,glassdoor_96,The Clorox Company,Senior Scientist,Pleasanton,CA,data_science
+c362,vault_241,The Siegfried,Marketing Associate,Wilmington,DE,mba
+c363,f1000_153,Thermo Fisher Scientific,Data Scientist,Carlsbad,CA,data_science
+c364,f1000_715,Time,Data Scientist,Seattle,WA,data_science
+c365,f1000_94,Time Warner,Data Scientist,Seattle,WA,data_science
+c366,f1000_926,Tower,Medical Lab Scientist,Reading,PA,data_science
+c367,f1000_395,Tractor Supply,Enterprise Data Architect,Brentwood,TN,data_science
+c368,f1000_98,Travelers,Lead Data Scientist - Emerging Technology,Hartford,CT,data_science
+c369,vault_132,Trinity Partners,Consultant - HEOR,Waltham,MA,consultant
+c370,nasdaq_TRIP,TripAdvisor,Senior Data Scientist,Needham,MA,data_science
+c371,nasdaq_TRUE,TrueCar,Site Reliability Engineer - Big Data,Santa Monica,CA,data_science
+c372,nasdaq_TWLO,Twilio,Talent Researcher,Austin,TX,data_science
+c373,f1000_801,Twitter,Data Scientist,Boston,MA,data_science
+c374,hedge_4,Two Sigma,Quantitative Analyst,New York,NY,quant
+c375,f1000_81,Tyson Foods,Sr Developer Applications - Computer Vision/Machine Learning,Springdale,AR,data_science
+c376,vault_167,UBS,Quantitative Project Manager,Weehawken,NJ,quant
+c377,f1000_101,USAA,Senior Data Scientist,San Antonio,TX,data_science
+c378,cnbc_1,Uber,Data Scientist - Maps,San Francisco,CA,data_science
+c379,forbes_13,UiPath,Data Scientist/ML Engineer,Bellevue,WA,data_science
+c380,f1000_523,Ulta Beauty,IT Senior Data Analyst Business Intelligence,Bolingbrook,IL,data_science
+c381,glassdoor_67,Ultimate Software,DATA SCIENTIST,Fort Lauderdale,FL,data_science
+c382,f1000_527,Under Armour,Lead Data Engineer,Austin,TX,data_science
+c383,f1000_755,Unisys,Database Architect/Data Scientist,Alexandria,VA,data_science
+c384,f1000_5,UnitedHealth,Data Scientist 2,Westerville,OH,data_science
+c385,f1000_903,Universal,Senior Software Engineer - Machine Learning,Dayton,OH,data_science
+c386,f1000_257,Unum,IT - Head of Data & Analytics,Chattanooga,TN,data_science
+c387,f1000_257,Unum,Medical Director - Next Generation CAR-T Clinical Research,Cambridge,MA,data_science
+c388,forbes_36,Uptake,Data Scientist,Chicago,IL,data_science
+c389,glassdoor_100,VMware,Staff Machine Learning Engineer,Palo Alto,CA,data_science
+c390,f1000_636,Vantiv,Sr Data Scientist,Cincinnati,OH,data_science
+c391,f1000_690,Varian Medical Systems,Research Scientist,Palo Alto,CA,data_science
+c392,vault_70,Venable,IT Technical Analyst III,Baltimore,MD,mba
+c393,f1000_908,Verisk Analytics,Senior Data Scientist,Buffalo Grove,IL,data_science
+c394,nasdaq_VERI,Veritone,Senior Data Scientist,Costa Mesa,CA,data_science
+c395,nasdaq_VSAT,ViaSat,Senior Data Scientist,San Diego,CA,data_science
+c396,f1000_223,Viacom,Data Engineer,New York,NY,data_science
+c397,f1000_186,Visa,Data Science Director,Foster City,CA,data_science
+c398,vault_149,Vivaldi,Senior Consultant,New York,NY,consultant
+c399,nasdaq_VMW,Vmware,Staff Machine Learning Engineer,Palo Alto,CA,data_science
+c400,f1000_16,Walgreens,Packaging Scientist,Deerfield,IL,data_science
+c401,f1000_0,Walmart,Data Scientist,Conway,AR,data_science
+c402,f1000_898,Waters,Senior Data Scientist,Stamford,CT,data_science
+c403,f1000_665,Wayfair,Machine Learning Engineer,Boston,MA,data_science
+c404,cnbc_22,WeWork,Manager - Machine Learning,New York,NY,data_science
+c405,f1000_24,Wells Fargo,Data Scientist,San Francisco,CA,data_science
+c406,forbes_57,Welltok,Senior Data Analyst,Burlington,MA,data_science
+c407,f1000_863,West,Data Science Architect,Chicago,IL,data_science
+c408,f1000_189,WestRock,Associate Data Scientist,Duluth,GA,data_science
+c409,f1000_216,Western Digital,Senior Operations Data Scientist,Milpitas,CA,data_science
+c410,f1000_136,Whirlpool,GIS Data Engineer,Benton Harbor,MI,data_science
+c411,f1000_366,Williams,Sr Data Scientist,San Francisco,CA,data_science
+c412,f1000_505,Williams-Sonoma,Sr Data Scientist,San Francisco,CA,data_science
+c413,vault_19,WilmerHale,Financial Analyst,Dayton,OH,mba
+c414,vault_38,Wilson Sonsini Goodrich & Rosati,Senior Financial Analyst,Palo Alto,CA,mba
+c415,vault_46,Winston & Strawn,Manager - Digital & Marketing Communications,Chicago,IL,mba
+c416,vault_222,Withum,Startup Accounting - Analyst - Withum Technology Advisory,New York,NY,mba
+c417,nasdaq_WDAY,Workday,Sr Data Scientist,San Francisco,CA,data_science
+c418,f1000_190,XPO Logistics,Data Engineer,Portland,OR,data_science
+c419,f1000_161,Xerox,NLP Data Scientist,Palo Alto,CA,data_science
+c420,f1000_884,Xilinx,Data Scientist,San Jose,CA,data_science
+c421,nasdaq_XPER,Xperi,Machine Learning Principal Engineer,Poway,CA,data_science
+c422,f1000_533,YRC Worldwide,BI/Database Developer,Overland Park,KS,data_science
+c423,vault_124,ZS,Data Science Associate,Evanston,IL,consultant
+c424,f1000_520,Zoetis,Post-doctoral Scientist - Canine Genetics,Kalamazoo,MI,data_science
+c425,nasdaq_ZNGA,Zynga,Data Scientist - Marketing Analytics,San Francisco,CA,data_science
+c426,f1000_309,eBay,Sr Data Scientist,Bellevue,WA,data_science
+c427,f1000_425,iHeartMedia,Data Scientist - MediaMonitors,Austin,TX,data_science

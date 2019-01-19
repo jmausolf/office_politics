@@ -1,0 +1,2129 @@
+list_id,company,job_type
+f1000_0,Walmart,consultant
+f1000_1,Geico,consultant
+f1000_2,Apple,consultant
+f1000_3,ExxonMobil,consultant
+f1000_4,McKesson,consultant
+f1000_5,UnitedHealth,consultant
+f1000_6,CVS Health,consultant
+f1000_7,General Motors,consultant
+f1000_8,AT&T,consultant
+f1000_9,Ford Motor,consultant
+f1000_10,AmerisourceBergen,consultant
+f1000_11,Amazon,consultant
+f1000_12,General Electric,consultant
+f1000_13,Verizon Communications,consultant
+f1000_14,Cardinal Health,consultant
+f1000_15,Costco,consultant
+f1000_16,Walgreens,consultant
+f1000_17,Kroger,consultant
+f1000_18,Chevron,consultant
+f1000_19,Fannie Mae,consultant
+f1000_20,J.P. Morgan Chase,consultant
+f1000_21,Express Scripts,consultant
+f1000_22,Home Depot,consultant
+f1000_23,Boeing,consultant
+f1000_24,Wells Fargo,consultant
+f1000_25,Bank of America,consultant
+f1000_26,Alphabet,consultant
+f1000_27,Microsoft,consultant
+f1000_28,Anthem,consultant
+f1000_29,Citigroup,consultant
+f1000_30,Comcast,consultant
+f1000_31,IBM,consultant
+f1000_32,State Farm Insurance,consultant
+f1000_33,Phillips 66,consultant
+f1000_34,Johnson & Johnson,consultant
+f1000_35,Procter & Gamble,consultant
+f1000_36,Valero Energy,consultant
+f1000_37,Target,consultant
+f1000_38,Freddie Mac,consultant
+f1000_39,Lowe's,consultant
+f1000_40,Dell Technologies,consultant
+f1000_41,MetLife,consultant
+f1000_42,Aetna,consultant
+f1000_43,PepsiCo,consultant
+f1000_44,Archer Daniels Midland,consultant
+f1000_45,UPS,consultant
+f1000_46,Intel,consultant
+f1000_47,Prudential Financial,consultant
+f1000_48,Albertsons,consultant
+f1000_49,United Technologies,consultant
+f1000_50,Marathon Petroleum,consultant
+f1000_51,Disney,consultant
+f1000_52,Humana,consultant
+f1000_53,Pfizer,consultant
+f1000_54,AIG,consultant
+f1000_55,Lockheed Martin,consultant
+f1000_56,Sysco,consultant
+f1000_57,FedEx,consultant
+f1000_58,Hewlett Packard Enterprise,consultant
+f1000_59,Cisco Systems,consultant
+f1000_60,HP,consultant
+f1000_61,Dow Chemical,consultant
+f1000_62,HCA,consultant
+f1000_63,Coca-Cola,consultant
+f1000_64,New York Life Insurance,consultant
+f1000_65,Centene,consultant
+f1000_66,American Airlines,consultant
+f1000_67,Nationwide,consultant
+f1000_68,Merck,consultant
+f1000_69,Cigna,consultant
+f1000_70,Delta Air Lines,consultant
+f1000_71,Best Buy,consultant
+f1000_72,Honeywell,consultant
+f1000_73,Caterpillar,consultant
+f1000_74,Liberty Mutual Insurance,consultant
+f1000_75,Morgan Stanley,consultant
+f1000_76,Massachusetts Mutual Life Insurance,consultant
+f1000_77,Goldman Sachs,consultant
+f1000_78,Energy Transfer Equity,consultant
+f1000_79,TIAA,consultant
+f1000_80,Oracle,consultant
+f1000_81,Tyson Foods,consultant
+f1000_82,United Continental,consultant
+f1000_83,Allstate,consultant
+f1000_84,Publix Super Markets,consultant
+f1000_85,American Express,consultant
+f1000_86,TJX,consultant
+f1000_87,Nike,consultant
+f1000_88,Exelon,consultant
+f1000_89,General Dynamics,consultant
+f1000_90,Rite Aid,consultant
+f1000_91,Gilead Sciences,consultant
+f1000_92,CHS,consultant
+f1000_93,3M,consultant
+f1000_94,Time Warner,consultant
+f1000_95,Charter Communications,consultant
+f1000_96,Northwestern Mutual,consultant
+f1000_97,Facebook,consultant
+f1000_98,Travelers,consultant
+f1000_99,Capital One Financial,consultant
+f1000_100,Twenty-First Century Fox,consultant
+f1000_101,USAA,consultant
+f1000_102,World Fuel Services,consultant
+f1000_103,Philip Morris,consultant
+f1000_104,Deere,consultant
+f1000_105,Kraft Heinz,consultant
+f1000_106,Tech Data,consultant
+f1000_107,Avnet,consultant
+f1000_108,Mondelez,consultant
+f1000_109,Macy's,consultant
+f1000_110,AbbVie,consultant
+f1000_111,McDonald's,consultant
+f1000_112,DuPont,consultant
+f1000_113,Northrop Grumman,consultant
+f1000_114,ConocoPhillips,consultant
+f1000_115,Raytheon,consultant
+f1000_116,Andeavor,consultant
+f1000_117,Arrow Electronics,consultant
+f1000_118,Qualcomm,consultant
+f1000_119,Progressive,consultant
+f1000_120,Duke Energy,consultant
+f1000_121,Enterprise Products Partners,consultant
+f1000_122,Amgen,consultant
+f1000_123,US Foods,consultant
+f1000_124,U.S. Bank,consultant
+f1000_125,Aflac,consultant
+f1000_126,Sears,consultant
+f1000_127,Dollar General,consultant
+f1000_128,AutoNation,consultant
+f1000_129,Community Health Systems,consultant
+f1000_130,Starbucks,consultant
+f1000_131,Eli Lilly,consultant
+f1000_132,International Paper,consultant
+f1000_133,Tenet Healthcare,consultant
+f1000_134,Abbott Laboratories,consultant
+f1000_135,Dollar Tree,consultant
+f1000_136,Whirlpool,consultant
+f1000_137,Southwest Airlines,consultant
+f1000_138,Emerson Electric,consultant
+f1000_139,Staples,consultant
+f1000_140,Plains GP,consultant
+f1000_141,Penske Automotive,consultant
+f1000_142,Union Pacific,consultant
+f1000_143,Danaher,consultant
+f1000_144,Southern,consultant
+f1000_145,ManpowerGroup,consultant
+f1000_146,Bristol-Myers Squibb,consultant
+f1000_147,Altria,consultant
+f1000_148,Fluor,consultant
+f1000_149,Kohl's,consultant
+f1000_150,Lear,consultant
+f1000_151,Jabil,consultant
+f1000_152,Hartford Financial Services,consultant
+f1000_153,Thermo Fisher Scientific,consultant
+f1000_154,Kimberly-Clark,consultant
+f1000_155,Molina Healthcare,consultant
+f1000_156,PG&E,consultant
+f1000_157,Supervalu,consultant
+f1000_158,Cummins,consultant
+f1000_159,CenturyLink,consultant
+f1000_160,Aecom,consultant
+f1000_161,Xerox,consultant
+f1000_162,Marriott,consultant
+f1000_163,Paccar,consultant
+f1000_164,General Mills,consultant
+f1000_165,PNC Financial Services,consultant
+f1000_166,American Electric Power,consultant
+f1000_167,Icahn Enterprises,consultant
+f1000_168,Nucor,consultant
+f1000_169,NextEra Energy,consultant
+f1000_170,Performance Food,consultant
+f1000_171,PBF Energy,consultant
+f1000_172,Halliburton,consultant
+f1000_173,CarMax,consultant
+f1000_174,Freeport-McMoRan,consultant
+f1000_175,Whole Foods Market,consultant
+f1000_176,Bank of New York Mellon,consultant
+f1000_177,Gap,consultant
+f1000_178,Omnicom,consultant
+f1000_179,Genuine Parts,consultant
+f1000_180,DaVita,consultant
+f1000_181,Colgate-Palmolive,consultant
+f1000_182,PPG Industries,consultant
+f1000_183,Goodyear Tire & Rubber,consultant
+f1000_184,Synchrony Financial,consultant
+f1000_185,DISH Network,consultant
+f1000_186,Visa,consultant
+f1000_187,Nordstrom,consultant
+f1000_188,INTL FCStone,consultant
+f1000_189,WestRock,consultant
+f1000_190,XPO Logistics,consultant
+f1000_191,Aramark,consultant
+f1000_192,CBS,consultant
+f1000_193,AES,consultant
+f1000_194,WellCare Health Plans,consultant
+f1000_195,FirstEnergy,consultant
+f1000_196,Conagra Brands,consultant
+f1000_197,Synnex,consultant
+f1000_198,CDW,consultant
+f1000_199,Textron,consultant
+f1000_200,Waste Management,consultant
+f1000_201,Illinois Tool Works,consultant
+f1000_202,Office Depot,consultant
+f1000_203,Monsanto,consultant
+f1000_204,Cognizant Technology Solutions,consultant
+f1000_205,Texas Instruments,consultant
+f1000_206,Lincoln National,consultant
+f1000_207,Newell Brands,consultant
+f1000_208,Land O'Lakes,consultant
+f1000_209,Marsh & McLennan,consultant
+f1000_210,Ecolab,consultant
+f1000_211,C.H. Robinson Worldwide,consultant
+f1000_212,Loews,consultant
+f1000_213,CBRE,consultant
+f1000_214,Kinder Morgan,consultant
+f1000_215,Kellogg,consultant
+f1000_216,Western Digital,consultant
+f1000_217,Guardian Life Ins. Co. of America,consultant
+f1000_218,Ross Stores,consultant
+f1000_219,L Brands,consultant
+f1000_220,J.C. Penney,consultant
+f1000_221,Farmers Insurance Exchange,consultant
+f1000_222,Reynolds American,consultant
+f1000_223,Viacom,consultant
+f1000_224,Becton Dickinson,consultant
+f1000_225,Micron Technology,consultant
+f1000_226,Principal Financial,consultant
+f1000_227,Arconic,consultant
+f1000_228,NRG Energy,consultant
+f1000_229,VF,consultant
+f1000_230,Devon Energy,consultant
+f1000_231,D.R. Horton,consultant
+f1000_232,Bed Bath & Beyond,consultant
+f1000_233,Consolidated Edison,consultant
+f1000_234,Edison,consultant
+f1000_235,Sherwin-Williams,consultant
+f1000_236,NGL Energy Partners,consultant
+f1000_237,Dominion Energy,consultant
+f1000_238,Ameriprise Financial,consultant
+f1000_239,ADP,consultant
+f1000_240,Hilton Worldwide,consultant
+f1000_241,First Data,consultant
+f1000_242,Henry Schein,consultant
+f1000_243,Toys 'R' Us,consultant
+f1000_244,BB&T,consultant
+f1000_245,Reinsurance of America,consultant
+f1000_246,Core-Mark,consultant
+f1000_247,Biogen,consultant
+f1000_248,Las Vegas Sands,consultant
+f1000_249,Stanley Black & Decker,consultant
+f1000_250,Parker-Hannifin,consultant
+f1000_251,Stryker,consultant
+f1000_252,Estee Lauder,consultant
+f1000_253,Celgene,consultant
+f1000_254,BlackRock,consultant
+f1000_255,Xcel Energy,consultant
+f1000_256,CSX,consultant
+f1000_257,Unum,consultant
+f1000_258,Jacobs Engineering,consultant
+f1000_259,Lennar,consultant
+f1000_260,Group 1 Automotive,consultant
+f1000_261,Leucadia National,consultant
+f1000_262,Entergy,consultant
+f1000_263,PayPal,consultant
+f1000_264,Applied Materials,consultant
+f1000_265,Voya Financial,consultant
+f1000_266,Mastercard,consultant
+f1000_267,Priceline,consultant
+f1000_268,Liberty Interactive,consultant
+f1000_269,AutoZone,consultant
+f1000_270,State Street,consultant
+f1000_271,DTE Energy,consultant
+f1000_272,L3 Technologies,consultant
+f1000_273,HollyFrontier,consultant
+f1000_274,Praxair,consultant
+f1000_275,Universal Health Services,consultant
+f1000_276,Discover Financial Services,consultant
+f1000_277,Occidental Petroleum,consultant
+f1000_278,United States Steel,consultant
+f1000_279,Sempra Energy,consultant
+f1000_280,Baxter,consultant
+f1000_281,W.W. Grainger,consultant
+f1000_282,Autoliv,consultant
+f1000_283,Norfolk Southern,consultant
+f1000_284,Baker Hughes,consultant
+f1000_285,Ally Financial,consultant
+f1000_286,Sonic Automotive,consultant
+f1000_287,Owens & Minor,consultant
+f1000_288,Huntsman,consultant
+f1000_289,Laboratory Corp. of America,consultant
+f1000_290,Murphy USA,consultant
+f1000_291,Advance Auto Parts,consultant
+f1000_292,Fidelity National Financial,consultant
+f1000_293,Air Products & Chemicals,consultant
+f1000_294,Hormel Foods,consultant
+f1000_295,Hertz Global,consultant
+f1000_296,MGM Resorts,consultant
+f1000_297,Corning,consultant
+f1000_298,Republic Services,consultant
+f1000_299,Alcoa,consultant
+f1000_300,Fidelity National Information Services,consultant
+f1000_301,Pacific Life,consultant
+f1000_302,SunTrust Banks,consultant
+f1000_303,LKQ,consultant
+f1000_304,BorgWarner,consultant
+f1000_305,Ball,consultant
+f1000_306,CST Brands,consultant
+f1000_307,Public Service Enterprise,consultant
+f1000_308,Eastman Chemical,consultant
+f1000_309,eBay,consultant
+f1000_310,Mohawk Industries,consultant
+f1000_311,Oneok,consultant
+f1000_312,Frontier Communications,consultant
+f1000_313,Netflix,consultant
+f1000_314,American Family Insurance,consultant
+f1000_315,Thrivent Financial for Lutherans,consultant
+f1000_316,Expedia,consultant
+f1000_317,Lithia Motors,consultant
+f1000_318,Avis Budget,consultant
+f1000_319,Reliance Steel & Aluminum,consultant
+f1000_320,GameStop,consultant
+f1000_321,Tenneco,consultant
+f1000_322,O'Reilly Automotive,consultant
+f1000_323,Peter Kiewit Sons',consultant
+f1000_324,United Natural Foods,consultant
+f1000_325,salesforce.com,consultant
+f1000_326,Boston Scientific,consultant
+f1000_327,Newmont Mining,consultant
+f1000_328,Genworth Financial,consultant
+f1000_329,Live Nation Entertainment,consultant
+f1000_330,Veritiv,consultant
+f1000_331,News Corp,consultant
+f1000_332,Crown,consultant
+f1000_333,Global Partners,consultant
+f1000_334,PVH,consultant
+f1000_335,Level 3 Communications,consultant
+f1000_336,Navistar,consultant
+f1000_337,Univar,consultant
+f1000_338,Campbell Soup,consultant
+f1000_339,Dick's Sporting Goods,consultant
+f1000_340,Weyerhaeuser,consultant
+f1000_341,Mutual of Omaha Insurance,consultant
+f1000_342,Chesapeake Energy,consultant
+f1000_343,Anadarko Petroleum,consultant
+f1000_344,Interpublic,consultant
+f1000_345,J.M. Smucker,consultant
+f1000_346,Steel Dynamics,consultant
+f1000_347,Foot Locker,consultant
+f1000_348,Western Refining,consultant
+f1000_349,SpartanNash,consultant
+f1000_350,Dean Foods,consultant
+f1000_351,Zimmer Biomet,consultant
+f1000_352,PulteGroup,consultant
+f1000_353,W.R. Berkley,consultant
+f1000_354,Quanta Services,consultant
+f1000_355,EOG Resources,consultant
+f1000_356,Charles Schwab,consultant
+f1000_357,Eversource Energy,consultant
+f1000_358,Anixter,consultant
+f1000_359,Emcor,consultant
+f1000_360,Assurant,consultant
+f1000_361,CenterPoint Energy,consultant
+f1000_362,Harris,consultant
+f1000_363,HD Supply,consultant
+f1000_364,PPL,consultant
+f1000_365,Quest Diagnostics,consultant
+f1000_366,Williams,consultant
+f1000_367,WEC Energy,consultant
+f1000_368,Hershey,consultant
+f1000_369,AGCO,consultant
+f1000_370,Ralph Lauren,consultant
+f1000_371,Masco,consultant
+f1000_372,Wesco,consultant
+f1000_373,LifePoint Health,consultant
+f1000_374,National Oilwell Varco,consultant
+f1000_375,Kindred Healthcare,consultant
+f1000_376,Mosaic,consultant
+f1000_377,Alliance Data Systems,consultant
+f1000_378,Computer Sciences,consultant
+f1000_379,Huntington Ingalls Industries,consultant
+f1000_380,Leidos,consultant
+f1000_381,Erie Insurance,consultant
+f1000_382,Tesla,consultant
+f1000_383,Ascena Retail,consultant
+f1000_384,Darden Restaurants,consultant
+f1000_385,Harman Industries,consultant
+f1000_386,Nvidia,consultant
+f1000_387,R.R. Donnelley & Sons,consultant
+f1000_388,Fifth Third Bank,consultant
+f1000_389,Quintiles IMS,consultant
+f1000_390,Jones Lang LaSalle,consultant
+f1000_391,Dover,consultant
+f1000_392,Spirit AeroSystems,consultant
+f1000_393,Ryder System,consultant
+f1000_394,A-Mark Precious Metals,consultant
+f1000_395,Tractor Supply,consultant
+f1000_396,Sealed Air,consultant
+f1000_397,Auto-Owners Insurance,consultant
+f1000_398,Yum China,consultant
+f1000_399,Calpine,consultant
+f1000_400,Owens-Illinois,consultant
+f1000_401,Targa Resources,consultant
+f1000_402,JetBlue Airways,consultant
+f1000_403,Jones Financial,consultant
+f1000_404,Franklin Resources,consultant
+f1000_405,Activision Blizzard,consultant
+f1000_406,J.B. Hunt Transport Services,consultant
+f1000_407,Constellation Brands,consultant
+f1000_408,NCR,consultant
+f1000_409,Asbury Automotive,consultant
+f1000_410,American Financial,consultant
+f1000_411,Discovery Communications,consultant
+f1000_412,Berry Global,consultant
+f1000_413,Sanmina,consultant
+f1000_414,CalAtlantic,consultant
+f1000_415,Dr Pepper Snapple,consultant
+f1000_416,Dillard's,consultant
+f1000_417,HRG,consultant
+f1000_418,CMS Energy,consultant
+f1000_419,Graybar Electric,consultant
+f1000_420,Builders FirstSource,consultant
+f1000_421,Yum Brands,consultant
+f1000_422,Casey's General Stores,consultant
+f1000_423,Amphenol,consultant
+f1000_424,Oshkosh,consultant
+f1000_425,iHeartMedia,consultant
+f1000_426,TreeHouse Foods,consultant
+f1000_427,Alleghany,consultant
+f1000_428,Expeditors of Washington,consultant
+f1000_429,Avery Dennison,consultant
+f1000_430,Ameren,consultant
+f1000_431,Hanesbrands,consultant
+f1000_432,Motorola Solutions,consultant
+f1000_433,St. Jude Medical,consultant
+f1000_434,Harley-Davidson,consultant
+f1000_435,Regions Financial,consultant
+f1000_436,Intercontinental Exchange,consultant
+f1000_437,Alaska Air,consultant
+f1000_438,Old Republic,consultant
+f1000_439,Lam Research,consultant
+f1000_440,AK Steel,consultant
+f1000_441,Rockwell Automation,consultant
+f1000_442,Adobe Systems,consultant
+f1000_443,Avon Products,consultant
+f1000_444,Terex,consultant
+f1000_445,NVR,consultant
+f1000_446,Dana,consultant
+f1000_447,Realogy,consultant
+f1000_448,American Tower,consultant
+f1000_449,Packaging Corp. of America,consultant
+f1000_450,Citizens Financial,consultant
+f1000_451,United Rentals,consultant
+f1000_452,Clorox,consultant
+f1000_453,Genesis Healthcare,consultant
+f1000_454,M&T Bank,consultant
+f1000_455,Ingredion,consultant
+f1000_456,UGI,consultant
+f1000_457,Owens Corning,consultant
+f1000_458,S&P Global,consultant
+f1000_459,Markel,consultant
+f1000_460,Wyndham Worldwide,consultant
+f1000_461,Arthur J. Gallagher,consultant
+f1000_462,Burlington Stores,consultant
+f1000_463,First American Financial,consultant
+f1000_464,Symantec,consultant
+f1000_465,Patterson,consultant
+f1000_466,Olin,consultant
+f1000_467,NetApp,consultant
+f1000_468,Raymond James Financial,consultant
+f1000_469,TravelCenters of America,consultant
+f1000_470,Fiserv,consultant
+f1000_471,Host Hotels & Resorts,consultant
+f1000_472,Insight Enterprises,consultant
+f1000_473,Mattel,consultant
+f1000_474,AmTrust Financial Services,consultant
+f1000_475,Cincinnati Financial,consultant
+f1000_476,Simon Property,consultant
+f1000_477,Western Union,consultant
+f1000_478,KeyCorp,consultant
+f1000_479,Delek US,consultant
+f1000_480,Booz Allen Hamilton,consultant
+f1000_481,Chemours,consultant
+f1000_482,Western & Southern Financial,consultant
+f1000_483,Celanese,consultant
+f1000_484,Windstream,consultant
+f1000_485,Seaboard,consultant
+f1000_486,Essendant,consultant
+f1000_487,Apache,consultant
+f1000_488,Airgas,consultant
+f1000_489,Kelly Services,consultant
+f1000_490,Liberty Media,consultant
+f1000_491,Rockwell Collins,consultant
+f1000_492,Robert Half,consultant
+f1000_493,CH2M Hill,consultant
+f1000_494,Big Lots,consultant
+f1000_495,Michaels,consultant
+f1000_496,Toll Brothers,consultant
+f1000_497,Yahoo,consultant
+f1000_498,Vistra Energy,consultant
+f1000_499,ABM Industries,consultant
+f1000_500,Northern Trust,consultant
+f1000_501,MasTec,consultant
+f1000_502,Blackstone,consultant
+f1000_503,Telephone & Data Systems,consultant
+f1000_504,Domtar,consultant
+f1000_505,Williams-Sonoma,consultant
+f1000_506,Westlake Chemical,consultant
+f1000_507,Post,consultant
+f1000_508,Hasbro,consultant
+f1000_509,Juniper Networks,consultant
+f1000_510,Fortune Brands Home & Security,consultant
+f1000_511,Brookdale Senior Living,consultant
+f1000_512,Tutor Perini,consultant
+f1000_513,Navient,consultant
+f1000_514,Neiman Marcus,consultant
+f1000_515,Ashland Global,consultant
+f1000_516,Hanover Insurance,consultant
+f1000_517,CommScope,consultant
+f1000_518,Spectra Energy,consultant
+f1000_519,Cintas,consultant
+f1000_520,Zoetis,consultant
+f1000_521,Molson Coors Brewing,consultant
+f1000_522,Regeneron Pharmaceuticals,consultant
+f1000_523,Ulta Beauty,consultant
+f1000_524,Hess,consultant
+f1000_525,Magellan Health,consultant
+f1000_526,Intuit,consultant
+f1000_527,Under Armour,consultant
+f1000_528,RPM,consultant
+f1000_529,Cerner,consultant
+f1000_530,Sonoco Products,consultant
+f1000_531,Securian Financial,consultant
+f1000_532,Peabody Energy,consultant
+f1000_533,YRC Worldwide,consultant
+f1000_534,Commercial Metals,consultant
+f1000_535,Marathon Oil,consultant
+f1000_536,Polaris Industries,consultant
+f1000_537,Envision Healthcare,consultant
+f1000_538,Trinity Industries,consultant
+f1000_539,Thor Industries,consultant
+f1000_540,Caesars Entertainment,consultant
+f1000_541,Levi Strauss,consultant
+f1000_542,FMC Technologies,consultant
+f1000_543,VWR,consultant
+f1000_544,NiSource,consultant
+f1000_545,Coach,consultant
+f1000_546,Brunswick,consultant
+f1000_547,Wynn Resorts,consultant
+f1000_548,Orbital ATK,consultant
+f1000_549,CIT,consultant
+f1000_550,Science Applications,consultant
+f1000_551,Hyatt Hotels,consultant
+f1000_552,McCormick,consultant
+f1000_553,Diplomat Pharmacy,consultant
+f1000_554,Barnes & Noble,consultant
+f1000_555,Electronic Arts,consultant
+f1000_556,FM Global,consultant
+f1000_557,Coty,consultant
+f1000_558,Smart & Final Stores,consultant
+f1000_559,Quad/Graphics,consultant
+f1000_560,Dynegy,consultant
+f1000_561,Graphic Packaging,consultant
+f1000_562,Select Medical,consultant
+f1000_563,Welltower,consultant
+f1000_564,Advanced Micro Devices,consultant
+f1000_565,USG,consultant
+f1000_566,KBR,consultant
+f1000_567,Bloomin' Brands,consultant
+f1000_568,MDU Resources,consultant
+f1000_569,CSRA,consultant
+f1000_570,Laureate Education,consultant
+f1000_571,Scana,consultant
+f1000_572,T. Rowe Price,consultant
+f1000_573,Watsco,consultant
+f1000_574,Rush Enterprises,consultant
+f1000_575,Agilent Technologies,consultant
+f1000_576,WhiteWave Foods,consultant
+f1000_577,Valspar,consultant
+f1000_578,Total System Services,consultant
+f1000_579,Torchmark,consultant
+f1000_580,Cabela's,consultant
+f1000_581,Beacon Roofing Supply,consultant
+f1000_582,CA,consultant
+f1000_583,LPL Financial,consultant
+f1000_584,Sprouts Farmers Market,consultant
+f1000_585,Swift Transportation,consultant
+f1000_586,Bemis,consultant
+f1000_587,Tiffany,consultant
+f1000_588,Flowserve,consultant
+f1000_589,CNO Financial,consultant
+f1000_590,Fastenal,consultant
+f1000_591,Sally Beauty,consultant
+f1000_592,American Axle & Manufacturing,consultant
+f1000_593,Flowers Foods,consultant
+f1000_594,Andersons,consultant
+f1000_595,Crown Castle,consultant
+f1000_596,Boise Cascade,consultant
+f1000_597,ON Semiconductor,consultant
+f1000_598,Chipotle Mexican Grill,consultant
+f1000_599,Amkor Technology,consultant
+f1000_600,Triumph,consultant
+f1000_601,OneMain,consultant
+f1000_602,General Cable,consultant
+f1000_603,Ametek,consultant
+f1000_604,Alon USA Energy,consultant
+f1000_605,Pioneer Natural Resources,consultant
+f1000_606,Martin Marietta Materials,consultant
+f1000_607,Ingles Markets,consultant
+f1000_608,Roper Technologies,consultant
+f1000_609,Huntington Bancshares,consultant
+f1000_610,Xylem,consultant
+f1000_611,Unified Grocers,consultant
+f1000_612,Leggett & Platt,consultant
+f1000_613,Dentsply Sirona,consultant
+f1000_614,CACI,consultant
+f1000_615,Mead Johnson Nutrition,consultant
+f1000_616,C.R. Bard,consultant
+f1000_617,Snap-on,consultant
+f1000_618,HealthSouth,consultant
+f1000_619,Nasdaq,consultant
+f1000_620,Avaya,consultant
+f1000_621,CF Industries,consultant
+f1000_622,Carlisle,consultant
+f1000_623,Equinix,consultant
+f1000_624,LSC Communications,consultant
+f1000_625,Colfax,consultant
+f1000_626,Lennox,consultant
+f1000_627,Iasis Healthcare,consultant
+f1000_628,Silgan,consultant
+f1000_629,American Eagle Outfitters,consultant
+f1000_630,Moody's,consultant
+f1000_631,Calumet Specialty Products Partners,consultant
+f1000_632,CME,consultant
+f1000_633,KB Home,consultant
+f1000_634,Vulcan Materials,consultant
+f1000_635,Platform Specialty Products,consultant
+f1000_636,Vantiv,consultant
+f1000_637,Skechers U.S.A.,consultant
+f1000_638,Zebra Technologies,consultant
+f1000_639,Hub,consultant
+f1000_640,HSN,consultant
+f1000_641,Stericycle,consultant
+f1000_642,National General,consultant
+f1000_643,Taylor Morrison Home,consultant
+f1000_644,Urban Outfitters,consultant
+f1000_645,Resolute Forest Products,consultant
+f1000_646,ScanSource,consultant
+f1000_647,Camping World,consultant
+f1000_648,Iron Mountain,consultant
+f1000_649,Hubbell,consultant
+f1000_650,Pinnacle West Capital,consultant
+f1000_651,Church & Dwight,consultant
+f1000_652,Noble Energy,consultant
+f1000_653,Albemarle,consultant
+f1000_654,Cooper-Standard,consultant
+f1000_655,KKR,consultant
+f1000_656,Country Financial,consultant
+f1000_657,Ventas,consultant
+f1000_658,Hexion,consultant
+f1000_659,Analog Devices,consultant
+f1000_660,Citrix Systems,consultant
+f1000_661,Green Plains,consultant
+f1000_662,Pitney Bowes,consultant
+f1000_663,Scripps Networks Interactive,consultant
+f1000_664,Darling Ingredients,consultant
+f1000_665,Wayfair,consultant
+f1000_666,Tailored Brands,consultant
+f1000_667,Sabre,consultant
+f1000_668,Global Payments,consultant
+f1000_669,Atmos Energy,consultant
+f1000_670,Tegna,consultant
+f1000_671,Diebold Nixdorf,consultant
+f1000_672,PolyOne,consultant
+f1000_673,TD Ameritrade,consultant
+f1000_674,Abercrombie & Fitch,consultant
+f1000_675,Greif,consultant
+f1000_676,Alliant Energy,consultant
+f1000_677,American Water Works,consultant
+f1000_678,Acuity Brands,consultant
+f1000_679,Skyworks Solutions,consultant
+f1000_680,FMC,consultant
+f1000_681,Amerco,consultant
+f1000_682,CUNA Mutual,consultant
+f1000_683,Brinker,consultant
+f1000_684,Buckeye Partners,consultant
+f1000_685,Warner Music,consultant
+f1000_686,Universal Forest Products,consultant
+f1000_687,American National Insurance,consultant
+f1000_688,Mercury General,consultant
+f1000_689,Regal Beloit,consultant
+f1000_690,Varian Medical Systems,consultant
+f1000_691,Aaron's,consultant
+f1000_692,Visteon,consultant
+f1000_693,Carter's,consultant
+f1000_694,Meritor,consultant
+f1000_695,Regal Entertainment,consultant
+f1000_696,Mednax,consultant
+f1000_697,TransDigm,consultant
+f1000_698,Landstar System,consultant
+f1000_699,Puget Energy,consultant
+f1000_700,Coca-Cola Bottling,consultant
+f1000_701,Kar Auction Services,consultant
+f1000_702,Equifax,consultant
+f1000_703,Groupon,consultant
+f1000_704,IAC/InterActiveCorp,consultant
+f1000_705,Weis Markets,consultant
+f1000_706,Allegheny Technologies,consultant
+f1000_707,Pinnacle Foods,consultant
+f1000_708,Tempur Sealy,consultant
+f1000_709,SkyWest,consultant
+f1000_710,International Flavors & Fragrances,consultant
+f1000_711,BMC Stock,consultant
+f1000_712,Brown-Forman,consultant
+f1000_713,Alexion Pharmaceuticals,consultant
+f1000_714,KapStone Paper & Packaging,consultant
+f1000_715,Time,consultant
+f1000_716,TriNet,consultant
+f1000_717,Steelcase,consultant
+f1000_718,EchoStar,consultant
+f1000_719,Sentry Insurance,consultant
+f1000_720,Monster Beverage,consultant
+f1000_721,Gannett,consultant
+f1000_722,Fossil,consultant
+f1000_723,Univision Communications,consultant
+f1000_724,Meritage Homes,consultant
+f1000_725,MRC Global,consultant
+f1000_726,H&R Block,consultant
+f1000_727,Penn National Gaming,consultant
+f1000_728,Service,consultant
+f1000_729,Brink's,consultant
+f1000_730,Old Dominion Freight Line,consultant
+f1000_731,Triple-S Management,consultant
+f1000_732,KLA-Tencor,consultant
+f1000_733,Edwards Lifesciences,consultant
+f1000_734,Rent-A-Center,consultant
+f1000_735,Comerica,consultant
+f1000_736,Paychex,consultant
+f1000_737,First Solar,consultant
+f1000_738,Insperity,consultant
+f1000_739,Scotts Miracle-Gro,consultant
+f1000_740,B/E Aerospace,consultant
+f1000_741,Westinghouse Air Brake Technologies,consultant
+f1000_742,Cooper Tire & Rubber,consultant
+f1000_743,Cinemark,consultant
+f1000_744,Keysight Technologies,consultant
+f1000_745,Convergys,consultant
+f1000_746,Cracker Barrel Old Country Store,consultant
+f1000_747,PriceSmart,consultant
+f1000_748,Broadridge Financial Solutions,consultant
+f1000_749,Scientific Games,consultant
+f1000_750,Genesco,consultant
+f1000_751,MSC Industrial Direct,consultant
+f1000_752,Ryerson,consultant
+f1000_753,Acadia Healthcare,consultant
+f1000_754,Hologic,consultant
+f1000_755,Unisys,consultant
+f1000_756,Worthington Industries,consultant
+f1000_757,Sanderson Farms,consultant
+f1000_758,Wabco,consultant
+f1000_759,Panera Bread,consultant
+f1000_760,Metaldyne Performance,consultant
+f1000_761,Medical Mutual of Ohio,consultant
+f1000_762,AMC Networks,consultant
+f1000_763,Clean Harbors,consultant
+f1000_764,Hovnanian Enterprises,consultant
+f1000_765,TrueBlue,consultant
+f1000_766,Crane,consultant
+f1000_767,ServiceMaster Global,consultant
+f1000_768,Sinclair Broadcast,consultant
+f1000_769,Mutual of America Life Insurance,consultant
+f1000_770,BGC Partners,consultant
+f1000_771,DSW,consultant
+f1000_772,Intuitive Surgical,consultant
+f1000_773,ArcBest,consultant
+f1000_774,PC Connection,consultant
+f1000_775,A.O. Smith,consultant
+f1000_776,Greenbrier,consultant
+f1000_777,Great Plains Energy,consultant
+f1000_778,Bon-Ton Stores,consultant
+f1000_779,Dycom Industries,consultant
+f1000_780,Timken,consultant
+f1000_781,Aleris,consultant
+f1000_782,Legg Mason,consultant
+f1000_783,Hill-Rom,consultant
+f1000_784,Stifel Financial,consultant
+f1000_785,Verso,consultant
+f1000_786,Qorvo,consultant
+f1000_787,Ciena,consultant
+f1000_788,Tetra Tech,consultant
+f1000_789,Caleres,consultant
+f1000_790,Pool,consultant
+f1000_791,Hyster-Yale Materials Handling,consultant
+f1000_792,Westar Energy,consultant
+f1000_793,Public Storage,consultant
+f1000_794,Plexus,consultant
+f1000_795,Boston Properties,consultant
+f1000_796,GNC,consultant
+f1000_797,HCP,consultant
+f1000_798,Penn Mutual Life Insurance,consultant
+f1000_799,TTM Technologies,consultant
+f1000_800,Prologis,consultant
+f1000_801,Twitter,consultant
+f1000_802,Kemper,consultant
+f1000_803,Valmont Industries,consultant
+f1000_804,Crestwood Equity Partners,consultant
+f1000_805,Applied Industrial Technologies,consultant
+f1000_806,VCA,consultant
+f1000_807,Granite Construction,consultant
+f1000_808,Vornado Realty Trust,consultant
+f1000_809,Mettler-Toledo,consultant
+f1000_810,A. Schulman,consultant
+f1000_811,Wolverine World Wide,consultant
+f1000_812,Graham,consultant
+f1000_813,Chico's FAS,consultant
+f1000_814,Domino's Pizza,consultant
+f1000_815,Zions Bancorp,consultant
+f1000_816,Southwest Gas,consultant
+f1000_817,Tops,consultant
+f1000_818,Hawaiian,consultant
+f1000_819,Vectren,consultant
+f1000_820,Gartner,consultant
+f1000_821,On Assignment,consultant
+f1000_822,Southwestern Energy,consultant
+f1000_823,Parexel,consultant
+f1000_824,Equity Residential,consultant
+f1000_825,J.Crew,consultant
+f1000_826,Synopsys,consultant
+f1000_827,Moog,consultant
+f1000_828,Cabot,consultant
+f1000_829,ITT,consultant
+f1000_830,TRI Pointe,consultant
+f1000_831,Maximus,consultant
+f1000_832,Illumina,consultant
+f1000_833,Amica Mutual Insurance,consultant
+f1000_834,Alere,consultant
+f1000_835,Toro,consultant
+f1000_836,Sprague Resources,consultant
+f1000_837,G-III Apparel,consultant
+f1000_838,Hawaiian Electric Industries,consultant
+f1000_839,Pinnacle Entertainment,consultant
+f1000_840,Columbia Sportswear,consultant
+f1000_841,First Republic Bank,consultant
+f1000_842,Komatsu Mining,consultant
+f1000_843,Trimble,consultant
+f1000_844,Edgewell Personal Care,consultant
+f1000_845,Belden,consultant
+f1000_846,DST Systems,consultant
+f1000_847,WGL,consultant
+f1000_848,GGP,consultant
+f1000_849,Brocade Communications Systems,consultant
+f1000_850,Akamai Technologies,consultant
+f1000_851,Nationstar Mortgage,consultant
+f1000_852,Annaly Capital Management,consultant
+f1000_853,Kansas City Southern,consultant
+f1000_854,Revlon,consultant
+f1000_855,AptarGroup,consultant
+f1000_856,MDC,consultant
+f1000_857,Vishay Intertechnology,consultant
+f1000_858,Teradata,consultant
+f1000_859,Spirit Airlines,consultant
+f1000_860,EnerSys,consultant
+f1000_861,Snyder's-Lance,consultant
+f1000_862,Benchmark Electronics,consultant
+f1000_863,West,consultant
+f1000_864,Selective Insurance,consultant
+f1000_865,Party City Holdco,consultant
+f1000_866,Cheesecake Factory,consultant
+f1000_867,Lincoln Electric,consultant
+f1000_868,Carlyle,consultant
+f1000_869,Enable Midstream Partners,consultant
+f1000_870,Oceaneering,consultant
+f1000_871,Vista Outdoor,consultant
+f1000_872,Middleby,consultant
+f1000_873,Herman Miller,consultant
+f1000_874,PerkinElmer,consultant
+f1000_875,OGE Energy,consultant
+f1000_876,PCM,consultant
+f1000_877,Louisiana-Pacific,consultant
+f1000_878,MPM,consultant
+f1000_879,Knights of Columbus,consultant
+f1000_880,Apollo Global Management,consultant
+f1000_881,Donaldson,consultant
+f1000_882,American Equity Investment Life,consultant
+f1000_883,Super Micro Computer,consultant
+f1000_884,Xilinx,consultant
+f1000_885,Tupperware Brands,consultant
+f1000_886,Guess,consultant
+f1000_887,Nu Skin Enterprises,consultant
+f1000_888,Magellan Midstream Partners,consultant
+f1000_889,HNI,consultant
+f1000_890,Maxim Integrated Products,consultant
+f1000_891,Affiliated Managers,consultant
+f1000_892,Express,consultant
+f1000_893,Boyd Gaming,consultant
+f1000_894,GEO,consultant
+f1000_895,Tribune Media,consultant
+f1000_896,Microchip Technology,consultant
+f1000_897,Fitbit,consultant
+f1000_898,Waters,consultant
+f1000_899,Teledyne Technologies,consultant
+f1000_900,Digital Realty Trust,consultant
+f1000_901,RH,consultant
+f1000_902,Fred's,consultant
+f1000_903,Universal,consultant
+f1000_904,CDK Global,consultant
+f1000_905,IDEX,consultant
+f1000_906,Cliffs Natural Resources,consultant
+f1000_907,Curtiss-Wright,consultant
+f1000_908,Verisk Analytics,consultant
+f1000_909,NOW,consultant
+f1000_910,Apollo Education,consultant
+f1000_911,Kennametal,consultant
+f1000_912,H.B. Fuller,consultant
+f1000_913,PharMerica,consultant
+f1000_914,Engility,consultant
+f1000_915,Sears Hometown & Outlet Stores,consultant
+f1000_916,Bio-Rad Laboratories,consultant
+f1000_917,Federated Mutual Insurance,consultant
+f1000_918,Mueller Industries,consultant
+f1000_919,Red Hat,consultant
+f1000_920,NewMarket,consultant
+f1000_921,Hospitality Properties Trust,consultant
+f1000_922,AvalonBay Communities,consultant
+f1000_923,Renewable Energy,consultant
+f1000_924,Consol Energy,consultant
+f1000_925,Ferrellgas Partners,consultant
+f1000_926,Tower,consultant
+f1000_927,Autodesk,consultant
+f1000_928,99 Cents Only Stores,consultant
+f1000_929,E Trade Financial,consultant
+f1000_930,Woodward,consultant
+f1000_931,Esterline Technologies,consultant
+f1000_932,Itron,consultant
+f1000_933,Werner Enterprises,consultant
+f1000_934,Stewart Information Services,consultant
+f1000_935,Hexcel,consultant
+f1000_936,Genesee & Wyoming,consultant
+f1000_937,Primoris Services,consultant
+f1000_938,Spx Flow,consultant
+f1000_939,F5 Networks,consultant
+f1000_940,VeriFone Systems,consultant
+f1000_941,Texas Roadhouse,consultant
+f1000_942,NLV Financial,consultant
+f1000_943,Buffalo Wild Wings,consultant
+f1000_944,Continental Resources,consultant
+f1000_945,Arch Coal,consultant
+f1000_946,Roadrunner Transportation Systems,consultant
+f1000_947,Cooper,consultant
+f1000_948,hhgregg,consultant
+f1000_949,Euronet Worldwide,consultant
+f1000_950,Griffon,consultant
+f1000_951,CoreLogic,consultant
+f1000_952,Nuance Communications,consultant
+f1000_953,Matson,consultant
+f1000_954,Popular,consultant
+f1000_955,Alliance,consultant
+f1000_956,REV,consultant
+f1000_957,Rexnord,consultant
+f1000_958,Cypress Semiconductor,consultant
+f1000_959,Portland General Electric,consultant
+f1000_960,Ply Gem,consultant
+f1000_961,Cal-Maine Foods,consultant
+f1000_962,Alliance One,consultant
+f1000_963,AMN Healthcare Services,consultant
+f1000_964,American Greetings,consultant
+f1000_965,Blackhawk Network,consultant
+f1000_966,Pier 1 Imports,consultant
+f1000_967,Finish Line,consultant
+f1000_968,BlueLinx,consultant
+f1000_969,New Jersey Resources,consultant
+f1000_970,Deckers Outdoor,consultant
+f1000_971,Murphy Oil,consultant
+f1000_972,Teleflex,consultant
+f1000_973,Par Pacific,consultant
+f1000_974,SL Green Realty,consultant
+f1000_975,GMS,consultant
+f1000_976,CoreCivic,consultant
+f1000_977,Deluxe,consultant
+f1000_978,Catalent,consultant
+f1000_979,GoDaddy,consultant
+f1000_980,Wabash National,consultant
+f1000_981,Adtalem Global Education,consultant
+f1000_982,United Refining,consultant
+f1000_983,Allison Transmission,consultant
+f1000_984,Atlas Air Worldwide,consultant
+f1000_985,ResMed,consultant
+f1000_986,Delta Tucker,consultant
+f1000_987,FleetCor Technologies,consultant
+f1000_988,Central Garden & Pet,consultant
+f1000_989,Beazer Homes USA,consultant
+f1000_990,New York Community Bancorp,consultant
+f1000_991,Cadence Design Systems,consultant
+f1000_992,Carpenter Technology,consultant
+f1000_993,Marriott Vacations Worldwide,consultant
+f1000_994,FTI Consulting,consultant
+f1000_995,Nordson,consultant
+f1000_996,Briggs & Stratton,consultant
+f1000_997,Kaman,consultant
+f1000_998,Overstock.com,consultant
+f1000_999,Regis,consultant
+hedge_0,Bridgewater Associates,mba
+hedge_1,AQR Capital Management,mba
+hedge_2,J.P. Morgan Asset Management,mba
+hedge_3,Renaissance Technologies,mba
+hedge_4,Two Sigma,mba
+hedge_5,D. E. Shaw & Co,mba
+hedge_6,Millennium Management,mba
+hedge_7,Man,mba
+hedge_8,Och-Ziff Capital Management,mba
+hedge_9,Winton,mba
+hedge_10,Elliott Management,mba
+hedge_11,Baupost,mba
+hedge_12,Adage Capital Management,mba
+hedge_13,Viking Global Investors,mba
+hedge_15,Davidson Kempner Capital Management,mba
+hedge_16,Citadel,mba
+hedge_17,Marshall Wace,mba
+hedge_18,Lone Pine Capital,mba
+hedge_19,Credit Suisse Asset Management,mba
+hedge_20,Farallon Capital Management,mba
+hedge_21,GAM,mba
+hedge_22,King Street Capital Management,mba
+hedge_23,Platinum Asset Management,mba
+hedge_24,Hillhouse Capital Management,mba
+hedge_25,ValueAct Capital Management,mba
+hedge_26,Pacific Investment Management Co,mba
+hedge_27,Anchorage Capital,mba
+hedge_28,York Capital Management,mba
+hedge_29,Appaloosa Management,mba
+hedge_30,Canyon Partners,mba
+hedge_31,Third Point,mba
+hedge_32,Egerton Capital,mba
+hedge_33,Brevan Howard Capital Management,mba
+hedge_34,Centerbridge Partners,mba
+hedge_35,BlueMountain Capital Management,mba
+hedge_36,Cevian Capital,mba
+hedge_37,Brummer & Partners,mba
+hedge_38,Wellington Alternative Investments,mba
+hedge_39,Moore Capital Management,mba
+hedge_40,Fortress Investment,mba
+hedge_41,Trian Fund Management,mba
+hedge_42,Value Partners,mba
+hedge_43,Goldman Sachs Asset Management,mba
+hedge_44,Graham Capital Management,mba
+hedge_45,Capula Investment Management,mba
+hedge_46,TCI Fund Management,mba
+hedge_47,Balyasny Asset Management,mba
+hedge_48,Henderson AlphaGen,mba
+hedge_49,Highfields Capital Management,mba
+hedge_50,CQS,mba
+hedge_51,GoldenTree Asset Management,mba
+hedge_52,GSO Capital Partners,mba
+hedge_53,Pershing Square Capital Management,mba
+hedge_54,Beach Point Capital Management,mba
+hedge_55,Angelo Gordon & Co,mba
+hedge_56,Lansdowne Partners,mba
+hedge_57,Bracebridge Capital,mba
+hedge_58,Discovery Capital Management,mba
+hedge_59,PointState Capital,mba
+hedge_60,Magnetar Capital,mba
+hedge_61,Nephila Capital,mba
+hedge_62,CarVal Investors,mba
+hedge_63,HBK Capital Management,mba
+hedge_64,Tudor Investment,mba
+hedge_65,Fir Tree Partners,mba
+hedge_66,Carlson Capital,mba
+hedge_67,Glenview Capital Management,mba
+hedge_68,Paulson & Co,mba
+hedge_69,Tiger Global Management,mba
+hedge_70,Marathon Asset Management,mba
+hedge_71,Soroban Capital Partners,mba
+hedge_72,Element Capital Management,mba
+hedge_73,Maverick Capital,mba
+hedge_74,Coatue Management,mba
+hedge_75,Grantham Mayo Van Otterloo,mba
+hedge_76,Cerberus Capital Management,mba
+hedge_77,Senator Investment,mba
+hedge_78,Systematica Investments,mba
+hedge_79,Greenlight Capital,mba
+hedge_80,Caxton Associates,mba
+hedge_81,Lazard Asset Management,mba
+hedge_82,Candriam Investors,mba
+hedge_83,Pictet Asset Management,mba
+hedge_84,Silver Point Capital,mba
+hedge_85,Odey Asset Management,mba
+hedge_86,Capital Fund Management,mba
+hedge_87,Eton Park Capital Management,mba
+hedge_88,Blue Ridge Capital,mba
+hedge_89,GSA Capital Partners,mba
+hedge_90,Eminence Capital,mba
+hedge_91,Pine River Capital Management,mba
+hedge_92,MKP Capital Management,mba
+hedge_93,Taconic Capital Advisors,mba
+hedge_94,Arrowgrass Capital Partners,mba
+hedge_95,JANA Partners,mba
+hedge_96,Scopia Capital,mba
+hedge_97,Redwood Capital Management,mba
+hedge_98,Dymon Asia,mba
+hedge_99,Indus Capital Partners,mba
+hedge_100,Paloma,mba
+vault_0,Cravath Swaine & Moore,quant
+vault_1,Wachtell Lipton Rosen & Katz,quant
+vault_2,Skadden Arps Slate Meagher & Flom and Affiliates,quant
+vault_3,Sullivan & Cromwell,quant
+vault_4,Latham & Watkins,quant
+vault_5,Davis Polk & Wardwell,quant
+vault_6,Simpson Thacher & Bartlett,quant
+vault_7,Kirkland & Ellis,quant
+vault_8,Gibson Dunn & Crutcher,quant
+vault_9,Paul Weiss Rifkind Wharton & Garrison,quant
+vault_10,Weil Gotshal & Manges,quant
+vault_11,Quinn Emanuel Urquhart & Sullivan,quant
+vault_12,Sidley Austin,quant
+vault_13,Cleary Gottlieb Steen & Hamilton,quant
+vault_14,Covington & Burling,quant
+vault_15,Jones Day,quant
+vault_16,Williams & Connolly,quant
+vault_17,Debevoise & Plimpton,quant
+vault_18,White & Case,quant
+vault_19,WilmerHale,quant
+vault_20,Ropes & Gray,quant
+vault_21,Paul Hastings,quant
+vault_22,Boies Schiller Flexner,quant
+vault_23,Morrison & Foerster,quant
+vault_24,Hogan Lovells US,quant
+vault_25,O'Melveny & Myers,quant
+vault_26,Cooley,quant
+vault_27,Proskauer Rose,quant
+vault_28,Akin Gump Strauss Hauer & Feld,quant
+vault_29,Arnold & Porter Kaye Scholer,quant
+vault_30,Baker McKenzie,quant
+vault_31,Mayer Brown,quant
+vault_32,DLA Piper,quant
+vault_33,K&L Gates,quant
+vault_34,Clifford Chance US,quant
+vault_35,Linklaters,quant
+vault_36,Munger Tolles & Olson,quant
+vault_37,Orrick Herrington & Sutcliffe,quant
+vault_38,Wilson Sonsini Goodrich & Rosati,quant
+vault_39,Milbank Tweed Hadley & McCloy,quant
+vault_40,Shearman & Sterling,quant
+vault_41,Morgan Lewis & Bockius,quant
+vault_42,King & Spalding,quant
+vault_43,Baker Botts,quant
+vault_44,Goodwin Procter,quant
+vault_45,Allen & Overy,quant
+vault_46,Winston & Strawn,quant
+vault_47,Cadwalader Wickersham & Taft,quant
+vault_48,Fried Frank Harris Shriver & Jacobson,quant
+vault_49,Perkins Coie,quant
+vault_50,Willkie Farr & Gallagher,quant
+vault_51,Dechert,quant
+vault_52,Greenberg Traurig,quant
+vault_53,Alston & Bird,quant
+vault_54,Jenner & Block,quant
+vault_55,Freshfields Bruckhaus Deringer,quant
+vault_56,McDermott Will & Emery,quant
+vault_57,Cahill Gordon & Reindel,quant
+vault_58,Holland & Knight,quant
+vault_59,Dentons,quant
+vault_60,Susman Godfrey,quant
+vault_61,Pillsbury Winthrop Shaw Pittman,quant
+vault_62,Reed Smith,quant
+vault_63,Baker & Hostetler,quant
+vault_64,Vinson & Elkins,quant
+vault_65,Norton Rose Fulbright,quant
+vault_66,Irell & Manella,quant
+vault_67,Nixon Peabody,quant
+vault_68,Crowell & Moring,quant
+vault_69,Fish & Richardson,quant
+vault_70,Venable,quant
+vault_71,Steptoe & Johnson,quant
+vault_72,Bryan Cave Leighton Paisner,quant
+vault_73,Squire Patton Boggs,quant
+vault_74,Foley & Lardner,quant
+vault_75,Sheppard Mullin Richter & Hampton,quant
+vault_76,McGuireWoods,quant
+vault_77,Locke Lord,quant
+vault_78,Fenwick & West,quant
+vault_79,Arent Fox,quant
+vault_80,Hunton Andrews Kurth,quant
+vault_81,Katten Muchin Rosenman,quant
+vault_82,Schulte Roth & Zabel,quant
+vault_83,Seyfarth Shaw,quant
+vault_84,Pepper Hamilton,quant
+vault_85,Hughes Hubbard & Reed,quant
+vault_86,Mintz Levin Cohn Ferris Glovsky and Popeo,quant
+vault_87,Fox Rothschild,quant
+vault_88,Haynes and Boone,quant
+vault_89,Duane Morris,quant
+vault_90,Drinker Biddle & Reath,quant
+vault_91,Blank Rome,quant
+vault_92,Troutman Sanders,quant
+vault_93,Davis Wright Tremaine,quant
+vault_94,Kilpatrick Townsend & Stockton,quant
+vault_95,Kramer Levin Naftalis & Frankel,quant
+vault_96,Ballard Spahr,quant
+vault_97,Kellogg Hansen Todd Figel & Frederick,quant
+vault_98,Littler Mendelson,quant
+vault_99,Wiley Rein,quant
+vault_100,McKinsey & Company,quant
+vault_101,Bain & Company,quant
+vault_102,The Boston Consulting,quant
+vault_103,Deloitte Consulting,quant
+vault_104,Oliver Wyman,quant
+vault_105,Putnam Associates,quant
+vault_106,EY-Parthenon,quant
+vault_107,PricewaterhouseCoopers Advisory Services,quant
+vault_108,The Bridgespan,quant
+vault_109,Accenture,quant
+vault_110,A.T. Kearney,quant
+vault_111,KPMG,quant
+vault_112,Strategy& part of the PwC network,quant
+vault_113,L.E.K. Consulting,quant
+vault_114,GE Healthcare Partners,quant
+vault_115,The Brattle,quant
+vault_116,Roland Berger,quant
+vault_117,Insight Sourcing,quant
+vault_118,Analysis,quant
+vault_119,Alvarez & Marsal,quant
+vault_121,The Keystone,quant
+vault_122,ghSMART,quant
+vault_123,ClearView Healthcare Partners,quant
+vault_124,ZS,quant
+vault_125,Health Advances,quant
+vault_126,LeapPoint,quant
+vault_127,OC&C Strategy Consultants,quant
+vault_128,Eagle Hill Consulting,quant
+vault_129,Simon-Kucher & Partners,quant
+vault_131,Protiviti,quant
+vault_132,Trinity Partners,quant
+vault_133,Clarkston Consulting,quant
+vault_134,Ignyte,quant
+vault_135,Bates White Economic Consulting,quant
+vault_136,NERA Economic Consulting,quant
+vault_137,Charles River Associates,quant
+vault_138,The Chartis,quant
+vault_139,Cicero,quant
+vault_140,Innosight,quant
+vault_141,Censeo Consulting,quant
+vault_142,Keystone Strategy,quant
+vault_143,The Cambridge,quant
+vault_144,Arthur D. Little,quant
+vault_145,Smartronix,quant
+vault_146,Kenway Consulting,quant
+vault_147,Pace Harmon,quant
+vault_148,DayBlink Consulting,quant
+vault_149,Vivaldi,quant
+vault_150,Cornerstone Research,quant
+vault_151,Alira Health,quant
+vault_152,Goldman Sachs & Co,stats
+vault_153,Evercore,stats
+vault_154,Centerview Partners,stats
+vault_156,Greenhill & Co,stats
+vault_157,Moelis & Company,stats
+vault_158,Perella Weinberg Partners,stats
+vault_159,Guggenheim Securities,stats
+vault_161,Lazard,stats
+vault_162,Houlihan Lokey,stats
+vault_163,William Blair,stats
+vault_164,Pj Solomon,stats
+vault_165,Harris Williams,stats
+vault_166,Cowen,stats
+vault_167,UBS,stats
+vault_168,Loop Capital Markets,stats
+vault_169,J.P. Morgan,stats
+vault_170,Credit Suisse,stats
+vault_171,Barclays Investment Bank,stats
+vault_172,PJT Partners,stats
+vault_173,Citi Institutional Clients,stats
+vault_174,Jefferies,stats
+vault_175,Rothschild,stats
+vault_176,Allen & Company,stats
+vault_177,Qatalyst Partners,stats
+vault_178,Deutsche Bank AG,stats
+vault_179,RBC Capital Markets,stats
+vault_180,Wells Fargo & Company,stats
+vault_181,Macquarie,stats
+vault_182,Piper Jaffray Companies,stats
+vault_183,BMO Capital Markets,stats
+vault_184,Oppenheimer & Co,stats
+vault_185,Baird,stats
+vault_186,Deloitte Corporate Finance,stats
+vault_187,BNP Paribas USA,stats
+vault_188,Nomura,stats
+vault_189,HSBC North America,stats
+vault_191,LionTree Advisors,stats
+vault_192,Royal Bank of Scotland,stats
+vault_193,Cantor Fitzgerald,stats
+vault_195,Tudor Pickering Holt & Co,stats
+vault_196,Societe Generale Corporate & Investment Banking,stats
+vault_198,EY,stats
+vault_199,Brown Brothers Harriman,stats
+vault_200,CIBC World Markets,stats
+vault_201,Lloyds Banking,stats
+vault_202,PwC,quant
+vault_203,Deloitte,quant
+vault_205,Grant Thornton,quant
+vault_206,Bdo Usa,quant
+vault_207,Plante Moran,quant
+vault_208,Crowe,quant
+vault_209,Baker Tilly Virchow Krause,quant
+vault_210,Moss Adams,quant
+vault_211,Rsm Us,quant
+vault_212,Dixon Hughes Goodman,quant
+vault_213,Eide Bailly,quant
+vault_214,Friedman,quant
+vault_215,Frank Rimerman Co,quant
+vault_216,Brown Smith Wallace,quant
+vault_217,Cbiz Mhm,quant
+vault_218,Elliott Davis,quant
+vault_219,Armanino,quant
+vault_220,PKF O'Connor Davies,quant
+vault_221,BPM,quant
+vault_222,Withum,quant
+vault_223,Schenck SC,quant
+vault_224,Sikich,quant
+vault_225,Rehmann,quant
+vault_226,Marks Paneth,quant
+vault_227,MBE CPAs,quant
+vault_228,Margolin Winer & Evens,quant
+vault_229,Ernst & Young,quant
+vault_230,CliftonLarsonAllen,quant
+vault_231,CohnReznick,quant
+vault_232,BKD,quant
+vault_233,Cherry Bekaert,quant
+vault_234,Marcum,quant
+vault_235,EisnerAmper,quant
+vault_236,Wipfli,quant
+vault_237,Cohen & Company,quant
+vault_238,UHY Advisors,quant
+vault_239,RubinBrown,quant
+vault_240,Mazars USA,quant
+vault_241,The Siegfried,quant
+vault_242,Citrin Cooperman & Company,quant
+vault_243,Blum Shapiro & Co,quant
+vault_244,Carr Riggs & Ingram,quant
+vault_245,Novogradac & Company,quant
+vault_246,Anchin Block & Anchin,quant
+vault_247,Warren Averett,quant
+vault_248,Berdon,quant
+vault_249,Weaver,quant
+vault_250,Blue & Co,quant
+vault_251,Doeren Mayhew,quant
+nasdaq_TSM,Taiwan Semiconductor Manufacturing Company,consultant
+nasdaq_SAP,Sap Se,consultant
+nasdaq_ADBE,Adobe,consultant
+nasdaq_CRM,Salesforce.com,consultant
+nasdaq_IBM,International Business Machines,consultant
+nasdaq_AVGO,Broadcom,consultant
+nasdaq_VMW,Vmware,consultant
+nasdaq_ADP,Automatic Data Processing,consultant
+nasdaq_BIDU,Baidu,consultant
+nasdaq_INFY,Infosys Limited,consultant
+nasdaq_AABA,Altaba,consultant
+nasdaq_WDAY,Workday,consultant
+nasdaq_NOW,ServiceNow,consultant
+nasdaq_NOK,Nokia,consultant
+nasdaq_ETN,Eaton,consultant
+nasdaq_SQ,Square,consultant
+nasdaq_NXPI,NXP Semiconductors N.V.,consultant
+nasdaq_WIT,Wipro Limited,consultant
+nasdaq_TEAM,Atlassian,consultant
+nasdaq_HPE,Hewlett Packard Enterprise Company,consultant
+nasdaq_INFO,IHS Markit,consultant
+nasdaq_VRSN,VeriSign,consultant
+nasdaq_PANW,Palo Alto Networks,consultant
+nasdaq_SPLK,Splunk,consultant
+nasdaq_DXC,DXC Technology Company,consultant
+nasdaq_CHKP,Check Point Software Technologies,consultant
+nasdaq_ANET,Arista Networks,consultant
+nasdaq_SHOP,Shopify,consultant
+nasdaq_WPP,WPP,consultant
+nasdaq_VEEV,Veeva Systems,consultant
+nasdaq_ANSS,Ansys,consultant
+nasdaq_STM,STMicroelectronics N.V.,consultant
+nasdaq_FTNT,Fortinet,consultant
+nasdaq_MTCH,Match,consultant
+nasdaq_TTWO,Take-Two Interactive Software,consultant
+nasdaq_SSNC,SS&C Technologies,consultant
+nasdaq_STX,Seagate Technology,consultant
+nasdaq_MRVL,Marvell Technology,consultant
+nasdaq_ASML,Asml N.V.,consultant
+nasdaq_PTC,PTC,consultant
+nasdaq_DATA,Tableau Software,consultant
+nasdaq_JKHY,Jack Henry & Associates,consultant
+nasdaq_YNDX,Yandex N.V.,consultant
+nasdaq_TWLO,Twilio,consultant
+nasdaq_OTEX,Open Text,consultant
+nasdaq_ATHM,Autohome,consultant
+nasdaq_DBX,Dropbox,consultant
+nasdaq_LN,LINE,consultant
+nasdaq_IPG,Interpublic of Companies,consultant
+nasdaq_DOX,Amdocs Limited,consultant
+nasdaq_WUBA,58.com,consultant
+nasdaq_NTNX,Nutanix,consultant
+nasdaq_SNAP,Snap,consultant
+nasdaq_ULTI,The Ultimate Software,consultant
+nasdaq_MFGP,Micro Focus Intl,consultant
+nasdaq_ASX,ASE Technology,consultant
+nasdaq_FDS,FactSet Research Systems,consultant
+nasdaq_TRIP,TripAdvisor,consultant
+nasdaq_EBIX,Ebix,consultant
+nasdaq_OKTA,Okta,consultant
+nasdaq_UBNT,Ubiquiti Networks,consultant
+nasdaq_PAYC,Paycom Software,consultant
+nasdaq_DOCU,DocuSign,consultant
+nasdaq_PAGS,PagSeguro Digital,consultant
+nasdaq_TYL,Tyler Technologies,consultant
+nasdaq_EPAM,EPAM Systems,consultant
+nasdaq_PNR,Pentair,consultant
+nasdaq_BKI,Black Knight,consultant
+nasdaq_RNG,Ringcentral,consultant
+nasdaq_IPGP,IPG Photonics,consultant
+nasdaq_AER,Aercap N.V.,consultant
+nasdaq_GWRE,Guidewire Software,consultant
+nasdaq_ZEN,Zendesk,consultant
+nasdaq_IDTI,Integrated Device Technology,consultant
+nasdaq_AZPN,Aspen Technology,consultant
+nasdaq_NATI,National Instruments,consultant
+nasdaq_MIDD,The Middleby,consultant
+nasdaq_STNE,StoneCo,consultant
+nasdaq_ZS,Zscaler,consultant
+nasdaq_LOGI,Logitech S.A.,consultant
+nasdaq_TTD,The Trade Desk,consultant
+nasdaq_HUBS,HubSpot,consultant
+nasdaq_ARRS,Arris,consultant
+nasdaq_ESTC,Elastic N.V.,consultant
+nasdaq_MPWR,Monolithic Power Systems,consultant
+nasdaq_TSG,The Stars,consultant
+nasdaq_RP,RealPage,consultant
+nasdaq_PFPT,Proofpoint,consultant
+nasdaq_NEWR,New Relic,consultant
+nasdaq_SWI,SolarWinds,consultant
+nasdaq_CDAY,Ceridian HCM,consultant
+nasdaq_CREE,Cree,consultant
+nasdaq_WIX,Wix.com,consultant
+nasdaq_PVTL,Pivotal Software,consultant
+nasdaq_MLNX,Mellanox Technologies,consultant
+nasdaq_NICE,NICE,consultant
+nasdaq_GDI,Gardner Denver,consultant
+nasdaq_LOGM,LogMein,consultant
+nasdaq_UMC,United Microelectronics,consultant
+nasdaq_GTES,Gates Industrial,consultant
+nasdaq_AYX,Alteryx,consultant
+nasdaq_FLEX,Flex,consultant
+nasdaq_SMI,Semiconductor Manufacturing,consultant
+nasdaq_PSTG,Pure Storage,consultant
+nasdaq_SINA,Sina,consultant
+nasdaq_NVT,nVent Electric,consultant
+nasdaq_MOMO,Momo,consultant
+nasdaq_BB,BlackBerry Limited,consultant
+nasdaq_HUYA,HUYA,consultant
+nasdaq_MDSO,Medidata Solutions,consultant
+nasdaq_INXN,InterXion N.V.,consultant
+nasdaq_AL,Air Lease,consultant
+nasdaq_PEGA,Pegasystems,consultant
+nasdaq_AUO,AU Optronics,consultant
+nasdaq_MDB,MongoDB,consultant
+nasdaq_ZNGA,Zynga,consultant
+nasdaq_CARG,CarGurus,consultant
+nasdaq_COUP,Coupa Software,consultant
+nasdaq_PS,Pluralsight,consultant
+nasdaq_SLAB,Silicon Laboratories,consultant
+nasdaq_WB,Weibo,consultant
+nasdaq_VSAT,ViaSat,consultant
+nasdaq_COMM,CommScope Company,consultant
+nasdaq_PLAN,Anaplan,consultant
+nasdaq_JCOM,j2 Global,consultant
+nasdaq_SMTC,Semtech,consultant
+nasdaq_YY,YY,consultant
+nasdaq_AAN,Aaron& 39 s,consultant
+nasdaq_FEYE,FireEye,consultant
+nasdaq_PCTY,Paylocity,consultant
+nasdaq_ACIW,ACI Worldwide,consultant
+nasdaq_BLKB,Blackbaud,consultant
+nasdaq_ASGN,ASGN,consultant
+nasdaq_CSOD,Cornerstone OnDemand,consultant
+nasdaq_PRSP,Perspecta,consultant
+nasdaq_QLYS,Qualys,consultant
+nasdaq_TWOU,2U,consultant
+nasdaq_CLDR,Cloudera,consultant
+nasdaq_MANH,Manhattan Associates,consultant
+nasdaq_VRNT,Verint Systems,consultant
+nasdaq_TRTN,Triton Limited,consultant
+nasdaq_CVLT,Commvault Systems,consultant
+nasdaq_RAMP,LiveRamp,consultant
+nasdaq_CYBR,CyberArk Software,consultant
+nasdaq_SAIC,Science Applications International Corporation,consultant
+nasdaq_CCMP,Cabot Microelectronics,consultant
+nasdaq_BOX,Box,consultant
+nasdaq_FIVN,Five9,consultant
+nasdaq_ERIC,Ericsson,consultant
+nasdaq_SMAR,Smartsheet,consultant
+nasdaq_ALRM,Alarm.com,consultant
+nasdaq_AVLR,Avalara,consultant
+nasdaq_OMCL,Omnicell,consultant
+nasdaq_FNSR,Finisar,consultant
+nasdaq_JBT,John Bean Technologies,consultant
+nasdaq_KFY,Korn Ferry,consultant
+nasdaq_APY,Apergy,consultant
+nasdaq_VIAV,Viavi Solutions,consultant
+nasdaq_EB,Eventbrite,consultant
+nasdaq_JOBS,51job,consultant
+nasdaq_ELLI,Ellie Mae,consultant
+nasdaq_BL,BlackLine,consultant
+nasdaq_SOGO,Sogou,consultant
+nasdaq_SAIL,SailPoint Technologies,consultant
+nasdaq_QTWO,Q2,consultant
+nasdaq_TENB,Tenable,consultant
+nasdaq_SEND,SendGrid,consultant
+nasdaq_DSGX,The Descartes Systems,consultant
+nasdaq_ZUO,Zuora,consultant
+nasdaq_GLOB,Globant S.A.,consultant
+nasdaq_CRUS,Cirrus Logic,consultant
+nasdaq_INOV,Inovalon,consultant
+nasdaq_EPAY,Bottomline Technologies,consultant
+nasdaq_APPF,AppFolio,consultant
+nasdaq_EVTC,Evertec,consultant
+nasdaq_ALTR,Altair Engineering,consultant
+nasdaq_BRKS,Brooks Automation,consultant
+nasdaq_UPWK,Upwork,consultant
+nasdaq_MIME,Mimecast Limited,consultant
+nasdaq_MDRX,Allscripts Healthcare Solutions,consultant
+nasdaq_APPN,Appian,consultant
+nasdaq_NTCT,NetScout Systems,consultant
+nasdaq_LXFT,Luxoft,consultant
+nasdaq_EGHT,8x8,consultant
+nasdaq_SWCH,Switch,consultant
+nasdaq_POWI,Power Integrations,consultant
+nasdaq_MB,Mindbody,consultant
+nasdaq_WBT,Welbilt,consultant
+nasdaq_CISN,Cision,consultant
+nasdaq_ACIA,Acacia Communications,consultant
+nasdaq_EVBG,Everbridge,consultant
+nasdaq_RPD,Rapid7,consultant
+nasdaq_SVMK,SVMK,consultant
+nasdaq_SEDG,SolarEdge Technologies,consultant
+nasdaq_WK,Workiva,consultant
+nasdaq_CRTO,Criteo S.A.,consultant
+nasdaq_PRGS,Progress Software,consultant
+nasdaq_DIOD,Diodes,consultant
+nasdaq_BNFT,Benefitfocus,consultant
+nasdaq_YEXT,Yext,consultant
+nasdaq_CARS,Cars.com,consultant
+nasdaq_TSEM,Tower Semiconductor,consultant
+nasdaq_SPSC,SPS Commerce,consultant
+nasdaq_VRNS,Varonis Systems,consultant
+nasdaq_MSTR,MicroStrategy,consultant
+nasdaq_TTEC,TTEC,consultant
+nasdaq_IPHI,Inphi,consultant
+nasdaq_AYR,Aircastle Limited,consultant
+nasdaq_BITA,Bitauto Limited,consultant
+nasdaq_KLIC,Kulicke and Soffa Industries,consultant
+nasdaq_INST,Instructure,consultant
+nasdaq_GDS,GDS Limited,consultant
+nasdaq_VRTU,Virtusa,consultant
+nasdaq_OSIS,OSI Systems,consultant
+nasdaq_SCWX,SecureWorks,consultant
+nasdaq_SYNA,Synaptics,consultant
+nasdaq_ATU,Actuant,consultant
+nasdaq_GLUU,Glu Mobile,consultant
+nasdaq_SSTK,Shutterstock,consultant
+nasdaq_MXL,MaxLinear,consultant
+nasdaq_DDD,3D Systems,consultant
+nasdaq_SIMO,Silicon Motion Technology,consultant
+nasdaq_SPXC,SPX,consultant
+nasdaq_LPSN,LivePerson,consultant
+nasdaq_MGRC,McGrath RentCorp,consultant
+nasdaq_LTRPA,Liberty TripAdvisor,consultant
+nasdaq_DAVA,Endava,consultant
+nasdaq_LORL,Loral Space and Communications,consultant
+nasdaq_AMBA,Ambarella,consultant
+nasdaq_PRO,PROS,consultant
+nasdaq_PSDO,Presidio,consultant
+nasdaq_EFII,Electronics for Imaging,consultant
+nasdaq_SYKE,Sykes Enterprises,consultant
+nasdaq_CASA,Casa Systems,consultant
+nasdaq_FSCT,ForeScout Technologies,consultant
+nasdaq_AQUA,Evoqua Water Technologies,consultant
+nasdaq_CSGS,CSG Systems,consultant
+nasdaq_MTSI,MACOM Technology Solutions,consultant
+nasdaq_CLS,Celestica,consultant
+nasdaq_NXGN,NextGen Healthcare,consultant
+nasdaq_TLND,Talend S.A.,consultant
+nasdaq_SSYS,Stratasys,consultant
+nasdaq_EIGI,Endurance,consultant
+nasdaq_FORM,FormFactor,consultant
+nasdaq_CSIQ,Canadian Solar,consultant
+nasdaq_PLUS,ePlus,consultant
+nasdaq_TNC,Tennant Company,consultant
+nasdaq_XPER,Xperi,consultant
+nasdaq_TRUE,TrueCar,consultant
+nasdaq_CARB,Carbonite,consultant
+nasdaq_LSCC,Lattice Semiconductor,consultant
+nasdaq_MCRN,Milacron,consultant
+nasdaq_SXI,Standex,consultant
+nasdaq_CBLK,Carbon Black,consultant
+nasdaq_AGMH,AGM,consultant
+nasdaq_KAI,Kadant,consultant
+nasdaq_CTS,CTS,consultant
+nasdaq_RMBS,Rambus,consultant
+nasdaq_CMCM,Cheetah Mobile,consultant
+nasdaq_CRAY,Cray,consultant
+nasdaq_KFRC,Kforce,consultant
+nasdaq_BILI,Bilibili,consultant
+nasdaq_JT,Jianpu Technology,consultant
+nasdaq_SFUN,Fang Limited,consultant
+nasdaq_CTK,CooTek,consultant
+nasdaq_QADA,QAD,consultant
+nasdaq_BAND,Bandwidth,consultant
+nasdaq_HSTM,HealthStream,consultant
+nasdaq_PRFT,Perficient,consultant
+nasdaq_SPWR,SunPower,consultant
+nasdaq_EXTR,Extreme Networks,consultant
+nasdaq_SOHU,Sohu.com Limited,consultant
+nasdaq_EXTN,Exterran,consultant
+nasdaq_PLAB,Photronics,consultant
+nasdaq_TGH,Textainer Limited,consultant
+nasdaq_TCX,Tucows,consultant
+nasdaq_TYPE,Monotype Imaging,consultant
+nasdaq_LASR,nLIGHT,consultant
+nasdaq_HSII,Heidrick & Struggles,consultant
+nasdaq_UPLD,Upland Software,consultant
+nasdaq_HMI,Huami,consultant
+nasdaq_ENPH,Enphase Energy,consultant
+nasdaq_SPNS,Sapiens Corporation N.V.,consultant
+nasdaq_QTNA,Quantenna Communications,consultant
+nasdaq_DOMO,Domo,consultant
+nasdaq_CMTL,Comtech Telecommunications,consultant
+nasdaq_VNET,21Vianet,consultant
+nasdaq_ACLS,Axcelis Technologies,consultant
+nasdaq_SGH,SMART Global,consultant
+nasdaq_RBBN,Ribbon Communications,consultant
+nasdaq_OSPN,OneSpan,consultant
+nasdaq_SWIR,Sierra Wireless,consultant
+nasdaq_CEVA,CEVA,consultant
+nasdaq_GILT,Gilat Satellite Networks,consultant
+nasdaq_ATEN,A10 Networks,consultant
+nasdaq_CAMP,CalAmp,consultant
+nasdaq_MOBL,MobileIron,consultant
+nasdaq_JKS,JinkoSolar Company Limited,consultant
+nasdaq_CAI,CAI,consultant
+nasdaq_PKE,Park Electrochemical,consultant
+nasdaq_NVEC,NVE,consultant
+nasdaq_BBSI,Barrett Business Services,consultant
+nasdaq_MODN,Model N,consultant
+nasdaq_ATTU,Attunity,consultant
+nasdaq_HIMX,Himax Technologies,consultant
+nasdaq_ICHR,Ichor,consultant
+nasdaq_MITK,Mitek Systems,consultant
+nasdaq_KE,Kimball Electronics,consultant
+nasdaq_HLIT,Harmonic,consultant
+nasdaq_ERII,Energy Recovery,consultant
+nasdaq_SSTI,ShotSpotter,consultant
+nasdaq_VECO,Veeco Instruments,consultant
+nasdaq_MGIC,Magic Software Enterprises,consultant
+nasdaq_CPSI,Computer Programs and Systems,consultant
+nasdaq_RST,Rosetta Stone,consultant
+nasdaq_UCTT,Ultra Clean,consultant
+nasdaq_PHUN,Phunware,consultant
+nasdaq_GTYH,GTY Technology,consultant
+nasdaq_CYOU,Changyou.com Limited,consultant
+nasdaq_CSLT,Castlight Health,consultant
+nasdaq_SLP,Simulations Plus,consultant
+nasdaq_MIXT,MiX Telematics Limited,consultant
+nasdaq_MAXR,Maxar Technologies,consultant
+nasdaq_KEYW,The KEYW,consultant
+nasdaq_DQ,DAQO New Energy,consultant
+nasdaq_GFN,General Finance,consultant
+nasdaq_AGYS,Agilysys,consultant
+nasdaq_ZIXI,Zix,consultant
+nasdaq_NPTN,NeoPhotonics,consultant
+nasdaq_MTLS,Materialise NV,consultant
+nasdaq_AAOI,Applied Optoelectronics,consultant
+nasdaq_AMSWA,American Software,consultant
+nasdaq_DGII,Digi,consultant
+nasdaq_CCRN,Cross Country Healthcare,consultant
+nasdaq_ECOM ,ChannelAdvisor,consultant
+nasdaq_AQ,Aquantia,consultant
+nasdaq_CRNT,Ceragon Networks,consultant
+nasdaq_PDFS,PDF Solutions,consultant
+nasdaq_OOMA,Ooma,consultant
+nasdaq_IMMR,Immersion,consultant
+nasdaq_SNCR,Synchronoss Technologies,consultant
+nasdaq_CDLX,Cardlytics,consultant
+nasdaq_SRT,StarTek,consultant
+nasdaq_DSPG,DSP,consultant
+nasdaq_MJCO,Majesco,consultant
+nasdaq_BCOV,Brightcove,consultant
+nasdaq_AOSL,Alpha and Omega Semiconductor Limited,consultant
+nasdaq_SILC,Silicom,consultant
+nasdaq_GRNQ,Greenpro Capital,consultant
+nasdaq_AMBR,Amber Road,consultant
+nasdaq_TWIN,Twin Disc,consultant
+nasdaq_BGSF,BG Staffing,consultant
+nasdaq_MX,MagnaChip Semiconductor,consultant
+nasdaq_DMRC,Digimarc,consultant
+nasdaq_TEUM,Pareteum,consultant
+nasdaq_ALLT,Allot,consultant
+nasdaq_RUBI,The Rubicon Project,consultant
+nasdaq_WATT,Energous,consultant
+nasdaq_LEAF,Leaf,consultant
+nasdaq_AVID,Avid Technology,consultant
+nasdaq_KVHI,KVH Industries,consultant
+nasdaq_TRVG,trivago N.V.,consultant
+nasdaq_HIVE,Aerohive Networks,consultant
+nasdaq_EGAN,eGain,consultant
+nasdaq_SPA,Sparton,consultant
+nasdaq_AXTI,AXT,consultant
+nasdaq_MTC,MMTec,consultant
+nasdaq_ACMR,ACM Research,consultant
+nasdaq_INS,Intelligent Systems,consultant
+nasdaq_FSNN,Fusion Connect,consultant
+nasdaq_IOTS,Adesto Technologies,consultant
+nasdaq_PCYG,Park City,consultant
+nasdaq_GSIT,GSI Technology,consultant
+nasdaq_BRQS,Borqs Technologies,consultant
+nasdaq_CYRN,Cyren,consultant
+nasdaq_ALYA,Alithya,consultant
+nasdaq_MDCA,MDC Partners,consultant
+nasdaq_VUZI,Vuzix,consultant
+nasdaq_EVER,EverQuote,consultant
+nasdaq_TLRA,Telaria,consultant
+nasdaq_ALOT,AstroNova,consultant
+nasdaq_MNTX,Manitex,consultant
+nasdaq_XNET,Xunlei Limited,consultant
+nasdaq_INAP,Internap,consultant
+nasdaq_TZOO,Travelzoo,consultant
+nasdaq_EMKR,Emcore,consultant
+nasdaq_LIQT,LiqTech,consultant
+nasdaq_PXLW,Pixelworks,consultant
+nasdaq_INSE,Inspired Entertainment,consultant
+nasdaq_IVAC,Intevac,consultant
+nasdaq_SHSP,SharpSpring,consultant
+nasdaq_SMTX,SMTC,consultant
+nasdaq_RDCM,Radcom,consultant
+nasdaq_PNTR,Pointer Telocation,consultant
+nasdaq_RENN,Renren,consultant
+nasdaq_RMBL,RumbleOn,consultant
+nasdaq_AIRG,Airgain,consultant
+nasdaq_RNWK,RealNetworks,consultant
+nasdaq_MRAM,Everspin Technologies,consultant
+nasdaq_KOPN,Kopin,consultant
+nasdaq_MAMS,MAM Software,consultant
+nasdaq_VERI,Veritone,consultant
+nasdaq_SQNS,Sequans Communications S.A.,consultant
+nasdaq_GEC,Great Elm Capital,consultant
+nasdaq_ASUR,Asure Software,consultant
+nasdaq_IMOS,ChipMOS TECHNOLOGIES,consultant
+nasdaq_QUIK,QuickLogic,consultant
+nasdaq_NTWK,NetSol Technologies,consultant
+nasdaq_PCTI,PC-Tel,consultant
+nasdaq_GSB,GlobalSCAPE,consultant
+nasdaq_SGOC,Sgoco,consultant
+nasdaq_NH,NantHealth,consultant
+nasdaq_AWRE,Aware,consultant
+nasdaq_LTRX,Lantronix,consultant
+nasdaq_DTSS,Datasea,consultant
+nasdaq_PERI,Perion Network,consultant
+nasdaq_RDVT,Red Violet,consultant
+nasdaq_AVNW,Aviat Networks,consultant
+nasdaq_JG,Aurora Mobile Limited,consultant
+nasdaq_MTEC,MTech Acquisition,consultant
+nasdaq_CLPS,CLPS Incorporation,consultant
+nasdaq_TACT,TransAct Technologies,consultant
+nasdaq_INVE,Identiv,consultant
+nasdaq_ASYS,Amtech Systems,consultant
+nasdaq_VISI,Volt Information Sciences,consultant
+nasdaq_SYNC,Synacor,consultant
+nasdaq_IEC,IEC Electronics,consultant
+nasdaq_CTG,Computer Task,consultant
+nasdaq_KTCC,Key Tronic,consultant
+nasdaq_DLHC,DLH,consultant
+nasdaq_AEYE,AudioEye,consultant
+nasdaq_SEAC,SeaChange,consultant
+nasdaq_ICLK,iClick Interactive Asia Limited,consultant
+nasdaq_WISA,Summit Wireless Technologies,consultant
+nasdaq_IMI,Intermolecular,consultant
+nasdaq_BKTI,BK Technologies,consultant
+nasdaq_QTM,Quantum,consultant
+nasdaq_SOL,Renesola,consultant
+nasdaq_HQCL,Hanwha Q CELLS,consultant
+nasdaq_SMSI,Smith Micro Software,consultant
+nasdaq_MTBC,Medical Transcription Billing,consultant
+nasdaq_OIIM,O2Micro Limited,consultant
+nasdaq_GVP,GSE Systems,consultant
+nasdaq_TAOP,Taoping,consultant
+nasdaq_MNDO,Mind C.T.I.,consultant
+nasdaq_RCMT,RCM Technologies,consultant
+nasdaq_ATOM,Atomera,consultant
+nasdaq_PIXY,ShiftPixy,consultant
+nasdaq_SPRT,support.com,consultant
+nasdaq_WSTG,Wayside Technology,consultant
+nasdaq_MIND,Mitcham Industries,consultant
+nasdaq_RESN,Resonant,consultant
+nasdaq_HSON,Hudson Global,consultant
+nasdaq_AUTO,AutoWeb,consultant
+nasdaq_LPTH,LightPath Technologies,consultant
+nasdaq_EMAN,eMagin,consultant
+nasdaq_INOD,Innodata,consultant
+nasdaq_CSPI,CSP,consultant
+nasdaq_SIFY,Sify Technologies Limited,consultant
+nasdaq_WYY,WidePoint,consultant
+nasdaq_ISSC,Innovative Solutions and Support,consultant
+nasdaq_IDN,Intellicheck,consultant
+nasdaq_OSS,One Stop Systems,consultant
+nasdaq_OTIV,On Track Innovations,consultant
+nasdaq_MOXC,Moxian,consultant
+nasdaq_GIGM,GigaMedia Limited,consultant
+nasdaq_MRIN,Marin Software,consultant
+nasdaq_DGLY,Digital Ally,consultant
+nasdaq_CVR,Chicago Rivet & Machine,consultant
+nasdaq_PFIN,P & F Industries,consultant
+nasdaq_CNET,ChinaNet Online,consultant
+nasdaq_CCIH,ChinaCache,consultant
+nasdaq_MYSZ,My Size,consultant
+nasdaq_MNGA,MagneGas Applied Technology Solutions,consultant
+nasdaq_CVV,CVD Equipment,consultant
+nasdaq_ZDGE,Zedge,consultant
+nasdaq_NETE,Net Element,consultant
+nasdaq_SRAX,Social Reality,consultant
+nasdaq_GSUM,Gridsum,consultant
+nasdaq_QRHC,Quest Resource,consultant
+nasdaq_SPCB,SuperCom,consultant
+nasdaq_RBCN,Rubicon Technology,consultant
+nasdaq_STRM,Streamline Health Solutions,consultant
+nasdaq_QUMU,Qumu,consultant
+nasdaq_CCNI,Command Center,consultant
+nasdaq_HHS,Harte-Hanks,consultant
+nasdaq_IIJI,Internet Initiative Japan,consultant
+nasdaq_IPAS,iPass,consultant
+nasdaq_AMCN,AirMedia,consultant
+nasdaq_EVOL,Evolving Systems,consultant
+nasdaq_ACY,AeroCentury,consultant
+nasdaq_LINK,Interlink Electronics,consultant
+nasdaq_FPAY,FlexShopper,consultant
+nasdaq_SCKT,Socket Mobile,consultant
+nasdaq_QBAK,Qualstar,consultant
+nasdaq_SGMA,SigmaTron,consultant
+nasdaq_BKYI,BIO-key,consultant
+nasdaq_JOB,GEE,consultant
+nasdaq_NNDM,Nano Dimension,consultant
+nasdaq_TRT,Trio-Tech,consultant
+nasdaq_BDR,Blonder Tongue Laboratories,consultant
+nasdaq_LEDS,SemiLEDS,consultant
+nasdaq_TSRI,TSR,consultant
+nasdaq_STAF,Staffing 360 Solutions,consultant
+nasdaq_AMRH,Ameri,consultant
+nasdaq_TISA,Top Image Systems,consultant
+nasdaq_CPAH,CounterPath,consultant
+nasdaq_BOSC,B.O.S. Better Online Solutions,consultant
+nasdaq_BVSN,BroadVision,consultant
+nasdaq_MOSY,MoSys,consultant
+nasdaq_CREX,Creative Realities,consultant
+nasdaq_ANY,Sphere 3D,consultant
+nasdaq_IPDN,Professional Diversity Network,consultant
+nasdaq_SPI,SPI Energy,consultant
+nasdaq_FORTY,Formula Systems,consultant
+nasdaq_INPX,Inpixon,consultant
+nasdaq_ELTK,Eltek,consultant
+nasdaq_TCCO,Technical Communications,consultant
+nasdaq_SCON,Superconductor Technologies,consultant
+nasdaq_BLIN ,Bridgeline Digital,consultant
+nasdaq_FRSX,Foresight Autonomous,consultant
+nasdaq_JMU,JMU Limited,consultant
+nasdaq_SFET,Safe-T,consultant
+glassdoor_0,Heap,consultant
+glassdoor_1,Horizon Innovations,consultant
+glassdoor_2,Silverline,consultant
+glassdoor_3,Marketing 360,consultant
+glassdoor_4,Digital Prospectors,consultant
+glassdoor_5,GetUWired,consultant
+glassdoor_6,Weave,consultant
+glassdoor_7,Malouf,consultant
+glassdoor_8,Highspot,consultant
+glassdoor_9,Peabody Properties,consultant
+glassdoor_10,South Carolina Federal Credit Union,consultant
+glassdoor_11,driversselect,consultant
+glassdoor_12,Disruptive Advertising,consultant
+glassdoor_13,New Western,consultant
+glassdoor_14,NetWorth Realty,consultant
+glassdoor_15,iCIMS,consultant
+glassdoor_16,Sundance Vacations,consultant
+glassdoor_17,Grand Rounds,consultant
+glassdoor_18,Pariveda Solutions,consultant
+glassdoor_19,nbkc bank,consultant
+glassdoor_20,G-TECH Services,consultant
+glassdoor_21,The Predictive Index,consultant
+glassdoor_22,Acceleration Partners,consultant
+glassdoor_23,Bombas,consultant
+glassdoor_24,Front,consultant
+glassdoor_25,23andMe,consultant
+glassdoor_26,Optima Tax Relief,consultant
+glassdoor_27,OppLoans,consultant
+glassdoor_28,Common Thread Collective,consultant
+glassdoor_29,Life.Church,consultant
+glassdoor_30,CarSense,consultant
+glassdoor_31,Best Version Media,consultant
+glassdoor_32,KeepTruckin,consultant
+glassdoor_33,vCom Solutions,consultant
+glassdoor_34,WillowTree,consultant
+glassdoor_35,Emser Tile,consultant
+glassdoor_36,Greenhouse Software,consultant
+glassdoor_37,Thrive Mortgage,consultant
+glassdoor_38,Spreetail,consultant
+glassdoor_39,Towne Properties,consultant
+glassdoor_40,Sage Intacct,consultant
+glassdoor_41,Glint,consultant
+glassdoor_42,Healthy Spot,consultant
+glassdoor_43,Thomas J. Henry Injury Attorneys,consultant
+glassdoor_44,Moogsoft,consultant
+glassdoor_45,Berkshire,consultant
+glassdoor_46,Indigo,consultant
+glassdoor_47,Corporate Brokers,consultant
+glassdoor_48,eXp Realty,consultant
+glassdoor_51,Zoom Video Communications,consultant
+glassdoor_52,In-N-Out Burger,consultant
+glassdoor_53,Procore Technologies,consultant
+glassdoor_54,Boston Consulting,consultant
+glassdoor_55,LinkedIn,consultant
+glassdoor_57,Google,consultant
+glassdoor_58,lululemon,consultant
+glassdoor_60,Salesforce,consultant
+glassdoor_62,St. Jude Children's Research Hospital,consultant
+glassdoor_63,Slalom,consultant
+glassdoor_64,Power Home Remodeling,consultant
+glassdoor_67,Ultimate Software,consultant
+glassdoor_70,Ryan,consultant
+glassdoor_71,Sammons Financial,consultant
+glassdoor_72,Trader Joe's,consultant
+glassdoor_73,Lawrence Livermore National Laboratory,consultant
+glassdoor_74,Smile Brands,consultant
+glassdoor_75,Fast Enterprises,consultant
+glassdoor_76,SAP,consultant
+glassdoor_78,Navy Federal Credit Union,consultant
+glassdoor_80,H E B,consultant
+glassdoor_81,Compass,consultant
+glassdoor_84,Trilogy Health Services,consultant
+glassdoor_86,E. & J. Gallo Winery,consultant
+glassdoor_88,NIH,consultant
+glassdoor_89,TaskUs,consultant
+glassdoor_90,Cengage,consultant
+glassdoor_91,Blizzard Entertainment,consultant
+glassdoor_93,Kronos,consultant
+glassdoor_94,Nebraska Furniture Mart,consultant
+glassdoor_95,Wegmans Food Markets,consultant
+glassdoor_96,The Clorox Company,consultant
+glassdoor_97,SpaceX,consultant
+glassdoor_100,VMware,consultant
+glassdoor_101,Northside Hospital,consultant
+glassdoor_102,Vi,consultant
+glassdoor_103,ABC Supply Co,consultant
+glassdoor_106,Keller Williams,consultant
+glassdoor_107,AppDynamics,consultant
+glassdoor_108,T-Mobile,consultant
+glassdoor_109,Rose,consultant
+glassdoor_110,Hilti North America,consultant
+glassdoor_111,Paycom,consultant
+glassdoor_112,John Deere,consultant
+glassdoor_113,NewYork-Presbyterian Hospital,consultant
+glassdoor_115,Memorial Sloan Kettering,consultant
+glassdoor_116,Vipkid,consultant
+glassdoor_117,MD Anderson Cancer Center,consultant
+glassdoor_121,Omni Hotels,consultant
+glassdoor_122,BAYADA Home Health Care,consultant
+glassdoor_123,Aptive Environmental,consultant
+glassdoor_125,Kimpton Hotels & Restaurants,consultant
+glassdoor_127,Great Lakes Caring,consultant
+glassdoor_128,Costco Wholesale,consultant
+glassdoor_130,Discount Tire,consultant
+glassdoor_132,Phoenix Children's Hospital,consultant
+glassdoor_133,Massachusetts General Hospital,consultant
+glassdoor_134,FedEx Freight,consultant
+glassdoor_135,Edward Jones,consultant
+glassdoor_138,Texas Health Resources,consultant
+glassdoor_139,Sport Clips,consultant
+glassdoor_140,Gensler,consultant
+glassdoor_142,BOK Financial,consultant
+glassdoor_145,Raising Cane's,consultant
+glassdoor_146,FLIK Hospitality,consultant
+glassdoor_147,Kaiser Permanente,consultant
+glassdoor_148,World Wide Technology,consultant
+forbes_0,Stripe,consultant
+forbes_1,Slack,consultant
+forbes_3,Tanium,consultant
+forbes_5,CrowdStrike,consultant
+forbes_6,Qualtrics,consultant
+forbes_7,Squarespace,consultant
+forbes_8,Elastic,consultant
+forbes_10,Mailchimp,consultant
+forbes_11,Cloudflare,consultant
+forbes_12,SurveyMonkey,consultant
+forbes_13,UiPath,consultant
+forbes_14,Medallia,consultant
+forbes_15,PagerDuty,consultant
+forbes_16,Snowflake,consultant
+forbes_17,Cylance,consultant
+forbes_18,Datadog,consultant
+forbes_19,Intercom,consultant
+forbes_20,Rubrik,consultant
+forbes_21,Yardi,consultant
+forbes_22,InVision,consultant
+forbes_23,nCino,consultant
+forbes_24,AppDirect,consultant
+forbes_25,Sprinklr,consultant
+forbes_26,Apttus,consultant
+forbes_28,Toast,consultant
+forbes_29,Veeam,consultant
+forbes_30,Confluent,consultant
+forbes_31,HashiCorp,consultant
+forbes_32,Gusto,consultant
+forbes_33,Looker,consultant
+forbes_34,Databricks,consultant
+forbes_35,Darktrace,consultant
+forbes_36,Uptake,consultant
+forbes_37,Automation Anywhere,consultant
+forbes_38,Automattic,consultant
+forbes_39,PointClickCare,consultant
+forbes_40,Sisense,consultant
+forbes_41,AvidXchange,consultant
+forbes_42,Vlocity,consultant
+forbes_43,Lookout,consultant
+forbes_44,Canva,consultant
+forbes_45,ServiceTitan,consultant
+forbes_46,Checkr,consultant
+forbes_47,WalkMe,consultant
+forbes_48,Acquia,consultant
+forbes_49,Gainsight,consultant
+forbes_50,Turbonomic,consultant
+forbes_51,DataStax,consultant
+forbes_52,Segment,consultant
+forbes_54,SMS Assist,consultant
+forbes_55,Fastly,consultant
+forbes_56,Zapier,consultant
+forbes_57,Welltok,consultant
+forbes_58,Dataminr,consultant
+forbes_59,Freshworks,consultant
+forbes_60,ThoughtSpot,consultant
+forbes_61,Workfront,consultant
+forbes_62,Asana,consultant
+forbes_63,FinancialForce,consultant
+forbes_64,Fuze,consultant
+forbes_65,Optimizely,consultant
+forbes_66,BrowserStack,consultant
+forbes_67,Auth0,consultant
+forbes_68,Illumio,consultant
+forbes_69,Hootsuite,consultant
+forbes_70,Health Catalyst,consultant
+forbes_71,iCims,consultant
+forbes_72,DigitalOcean,consultant
+forbes_73,JFrog,consultant
+forbes_74,American Well,consultant
+forbes_75,C3 IoT,consultant
+forbes_76,NewVoiceMedia,consultant
+forbes_77,ZipRecruiter,consultant
+forbes_78,Onshape,consultant
+forbes_79,Collibra,consultant
+forbes_80,Airtable,consultant
+forbes_81,Evernote,consultant
+forbes_83,Pipedrive,consultant
+forbes_84,Braze,consultant
+forbes_85,Algolia,consultant
+forbes_86,Sumo Logic,consultant
+forbes_87,Carta,consultant
+forbes_88,Netskope,consultant
+forbes_89,Pindrop Security,consultant
+forbes_90,Drift,consultant
+forbes_91,Outreach,consultant
+forbes_92,Podium,consultant
+forbes_93,Exabeam,consultant
+forbes_94,Cloudinary,consultant
+forbes_95,Namely,consultant
+forbes_96,Endgame,consultant
+forbes_98,Dialpad,consultant
+forbes_99,Pendo,consultant
+cnbc_1,Uber,consultant
+cnbc_2,Airbnb,consultant
+cnbc_3,Didi Chuxing,consultant
+cnbc_4,Lyft,consultant
+cnbc_5,Grab,consultant
+cnbc_7,Udacity,consultant
+cnbc_8,Rent the Runway,consultant
+cnbc_9,Coinbase,consultant
+cnbc_10,TransferWise,consultant
+cnbc_11,Oscar Health,consultant
+cnbc_12,Payoneer,consultant
+cnbc_14,Progyny,consultant
+cnbc_15,Adyen,consultant
+cnbc_16,TheRealReal,consultant
+cnbc_17,Indigo Agriculture,consultant
+cnbc_18,Ezetap,consultant
+cnbc_19,Peloton,consultant
+cnbc_20,Ginkgo Bioworks,consultant
+cnbc_21,Lisnr,consultant
+cnbc_22,WeWork,consultant
+cnbc_23,Ellevest,consultant
+cnbc_24,Zipline,consultant
+cnbc_25,LanzaTech,consultant
+cnbc_26,Crowdstrike,consultant
+cnbc_27,Xiaomi,consultant
+cnbc_28,Flirtey,consultant
+cnbc_29,Veritas Genetics,consultant
+cnbc_30,Houzz,consultant
+cnbc_32,Palantir Technologies,consultant
+cnbc_34,Duolingo,consultant
+cnbc_35,Pinterest,consultant
+cnbc_36,Thinx,consultant
+cnbc_37,Robinhood,consultant
+cnbc_39,Drawbridge,consultant
+cnbc_40,InMobi,consultant
+cnbc_41,Coursera,consultant
+cnbc_44,Fanatics,consultant
+cnbc_45,Auris Health,consultant
+cnbc_46,Luminar,consultant
+cnbc_47,Apeel Sciences,consultant
+cnbc_48,GitHub,consultant
+cnbc_49,SoFi,consultant
+bi_0,Credit Karma,consultant
+bi_1,Wish,consultant
+bi_3,DoorDash,consultant
+bi_5,Intarcia Therapeutics,consultant
+bi_9,Machine Zone,consultant
+bi_11,Magic Leap,consultant
+bi_13,Moderna Therapeutics,consultant
+bi_15,Instacart,consultant
+bi_17,Samumed,consultant
+bi_20,Palantir,consultant
