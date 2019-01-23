@@ -158,11 +158,66 @@ def select_ug(row, count):
 		pass
 
 
-def select_int(row, count):
+def internships_general(job_type, prestige, company, count):
 
-	job_type = row[0]
-	prestige = row[1]
-	company = row[2]
+	#First Matched Pair
+	if count == 0:
+		intf = pd.read_csv("keys/int_key.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria] 
+		
+		#Random Selection of Internships Meeting Criteria
+		rows = np.random.choice(int_df.index.values, 2, replace=False)
+		df = int_df.ix[rows]
+		#Drop Selections from Internship to Avoid Selection for Pair 2
+		int_selection = df['int_id'].values.tolist()
+		tmp = intf[((intf.int_id != int_selection[0]) &
+				    (intf.int_id != int_selection[1]))]
+		tmp.to_csv("keys/int_key_tmp.csv", index=False)
+
+
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships
+
+
+	#Second Matched Pair
+	elif count == 1:
+		intf = pd.read_csv("keys/int_key_tmp.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria] 
+		
+		#Random Selection of Schools Meeting Criteria
+		rows = np.random.choice(int_df.index.values, 2, replace=False)
+		df = int_df.ix[rows]
+
+
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships	
+
+	else:
+		pass
+
+
+def internships_mba(job_type, prestige, company, count):
+
+	#TODO
+	#make changes such that if count is 0, int_type == any or first
+	# if count is 1, can only be any, != first
+
+	#on resumes, need to pipe in int_titles, 
+	#but for mba int2, int_title becomes hardcoded for A/B versions of templates
 
 	#First Matched Pair
 	if count == 0:
@@ -215,6 +270,30 @@ def select_int(row, count):
 
 
 
+def select_int(row, count):
+
+	job_type = row[0]
+	prestige = row[1]
+	company = row[2]
+
+	if job_type == 'data_science':
+		internships = internships_general(job_type, prestige, company, count)
+		print(internships)
+	elif job_type == 'mba':
+		internships = internships_mba(job_type, prestige, company, count)
+		print(internships)
+	else:
+		pass
+
+	return internships
+
+
+
+
+
+
+
+
 
 def join_ex_pair(ex_df, cid):
 
@@ -235,8 +314,8 @@ def join_ex_pair(ex_df, cid):
 
 
 	#Select Internships
-	int_vals = ['int_id1', 'internship1', 'int1_ctyst', 
-				'int_id2', 'internship2', 'int2_ctyst']
+	int_vals = ['int_id1', 'internship1', 'int1_ctyst', 'int1_title', 'int1_type', 
+				'int_id2', 'internship2', 'int2_ctyst', 'int2_title', 'int2_type']
 	int_keys = ['job_type', 'prestige', 'company']
 
 
