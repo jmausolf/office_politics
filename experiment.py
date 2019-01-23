@@ -222,7 +222,7 @@ def join_ex_pair(ex_df, cid):
 	ex = ex_df.loc[(ex_df['cid']==cid)].reset_index()
 
 	#Select GA Schools
-	ga_vals = ['department', 'sid', 'ga_sid', 'school', 'school_short', 
+	ga_vals = ['department', 'sid', 'ga_sid', 'school', 
 			   'school_ctyst', 'school_cszip', 'school_address',
 			   'title', 'rgb', 'matched_pair']
 	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
