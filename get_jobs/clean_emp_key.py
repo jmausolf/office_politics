@@ -20,14 +20,14 @@ def ret_position_stop_words():
 
 
     ## Add State Abbreviations
-    state_abb = pd.read_csv('keys/region_key.csv')['state'].tolist()
+    state_abb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
     stop_words = position_stop_words
     stop_words.extend(state_abb)
 
 
     ## Add Uppercase Words from Included Companies
     company_words = []
-    companies = df = pd.read_csv('keys/employers_key.csv')['company'].tolist()
+    companies = df = pd.read_csv('../keys/employers_key.csv')['company'].tolist()
     [company_words.extend(c.split(' ')) for c in companies]
     company_uppers = [c for c in company_words if c.isupper()]
     stop_words.extend(company_uppers)
@@ -104,8 +104,8 @@ def article_strip(school):
 
 def cleaned_emp_key():
 
-	df = pd.read_csv('keys/employers_key.csv')
-	sb = pd.read_csv('keys/region_key.csv')['state'].tolist()
+	df = pd.read_csv('../keys/employers_key.csv')
+	sb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
 	up_sw = ret_position_stop_words()
 	lw_sw = eng_SW = set(stopwords.words('english'))
 	df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sb)
@@ -113,7 +113,8 @@ def cleaned_emp_key():
 										  upper_sw=up_sw,
 										  lower_sw=lw_sw)
 	print(df['position'])
-	df.to_csv('keys/cleaned_employers_key.csv', index=False)
+	df.to_csv('../keys/cleaned_employers_key.csv', index=False)
+	return df
 
 
 cleaned_emp_key()

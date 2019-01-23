@@ -354,7 +354,7 @@ def main(employers,
 	
 
 
-main(employers='keys/employers_key.csv',
+main(employers='keys/cleaned_employers_key.csv',
      state_col='office_state',
      prestige_probs=[.7, .3],
      prestige_labs=['High', 'Low'],
