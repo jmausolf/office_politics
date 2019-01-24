@@ -23,6 +23,8 @@ def join_profiles_credentials():
 
 def select_ga(row, count):
 
+	print(row)
+
 	profile = row[0]
 	job_type = row[1]
 	region = row[2]
@@ -42,8 +44,12 @@ def select_ga(row, count):
 						(gaf['job_type']==job_type) & 					
 						(gaf['prestige']==profile[-1]))
 
+		#TODO
+		#FIX BUG WITH ga prox selection
+		#e.g. midwest == region
 		try:
 			ga = gaf.loc[criteria_base].copy()
+			print(ga)
 		except:
 			print("no ga result found, trying proximal region")
 			ga = gaf.loc[criteria_prox].copy()
@@ -278,10 +284,10 @@ def select_int(row, count):
 
 	if job_type == 'data_science':
 		internships = internships_general(job_type, prestige, company, count)
-		print(internships)
+		#print(internships)
 	elif job_type == 'mba':
 		internships = internships_mba(job_type, prestige, company, count)
-		print(internships)
+		#print(internships)
 	else:
 		pass
 
@@ -377,7 +383,7 @@ def join_experiment_profiles_counter(experiment_file):
 
 
 def send_email_iter(row):
-
+	#print(row)
 	message = ("[*] sending email to {0} at {1} from {2} - {3}, pair: {4}"
 			.format(row['contact_name'],
 					row['company'],
@@ -407,8 +413,10 @@ def send_email_iter(row):
 					ba_ctyst=row['ug_ctyst'],
 					internship1=row['internship1'],
 					int1_ctyst=row['int1_ctyst'],
+					int1_title=row['int1_title'],
 					internship2=row['internship2'],
 					int2_ctyst=row['int2_ctyst'],
+					int2_title=row['int2_title'],
 					treatment=row['treatment'],
 					phone=row['phone'], 
 					gmail_user=row['gmail_user'],
