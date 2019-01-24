@@ -23,8 +23,6 @@ def join_profiles_credentials():
 
 def select_ga(row, count):
 
-	#print(row)
-
 	profile = row[0]
 	job_type = row[1]
 	region = row[2]
@@ -49,7 +47,11 @@ def select_ga(row, count):
 		#e.g. midwest == region
 		try:
 			ga = gaf.loc[criteria_base].copy()
-			print(ga)
+			if ga.shape[0] == 0:
+				print("no ga result found, trying proximal region")
+				ga = gaf.loc[criteria_prox].copy()
+			else: 
+				pass
 		except:
 			print("no ga result found, trying proximal region")
 			ga = gaf.loc[criteria_prox].copy()
@@ -89,6 +91,11 @@ def select_ga(row, count):
 
 		try:
 			ga = gaf.loc[criteria_base].copy()
+			if ga.shape[0] == 0:
+				print("no ga result found, trying proximal region")
+				ga = gaf.loc[criteria_prox].copy()
+			else: 
+				pass
 		except:
 			print("no ga result found, trying proximal region")
 			ga = gaf.loc[criteria_prox].copy()
