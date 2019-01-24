@@ -23,7 +23,7 @@ def join_profiles_credentials():
 
 def select_ga(row, count):
 
-	print(row)
+	#print(row)
 
 	profile = row[0]
 	job_type = row[1]
