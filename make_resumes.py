@@ -75,20 +75,24 @@ def make_resume_pairs(
 					ba_ctyst, 
 					internship1,
 					int1_ctyst,
+					int1_title,
 					internship2,
 					int2_ctyst,
+					int2_title,
 					treatment 
 					):
 
 
 	keys = ["GRADSCHOOL", "GS_CITYSTATE", "GS_CSZIP", "GS_ADDRESS", "GADEPARTMENT",
 			"UGSCHOOL", "UG_CITYSTATE",
-			"INTERNSHIP1", "IC1_CITYSTATE", "INTERNSHIP2", "IC2_CITYSTATE",
+			"INTERNSHIP1", "IC1_CITYSTATE", "INT1TITLE",
+			"INTERNSHIP2", "IC2_CITYSTATE", "INT2TITLE",
 			"TREATMENT", "ID_NAME", "ID_PHONE", "ID_EMAIL"]
 
 	vals = [school, school_ctyst, school_cszip, school_address, department,
 			ba_school, ba_ctyst,
-			internship1, int1_ctyst, internship2, int2_ctyst,
+			internship1, int1_ctyst, int1_title,
+			internship2, int2_ctyst, int2_title,
 			treatment, name, phone, gmail_user]
 
 
@@ -110,13 +114,21 @@ def make_resume(profile,
 				ba_ctyst, 
 				internship1,
 				int1_ctyst,
+				int1_title,
 				internship2,
 				int2_ctyst,
+				int2_title,
 				treatment,
 				pair_version):
 
 	#Remove Articles from School Name
 	school_clean = article_strip(school)
+
+	#TODO
+	#Make Internship Companies Latex Safe
+	#e.g. \textsc{Bain & Company} fails
+	#e.g Bryan School of Business & Economics fails
+	#funct to replace & with \&
 
 
 	#Set Path
@@ -143,8 +155,10 @@ def make_resume(profile,
 					ba_ctyst, 
 					internship1,
 					int1_ctyst,
+					int1_title,
 					internship2,
 					int2_ctyst,
+					int2_title,
 					treatment)
 
 	clean_name = name.replace(' ', '_').replace('.', '')
