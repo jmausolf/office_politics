@@ -60,26 +60,23 @@ def modify_resume(path, tex_file, pairs, name, replace=False):
 	output.close()
 
 
-def make_resume_pairs(
-					profile,
-					job_type,
-					name, 
-					phone,
-					gmail_user,
-					school, 
-					school_ctyst,
-					school_cszip,
-					school_address,
-					department,
-					ba_school, 
-					ba_ctyst, 
-					internship1,
-					int1_ctyst,
-					int1_title,
-					internship2,
-					int2_ctyst,
-					int2_title,
-					treatment 
+def make_resume_pairs(name, 
+					  phone,
+					  gmail_user,
+					  school, 
+					  school_ctyst,
+					  school_cszip,
+					  school_address,
+					  department,
+					  ba_school, 
+					  ba_ctyst, 
+					  internship1,
+					  int1_ctyst,
+					  int1_title,
+					  internship2,
+					  int2_ctyst,
+					  int2_title,
+					  treatment 
 					):
 
 
@@ -98,6 +95,24 @@ def make_resume_pairs(
 
 	resume_pairs = list(map(list, zip(keys, vals)))
 	return resume_pairs
+
+
+def inject_safe_latex(key):
+
+	escape_chars = ['&', '%', '$', '#', '_', '{', '}']
+
+	#Special Escape Keys
+	key = key.replace('\\', '\\textbackslash ')
+	key = key.replace('~', '\\textasciitilde ')
+
+	#Basic Keys
+	for c in escape_chars:
+		key = key.replace(c, '''\\{}'''.format(c))
+
+	#Lastly Another Special Character
+	key = key.replace('^', '\\textasciicircum{}')
+	return key
+
 
 
 def make_resume(profile,
@@ -121,15 +136,28 @@ def make_resume(profile,
 				treatment,
 				pair_version):
 
+
+	#Make Injection of Latex Safe
+	name =  inject_safe_latex(name)
+	phone = inject_safe_latex(phone)
+	gmail_user = inject_safe_latex(gmail_user)
+	school =  inject_safe_latex(school)
+	school_ctyst = inject_safe_latex(school_ctyst)
+	school_cszip = inject_safe_latex(school_cszip)
+	school_address = inject_safe_latex(school_address)
+	department = inject_safe_latex(department)
+	ba_school =  inject_safe_latex(ba_school)
+	ba_ctyst =  inject_safe_latex(ba_ctyst)
+	internship1 = inject_safe_latex(internship1)
+	int1_ctyst = inject_safe_latex(int1_ctyst)
+	int1_title = inject_safe_latex(int1_title)
+	internship2 = inject_safe_latex(internship2)
+	int2_ctyst = inject_safe_latex(int2_ctyst)
+	int2_title = inject_safe_latex(int2_title)
+	treatment = inject_safe_latex(treatment)
+
 	#Remove Articles from School Name
 	school_clean = article_strip(school)
-
-	#TODO
-	#Make Internship Companies Latex Safe
-	#e.g. \textsc{Bain & Company} fails
-	#e.g Bryan School of Business & Economics fails
-	#funct to replace & with \&
-
 
 	#Set Path
 	path = "{}/{}/tex".format(profile, job_type)
@@ -141,25 +169,24 @@ def make_resume(profile,
 		resume_infile = "resume_template_B.tex"
 		#phone = '({}'.format(phone.replace('-', ') ', 1))
 
-	rp = make_resume_pairs(profile,
-					job_type,
-					name, 
-					phone,
-					gmail_user,
-					school_clean, 
-					school_ctyst,
-					school_cszip,
-					school_address,
-					department,
-					ba_school, 
-					ba_ctyst, 
-					internship1,
-					int1_ctyst,
-					int1_title,
-					internship2,
-					int2_ctyst,
-					int2_title,
-					treatment)
+	rp = make_resume_pairs(name, 
+						   phone,
+						   gmail_user,
+						   school_clean, 
+						   school_ctyst,
+						   school_cszip,
+						   school_address,
+						   department,
+						   ba_school, 
+						   ba_ctyst, 
+						   internship1,
+						   int1_ctyst,
+						   int1_title,
+						   internship2,
+						   int2_ctyst,
+						   int2_title,
+						   treatment
+						   )
 
 	clean_name = name.replace(' ', '_').replace('.', '')
 	outfile = "Resume_{}.tex".format(clean_name)
