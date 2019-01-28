@@ -107,7 +107,7 @@ def cleaned_emp_key():
 	df = pd.read_csv('../keys/employers_key.csv')
 	sb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
 	up_sw = ret_position_stop_words()
-	lw_sw = eng_SW = set(stopwords.words('english'))
+	lw_sw = set(stopwords.words('english'))
 	df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sb)
 	df['position'] = df['position'].apply(clean_position, 
 										  upper_sw=up_sw,
