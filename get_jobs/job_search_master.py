@@ -39,10 +39,12 @@ def make_company_csvs(master_companies):
 		df_out = df[keep_cols].copy()
 		col_names = ['list_id', 'company', 'job_type']
 		df_out.columns = col_names
-		print(df_out.shape)
 
-		#TODO
-		#remove rows that have NAN job_type
+		#Remove Rows that have NAN job_type
+		#(To Avoid Searching Certain Companies for Some Job Functions)
+		df_out = df_out.dropna(axis=0, how='any')
+		df_out.isna().sum()
+		print(df_out.shape)
 
 		#Write Outfile
 		outfile = "companies_{}.csv".format(n)
