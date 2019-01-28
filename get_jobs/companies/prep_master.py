@@ -555,12 +555,12 @@ print(prep_df)
 #############################################
 
 #Key = job_type (first one)
-job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'mba', 'consultant'],
-                  'quant':['quant', 'data_science', 'stats', 'consultant', 'mba'],
-                  'banking':['quant', 'data_science', 'mba', 'consultant', 'stats'],
-                  'accounting':['mba', 'stats', 'data_science', 'consultant', 'quant'],
-                  'consulting':['consultant', 'data_science', 'mba', 'stats', 'quant'],
-                  'law':['mba', 'consultant', 'data_science', 'stats', 'quant']
+job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'cs', 'mba', None],
+                  'quant':['quant', 'data_science', 'stats', 'cs', 'mba', None],
+                  'banking':['quant', 'data_science', 'mba', 'stats', 'cs', None],
+                  'accounting':['mba', 'stats', 'data_science', 'cs', 'quant', None],
+                  'consulting':['consultant', 'data_science', 'cs', 'mba', 'stats', 'quant'],
+                  'law':['mba', 'data_science', 'cs', 'stats', 'quant', None]
 }
 
 
