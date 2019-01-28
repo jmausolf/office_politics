@@ -327,10 +327,10 @@ prep_df.to_csv("clean/master_companies_prep.csv", index=False)
 def rm_company_stop_words(text):
 
     sw = [' LLC', ' LLP', ' Llp', ' LP', ' P.C.', ' P.L.L.C.', ' PLC', ' Plc', ' plc',
-          ' Inc.', ' Incorporated', ' International', ' Cos', ' Group',
+          ' Inc.', ' Incorporated', ' International', ' Cos',
           ' Holdings', ' Holding']
             
-    #' Management Co.', ' Capital Management', ' Asset Management', ' Management', '& Co']
+    #' Group', ' Management Co.', ' Capital Management', ' Asset Management', ' Management', '& Co']
 
     for s in sw:
         text = text.replace(s, ' ')

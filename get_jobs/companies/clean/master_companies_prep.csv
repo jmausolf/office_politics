@@ -4,7 +4,7 @@ f1000_1,Geico,2.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_2,Apple,3.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_3,ExxonMobil,4.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_4,McKesson,5.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_5,UnitedHealth,6.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_5,UnitedHealth Group,6.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_6,CVS Health,7.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_7,General Motors,8.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_8,AT&T,9.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -65,7 +65,7 @@ f1000_62,HCA,63.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_63,Coca-Cola,64.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_64,New York Life Insurance,65.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_65,Centene,66.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_66,American Airlines,67.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_66,American Airlines Group,67.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_67,Nationwide,68.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_68,Merck,69.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_69,Cigna,70.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -73,10 +73,10 @@ f1000_70,Delta Air Lines,71.0,fortune1000,data_science,stats,quant,mba,consultan
 f1000_71,Best Buy,72.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_72,Honeywell,73.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_73,Caterpillar,74.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_74,Liberty Mutual Insurance,75.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_74,Liberty Mutual Insurance Group,75.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_75,Morgan Stanley,76.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_76,Massachusetts Mutual Life Insurance,77.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_77,Goldman Sachs,78.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_77,Goldman Sachs Group,78.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_78,Energy Transfer Equity,79.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_79,TIAA,80.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_80,Oracle,81.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -140,18 +140,18 @@ f1000_137,Southwest Airlines,138.0,fortune1000,data_science,stats,quant,mba,cons
 f1000_138,Emerson Electric,139.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_139,Staples,140.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_140,Plains GP,141.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_141,Penske Automotive,142.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_141,Penske Automotive Group,142.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_142,Union Pacific,143.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_143,Danaher,144.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_144,Southern,145.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_145,ManpowerGroup,146.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_146,Bristol-Myers Squibb,147.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_147,Altria,148.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_147,Altria Group,148.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_148,Fluor,149.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_149,Kohl's,150.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_150,Lear,151.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_151,Jabil,152.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_152,Hartford Financial Services,153.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_152,Hartford Financial Services Group,153.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_153,Thermo Fisher Scientific,154.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_154,Kimberly-Clark,155.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_155,Molina Healthcare,156.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -164,12 +164,12 @@ f1000_161,Xerox,162.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_162,Marriott,163.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_163,Paccar,164.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_164,General Mills,165.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_165,PNC Financial Services,166.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_165,PNC Financial Services Group,166.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_166,American Electric Power,167.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_167,Icahn Enterprises,168.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_168,Nucor,169.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_169,NextEra Energy,170.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_170,Performance Food,171.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_170,Performance Food Group,171.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_171,PBF Energy,172.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_172,Halliburton,173.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_173,CarMax,174.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -177,7 +177,7 @@ f1000_174,Freeport-McMoRan,175.0,fortune1000,data_science,stats,quant,mba,consul
 f1000_175,Whole Foods Market,176.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_176,Bank of New York Mellon,177.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_177,Gap,178.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_178,Omnicom,179.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_178,Omnicom Group,179.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_179,Genuine Parts,180.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_180,DaVita,181.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_181,Colgate-Palmolive,182.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -212,7 +212,7 @@ f1000_209,Marsh & McLennan,210.0,fortune1000,data_science,stats,quant,mba,consul
 f1000_210,Ecolab,211.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_211,C.H. Robinson Worldwide,212.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_212,Loews,213.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_213,CBRE,214.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_213,CBRE Group,214.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_214,Kinder Morgan,215.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_215,Kellogg,216.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_216,Western Digital,217.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -244,7 +244,7 @@ f1000_241,First Data,242.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_242,Henry Schein,243.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_243,Toys 'R' Us,244.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_244,BB&T,245.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_245,Reinsurance of America,246.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_245,Reinsurance Group of America,246.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_246,Core-Mark,247.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_247,Biogen,248.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_248,Las Vegas Sands,249.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -256,8 +256,8 @@ f1000_253,Celgene,254.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_254,BlackRock,255.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_255,Xcel Energy,256.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_256,CSX,257.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_257,Unum,258.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_258,Jacobs Engineering,259.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_257,Unum Group,258.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_258,Jacobs Engineering Group,259.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_259,Lennar,260.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_260,Group 1 Automotive,261.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_261,Leucadia National,262.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -266,7 +266,7 @@ f1000_263,PayPal,264.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_264,Applied Materials,265.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_265,Voya Financial,266.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_266,Mastercard,267.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_267,Priceline,268.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_267,Priceline Group,268.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_268,Liberty Interactive,269.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_269,AutoZone,270.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_270,State Street,271.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -306,18 +306,18 @@ f1000_303,LKQ,304.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_304,BorgWarner,305.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_305,Ball,306.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_306,CST Brands,307.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_307,Public Service Enterprise,308.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_307,Public Service Enterprise Group,308.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_308,Eastman Chemical,309.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_309,eBay,310.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_310,Mohawk Industries,311.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_311,Oneok,312.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_312,Frontier Communications,313.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_313,Netflix,314.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_314,American Family Insurance,315.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_314,American Family Insurance Group,315.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_315,Thrivent Financial for Lutherans,316.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_316,Expedia,317.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_317,Lithia Motors,318.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_318,Avis Budget,319.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_318,Avis Budget Group,319.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_319,Reliance Steel & Aluminum,320.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_320,GameStop,321.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_321,Tenneco,322.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -343,7 +343,7 @@ f1000_340,Weyerhaeuser,341.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_341,Mutual of Omaha Insurance,342.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_342,Chesapeake Energy,343.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_343,Anadarko Petroleum,344.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_344,Interpublic,345.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_344,Interpublic Group,345.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_345,J.M. Smucker,346.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_346,Steel Dynamics,347.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_347,Foot Locker,348.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -358,7 +358,7 @@ f1000_355,EOG Resources,356.0,fortune1000,data_science,stats,quant,mba,consultan
 f1000_356,Charles Schwab,357.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_357,Eversource Energy,358.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_358,Anixter,359.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_359,Emcor,360.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_359,EMCOR Group,360.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_360,Assurant,361.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_361,CenterPoint Energy,362.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_362,Harris,363.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -366,7 +366,7 @@ f1000_363,HD Supply,364.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_364,PPL,365.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_365,Quest Diagnostics,366.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_366,Williams,367.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_367,WEC Energy,368.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_367,WEC Energy Group,368.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_368,Hershey,369.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_369,AGCO,370.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_370,Ralph Lauren,371.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -380,9 +380,9 @@ f1000_377,Alliance Data Systems,378.0,fortune1000,data_science,stats,quant,mba,c
 f1000_378,Computer Sciences,379.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_379,Huntington Ingalls Industries,380.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_380,Leidos,381.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_381,Erie Insurance,382.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_381,Erie Insurance Group,382.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_382,Tesla,383.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_383,Ascena Retail,384.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_383,Ascena Retail Group,384.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_384,Darden Restaurants,385.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_385,Harman Industries,386.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_386,Nvidia,387.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -408,15 +408,15 @@ f1000_405,Activision Blizzard,406.0,fortune1000,data_science,stats,quant,mba,con
 f1000_406,J.B. Hunt Transport Services,407.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_407,Constellation Brands,408.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_408,NCR,409.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_409,Asbury Automotive,410.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_410,American Financial,411.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_409,Asbury Automotive Group,410.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_410,American Financial Group,411.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_411,Discovery Communications,412.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_412,Berry Global,413.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_412,Berry Global Group,413.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_413,Sanmina,414.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_414,CalAtlantic,415.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_415,Dr Pepper Snapple,416.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_414,CalAtlantic Group,415.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_415,Dr Pepper Snapple Group,416.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_416,Dillard's,417.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_417,HRG,418.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_417,HRG Group,418.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_418,CMS Energy,419.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_419,Graybar Electric,420.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_420,Builders FirstSource,421.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -436,7 +436,7 @@ f1000_433,St. Jude Medical,434.0,fortune1000,data_science,stats,quant,mba,consul
 f1000_434,Harley-Davidson,435.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_435,Regions Financial,436.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_436,Intercontinental Exchange,437.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_437,Alaska Air,438.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_437,Alaska Air Group,438.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_438,Old Republic,439.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_439,Lam Research,440.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_440,AK Steel,441.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -449,7 +449,7 @@ f1000_446,Dana,447.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_447,Realogy,448.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_448,American Tower,449.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_449,Packaging Corp. of America,450.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_450,Citizens Financial,451.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_450,Citizens Financial Group,451.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_451,United Rentals,452.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_452,Clorox,453.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_453,Genesis Healthcare,454.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -475,13 +475,13 @@ f1000_472,Insight Enterprises,473.0,fortune1000,data_science,stats,quant,mba,con
 f1000_473,Mattel,474.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_474,AmTrust Financial Services,475.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_475,Cincinnati Financial,476.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_476,Simon Property,477.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_476,Simon Property Group,477.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_477,Western Union,478.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_478,KeyCorp,479.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_479,Delek US,480.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_480,Booz Allen Hamilton,481.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_481,Chemours,482.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_482,Western & Southern Financial,483.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_482,Western & Southern Financial Group,483.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_483,Celanese,484.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_484,Windstream,485.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_485,Seaboard,486.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -501,7 +501,7 @@ f1000_498,Vistra Energy,499.0,fortune1000,data_science,stats,quant,mba,consultan
 f1000_499,ABM Industries,500.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_500,Northern Trust,501.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_501,MasTec,502.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_502,Blackstone,503.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_502,Blackstone Group,503.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_503,Telephone & Data Systems,504.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_504,Domtar,505.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_505,Williams-Sonoma,506.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -513,9 +513,9 @@ f1000_510,Fortune Brands Home & Security,511.0,fortune1000,data_science,stats,qu
 f1000_511,Brookdale Senior Living,512.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_512,Tutor Perini,513.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_513,Navient,514.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_514,Neiman Marcus,515.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_514,Neiman Marcus Group,515.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_515,Ashland Global,516.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_516,Hanover Insurance,517.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_516,Hanover Insurance Group,517.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_517,CommScope,518.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_518,Spectra Energy,519.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_519,Cintas,520.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -530,7 +530,7 @@ f1000_527,Under Armour,528.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_528,RPM,529.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_529,Cerner,530.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_530,Sonoco Products,531.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_531,Securian Financial,532.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_531,Securian Financial Group,532.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_532,Peabody Energy,533.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_533,YRC Worldwide,534.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_534,Commercial Metals,535.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -548,7 +548,7 @@ f1000_545,Coach,546.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_546,Brunswick,547.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_547,Wynn Resorts,548.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_548,Orbital ATK,549.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_549,CIT,550.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_549,CIT Group,550.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_550,Science Applications,551.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_551,Hyatt Hotels,552.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_552,McCormick,553.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -567,7 +567,7 @@ f1000_564,Advanced Micro Devices,565.0,fortune1000,data_science,stats,quant,mba,
 f1000_565,USG,566.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_566,KBR,567.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_567,Bloomin' Brands,568.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_568,MDU Resources,569.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_568,MDU Resources Group,569.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_569,CSRA,570.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_570,Laureate Education,571.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_571,Scana,572.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -588,7 +588,7 @@ f1000_585,Swift Transportation,586.0,fortune1000,data_science,stats,quant,mba,co
 f1000_586,Bemis,587.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_587,Tiffany,588.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_588,Flowserve,589.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_589,CNO Financial,590.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_589,CNO Financial Group,590.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_590,Fastenal,591.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_591,Sally Beauty,592.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_592,American Axle & Manufacturing,593.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -599,7 +599,7 @@ f1000_596,Boise Cascade,597.0,fortune1000,data_science,stats,quant,mba,consultan
 f1000_597,ON Semiconductor,598.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_598,Chipotle Mexican Grill,599.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_599,Amkor Technology,600.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_600,Triumph,601.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_600,Triumph Group,601.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_601,OneMain,602.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_602,General Cable,603.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_603,Ametek,604.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -631,14 +631,14 @@ f1000_628,Silgan,629.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_629,American Eagle Outfitters,630.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_630,Moody's,631.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_631,Calumet Specialty Products Partners,632.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_632,CME,633.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_632,CME Group,633.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_633,KB Home,634.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_634,Vulcan Materials,635.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_635,Platform Specialty Products,636.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_636,Vantiv,637.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_637,Skechers U.S.A.,638.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_638,Zebra Technologies,639.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_639,Hub,640.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_639,Hub Group,640.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_640,HSN,641.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_641,Stericycle,642.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_642,National General,643.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -681,10 +681,10 @@ f1000_678,Acuity Brands,679.0,fortune1000,data_science,stats,quant,mba,consultan
 f1000_679,Skyworks Solutions,680.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_680,FMC,681.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_681,Amerco,682.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_682,CUNA Mutual,683.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_682,CUNA Mutual Group,683.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_683,Brinker,684.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_684,Buckeye Partners,685.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_685,Warner Music,686.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_685,Warner Music Group,686.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_686,Universal Forest Products,687.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_687,American National Insurance,688.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_688,Mercury General,689.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -694,9 +694,9 @@ f1000_691,Aaron's,692.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_692,Visteon,693.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_693,Carter's,694.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_694,Meritor,695.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_695,Regal Entertainment,696.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_695,Regal Entertainment Group,696.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_696,Mednax,697.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_697,TransDigm,698.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_697,TransDigm Group,698.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_698,Landstar System,699.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_699,Puget Energy,700.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_700,Coca-Cola Bottling,701.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -715,13 +715,13 @@ f1000_712,Brown-Forman,713.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_713,Alexion Pharmaceuticals,714.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_714,KapStone Paper & Packaging,715.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_715,Time,716.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_716,TriNet,717.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_716,TriNet Group,717.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_717,Steelcase,718.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_718,EchoStar,719.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_719,Sentry Insurance,720.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_719,Sentry Insurance Group,720.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_720,Monster Beverage,721.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_721,Gannett,722.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_722,Fossil,723.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_722,Fossil Group,723.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_723,Univision Communications,724.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_724,Meritage Homes,725.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_725,MRC Global,726.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -759,7 +759,7 @@ f1000_756,Worthington Industries,757.0,fortune1000,data_science,stats,quant,mba,
 f1000_757,Sanderson Farms,758.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_758,Wabco,759.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_759,Panera Bread,760.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_760,Metaldyne Performance,761.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_760,Metaldyne Performance Group,761.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_761,Medical Mutual of Ohio,762.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_762,AMC Networks,763.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_763,Clean Harbors,764.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -767,7 +767,7 @@ f1000_764,Hovnanian Enterprises,765.0,fortune1000,data_science,stats,quant,mba,c
 f1000_765,TrueBlue,766.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_766,Crane,767.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_767,ServiceMaster Global,768.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_768,Sinclair Broadcast,769.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_768,Sinclair Broadcast Group,769.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_769,Mutual of America Life Insurance,770.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_770,BGC Partners,771.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_771,DSW,772.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -824,19 +824,19 @@ f1000_821,On Assignment,822.0,fortune1000,data_science,stats,quant,mba,consultan
 f1000_822,Southwestern Energy,823.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_823,Parexel,824.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_824,Equity Residential,825.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_825,J.Crew,826.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_825,J.Crew Group,826.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_826,Synopsys,827.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_827,Moog,828.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_828,Cabot,829.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_829,ITT,830.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_830,TRI Pointe,831.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_830,TRI Pointe Group,831.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_831,Maximus,832.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_832,Illumina,833.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_833,Amica Mutual Insurance,834.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_834,Alere,835.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_835,Toro,836.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_836,Sprague Resources,837.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_837,G-III Apparel,838.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_837,G-III Apparel Group,838.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_838,Hawaiian Electric Industries,839.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_839,Pinnacle Entertainment,840.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_840,Columbia Sportswear,841.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -863,11 +863,11 @@ f1000_860,EnerSys,861.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_861,Snyder's-Lance,862.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_862,Benchmark Electronics,863.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_863,West,864.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_864,Selective Insurance,865.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_864,Selective Insurance Group,865.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_865,Party City Holdco,866.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_866,Cheesecake Factory,867.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_867,Lincoln Electric,868.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_868,Carlyle,869.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_868,Carlyle Group,869.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_869,Enable Midstream Partners,870.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_870,Oceaneering,871.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_871,Vista Outdoor,872.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -890,10 +890,10 @@ f1000_887,Nu Skin Enterprises,888.0,fortune1000,data_science,stats,quant,mba,con
 f1000_888,Magellan Midstream Partners,889.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_889,HNI,890.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_890,Maxim Integrated Products,891.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_891,Affiliated Managers,892.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_891,Affiliated Managers Group,892.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_892,Express,893.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_893,Boyd Gaming,894.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_894,GEO,895.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_894,GEO Group,895.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_895,Tribune Media,896.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_896,Microchip Technology,897.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_897,Fitbit,898.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -909,7 +909,7 @@ f1000_906,Cliffs Natural Resources,907.0,fortune1000,data_science,stats,quant,mb
 f1000_907,Curtiss-Wright,908.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_908,Verisk Analytics,909.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_909,NOW,910.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_910,Apollo Education,911.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_910,Apollo Education Group,911.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_911,Kennametal,912.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_912,H.B. Fuller,913.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_913,PharMerica,914.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -922,7 +922,7 @@ f1000_919,Red Hat,920.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_920,NewMarket,921.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_921,Hospitality Properties Trust,922.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_922,AvalonBay Communities,923.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_923,Renewable Energy,924.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_923,Renewable Energy Group,924.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_924,Consol Energy,925.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_925,Ferrellgas Partners,926.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_926,Tower,927.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -955,7 +955,7 @@ f1000_952,Nuance Communications,953.0,fortune1000,data_science,stats,quant,mba,c
 f1000_953,Matson,954.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_954,Popular,955.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_955,Alliance,956.0,fortune1000,data_science,stats,quant,mba,consultant
-f1000_956,REV,957.0,fortune1000,data_science,stats,quant,mba,consultant
+f1000_956,REV Group,957.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_957,Rexnord,958.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_958,Cypress Semiconductor,959.0,fortune1000,data_science,stats,quant,mba,consultant
 f1000_959,Portland General Electric,960.0,fortune1000,data_science,stats,quant,mba,consultant
@@ -1006,11 +1006,11 @@ hedge_3,Renaissance Technologies,4.0,hedge_fund_100,quant,data_science,stats,con
 hedge_4,Two Sigma,5.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_5,D. E. Shaw & Co,6.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_6,Millennium Management,7.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_7,Man,8.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_8,Och-Ziff Capital Management,9.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_9,Winton,10.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_7,Man Group,8.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_8,Och-Ziff Capital Management Group,9.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_9,Winton Group,10.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_10,Elliott Management,11.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_11,Baupost,12.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_11,Baupost Group,12.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_12,Adage Capital Management,13.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_13,Viking Global Investors,14.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_15,Davidson Kempner Capital Management,16.0,hedge_fund_100,quant,data_science,stats,consultant,mba
@@ -1025,7 +1025,7 @@ hedge_23,Platinum Asset Management,24.0,hedge_fund_100,quant,data_science,stats,
 hedge_24,Hillhouse Capital Management,25.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_25,ValueAct Capital Management,26.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_26,Pacific Investment Management Co,27.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_27,Anchorage Capital,28.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_27,Anchorage Capital Group,28.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_28,York Capital Management,29.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_29,Appaloosa Management,30.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_30,Canyon Partners,31.0,hedge_fund_100,quant,data_science,stats,consultant,mba
@@ -1038,7 +1038,7 @@ hedge_36,Cevian Capital,37.0,hedge_fund_100,quant,data_science,stats,consultant,
 hedge_37,Brummer & Partners,38.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_38,Wellington Alternative Investments,39.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_39,Moore Capital Management,40.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_40,Fortress Investment,41.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_40,Fortress Investment Group,41.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_41,Trian Fund Management,42.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_42,Value Partners,43.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_43,Goldman Sachs Asset Management,44.0,hedge_fund_100,quant,data_science,stats,consultant,mba
@@ -1075,12 +1075,12 @@ hedge_73,Maverick Capital,73.0,hedge_fund_100,quant,data_science,stats,consultan
 hedge_74,Coatue Management,75.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_75,Grantham Mayo Van Otterloo,76.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_76,Cerberus Capital Management,77.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_77,Senator Investment,78.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_77,Senator Investment Group,78.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_78,Systematica Investments,79.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_79,Greenlight Capital,80.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_80,Caxton Associates,81.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_81,Lazard Asset Management,82.0,hedge_fund_100,quant,data_science,stats,consultant,mba
-hedge_82,Candriam Investors,83.0,hedge_fund_100,quant,data_science,stats,consultant,mba
+hedge_82,Candriam Investors Group,83.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_83,Pictet Asset Management,84.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_84,Silver Point Capital,85.0,hedge_fund_100,quant,data_science,stats,consultant,mba
 hedge_85,Odey Asset Management,86.0,hedge_fund_100,quant,data_science,stats,consultant,mba
@@ -1201,25 +1201,25 @@ vault_98,Littler Mendelson,99.0,vault-law-100,mba,consultant,data_science,stats,
 vault_99,Wiley Rein,100.0,vault-law-100,mba,consultant,data_science,stats,quant
 vault_100,McKinsey & Company,1.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_101,Bain & Company,2.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_102,The Boston Consulting,3.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_102,The Boston Consulting Group,3.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_103,Deloitte Consulting,4.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_104,Oliver Wyman,5.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_105,Putnam Associates,6.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_106,EY-Parthenon,7.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_107,PricewaterhouseCoopers Advisory Services,8.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_108,The Bridgespan,9.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_108,The Bridgespan Group,9.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_109,Accenture,10.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_110,A.T. Kearney,11.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_111,KPMG,12.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_112,Strategy& part of the PwC network,13.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_113,L.E.K. Consulting,14.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_114,GE Healthcare Partners,15.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_115,The Brattle,16.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_115,The Brattle Group,16.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_116,Roland Berger,17.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_117,Insight Sourcing,18.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_118,Analysis,19.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_117,Insight Sourcing Group,18.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_118,Analysis Group,19.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_119,Alvarez & Marsal,20.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_121,The Keystone,22.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_121,The Keystone Group,22.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_122,ghSMART,23.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_123,ClearView Healthcare Partners,24.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_124,ZS,25.0,vault-consulting-50,consultant,data_science,mba,stats,quant
@@ -1231,16 +1231,16 @@ vault_129,Simon-Kucher & Partners,30.0,vault-consulting-50,consultant,data_scien
 vault_131,Protiviti,32.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_132,Trinity Partners,33.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_133,Clarkston Consulting,34.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_134,Ignyte,35.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_134,Ignyte Group,35.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_135,Bates White Economic Consulting,36.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_136,NERA Economic Consulting,37.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_137,Charles River Associates,38.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_138,The Chartis,39.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_139,Cicero,40.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_138,The Chartis Group,39.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_139,Cicero Group,40.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_140,Innosight,41.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_141,Censeo Consulting,42.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_141,Censeo Consulting Group,42.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_142,Keystone Strategy,43.0,vault-consulting-50,consultant,data_science,mba,stats,quant
-vault_143,The Cambridge,44.0,vault-consulting-50,consultant,data_science,mba,stats,quant
+vault_143,The Cambridge Group,44.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_144,Arthur D. Little,45.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_145,Smartronix,46.0,vault-consulting-50,consultant,data_science,mba,stats,quant
 vault_146,Kenway Consulting,47.0,vault-consulting-50,consultant,data_science,mba,stats,quant
@@ -1268,7 +1268,7 @@ vault_169,J.P. Morgan,18.0,vault-banking-50,quant,data_science,mba,consultant,st
 vault_170,Credit Suisse,19.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_171,Barclays Investment Bank,20.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_172,PJT Partners,21.0,vault-banking-50,quant,data_science,mba,consultant,stats
-vault_173,Citi Institutional Clients,22.0,vault-banking-50,quant,data_science,mba,consultant,stats
+vault_173,Citi Institutional Clients Group,22.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_174,Jefferies,23.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_175,Rothschild,24.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_176,Allen & Company,25.0,vault-banking-50,quant,data_science,mba,consultant,stats
@@ -1276,7 +1276,7 @@ vault_177,Qatalyst Partners,26.0,vault-banking-50,quant,data_science,mba,consult
 vault_178,Deutsche Bank AG,27.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_179,RBC Capital Markets,28.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_180,Wells Fargo & Company,29.0,vault-banking-50,quant,data_science,mba,consultant,stats
-vault_181,Macquarie,30.0,vault-banking-50,quant,data_science,mba,consultant,stats
+vault_181,Macquarie Group,30.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_182,Piper Jaffray Companies,31.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_183,BMO Capital Markets,32.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_184,Oppenheimer & Co,33.0,vault-banking-50,quant,data_science,mba,consultant,stats
@@ -1286,14 +1286,14 @@ vault_187,BNP Paribas USA,36.0,vault-banking-50,quant,data_science,mba,consultan
 vault_188,Nomura,37.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_189,HSBC North America,38.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_191,LionTree Advisors,40.0,vault-banking-50,quant,data_science,mba,consultant,stats
-vault_192,Royal Bank of Scotland,41.0,vault-banking-50,quant,data_science,mba,consultant,stats
+vault_192,Royal Bank of Scotland Group,41.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_193,Cantor Fitzgerald,42.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_195,Tudor Pickering Holt & Co,44.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_196,Societe Generale Corporate & Investment Banking,45.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_198,EY,47.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_199,Brown Brothers Harriman,48.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_200,CIBC World Markets,49.0,vault-banking-50,quant,data_science,mba,consultant,stats
-vault_201,Lloyds Banking,50.0,vault-banking-50,quant,data_science,mba,consultant,stats
+vault_201,Lloyds Banking Group,50.0,vault-banking-50,quant,data_science,mba,consultant,stats
 vault_202,PwC,1.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_203,Deloitte,2.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_205,Grant Thornton,4.0,vault-accounting-50,mba,stats,data_science,consultant,quant
@@ -1332,7 +1332,7 @@ vault_237,Cohen & Company,36.0,vault-accounting-50,mba,stats,data_science,consul
 vault_238,UHY Advisors,37.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_239,RubinBrown,38.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_240,Mazars USA,39.0,vault-accounting-50,mba,stats,data_science,consultant,quant
-vault_241,The Siegfried,40.0,vault-accounting-50,mba,stats,data_science,consultant,quant
+vault_241,The Siegfried Group,40.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_242,Citrin Cooperman & Company,41.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_243,Blum Shapiro & Co,42.0,vault-accounting-50,mba,stats,data_science,consultant,quant
 vault_244,Carr Riggs & Ingram,43.0,vault-accounting-50,mba,stats,data_science,consultant,quant
@@ -1376,11 +1376,11 @@ nasdaq_VEEV,Veeva Systems,64.0,nasdaq_tech,data_science,stats,quant,mba,consulta
 nasdaq_ANSS,Ansys,68.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_STM,STMicroelectronics N.V.,70.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_FTNT,Fortinet,72.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_MTCH,Match,74.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_MTCH,Match Group,74.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TTWO,Take-Two Interactive Software,75.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SSNC,SS&C Technologies,76.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_STX,Seagate Technology,77.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_MRVL,Marvell Technology,80.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_MRVL,Marvell Technology Group,80.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ASML,Asml N.V.,81.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_PTC,PTC,83.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_DATA,Tableau Software,84.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1391,12 +1391,12 @@ nasdaq_OTEX,Open Text,91.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ATHM,Autohome,92.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_DBX,Dropbox,93.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_LN,LINE,95.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_IPG,Interpublic of Companies,96.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_IPG,Interpublic Group of Companies,96.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_DOX,Amdocs Limited,97.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_WUBA,58.com,98.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_NTNX,Nutanix,100.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SNAP,Snap,101.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_ULTI,The Ultimate Software,102.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_ULTI,The Ultimate Software Group,102.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_MFGP,Micro Focus Intl,103.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ASX,ASE Technology,105.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_FDS,FactSet Research Systems,107.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1428,7 +1428,7 @@ nasdaq_HUBS,HubSpot,134.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ARRS,Arris,135.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ESTC,Elastic N.V.,137.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_MPWR,Monolithic Power Systems,139.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_TSG,The Stars,140.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_TSG,The Stars Group,140.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_RP,RealPage,141.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_PFPT,Proofpoint,142.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_NEWR,New Relic,144.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1510,7 +1510,7 @@ nasdaq_SAIL,SailPoint Technologies,233.0,nasdaq_tech,data_science,stats,quant,mb
 nasdaq_QTWO,Q2,234.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TENB,Tenable,235.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SEND,SendGrid,236.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_DSGX,The Descartes Systems,237.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_DSGX,The Descartes Systems Group,237.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ZUO,Zuora,238.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_GLOB,Globant S.A.,239.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CRUS,Cirrus Logic,240.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1585,7 +1585,7 @@ nasdaq_CLS,Celestica,316.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_NXGN,NextGen Healthcare,317.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TLND,Talend S.A.,318.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SSYS,Stratasys,319.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_EIGI,Endurance,320.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_EIGI,Endurance Group,320.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_FORM,FormFactor,321.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CSIQ,Canadian Solar,322.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_PLUS,ePlus,323.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1597,7 +1597,7 @@ nasdaq_LSCC,Lattice Semiconductor,330.0,nasdaq_tech,data_science,stats,quant,mba
 nasdaq_MCRN,Milacron,331.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SXI,Standex,332.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CBLK,Carbon Black,333.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_AGMH,AGM,335.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_AGMH,AGM Group,335.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_KAI,Kadant,336.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CTS,CTS,338.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_RMBS,Rambus,339.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1617,7 +1617,7 @@ nasdaq_EXTR,Extreme Networks,353.0,nasdaq_tech,data_science,stats,quant,mba,cons
 nasdaq_SOHU,Sohu.com Limited,354.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_EXTN,Exterran,355.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_PLAB,Photronics,356.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_TGH,Textainer Limited,357.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_TGH,Textainer Group Limited,357.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TCX,Tucows,358.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TYPE,Monotype Imaging,359.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_LASR,nLIGHT,361.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1629,7 +1629,7 @@ nasdaq_SPNS,Sapiens Corporation N.V.,366.0,nasdaq_tech,data_science,stats,quant,
 nasdaq_QTNA,Quantenna Communications,367.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_DOMO,Domo,368.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CMTL,Comtech Telecommunications,369.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_VNET,21Vianet,370.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_VNET,21Vianet Group,370.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ACLS,Axcelis Technologies,371.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SGH,SMART Global,372.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_RBBN,Ribbon Communications,373.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1686,7 +1686,7 @@ nasdaq_IMMR,Immersion,423.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SNCR,Synchronoss Technologies,424.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CDLX,Cardlytics,425.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SRT,StarTek,426.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_DSPG,DSP,427.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_DSPG,DSP Group,427.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_MJCO,Majesco,428.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_BCOV,Brightcove,429.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_AOSL,Alpha and Omega Semiconductor Limited,430.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1701,7 +1701,7 @@ nasdaq_TEUM,Pareteum,439.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ALLT,Allot,440.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_RUBI,The Rubicon Project,441.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_WATT,Energous,442.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_LEAF,Leaf,443.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_LEAF,Leaf Group,443.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_AVID,Avid Technology,444.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_KVHI,KVH Industries,445.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TRVG,trivago N.V.,446.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1714,11 +1714,11 @@ nasdaq_ACMR,ACM Research,452.0,nasdaq_tech,data_science,stats,quant,mba,consulta
 nasdaq_INS,Intelligent Systems,453.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_FSNN,Fusion Connect,454.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_IOTS,Adesto Technologies,455.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_PCYG,Park City,456.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_PCYG,Park City Group,456.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_GSIT,GSI Technology,457.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_BRQS,Borqs Technologies,458.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_CYRN,Cyren,459.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_ALYA,Alithya,460.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_ALYA,Alithya Group,460.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_MDCA,MDC Partners,461.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_VUZI,Vuzix,462.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_EVER,EverQuote,463.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1743,17 +1743,17 @@ nasdaq_AIRG,Airgain,481.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_RNWK,RealNetworks,482.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_MRAM,Everspin Technologies,483.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_KOPN,Kopin,484.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_MAMS,MAM Software,485.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_MAMS,MAM Software Group,485.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_VERI,Veritone,486.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SQNS,Sequans Communications S.A.,487.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_GEC,Great Elm Capital,488.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_GEC,Great Elm Capital Group,488.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ASUR,Asure Software,489.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_IMOS,ChipMOS TECHNOLOGIES,490.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_QUIK,QuickLogic,491.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_NTWK,NetSol Technologies,492.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_PCTI,PC-Tel,493.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_GSB,GlobalSCAPE,494.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_SGOC,Sgoco,495.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_SGOC,SGOCO Group,495.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_NH,NantHealth,496.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_AWRE,Aware,497.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_LTRX,Lantronix,498.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1770,12 +1770,12 @@ nasdaq_ASYS,Amtech Systems,508.0,nasdaq_tech,data_science,stats,quant,mba,consul
 nasdaq_VISI,Volt Information Sciences,509.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SYNC,Synacor,510.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_IEC,IEC Electronics,511.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_CTG,Computer Task,512.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_CTG,Computer Task Group,512.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_KTCC,Key Tronic,513.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_DLHC,DLH,514.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_AEYE,AudioEye,515.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SEAC,SeaChange,516.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_ICLK,iClick Interactive Asia Limited,517.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_ICLK,iClick Interactive Asia Group Limited,517.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_WISA,Summit Wireless Technologies,518.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_IMI,Intermolecular,519.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_BKTI,BK Technologies,520.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1792,7 +1792,7 @@ nasdaq_RCMT,RCM Technologies,530.0,nasdaq_tech,data_science,stats,quant,mba,cons
 nasdaq_ATOM,Atomera,531.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_PIXY,ShiftPixy,532.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SPRT,support.com,533.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_WSTG,Wayside Technology,534.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_WSTG,Wayside Technology Group,534.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_MIND,Mitcham Industries,535.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_RESN,Resonant,536.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_HSON,Hudson Global,537.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1831,7 +1831,7 @@ nasdaq_CCNI,Command Center,569.0,nasdaq_tech,data_science,stats,quant,mba,consul
 nasdaq_HHS,Harte-Hanks,570.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_IIJI,Internet Initiative Japan,571.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_IPAS,iPass,572.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_AMCN,AirMedia,573.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_AMCN,AirMedia Group,573.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_EVOL,Evolving Systems,574.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_ACY,AeroCentury,575.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_LINK,Interlink Electronics,576.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1840,7 +1840,7 @@ nasdaq_SCKT,Socket Mobile,578.0,nasdaq_tech,data_science,stats,quant,mba,consult
 nasdaq_QBAK,Qualstar,579.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_SGMA,SigmaTron,580.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_BKYI,BIO-key,581.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_JOB,GEE,582.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_JOB,GEE Group,582.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_NNDM,Nano Dimension,583.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_TRT,Trio-Tech,584.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_BDR,Blonder Tongue Laboratories,585.0,nasdaq_tech,data_science,stats,quant,mba,consultant
@@ -1865,7 +1865,7 @@ nasdaq_SCON,Superconductor Technologies,603.0,nasdaq_tech,data_science,stats,qua
 nasdaq_BLIN ,Bridgeline Digital,604.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_FRSX,Foresight Autonomous,605.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 nasdaq_JMU,JMU Limited,606.0,nasdaq_tech,data_science,stats,quant,mba,consultant
-nasdaq_SFET,Safe-T,607.0,nasdaq_tech,data_science,stats,quant,mba,consultant
+nasdaq_SFET,Safe-T Group,607.0,nasdaq_tech,data_science,stats,quant,mba,consultant
 glassdoor_0,Heap,1.0,glassdoor_med_small,data_science,stats,quant,mba,consultant
 glassdoor_1,Horizon Innovations,2.0,glassdoor_med_small,data_science,stats,quant,mba,consultant
 glassdoor_2,Silverline,3.0,glassdoor_med_small,data_science,stats,quant,mba,consultant
@@ -1918,7 +1918,7 @@ glassdoor_48,eXp Realty,49.0,glassdoor_med_small,data_science,stats,quant,mba,co
 glassdoor_51,Zoom Video Communications,2.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_52,In-N-Out Burger,3.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_53,Procore Technologies,4.0,glassdoor_large,data_science,stats,quant,mba,consultant
-glassdoor_54,Boston Consulting,5.0,glassdoor_large,data_science,stats,quant,mba,consultant
+glassdoor_54,Boston Consulting Group,5.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_55,LinkedIn,6.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_57,Google,8.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_58,lululemon,9.0,glassdoor_large,data_science,stats,quant,mba,consultant
@@ -1928,7 +1928,7 @@ glassdoor_63,Slalom,14.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_64,Power Home Remodeling,15.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_67,Ultimate Software,18.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_70,Ryan,21.0,glassdoor_large,data_science,stats,quant,mba,consultant
-glassdoor_71,Sammons Financial,22.0,glassdoor_large,data_science,stats,quant,mba,consultant
+glassdoor_71,Sammons Financial Group,22.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_72,Trader Joe's,23.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_73,Lawrence Livermore National Laboratory,24.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_74,Smile Brands,25.0,glassdoor_large,data_science,stats,quant,mba,consultant
@@ -1966,6 +1966,7 @@ glassdoor_117,MD Anderson Cancer Center,68.0,glassdoor_large,data_science,stats,
 glassdoor_121,Omni Hotels,72.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_122,BAYADA Home Health Care,73.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_123,Aptive Environmental,74.0,glassdoor_large,data_science,stats,quant,mba,consultant
+glassdoor_124,Goldman Sachs,75.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_125,Kimpton Hotels & Restaurants,76.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_127,Great Lakes Caring,78.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_128,Costco Wholesale,79.0,glassdoor_large,data_science,stats,quant,mba,consultant
@@ -1977,9 +1978,10 @@ glassdoor_135,Edward Jones,86.0,glassdoor_large,data_science,stats,quant,mba,con
 glassdoor_138,Texas Health Resources,89.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_139,Sport Clips,90.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_140,Gensler,91.0,glassdoor_large,data_science,stats,quant,mba,consultant
+glassdoor_141,Expedia Group,92.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_142,BOK Financial,93.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_145,Raising Cane's,96.0,glassdoor_large,data_science,stats,quant,mba,consultant
-glassdoor_146,FLIK Hospitality,97.0,glassdoor_large,data_science,stats,quant,mba,consultant
+glassdoor_146,FLIK Hospitality Group,97.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_147,Kaiser Permanente,98.0,glassdoor_large,data_science,stats,quant,mba,consultant
 glassdoor_148,World Wide Technology,99.0,glassdoor_large,data_science,stats,quant,mba,consultant
 forbes_0,Stripe,1.0,forbes_cloud100,data_science,stats,quant,mba,consultant
