@@ -53,13 +53,69 @@ def remove_trailing_corp(text):
         return text
 
 
+def remove_upper_trailing(text):
+    text = text.strip()
+    exceptions = ['NEWS CORP', 'SCIENCE APPLICATIONS INTERNATIONAL CORPORATION']
+
+    if text.upper() in exceptions:
+        return text
+    else:
+        text = re.sub(r'\sINC$', '', text)
+
+        text = re.sub(r'\sCORPORATION$', '', text)
+        text = re.sub(r'\sCORP$', '', text)
+        text = re.sub(r'\sCO$', '', text)
+
+
+        text = re.sub(r'\sGROUP$', '', text)
+        text = re.sub(r'\sGRP$', '', text)
+
+        text = re.sub(r'\sTR$', '', text)
+
+        text = re.sub(r'\sINTERNATIONAL$', '', text)
+        text = re.sub(r'\sINTL$', '', text)
+        
+        return text
+
+
+def repl_amer(text):
+    text = re.sub(r'\sAMER$', ' AMERICA', text)
+    text = re.sub(r'\sAMER\s', ' AMERICA ', text)
+    text = re.sub(r'-AMER\s', '-AMERICA ', text)
+    return text
+
+
+def repl_grp_corp_of(text):
+    text = re.sub(r'\sGRP OF\s', ' GROUP OF ', text)
+    text = re.sub(r'\sCORP OF\s', ' CORPORATION OF ', text)
+    return text
+
+
+def lower_of_and(text):
+    text = re.sub(r'\s[Oo][Ff]\s', ' of ', text)
+    text = re.sub(r'\s[Aa][Nn][Dd]\s', ' and ', text)
+    text = re.sub(r'\.[Cc][Oo][Mm]', '.com', text)
+    return text  
+
+
+def remove_trailing_ABC(text):
+
+        text = re.sub(r'\sA$', '', text)
+        text = re.sub(r'\sB$', '', text)
+        text = re.sub(r'\sC$', '', text)
+        return text
+
+
 def remove_trailing_inc(text):
     text = re.sub(r'\s[Ii][Nn][Cc]$', '', text)
     text = re.sub(r'\s[Ii][Nn][Cc][.]$', '', text)
     return text
 
 def replace_bancorp(text):
-    bancorp_exceptions = ['Zions Bancorp', 'New York Community Bancorp']
+    bancorp_exceptions = ['Zions Bancorp',
+                          'Zions Bancorporation',
+                          'New York Community Bancorp', 
+                          'West Bancorporation']
     if text.title() in bancorp_exceptions:
         return text
     else:
@@ -91,7 +147,7 @@ def clean_col_names(df):
     return df
 
 #For Nasdaq
-def rm_nasdaq_stop_words(text, sw=None):
+def rm_stop_words(text, sw=None):
 
     if sw is None:
         sw = ['LLC', 'LLP', 'Llp', 'LP', 'P.C.', ' International', ' Cos', 'Cos ', 'Group',
@@ -105,11 +161,11 @@ def rm_nasdaq_stop_words(text, sw=None):
     text = re.sub(r'\s{2,}', ' ', text).strip()
     return text
 
-def clean_nasdaq_stop_words(company_name, sw=None):
+def clean_stop_words(company_name, sw=None):
     c = company_name
     c = remove_non_ascii_space(c)    
     c = parens_content_replace(c)
-    c = rm_nasdaq_stop_words(c, sw=sw)    
+    c = rm_stop_words(c, sw=sw)    
     return c
 
 
@@ -220,7 +276,7 @@ def clean_nasdaq(source_file):
           ', Ltd.', ', Ltd', ' Ltd.', ' Ltd',
           ',  Corp.', ' Corp.',
           ', Co.', ' Co.']
-    df['company'] = df['name'].apply(clean_nasdaq_stop_words, sw=sw)
+    df['company'] = df['name'].apply(clean_stop_words, sw=sw)
 
     #Assign ID
     df['list_id'] = 'nasdaq_'+df['symbol']
@@ -294,6 +350,115 @@ def clean_bi(source_file):
     return df
 
 
+## Clean RU3000 Index
+def clean_ru3000(source_file):
+    clean_csv = modify_csv(source_file)
+    df = pd.read_csv(clean_csv)
+    df = clean_col_names(df)
+
+    #Remove Duplicate Companies (Some Have Multiple Symbols)
+    df = df.drop_duplicates('company')
+
+    #Replace & Co
+    rep_and_co1 = lambda x: re.sub(r'\&\sCO\s', ' & COMPANY ', x)
+    rep_and_co2 = lambda x: re.sub(r'\&\sCO$', ' & COMPANY', x)
+    df['company'] = df['company'].apply(rep_and_co1)
+    df['company'] = df['company'].apply(rep_and_co2)
+
+    #Replace Financial Services
+    rep_fs1 = lambda x: x.replace(' FINL SVCS ', ' FINANCIAL ')
+    rep_fs2 = lambda x: x.replace(' FINL', ' FINANCIAL')
+    df['company'] = df['company'].apply(rep_fs1)
+    df['company'] = df['company'].apply(rep_fs2)
+
+    #Replace Properties
+    rep_ps1 = lambda x: x.replace(' PPTYS', ' PROPERTIES')
+    rep_ps2 = lambda x: x.replace(' PPTY', ' PROPERTY')
+    df['company'] = df['company'].apply(rep_ps1)
+    df['company'] = df['company'].apply(rep_ps2)
+
+
+    #Replace Communications
+    rep_comm = lambda x: re.sub(r'\sCOMM$', ' COMMUNICATIONS', x)
+    df['company'] = df['company'].apply(rep_comm)
+
+    #Replace Communities / Community
+    rep_cmntys = lambda x: re.sub(r'\sCMNTYS', ' COMMUNITIES', x)
+    rep_cmnty = lambda x: re.sub(r'\sCMNTY', ' COMMUNITY', x)
+    df['company'] = df['company'].apply(rep_cmntys)
+    df['company'] = df['company'].apply(rep_cmnty)
+
+    #Replace Systems
+    rep_sys1 = lambda x: re.sub(r'\sSYS\s', ' SYSTEMS ', x)
+    rep_sys2 = lambda x: re.sub(r'\sSYS$', ' SYSTEMS', x)
+    df['company'] = df['company'].apply(rep_sys1)
+    df['company'] = df['company'].apply(rep_sys2)
+
+    #Replace International
+    rep_intl = lambda x: x.replace('INTL ', 'INTERNATIONAL ')
+    df['company'] = df['company'].apply(rep_intl)
+
+    #Replace Mortgage
+    rep_mtg = lambda x: x.replace(' MTG', ' MORTGAGE')
+    df['company'] = df['company'].apply(rep_mtg)
+
+    #Replace Trust
+    rep_mtg = lambda x: x.replace(' TR ', ' TRUST ')
+    df['company'] = df['company'].apply(rep_mtg)
+
+    #Replace AMER
+    df['company'] = df['company'].apply(repl_amer)
+
+    #Replace GRP OF / CORP OF
+    df['company'] = df['company'].apply(repl_grp_corp_of)
+
+    #Clean Names Before Adjusting Case
+    sw = [' PLC',
+          ' LTD',
+          ' SERIES A', ' SERIES B', ' SERIES C',
+          ' SER A', 'SER B', 'SER C',
+          ' CLASS A', ' CLASS B', ' CLASS C',
+          ' CL A', ' CL B', ' CL C',
+          ' NV', ' N V',
+          ' SVCS',
+          ' HLDGS', ' HOLDINGS']
+
+    df['company'] = df['company'].apply(clean_stop_words, sw=sw)
+
+    #Remove Lingering ABC
+    df['company'] = df['company'].apply(remove_trailing_ABC)
+
+    #Remove Upper Trailing SW
+    df['company'] = df['company'].apply(remove_upper_trailing)
+
+
+    #Title Case
+    df['company'] = df['company'].apply(lambda x: x.title())
+
+    #Lower Of / And
+    df['company'] = df['company'].apply(lower_of_and)
+
+    #Drop Duplicates by Cleaned Names
+    df = df.drop_duplicates(['company'])
+    df = df.sort_values(['company'])
+
+    #No Rank, Just Use Index
+    df['rank'] = df.index
+    df['rank'] = df['rank'].apply(lambda x: str(x))
+
+    #Assign ID
+    df['list_id'] = 'ru_'+df['ticker']
+    keep_cols = ['list_id', 'company', 'rank']
+    df = df[keep_cols]
+    df['source'] = 'ru3000'
+    df['job_type'] = 'data_science'
+
+    #Save
+    df.to_csv(clean_csv, index=False)
+    return df
+
+
+
 #############################################
 ## Create Preparation File
 #############################################
@@ -307,13 +472,14 @@ df5 = clean_glassdoor('glassdoor_jobs_2019-01-15.csv')
 df6 = clean_forbes('forbes_jobs_2019-01-15.csv')
 df7 = clean_cnbc('cnbc_disruptor50.csv')
 df8 = clean_bi('business_insider_jobs_2019-01-16.csv')
+df9 = clean_ru3000('ru3000.csv')
 
 #TODO 
 #Make Multiple Job_Type Columns for Conditions
 
-prep_df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8], axis=0)
+prep_df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9], axis=0)
 prep_df.to_csv("clean/master_companies_prep.csv", index=False)
-#print(prep_df)
+print(prep_df)
 
 #Append Files
 
@@ -328,6 +494,7 @@ def rm_company_stop_words(text):
 
     sw = [' LLC', ' LLP', ' Llp', ' LP', ' P.C.', ' P.L.L.C.', ' PLC', ' Plc', ' plc',
           ' Inc.', ' Incorporated', ' International', ' Cos',
+          '  N.V.', ' NV', 
           ' Holdings', ' Holding']
             
     #' Group', ' Management Co.', ' Capital Management', ' Asset Management', ' Management', '& Co']
@@ -353,8 +520,13 @@ def clean_company(row, col='company'):
     c = remove_trailing_corp(c)
     c = replace_bancorp(c)
 
+    #Make Long All Upper Case Companies Title Case
     if c.isupper() and len(c) > 4:
         c = c.title()
+
+    #Make Short Companies UPPER CASE
+    if len(c) <= 3:
+        c = c.upper()
 
     c = c.strip()
     
@@ -365,26 +537,16 @@ prep_df['company'] = prep_df.apply(clean_company, axis=1)
 
 ## Adhoc Value Replacements
 prep_df['company'] = prep_df['company'].replace(company_replacements)
-prep_df.drop_duplicates('company', inplace=True)
 
-#########
-## Check Search URL's
+##Drop Based on Lowercase Company Name
+prep_df['company_lower'] = prep_df['company'].apply(lambda x: x.lower())
+prep_df.drop_duplicates('company_lower', inplace=True)
+prep_df = prep_df.drop(['company_lower'], axis=1)
+print(prep_df)
 
-def search_url(company, job_keyword):
-    url_stem = "https://www.indeed.com/jobs?q="
-    job = url_str(job_keyword)
-    cid = "company%3A{}".format(url_str(company))
-    loc = "l=Anywhere"
-    jt = "jt=fulltime"
-    qry = "{}+{}&{}&{}".format(job, cid, loc, jt)
-    url = url_stem+qry
-    return url
 
-def url_str(text):
-    text = text.replace(' ', '+')
-    text = text.replace('&', '%26')
-    text = text.replace("'", '%27')
-    return text
+
+
 
 
 
@@ -437,6 +599,13 @@ make_job_search_cols(prep_df, job_types_dict)
 
 
 
+
+#############################################
+## Duplicate Scrap
+#############################################
+
+
+'''
 def show_possible_duplicates(contains_dupes, threshold=70, scorer=fuzz.token_set_ratio):
     """
     A Modified Version of fuzzywuzzy process.dedupe:
@@ -573,3 +742,5 @@ def dedupe_fuzzy(df, col):
 #df = df.reset_index(drop=True)
 #print(df.shape)
 #df.to_csv("hedge_test2.csv", index=False)
+'''
+
