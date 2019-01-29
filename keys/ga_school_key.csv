@@ -31,20 +31,20 @@ south,quant,Computer Science,L,s08,qa13,Georgia State University,"Atlanta, GA","
 south,quant,Computer Science,L,s06,qa14,Florida International University,"Miami, FL","Miami, FL 33199","11200 SW 8th St, ECS 354","Ph.D. Candidate, Computer Science, School of Computing and Information Sciences","4,30,66"
 south,quant,Machine Learning,H,s07,qa15,the Georgia Institute of Technology,"Atlanta, GA","Atlanta, GA 30332","266 Ferst Drive, KACB 1301","Ph.D. Candidate, Machine Learning, School of Computer Science","179,163,105"
 south,quant,Computer Science,H,s27,qa16,"the University of Texas, Austin","Austin, TX","Austin, TX 78712","2317 Speedway, GDC 5.728B","Ph.D. Candidate, Department of Computer Science","191,87,0"
-westcoast,stats,,H,s17,st01,Stanford University,"Stanford, CA","Stanford, CA 94305",,"Ph.D. Candidate, Department of","140,21,21"
-westcoast,stats,,H,s20,st02,"the University of California, Berkeley","Berkeley, CA","Berkeley, CA 94720",,"Ph.D. Candidate, Department of","0,50,98"
-westcoast,stats,,L,,st05,,,,,"Ph.D. Candidate, Department of",
-westcoast,stats,,L,,st06,,,,,"Ph.D. Candidate, Department of",
-northeast,stats,,H,s09,st03,Harvard University,"Cambridge, MA","Cambridge, MA 02138",,"Ph.D. Candidate, Department of","163,31,52"
-northeast,stats,,H,s45,st04,the University of Pennsylvania,"Philadelphia, PA","Philadelphia, PA 19104",,"Ph.D. Candidate, Department of","0,71,133"
-northeast,stats,,L,,st07,,,,,"Ph.D. Candidate, Department of",
-northeast,stats,,L,,st08,,,,,"Ph.D. Candidate, Department of",
-midwest,stats,,H,s21,st09,the University of Chicago,"Chicago, IL","Chicago, IL 60637",,"Ph.D. Candidate, Department of","128,0,0"
-midwest,stats,,H,s26,st10,the University of Michigan,"Ann Arbor, MI","Ann Arbor, MI 48109",,"Ph.D. Candidate, Department of","4,30,66"
-midwest,stats,,,,st11,,,,,"Ph.D. Candidate, Department of",
-midwest,stats,,L,s30,st12,Western Michigan University,"Kalamazoo, MI","Kalamazoo, MI 49008",,"Ph.D. Candidate, Department of","252,195,15"
-south,stats,,,,st13,,,,,"Ph.D. Candidate, Department of",
-south,stats,,,,st14,,,,,"Ph.D. Candidate, Department of",
+westcoast,stats,Statistics,H,s17,st01,Stanford University,"Stanford, CA","Stanford, CA 94305",390 Serra Mall,"Ph.D. Candidate, Department of Statistics","140,21,21"
+westcoast,stats,Statistics,H,s20,st02,"the University of California, Berkeley","Berkeley, CA","Berkeley, CA 94720",391 Evans Hall,"Ph.D. Candidate, Department of Statistics","0,50,98"
+westcoast,stats,Mathematical Sciences,L,s55,st05,Montana State University,"Bozeman, MT","Bozeman, MT 59717",Wilson Hall 2-226,"Ph.D. Candidate Statistics, Department of Mathematical Sciences","0,63,127"
+westcoast,stats,Statistics,L,s56,st06,Oregon State University,"Corvallis, OR","Corvallis, OR 97331","Weniger Hall, Room 279","Ph.D. Candidate, Department of Statistics","215,63,9"
+northeast,stats,Statistics,H,s09,st03,Harvard University,"Cambridge, MA","Cambridge, MA 02138","1 Oxford Street, Science Center 400","Ph.D. Candidate, Department of Statistics","163,31,52"
+northeast,stats,Statistics,H,s45,st04,"the Wharton School, University of Pennsylvania","Philadelphia, PA","Philadelphia, PA 19104","3730 Walnut St, Jon M. Huntsman Hall 449","Ph.D. Candidate, Department of Statistics","0,71,133"
+northeast,stats,Mathematics and Statistics,L,s54,st07,"the University of Massachusetts, Amherst","Amherst, MA","Amherst, MA 01003","710 N. Pleasant Street, LGRT 1623D","Ph.D. Candidate Statistics, Department of Mathematics and Statistics","136,28,28"
+northeast,stats,Statistics,L,s57,st08,George Mason University,"Fairfax, VA","Fairfax, VA 22030","Nguyen Engineering Building, 1705","Ph.D. Candidate, Department of Statistics","30,98,56"
+midwest,stats,Statistics,H,s21,st09,the University of Chicago,"Chicago, IL","Chicago, IL 60637","5747 S. Ellis Avenue, Jones 208","Ph.D. Candidate, Department of Statistics","128,0,0"
+midwest,stats,Statistics,H,s26,st10,the University of Michigan,"Ann Arbor, MI","Ann Arbor, MI 48109","1085 South University, 431E West Hall","Ph.D. Candidate, Department of Statistics","4,30,66"
+midwest,stats,Statistics,L,s52,st11,North Dakota State University,"Fargo, ND","Fargo, ND 58108",221K Morrill Hall,"Ph.D. Candidate, Department of Statistics","0,102,51"
+midwest,stats,Statistics,L,s30,st12,Western Michigan University,"Kalamazoo, MI","Kalamazoo, MI 49008","5507 Everett Tower, 5157","Ph.D. Candidate, Department of Statistics","252,195,15"
+south,stats,Mathematics and Statistics,L,s44,st13,Old Dominion University,"Norfolk, VA","Norfolk, VA 23529",2300 Engineering & Computational Sciences Building,"Ph.D. Candidate Statistics, Department of Mathematics and Statistics","0,48,47"
+south,stats,Department of Statistics,L,s53,st14,University of Kentucky,"Lexington, KY","Lexington, KY 40536","725 Rose Street, MDS 348","Ph.D. Candidate, Department of Statistics","26,71,140"
 south,stats,Statistical Science,H,s31,st15,Duke University,"Durham, NC","Durham, NC 27708","213 Old Chemistry Building, Box 90250","Ph.D. Candidate, Department of Statistical Science","0,26,87"
 south,stats,Statistics & Operations Research,H,s46,st16,"the University of North Carolina, Chapel Hill","Chapel Hill, NC","Chapel Hill, NC 27599","318 Hanes Hall, B-46","Ph.D. Candidate, Department of Statistics & Operations Research","75,156,211"
 westcoast,cs,Computer Science,H,s17,cs01,Stanford University,"Stanford, CA","Stanford, CA 94305","353 Serra Mall, Gates 438","M.S. Candidate, Department of Computer Science","140,21,21"
