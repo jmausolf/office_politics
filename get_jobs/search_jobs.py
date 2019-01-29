@@ -178,18 +178,17 @@ def get_jobs(job_key, job_type, company, list_id, count, seconds, date):
 
 
 def iterator(row):
-    #print(row)
     list_id = row['list_id']
     company = row['company']
     job_type = row['job_type']
     keywords = ast.literal_eval(row['keywords'])
     counter = row['counter']
-    '''
-    company = row[0]
-    job_type = row[1]
-    keywords = ast.literal_eval(row[2])
-    counter = row[3]
-    '''
+
+    #Display progress
+    if counter > 1 and int(counter) % 100 == 0:
+        print("[*] progress: searched for {} companies...".format(counter))
+    else:
+        pass
 
     qc = []
     n = len(keywords)
