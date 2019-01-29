@@ -186,7 +186,7 @@ def iterator(row):
 
     #Display progress
     if counter > 1 and int(counter) % 100 == 0:
-        print("[*] progress: searched for {} companies...".format(counter))
+        print("\n[*] progress: searched for {} companies...\n".format(counter))
     else:
         pass
 
