@@ -159,6 +159,13 @@ def make_resume(profile,
 	#Remove Articles from School Name
 	school_clean = article_strip(school)
 
+
+	#Department Adjustment for MBA/Consultants
+	if job_type == 'mba' or job_type == 'consultant':
+		department = article_strip(department.split(' at ')[0])
+	else:
+		pass
+
 	#Set Path
 	path = "{}/{}/tex".format(profile, job_type)
 
