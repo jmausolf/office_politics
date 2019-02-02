@@ -34,7 +34,7 @@ def parens_content_replace(text):
 
 
 def remove_trailing_periods(text):
-    #Remove trailing periods 
+    #Remove trailing periods
     #not following capital letters
     pat = r'([A-Z][.]$)|([.]$)'
     return re.sub(pat, r'\1', text)
@@ -74,7 +74,7 @@ def remove_upper_trailing(text):
 
         text = re.sub(r'\sINTERNATIONAL$', '', text)
         text = re.sub(r'\sINTL$', '', text)
-        
+
         return text
 
 
@@ -95,7 +95,7 @@ def lower_of_and(text):
     text = re.sub(r'\s[Oo][Ff]\s', ' of ', text)
     text = re.sub(r'\s[Aa][Nn][Dd]\s', ' and ', text)
     text = re.sub(r'\.[Cc][Oo][Mm]', '.com', text)
-    return text  
+    return text
 
 
 def remove_trailing_ABC(text):
@@ -114,7 +114,7 @@ def remove_trailing_inc(text):
 def replace_bancorp(text):
     bancorp_exceptions = ['Zions Bancorp',
                           'Zions Bancorporation',
-                          'New York Community Bancorp', 
+                          'New York Community Bancorp',
                           'West Bancorporation']
     if text.title() in bancorp_exceptions:
         return text
@@ -163,9 +163,9 @@ def rm_stop_words(text, sw=None):
 
 def clean_stop_words(company_name, sw=None):
     c = company_name
-    c = remove_non_ascii_space(c)    
+    c = remove_non_ascii_space(c)
     c = parens_content_replace(c)
-    c = rm_stop_words(c, sw=sw)    
+    c = rm_stop_words(c, sw=sw)
     return c
 
 
@@ -188,10 +188,10 @@ def modify_csv(csv_file, path='source/', dest='clean/', outfile=True, replace=Fa
     #load file modify
     infile = '{}{}'.format(path, csv_file)
     r = read_csv(infile)
-    
+
 
     r = remove_non_ascii_space(r)
-        
+
     #write results
     if replace is True:
         output = open(infile, "w")
@@ -199,7 +199,7 @@ def modify_csv(csv_file, path='source/', dest='clean/', outfile=True, replace=Fa
         file_stem = csv_file.split('.csv')[0]
         outfile = "{}{}_cleaned.csv".format(dest, file_stem)
         output = open(outfile, "w")
-    
+
     output.write(r)
     output.close()
 
@@ -474,7 +474,7 @@ df7 = clean_cnbc('cnbc_disruptor50.csv')
 df8 = clean_bi('business_insider_jobs_2019-01-16.csv')
 df9 = clean_ru3000('ru3000.csv')
 
-#TODO 
+#TODO
 #Make Multiple Job_Type Columns for Conditions
 
 prep_df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9], axis=0)
@@ -494,9 +494,9 @@ def rm_company_stop_words(text):
 
     sw = [' LLC', ' LLP', ' Llp', ' LP', ' P.C.', ' P.L.L.C.', ' PLC', ' Plc', ' plc',
           ' Inc.', ' Incorporated', ' International', ' Cos',
-          '  N.V.', ' NV', 
+          '  N.V.', ' NV',
           ' Holdings', ' Holding']
-            
+
     #' Group', ' Management Co.', ' Capital Management', ' Asset Management', ' Management', '& Co']
 
     for s in sw:
@@ -510,8 +510,8 @@ def rm_company_stop_words(text):
 
 def clean_company(row, col='company'):
     c = row[col]
-   
-    c = remove_non_ascii_2(c)      
+
+    c = remove_non_ascii_2(c)
     c = parens_content_replace(c)
     c = rm_company_stop_words(c)
     c = select_punct_strip(c)
@@ -529,7 +529,7 @@ def clean_company(row, col='company'):
         c = c.upper()
 
     c = c.strip()
-    
+
     return c
 
 ## Clean Company
@@ -555,12 +555,12 @@ print(prep_df)
 #############################################
 
 #Key = job_type (first one)
-job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'cs', 'mba', None],
-                  'quant':['quant', 'data_science', 'stats', 'cs', 'mba', None],
-                  'banking':['quant', 'data_science', 'mba', 'stats', 'cs', None],
-                  'accounting':['mba', 'stats', 'data_science', 'cs', 'quant', None],
-                  'consulting':['consultant', 'data_science', 'cs', 'mba', 'stats', 'quant'],
-                  'law':['mba', 'data_science', 'cs', 'stats', 'quant', None]
+job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'computer_science', 'mba', None],
+                  'quant':['quant', 'data_science', 'stats', 'computer_science', 'mba', None],
+                  'banking':['quant', 'data_science', 'mba', 'stats', 'computer_science', None],
+                  'accounting':['mba', 'stats', 'data_science', 'computer_science', 'quant', None],
+                  'consulting':['data_science', 'computer_science', 'consultant', 'mba', 'stats', 'quant'],
+                  'law':['mba', 'data_science', 'computer_science', 'stats', 'quant', None]
 }
 
 
@@ -615,7 +615,7 @@ def show_possible_duplicates(contains_dupes, threshold=70, scorer=fuzz.token_set
     (Original code dropped too many valid non-duplicates even with a high threshold
     and various scorers or conversely missed true duplicates).
 
-    Rather than take the "first item as our 'canonical example'", 
+    Rather than take the "first item as our 'canonical example'",
         possible duplicate pairs are sorted and aggregated, then displayed.
 
     Args:
@@ -628,8 +628,8 @@ def show_possible_duplicates(contains_dupes, threshold=70, scorer=fuzz.token_set
             of the form f(query, choice) -> int.
             By default, fuzz.token_set_ratio() is used and expects both query and
             choice to be strings.
-    
-        
+
+
         """
 
     extractor = []
@@ -681,7 +681,7 @@ def show_possible_duplicates(contains_dupes, threshold=70, scorer=fuzz.token_set
         i = 0
         for item in sl:
             i+=1
-            if item not in check_dupes and i == 1:    
+            if item not in check_dupes and i == 1:
                 possible_dupes.append(sl)
                 check_dupes.add(item)
             elif item not in check_dupes and i > 1:
@@ -743,4 +743,3 @@ def dedupe_fuzzy(df, col):
 #print(df.shape)
 #df.to_csv("hedge_test2.csv", index=False)
 '''
-
