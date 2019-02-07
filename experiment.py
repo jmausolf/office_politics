@@ -358,7 +358,7 @@ def select_int(row, count):
 	prestige = row[1]
 	company = row[2]
 
-	if job_type == 'data_science':
+	if job_type in ['data_science', 'computer_science']:
 		internships = internships_general(job_type, prestige, company, count)
 		#print(internships)
 	if job_type == 'mba':
