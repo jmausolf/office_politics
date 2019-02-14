@@ -102,6 +102,20 @@ def article_strip(school):
 ## Check / Add Missing Companies (LinkedIn, etc)
 
 
+##TODO Reclassify
+
+#Create a function that joins cleaned emp key df with master_companies
+
+#Create a function that creates a ranking of job_types from the job_type columns
+
+#Basically need something like this
+#for jt in job_types:
+    #if rank(job_type)>job_type_rank:
+        #and position contains keyword/stem for job_type_rank, 
+            #then job_type==job_type_rank
+    #else:
+        #pass
+
 def cleaned_emp_key():
 
 	df = pd.read_csv('../keys/employers_key.csv')
