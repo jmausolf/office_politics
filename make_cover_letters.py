@@ -74,9 +74,8 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 	#Correct 'the' case in Universities
 	school = school.replace('the', 'The', 1)
 
-	#phone_link = "+1{}".format(phone.replace('-', ''))
+	#Make Phone Link
 	phone_link = "+1{}".format(remove_punct(phone).strip())
-	print(phone_link)
 	
 	if pair_version == 'A':
 		sig_html = """

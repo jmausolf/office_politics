@@ -22,7 +22,6 @@ def join_profiles_credentials():
 
 
 def select_ga(row, count):
-
 	profile = row[0]
 	job_type = row[1]
 	region = row[2]
@@ -360,13 +359,10 @@ def select_int(row, count):
 
 	if job_type in ['data_science', 'computer_science']:
 		internships = internships_general(job_type, prestige, company, count)
-		#print(internships)
 	if job_type == 'mba':
 		internships = internships_mba(job_type, prestige, company, count)
-		#print(internships)
 	if job_type == 'consultant':
 		internships = internships_consultant(job_type, prestige, company, count)
-		#print(internships)
 	else:
 		pass
 
@@ -384,6 +380,7 @@ def join_ex_pair(ex_df, cid):
 
 	#Experiment Pair DF
 	ex = ex_df.loc[(ex_df['cid']==cid)].reset_index()
+	#print(ex)
 
 	#Select GA Schools
 	ga_vals = ['department', 'sid', 'ga_sid', 'school', 
@@ -431,8 +428,6 @@ def join_ex_pair(ex_df, cid):
 
 
 def join_experiment_profiles_counter(experiment_file):
-	import pdb
-	#pdb.set_trace()
 	ex_full = pd.read_csv(experiment_file)
 	cids = ex_full.cid.unique()
 	print("[*] generating {} requested matched pairs...".format(len(cids)))
@@ -443,7 +438,6 @@ def join_experiment_profiles_counter(experiment_file):
 		pair = join_ex_pair(ex_full, c)
 		matched_pairs.append(pair)
 	
-
 	ex_all = pd.concat(matched_pairs)
 	profiles = join_profiles_credentials()
 	df = pd.merge(ex_all, profiles, on=['profile'])
@@ -452,7 +446,7 @@ def join_experiment_profiles_counter(experiment_file):
 	df['sort'] = df['id'].str.extract('(\d+)', expand=False).astype(int)
 	df.sort_values('sort',inplace=True, ascending=True)
 	df = df.drop('sort', axis=1)
-
+	print(df)
 	#TODO Sort Columns
 	return df
 
@@ -462,13 +456,13 @@ def join_experiment_profiles_counter(experiment_file):
 
 
 def send_email_iter(row):
-	#print(row)
-	message = ("[*] sending email to {0} at {1} from {2} - {3}, pair: {4}"
+	message = ("[*] sending email to {0} at {1} from {2} - {3}, pair: {4}, version: {5}"
 			.format(row['contact_name'],
 					row['company'],
 					row['name'],
 					row['profile'],
-					row['matched_pair']
+					row['matched_pair'],
+					row['version']
 				))
 
 	try:
@@ -502,7 +496,8 @@ def send_email_iter(row):
 					gmail_pass=row['gmail_pass'],
 					contact_email=row['contact_email'],
 					rgb=row['rgb'],
-					pair_version=row['matched_pair']
+					pair=row['matched_pair'],
+					pair_version=row['version']
 					)
 		
 		return 'metadata::'+meta
@@ -515,24 +510,20 @@ def send_email_iter(row):
 		return 'error::'+str(e)
 
 
-def deploy_matched_pairs_emails(df, experiment_csv, pair_version):
-
+def deploy_matched_pairs_emails(df, experiment_csv, matched_pair):
 	df['metadata'] = df.apply(send_email_iter, axis=1)
 
 	#write result file
 	infile = experiment_csv.split('.')[0]
 	outfile = "logs/results_log_{0}_pairs_{1}.csv".format(
 												infile, 
-												pair_version)
+												matched_pair)
 	df.to_csv(outfile, index=False)
 
 
 
 def deploy_emails(experiment_csv):
-
 	df = join_experiment_profiles_counter(experiment_csv)
-	print(df)
-
 	ex_out = "logs/{}_output.csv".format(experiment_csv.split(".")[0])
 	df.to_csv(ex_out, index=False)
 
