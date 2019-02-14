@@ -76,6 +76,31 @@ def set_order(order_number, order_int=None):
 		return None
 
 
+#Assign Materials Version
+def assign_materials_version(df, version_list=['A', 'B'],
+							 probs=[.5,.5], col='version'):
+	df[col] = np.random.choice(version_list, df.shape[0], p=probs)
+	return df
+
+def set_version(version_letter, version_list=None):
+	assert isinstance(version_letter, str), "version_letter must be string"
+
+	if version_list is None:
+		vA = 'A'
+		vB = 'B'
+	else:
+		assert len(version_list) == 2, "only two versions possible"
+		vA = version_list[0]
+		vB = version_list[1]
+
+	if version_letter == vA:
+		return vB
+	if version_letter == vB:
+		return vA
+	else:
+		return None
+
+
 #Assign Partisanship
 def assign_partisanship(df, condition, 
 						probs=[.5,.5], labels=None,
@@ -126,12 +151,17 @@ def assign_partisanship(df, condition,
 	return df
 
 
+
+
+
+
 def make_pairs(df,
 			   treatment_labs,
 			   treatment_probs,
 			   control_label,
 			   pair_key,
-			   order_var=None
+			   order_var=None,
+			   version=None
 			   ):
 
 	'''
@@ -179,11 +209,21 @@ def make_pairs(df,
 							labels=treatment_labs, 
 							probs=treatment_probs)
 
+	# Determine Order and Version for Treatment
+	# Using Randomly Assigned Order and Version for Control
+
 	#Order
 	if order_var is not None:
 		order_int = sorted(T[order_var].unique().tolist())
 		assert len(order_int) == 2, "order must be one of two ints"
 		T[order_var] = T[order_var].apply(lambda x: set_order(x, order_int))
+		pass
+
+	#Version
+	if version is not None:
+		versions = sorted(T[version].unique().tolist())
+		assert len(versions) == 2, "only two versions are possible"
+		T[version] = T[version].apply(lambda x: set_version(x, versions))
 		pass
 
 	#Create Matched Pairs
@@ -263,6 +303,7 @@ def main(employers,
 		 control_lab,
 		 pair_key,
 		 order_var,
+		 version,
 		 rm_cols='default',
 		 order_cols='default',
 		 outfile='experiment.csv'
@@ -284,12 +325,14 @@ def main(employers,
 						  labels=prestige_labs
 						  )
 	emp = assign_order(emp)
+	emp = assign_materials_version(emp)
 	emp = make_pairs(emp,
 					 treatment_labs,
 					 treatment_probs,
 					 control_lab,
 					 pair_key,
-					 order_var
+					 order_var,
+					 version
 					 )
 	emp = add_profile_key(emp)
 
@@ -305,6 +348,7 @@ def main(employers,
 						exp_control_lab=control_lab,
 						exp_pair_key=pair_key,
 						exp_order_var=order_var,
+						exp_version=version,
 						exp_rm_cols=rm_cols
 						)
 
@@ -320,7 +364,7 @@ def main(employers,
 	#Remove Default Columns
 	if rm_cols == 'default':
 		rm_cols = ['state_name', 'state', 'prestige_level', 
-				   'party', 'order', 'name']
+				   'party', order_var, 'name']
 	
 	#Or User Provided Column List
 	else:
@@ -340,7 +384,7 @@ def main(employers,
 		cols_order = ['id', 'cid', 'list_id', 'company',
 					  'contact_name', 'contact_last_name', 'contact_email',
 					  'office', 'office_state', 'region', 'proximal_region', 
-					  'position', 'job_type', 'profile']
+					  'position', 'job_type', 'profile', version]
 		emp = emp[cols_order]
 	else:
 		assert isinstance(order_cols, list), 'provide a column order list'+\
@@ -363,6 +407,7 @@ main(employers='keys/cleaned_employers_key.csv',
      control_lab='NEU',
      pair_key='cid',
      order_var='order',
+     version='version',
      rm_cols='default',
      order_cols='default'
     )

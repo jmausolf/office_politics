@@ -43,9 +43,9 @@ def send_email(profile,
 			gmail_pass,
 			contact_email,
 			rgb,
+			pair,
 			pair_version
 			):
-	
 	
 	#TODO Pass "Pair" to Email
 	#Need alt style for a number of elements in the email,
