@@ -1,8 +1,12 @@
 import pandas as pd
 import re
 from nltk.corpus import stopwords
+import ast
 
 
+#######################################
+## Cleaning Code
+#######################################
 
 def ret_position_stop_words():
 
@@ -95,40 +99,165 @@ def article_strip(school):
 
 
 
-##TODO
-## Manual Subs
-## Part Time Positions
-## Poor Fits (Retail Associate, etc)
-## Check / Add Missing Companies (LinkedIn, etc)
+def cleaned_emp_key(emp_key='../keys/employers_key.csv',
+                    outfile='../keys/cleaned_employers_key.csv'):
+
+    print("[*] cleaning {}, outfile = {}".format(emp_key, outfile))
+    df = pd.read_csv(emp_key)
+
+    #State Abbreviations
+    sb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
+
+    #Uppercase Stop Words
+    up_sw = ret_position_stop_words()
+
+    #Lowercase Stop Words
+    lw_sw = set(stopwords.words('english'))
 
 
-##TODO Reclassify
+    #Correct State Abbreviations
+    df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sb)
 
-#Create a function that joins cleaned emp key df with master_companies
-
-#Create a function that creates a ranking of job_types from the job_type columns
-
-#Basically need something like this
-#for jt in job_types:
-    #if rank(job_type)>job_type_rank:
-        #and position contains keyword/stem for job_type_rank, 
-            #then job_type==job_type_rank
-    #else:
-        #pass
-
-def cleaned_emp_key():
-
-	df = pd.read_csv('../keys/employers_key.csv')
-	sb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
-	up_sw = ret_position_stop_words()
-	lw_sw = set(stopwords.words('english'))
-	df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sb)
-	df['position'] = df['position'].apply(clean_position, 
-										  upper_sw=up_sw,
-										  lower_sw=lw_sw)
-	print(df['position'])
-	df.to_csv('../keys/cleaned_employers_key.csv', index=False)
-	return df
+    #Correct Upper and Lower Words
+    df['position'] = df['position'].apply(clean_position,
+                                          upper_sw=up_sw,
+                                          lower_sw=lw_sw)
+    print(df['position'])
+    df.to_csv(outfile, index=False)
+    return df
 
 
-cleaned_emp_key()
+
+
+#######################################
+## Reclassify Code
+#######################################
+
+
+def join_emp_key_master_companies(emp_key, master_key):
+    df_employ = pd.read_csv(emp_key)
+    df_master = pd.read_csv(master_key)
+
+    #Fill NA Values in Last Column
+    df_master = df_master.fillna(axis=0, method='bfill')
+    df_master = df_master.fillna(axis=0, method='ffill')
+
+    df = pd.merge(df_employ, df_master, on=['list_id', 'company'], how='left')
+    return df
+
+def make_ranking_col(emp_key, master_key, rank_cols):
+    df = join_emp_key_master_companies(emp_key, master_key)
+    df['job_ranks'] = df[rank_cols].values.tolist()
+    df['ranks_len'] = df['job_ranks'].apply(lambda x: len(x))
+    return df
+
+
+def compare_ranks(row):
+    job_type = row[0]
+    rank_cols = row[1]
+  
+    c = 0
+    for r in rank_cols:
+        if r == job_type:
+            return c
+        else:
+            c+=1
+            pass
+
+
+def extract_job_param_key(job_type):
+    keys = pd.read_csv('job_params.csv')
+    result = keys.loc[(keys['job_type'] == job_type)]
+    result = result['keywords'].values.tolist()[0]
+    result = ast.literal_eval(result)
+    return result
+
+
+def get_keys(row):
+    keys = []
+    for r in row['job_ranks']:
+        k = extract_job_param_key(r)
+        keys.append(k)
+
+    return keys
+
+
+def reclass(row):
+
+    if row['job_rank'] > 0:
+        position = row['position'].lower()
+        job_keys = row['keys']
+        job_ranks = row['job_ranks']
+
+
+        key_index = 0
+        for key_set in job_keys:
+            for k in key_set:
+                if k in position:
+                    return job_ranks[key_index]
+                #TODO Stems
+                else:
+                    pass
+            key_index+=1
+            
+    else:
+        pass
+
+
+def reclass_arbitrate(row):
+
+    original = row['job_type']
+    reclass = row['reclass']
+
+    if reclass is None:
+        return original
+    else:
+        return reclass
+
+
+def reclassify_jobs(emp_key,
+                    master_key,
+                    rank_cols,
+                    outfile='../keys/cleaned_employers_key.csv',
+                    clean=True):
+
+    #Prep
+    df = make_ranking_col(emp_key, master_key, rank_cols)
+    df['job_rank'] = df[['job_type', 'job_ranks']].apply(compare_ranks, axis=1)
+    print('[*] extracting job keys, order for all job ranks and types....')
+    df['keys'] = df.apply(get_keys, axis=1)
+
+    print(df)
+    
+    #Main Reclassification and Arbitration
+    df['reclass'] = df.apply(reclass, axis=1)
+    df['job_type_reclass'] = df.apply(reclass_arbitrate, axis=1)
+
+
+    if clean is True:
+        keep_cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 'job_type_reclass', 'rank', 'source']
+        org_cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 'job_type', 'rank', 'source']
+        df = df[keep_cols]
+        df.columns = org_cols
+
+    print(df)
+    df.to_csv(outfile, index=False)
+    
+
+
+#######################################
+## Clean Raw Employers Key
+#######################################
+
+cleaned_emp_key('../keys/employers_key.csv',
+                '../keys/cleaned_employers_key.csv')
+
+
+#######################################
+## Reclassify Job Types
+#######################################
+
+ranks = ['job_type_1', 'job_type_2', 'job_type_3',
+         'job_type_4', 'job_type_5', 'job_type_6']
+reclassify_jobs('../keys/cleaned_employers_key.csv',
+                'master_companies.csv', ranks)
