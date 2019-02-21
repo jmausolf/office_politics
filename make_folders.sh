@@ -122,7 +122,21 @@ mkdir -p logs
 ## Computer Science
 #######################
 
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=computer_science
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/computer_science_template_A.tex $subpath
+        cp resume_templates/computer_science_template_B.tex $subpath
+        mv $subpath"/computer_science_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/computer_science_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying computer_science_template_A.tex to ' $subpath
+        echo 'copying computer_science_template_B.tex to ' $subpath
+done
+echo 'renaming computer_science_templates_A/B.tex to resume_templates_A/B.tex'
 
+mkdir -p logs
 
 
 
