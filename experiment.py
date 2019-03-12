@@ -350,6 +350,154 @@ def internships_consultant(job_type, prestige, company, count):
 		pass
 
 
+def internships_quant(job_type, prestige, company, count):
+	'''
+	Selects different first/second internships based on int_key
+	'''
+
+	#First Matched Pair
+	if count == 0:
+		#Base Internships Meeting Criteria for Pair A
+		intf = pd.read_csv("keys/int_key.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria]
+
+		#First Internship
+		int_1 = int_df.loc[(int_df['int_type']=='first')]
+		i1 = np.random.choice(int_1.index.values, 1, replace=False)
+		df_1 = int_1.ix[i1]
+
+		#Second Internship
+		int_2 = int_df.loc[(int_df['int_type']=='second')]
+		i2 = np.random.choice(int_2.index.values, 1, replace=False)
+		df_2 = int_2.ix[i2]
+		
+		#Both Internships
+		df = pd.concat([df_1, df_2], axis=0)
+
+		#Drop Selections from Internship to Avoid Selection for Pair 2
+		int_selection = df['int_id'].values.tolist()
+		tmp = intf[((intf.int_id != int_selection[0]) &
+				    (intf.int_id != int_selection[1]))]
+		tmp.to_csv("keys/int_key_tmp.csv", index=False)
+
+
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships
+
+
+	#Second Matched Pair
+	elif count == 1:
+		intf = pd.read_csv("keys/int_key_tmp.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria]
+
+		#First Internship
+		int_1 = int_df.loc[(int_df['int_type']=='first')]
+		i1 = np.random.choice(int_1.index.values, 1, replace=False)
+		df_1 = int_1.ix[i1]
+
+		#Second Internship
+		int_2 = int_df.loc[(int_df['int_type']=='second')]
+		i2 = np.random.choice(int_2.index.values, 1, replace=False)
+		df_2 = int_2.ix[i2]
+		
+		#Both Internships
+		df = pd.concat([df_1, df_2], axis=0)
+
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships	
+
+	else:
+		pass
+
+
+def internships_ordered(job_type, prestige, company, count):
+	'''
+	Selects different first/second internships based on int_key
+	'''
+
+	#First Matched Pair
+	if count == 0:
+		#Base Internships Meeting Criteria for Pair A
+		intf = pd.read_csv("keys/int_key.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria]
+
+		#First Internship
+		int_1 = int_df.loc[(int_df['int_type']=='first')]
+		i1 = np.random.choice(int_1.index.values, 1, replace=False)
+		df_1 = int_1.ix[i1]
+
+		#Second Internship
+		int_2 = int_df.loc[(int_df['int_type']=='second')]
+		i2 = np.random.choice(int_2.index.values, 1, replace=False)
+		df_2 = int_2.ix[i2]
+		
+		#Both Internships
+		df = pd.concat([df_1, df_2], axis=0)
+
+		#Drop Selections from Internship to Avoid Selection for Pair 2
+		int_selection = df['int_id'].values.tolist()
+		tmp = intf[((intf.int_id != int_selection[0]) &
+				    (intf.int_id != int_selection[1]))]
+		tmp.to_csv("keys/int_key_tmp.csv", index=False)
+
+
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships
+
+
+	#Second Matched Pair
+	elif count == 1:
+		intf = pd.read_csv("keys/int_key_tmp.csv")
+		criteria = ((intf['job_type']==job_type) & 
+					(intf['prestige']==prestige) & 
+					(intf['internship']!=company))
+		int_df = intf.loc[criteria]
+
+		#First Internship
+		int_1 = int_df.loc[(int_df['int_type']=='first')]
+		i1 = np.random.choice(int_1.index.values, 1, replace=False)
+		df_1 = int_1.ix[i1]
+
+		#Second Internship
+		int_2 = int_df.loc[(int_df['int_type']=='second')]
+		i2 = np.random.choice(int_2.index.values, 1, replace=False)
+		df_2 = int_2.ix[i2]
+		
+		#Both Internships
+		df = pd.concat([df_1, df_2], axis=0)
+
+		#Return Results
+		df = df.drop(['job_type', 'prestige'], axis=1)
+		keys = df.columns.tolist()
+		vals = df.values.tolist()
+		internships =  vals[0]+vals[1]
+		return internships	
+
+	else:
+		pass
+
+
 def select_int(row, count):
 	#print(row)
 
@@ -357,12 +505,10 @@ def select_int(row, count):
 	prestige = row[1]
 	company = row[2]
 
-	if job_type in ['data_science', 'computer_science']:
+	if job_type in ['data_science', 'computer_science', 'mba']:
 		internships = internships_general(job_type, prestige, company, count)
-	if job_type == 'mba':
-		internships = internships_mba(job_type, prestige, company, count)
-	if job_type == 'consultant':
-		internships = internships_consultant(job_type, prestige, company, count)
+	if job_type in ['consultant', 'quant', 'stats']:
+		internships = internships_ordered(job_type, prestige, company, count)
 	else:
 		pass
 
