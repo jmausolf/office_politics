@@ -136,7 +136,7 @@ def make_text_cl(profile,
 			.format(cl().__class__.__name__, method_name))
 
 	message_body = cl_text(contact, contact_last_name, job, office, company, 
-						   internships, school, department, treatment)
+						   internships, school, department, treatment, internship1, internship2)
 
 	if add_sig is True:
 		message_sig = make_text_sig(name, title, school, phone, gmail_user, pair_version)
@@ -168,6 +168,12 @@ def make_html_text_cl(profile,
 				rgb,
 				pair_version
 				):
+
+	#Make department lowercase in cl (if not MBA type)
+	if job_type not in ['mba']:
+		department = department.lower()
+	else:
+		pass
 
 	#Make Text CL (no sig)
 	message_text_body = make_text_cl(profile, 

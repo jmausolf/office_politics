@@ -59,10 +59,19 @@ def send_email(profile,
 	#By passing the pair 'a' or 'b' to the send_email 
 	#func, any style element can have at random an a and b version
 
-	if pair_version == 'A':
-		subject = "{} Position - {}".format(job, company)
-	elif pair_version == 'B':
-		subject = "{} - {} Position".format(company, job)
+	if company in job:
+
+		if pair_version == 'A':
+			subject = "RE: {}".format(job)
+		elif pair_version == 'B':
+			subject = "Position | {} ".format(job)
+
+	else:
+
+		if pair_version == 'A':
+			subject = "RE: {} Role - {}".format(job, company)
+		elif pair_version == 'B':
+			subject = "{} | {} Position".format(company, job)
 
 	msgRoot = MIMEMultipart('mixed')
 	msgRoot['Subject'] = subject
