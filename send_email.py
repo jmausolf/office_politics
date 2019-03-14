@@ -59,6 +59,10 @@ def send_email(profile,
 	#By passing the pair 'a' or 'b' to the send_email 
 	#func, any style element can have at random an a and b version
 
+
+	#TODO
+	#within CL sub of 'University of X, Y,' --> 'University of X-Y,'
+
 	if company in job:
 
 		if pair_version == 'A':
