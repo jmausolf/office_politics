@@ -25,8 +25,10 @@ def ret_position_stop_words():
 
     ## Add State Abbreviations
     state_abb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
+    state_full = pd.read_csv('../keys/region_key.csv')['state_name'].tolist()
     stop_words = position_stop_words
     stop_words.extend(state_abb)
+    stop_words.extend(state_full)
 
 
     ## Add Uppercase Words from Included Companies
@@ -38,11 +40,33 @@ def ret_position_stop_words():
     return stop_words
 
 
+def rm_words(text):
+
+    removal_words = ['Part-time', 'Part-Time', 'Part Time', 'Part time',
+                     'Full-time', 'Full-Time', 'Full Time', 'Full time',
+                     'Student', 'student',
+                     'University Recruiting', 'Recruiting']
+
+    for w in removal_words:
+        text = text.replace(w, '').strip()
+
+    if text.startswith('-'):
+        text = text[1:].strip()
+    if text.endswith('-'):
+        text = text[:-1].strip()
+    if len(text) <= 1:
+        text = None
+    return text
+
+
 def rm_state_abb_pat(text, state_abb):
 
-    state_abb_pat = [' - - {}'.format(s) for s in state_abb]
+    state_abb_pat1 = [' - - {}'.format(s) for s in state_abb]
+    state_abb_pat2 = [' - {}'.format(s) for s in state_abb]
 
-    for s in state_abb_pat:
+    for s in state_abb_pat1:
+        text = text.replace(s, '')
+    for s in state_abb_pat2:
         text = text.replace(s, '')
     text = re.sub(r'\s{2,}', ' ', text).strip()
     return text
@@ -88,6 +112,23 @@ def clean_position(text, upper_sw, lower_sw):
     ##Fix Lowercase Words
     p = ' '.join([lower_post_crit(w, lower_sw) for w in p.split(' ')])
 
+    ##Remove Specified Words
+    p = rm_words(p)
+
+    ##Fix Very Long Job Titles
+    h = p.count(' - ')
+    if len(p) >= 30 & h > 1:
+        p = p.rsplit(' - ', h-1)[0]
+    if p.count(' - ') >= 1 and len(p) > 50:
+        p0 = p.split(' - ')[0]
+        p1 = p.split(' - ')[1]
+        if len(p0)  > 40:
+            p = p0
+        if len(p0) >= 10 and len(p1) > 40:
+            p = p0
+        else:
+            pass
+
     return p
 
 
@@ -107,6 +148,7 @@ def cleaned_emp_key(emp_key='../keys/employers_key.csv',
 
     #State Abbreviations
     sb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
+    sf = pd.read_csv('../keys/region_key.csv')['state_name'].tolist()
 
     #Uppercase Stop Words
     up_sw = ret_position_stop_words()
@@ -117,11 +159,13 @@ def cleaned_emp_key(emp_key='../keys/employers_key.csv',
 
     #Correct State Abbreviations
     df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sb)
+    df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sf)
 
     #Correct Upper and Lower Words
     df['position'] = df['position'].apply(clean_position,
                                           upper_sw=up_sw,
                                           lower_sw=lw_sw)
+    df = df.dropna(axis=0)
     print(df['position'])
     df.to_csv(outfile, index=False)
     return df
