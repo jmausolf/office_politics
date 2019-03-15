@@ -10,7 +10,7 @@ class cl(object):
 	def data_science_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in data science and artificial intelligence, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in data science and artificial intelligence, and I am confident, together, we would be a great match.
 
 			As a computer scientist, I have both the theoretical knowledge and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only developed enhanced RNN algorithms in Java, but also used Python, Spark, and SQL to apply deep neural nets and streamline ETL pipelines as a data science intern for both {4}. Collectively, my background in computer science as well as statistical and mathematical modeling gives me first-hand experience into the crux of today’s complex puzzles in data science and their applications at the frontier of artificial intelligence.
 
@@ -44,7 +44,7 @@ class cl(object):
 	def stats_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application Bayesian nonparametric inference. {3} has excellent career prospects in statistical learning, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application Bayesian nonparametric inference. {3} has excellent career prospects in statistical learning, and I am confident, together, we would be a great match.
 
 			As a statistician, I have both the theoretical knowledge and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only developed an enhanced Bayesian algorithm to improve efficiency in parallel computing, but I have also used Python and R to apply Bayesian and other statistical learning models as a statistical research intern at {8} and a data science intern at {9}. Collectively, my background in statistics and mathematics gives me first-hand experience into the crux of today’s complex puzzles in statistics and their applications at the frontier of both research and business intelligence.
 
@@ -79,7 +79,7 @@ class cl(object):
 	def quant_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in quantitative finance, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in quantitative finance, and I am confident, together, we would be a great match.
 
 			As a computer scientist, I have both the theoretical knowledge and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only developed an enhanced Bayesian algorithm to improve efficiency in parallel computing, but I have also used Python, R, and SQL to apply Bayesian and machine learning models to simulate portfolio returns and optimize alpha as a quantitative research intern at both {4}. Collectively, my background in computer science as well as statistical and mathematical modeling gives me first-hand experience into the crux of today’s complex puzzles in statistical learning and their applications at the frontier of quantitative finance.
 
@@ -113,7 +113,7 @@ class cl(object):
 	def computer_science_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} position at your {2} office. I am a masters candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in software development, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am a masters candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in software development, and I am confident, together, we would be a great match.
 
 			As a computer scientist, I have both the theoretical knowledge and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only developed enhanced RNN algorithms in Java, but also used Python, Spark, and SQL to apply deep neural nets and streamline ETL pipelines as a software engineering intern for both {4}. Collectively, my background in computer science as well as statistical and mathematical modeling gives me first-hand experience into the crux of today’s complex puzzles in data science and their applications at the frontier of artificial intelligence.
 
@@ -148,7 +148,7 @@ class cl(object):
 	def mba_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} position at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent career prospects in business management, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent career prospects in business management, and I am confident, together, we would be a great match.
 
 			As an MBA candidate, I have both the strategic insight and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only led cross-functional efforts, identified key market opportunities, and influenced business strategy as an MBA intern at {7}, I have also generated actionable business analytics during my experience as a business analyst at {8}. Collectively, my background in general management and statistics gives me first-hand experience into the crux of today’s complex puzzles in business and their applications at the frontier of corporate strategy and operations.
 
@@ -183,7 +183,7 @@ class cl(object):
 	def consultant_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} position at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent opportunities in business management, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent opportunities in business management, and I am confident, together, we would be a great match.
 
 			As an MBA candidate, I have both the strategic insight and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only led cross-functional efforts, identified key market opportunities, and influenced business strategy, I have also generated actionable business analytics during my experience at both {4}. Collectively, my background in general management and statistics gives me first-hand experience into the crux of today’s complex puzzles in business and their applications at the frontier of corporate strategy and operations.
 
