@@ -46,16 +46,20 @@ def make_text_sig(name, title, school, phone, gmail_user, pair_version):
 
 	#Correct 'the' case in Universities
 	school = school.replace('the', 'The', 1)
+	first_name = name.split(' ')[0]
+	post = title.split(',')[0]
+	department = title.split(',')[1]
 
 	if pair_version == 'A':
 
 		sig_text = inspect.cleandoc("""
-
 			{0}
+
 			{1}
 			{2}
-			{3} | {4}
-		""".format(name, title, school, phone, gmail_user))
+			{3}
+			{4} | {5}
+		""".format(first_name, name, title, school, phone, gmail_user))
 
 	elif pair_version == 'B':
 
@@ -64,8 +68,9 @@ def make_text_sig(name, title, school, phone, gmail_user, pair_version):
 			{0}
 			{1}
 			{2}
-			Phone: {3}
-		""".format(name, title, school, phone))
+			{3}
+			Phone: {4}
+		""".format(name, post, department, school, phone))
 
 	return sig_text
 
@@ -73,29 +78,30 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 
 	#Correct 'the' case in Universities
 	school = school.replace('the', 'The', 1)
-
+	print(phone)
 	#Make Phone Link
 	phone_link = "+1{}".format(remove_punct(phone).strip())
-	
+	first_name = name.split(' ')[0]
+	post = title.split(',')[0]
+	department = title.split(',')[1]
+
 	if pair_version == 'A':
-		sig_html = """
-		<div style="background-color:rgb(255,255,255)"><font face="Garamond" size="3">{0}</font>
-		</div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond">{1}</font>
-		</div>
-		<div style="font-family:Tahoma;font-size:13px"><font face="Copperplate" size="3" style="background-color:rgb(255,255,255);color:rgb({6})">{2}</b></font></div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond"></span><a href="tel:{4}" value="{4}" style="color:rgb(17,131,204)" target="_blank">+1 {3}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{5}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(17,131,204)" target="_blank">{5}</a></font></div></div>
-		""".format(name, title, school, phone, phone_link, gmail_user, rgb)
+		sig_html = """<div style="font-family:Tahoma;font-size:13px"><font face="Garamond" size="3" style="background-color:rgb(255,255,255);color:rgb(0,0,0)">{0}</font></div>
+		<br>
+		<div style="font-family:Tahoma;font-size:13px"><font face="Garamond" size="3" style="background-color:rgb(255,255,255);color:rgb(0,0,0)">{1}</font></div>
+		<div style="font-family:Tahoma;font-size:13px"><font face="Garamond" size="3" style="background-color:rgb(255,255,255);color:rgb(0,0,0)">{2}</font></div>
+		<div style="font-family:Tahoma;font-size:13px"><font face="Copperplate" size="3" style="background-color:rgb(255,255,255);color:rgb({7})">{3}</b></font></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Garamond"></span><a href="tel:{5}" value="{5}" style="color:rgb(17,131,204)" target="_blank">{4}</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="mailto:{6}" class="m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560m_2319474238175162055dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967m_197796773055002560dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734m_3507498170987872967dly-gmail m_-4756129822142185649gmail-m_4655728448235344902m_170831212088922734dly-gmail m_-4756129822142185649gmail-m_4655728448235344902dly-gmail m_-4756129822142185649gmail-dly-gmail m_-4756129822142185649dly-gmail dly-gmail" style="color:rgb(17,131,204)" target="_blank">{6}</a></font></div></div>
+		""".format(first_name, name, title, school, phone, phone_link, gmail_user, rgb)
 
 	elif pair_version == 'B':
 		sig_html = """
-		<div style="background-color:rgb(255,255,255)"><font face="Helvetica" size="3">{0}</font>
-		</div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">{1}</font>
-		</div>
-		<div style="font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3" style="background-color:rgb(255,255,255);color:rgb('0,0,0')">{2}</font></div>
-		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">Phone:<span>&nbsp;<a href="tel:{4}" value="{4}" style="color:rgb(0,0,0)" target="_blank">{3}</a><span>&nbsp;</span></font></div></div>
-		""".format(name, title, school, phone, phone_link)
+		<div style="background-color:rgb(255,255,255)"><font face="Helvetica" size="3">{0}</font></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">{1}</font></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">{2}</font></div>
+		<div style="font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3" style="background-color:rgb(255,255,255);color:rgb(0,0,0)">{3}</font></div>
+		<div style="background-color:rgb(255,255,255);font-family:Tahoma;font-size:13px"><font face="Helvetica" size="3">Phone:<span>&nbsp;<a href="tel:{5}" value="{5}" style="color:rgb(0,0,0)" target="_blank">{4}</a><span>&nbsp;</span></font></div></div>
+		""".format(name, post, department, school, phone, phone_link)
 
 	return sig_html
 
@@ -135,6 +141,7 @@ def make_text_cl(profile,
 		raise NotImplementedError("Class `{}` does not implement `{}`"
 			.format(cl().__class__.__name__, method_name))
 
+	app_first_name = name.split(' ')[0]
 	message_body = cl_text(contact, contact_last_name, job, office, company, 
 						   internships, school, department, treatment, internship1, internship2)
 
