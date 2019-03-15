@@ -21,6 +21,28 @@ def join_profiles_credentials():
 	return df
 
 
+def ret_mba_treatment(row, infile='keys/mba_treatment_key.csv'):
+	#print(row)
+	ga_sid = row['ga_sid']
+	profile = row['profile']
+	job_type = row['job_type']
+	ug_treatment = row['treatment']
+
+	if job_type not in ['mba']:
+		return ug_treatment
+	else:
+
+		#print(ga_sid)
+		#print(profile)
+
+		df = pd.read_csv(infile)
+		crit = (	(df['ga_sid'] == ga_sid) &
+					(df['profile'] == profile)
+				)
+		treatment = df.loc[crit]['mba_treatment'].tolist()[0]
+		return treatment
+
+
 def select_ga(row, count):
 	profile = row[0]
 	job_type = row[1]
@@ -588,12 +610,14 @@ def join_experiment_profiles_counter(experiment_file):
 	profiles = join_profiles_credentials()
 	df = pd.merge(ex_all, profiles, on=['profile'])
 
+	#Update MBA Treatments 
+	df['treatment'] = df.apply(ret_mba_treatment, axis=1)
+
 	#Sort by ID
 	df['sort'] = df['id'].str.extract('(\d+)', expand=False).astype(int)
 	df.sort_values('sort',inplace=True, ascending=True)
 	df = df.drop('sort', axis=1)
 	print(df)
-	#TODO Sort Columns
 	return df
 
 

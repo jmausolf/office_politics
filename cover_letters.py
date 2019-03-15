@@ -8,7 +8,7 @@ class cl(object):
 	## Data Science Cover Letters
 
 	def data_science_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
-		message = inspect.cleandoc("""Dear {0},
+		message = inspect.cleandoc("""Hi {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in data science and artificial intelligence, and I am confident, together, we would be a great match.
 
@@ -42,7 +42,7 @@ class cl(object):
 	## Statistics Cover Letters
 
 	def stats_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
-		message = inspect.cleandoc("""Dear {0},
+		message = inspect.cleandoc("""Hi {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application Bayesian nonparametric inference. {3} has excellent career prospects in statistical learning, and I am confident, together, we would be a great match.
 
@@ -77,7 +77,7 @@ class cl(object):
 	## Quant Cover Letters
 
 	def quant_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
-		message = inspect.cleandoc("""Dear {0},
+		message = inspect.cleandoc("""Hi {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in quantitative finance, and I am confident, together, we would be a great match.
 
@@ -111,7 +111,7 @@ class cl(object):
 	## MS Computer Science Cover Letters
 
 	def computer_science_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
-		message = inspect.cleandoc("""Dear {0},
+		message = inspect.cleandoc("""Hi {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am a masters candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in software development, and I am confident, together, we would be a great match.
 
@@ -146,7 +146,7 @@ class cl(object):
 	## MBA Cover Letters
 
 	def mba_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
-		message = inspect.cleandoc("""Dear {0},
+		message = inspect.cleandoc("""Hi {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent career prospects in business management, and I am confident, together, we would be a great match.
 
@@ -181,7 +181,7 @@ class cl(object):
 	## Consultant (MBA) Cover Letters
 
 	def consultant_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
-		message = inspect.cleandoc("""Dear {0},
+		message = inspect.cleandoc("""Hi {0},
 
 			I am writing in response to your notice for the {1} position at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent opportunities in business management, and I am confident, together, we would be a great match.
 

@@ -66,7 +66,7 @@ def send_email(profile,
 	if company in job:
 
 		if pair_version == 'A':
-			subject = "RE: {}".format(job)
+			subject = "RE: {} Role".format(job)
 		elif pair_version == 'B':
 			subject = "Position | {} ".format(job)
 
@@ -93,6 +93,7 @@ def send_email(profile,
 	#Alter Full Name Format in CL/Email
 	#(Keep full name in the from field)
 	if pair_version == 'A':
+		phone = '{}'.format(phone.replace('-', '.'))
 		pass
 	elif pair_version == 'B':
 		name = abbreviate_middle(name)
