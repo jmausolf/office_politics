@@ -22,7 +22,6 @@ def join_profiles_credentials():
 
 
 def ret_mba_treatment(row, infile='keys/mba_treatment_key.csv'):
-	#print(row)
 	ga_sid = row['ga_sid']
 	profile = row['profile']
 	job_type = row['job_type']
@@ -32,15 +31,19 @@ def ret_mba_treatment(row, infile='keys/mba_treatment_key.csv'):
 		return ug_treatment
 	else:
 
-		#print(ga_sid)
-		#print(profile)
-
 		df = pd.read_csv(infile)
 		crit = (	(df['ga_sid'] == ga_sid) &
 					(df['profile'] == profile)
 				)
 		treatment = df.loc[crit]['mba_treatment'].tolist()[0]
 		return treatment
+
+
+def update_treatment_leadership(row):
+	base_treatment = row['treatment']
+	leadership = row['leadership']
+	updated_treatment = base_treatment.replace('president', leadership)
+	return updated_treatment
 
 
 def select_ga(row, count):
@@ -612,6 +615,9 @@ def join_experiment_profiles_counter(experiment_file):
 
 	#Update MBA Treatments 
 	df['treatment'] = df.apply(ret_mba_treatment, axis=1)
+
+	#Update Treatment Leadership Position
+	df['treatment'] = df.apply(update_treatment_leadership, axis=1)	
 
 	#Sort by ID
 	df['sort'] = df['id'].str.extract('(\d+)', expand=False).astype(int)
