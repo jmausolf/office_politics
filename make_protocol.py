@@ -52,8 +52,9 @@ def assign_prestige(df,
 
 
 #Assign Order
-def assign_order(df, probs=[.5,.5], col='order'):
-	df[col] = np.random.choice([1, 2], df.shape[0], p=probs)
+def assign_order(df, order_list=[1, 2],
+				 probs=[.5,.5], col='order'):
+	df[col] = np.random.choice(order_list, df.shape[0], p=probs)
 	return df
 
 
@@ -97,6 +98,32 @@ def set_version(version_letter, version_list=None):
 		return vB
 	if version_letter == vB:
 		return vA
+	else:
+		return None
+
+
+#Assign Treatment leader
+def assign_treatment_leader(df, 
+							 leader_list=['president', 'vice president'],
+							 probs=[.5,.5], col='leader'):
+	df[col] = np.random.choice(leader_list, df.shape[0], p=probs)
+	return df
+
+def set_leader(leader_letter, leader_list=None):
+	assert isinstance(leader_letter, str), "leader_letter must be string"
+
+	if leader_list is None:
+		p = 'president'
+		vp = 'vice president'
+	else:
+		assert len(leader_list) == 2, "only two versions possible"
+		p = leader_list[0]
+		vp = leader_list[1]
+
+	if leader_letter == p:
+		return vp
+	if leader_letter == vp:
+		return p
 	else:
 		return None
 
@@ -160,8 +187,9 @@ def make_pairs(df,
 			   treatment_probs,
 			   control_label,
 			   pair_key,
-			   order_var=None,
-			   version=None
+			   order=None,
+			   version=None,
+			   leader=None,
 			   ):
 
 	'''
@@ -185,10 +213,20 @@ def make_pairs(df,
 	The pair_key is the id variable to be given the matched pair.
 		e.g. pair_key could be the company id to send resumes, 'cid'
 
-	The order_var is the previously assigned random integer (1, 2)
+	The order is the name of the variable for the 
+		previously assigned random integer (1, 2)
 		determining which subject (Control or Treatment) 
 		should be first. 
-		If order does not matter, use order_var=None
+
+	The version is the name of the variable for the 
+		previously assigned materials version (A, B)
+		determining which resume and cover letter version
+		a subject is assigned.
+		
+	The leader is the name of the variable for the 
+		previously assigned leadership position
+		('president', 'vice president')
+		for the treatment/control leadership positions
 
 	Example Parameters:
 	df :: an experimental data frame
@@ -196,7 +234,9 @@ def make_pairs(df,
 	treatment_probs :: [.4, .6]
 	control_label :: 'NEU'
 	pair_key :: 'cid'
-	order_var :: 'order'
+	order :: 'order'
+	version :: 'version'
+	leader :: 'leadership'
 	'''
 
 	#Control Matched Subjects
@@ -213,10 +253,10 @@ def make_pairs(df,
 	# Using Randomly Assigned Order and Version for Control
 
 	#Order
-	if order_var is not None:
-		order_int = sorted(T[order_var].unique().tolist())
+	if order is not None:
+		order_int = sorted(T[order].unique().tolist())
 		assert len(order_int) == 2, "order must be one of two ints"
-		T[order_var] = T[order_var].apply(lambda x: set_order(x, order_int))
+		T[order] = T[order].apply(lambda x: set_order(x, order_int))
 		pass
 
 	#Version
@@ -226,12 +266,19 @@ def make_pairs(df,
 		T[version] = T[version].apply(lambda x: set_version(x, versions))
 		pass
 
+	#Leadership
+	if leader is not None:
+		leaders = sorted(T[leader].unique().tolist())
+		assert len(leaders) == 2, "only two leaderships are possible"
+		T[leader] = T[leader].apply(lambda x: set_version(x, leaders))
+		pass
+
 	#Create Matched Pairs
 	MP = C.append(T, ignore_index=True)
 
 	#Sort Matched Pairs and Return
-	if order_var is not None:
-		MP.sort_values(by=[pair_key, order_var], inplace=True)
+	if order is not None:
+		MP.sort_values(by=[pair_key, order], inplace=True)
 	else:
 		MP.sort_values(by=[pair_key], inplace=True)
 	return MP
@@ -302,8 +349,12 @@ def main(employers,
 		 treatment_labs,
 		 control_lab,
 		 pair_key,
-		 order_var,
+		 order,
+		 order_list,
 		 version,
+		 version_list,
+		 leader,
+		 leader_list,
 		 rm_cols='default',
 		 order_cols='default',
 		 outfile='experiment.csv'
@@ -324,15 +375,20 @@ def main(employers,
 						  probs=prestige_probs,
 						  labels=prestige_labs
 						  )
-	emp = assign_order(emp)
-	emp = assign_materials_version(emp)
+	emp = assign_order(emp, col=order,
+							order_list=order_list)
+	emp = assign_materials_version(emp, col=version,
+										version_list=version_list)
+	emp = assign_treatment_leader(emp, col=leader,
+										leader_list=leader_list)
 	emp = make_pairs(emp,
 					 treatment_labs,
 					 treatment_probs,
 					 control_lab,
 					 pair_key,
-					 order_var,
-					 version
+					 order,
+					 version,
+					 leader,
 					 )
 	emp = add_profile_key(emp)
 
@@ -347,8 +403,12 @@ def main(employers,
 						exp_treatment_labs=treatment_labs,
 						exp_control_lab=control_lab,
 						exp_pair_key=pair_key,
-						exp_order_var=order_var,
+						exp_order=order,
+						exp_order_list=order_list,
 						exp_version=version,
+						exp_version_list=version_list,
+						exp_leader=leader,
+						exp_leader_list=leader_list,
 						exp_rm_cols=rm_cols
 						)
 
@@ -364,7 +424,7 @@ def main(employers,
 	#Remove Default Columns
 	if rm_cols == 'default':
 		rm_cols = ['state_name', 'state', 'prestige_level', 
-				   'party', order_var, 'name']
+				   'party', order, 'name']
 	
 	#Or User Provided Column List
 	else:
@@ -384,7 +444,8 @@ def main(employers,
 		cols_order = ['id', 'cid', 'list_id', 'company',
 					  'contact_name', 'contact_last_name', 'contact_email',
 					  'office', 'office_state', 'region', 'proximal_region', 
-					  'position', 'job_type', 'profile', version]
+					  'position', 'job_type', 'profile', 
+					  version, leader]
 		emp = emp[cols_order]
 	else:
 		assert isinstance(order_cols, list), 'provide a column order list'+\
@@ -406,8 +467,12 @@ main(employers='keys/cleaned_employers_key.csv',
      treatment_labs=['DEM', 'REP'],
      control_lab='NEU',
      pair_key='cid',
-     order_var='order',
+     order='order',
+     order_list=[1,2],
      version='version',
+     version_list=['A', 'B'],
+     leader='leadership',
+     leader_list=['president', 'vice president'],
      rm_cols='default',
      order_cols='default'
     )
