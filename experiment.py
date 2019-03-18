@@ -27,7 +27,7 @@ def ret_mba_treatment(row, infile='keys/mba_treatment_key.csv'):
 	job_type = row['job_type']
 	ug_treatment = row['treatment']
 
-	if job_type not in ['mba']:
+	if job_type not in ['mba', 'mba_finance', 'consultant']:
 		return ug_treatment
 	else:
 
@@ -530,7 +530,7 @@ def select_int(row, count):
 	prestige = row[1]
 	company = row[2]
 
-	if job_type in ['data_science', 'computer_science', 'mba']:
+	if job_type in ['data_science', 'computer_science', 'mba', 'mba_finance']:
 		internships = internships_general(job_type, prestige, company, count)
 	if job_type in ['consultant', 'quant', 'stats']:
 		internships = internships_ordered(job_type, prestige, company, count)

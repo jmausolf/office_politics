@@ -177,7 +177,7 @@ def make_html_text_cl(profile,
 				):
 
 	#Make department lowercase in cl (if not MBA type)
-	if job_type not in ['mba']:
+	if job_type not in ['mba', 'mba_finance', 'consultant']:
 		department = department.lower()
 	else:
 		pass
@@ -216,7 +216,7 @@ def make_html_text_cl(profile,
 	#Make HTML Message from Text CL and HTML Sig
 	#(needed to keep the internships consistent)
 	if pair_version == 'A':
-		message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><font face="Garamond">{}\n\n{}</div></html>
+		message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial;text-align:justify;text-justify:auto;"><font face="Garamond">{}\n\n{}</div></html>
 		""".format(textile.textile( message_text_body ), sig_html)
 	elif pair_version == 'B':
 		message_html = """<html><div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;,Times,serif,Times,EmojiFont,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><font face="Helvetica">{}\n\n{}</div></html>
