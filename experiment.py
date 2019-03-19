@@ -115,12 +115,10 @@ def select_ga(row, count):
 		try:
 			ga = gaf.loc[criteria_base].copy()
 			if ga.shape[0] == 0:
-				print("no ga result found, trying proximal region")
 				ga = gaf.loc[criteria_prox].copy()
 			else: 
 				pass
 		except:
-			print("no ga result found, trying proximal region")
 			ga = gaf.loc[criteria_prox].copy()
 
 		#Add Pair Label
