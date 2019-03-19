@@ -38,7 +38,11 @@ def get_regions(df,
 
 	regions = pd.read_csv(region_key)
 	df = df.merge(regions, how='left', left_on=sc, right_on=rc)
-	df.to_csv('test_regions.csv', index=False)
+
+	#TODO Issue a Warning if region/prox region have NAN 
+	#after the merge
+	df.dropna(inplace=True)
+	df.to_csv('merged_regions.csv', index=False)
 	return df
 
 
