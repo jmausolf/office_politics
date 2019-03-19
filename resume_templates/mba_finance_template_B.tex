@@ -1,0 +1,309 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{amsmath} % bold math
+
+%Reset Margins (WIDE)
+%\addtolength{\oddsidemargin}{-.875in}
+%\addtolength{\evensidemargin}{-.875in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+
+\addtolength{\oddsidemargin}{-.75in}
+\addtolength{\evensidemargin}{-.75in}
+\addtolength{\textwidth}{1.50in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{2.75in}
+
+%Make Tab Space
+\newcommand\tab[1][0.25cm]{\hspace*{#1}}
+
+%\addtolength{\oddsidemargin}{-.5in}
+%\addtolength{\evensidemargin}{-.5in}
+%\addtolength{\textwidth}{2in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{2in}
+
+\usepackage[inline]{enumitem}
+%\usepackage{enumitem}
+%\usepackage{booktabs}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Helvetica}
+\setmonofont{Lucida Sans Typewriter}
+
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\center}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+\usepackage[none]{hyphenat}
+
+%Ragged bottom
+%\raggedbottom
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%\usepackage{fancyhdr} % For Header/Footer
+
+%---- Itemized columns
+\usepackage{array,booktabs}
+\makeatletter
+\newcolumntype{i}[1]{%
+    >{\minipage[t]{\linewidth}\let\\\tabularnewline
+      \itemize
+      \addtolength{\rightskip}{0pt plus 50pt}% for raggedright
+      \setlength{\itemsep}{-\parsep}}%
+    p{#1}%
+    <{\@finalstrut\@arstrutbox\enditemize\endminipage}}
+\makeatother
+
+
+%----- Fake/Faux Small Caps
+\makeatletter
+\newlength\fake@f
+\newlength\fake@c
+\def\fakesc#1{%
+  \begingroup%
+  \xdef\fake@name{\csname\curr@fontshape/\f@size\endcsname}%
+  \fontsize{\fontdimen8\fake@name}{\baselineskip}\selectfont%
+  \uppercase{#1}%
+  \endgroup%
+}
+\makeatother
+\newcommand\fauxsc[1]{\fauxschelper#1 \relax\relax}
+\def\fauxschelper#1 #2\relax{%
+  \fauxschelphelp#1\relax\relax%
+  \if\relax#2\relax\else\ \fauxschelper#2\relax\fi%
+}
+\def\Hscale{.83}\def\Vscale{.72}\def\Cscale{1.00}
+\def\fauxschelphelp#1#2\relax{%
+  \ifnum`#1>``\ifnum`#1<`\{\scalebox{\Hscale}[\Vscale]{\uppercase{#1}}\else%
+    \scalebox{\Cscale}[1]{#1}\fi\else\scalebox{\Cscale}[1]{#1}\fi%
+  \ifx\relax#2\relax\else\fauxschelphelp#2\relax\fi}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+
+
+%\pagestyle{empty} % non-numbered pages
+
+% We use \sloppy to suppress word division and permit larger interword
+% spacing so that lines are broken between words.
+\sloppy
+
+
+%% Page Style to put numbers at the top.
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
+% Turn on the style
+%\pagestyle{fancy}
+% Clear the header and footer
+%\fancyhead{}
+%\fancyfoot{}
+% Set the right side of the footer to be the page number
+%\fancyfoot[R]{\thepage}
+
+% Redefine plain style, which is used for titlepage and chapter beginnings
+%\fancyhf{} % sets both header and footer to nothing
+%\renewcommand{\headrulewidth}{0pt}
+%\fancyfoot[R]{\small\thepage}
+%\fancyfoot[L]{\small\emph{Last updated - February 2017}}
+
+%\fancyhead[R]{\thepage}
+%\fancyhead[L]{February 2017}
+
+%Turn off page numbers
+\pagenumbering{gobble}
+
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge  \textsc{ID_NAME}}
+		\par
+		\begin{tabular}{rl}
+		\small
+		\begin{tabular}{rl}
+			\textsc{Address:}   & 	GS_ADDRESS \\
+													& 	GS_CSZIP					\\
+			\textsc{Phone:}     & 	ID_PHONE						\\
+    	\textsc{Email:}     & \href{mailto:ID_EMAIL}{ID_EMAIL}	\\
+		\end{tabular}
+		\end{tabular}
+		\bigskip
+		%\vspace{5mm}
+		\par}
+
+
+
+
+%--------------------SECTIONS-----------------------------------
+
+
+%--------------------Section: Summary--------------------
+\smallskip
+\section{Summary}
+\begin{supertabular}{p{17.3cm}}
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+	\item \small Results-oriented MBA candidate and business professional with over 5 years of experience spanning financial and business analysis. Proven track record in business analytics, with an MBA focus on \emph{finance} and competencies in corporate finance, investment management, and leadership.
+	\end{enumerate*} \\
+\end{supertabular}
+
+
+%--------------------Section: Education--------------------
+\smallskip
+\section{Education}
+\begin{supertabular}{p{1.5cm}p{13.9cm}>{\raggedleft\arraybackslash}p{1.5cm}}
+	\textsc{MBA} & \textsc{GRADSCHOOL}, \small GADEPARTMENT
+	& 	\textsc{2019} \\
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+	\item \footnotesize \emph{Finance} MBA with experience in corporate finance, leadership, investment management, and business analytics.
+	\item \small Statistics, GPA: 3.95; Cumulative GPA 3.91
+	\end{enumerate*}
+	& \\
+	\textsc{BS} & \textsc{UGSCHOOL}, \small Economics, \emph{summa cum laude}, GPA 3.91
+	&	\textsc{2012} 	\\
+	\multicolumn{2}{c}{} \\
+\end{supertabular}
+
+
+
+%--------------------Section: Professional Experience--------------------
+\smallskip
+\section{Work Experience}
+\begin{supertabular}{p{13.9cm}>{\raggedleft\arraybackslash}p{3.4cm}}
+
+	\textsc{INTERNSHIP1}, IC1_CITYSTATE
+	%\vspace{1mm}
+	& \textsc{May-Aug 2018} \\
+	\small	\emph{INT1TITLE} & \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize Tracked project spending against the allocated budget to ensure the accuracy of financial planning.
+		\item \footnotesize Prepared and presented monthly and quarterly spending reports to the executive committee.
+		\item \footnotesize Used financial analytics to develop and recommend a comprehensive, viable business investment portfolio, achieving an 11\% growth in quarterly revenue.
+		\item \footnotesize Identified and implemented cost-saving initiatives of \$250K through systems and production optimization.
+	\end{enumerate*} & \\
+	\multicolumn{2}{c}{} \\
+
+
+
+
+	\textsc{INTERNSHIP2}, IC2_CITYSTATE
+	%\vspace{1mm}
+	& \textsc{2012-2017} \\
+	\small	\emph{Business Analyst II} (2015-2017), \emph{Business Analyst I} (2012-2015) & \\
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \footnotesize Provided statistical analysis to identify business trends and develop targeted solutions for project partners.
+		\item \footnotesize	Advocated restructuring marketing strategy, increasing brand penetration in key markets by 23\%.
+		\item \footnotesize Constructed a systematic forecasting model to reduce forecast cycle time from 2 weeks to under 4 days.
+		\item \footnotesize Harnessed \emph{SQL} and \emph{Tableau} to design and develop dashboard metrics and drive impactful descriptive analytics.
+		\item \footnotesize Executed predictive business analytics projects with machine learning, communicating results with analytics supervisors.
+	\end{enumerate*} & \\
+	\multicolumn{2}{c}{} \\
+
+
+\end{supertabular}
+
+
+
+
+
+
+
+%--------------------Honors--------------------
+\smallskip
+\section{Awards, Accomplishments, and Affiliations}
+\begin{supertabular}{p{8.65cm} p{8.65cm}}
+
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \small Sloan Merit Scholarship
+		\item \small Venture Capital Challenge - Runner-up
+		\item \small Business Analytics Hackathon Facilitator
+		\end{enumerate*}
+
+
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+                                \item \small Organized group activities and directed fundraisers as TREATMENT
+                                \item \small American Finance Association
+                                \end{enumerate*}  \vspace{1mm} \\
+
+
+
+\end{supertabular}
+
+
+
+
+%--------------------Languages--------------------
+\smallskip
+\section{Technical Skills}
+\begin{supertabular}{p{8.65cm} p{8.65cm}}
+
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+																\item \small \textsc{R, MATLAB, Stata, PostgreSQL, SQLite}
+																\item \small \textsc{Tableau, Markdown, Shiny, NVivo}
+																\item \small \textsc{Sublime, Emacs, Secure Shell, Git, Linux}
+																\end{enumerate*}
+
+
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+                                \item \small Machine Learning, Predictive Analytics, Forecasting
+                                \item \small Financial Econometrics, Optimization Modeling, Descriptive and Diagnostic Analytics
+                                \item \small Time Series, Multilevel Modeling \end{enumerate*}  \vspace{1mm} \\
+
+
+
+\end{supertabular}
+
+
+
+%--------------------Other--------------------
+\smallskip
+\section{Supplemental Qualifications}
+\begin{supertabular}{p{8.65cm} p{8.65cm}}
+	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+		\item \small \emph{Foreign Languages}: \footnotesize \emph{German} (advanced), \emph{Spanish} (beginner)
+	 	\item \small \emph{Business}: \footnotesize SAP CRM, Asana, Slack
+	\end{enumerate*}
+
+	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
+	 	\item \small \emph{Microsoft Office}: \footnotesize Excel, Word, PowerPoint, Outlook, Access
+	 	\item \small \emph{Google}: \footnotesize Slides, Sheets, Documents, Gmail, Drive
+	\end{enumerate*} \\
+	%\emph{Hobbies:} 		& \small Running, Lacrosse, Hiking, Adventure Tourism, Skiing \\
+
+\end{supertabular}
+
+\end{document}
