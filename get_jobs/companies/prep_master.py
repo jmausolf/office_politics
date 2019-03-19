@@ -283,7 +283,7 @@ def clean_nasdaq(source_file):
     keep_cols = ['list_id', 'company', 'rank']
     df = df[keep_cols]
     df['source'] = 'nasdaq_tech'
-    df['job_type'] = 'data_science'
+    df['job_type'] = 'data_science_b'
 
     #Save
     df.to_csv(clean_csv, index=False)
@@ -451,7 +451,7 @@ def clean_ru3000(source_file):
     keep_cols = ['list_id', 'company', 'rank']
     df = df[keep_cols]
     df['source'] = 'ru3000'
-    df['job_type'] = 'data_science'
+    df['job_type'] = 'data_science_b'
 
     #Save
     df.to_csv(clean_csv, index=False)
@@ -555,6 +555,7 @@ print(prep_df)
 #############################################
 
 #Key = job_type (first one)
+'''
 job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'computer_science', 'mba', None],
                   'quant':['quant', 'data_science', 'stats', 'computer_science', 'mba', None],
                   'banking':['quant', 'data_science', 'mba', 'stats', 'computer_science', None],
@@ -562,7 +563,29 @@ job_types_dict = {'data_science':['data_science', 'stats', 'quant', 'computer_sc
                   'consulting':['data_science', 'computer_science', 'consultant', 'mba', 'stats', 'quant'],
                   'law':['mba', 'data_science', 'computer_science', 'stats', 'quant', None]
 }
+'''
 
+'''
+#Full Job Types
+job_types_dict = {'data_science':['data_science', 'computer_science', 'mba', 'mba_finance', 'stats', 'quant', 'mba_analyst'],
+                  'quant':['quant', 'data_science', 'mba_finance', 'computer_science', 'stats', 'mba', 'mba_analyst'],
+                  'banking':['quant', 'data_science', 'mba_finance', 'mba', 'stats', 'computer_science', 'mba_analyst'],
+                  'accounting':['mba_finance', 'mba', 'stats', 'data_science', 'computer_science', 'quant', 'mba_analyst'],
+                  'consulting':['data_science', 'mba_finance', 'mba', 'computer_science', 'stats', 'quant', 'mba_analyst'],
+                  'law':['mba', 'mba_finance', 'data_science', 'computer_science', 'stats', 'quant', 'mba_analyst'],
+                  'data_science_b':['data_science', 'computer_science', 'mba', 'mba_finance', 'stats', 'quant', 'mba_analyst']
+}
+'''
+
+#MBA Test
+job_types_dict = {'data_science':['mba', 'mba_finance', 'mba_analyst'],
+                  'quant':['mba', 'mba_finance', 'mba_analyst'],
+                  'banking':['mba', 'mba_finance', 'mba_analyst'],
+                  'accounting':['mba', 'mba_finance', 'mba_analyst'],
+                  'consulting':['mba', 'mba_finance', 'mba_analyst'],
+                  'law':['mba', 'mba_finance', 'mba_analyst'],
+                  'data_science_b':['mba', 'mba_finance', 'mba_analyst']
+}
 
 
 def job_col_names(job_types_dict, first_key):
