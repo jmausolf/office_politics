@@ -10,6 +10,7 @@ from make_cover_letters import *
 from send_email import *
 import pdb
 import time
+import sys
 
 
 
@@ -698,7 +699,24 @@ def deploy_matched_pairs_emails(df, experiment_csv, matched_pair):
 
 
 
+def display_time_elapsed(start, end, companies=None, version=None):
+	time_elapsed = ((end-start)/60)
+	time_message = '[*] {} minutes elapsed...'.format(time_elapsed)
+	
+	if companies is None and version is None:
+		print(time_message)
+
+	if companies is not None and version is not None:
+		c = '{} companies...'.format(companies)
+		v = 'version {}...'.format(version)
+		print(time_message+v+c)
+	else:
+		pass
+
+
+
 def deploy_emails(experiment_csv):
+	s1 = time.time()
 	df = join_experiment_profiles_counter(experiment_csv)
 	ex_out = "logs/{}_output.csv".format(experiment_csv.split(".")[0])
 	df.to_csv(ex_out, index=False)
@@ -706,10 +724,8 @@ def deploy_emails(experiment_csv):
 	#Matched Pairs A
 	df_A = df.loc[(df['matched_pair']=='A')].copy()
 	deploy_matched_pairs_emails(df_A, experiment_csv, "A")
+	e1 = time.time()
 
-
-	import sys
-	import time
 	for i in range(10,0,-1):
 	    sys.stdout.write(str(i)+' ')
 	    sys.stdout.flush()
@@ -717,13 +733,19 @@ def deploy_emails(experiment_csv):
 
 
 	#Matched Pairs B
+	s2 = time.time()
 	df_B = df.loc[(df['matched_pair']=='B')].copy()
 	deploy_matched_pairs_emails(df_B, experiment_csv, "B")
+	e2 = time.time()
 
+	display_time_elapsed(s1, e1, df_A.shape[0], "A")
+	display_time_elapsed(s2, e2, df_B.shape[0], "B")
 
 
 
 deploy_emails("experiment_test.csv")
+
+
 
 
 

@@ -86,7 +86,7 @@ def send_email(profile,
 		if pair_version == 'A':
 			subject = "RE: {} Opening - {}".format(job_post, company)
 		elif pair_version == 'B':
-			subject = "{} | Position".format(job_post)
+			subject = "Position | {}".format(job_post)
 
 	msgRoot = MIMEMultipart('mixed')
 	msgRoot['Subject'] = subject
