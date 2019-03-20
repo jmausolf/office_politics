@@ -32,7 +32,7 @@ class cl(object):
 
 			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a summer data science intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -66,7 +66,7 @@ class cl(object):
 
 			With my background in statistics, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to author an R library that uses support vector machines to estimate marginal treatment effects and facilitate statistical analyses of causality. Moreover, I have applied my statistical skills in R, SQL, and Hadoop to conduct statistical modeling and simulations and deliver clear research insights as a summer intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable research solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -101,7 +101,7 @@ class cl(object):
 
 			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a quant intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -135,7 +135,7 @@ class cl(object):
 
 			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a summer software engineering intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -170,7 +170,7 @@ class cl(object):
 
 			With my business school background, I exhibit both the textbook business insights and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have applied my knowledge of business and economics to manage a product's lifecycle, guiding projects from strategic planning to development. Moreover, I have been able to not only generate impactful business analytics but also demonstrate the capacity to use this knowledge to develop business and product strategy during my experience at both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to leverage actionable data solutions or my past initiatives as {6} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills, management abilities, and analytics capacity illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills, management abilities, and analytics capacity illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, department, treatment))
@@ -205,7 +205,7 @@ class cl(object):
 
 			With my business school background, I exhibit both the textbook business insights and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have applied my knowledge of business and economics to manage a product's lifecycle, guiding projects from strategic planning to development. Moreover, I have been able to not only generate impactful business analytics but also demonstrate the capacity to use this knowledge to develop business and product strategy during my experience at both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to leverage actionable data solutions or my past initiatives as {6} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills, management abilities, and analytics capacity illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills, management abilities, and analytics capacity illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, department, treatment))
@@ -241,7 +241,7 @@ class cl(object):
 
 			With my business school background, I exhibit both the textbook financial insights and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have applied my knowledge of finance and economics to modeling corporate investment portfolios, minimizing production costs, and offering financial planning that optimizes business revenue and spending. Moreover, I have been able to not only generate impactful business analytics but also demonstrate the capacity to use this knowledge to develop financial and business strategy during my experience at both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to leverage actionable data solutions or my past initiatives as {6} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills, financial management abilities, and analytics capacity illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills, financial management abilities, and analytics capacity illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, department, treatment))
@@ -276,7 +276,7 @@ class cl(object):
 
 			With my business school background, I exhibit both the textbook business insights and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have applied my knowledge of business and economics to manage a product's lifecycle, guiding projects from strategic planning to development. Moreover, I have been able to not only generate impactful business analytics but also demonstrate the capacity to use this knowledge to develop business and product strategy during my experience at both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to leverage actionable data solutions or my past initiatives as {6} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, department, treatment))

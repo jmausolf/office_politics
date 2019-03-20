@@ -161,7 +161,7 @@ def make_resume(profile,
 
 
 	#Department Adjustment for MBA/Consultants
-	if job_type == 'mba' or job_type == 'consultant':
+	if job_type in ['mba', 'mba_finance', 'mba_analyst', 'consultant']:
 		department = article_strip(department.split(' at ')[0])
 	else:
 		pass
