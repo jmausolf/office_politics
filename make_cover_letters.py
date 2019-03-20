@@ -177,7 +177,7 @@ def make_html_text_cl(profile,
 				):
 
 	#Make department lowercase in cl (if not MBA type)
-	if job_type not in ['mba', 'mba_finance', 'consultant']:
+	if job_type not in ['mba', 'mba_finance', 'mba_analyst', 'consultant']:
 		department = department.lower()
 	else:
 		pass

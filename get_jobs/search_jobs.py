@@ -44,6 +44,7 @@ def search_url(job_keyword, company):
     jt = "jt=fulltime"
     qry = "{}+{}&{}&{}".format(job, cid, loc, jt)
     url = url_stem+qry
+    print(url)
     return url
 
 

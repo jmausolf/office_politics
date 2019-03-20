@@ -180,6 +180,29 @@ mkdir -p logs
 
 
 #######################
+## MBA - Analyst
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=mba_analyst
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/mba_template_A.tex $subpath
+        cp resume_templates/mba_template_B.tex $subpath
+        mv $subpath"/mba_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/mba_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying mba_template_A.tex to ' $subpath
+        echo 'copying mba_template_B.tex to ' $subpath
+done
+echo 'renaming mba_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+
+#######################
 ## MBA - Finance
 #######################
 
