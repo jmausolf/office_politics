@@ -32,7 +32,7 @@ class cl(object):
 
 			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a summer data science intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -66,7 +66,7 @@ class cl(object):
 
 			With my background in statistics, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to author an R library that uses support vector machines to estimate marginal treatment effects and facilitate statistical analyses of causality. Moreover, I have applied my statistical skills in R, SQL, and Hadoop to conduct statistical modeling and simulations and deliver clear research insights as a summer intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable research solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -79,9 +79,9 @@ class cl(object):
 	def quant_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},
 
-			I am writing in response to your notice for the {1} opening at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of recurrent neural networks in cloud computing. {3} has excellent career prospects in quantitative finance, and I am confident, together, we would be a great match.
+			I am writing in response to your notice for the {1} opening at your {2} office. I am a doctoral candidate in {6} at {5} specializing in the application of Bayesian nonparametric inference in statistical learning. {3} has excellent career prospects in statistics and mathematical finance, and I am confident, together, we would be a great match.
 
-			As a computer scientist, I have both the theoretical knowledge and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only developed an enhanced Bayesian algorithm to improve efficiency in parallel computing, but I have also used Python, R, and SQL to apply Bayesian and machine learning models to simulate portfolio returns and optimize alpha as a quantitative research intern at both {4}. Collectively, my background in computer science as well as statistical and mathematical modeling gives me first-hand experience into the crux of today’s complex puzzles in statistical learning and their applications at the frontier of quantitative finance.
+			As a statistician, I have both the theoretical knowledge and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only developed an enhanced Bayesian algorithm to improve efficiency in parallel computing, but I have also used Python, R, and SQL to apply Bayesian and machine learning models to simulate portfolio returns and optimize alpha as a quantitative research intern at both {4}. Collectively, my background in statistics, computation, and mathematics gives me first-hand experience into the crux of today’s complex puzzles in statistical learning and their applications at the frontier of quantitative finance.
 
 			Although I have a number of methodological strengths and my doctoral degree underscores my ability to tackle multifaceted problems, I also strive to work as a team player, whether it's by working with colleagues at {4} to communicate data-driven solutions or spearheading fundraising initiatives and leading a diverse set of students during my tenure as {7}. I think you will agree that my programming background—combined with my outgoing charisma and penchant for team leadership—makes me a valuable recruit for the position at {3}.
 
@@ -97,11 +97,11 @@ class cl(object):
 		contact_full = "{} {}".format(contact, contact_last_name)
 		message = inspect.cleandoc("""Dear {0}:
 
-			I hope this email finds you well. I recently came across the {1} position at {3}'s {2} office. As a Ph.D. candidate in {6} at {5}, I research the application of nonparametric bound estimation for deep reinforcement learning, a type of computer vision. Given, {3}'s opportunities in mathematical finance, I would love to contribute my talents.
+			I hope this email finds you well. I recently came across the {1} position at {3}'s {2} office. As a Ph.D. candidate in {6} at {5}, I research the application of high-dimensional Bayesian learning to sparse signal forecasting, a type of predictive quantitative modeling. Given, {3}'s opportunities in quantitative finance, I would love to contribute my talents.
 
-			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a quant intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
+			With my background in computational statistics, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes high-dimensional Bayesian learning and sparse signal processing. Moreover, I have applied my computational skills in C++, Python, SQL, and Hadoop to develop automated quantitative trading strategies, simulate portfolio returns, and drive impactful investment analytics as a quant intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in statistics, computer science, and applied mathematics illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -135,7 +135,7 @@ class cl(object):
 
 			With my background in computer science, I exhibit both the academic theory and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have used my dissertation to develop a C++ library that optimizes deep learning. Moreover, I have applied my computational skills in Python, SQL, and Hadoop to improve ETL server efficiency and provide impactful analytics as a summer software engineering intern for both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to share actionable data solutions or my past initiatives as {7} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, school, department, treatment))
@@ -276,7 +276,7 @@ class cl(object):
 
 			With my business school background, I exhibit both the textbook business insights and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have applied my knowledge of business and economics to manage a product's lifecycle, guiding projects from strategic planning to development. Moreover, I have been able to not only generate impactful business analytics but also demonstrate the capacity to use this knowledge to develop business and product strategy during my experience at both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to leverage actionable data solutions or my past initiatives as {6} to direct fundraisers and organize student activities.
 
-			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics, illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+			In combination, my collaborative skills and computational abilities in artificial intelligence, mathematics, and statistics illustrate the value I can bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
 
 			Sincerely,
 			""".format(contact_full, job, office, company, internships, department, treatment))
