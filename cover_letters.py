@@ -178,7 +178,43 @@ class cl(object):
 		return message
 
 
-	## MBA Cover Letters
+	## MBA Analyst Cover Letters
+
+	def mba_analyst_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
+		message = inspect.cleandoc("""Hi {0},
+
+			I am writing in response to your notice for the {1} opening at your {2} office. I am an MBA candidate in {5} specializing in general management, particularly applications of corporate strategy, operations, marketing, and business intelligence. {3} has excellent careers in business management, and I am confident, together, we would be a great match.
+
+			As an MBA candidate, I have both the strategic insight and applied experience to make a difference at {3}. If you peruse my resume, you'll notice that I have not only led cross-functional efforts, identified key market opportunities, and influenced business strategy as an MBA intern at {7}, I have also generated actionable business analytics during my experience as a business analyst at {8}. Collectively, my background in general management and statistics gives me first-hand experience into the crux of today’s complex puzzles in business and their applications at the frontier of corporate strategy and operations.
+
+			Although I have a number of methodological strengths and my MBA underscores my ability to tackle multifaceted problems, I also strive to work as a team player, whether it's by working with colleagues at {4} to communicate strategic solutions or spearheading fundraising initiatives and leading a diverse set of students during my tenure as {6}. I think you will agree that my management background—combined with my analytics capacity and outgoing penchant for team leadership—makes me a valuable recruit for the position at {3}.
+
+			{0}, I am excited about this opportunity at {3} and eager to discuss next steps. Attached, please find a copy of my resume. I look forward to speaking with you soon so that we can discuss the position further.
+
+			All the best,
+			""".format(contact, job, office, company, internships, department, treatment, internship1, internship2))
+
+		return message
+
+
+	def mba_analyst_B(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
+		contact_full = "{} {}".format(contact, contact_last_name)
+		message = inspect.cleandoc("""Dear {0}:
+
+			I hope this email finds you well. I recently came across the {1} position at {3}'s {2} office. As an MBA student in {5}, I understand management fundamentals and have applied experience in project management, team dynamics, product marketing, and business analytics. Given {3}'s opportunities in business, I would love to contribute my talents.
+
+			With my business school background, I exhibit both the textbook business insights and pragmatic qualifications to be impactful at {3}. As evidenced in my resume, I have applied my knowledge of business and economics to manage a product's lifecycle, guiding projects from strategic planning to development. Moreover, I have been able to not only generate impactful business analytics but also demonstrate the capacity to use this knowledge to develop business and product strategy during my experience at both {4}. Both within and outside the workplace, I embrace collaboration, such as my efforts at {4} to leverage actionable data solutions or my past initiatives as {6} to direct fundraisers and organize student activities.
+
+			In combination, my collaborative skills, management abilities, and analytics capacity illustrate the value I could bring to {3}, and I am delighted to submit my application. To that end, I have attached my resume for review. I hope to hear from you shortly.
+
+			Sincerely,
+			""".format(contact_full, job, office, company, internships, department, treatment))
+
+		return message
+
+
+
+	## MBA Finance Cover Letters
 
 	def mba_finance_A(self, contact, contact_last_name, job, office, company, internships, school, department, treatment, internship1, internship2):
 		message = inspect.cleandoc("""Hi {0},

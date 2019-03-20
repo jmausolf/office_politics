@@ -66,7 +66,7 @@ def send_email(profile,
 	if company in job:
 
 		if pair_version == 'A':
-			subject = "RE: {} Opening".format(job)
+			subject = "{} Opening".format(job)
 		elif pair_version == 'B':
 			subject = "Position | {} ".format(job)
 
@@ -84,7 +84,7 @@ def send_email(profile,
 			
 
 		if pair_version == 'A':
-			subject = "RE: {} Opening - {}".format(job_post, company)
+			subject = "{} Opening - {}".format(job_post, company)
 		elif pair_version == 'B':
 			subject = "Position | {}".format(job_post)
 
