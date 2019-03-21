@@ -8,6 +8,59 @@ import ast
 ## Cleaning Code
 #######################################
 
+def rm_numeric(text):
+    return re.sub(r'\s.\d+', ' ', text)
+
+def ret_title(text):
+    if text.isupper() is True:
+        return text.title()
+    else:
+        return text
+
+
+def sub_rank_typos(text):
+    #Patterns
+    pat1 = r'\s[lL]+\s'
+    pat2 = r'\s[lL]+$'
+    m1 = re.findall(pat1, text)
+    m2 = re.findall(pat2, text)
+
+    #Create Replacements Pat1
+    if len(m1) == 1:
+        err_rank = m1[0].strip()
+        n = len(err_rank)
+        rep_rank1 = ' {} '.format('I'*n)
+
+    else:
+        rep_rank1 = ''
+
+    #Create Replacements Pat2
+    if len(m2) == 1:
+        err_rank = m2[0].strip()
+        n = len(err_rank)
+        rep_rank2 = ' {} '.format('I'*n)
+
+    else:
+        rep_rank2 = ''
+
+    #Make Substitutions for Two Patterns
+    text = re.sub(pat1, rep_rank1, text)
+    text = re.sub(pat2, rep_rank2, text)
+    return text
+
+
+def rm_ending_off_words(text):
+    #Not lowercase ending words
+    pat1 = r'\s[a-z]+$' 
+
+    #Not Single Uppercase Words Except I or V
+    pat2 = r'\s(?!I|V)[A-Z]{1}$'
+
+    text = re.sub(pat1, '', text)
+    text = re.sub(pat2, '', text)
+    return text
+
+
 def ret_position_stop_words():
 
     ## Position Specific Stop Words
@@ -40,12 +93,15 @@ def ret_position_stop_words():
     return stop_words
 
 
+
+
 def rm_words(text):
 
     removal_words = ['Part-time', 'Part-Time', 'Part Time', 'Part time',
                      'Full-time', 'Full-Time', 'Full Time', 'Full time',
                      'Student', 'student',
-                     'University Recruiting', 'Recruiting']
+                     'University Recruiting', 'Recruiting',
+                     'USA', 'United States']
 
     for w in removal_words:
         text = text.replace(w, '').strip()
@@ -70,6 +126,10 @@ def rm_state_abb_pat(text, state_abb):
         text = text.replace(s, '')
     text = re.sub(r'\s{2,}', ' ', text).strip()
     return text
+
+
+def rm_double_hyphen(text):
+    return text.replace('- -', '-').replace('--', '-')
 
 
 def upper_post_crit(word, stop_words):
@@ -117,7 +177,7 @@ def clean_position(text, upper_sw, lower_sw):
 
     ##Fix Very Long Job Titles
     h = p.count(' - ')
-    if len(p) >= 30 & h > 1:
+    if len(p) >= 30 and h > 1:
         p = p.rsplit(' - ', h-1)[0]
     if p.count(' - ') >= 1 and len(p) > 50:
         p0 = p.split(' - ')[0]
@@ -146,9 +206,13 @@ def cleaned_emp_key(emp_key='../keys/employers_key.csv',
     print("[*] cleaning {}, outfile = {}".format(emp_key, outfile))
     df = pd.read_csv(emp_key)
 
+
     #State Abbreviations
     sb = pd.read_csv('../keys/region_key.csv')['state'].tolist()
     sf = pd.read_csv('../keys/region_key.csv')['state_name'].tolist()
+
+    #Fix Full Uppercase Posts
+    df['position'] = df['position'].apply(ret_title)
 
     #Uppercase Stop Words
     up_sw = ret_position_stop_words()
@@ -157,14 +221,27 @@ def cleaned_emp_key(emp_key='../keys/employers_key.csv',
     lw_sw = set(stopwords.words('english'))
 
 
+    #Remove Numeric from Position
+    df['position'] = df['position'].apply(rm_numeric)
+
+    #Sub Rank Typos
+    df['position'] = df['position'].apply(sub_rank_typos)
+
     #Correct State Abbreviations
     df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sb)
     df['position'] = df['position'].apply(rm_state_abb_pat, state_abb=sf)
+
+    #Remove Extra Double Hyphens
+    df['position'] = df['position'].apply(rm_double_hyphen)
+
+    #Remove Odd Ending Words
+    df['position'] = df['position'].apply(rm_ending_off_words)
 
     #Correct Upper and Lower Words
     df['position'] = df['position'].apply(clean_position,
                                           upper_sw=up_sw,
                                           lower_sw=lw_sw)
+
     df = df.dropna(axis=0)
     print(df['position'])
     df.to_csv(outfile, index=False)
@@ -305,3 +382,6 @@ ranks = ['job_type_1', 'job_type_2', 'job_type_3',
          'job_type_4', 'job_type_5', 'job_type_6']
 reclassify_jobs('../keys/cleaned_employers_key.csv',
                 'master_companies.csv', ranks)
+
+
+
