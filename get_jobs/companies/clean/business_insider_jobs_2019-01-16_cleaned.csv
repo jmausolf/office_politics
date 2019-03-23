@@ -1,26 +1,26 @@
-list_id,company,rank,source,job_type
-bi_0,Credit Karma,21,business_insider25,data_science
-bi_1,Wish,21,business_insider25,data_science
-bi_2,Houzz,21,business_insider25,data_science
-bi_3,DoorDash,21,business_insider25,data_science
-bi_4,Snowflake,21,business_insider25,data_science
-bi_5,Intarcia Therapeutics,20,business_insider25,data_science
-bi_6,Peloton,19,business_insider25,data_science
-bi_7,SoFi,17,business_insider25,data_science
-bi_8,Compass,17,business_insider25,data_science
-bi_9,Machine Zone,16,business_insider25,data_science
-bi_10,Robinhood,15,business_insider25,data_science
-bi_11,Magic Leap,14,business_insider25,data_science
-bi_12,Tanium,13,business_insider25,data_science
-bi_13,Moderna Therapeutics,12,business_insider25,data_science
-bi_14,Slack,11,business_insider25,data_science
-bi_15,Instacart,10,business_insider25,data_science
-bi_16,Pinterest,9,business_insider25,data_science
-bi_17,Samumed,8,business_insider25,data_science
-bi_18,Lyft,7,business_insider25,data_science
-bi_19,Stripe,6,business_insider25,data_science
-bi_20,Palantir,5,business_insider25,data_science
-bi_21,WeWork,4,business_insider25,data_science
-bi_22,SpaceX,3,business_insider25,data_science
-bi_23,Airbnb,2,business_insider25,data_science
-bi_24,Uber,1,business_insider25,data_science
+list_id,company,raw_company,rank,source,job_type
+bi_0,Credit Karma,Credit Karma,21,business_insider25,data_science
+bi_1,Wish,Wish,21,business_insider25,data_science
+bi_2,Houzz,Houzz,21,business_insider25,data_science
+bi_3,DoorDash,DoorDash,21,business_insider25,data_science
+bi_4,Snowflake,Snowflake,21,business_insider25,data_science
+bi_5,Intarcia Therapeutics,Intarcia Therapeutics,20,business_insider25,data_science
+bi_6,Peloton,Peloton,19,business_insider25,data_science
+bi_7,SoFi,SoFi,17,business_insider25,data_science
+bi_8,Compass,Compass,17,business_insider25,data_science
+bi_9,Machine Zone,Machine Zone,16,business_insider25,data_science
+bi_10,Robinhood,Robinhood,15,business_insider25,data_science
+bi_11,Magic Leap,Magic Leap,14,business_insider25,data_science
+bi_12,Tanium,Tanium,13,business_insider25,data_science
+bi_13,Moderna Therapeutics,Moderna Therapeutics,12,business_insider25,data_science
+bi_14,Slack,Slack,11,business_insider25,data_science
+bi_15,Instacart,Instacart,10,business_insider25,data_science
+bi_16,Pinterest,Pinterest,9,business_insider25,data_science
+bi_17,Samumed,Samumed,8,business_insider25,data_science
+bi_18,Lyft,Lyft,7,business_insider25,data_science
+bi_19,Stripe,Stripe,6,business_insider25,data_science
+bi_20,Palantir,Palantir,5,business_insider25,data_science
+bi_21,WeWork,WeWork,4,business_insider25,data_science
+bi_22,SpaceX,SpaceX,3,business_insider25,data_science
+bi_23,Airbnb,Airbnb,2,business_insider25,data_science
+bi_24,Uber,Uber,1,business_insider25,data_science

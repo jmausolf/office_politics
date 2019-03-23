@@ -1,608 +1,608 @@
-list_id,company,rank,source,job_type
-nasdaq_MSFT,Microsoft Corporation,1.0,nasdaq_tech,data_science
-nasdaq_GOOG,Alphabet,2.0,nasdaq_tech,data_science
-nasdaq_AAPL,Apple,3.0,nasdaq_tech,data_science
-nasdaq_FB,Facebook,4.0,nasdaq_tech,data_science
-nasdaq_INTC,Intel Corporation,5.0,nasdaq_tech,data_science
-nasdaq_CSCO,Cisco Systems,6.0,nasdaq_tech,data_science
-nasdaq_TSM,Taiwan Semiconductor Manufacturing Company,7.0,nasdaq_tech,data_science
-nasdaq_ORCL,Oracle Corporation,8.0,nasdaq_tech,data_science
-nasdaq_SAP,SAP SE,9.0,nasdaq_tech,data_science
-nasdaq_ADBE,Adobe,10.0,nasdaq_tech,data_science
-nasdaq_CRM,Salesforce.com Inc,11.0,nasdaq_tech,data_science
-nasdaq_IBM,International Business Machines Corporation,12.0,nasdaq_tech,data_science
-nasdaq_AVGO,Broadcom,13.0,nasdaq_tech,data_science
-nasdaq_TXN,Texas Instruments Incorporated,14.0,nasdaq_tech,data_science
-nasdaq_NVDA,NVIDIA Corporation,15.0,nasdaq_tech,data_science
-nasdaq_QCOM,QUALCOMM Incorporated,16.0,nasdaq_tech,data_science
-nasdaq_VMW,Vmware,17.0,nasdaq_tech,data_science
-nasdaq_ADP,Automatic Data Processing,18.0,nasdaq_tech,data_science
-nasdaq_INTU,Intuit,19.0,nasdaq_tech,data_science
-nasdaq_BIDU,Baidu,20.0,nasdaq_tech,data_science
-nasdaq_INFY,Infosys Limited,21.0,nasdaq_tech,data_science
-nasdaq_ITW,Illinois Tool Works,22.0,nasdaq_tech,data_science
-nasdaq_MU,Micron Technology,23.0,nasdaq_tech,data_science
-nasdaq_AABA,Altaba,24.0,nasdaq_tech,data_science
-nasdaq_CTSH,Cognizant Technology Solutions Corporation,25.0,nasdaq_tech,data_science
-nasdaq_WDAY,Workday,26.0,nasdaq_tech,data_science
-nasdaq_ATVI,"Activision Blizzard, Inc",27.0,nasdaq_tech,data_science
-nasdaq_NOW,ServiceNow,28.0,nasdaq_tech,data_science
-nasdaq_NOK,Nokia Corporation,29.0,nasdaq_tech,data_science
-nasdaq_AMAT,Applied Materials,30.0,nasdaq_tech,data_science
-nasdaq_ADI,Analog Devices,31.0,nasdaq_tech,data_science
-nasdaq_HPQ,HP,32.0,nasdaq_tech,data_science
-nasdaq_DELL,Dell Technologies,33.0,nasdaq_tech,data_science
-nasdaq_RHT,Red Hat,34.0,nasdaq_tech,data_science
-nasdaq_ETN,"Eaton Corporation, PLC",35.0,nasdaq_tech,data_science
-nasdaq_ADSK,Autodesk,36.0,nasdaq_tech,data_science
-nasdaq_FISV,Fiserv,37.0,nasdaq_tech,data_science
-nasdaq_EA,Electronic Arts,38.0,nasdaq_tech,data_science
-nasdaq_SQ,Square,39.0,nasdaq_tech,data_science
-nasdaq_TWTR,Twitter,40.0,nasdaq_tech,data_science
-nasdaq_NXPI,NXP Semiconductors N.V.,41.0,nasdaq_tech,data_science
-nasdaq_WIT,Wipro Limited,42.0,nasdaq_tech,data_science
-nasdaq_XLNX,Xilinx,43.0,nasdaq_tech,data_science
-nasdaq_TEAM,Atlassian Corporation Plc,44.0,nasdaq_tech,data_science
-nasdaq_LRCX,Lam Research Corporation,45.0,nasdaq_tech,data_science
-nasdaq_AMD,Advanced Micro Devices,46.0,nasdaq_tech,data_science
-nasdaq_HPE,Hewlett Packard Enterprise Company,47.0,nasdaq_tech,data_science
-nasdaq_INFO,IHS Markit,48.0,nasdaq_tech,data_science
-nasdaq_VRSN,VeriSign,49.0,nasdaq_tech,data_science
-nasdaq_MSI,Motorola Solutions,50.0,nasdaq_tech,data_science
-nasdaq_PANW,Palo Alto Networks,51.0,nasdaq_tech,data_science
-nasdaq_VRSK,Verisk Analytics,52.0,nasdaq_tech,data_science
-nasdaq_MCHP,Microchip Technology Incorporated,53.0,nasdaq_tech,data_science
-nasdaq_CERN,Cerner Corporation,54.0,nasdaq_tech,data_science
-nasdaq_SPLK,Splunk,55.0,nasdaq_tech,data_science
-nasdaq_OMC,Omnicom Group,56.0,nasdaq_tech,data_science
-nasdaq_DXC,DXC Technology Company,57.0,nasdaq_tech,data_science
-nasdaq_CHKP,Check Point Software Technologies,58.0,nasdaq_tech,data_science
-nasdaq_ANET,Arista Networks,59.0,nasdaq_tech,data_science
-nasdaq_NTAP,NetApp,60.0,nasdaq_tech,data_science
-nasdaq_SHOP,Shopify,61.0,nasdaq_tech,data_science
-nasdaq_MXIM,Maxim Integrated Products,62.0,nasdaq_tech,data_science
-nasdaq_WPP,WPP plc,63.0,nasdaq_tech,data_science
-nasdaq_VEEV,Veeva Systems,64.0,nasdaq_tech,data_science
-nasdaq_CTXS,Citrix Systems,65.0,nasdaq_tech,data_science
-nasdaq_LLL,L3 Technologies,66.0,nasdaq_tech,data_science
-nasdaq_SNPS,Synopsys,67.0,nasdaq_tech,data_science
-nasdaq_ANSS,ANSYS,68.0,nasdaq_tech,data_science
-nasdaq_SYMC,Symantec Corporation,69.0,nasdaq_tech,data_science
-nasdaq_STM,STMicroelectronics N.V.,70.0,nasdaq_tech,data_science
-nasdaq_CDNS,Cadence Design Systems,71.0,nasdaq_tech,data_science
-nasdaq_FTNT,Fortinet,72.0,nasdaq_tech,data_science
-nasdaq_SWKS,Skyworks Solutions,73.0,nasdaq_tech,data_science
-nasdaq_MTCH,Match Group,74.0,nasdaq_tech,data_science
-nasdaq_TTWO,Take-Two Interactive Software,75.0,nasdaq_tech,data_science
-nasdaq_SSNC,SS&C Technologies Holdings,76.0,nasdaq_tech,data_science
-nasdaq_STX,Seagate Technology PLC,77.0,nasdaq_tech,data_science
-nasdaq_WDC,Western Digital Corporation,78.0,nasdaq_tech,data_science
-nasdaq_DOV,Dover Corporation,79.0,nasdaq_tech,data_science
-nasdaq_MRVL,Marvell Technology Group,80.0,nasdaq_tech,data_science
-nasdaq_ASML,ASML Holding N.V.,81.0,nasdaq_tech,data_science
-nasdaq_GDDY,GoDaddy,82.0,nasdaq_tech,data_science
-nasdaq_PTC,PTC,83.0,nasdaq_tech,data_science
-nasdaq_DATA,Tableau Software,84.0,nasdaq_tech,data_science
-nasdaq_FFIV,F5 Networks,85.0,nasdaq_tech,data_science
-nasdaq_JKHY,Jack Henry & Associates,86.0,nasdaq_tech,data_science
-nasdaq_JNPR,Juniper Networks,87.0,nasdaq_tech,data_science
-nasdaq_YNDX,Yandex N.V.,88.0,nasdaq_tech,data_science
-nasdaq_TWLO,Twilio,89.0,nasdaq_tech,data_science
-nasdaq_URI,United Rentals,90.0,nasdaq_tech,data_science
-nasdaq_OTEX,Open Text Corporation,91.0,nasdaq_tech,data_science
-nasdaq_ATHM,Autohome,92.0,nasdaq_tech,data_science
-nasdaq_DBX,Dropbox,93.0,nasdaq_tech,data_science
-nasdaq_ZBRA,Zebra Technologies Corporation,94.0,nasdaq_tech,data_science
-nasdaq_LN,LINE Corporation,95.0,nasdaq_tech,data_science
-nasdaq_IPG,Interpublic Group of Companies,96.0,nasdaq_tech,data_science
-nasdaq_DOX,Amdocs Limited,97.0,nasdaq_tech,data_science
-nasdaq_WUBA,58.com,98.0,nasdaq_tech,data_science
-nasdaq_LDOS,Leidos Holdings,99.0,nasdaq_tech,data_science
-nasdaq_NTNX,Nutanix,100.0,nasdaq_tech,data_science
-nasdaq_SNAP,Snap,101.0,nasdaq_tech,data_science
-nasdaq_ULTI,The Ultimate Software Group,102.0,nasdaq_tech,data_science
-nasdaq_MFGP,Micro Focus Intl PLC,103.0,nasdaq_tech,data_science
-nasdaq_QRVO,Qorvo,104.0,nasdaq_tech,data_science
-nasdaq_ASX,ASE Technology Holding,105.0,nasdaq_tech,data_science
-nasdaq_ON,ON Semiconductor Corporation,106.0,nasdaq_tech,data_science
-nasdaq_FDS,FactSet Research Systems,107.0,nasdaq_tech,data_science
-nasdaq_TRIP,TripAdvisor,108.0,nasdaq_tech,data_science
-nasdaq_EBIX,Ebix,109.0,nasdaq_tech,data_science
-nasdaq_OKTA,Okta,110.0,nasdaq_tech,data_science
-nasdaq_UBNT,Ubiquiti Networks,111.0,nasdaq_tech,data_science
-nasdaq_PAYC,Paycom Software,112.0,nasdaq_tech,data_science
-nasdaq_DOCU,DocuSign,113.0,nasdaq_tech,data_science
-nasdaq_PAGS,PagSeguro Digital,114.0,nasdaq_tech,data_science
-nasdaq_TYL,Tyler Technologies,115.0,nasdaq_tech,data_science
-nasdaq_RHI,Robert Half International,116.0,nasdaq_tech,data_science
-nasdaq_EPAM,EPAM Systems,117.0,nasdaq_tech,data_science
-nasdaq_PNR,Pentair plc.,118.0,nasdaq_tech,data_science
-nasdaq_BKI,Black Knight,119.0,nasdaq_tech,data_science
-nasdaq_RNG,Ringcentral,120.0,nasdaq_tech,data_science
-nasdaq_IPGP,IPG Photonics Corporation,121.0,nasdaq_tech,data_science
-nasdaq_AER,Aercap Holdings N.V.,122.0,nasdaq_tech,data_science
-nasdaq_GWRE,Guidewire Software,123.0,nasdaq_tech,data_science
-nasdaq_ZEN,Zendesk,124.0,nasdaq_tech,data_science
-nasdaq_IDTI,Integrated Device Technology,125.0,nasdaq_tech,data_science
-nasdaq_AZPN,Aspen Technology,126.0,nasdaq_tech,data_science
-nasdaq_NATI,National Instruments Corporation,127.0,nasdaq_tech,data_science
-nasdaq_SABR,Sabre Corporation,128.0,nasdaq_tech,data_science
-nasdaq_MIDD,The Middleby Corporation,129.0,nasdaq_tech,data_science
-nasdaq_STNE,StoneCo,130.0,nasdaq_tech,data_science
-nasdaq_ZS,Zscaler,131.0,nasdaq_tech,data_science
-nasdaq_LOGI,Logitech International S.A.,132.0,nasdaq_tech,data_science
-nasdaq_TTD,The Trade Desk,133.0,nasdaq_tech,data_science
-nasdaq_HUBS,HubSpot,134.0,nasdaq_tech,data_science
-nasdaq_ARRS,ARRIS International plc,135.0,nasdaq_tech,data_science
-nasdaq_LECO,Lincoln Electric Holdings,136.0,nasdaq_tech,data_science
-nasdaq_ESTC,Elastic N.V.,137.0,nasdaq_tech,data_science
-nasdaq_XRX,Xerox Corporation,138.0,nasdaq_tech,data_science
-nasdaq_MPWR,Monolithic Power Systems,139.0,nasdaq_tech,data_science
-nasdaq_TSG,The Stars Group,140.0,nasdaq_tech,data_science
-nasdaq_RP,RealPage,141.0,nasdaq_tech,data_science
-nasdaq_PFPT,Proofpoint,142.0,nasdaq_tech,data_science
-nasdaq_FSLR,First Solar,143.0,nasdaq_tech,data_science
-nasdaq_NEWR,New Relic,144.0,nasdaq_tech,data_science
-nasdaq_SNX,Synnex Corporation,145.0,nasdaq_tech,data_science
-nasdaq_SWI,SolarWinds Corporation,146.0,nasdaq_tech,data_science
-nasdaq_CDAY,Ceridian HCM Holding,147.0,nasdaq_tech,data_science
-nasdaq_CREE,Cree,148.0,nasdaq_tech,data_science
-nasdaq_CY,Cypress Semiconductor Corporation,149.0,nasdaq_tech,data_science
-nasdaq_WIX,Wix.com,150.0,nasdaq_tech,data_science
-nasdaq_TDC,Teradata Corporation,151.0,nasdaq_tech,data_science
-nasdaq_CW,Curtiss-Wright Corporation,152.0,nasdaq_tech,data_science
-nasdaq_PVTL,Pivotal Software,153.0,nasdaq_tech,data_science
-nasdaq_MLNX,Mellanox Technologies,154.0,nasdaq_tech,data_science
-nasdaq_NICE,NICE,155.0,nasdaq_tech,data_science
-nasdaq_GDI,Gardner Denver Holdings,156.0,nasdaq_tech,data_science
-nasdaq_LOGM,LogMein,157.0,nasdaq_tech,data_science
-nasdaq_MAN,ManpowerGroup,158.0,nasdaq_tech,data_science
-nasdaq_NUAN,Nuance Communications,159.0,nasdaq_tech,data_science
-nasdaq_UMC,United Microelectronics Corporation,160.0,nasdaq_tech,data_science
-nasdaq_GTES,Gates Industrial Corporation plc,161.0,nasdaq_tech,data_science
-nasdaq_AYX,Alteryx,162.0,nasdaq_tech,data_science
-nasdaq_FLEX,Flex,163.0,nasdaq_tech,data_science
-nasdaq_SMI,Semiconductor Manufacturing International Corporation,164.0,nasdaq_tech,data_science
-nasdaq_PSTG,Pure Storage,165.0,nasdaq_tech,data_science
-nasdaq_SINA,Sina Corporation,166.0,nasdaq_tech,data_science
-nasdaq_NVT,nVent Electric plc,167.0,nasdaq_tech,data_science
-nasdaq_MOMO,Momo,168.0,nasdaq_tech,data_science
-nasdaq_BB,BlackBerry Limited,169.0,nasdaq_tech,data_science
-nasdaq_HUYA,HUYA,170.0,nasdaq_tech,data_science
-nasdaq_MDSO,Medidata Solutions,171.0,nasdaq_tech,data_science
-nasdaq_INXN,InterXion Holding N.V.,172.0,nasdaq_tech,data_science
-nasdaq_AL,Air Lease Corporation,173.0,nasdaq_tech,data_science
-nasdaq_PEGA,Pegasystems,174.0,nasdaq_tech,data_science
-nasdaq_AUO,AU Optronics Corp,175.0,nasdaq_tech,data_science
-nasdaq_MDB,MongoDB,176.0,nasdaq_tech,data_science
-nasdaq_ZNGA,Zynga,177.0,nasdaq_tech,data_science
-nasdaq_NSP,Insperity,178.0,nasdaq_tech,data_science
-nasdaq_CARG,CarGurus,179.0,nasdaq_tech,data_science
-nasdaq_COUP,Coupa Software Incorporated,180.0,nasdaq_tech,data_science
-nasdaq_JBL,Jabil,181.0,nasdaq_tech,data_science
-nasdaq_SATS,EchoStar Corporation,182.0,nasdaq_tech,data_science
-nasdaq_CACI,CACI International,183.0,nasdaq_tech,data_science
-nasdaq_PS,Pluralsight,184.0,nasdaq_tech,data_science
-nasdaq_SLAB,Silicon Laboratories,185.0,nasdaq_tech,data_science
-nasdaq_WB,Weibo Corporation,186.0,nasdaq_tech,data_science
-nasdaq_VSAT,ViaSat,187.0,nasdaq_tech,data_science
-nasdaq_COMM,CommScope Holding Company,188.0,nasdaq_tech,data_science
-nasdaq_PLAN,Anaplan,189.0,nasdaq_tech,data_science
-nasdaq_JCOM,j2 Global,190.0,nasdaq_tech,data_science
-nasdaq_SMTC,Semtech Corporation,191.0,nasdaq_tech,data_science
-nasdaq_TECD,Tech Data Corporation,192.0,nasdaq_tech,data_science
-nasdaq_YY,YY,193.0,nasdaq_tech,data_science
-nasdaq_AAN,Aaron&#39;s,194.0,nasdaq_tech,data_science
-nasdaq_FEYE,FireEye,195.0,nasdaq_tech,data_science
-nasdaq_PCTY,Paylocity Holding Corporation,196.0,nasdaq_tech,data_science
-nasdaq_ACIW,ACI Worldwide,197.0,nasdaq_tech,data_science
-nasdaq_BLKB,Blackbaud,198.0,nasdaq_tech,data_science
-nasdaq_ASGN,ASGN Incorporated,199.0,nasdaq_tech,data_science
-nasdaq_CSOD,Cornerstone OnDemand,200.0,nasdaq_tech,data_science
-nasdaq_PRSP,Perspecta,201.0,nasdaq_tech,data_science
-nasdaq_QLYS,Qualys,202.0,nasdaq_tech,data_science
-nasdaq_TWOU,2U,203.0,nasdaq_tech,data_science
-nasdaq_CLDR,Cloudera,204.0,nasdaq_tech,data_science
-nasdaq_MANH,Manhattan Associates,205.0,nasdaq_tech,data_science
-nasdaq_VRNT,Verint Systems,206.0,nasdaq_tech,data_science
-nasdaq_AMN,AMN Healthcare Services Inc,207.0,nasdaq_tech,data_science
-nasdaq_TRTN,Triton International Limited,208.0,nasdaq_tech,data_science
-nasdaq_CLGX,CoreLogic,209.0,nasdaq_tech,data_science
-nasdaq_CVLT,Commvault Systems,210.0,nasdaq_tech,data_science
-nasdaq_RAMP,LiveRamp Holdings,211.0,nasdaq_tech,data_science
-nasdaq_CYBR,CyberArk Software,212.0,nasdaq_tech,data_science
-nasdaq_SAIC,SCIENCE APPLICATIONS INTERNATIONAL CORPORATION,213.0,nasdaq_tech,data_science
-nasdaq_CCMP,Cabot Microelectronics Corporation,214.0,nasdaq_tech,data_science
-nasdaq_BOX,Box,215.0,nasdaq_tech,data_science
-nasdaq_FIVN,Five9,216.0,nasdaq_tech,data_science
-nasdaq_ERIC,Ericsson,217.0,nasdaq_tech,data_science
-nasdaq_SMAR,Smartsheet,218.0,nasdaq_tech,data_science
-nasdaq_ALRM,Alarm.com Holdings,219.0,nasdaq_tech,data_science
-nasdaq_AVLR,Avalara,220.0,nasdaq_tech,data_science
-nasdaq_RXN,Rexnord Corporation,221.0,nasdaq_tech,data_science
-nasdaq_OMCL,Omnicell,222.0,nasdaq_tech,data_science
-nasdaq_FNSR,Finisar Corporation,223.0,nasdaq_tech,data_science
-nasdaq_JBT,John Bean Technologies Corporation,224.0,nasdaq_tech,data_science
-nasdaq_KFY,Korn Ferry,225.0,nasdaq_tech,data_science
-nasdaq_APY,Apergy Corporation,226.0,nasdaq_tech,data_science
-nasdaq_VIAV,Viavi Solutions,227.0,nasdaq_tech,data_science
-nasdaq_EB,Eventbrite,228.0,nasdaq_tech,data_science
-nasdaq_JOBS,51job,229.0,nasdaq_tech,data_science
-nasdaq_ELLI,Ellie Mae,230.0,nasdaq_tech,data_science
-nasdaq_BL,BlackLine,231.0,nasdaq_tech,data_science
-nasdaq_SOGO,Sogou,232.0,nasdaq_tech,data_science
-nasdaq_SAIL,SailPoint Technologies Holdings,233.0,nasdaq_tech,data_science
-nasdaq_QTWO,Q2 Holdings,234.0,nasdaq_tech,data_science
-nasdaq_TENB,Tenable Holdings,235.0,nasdaq_tech,data_science
-nasdaq_SEND,SendGrid,236.0,nasdaq_tech,data_science
-nasdaq_DSGX,The Descartes Systems Group,237.0,nasdaq_tech,data_science
-nasdaq_ZUO,Zuora,238.0,nasdaq_tech,data_science
-nasdaq_GLOB,Globant S.A.,239.0,nasdaq_tech,data_science
-nasdaq_CRUS,Cirrus Logic,240.0,nasdaq_tech,data_science
-nasdaq_INOV,Inovalon Holdings,241.0,nasdaq_tech,data_science
-nasdaq_EPAY,Bottomline Technologies,242.0,nasdaq_tech,data_science
-nasdaq_APPF,AppFolio,243.0,nasdaq_tech,data_science
-nasdaq_EVTC,Evertec,244.0,nasdaq_tech,data_science
-nasdaq_ALTR,Altair Engineering,245.0,nasdaq_tech,data_science
-nasdaq_GRPN,Groupon,246.0,nasdaq_tech,data_science
-nasdaq_BRKS,Brooks Automation,247.0,nasdaq_tech,data_science
-nasdaq_UPWK,Upwork,248.0,nasdaq_tech,data_science
-nasdaq_MIME,Mimecast Limited,249.0,nasdaq_tech,data_science
-nasdaq_MDRX,Allscripts Healthcare Solutions,250.0,nasdaq_tech,data_science
-nasdaq_APPN,Appian Corporation,251.0,nasdaq_tech,data_science
-nasdaq_NTCT,NetScout Systems,252.0,nasdaq_tech,data_science
-nasdaq_LXFT,Luxoft Holding,253.0,nasdaq_tech,data_science
-nasdaq_SGMS,Scientific Games Corp,254.0,nasdaq_tech,data_science
-nasdaq_EGHT,8x8 Inc,255.0,nasdaq_tech,data_science
-nasdaq_SWCH,Switch,256.0,nasdaq_tech,data_science
-nasdaq_POWI,Power Integrations,257.0,nasdaq_tech,data_science
-nasdaq_AMKR,Amkor Technology,258.0,nasdaq_tech,data_science
-nasdaq_MB,MINDBODY,259.0,nasdaq_tech,data_science
-nasdaq_SANM,Sanmina Corporation,260.0,nasdaq_tech,data_science
-nasdaq_WBT,Welbilt,261.0,nasdaq_tech,data_science
-nasdaq_CISN,Cision,262.0,nasdaq_tech,data_science
-nasdaq_ACIA,Acacia Communications,263.0,nasdaq_tech,data_science
-nasdaq_PLXS,Plexus,264.0,nasdaq_tech,data_science
-nasdaq_EVBG,Everbridge,265.0,nasdaq_tech,data_science
-nasdaq_RPD,Rapid7,266.0,nasdaq_tech,data_science
-nasdaq_SVMK,SVMK,267.0,nasdaq_tech,data_science
-nasdaq_SEDG,SolarEdge Technologies,268.0,nasdaq_tech,data_science
-nasdaq_WK,Workiva,269.0,nasdaq_tech,data_science
-nasdaq_CRTO,Criteo S.A.,270.0,nasdaq_tech,data_science
-nasdaq_PRGS,Progress Software Corporation,271.0,nasdaq_tech,data_science
-nasdaq_DIOD,Diodes Incorporated,272.0,nasdaq_tech,data_science
-nasdaq_BNFT,Benefitfocus,273.0,nasdaq_tech,data_science
-nasdaq_YEXT,Yext,274.0,nasdaq_tech,data_science
-nasdaq_CARS,Cars.com,275.0,nasdaq_tech,data_science
-nasdaq_TSEM,Tower Semiconductor,276.0,nasdaq_tech,data_science
-nasdaq_SPSC,SPS Commerce,277.0,nasdaq_tech,data_science
-nasdaq_VRNS,Varonis Systems,278.0,nasdaq_tech,data_science
-nasdaq_MSTR,MicroStrategy Incorporated,279.0,nasdaq_tech,data_science
-nasdaq_TTEC,TTEC Holdings,280.0,nasdaq_tech,data_science
-nasdaq_IPHI,Inphi Corporation,281.0,nasdaq_tech,data_science
-nasdaq_AYR,Aircastle Limited,282.0,nasdaq_tech,data_science
-nasdaq_FIT,Fitbit,283.0,nasdaq_tech,data_science
-nasdaq_BITA,Bitauto Holdings Limited,284.0,nasdaq_tech,data_science
-nasdaq_KLIC,Kulicke and Soffa Industries,285.0,nasdaq_tech,data_science
-nasdaq_INST,Instructure,286.0,nasdaq_tech,data_science
-nasdaq_GDS,GDS Holdings Limited,287.0,nasdaq_tech,data_science
-nasdaq_VRTU,Virtusa Corporation,288.0,nasdaq_tech,data_science
-nasdaq_OSIS,OSI Systems,289.0,nasdaq_tech,data_science
-nasdaq_SCWX,SecureWorks,290.0,nasdaq_tech,data_science
-nasdaq_SYNA,Synaptics Incorporated,291.0,nasdaq_tech,data_science
-nasdaq_ATU,Actuant Corporation,292.0,nasdaq_tech,data_science
-nasdaq_FLOW,SPX FLOW,293.0,nasdaq_tech,data_science
-nasdaq_GLUU,Glu Mobile,294.0,nasdaq_tech,data_science
-nasdaq_SSTK,Shutterstock,295.0,nasdaq_tech,data_science
-nasdaq_MXL,"MaxLinear, Inc",296.0,nasdaq_tech,data_science
-nasdaq_DDD,3D Systems Corporation,297.0,nasdaq_tech,data_science
-nasdaq_SIMO,Silicon Motion Technology Corporation,298.0,nasdaq_tech,data_science
-nasdaq_SPXC,SPX Corporation,299.0,nasdaq_tech,data_science
-nasdaq_LPSN,LivePerson,300.0,nasdaq_tech,data_science
-nasdaq_MGRC,McGrath RentCorp,301.0,nasdaq_tech,data_science
-nasdaq_LTRPA,Liberty TripAdvisor Holdings,302.0,nasdaq_tech,data_science
-nasdaq_DAVA,Endava plc,303.0,nasdaq_tech,data_science
-nasdaq_LORL,Loral Space and Communications,304.0,nasdaq_tech,data_science
-nasdaq_AMBA,Ambarella,305.0,nasdaq_tech,data_science
-nasdaq_PRO,PROS Holdings,306.0,nasdaq_tech,data_science
-nasdaq_PSDO,Presidio,307.0,nasdaq_tech,data_science
-nasdaq_EFII,Electronics for Imaging,308.0,nasdaq_tech,data_science
-nasdaq_SYKE,"Sykes Enterprises, Incorporated",309.0,nasdaq_tech,data_science
-nasdaq_CASA,Casa Systems,310.0,nasdaq_tech,data_science
-nasdaq_FSCT,ForeScout Technologies,311.0,nasdaq_tech,data_science
-nasdaq_AQUA,Evoqua Water Technologies,312.0,nasdaq_tech,data_science
-nasdaq_CSGS,CSG Systems International,313.0,nasdaq_tech,data_science
-nasdaq_MTSI,MACOM Technology Solutions Holdings,314.0,nasdaq_tech,data_science
-nasdaq_TTMI,TTM Technologies,315.0,nasdaq_tech,data_science
-nasdaq_CLS,Celestica,316.0,nasdaq_tech,data_science
-nasdaq_NXGN,NextGen Healthcare,317.0,nasdaq_tech,data_science
-nasdaq_TLND,Talend S.A.,318.0,nasdaq_tech,data_science
-nasdaq_SSYS,Stratasys,319.0,nasdaq_tech,data_science
-nasdaq_EIGI,Endurance International Group Holdings,320.0,nasdaq_tech,data_science
-nasdaq_FORM,FormFactor,321.0,nasdaq_tech,data_science
-nasdaq_CSIQ,Canadian Solar,322.0,nasdaq_tech,data_science
-nasdaq_PLUS,ePlus inc.,323.0,nasdaq_tech,data_science
-nasdaq_TNC,Tennant Company,324.0,nasdaq_tech,data_science
-nasdaq_BHE,Benchmark Electronics,325.0,nasdaq_tech,data_science
-nasdaq_XPER,Xperi Corporation,326.0,nasdaq_tech,data_science
-nasdaq_TRUE,TrueCar,327.0,nasdaq_tech,data_science
-nasdaq_CARB,Carbonite,328.0,nasdaq_tech,data_science
-nasdaq_TBI,TrueBlue,329.0,nasdaq_tech,data_science
-nasdaq_LSCC,Lattice Semiconductor Corporation,330.0,nasdaq_tech,data_science
-nasdaq_MCRN,Milacron Holdings,331.0,nasdaq_tech,data_science
-nasdaq_SXI,Standex International Corporation,332.0,nasdaq_tech,data_science
-nasdaq_CBLK,Carbon Black,333.0,nasdaq_tech,data_science
-nasdaq_SCSC,ScanSource,334.0,nasdaq_tech,data_science
-nasdaq_AGMH,AGM Group Holdings,335.0,nasdaq_tech,data_science
-nasdaq_KAI,Kadant Inc,336.0,nasdaq_tech,data_science
-nasdaq_RCII,Rent-A-Center,337.0,nasdaq_tech,data_science
-nasdaq_CTS,CTS Corporation,338.0,nasdaq_tech,data_science
-nasdaq_RMBS,Rambus,339.0,nasdaq_tech,data_science
-nasdaq_CMCM,Cheetah Mobile,340.0,nasdaq_tech,data_science
-nasdaq_CRAY,Cray Inc,341.0,nasdaq_tech,data_science
-nasdaq_KELYA,Kelly Services,342.0,nasdaq_tech,data_science
-nasdaq_KFRC,Kforce,343.0,nasdaq_tech,data_science
-nasdaq_BILI,Bilibili,344.0,nasdaq_tech,data_science
-nasdaq_JT,Jianpu Technology,345.0,nasdaq_tech,data_science
-nasdaq_SFUN,Fang Holdings Limited,346.0,nasdaq_tech,data_science
-nasdaq_CTK,CooTek,347.0,nasdaq_tech,data_science
-nasdaq_QADA,QAD,348.0,nasdaq_tech,data_science
-nasdaq_BAND,Bandwidth,349.0,nasdaq_tech,data_science
-nasdaq_HSTM,HealthStream,350.0,nasdaq_tech,data_science
-nasdaq_PRFT,Perficient,351.0,nasdaq_tech,data_science
-nasdaq_SPWR,SunPower Corporation,352.0,nasdaq_tech,data_science
-nasdaq_EXTR,Extreme Networks,353.0,nasdaq_tech,data_science
-nasdaq_SOHU,Sohu.com Limited,354.0,nasdaq_tech,data_science
-nasdaq_EXTN,Exterran Corporation,355.0,nasdaq_tech,data_science
-nasdaq_PLAB,Photronics,356.0,nasdaq_tech,data_science
-nasdaq_TGH,Textainer Group Holdings Limited,357.0,nasdaq_tech,data_science
-nasdaq_TCX,Tucows,358.0,nasdaq_tech,data_science
-nasdaq_TYPE,Monotype Imaging Holdings,359.0,nasdaq_tech,data_science
-nasdaq_UIS,Unisys Corporation,360.0,nasdaq_tech,data_science
-nasdaq_LASR,nLIGHT,361.0,nasdaq_tech,data_science
-nasdaq_HSII,Heidrick & Struggles International,362.0,nasdaq_tech,data_science
-nasdaq_UPLD,Upland Software,363.0,nasdaq_tech,data_science
-nasdaq_HMI,Huami Corporation,364.0,nasdaq_tech,data_science
-nasdaq_ENPH,Enphase Energy,365.0,nasdaq_tech,data_science
-nasdaq_SPNS,Sapiens International Corporation N.V.,366.0,nasdaq_tech,data_science
-nasdaq_QTNA,Quantenna Communications,367.0,nasdaq_tech,data_science
-nasdaq_DOMO,Domo,368.0,nasdaq_tech,data_science
-nasdaq_CMTL,Comtech Telecommunications,369.0,nasdaq_tech,data_science
-nasdaq_VNET,21Vianet Group,370.0,nasdaq_tech,data_science
-nasdaq_ACLS,Axcelis Technologies,371.0,nasdaq_tech,data_science
-nasdaq_SGH,SMART Global Holdings,372.0,nasdaq_tech,data_science
-nasdaq_RBBN,Ribbon Communications,373.0,nasdaq_tech,data_science
-nasdaq_OSPN,OneSpan,374.0,nasdaq_tech,data_science
-nasdaq_SWIR,Sierra Wireless,375.0,nasdaq_tech,data_science
-nasdaq_CEVA,CEVA,376.0,nasdaq_tech,data_science
-nasdaq_GILT,Gilat Satellite Networks,377.0,nasdaq_tech,data_science
-nasdaq_ATEN,A10 Networks,378.0,nasdaq_tech,data_science
-nasdaq_CAMP,CalAmp,379.0,nasdaq_tech,data_science
-nasdaq_MOBL,MobileIron,380.0,nasdaq_tech,data_science
-nasdaq_JKS,JinkoSolar Holding Company Limited,381.0,nasdaq_tech,data_science
-nasdaq_CAI,CAI International,382.0,nasdaq_tech,data_science
-nasdaq_PKE,Park Electrochemical Corporation,383.0,nasdaq_tech,data_science
-nasdaq_NVEC,NVE Corporation,384.0,nasdaq_tech,data_science
-nasdaq_BBSI,Barrett Business Services,385.0,nasdaq_tech,data_science
-nasdaq_MODN,Model N,386.0,nasdaq_tech,data_science
-nasdaq_ATTU,Attunity,387.0,nasdaq_tech,data_science
-nasdaq_HIMX,Himax Technologies,388.0,nasdaq_tech,data_science
-nasdaq_ICHR,Ichor Holdings,389.0,nasdaq_tech,data_science
-nasdaq_MITK,Mitek Systems,390.0,nasdaq_tech,data_science
-nasdaq_KE,Kimball Electronics,391.0,nasdaq_tech,data_science
-nasdaq_HLIT,Harmonic,392.0,nasdaq_tech,data_science
-nasdaq_ERII,Energy Recovery,393.0,nasdaq_tech,data_science
-nasdaq_SSTI,ShotSpotter,394.0,nasdaq_tech,data_science
-nasdaq_VECO,Veeco Instruments,395.0,nasdaq_tech,data_science
-nasdaq_MGIC,Magic Software Enterprises,396.0,nasdaq_tech,data_science
-nasdaq_CPSI,Computer Programs and Systems,397.0,nasdaq_tech,data_science
-nasdaq_RST,Rosetta Stone,398.0,nasdaq_tech,data_science
-nasdaq_UCTT,Ultra Clean Holdings,399.0,nasdaq_tech,data_science
-nasdaq_PHUN,Phunware,400.0,nasdaq_tech,data_science
-nasdaq_GTYH,GTY Technology Holdings,401.0,nasdaq_tech,data_science
-nasdaq_CYOU,Changyou.com Limited,402.0,nasdaq_tech,data_science
-nasdaq_CSLT,"Castlight Health, inc.",403.0,nasdaq_tech,data_science
-nasdaq_SLP,Simulations Plus,404.0,nasdaq_tech,data_science
-nasdaq_MIXT,MiX Telematics Limited,405.0,nasdaq_tech,data_science
-nasdaq_MAXR,Maxar Technologies,406.0,nasdaq_tech,data_science
-nasdaq_KEYW,The KEYW Holding Corporation,407.0,nasdaq_tech,data_science
-nasdaq_DQ,DAQO New Energy,408.0,nasdaq_tech,data_science
-nasdaq_GFN,General Finance Corporation,409.0,nasdaq_tech,data_science
-nasdaq_AGYS,Agilysys,410.0,nasdaq_tech,data_science
-nasdaq_ZIXI,Zix Corporation,411.0,nasdaq_tech,data_science
-nasdaq_NPTN,NeoPhotonics Corporation,412.0,nasdaq_tech,data_science
-nasdaq_MTLS,Materialise NV,413.0,nasdaq_tech,data_science
-nasdaq_AAOI,Applied Optoelectronics,414.0,nasdaq_tech,data_science
-nasdaq_AMSWA,American Software,415.0,nasdaq_tech,data_science
-nasdaq_DGII,Digi International,416.0,nasdaq_tech,data_science
-nasdaq_CCRN,Cross Country Healthcare,417.0,nasdaq_tech,data_science
-nasdaq_ECOM ,ChannelAdvisor Corporation,418.0,nasdaq_tech,data_science
-nasdaq_AQ,Aquantia,419.0,nasdaq_tech,data_science
-nasdaq_CRNT,Ceragon Networks,420.0,nasdaq_tech,data_science
-nasdaq_PDFS,PDF Solutions,421.0,nasdaq_tech,data_science
-nasdaq_OOMA,Ooma,422.0,nasdaq_tech,data_science
-nasdaq_IMMR,Immersion Corporation,423.0,nasdaq_tech,data_science
-nasdaq_SNCR,Synchronoss Technologies,424.0,nasdaq_tech,data_science
-nasdaq_CDLX,Cardlytics,425.0,nasdaq_tech,data_science
-nasdaq_SRT,StarTek,426.0,nasdaq_tech,data_science
-nasdaq_DSPG,DSP Group,427.0,nasdaq_tech,data_science
-nasdaq_MJCO,Majesco,428.0,nasdaq_tech,data_science
-nasdaq_BCOV,Brightcove,429.0,nasdaq_tech,data_science
-nasdaq_AOSL,Alpha and Omega Semiconductor Limited,430.0,nasdaq_tech,data_science
-nasdaq_SILC,Silicom,431.0,nasdaq_tech,data_science
-nasdaq_GRNQ,Greenpro Capital,432.0,nasdaq_tech,data_science
-nasdaq_AMBR,Amber Road,433.0,nasdaq_tech,data_science
-nasdaq_GHM,Graham Corporation,434.0,nasdaq_tech,data_science
-nasdaq_TWIN,"Twin Disc, Incorporated",435.0,nasdaq_tech,data_science
-nasdaq_BGSF,BG Staffing Inc,436.0,nasdaq_tech,data_science
-nasdaq_MX,MagnaChip Semiconductor Corporation,437.0,nasdaq_tech,data_science
-nasdaq_DMRC,Digimarc Corporation,438.0,nasdaq_tech,data_science
-nasdaq_TEUM,Pareteum Corporation,439.0,nasdaq_tech,data_science
-nasdaq_ALLT,Allot,440.0,nasdaq_tech,data_science
-nasdaq_RUBI,The Rubicon Project,441.0,nasdaq_tech,data_science
-nasdaq_WATT,Energous Corporation,442.0,nasdaq_tech,data_science
-nasdaq_LEAF,Leaf Group,443.0,nasdaq_tech,data_science
-nasdaq_AVID,Avid Technology,444.0,nasdaq_tech,data_science
-nasdaq_KVHI,KVH Industries,445.0,nasdaq_tech,data_science
-nasdaq_TRVG,trivago N.V.,446.0,nasdaq_tech,data_science
-nasdaq_HIVE,Aerohive Networks,447.0,nasdaq_tech,data_science
-nasdaq_EGAN,eGain Corporation,448.0,nasdaq_tech,data_science
-nasdaq_SPA,Sparton Corporation,449.0,nasdaq_tech,data_science
-nasdaq_AXTI,AXT Inc,450.0,nasdaq_tech,data_science
-nasdaq_MTC,MMTec,451.0,nasdaq_tech,data_science
-nasdaq_ACMR,ACM Research,452.0,nasdaq_tech,data_science
-nasdaq_INS,Intelligent Systems Corporation,453.0,nasdaq_tech,data_science
-nasdaq_FSNN,Fusion Connect,454.0,nasdaq_tech,data_science
-nasdaq_IOTS,Adesto Technologies Corporation,455.0,nasdaq_tech,data_science
-nasdaq_PCYG,Park City Group,456.0,nasdaq_tech,data_science
-nasdaq_GSIT,GSI Technology,457.0,nasdaq_tech,data_science
-nasdaq_BRQS,Borqs Technologies,458.0,nasdaq_tech,data_science
-nasdaq_CYRN,CYREN,459.0,nasdaq_tech,data_science
-nasdaq_ALYA,Alithya Group inc.,460.0,nasdaq_tech,data_science
-nasdaq_MDCA,MDC Partners,461.0,nasdaq_tech,data_science
-nasdaq_VUZI,Vuzix Corporation,462.0,nasdaq_tech,data_science
-nasdaq_EVER,EverQuote,463.0,nasdaq_tech,data_science
-nasdaq_TLRA,Telaria,464.0,nasdaq_tech,data_science
-nasdaq_ALOT,AstroNova,465.0,nasdaq_tech,data_science
-nasdaq_MNTX,Manitex International,466.0,nasdaq_tech,data_science
-nasdaq_XNET,Xunlei Limited,467.0,nasdaq_tech,data_science
-nasdaq_INAP,Internap Corporation,468.0,nasdaq_tech,data_science
-nasdaq_TZOO,Travelzoo,469.0,nasdaq_tech,data_science
-nasdaq_EMKR,EMCORE Corporation,470.0,nasdaq_tech,data_science
-nasdaq_LIQT,LiqTech International,471.0,nasdaq_tech,data_science
-nasdaq_PXLW,Pixelworks,472.0,nasdaq_tech,data_science
-nasdaq_INSE,Inspired Entertainment,473.0,nasdaq_tech,data_science
-nasdaq_IVAC,Intevac,474.0,nasdaq_tech,data_science
-nasdaq_SHSP,SharpSpring,475.0,nasdaq_tech,data_science
-nasdaq_SMTX,SMTC Corporation,476.0,nasdaq_tech,data_science
-nasdaq_RDCM,Radcom,477.0,nasdaq_tech,data_science
-nasdaq_PNTR,Pointer Telocation,478.0,nasdaq_tech,data_science
-nasdaq_RENN,Renren,479.0,nasdaq_tech,data_science
-nasdaq_RMBL,RumbleOn,480.0,nasdaq_tech,data_science
-nasdaq_AIRG,Airgain,481.0,nasdaq_tech,data_science
-nasdaq_RNWK,RealNetworks,482.0,nasdaq_tech,data_science
-nasdaq_MRAM,Everspin Technologies,483.0,nasdaq_tech,data_science
-nasdaq_KOPN,Kopin Corporation,484.0,nasdaq_tech,data_science
-nasdaq_MAMS,MAM Software Group,485.0,nasdaq_tech,data_science
-nasdaq_VERI,Veritone,486.0,nasdaq_tech,data_science
-nasdaq_SQNS,Sequans Communications S.A.,487.0,nasdaq_tech,data_science
-nasdaq_GEC,Great Elm Capital Group,488.0,nasdaq_tech,data_science
-nasdaq_ASUR,Asure Software Inc,489.0,nasdaq_tech,data_science
-nasdaq_IMOS,ChipMOS TECHNOLOGIES INC.,490.0,nasdaq_tech,data_science
-nasdaq_QUIK,QuickLogic Corporation,491.0,nasdaq_tech,data_science
-nasdaq_NTWK,NetSol Technologies,492.0,nasdaq_tech,data_science
-nasdaq_PCTI,PC-Tel,493.0,nasdaq_tech,data_science
-nasdaq_GSB,GlobalSCAPE,494.0,nasdaq_tech,data_science
-nasdaq_SGOC,SGOCO Group,495.0,nasdaq_tech,data_science
-nasdaq_NH,NantHealth,496.0,nasdaq_tech,data_science
-nasdaq_AWRE,Aware,497.0,nasdaq_tech,data_science
-nasdaq_LTRX,Lantronix,498.0,nasdaq_tech,data_science
-nasdaq_DTSS,Datasea,499.0,nasdaq_tech,data_science
-nasdaq_PERI,Perion Network,500.0,nasdaq_tech,data_science
-nasdaq_RDVT,Red Violet,501.0,nasdaq_tech,data_science
-nasdaq_AVNW,Aviat Networks,502.0,nasdaq_tech,data_science
-nasdaq_JG,Aurora Mobile Limited,503.0,nasdaq_tech,data_science
-nasdaq_MTEC,MTech Acquisition,504.0,nasdaq_tech,data_science
-nasdaq_CLPS,CLPS Incorporation,505.0,nasdaq_tech,data_science
-nasdaq_TACT,TransAct Technologies Incorporated,506.0,nasdaq_tech,data_science
-nasdaq_INVE,Identiv,507.0,nasdaq_tech,data_science
-nasdaq_ASYS,Amtech Systems,508.0,nasdaq_tech,data_science
-nasdaq_VISI,Volt Information Sciences,509.0,nasdaq_tech,data_science
-nasdaq_SYNC,Synacor,510.0,nasdaq_tech,data_science
-nasdaq_IEC,IEC Electronics,511.0,nasdaq_tech,data_science
-nasdaq_CTG,"Computer Task Group, Incorporated",512.0,nasdaq_tech,data_science
-nasdaq_KTCC,Key Tronic Corporation,513.0,nasdaq_tech,data_science
-nasdaq_DLHC,DLH Holdings,514.0,nasdaq_tech,data_science
-nasdaq_AEYE,AudioEye,515.0,nasdaq_tech,data_science
-nasdaq_SEAC,SeaChange International,516.0,nasdaq_tech,data_science
-nasdaq_ICLK,iClick Interactive Asia Group Limited,517.0,nasdaq_tech,data_science
-nasdaq_WISA,Summit Wireless Technologies,518.0,nasdaq_tech,data_science
-nasdaq_IMI,Intermolecular,519.0,nasdaq_tech,data_science
-nasdaq_BKTI,BK Technologies,520.0,nasdaq_tech,data_science
-nasdaq_QTM,Quantum Corporation,521.0,nasdaq_tech,data_science
-nasdaq_SOL,Renesola,522.0,nasdaq_tech,data_science
-nasdaq_HQCL,Hanwha Q CELLS,523.0,nasdaq_tech,data_science
-nasdaq_SMSI,Smith Micro Software,524.0,nasdaq_tech,data_science
-nasdaq_MTBC,"Medical Transcription Billing,",525.0,nasdaq_tech,data_science
-nasdaq_OIIM,O2Micro International Limited,526.0,nasdaq_tech,data_science
-nasdaq_GVP,GSE Systems,527.0,nasdaq_tech,data_science
-nasdaq_TAOP,Taoping,528.0,nasdaq_tech,data_science
-nasdaq_MNDO,MIND C.T.I.,529.0,nasdaq_tech,data_science
-nasdaq_RCMT,RCM Technologies,530.0,nasdaq_tech,data_science
-nasdaq_ATOM,Atomera Incorporated,531.0,nasdaq_tech,data_science
-nasdaq_PIXY,ShiftPixy,532.0,nasdaq_tech,data_science
-nasdaq_SPRT,support.com,533.0,nasdaq_tech,data_science
-nasdaq_WSTG,Wayside Technology Group,534.0,nasdaq_tech,data_science
-nasdaq_MIND,Mitcham Industries,535.0,nasdaq_tech,data_science
-nasdaq_RESN,Resonant,536.0,nasdaq_tech,data_science
-nasdaq_HSON,Hudson Global,537.0,nasdaq_tech,data_science
-nasdaq_AUTO,AutoWeb,538.0,nasdaq_tech,data_science
-nasdaq_LPTH,LightPath Technologies,539.0,nasdaq_tech,data_science
-nasdaq_EMAN,eMagin Corporation,540.0,nasdaq_tech,data_science
-nasdaq_INOD,Innodata,541.0,nasdaq_tech,data_science
-nasdaq_CSPI,CSP,542.0,nasdaq_tech,data_science
-nasdaq_SIFY,Sify Technologies Limited,543.0,nasdaq_tech,data_science
-nasdaq_WYY,WidePoint Corporation,544.0,nasdaq_tech,data_science
-nasdaq_ISSC,Innovative Solutions and Support,545.0,nasdaq_tech,data_science
-nasdaq_IDN,Intellicheck,546.0,nasdaq_tech,data_science
-nasdaq_OSS,One Stop Systems,547.0,nasdaq_tech,data_science
-nasdaq_OTIV,On Track Innovations,548.0,nasdaq_tech,data_science
-nasdaq_MOXC,Moxian,549.0,nasdaq_tech,data_science
-nasdaq_GIGM,GigaMedia Limited,550.0,nasdaq_tech,data_science
-nasdaq_MRIN,Marin Software Incorporated,551.0,nasdaq_tech,data_science
-nasdaq_DGLY,Digital Ally,552.0,nasdaq_tech,data_science
-nasdaq_CVR,Chicago Rivet & Machine,553.0,nasdaq_tech,data_science
-nasdaq_PFIN,P & F Industries,554.0,nasdaq_tech,data_science
-nasdaq_CNET,ChinaNet Online Holdings,555.0,nasdaq_tech,data_science
-nasdaq_CCIH,ChinaCache International Holdings,556.0,nasdaq_tech,data_science
-nasdaq_MYSZ,My Size,557.0,nasdaq_tech,data_science
-nasdaq_MNGA,MagneGas Applied Technology Solutions,558.0,nasdaq_tech,data_science
-nasdaq_CVV,CVD Equipment Corporation,559.0,nasdaq_tech,data_science
-nasdaq_ZDGE,Zedge,560.0,nasdaq_tech,data_science
-nasdaq_NETE,Net Element,561.0,nasdaq_tech,data_science
-nasdaq_SRAX,Social Reality,562.0,nasdaq_tech,data_science
-nasdaq_GSUM,Gridsum Holding,563.0,nasdaq_tech,data_science
-nasdaq_QRHC,Quest Resource Holding Corporation.,564.0,nasdaq_tech,data_science
-nasdaq_SPCB,SuperCom,565.0,nasdaq_tech,data_science
-nasdaq_RBCN,Rubicon Technology,566.0,nasdaq_tech,data_science
-nasdaq_STRM,Streamline Health Solutions,567.0,nasdaq_tech,data_science
-nasdaq_QUMU,Qumu Corporation,568.0,nasdaq_tech,data_science
-nasdaq_CCNI,Command Center,569.0,nasdaq_tech,data_science
-nasdaq_HHS,Harte-Hanks,570.0,nasdaq_tech,data_science
-nasdaq_IIJI,Internet Initiative Japan,571.0,nasdaq_tech,data_science
-nasdaq_IPAS,iPass,572.0,nasdaq_tech,data_science
-nasdaq_AMCN,AirMedia Group Inc,573.0,nasdaq_tech,data_science
-nasdaq_EVOL,Evolving Systems,574.0,nasdaq_tech,data_science
-nasdaq_ACY,AeroCentury,575.0,nasdaq_tech,data_science
-nasdaq_LINK,Interlink Electronics,576.0,nasdaq_tech,data_science
-nasdaq_FPAY,FlexShopper,577.0,nasdaq_tech,data_science
-nasdaq_SCKT,Socket Mobile,578.0,nasdaq_tech,data_science
-nasdaq_QBAK,Qualstar Corporation,579.0,nasdaq_tech,data_science
-nasdaq_SGMA,SigmaTron International,580.0,nasdaq_tech,data_science
-nasdaq_BKYI,BIO-key International,581.0,nasdaq_tech,data_science
-nasdaq_JOB,GEE Group,582.0,nasdaq_tech,data_science
-nasdaq_NNDM,Nano Dimension,583.0,nasdaq_tech,data_science
-nasdaq_TRT,Trio-Tech International,584.0,nasdaq_tech,data_science
-nasdaq_BDR,Blonder Tongue Laboratories,585.0,nasdaq_tech,data_science
-nasdaq_LEDS,SemiLEDS Corporation,586.0,nasdaq_tech,data_science
-nasdaq_TSRI,TSR,587.0,nasdaq_tech,data_science
-nasdaq_STAF,Staffing 360 Solutions,588.0,nasdaq_tech,data_science
-nasdaq_AMRH,Ameri Holdings,589.0,nasdaq_tech,data_science
-nasdaq_TISA,Top Image Systems,590.0,nasdaq_tech,data_science
-nasdaq_CPAH,CounterPath Corporation,591.0,nasdaq_tech,data_science
-nasdaq_BOSC,B.O.S. Better Online Solutions,592.0,nasdaq_tech,data_science
-nasdaq_BVSN,BroadVision,593.0,nasdaq_tech,data_science
-nasdaq_MOSY,MoSys,594.0,nasdaq_tech,data_science
-nasdaq_CREX,Creative Realities,595.0,nasdaq_tech,data_science
-nasdaq_ANY,Sphere 3D,596.0,nasdaq_tech,data_science
-nasdaq_IPDN,Professional Diversity Network,597.0,nasdaq_tech,data_science
-nasdaq_SPI,SPI Energy,598.0,nasdaq_tech,data_science
-nasdaq_FORTY,Formula Systems,599.0,nasdaq_tech,data_science
-nasdaq_INPX,Inpixon,600.0,nasdaq_tech,data_science
-nasdaq_ELTK,Eltek,601.0,nasdaq_tech,data_science
-nasdaq_TCCO,Technical Communications Corporation,602.0,nasdaq_tech,data_science
-nasdaq_SCON,Superconductor Technologies,603.0,nasdaq_tech,data_science
-nasdaq_BLIN ,Bridgeline Digital,604.0,nasdaq_tech,data_science
-nasdaq_FRSX,Foresight Autonomous Holdings,605.0,nasdaq_tech,data_science
-nasdaq_JMU,JMU Limited,606.0,nasdaq_tech,data_science
-nasdaq_SFET,Safe-T Group,607.0,nasdaq_tech,data_science
+list_id,company,raw_company,rank,source,job_type
+nasdaq_MSFT,Microsoft Corporation,Microsoft Corporation,1.0,nasdaq_tech,data_science_b
+nasdaq_GOOG,Alphabet,Alphabet Inc.,2.0,nasdaq_tech,data_science_b
+nasdaq_AAPL,Apple,Apple Inc.,3.0,nasdaq_tech,data_science_b
+nasdaq_FB,Facebook,"Facebook, Inc.",4.0,nasdaq_tech,data_science_b
+nasdaq_INTC,Intel Corporation,Intel Corporation,5.0,nasdaq_tech,data_science_b
+nasdaq_CSCO,Cisco Systems,"Cisco Systems, Inc.",6.0,nasdaq_tech,data_science_b
+nasdaq_TSM,Taiwan Semiconductor Manufacturing Company,Taiwan Semiconductor Manufacturing Company Ltd.,7.0,nasdaq_tech,data_science_b
+nasdaq_ORCL,Oracle Corporation,Oracle Corporation,8.0,nasdaq_tech,data_science_b
+nasdaq_SAP,SAP SE,SAP SE,9.0,nasdaq_tech,data_science_b
+nasdaq_ADBE,Adobe,Adobe Inc.,10.0,nasdaq_tech,data_science_b
+nasdaq_CRM,Salesforce.com Inc,Salesforce.com Inc,11.0,nasdaq_tech,data_science_b
+nasdaq_IBM,International Business Machines Corporation,International Business Machines Corporation,12.0,nasdaq_tech,data_science_b
+nasdaq_AVGO,Broadcom,Broadcom Inc.,13.0,nasdaq_tech,data_science_b
+nasdaq_TXN,Texas Instruments Incorporated,Texas Instruments Incorporated,14.0,nasdaq_tech,data_science_b
+nasdaq_NVDA,NVIDIA Corporation,NVIDIA Corporation,15.0,nasdaq_tech,data_science_b
+nasdaq_QCOM,QUALCOMM Incorporated,QUALCOMM Incorporated,16.0,nasdaq_tech,data_science_b
+nasdaq_VMW,Vmware,"Vmware, Inc.",17.0,nasdaq_tech,data_science_b
+nasdaq_ADP,Automatic Data Processing,"Automatic Data Processing, Inc.",18.0,nasdaq_tech,data_science_b
+nasdaq_INTU,Intuit,Intuit Inc.,19.0,nasdaq_tech,data_science_b
+nasdaq_BIDU,Baidu,"Baidu, Inc.",20.0,nasdaq_tech,data_science_b
+nasdaq_INFY,Infosys Limited,Infosys Limited,21.0,nasdaq_tech,data_science_b
+nasdaq_ITW,Illinois Tool Works,Illinois Tool Works Inc.,22.0,nasdaq_tech,data_science_b
+nasdaq_MU,Micron Technology,"Micron Technology, Inc.",23.0,nasdaq_tech,data_science_b
+nasdaq_AABA,Altaba,Altaba Inc.,24.0,nasdaq_tech,data_science_b
+nasdaq_CTSH,Cognizant Technology Solutions Corporation,Cognizant Technology Solutions Corporation,25.0,nasdaq_tech,data_science_b
+nasdaq_WDAY,Workday,"Workday, Inc.",26.0,nasdaq_tech,data_science_b
+nasdaq_ATVI,"Activision Blizzard, Inc","Activision Blizzard, Inc",27.0,nasdaq_tech,data_science_b
+nasdaq_NOW,ServiceNow,"ServiceNow, Inc.",28.0,nasdaq_tech,data_science_b
+nasdaq_NOK,Nokia Corporation,Nokia Corporation,29.0,nasdaq_tech,data_science_b
+nasdaq_AMAT,Applied Materials,"Applied Materials, Inc.",30.0,nasdaq_tech,data_science_b
+nasdaq_ADI,Analog Devices,"Analog Devices, Inc.",31.0,nasdaq_tech,data_science_b
+nasdaq_HPQ,HP,HP Inc.,32.0,nasdaq_tech,data_science_b
+nasdaq_DELL,Dell Technologies,Dell Technologies Inc.,33.0,nasdaq_tech,data_science_b
+nasdaq_RHT,Red Hat,"Red Hat, Inc.",34.0,nasdaq_tech,data_science_b
+nasdaq_ETN,"Eaton Corporation, PLC","Eaton Corporation, PLC",35.0,nasdaq_tech,data_science_b
+nasdaq_ADSK,Autodesk,"Autodesk, Inc.",36.0,nasdaq_tech,data_science_b
+nasdaq_FISV,Fiserv,"Fiserv, Inc.",37.0,nasdaq_tech,data_science_b
+nasdaq_EA,Electronic Arts,Electronic Arts Inc.,38.0,nasdaq_tech,data_science_b
+nasdaq_SQ,Square,"Square, Inc.",39.0,nasdaq_tech,data_science_b
+nasdaq_TWTR,Twitter,"Twitter, Inc.",40.0,nasdaq_tech,data_science_b
+nasdaq_NXPI,NXP Semiconductors N.V.,NXP Semiconductors N.V.,41.0,nasdaq_tech,data_science_b
+nasdaq_WIT,Wipro Limited,Wipro Limited,42.0,nasdaq_tech,data_science_b
+nasdaq_XLNX,Xilinx,"Xilinx, Inc.",43.0,nasdaq_tech,data_science_b
+nasdaq_TEAM,Atlassian Corporation Plc,Atlassian Corporation Plc,44.0,nasdaq_tech,data_science_b
+nasdaq_LRCX,Lam Research Corporation,Lam Research Corporation,45.0,nasdaq_tech,data_science_b
+nasdaq_AMD,Advanced Micro Devices,"Advanced Micro Devices, Inc.",46.0,nasdaq_tech,data_science_b
+nasdaq_HPE,Hewlett Packard Enterprise Company,Hewlett Packard Enterprise Company,47.0,nasdaq_tech,data_science_b
+nasdaq_INFO,IHS Markit,IHS Markit Ltd.,48.0,nasdaq_tech,data_science_b
+nasdaq_VRSN,VeriSign,"VeriSign, Inc.",49.0,nasdaq_tech,data_science_b
+nasdaq_MSI,Motorola Solutions,"Motorola Solutions, Inc.",50.0,nasdaq_tech,data_science_b
+nasdaq_PANW,Palo Alto Networks,"Palo Alto Networks, Inc.",51.0,nasdaq_tech,data_science_b
+nasdaq_VRSK,Verisk Analytics,"Verisk Analytics, Inc.",52.0,nasdaq_tech,data_science_b
+nasdaq_MCHP,Microchip Technology Incorporated,Microchip Technology Incorporated,53.0,nasdaq_tech,data_science_b
+nasdaq_CERN,Cerner Corporation,Cerner Corporation,54.0,nasdaq_tech,data_science_b
+nasdaq_SPLK,Splunk,Splunk Inc.,55.0,nasdaq_tech,data_science_b
+nasdaq_OMC,Omnicom Group,Omnicom Group Inc.,56.0,nasdaq_tech,data_science_b
+nasdaq_DXC,DXC Technology Company,DXC Technology Company,57.0,nasdaq_tech,data_science_b
+nasdaq_CHKP,Check Point Software Technologies,Check Point Software Technologies Ltd.,58.0,nasdaq_tech,data_science_b
+nasdaq_ANET,Arista Networks,"Arista Networks, Inc.",59.0,nasdaq_tech,data_science_b
+nasdaq_NTAP,NetApp,"NetApp, Inc.",60.0,nasdaq_tech,data_science_b
+nasdaq_SHOP,Shopify,Shopify Inc.,61.0,nasdaq_tech,data_science_b
+nasdaq_MXIM,Maxim Integrated Products,"Maxim Integrated Products, Inc.",62.0,nasdaq_tech,data_science_b
+nasdaq_WPP,WPP plc,WPP plc,63.0,nasdaq_tech,data_science_b
+nasdaq_VEEV,Veeva Systems,Veeva Systems Inc.,64.0,nasdaq_tech,data_science_b
+nasdaq_CTXS,Citrix Systems,"Citrix Systems, Inc.",65.0,nasdaq_tech,data_science_b
+nasdaq_LLL,L3 Technologies,"L3 Technologies, Inc.",66.0,nasdaq_tech,data_science_b
+nasdaq_SNPS,Synopsys,"Synopsys, Inc.",67.0,nasdaq_tech,data_science_b
+nasdaq_ANSS,ANSYS,"ANSYS, Inc.",68.0,nasdaq_tech,data_science_b
+nasdaq_SYMC,Symantec Corporation,Symantec Corporation,69.0,nasdaq_tech,data_science_b
+nasdaq_STM,STMicroelectronics N.V.,STMicroelectronics N.V.,70.0,nasdaq_tech,data_science_b
+nasdaq_CDNS,Cadence Design Systems,"Cadence Design Systems, Inc.",71.0,nasdaq_tech,data_science_b
+nasdaq_FTNT,Fortinet,"Fortinet, Inc.",72.0,nasdaq_tech,data_science_b
+nasdaq_SWKS,Skyworks Solutions,"Skyworks Solutions, Inc.",73.0,nasdaq_tech,data_science_b
+nasdaq_MTCH,Match Group,"Match Group, Inc.",74.0,nasdaq_tech,data_science_b
+nasdaq_TTWO,Take-Two Interactive Software,"Take-Two Interactive Software, Inc.",75.0,nasdaq_tech,data_science_b
+nasdaq_SSNC,SS&C Technologies Holdings,"SS&C Technologies Holdings, Inc.",76.0,nasdaq_tech,data_science_b
+nasdaq_STX,Seagate Technology PLC,Seagate Technology PLC,77.0,nasdaq_tech,data_science_b
+nasdaq_WDC,Western Digital Corporation,Western Digital Corporation,78.0,nasdaq_tech,data_science_b
+nasdaq_DOV,Dover Corporation,Dover Corporation,79.0,nasdaq_tech,data_science_b
+nasdaq_MRVL,Marvell Technology Group,Marvell Technology Group Ltd.,80.0,nasdaq_tech,data_science_b
+nasdaq_ASML,ASML Holding N.V.,ASML Holding N.V.,81.0,nasdaq_tech,data_science_b
+nasdaq_GDDY,GoDaddy,GoDaddy Inc.,82.0,nasdaq_tech,data_science_b
+nasdaq_PTC,PTC,PTC Inc.,83.0,nasdaq_tech,data_science_b
+nasdaq_DATA,Tableau Software,"Tableau Software, Inc.",84.0,nasdaq_tech,data_science_b
+nasdaq_FFIV,F5 Networks,"F5 Networks, Inc.",85.0,nasdaq_tech,data_science_b
+nasdaq_JKHY,Jack Henry & Associates,"Jack Henry & Associates, Inc.",86.0,nasdaq_tech,data_science_b
+nasdaq_JNPR,Juniper Networks,"Juniper Networks, Inc.",87.0,nasdaq_tech,data_science_b
+nasdaq_YNDX,Yandex N.V.,Yandex N.V.,88.0,nasdaq_tech,data_science_b
+nasdaq_TWLO,Twilio,Twilio Inc.,89.0,nasdaq_tech,data_science_b
+nasdaq_URI,United Rentals,"United Rentals, Inc.",90.0,nasdaq_tech,data_science_b
+nasdaq_OTEX,Open Text Corporation,Open Text Corporation,91.0,nasdaq_tech,data_science_b
+nasdaq_ATHM,Autohome,Autohome Inc.,92.0,nasdaq_tech,data_science_b
+nasdaq_DBX,Dropbox,"Dropbox, Inc.",93.0,nasdaq_tech,data_science_b
+nasdaq_ZBRA,Zebra Technologies Corporation,Zebra Technologies Corporation,94.0,nasdaq_tech,data_science_b
+nasdaq_LN,LINE Corporation,LINE Corporation,95.0,nasdaq_tech,data_science_b
+nasdaq_IPG,Interpublic Group of Companies,"Interpublic Group of Companies, Inc. (The)",96.0,nasdaq_tech,data_science_b
+nasdaq_DOX,Amdocs Limited,Amdocs Limited,97.0,nasdaq_tech,data_science_b
+nasdaq_WUBA,58.com,58.com Inc.,98.0,nasdaq_tech,data_science_b
+nasdaq_LDOS,Leidos Holdings,"Leidos Holdings, Inc.",99.0,nasdaq_tech,data_science_b
+nasdaq_NTNX,Nutanix,"Nutanix, Inc.",100.0,nasdaq_tech,data_science_b
+nasdaq_SNAP,Snap,Snap Inc.,101.0,nasdaq_tech,data_science_b
+nasdaq_ULTI,The Ultimate Software Group,"The Ultimate Software Group, Inc.",102.0,nasdaq_tech,data_science_b
+nasdaq_MFGP,Micro Focus Intl PLC,Micro Focus Intl PLC,103.0,nasdaq_tech,data_science_b
+nasdaq_QRVO,Qorvo,"Qorvo, Inc.",104.0,nasdaq_tech,data_science_b
+nasdaq_ASX,ASE Technology Holding,"ASE Technology Holding Co., Ltd.",105.0,nasdaq_tech,data_science_b
+nasdaq_ON,ON Semiconductor Corporation,ON Semiconductor Corporation,106.0,nasdaq_tech,data_science_b
+nasdaq_FDS,FactSet Research Systems,FactSet Research Systems Inc.,107.0,nasdaq_tech,data_science_b
+nasdaq_TRIP,TripAdvisor,"TripAdvisor, Inc.",108.0,nasdaq_tech,data_science_b
+nasdaq_EBIX,Ebix,"Ebix, Inc.",109.0,nasdaq_tech,data_science_b
+nasdaq_OKTA,Okta,"Okta, Inc.",110.0,nasdaq_tech,data_science_b
+nasdaq_UBNT,Ubiquiti Networks,"Ubiquiti Networks, Inc.",111.0,nasdaq_tech,data_science_b
+nasdaq_PAYC,Paycom Software,"Paycom Software, Inc.",112.0,nasdaq_tech,data_science_b
+nasdaq_DOCU,DocuSign,"DocuSign, Inc.",113.0,nasdaq_tech,data_science_b
+nasdaq_PAGS,PagSeguro Digital,PagSeguro Digital Ltd.,114.0,nasdaq_tech,data_science_b
+nasdaq_TYL,Tyler Technologies,"Tyler Technologies, Inc.",115.0,nasdaq_tech,data_science_b
+nasdaq_RHI,Robert Half International,Robert Half International Inc.,116.0,nasdaq_tech,data_science_b
+nasdaq_EPAM,EPAM Systems,"EPAM Systems, Inc.",117.0,nasdaq_tech,data_science_b
+nasdaq_PNR,Pentair plc.,Pentair plc.,118.0,nasdaq_tech,data_science_b
+nasdaq_BKI,Black Knight,"Black Knight, Inc.",119.0,nasdaq_tech,data_science_b
+nasdaq_RNG,Ringcentral,"Ringcentral, Inc.",120.0,nasdaq_tech,data_science_b
+nasdaq_IPGP,IPG Photonics Corporation,IPG Photonics Corporation,121.0,nasdaq_tech,data_science_b
+nasdaq_AER,Aercap Holdings N.V.,Aercap Holdings N.V.,122.0,nasdaq_tech,data_science_b
+nasdaq_GWRE,Guidewire Software,"Guidewire Software, Inc.",123.0,nasdaq_tech,data_science_b
+nasdaq_ZEN,Zendesk,"Zendesk, Inc.",124.0,nasdaq_tech,data_science_b
+nasdaq_IDTI,Integrated Device Technology,"Integrated Device Technology, Inc.",125.0,nasdaq_tech,data_science_b
+nasdaq_AZPN,Aspen Technology,"Aspen Technology, Inc.",126.0,nasdaq_tech,data_science_b
+nasdaq_NATI,National Instruments Corporation,National Instruments Corporation,127.0,nasdaq_tech,data_science_b
+nasdaq_SABR,Sabre Corporation,Sabre Corporation,128.0,nasdaq_tech,data_science_b
+nasdaq_MIDD,The Middleby Corporation,The Middleby Corporation,129.0,nasdaq_tech,data_science_b
+nasdaq_STNE,StoneCo,StoneCo Ltd.,130.0,nasdaq_tech,data_science_b
+nasdaq_ZS,Zscaler,"Zscaler, Inc.",131.0,nasdaq_tech,data_science_b
+nasdaq_LOGI,Logitech International S.A.,Logitech International S.A.,132.0,nasdaq_tech,data_science_b
+nasdaq_TTD,The Trade Desk,"The Trade Desk, Inc.",133.0,nasdaq_tech,data_science_b
+nasdaq_HUBS,HubSpot,"HubSpot, Inc.",134.0,nasdaq_tech,data_science_b
+nasdaq_ARRS,ARRIS International plc,ARRIS International plc,135.0,nasdaq_tech,data_science_b
+nasdaq_LECO,Lincoln Electric Holdings,"Lincoln Electric Holdings, Inc.",136.0,nasdaq_tech,data_science_b
+nasdaq_ESTC,Elastic N.V.,Elastic N.V.,137.0,nasdaq_tech,data_science_b
+nasdaq_XRX,Xerox Corporation,Xerox Corporation,138.0,nasdaq_tech,data_science_b
+nasdaq_MPWR,Monolithic Power Systems,"Monolithic Power Systems, Inc.",139.0,nasdaq_tech,data_science_b
+nasdaq_TSG,The Stars Group,The Stars Group Inc.,140.0,nasdaq_tech,data_science_b
+nasdaq_RP,RealPage,"RealPage, Inc.",141.0,nasdaq_tech,data_science_b
+nasdaq_PFPT,Proofpoint,"Proofpoint, Inc.",142.0,nasdaq_tech,data_science_b
+nasdaq_FSLR,First Solar,"First Solar, Inc.",143.0,nasdaq_tech,data_science_b
+nasdaq_NEWR,New Relic,"New Relic, Inc.",144.0,nasdaq_tech,data_science_b
+nasdaq_SNX,Synnex Corporation,Synnex Corporation,145.0,nasdaq_tech,data_science_b
+nasdaq_SWI,SolarWinds Corporation,SolarWinds Corporation,146.0,nasdaq_tech,data_science_b
+nasdaq_CDAY,Ceridian HCM Holding,Ceridian HCM Holding Inc.,147.0,nasdaq_tech,data_science_b
+nasdaq_CREE,Cree,"Cree, Inc.",148.0,nasdaq_tech,data_science_b
+nasdaq_CY,Cypress Semiconductor Corporation,Cypress Semiconductor Corporation,149.0,nasdaq_tech,data_science_b
+nasdaq_WIX,Wix.com,Wix.com Ltd.,150.0,nasdaq_tech,data_science_b
+nasdaq_TDC,Teradata Corporation,Teradata Corporation,151.0,nasdaq_tech,data_science_b
+nasdaq_CW,Curtiss-Wright Corporation,Curtiss-Wright Corporation,152.0,nasdaq_tech,data_science_b
+nasdaq_PVTL,Pivotal Software,"Pivotal Software, Inc.",153.0,nasdaq_tech,data_science_b
+nasdaq_MLNX,Mellanox Technologies,"Mellanox Technologies, Ltd.",154.0,nasdaq_tech,data_science_b
+nasdaq_NICE,NICE,NICE Ltd,155.0,nasdaq_tech,data_science_b
+nasdaq_GDI,Gardner Denver Holdings,"Gardner Denver Holdings, Inc.",156.0,nasdaq_tech,data_science_b
+nasdaq_LOGM,LogMein,"LogMein, Inc.",157.0,nasdaq_tech,data_science_b
+nasdaq_MAN,ManpowerGroup,ManpowerGroup,158.0,nasdaq_tech,data_science_b
+nasdaq_NUAN,Nuance Communications,"Nuance Communications, Inc.",159.0,nasdaq_tech,data_science_b
+nasdaq_UMC,United Microelectronics Corporation,United Microelectronics Corporation,160.0,nasdaq_tech,data_science_b
+nasdaq_GTES,Gates Industrial Corporation plc,Gates Industrial Corporation plc,161.0,nasdaq_tech,data_science_b
+nasdaq_AYX,Alteryx,"Alteryx, Inc.",162.0,nasdaq_tech,data_science_b
+nasdaq_FLEX,Flex,Flex Ltd.,163.0,nasdaq_tech,data_science_b
+nasdaq_SMI,Semiconductor Manufacturing International Corporation,Semiconductor Manufacturing International Corporation,164.0,nasdaq_tech,data_science_b
+nasdaq_PSTG,Pure Storage,"Pure Storage, Inc. ",165.0,nasdaq_tech,data_science_b
+nasdaq_SINA,Sina Corporation,Sina Corporation,166.0,nasdaq_tech,data_science_b
+nasdaq_NVT,nVent Electric plc,nVent Electric plc,167.0,nasdaq_tech,data_science_b
+nasdaq_MOMO,Momo,Momo Inc.,168.0,nasdaq_tech,data_science_b
+nasdaq_BB,BlackBerry Limited,BlackBerry Limited,169.0,nasdaq_tech,data_science_b
+nasdaq_HUYA,HUYA,HUYA Inc.,170.0,nasdaq_tech,data_science_b
+nasdaq_MDSO,Medidata Solutions,"Medidata Solutions, Inc.",171.0,nasdaq_tech,data_science_b
+nasdaq_INXN,InterXion Holding N.V.,InterXion Holding N.V.,172.0,nasdaq_tech,data_science_b
+nasdaq_AL,Air Lease Corporation,Air Lease Corporation,173.0,nasdaq_tech,data_science_b
+nasdaq_PEGA,Pegasystems,Pegasystems Inc.,174.0,nasdaq_tech,data_science_b
+nasdaq_AUO,AU Optronics Corp,AU Optronics Corp,175.0,nasdaq_tech,data_science_b
+nasdaq_MDB,MongoDB,"MongoDB, Inc.",176.0,nasdaq_tech,data_science_b
+nasdaq_ZNGA,Zynga,Zynga Inc.,177.0,nasdaq_tech,data_science_b
+nasdaq_NSP,Insperity,"Insperity, Inc.",178.0,nasdaq_tech,data_science_b
+nasdaq_CARG,CarGurus,"CarGurus, Inc.",179.0,nasdaq_tech,data_science_b
+nasdaq_COUP,Coupa Software Incorporated,Coupa Software Incorporated,180.0,nasdaq_tech,data_science_b
+nasdaq_JBL,Jabil,Jabil Inc.,181.0,nasdaq_tech,data_science_b
+nasdaq_SATS,EchoStar Corporation,EchoStar Corporation,182.0,nasdaq_tech,data_science_b
+nasdaq_CACI,CACI International,"CACI International, Inc.",183.0,nasdaq_tech,data_science_b
+nasdaq_PS,Pluralsight,"Pluralsight, Inc.",184.0,nasdaq_tech,data_science_b
+nasdaq_SLAB,Silicon Laboratories,"Silicon Laboratories, Inc.",185.0,nasdaq_tech,data_science_b
+nasdaq_WB,Weibo Corporation,Weibo Corporation,186.0,nasdaq_tech,data_science_b
+nasdaq_VSAT,ViaSat,"ViaSat, Inc.",187.0,nasdaq_tech,data_science_b
+nasdaq_COMM,CommScope Holding Company,"CommScope Holding Company, Inc.",188.0,nasdaq_tech,data_science_b
+nasdaq_PLAN,Anaplan,"Anaplan, Inc.",189.0,nasdaq_tech,data_science_b
+nasdaq_JCOM,j2 Global,"j2 Global, Inc.",190.0,nasdaq_tech,data_science_b
+nasdaq_SMTC,Semtech Corporation,Semtech Corporation,191.0,nasdaq_tech,data_science_b
+nasdaq_TECD,Tech Data Corporation,Tech Data Corporation,192.0,nasdaq_tech,data_science_b
+nasdaq_YY,YY,YY Inc.,193.0,nasdaq_tech,data_science_b
+nasdaq_AAN,Aaron&#39;s,"Aaron&#39;s, Inc.",194.0,nasdaq_tech,data_science_b
+nasdaq_FEYE,FireEye,"FireEye, Inc.",195.0,nasdaq_tech,data_science_b
+nasdaq_PCTY,Paylocity Holding Corporation,Paylocity Holding Corporation,196.0,nasdaq_tech,data_science_b
+nasdaq_ACIW,ACI Worldwide,"ACI Worldwide, Inc.",197.0,nasdaq_tech,data_science_b
+nasdaq_BLKB,Blackbaud,"Blackbaud, Inc.",198.0,nasdaq_tech,data_science_b
+nasdaq_ASGN,ASGN Incorporated,ASGN Incorporated,199.0,nasdaq_tech,data_science_b
+nasdaq_CSOD,Cornerstone OnDemand,"Cornerstone OnDemand, Inc.",200.0,nasdaq_tech,data_science_b
+nasdaq_PRSP,Perspecta,Perspecta Inc.,201.0,nasdaq_tech,data_science_b
+nasdaq_QLYS,Qualys,"Qualys, Inc.",202.0,nasdaq_tech,data_science_b
+nasdaq_TWOU,2U,"2U, Inc.",203.0,nasdaq_tech,data_science_b
+nasdaq_CLDR,Cloudera,"Cloudera, Inc.",204.0,nasdaq_tech,data_science_b
+nasdaq_MANH,Manhattan Associates,"Manhattan Associates, Inc.",205.0,nasdaq_tech,data_science_b
+nasdaq_VRNT,Verint Systems,Verint Systems Inc.,206.0,nasdaq_tech,data_science_b
+nasdaq_AMN,AMN Healthcare Services Inc,AMN Healthcare Services Inc,207.0,nasdaq_tech,data_science_b
+nasdaq_TRTN,Triton International Limited,Triton International Limited,208.0,nasdaq_tech,data_science_b
+nasdaq_CLGX,CoreLogic,"CoreLogic, Inc.",209.0,nasdaq_tech,data_science_b
+nasdaq_CVLT,Commvault Systems,"Commvault Systems, Inc.",210.0,nasdaq_tech,data_science_b
+nasdaq_RAMP,LiveRamp Holdings,"LiveRamp Holdings, Inc.",211.0,nasdaq_tech,data_science_b
+nasdaq_CYBR,CyberArk Software,CyberArk Software Ltd.,212.0,nasdaq_tech,data_science_b
+nasdaq_SAIC,SCIENCE APPLICATIONS INTERNATIONAL CORPORATION,SCIENCE APPLICATIONS INTERNATIONAL CORPORATION,213.0,nasdaq_tech,data_science_b
+nasdaq_CCMP,Cabot Microelectronics Corporation,Cabot Microelectronics Corporation,214.0,nasdaq_tech,data_science_b
+nasdaq_BOX,Box,"Box, Inc.",215.0,nasdaq_tech,data_science_b
+nasdaq_FIVN,Five9,"Five9, Inc.",216.0,nasdaq_tech,data_science_b
+nasdaq_ERIC,Ericsson,Ericsson,217.0,nasdaq_tech,data_science_b
+nasdaq_SMAR,Smartsheet,Smartsheet Inc.,218.0,nasdaq_tech,data_science_b
+nasdaq_ALRM,Alarm.com Holdings,"Alarm.com Holdings, Inc.",219.0,nasdaq_tech,data_science_b
+nasdaq_AVLR,Avalara,"Avalara, Inc.",220.0,nasdaq_tech,data_science_b
+nasdaq_RXN,Rexnord Corporation,Rexnord Corporation,221.0,nasdaq_tech,data_science_b
+nasdaq_OMCL,Omnicell,"Omnicell, Inc.",222.0,nasdaq_tech,data_science_b
+nasdaq_FNSR,Finisar Corporation,Finisar Corporation,223.0,nasdaq_tech,data_science_b
+nasdaq_JBT,John Bean Technologies Corporation,John Bean Technologies Corporation,224.0,nasdaq_tech,data_science_b
+nasdaq_KFY,Korn Ferry,Korn Ferry ,225.0,nasdaq_tech,data_science_b
+nasdaq_APY,Apergy Corporation,Apergy Corporation,226.0,nasdaq_tech,data_science_b
+nasdaq_VIAV,Viavi Solutions,Viavi Solutions Inc.,227.0,nasdaq_tech,data_science_b
+nasdaq_EB,Eventbrite,"Eventbrite, Inc.",228.0,nasdaq_tech,data_science_b
+nasdaq_JOBS,51job,"51job, Inc.",229.0,nasdaq_tech,data_science_b
+nasdaq_ELLI,Ellie Mae,"Ellie Mae, Inc.",230.0,nasdaq_tech,data_science_b
+nasdaq_BL,BlackLine,"BlackLine, Inc.",231.0,nasdaq_tech,data_science_b
+nasdaq_SOGO,Sogou,Sogou Inc.,232.0,nasdaq_tech,data_science_b
+nasdaq_SAIL,SailPoint Technologies Holdings,"SailPoint Technologies Holdings, Inc.",233.0,nasdaq_tech,data_science_b
+nasdaq_QTWO,Q2 Holdings,"Q2 Holdings, Inc.",234.0,nasdaq_tech,data_science_b
+nasdaq_TENB,Tenable Holdings,"Tenable Holdings, Inc.",235.0,nasdaq_tech,data_science_b
+nasdaq_SEND,SendGrid,"SendGrid, Inc.",236.0,nasdaq_tech,data_science_b
+nasdaq_DSGX,The Descartes Systems Group,The Descartes Systems Group Inc.,237.0,nasdaq_tech,data_science_b
+nasdaq_ZUO,Zuora,"Zuora, Inc.",238.0,nasdaq_tech,data_science_b
+nasdaq_GLOB,Globant S.A.,Globant S.A.,239.0,nasdaq_tech,data_science_b
+nasdaq_CRUS,Cirrus Logic,"Cirrus Logic, Inc.",240.0,nasdaq_tech,data_science_b
+nasdaq_INOV,Inovalon Holdings,"Inovalon Holdings, Inc.",241.0,nasdaq_tech,data_science_b
+nasdaq_EPAY,Bottomline Technologies,"Bottomline Technologies, Inc.",242.0,nasdaq_tech,data_science_b
+nasdaq_APPF,AppFolio,"AppFolio, Inc.",243.0,nasdaq_tech,data_science_b
+nasdaq_EVTC,Evertec,"Evertec, Inc.",244.0,nasdaq_tech,data_science_b
+nasdaq_ALTR,Altair Engineering,Altair Engineering Inc.,245.0,nasdaq_tech,data_science_b
+nasdaq_GRPN,Groupon,"Groupon, Inc.",246.0,nasdaq_tech,data_science_b
+nasdaq_BRKS,Brooks Automation,"Brooks Automation, Inc.",247.0,nasdaq_tech,data_science_b
+nasdaq_UPWK,Upwork,Upwork Inc.,248.0,nasdaq_tech,data_science_b
+nasdaq_MIME,Mimecast Limited,Mimecast Limited,249.0,nasdaq_tech,data_science_b
+nasdaq_MDRX,Allscripts Healthcare Solutions,"Allscripts Healthcare Solutions, Inc.",250.0,nasdaq_tech,data_science_b
+nasdaq_APPN,Appian Corporation,Appian Corporation,251.0,nasdaq_tech,data_science_b
+nasdaq_NTCT,NetScout Systems,"NetScout Systems, Inc.",252.0,nasdaq_tech,data_science_b
+nasdaq_LXFT,Luxoft Holding,"Luxoft Holding, Inc.",253.0,nasdaq_tech,data_science_b
+nasdaq_SGMS,Scientific Games Corp,Scientific Games Corp,254.0,nasdaq_tech,data_science_b
+nasdaq_EGHT,8x8 Inc,8x8 Inc,255.0,nasdaq_tech,data_science_b
+nasdaq_SWCH,Switch,"Switch, Inc.",256.0,nasdaq_tech,data_science_b
+nasdaq_POWI,Power Integrations,"Power Integrations, Inc.",257.0,nasdaq_tech,data_science_b
+nasdaq_AMKR,Amkor Technology,"Amkor Technology, Inc.",258.0,nasdaq_tech,data_science_b
+nasdaq_MB,MINDBODY,"MINDBODY, Inc.",259.0,nasdaq_tech,data_science_b
+nasdaq_SANM,Sanmina Corporation,Sanmina Corporation,260.0,nasdaq_tech,data_science_b
+nasdaq_WBT,Welbilt,"Welbilt, Inc.",261.0,nasdaq_tech,data_science_b
+nasdaq_CISN,Cision,Cision Ltd.,262.0,nasdaq_tech,data_science_b
+nasdaq_ACIA,Acacia Communications,"Acacia Communications, Inc.",263.0,nasdaq_tech,data_science_b
+nasdaq_PLXS,Plexus,Plexus Corp.,264.0,nasdaq_tech,data_science_b
+nasdaq_EVBG,Everbridge,"Everbridge, Inc.",265.0,nasdaq_tech,data_science_b
+nasdaq_RPD,Rapid7,"Rapid7, Inc.",266.0,nasdaq_tech,data_science_b
+nasdaq_SVMK,SVMK,SVMK Inc.,267.0,nasdaq_tech,data_science_b
+nasdaq_SEDG,SolarEdge Technologies,"SolarEdge Technologies, Inc.",268.0,nasdaq_tech,data_science_b
+nasdaq_WK,Workiva,Workiva Inc.,269.0,nasdaq_tech,data_science_b
+nasdaq_CRTO,Criteo S.A.,Criteo S.A.,270.0,nasdaq_tech,data_science_b
+nasdaq_PRGS,Progress Software Corporation,Progress Software Corporation,271.0,nasdaq_tech,data_science_b
+nasdaq_DIOD,Diodes Incorporated,Diodes Incorporated,272.0,nasdaq_tech,data_science_b
+nasdaq_BNFT,Benefitfocus,"Benefitfocus, Inc.",273.0,nasdaq_tech,data_science_b
+nasdaq_YEXT,Yext,"Yext, Inc.",274.0,nasdaq_tech,data_science_b
+nasdaq_CARS,Cars.com,Cars.com Inc.,275.0,nasdaq_tech,data_science_b
+nasdaq_TSEM,Tower Semiconductor,Tower Semiconductor Ltd.,276.0,nasdaq_tech,data_science_b
+nasdaq_SPSC,SPS Commerce,"SPS Commerce, Inc.",277.0,nasdaq_tech,data_science_b
+nasdaq_VRNS,Varonis Systems,"Varonis Systems, Inc.",278.0,nasdaq_tech,data_science_b
+nasdaq_MSTR,MicroStrategy Incorporated,MicroStrategy Incorporated,279.0,nasdaq_tech,data_science_b
+nasdaq_TTEC,TTEC Holdings,"TTEC Holdings, Inc.",280.0,nasdaq_tech,data_science_b
+nasdaq_IPHI,Inphi Corporation,Inphi Corporation,281.0,nasdaq_tech,data_science_b
+nasdaq_AYR,Aircastle Limited,Aircastle Limited,282.0,nasdaq_tech,data_science_b
+nasdaq_FIT,Fitbit,"Fitbit, Inc.",283.0,nasdaq_tech,data_science_b
+nasdaq_BITA,Bitauto Holdings Limited,Bitauto Holdings Limited,284.0,nasdaq_tech,data_science_b
+nasdaq_KLIC,Kulicke and Soffa Industries,"Kulicke and Soffa Industries, Inc.",285.0,nasdaq_tech,data_science_b
+nasdaq_INST,Instructure,"Instructure, Inc.",286.0,nasdaq_tech,data_science_b
+nasdaq_GDS,GDS Holdings Limited,GDS Holdings Limited,287.0,nasdaq_tech,data_science_b
+nasdaq_VRTU,Virtusa Corporation,Virtusa Corporation,288.0,nasdaq_tech,data_science_b
+nasdaq_OSIS,OSI Systems,"OSI Systems, Inc.",289.0,nasdaq_tech,data_science_b
+nasdaq_SCWX,SecureWorks,SecureWorks Corp.,290.0,nasdaq_tech,data_science_b
+nasdaq_SYNA,Synaptics Incorporated,Synaptics Incorporated,291.0,nasdaq_tech,data_science_b
+nasdaq_ATU,Actuant Corporation,Actuant Corporation,292.0,nasdaq_tech,data_science_b
+nasdaq_FLOW,SPX FLOW,"SPX FLOW, Inc.",293.0,nasdaq_tech,data_science_b
+nasdaq_GLUU,Glu Mobile,Glu Mobile Inc.,294.0,nasdaq_tech,data_science_b
+nasdaq_SSTK,Shutterstock,"Shutterstock, Inc.",295.0,nasdaq_tech,data_science_b
+nasdaq_MXL,"MaxLinear, Inc","MaxLinear, Inc",296.0,nasdaq_tech,data_science_b
+nasdaq_DDD,3D Systems Corporation,3D Systems Corporation,297.0,nasdaq_tech,data_science_b
+nasdaq_SIMO,Silicon Motion Technology Corporation,Silicon Motion Technology Corporation,298.0,nasdaq_tech,data_science_b
+nasdaq_SPXC,SPX Corporation,SPX Corporation,299.0,nasdaq_tech,data_science_b
+nasdaq_LPSN,LivePerson,"LivePerson, Inc.",300.0,nasdaq_tech,data_science_b
+nasdaq_MGRC,McGrath RentCorp,McGrath RentCorp,301.0,nasdaq_tech,data_science_b
+nasdaq_LTRPA,Liberty TripAdvisor Holdings,"Liberty TripAdvisor Holdings, Inc.",302.0,nasdaq_tech,data_science_b
+nasdaq_DAVA,Endava plc,Endava plc,303.0,nasdaq_tech,data_science_b
+nasdaq_LORL,Loral Space and Communications,"Loral Space and Communications, Inc.",304.0,nasdaq_tech,data_science_b
+nasdaq_AMBA,Ambarella,"Ambarella, Inc.",305.0,nasdaq_tech,data_science_b
+nasdaq_PRO,PROS Holdings,"PROS Holdings, Inc.",306.0,nasdaq_tech,data_science_b
+nasdaq_PSDO,Presidio,"Presidio, Inc.",307.0,nasdaq_tech,data_science_b
+nasdaq_EFII,Electronics for Imaging,"Electronics for Imaging, Inc.",308.0,nasdaq_tech,data_science_b
+nasdaq_SYKE,"Sykes Enterprises, Incorporated","Sykes Enterprises, Incorporated",309.0,nasdaq_tech,data_science_b
+nasdaq_CASA,Casa Systems,"Casa Systems, Inc.",310.0,nasdaq_tech,data_science_b
+nasdaq_FSCT,ForeScout Technologies,"ForeScout Technologies, Inc.",311.0,nasdaq_tech,data_science_b
+nasdaq_AQUA,Evoqua Water Technologies,Evoqua Water Technologies Corp.,312.0,nasdaq_tech,data_science_b
+nasdaq_CSGS,CSG Systems International,"CSG Systems International, Inc.",313.0,nasdaq_tech,data_science_b
+nasdaq_MTSI,MACOM Technology Solutions Holdings,"MACOM Technology Solutions Holdings, Inc.",314.0,nasdaq_tech,data_science_b
+nasdaq_TTMI,TTM Technologies,"TTM Technologies, Inc.",315.0,nasdaq_tech,data_science_b
+nasdaq_CLS,Celestica,"Celestica, Inc.",316.0,nasdaq_tech,data_science_b
+nasdaq_NXGN,NextGen Healthcare,"NextGen Healthcare, Inc.",317.0,nasdaq_tech,data_science_b
+nasdaq_TLND,Talend S.A.,Talend S.A.,318.0,nasdaq_tech,data_science_b
+nasdaq_SSYS,Stratasys,"Stratasys, Ltd.",319.0,nasdaq_tech,data_science_b
+nasdaq_EIGI,Endurance International Group Holdings,"Endurance International Group Holdings, Inc.",320.0,nasdaq_tech,data_science_b
+nasdaq_FORM,FormFactor,"FormFactor, Inc.",321.0,nasdaq_tech,data_science_b
+nasdaq_CSIQ,Canadian Solar,Canadian Solar Inc.,322.0,nasdaq_tech,data_science_b
+nasdaq_PLUS,ePlus inc.,ePlus inc.,323.0,nasdaq_tech,data_science_b
+nasdaq_TNC,Tennant Company,Tennant Company,324.0,nasdaq_tech,data_science_b
+nasdaq_BHE,Benchmark Electronics,"Benchmark Electronics, Inc.",325.0,nasdaq_tech,data_science_b
+nasdaq_XPER,Xperi Corporation,Xperi Corporation,326.0,nasdaq_tech,data_science_b
+nasdaq_TRUE,TrueCar,"TrueCar, Inc.",327.0,nasdaq_tech,data_science_b
+nasdaq_CARB,Carbonite,"Carbonite, Inc.",328.0,nasdaq_tech,data_science_b
+nasdaq_TBI,TrueBlue,"TrueBlue, Inc.",329.0,nasdaq_tech,data_science_b
+nasdaq_LSCC,Lattice Semiconductor Corporation,Lattice Semiconductor Corporation,330.0,nasdaq_tech,data_science_b
+nasdaq_MCRN,Milacron Holdings,Milacron Holdings Corp.,331.0,nasdaq_tech,data_science_b
+nasdaq_SXI,Standex International Corporation,Standex International Corporation,332.0,nasdaq_tech,data_science_b
+nasdaq_CBLK,Carbon Black,"Carbon Black, Inc.",333.0,nasdaq_tech,data_science_b
+nasdaq_SCSC,ScanSource,"ScanSource, Inc.",334.0,nasdaq_tech,data_science_b
+nasdaq_AGMH,AGM Group Holdings,AGM Group Holdings Inc.,335.0,nasdaq_tech,data_science_b
+nasdaq_KAI,Kadant Inc,Kadant Inc,336.0,nasdaq_tech,data_science_b
+nasdaq_RCII,Rent-A-Center,Rent-A-Center Inc.,337.0,nasdaq_tech,data_science_b
+nasdaq_CTS,CTS Corporation,CTS Corporation,338.0,nasdaq_tech,data_science_b
+nasdaq_RMBS,Rambus,"Rambus, Inc.",339.0,nasdaq_tech,data_science_b
+nasdaq_CMCM,Cheetah Mobile,Cheetah Mobile Inc.,340.0,nasdaq_tech,data_science_b
+nasdaq_CRAY,Cray Inc,Cray Inc,341.0,nasdaq_tech,data_science_b
+nasdaq_KELYA,Kelly Services,"Kelly Services, Inc.",342.0,nasdaq_tech,data_science_b
+nasdaq_KFRC,Kforce,"Kforce, Inc.",343.0,nasdaq_tech,data_science_b
+nasdaq_BILI,Bilibili,Bilibili Inc.,344.0,nasdaq_tech,data_science_b
+nasdaq_JT,Jianpu Technology,Jianpu Technology Inc.,345.0,nasdaq_tech,data_science_b
+nasdaq_SFUN,Fang Holdings Limited,Fang Holdings Limited,346.0,nasdaq_tech,data_science_b
+nasdaq_CTK,CooTek,CooTek (Cayman) Inc.,347.0,nasdaq_tech,data_science_b
+nasdaq_QADA,QAD,QAD Inc.,348.0,nasdaq_tech,data_science_b
+nasdaq_BAND,Bandwidth,Bandwidth Inc.,349.0,nasdaq_tech,data_science_b
+nasdaq_HSTM,HealthStream,"HealthStream, Inc.",350.0,nasdaq_tech,data_science_b
+nasdaq_PRFT,Perficient,"Perficient, Inc.",351.0,nasdaq_tech,data_science_b
+nasdaq_SPWR,SunPower Corporation,SunPower Corporation,352.0,nasdaq_tech,data_science_b
+nasdaq_EXTR,Extreme Networks,"Extreme Networks, Inc.",353.0,nasdaq_tech,data_science_b
+nasdaq_SOHU,Sohu.com Limited,Sohu.com Limited ,354.0,nasdaq_tech,data_science_b
+nasdaq_EXTN,Exterran Corporation,Exterran Corporation,355.0,nasdaq_tech,data_science_b
+nasdaq_PLAB,Photronics,"Photronics, Inc.",356.0,nasdaq_tech,data_science_b
+nasdaq_TGH,Textainer Group Holdings Limited,Textainer Group Holdings Limited,357.0,nasdaq_tech,data_science_b
+nasdaq_TCX,Tucows,Tucows Inc.,358.0,nasdaq_tech,data_science_b
+nasdaq_TYPE,Monotype Imaging Holdings,Monotype Imaging Holdings Inc.,359.0,nasdaq_tech,data_science_b
+nasdaq_UIS,Unisys Corporation,Unisys Corporation,360.0,nasdaq_tech,data_science_b
+nasdaq_LASR,nLIGHT,"nLIGHT, Inc.",361.0,nasdaq_tech,data_science_b
+nasdaq_HSII,Heidrick & Struggles International,"Heidrick & Struggles International, Inc.",362.0,nasdaq_tech,data_science_b
+nasdaq_UPLD,Upland Software,"Upland Software, Inc.",363.0,nasdaq_tech,data_science_b
+nasdaq_HMI,Huami Corporation,Huami Corporation,364.0,nasdaq_tech,data_science_b
+nasdaq_ENPH,Enphase Energy,"Enphase Energy, Inc.",365.0,nasdaq_tech,data_science_b
+nasdaq_SPNS,Sapiens International Corporation N.V.,Sapiens International Corporation N.V.,366.0,nasdaq_tech,data_science_b
+nasdaq_QTNA,Quantenna Communications,"Quantenna Communications, Inc.",367.0,nasdaq_tech,data_science_b
+nasdaq_DOMO,Domo,"Domo, Inc.",368.0,nasdaq_tech,data_science_b
+nasdaq_CMTL,Comtech Telecommunications,Comtech Telecommunications Corp.,369.0,nasdaq_tech,data_science_b
+nasdaq_VNET,21Vianet Group,"21Vianet Group, Inc.",370.0,nasdaq_tech,data_science_b
+nasdaq_ACLS,Axcelis Technologies,"Axcelis Technologies, Inc.",371.0,nasdaq_tech,data_science_b
+nasdaq_SGH,SMART Global Holdings,"SMART Global Holdings, Inc.",372.0,nasdaq_tech,data_science_b
+nasdaq_RBBN,Ribbon Communications,Ribbon Communications Inc. ,373.0,nasdaq_tech,data_science_b
+nasdaq_OSPN,OneSpan,OneSpan Inc.,374.0,nasdaq_tech,data_science_b
+nasdaq_SWIR,Sierra Wireless,"Sierra Wireless, Inc.",375.0,nasdaq_tech,data_science_b
+nasdaq_CEVA,CEVA,"CEVA, Inc.",376.0,nasdaq_tech,data_science_b
+nasdaq_GILT,Gilat Satellite Networks,Gilat Satellite Networks Ltd.,377.0,nasdaq_tech,data_science_b
+nasdaq_ATEN,A10 Networks,"A10 Networks, Inc.",378.0,nasdaq_tech,data_science_b
+nasdaq_CAMP,CalAmp,CalAmp Corp.,379.0,nasdaq_tech,data_science_b
+nasdaq_MOBL,MobileIron,"MobileIron, Inc.",380.0,nasdaq_tech,data_science_b
+nasdaq_JKS,JinkoSolar Holding Company Limited,JinkoSolar Holding Company Limited,381.0,nasdaq_tech,data_science_b
+nasdaq_CAI,CAI International,"CAI International, Inc.",382.0,nasdaq_tech,data_science_b
+nasdaq_PKE,Park Electrochemical Corporation,Park Electrochemical Corporation,383.0,nasdaq_tech,data_science_b
+nasdaq_NVEC,NVE Corporation,NVE Corporation,384.0,nasdaq_tech,data_science_b
+nasdaq_BBSI,Barrett Business Services,"Barrett Business Services, Inc.",385.0,nasdaq_tech,data_science_b
+nasdaq_MODN,Model N,"Model N, Inc.",386.0,nasdaq_tech,data_science_b
+nasdaq_ATTU,Attunity,Attunity Ltd.,387.0,nasdaq_tech,data_science_b
+nasdaq_HIMX,Himax Technologies,"Himax Technologies, Inc.",388.0,nasdaq_tech,data_science_b
+nasdaq_ICHR,Ichor Holdings,Ichor Holdings,389.0,nasdaq_tech,data_science_b
+nasdaq_MITK,Mitek Systems,"Mitek Systems, Inc.",390.0,nasdaq_tech,data_science_b
+nasdaq_KE,Kimball Electronics,"Kimball Electronics, Inc.",391.0,nasdaq_tech,data_science_b
+nasdaq_HLIT,Harmonic,Harmonic Inc.,392.0,nasdaq_tech,data_science_b
+nasdaq_ERII,Energy Recovery,"Energy Recovery, Inc.",393.0,nasdaq_tech,data_science_b
+nasdaq_SSTI,ShotSpotter,"ShotSpotter, Inc.",394.0,nasdaq_tech,data_science_b
+nasdaq_VECO,Veeco Instruments,Veeco Instruments Inc.,395.0,nasdaq_tech,data_science_b
+nasdaq_MGIC,Magic Software Enterprises,Magic Software Enterprises Ltd.,396.0,nasdaq_tech,data_science_b
+nasdaq_CPSI,Computer Programs and Systems,"Computer Programs and Systems, Inc.",397.0,nasdaq_tech,data_science_b
+nasdaq_RST,Rosetta Stone,Rosetta Stone,398.0,nasdaq_tech,data_science_b
+nasdaq_UCTT,Ultra Clean Holdings,"Ultra Clean Holdings, Inc.",399.0,nasdaq_tech,data_science_b
+nasdaq_PHUN,Phunware,"Phunware, Inc.",400.0,nasdaq_tech,data_science_b
+nasdaq_GTYH,GTY Technology Holdings,"GTY Technology Holdings, Inc.",401.0,nasdaq_tech,data_science_b
+nasdaq_CYOU,Changyou.com Limited,Changyou.com Limited,402.0,nasdaq_tech,data_science_b
+nasdaq_CSLT,"Castlight Health, inc.","Castlight Health, inc.",403.0,nasdaq_tech,data_science_b
+nasdaq_SLP,Simulations Plus,"Simulations Plus, Inc.",404.0,nasdaq_tech,data_science_b
+nasdaq_MIXT,MiX Telematics Limited,MiX Telematics Limited,405.0,nasdaq_tech,data_science_b
+nasdaq_MAXR,Maxar Technologies,Maxar Technologies Inc.,406.0,nasdaq_tech,data_science_b
+nasdaq_KEYW,The KEYW Holding Corporation,The KEYW Holding Corporation,407.0,nasdaq_tech,data_science_b
+nasdaq_DQ,DAQO New Energy,DAQO New Energy Corp.,408.0,nasdaq_tech,data_science_b
+nasdaq_GFN,General Finance Corporation,General Finance Corporation,409.0,nasdaq_tech,data_science_b
+nasdaq_AGYS,Agilysys,"Agilysys, Inc.",410.0,nasdaq_tech,data_science_b
+nasdaq_ZIXI,Zix Corporation,Zix Corporation,411.0,nasdaq_tech,data_science_b
+nasdaq_NPTN,NeoPhotonics Corporation,NeoPhotonics Corporation,412.0,nasdaq_tech,data_science_b
+nasdaq_MTLS,Materialise NV,Materialise NV,413.0,nasdaq_tech,data_science_b
+nasdaq_AAOI,Applied Optoelectronics,"Applied Optoelectronics, Inc.",414.0,nasdaq_tech,data_science_b
+nasdaq_AMSWA,American Software,"American Software, Inc.",415.0,nasdaq_tech,data_science_b
+nasdaq_DGII,Digi International,Digi International Inc.,416.0,nasdaq_tech,data_science_b
+nasdaq_CCRN,Cross Country Healthcare,"Cross Country Healthcare, Inc.",417.0,nasdaq_tech,data_science_b
+nasdaq_ECOM ,ChannelAdvisor Corporation,ChannelAdvisor Corporation,418.0,nasdaq_tech,data_science_b
+nasdaq_AQ,Aquantia,Aquantia Corp.,419.0,nasdaq_tech,data_science_b
+nasdaq_CRNT,Ceragon Networks,Ceragon Networks Ltd.,420.0,nasdaq_tech,data_science_b
+nasdaq_PDFS,PDF Solutions,"PDF Solutions, Inc.",421.0,nasdaq_tech,data_science_b
+nasdaq_OOMA,Ooma,"Ooma, Inc.",422.0,nasdaq_tech,data_science_b
+nasdaq_IMMR,Immersion Corporation,Immersion Corporation,423.0,nasdaq_tech,data_science_b
+nasdaq_SNCR,Synchronoss Technologies,"Synchronoss Technologies, Inc.",424.0,nasdaq_tech,data_science_b
+nasdaq_CDLX,Cardlytics,"Cardlytics, Inc.",425.0,nasdaq_tech,data_science_b
+nasdaq_SRT,StarTek,"StarTek, Inc.",426.0,nasdaq_tech,data_science_b
+nasdaq_DSPG,DSP Group,"DSP Group, Inc.",427.0,nasdaq_tech,data_science_b
+nasdaq_MJCO,Majesco,Majesco,428.0,nasdaq_tech,data_science_b
+nasdaq_BCOV,Brightcove,Brightcove Inc.,429.0,nasdaq_tech,data_science_b
+nasdaq_AOSL,Alpha and Omega Semiconductor Limited,Alpha and Omega Semiconductor Limited,430.0,nasdaq_tech,data_science_b
+nasdaq_SILC,Silicom,Silicom Ltd,431.0,nasdaq_tech,data_science_b
+nasdaq_GRNQ,Greenpro Capital,Greenpro Capital Corp.,432.0,nasdaq_tech,data_science_b
+nasdaq_AMBR,Amber Road,"Amber Road, Inc.",433.0,nasdaq_tech,data_science_b
+nasdaq_GHM,Graham Corporation,Graham Corporation,434.0,nasdaq_tech,data_science_b
+nasdaq_TWIN,"Twin Disc, Incorporated","Twin Disc, Incorporated",435.0,nasdaq_tech,data_science_b
+nasdaq_BGSF,BG Staffing Inc,BG Staffing Inc,436.0,nasdaq_tech,data_science_b
+nasdaq_MX,MagnaChip Semiconductor Corporation,MagnaChip Semiconductor Corporation,437.0,nasdaq_tech,data_science_b
+nasdaq_DMRC,Digimarc Corporation,Digimarc Corporation,438.0,nasdaq_tech,data_science_b
+nasdaq_TEUM,Pareteum Corporation,Pareteum Corporation,439.0,nasdaq_tech,data_science_b
+nasdaq_ALLT,Allot,Allot Ltd.,440.0,nasdaq_tech,data_science_b
+nasdaq_RUBI,The Rubicon Project,"The Rubicon Project, Inc.",441.0,nasdaq_tech,data_science_b
+nasdaq_WATT,Energous Corporation,Energous Corporation,442.0,nasdaq_tech,data_science_b
+nasdaq_LEAF,Leaf Group,Leaf Group Ltd.,443.0,nasdaq_tech,data_science_b
+nasdaq_AVID,Avid Technology,"Avid Technology, Inc.",444.0,nasdaq_tech,data_science_b
+nasdaq_KVHI,KVH Industries,"KVH Industries, Inc.",445.0,nasdaq_tech,data_science_b
+nasdaq_TRVG,trivago N.V.,trivago N.V.,446.0,nasdaq_tech,data_science_b
+nasdaq_HIVE,Aerohive Networks,"Aerohive Networks, Inc.",447.0,nasdaq_tech,data_science_b
+nasdaq_EGAN,eGain Corporation,eGain Corporation,448.0,nasdaq_tech,data_science_b
+nasdaq_SPA,Sparton Corporation,Sparton Corporation,449.0,nasdaq_tech,data_science_b
+nasdaq_AXTI,AXT Inc,AXT Inc,450.0,nasdaq_tech,data_science_b
+nasdaq_MTC,MMTec,"MMTec, Inc.",451.0,nasdaq_tech,data_science_b
+nasdaq_ACMR,ACM Research,"ACM Research, Inc.",452.0,nasdaq_tech,data_science_b
+nasdaq_INS,Intelligent Systems Corporation,Intelligent Systems Corporation,453.0,nasdaq_tech,data_science_b
+nasdaq_FSNN,Fusion Connect,"Fusion Connect, Inc.",454.0,nasdaq_tech,data_science_b
+nasdaq_IOTS,Adesto Technologies Corporation,Adesto Technologies Corporation,455.0,nasdaq_tech,data_science_b
+nasdaq_PCYG,Park City Group,"Park City Group, Inc.",456.0,nasdaq_tech,data_science_b
+nasdaq_GSIT,GSI Technology,"GSI Technology, Inc.",457.0,nasdaq_tech,data_science_b
+nasdaq_BRQS,Borqs Technologies,"Borqs Technologies, Inc. ",458.0,nasdaq_tech,data_science_b
+nasdaq_CYRN,CYREN,CYREN Ltd.,459.0,nasdaq_tech,data_science_b
+nasdaq_ALYA,Alithya Group inc.,Alithya Group inc.,460.0,nasdaq_tech,data_science_b
+nasdaq_MDCA,MDC Partners,MDC Partners Inc.,461.0,nasdaq_tech,data_science_b
+nasdaq_VUZI,Vuzix Corporation,Vuzix Corporation,462.0,nasdaq_tech,data_science_b
+nasdaq_EVER,EverQuote,"EverQuote, Inc.",463.0,nasdaq_tech,data_science_b
+nasdaq_TLRA,Telaria,"Telaria, Inc.",464.0,nasdaq_tech,data_science_b
+nasdaq_ALOT,AstroNova,"AstroNova, Inc.",465.0,nasdaq_tech,data_science_b
+nasdaq_MNTX,Manitex International,"Manitex International, Inc.",466.0,nasdaq_tech,data_science_b
+nasdaq_XNET,Xunlei Limited,Xunlei Limited,467.0,nasdaq_tech,data_science_b
+nasdaq_INAP,Internap Corporation,Internap Corporation,468.0,nasdaq_tech,data_science_b
+nasdaq_TZOO,Travelzoo,Travelzoo,469.0,nasdaq_tech,data_science_b
+nasdaq_EMKR,EMCORE Corporation,EMCORE Corporation,470.0,nasdaq_tech,data_science_b
+nasdaq_LIQT,LiqTech International,"LiqTech International, Inc.",471.0,nasdaq_tech,data_science_b
+nasdaq_PXLW,Pixelworks,"Pixelworks, Inc.",472.0,nasdaq_tech,data_science_b
+nasdaq_INSE,Inspired Entertainment,"Inspired Entertainment, Inc.",473.0,nasdaq_tech,data_science_b
+nasdaq_IVAC,Intevac,"Intevac, Inc.",474.0,nasdaq_tech,data_science_b
+nasdaq_SHSP,SharpSpring,"SharpSpring, Inc.",475.0,nasdaq_tech,data_science_b
+nasdaq_SMTX,SMTC Corporation,SMTC Corporation,476.0,nasdaq_tech,data_science_b
+nasdaq_RDCM,Radcom,Radcom Ltd.,477.0,nasdaq_tech,data_science_b
+nasdaq_PNTR,Pointer Telocation,Pointer Telocation Ltd.,478.0,nasdaq_tech,data_science_b
+nasdaq_RENN,Renren,Renren Inc.,479.0,nasdaq_tech,data_science_b
+nasdaq_RMBL,RumbleOn,"RumbleOn, Inc.",480.0,nasdaq_tech,data_science_b
+nasdaq_AIRG,Airgain,"Airgain, Inc.",481.0,nasdaq_tech,data_science_b
+nasdaq_RNWK,RealNetworks,"RealNetworks, Inc.",482.0,nasdaq_tech,data_science_b
+nasdaq_MRAM,Everspin Technologies,"Everspin Technologies, Inc.",483.0,nasdaq_tech,data_science_b
+nasdaq_KOPN,Kopin Corporation,Kopin Corporation,484.0,nasdaq_tech,data_science_b
+nasdaq_MAMS,MAM Software Group,"MAM Software Group, Inc.",485.0,nasdaq_tech,data_science_b
+nasdaq_VERI,Veritone,"Veritone, Inc.",486.0,nasdaq_tech,data_science_b
+nasdaq_SQNS,Sequans Communications S.A.,Sequans Communications S.A.,487.0,nasdaq_tech,data_science_b
+nasdaq_GEC,Great Elm Capital Group,"Great Elm Capital Group, Inc. ",488.0,nasdaq_tech,data_science_b
+nasdaq_ASUR,Asure Software Inc,Asure Software Inc,489.0,nasdaq_tech,data_science_b
+nasdaq_IMOS,ChipMOS TECHNOLOGIES INC.,ChipMOS TECHNOLOGIES INC.,490.0,nasdaq_tech,data_science_b
+nasdaq_QUIK,QuickLogic Corporation,QuickLogic Corporation,491.0,nasdaq_tech,data_science_b
+nasdaq_NTWK,NetSol Technologies,NetSol Technologies Inc.,492.0,nasdaq_tech,data_science_b
+nasdaq_PCTI,PC-Tel,"PC-Tel, Inc.",493.0,nasdaq_tech,data_science_b
+nasdaq_GSB,GlobalSCAPE,"GlobalSCAPE, Inc.",494.0,nasdaq_tech,data_science_b
+nasdaq_SGOC,SGOCO Group,"SGOCO Group, Ltd",495.0,nasdaq_tech,data_science_b
+nasdaq_NH,NantHealth,"NantHealth, Inc.",496.0,nasdaq_tech,data_science_b
+nasdaq_AWRE,Aware,"Aware, Inc.",497.0,nasdaq_tech,data_science_b
+nasdaq_LTRX,Lantronix,"Lantronix, Inc.",498.0,nasdaq_tech,data_science_b
+nasdaq_DTSS,Datasea,Datasea Inc.,499.0,nasdaq_tech,data_science_b
+nasdaq_PERI,Perion Network,Perion Network Ltd,500.0,nasdaq_tech,data_science_b
+nasdaq_RDVT,Red Violet,"Red Violet, Inc.",501.0,nasdaq_tech,data_science_b
+nasdaq_AVNW,Aviat Networks,"Aviat Networks, Inc.",502.0,nasdaq_tech,data_science_b
+nasdaq_JG,Aurora Mobile Limited,Aurora Mobile Limited,503.0,nasdaq_tech,data_science_b
+nasdaq_MTEC,MTech Acquisition,MTech Acquisition Corp.,504.0,nasdaq_tech,data_science_b
+nasdaq_CLPS,CLPS Incorporation,CLPS Incorporation,505.0,nasdaq_tech,data_science_b
+nasdaq_TACT,TransAct Technologies Incorporated,TransAct Technologies Incorporated,506.0,nasdaq_tech,data_science_b
+nasdaq_INVE,Identiv,"Identiv, Inc.",507.0,nasdaq_tech,data_science_b
+nasdaq_ASYS,Amtech Systems,"Amtech Systems, Inc.",508.0,nasdaq_tech,data_science_b
+nasdaq_VISI,Volt Information Sciences,"Volt Information Sciences, Inc.",509.0,nasdaq_tech,data_science_b
+nasdaq_SYNC,Synacor,"Synacor, Inc.",510.0,nasdaq_tech,data_science_b
+nasdaq_IEC,IEC Electronics,IEC Electronics Corp.,511.0,nasdaq_tech,data_science_b
+nasdaq_CTG,"Computer Task Group, Incorporated","Computer Task Group, Incorporated",512.0,nasdaq_tech,data_science_b
+nasdaq_KTCC,Key Tronic Corporation,Key Tronic Corporation,513.0,nasdaq_tech,data_science_b
+nasdaq_DLHC,DLH Holdings,DLH Holdings Corp.,514.0,nasdaq_tech,data_science_b
+nasdaq_AEYE,AudioEye,"AudioEye, Inc.",515.0,nasdaq_tech,data_science_b
+nasdaq_SEAC,SeaChange International,"SeaChange International, Inc.",516.0,nasdaq_tech,data_science_b
+nasdaq_ICLK,iClick Interactive Asia Group Limited,iClick Interactive Asia Group Limited,517.0,nasdaq_tech,data_science_b
+nasdaq_WISA,Summit Wireless Technologies,"Summit Wireless Technologies, Inc.",518.0,nasdaq_tech,data_science_b
+nasdaq_IMI,Intermolecular,"Intermolecular, Inc.",519.0,nasdaq_tech,data_science_b
+nasdaq_BKTI,BK Technologies,"BK Technologies, Inc.",520.0,nasdaq_tech,data_science_b
+nasdaq_QTM,Quantum Corporation,Quantum Corporation,521.0,nasdaq_tech,data_science_b
+nasdaq_SOL,Renesola,Renesola Ltd.,522.0,nasdaq_tech,data_science_b
+nasdaq_HQCL,Hanwha Q CELLS,"Hanwha Q CELLS Co., Ltd. ",523.0,nasdaq_tech,data_science_b
+nasdaq_SMSI,Smith Micro Software,"Smith Micro Software, Inc.",524.0,nasdaq_tech,data_science_b
+nasdaq_MTBC,"Medical Transcription Billing,","Medical Transcription Billing, Corp.",525.0,nasdaq_tech,data_science_b
+nasdaq_OIIM,O2Micro International Limited,O2Micro International Limited,526.0,nasdaq_tech,data_science_b
+nasdaq_GVP,GSE Systems,"GSE Systems, Inc.",527.0,nasdaq_tech,data_science_b
+nasdaq_TAOP,Taoping,Taoping Inc.,528.0,nasdaq_tech,data_science_b
+nasdaq_MNDO,MIND C.T.I.,MIND C.T.I. Ltd.,529.0,nasdaq_tech,data_science_b
+nasdaq_RCMT,RCM Technologies,"RCM Technologies, Inc.",530.0,nasdaq_tech,data_science_b
+nasdaq_ATOM,Atomera Incorporated,Atomera Incorporated,531.0,nasdaq_tech,data_science_b
+nasdaq_PIXY,ShiftPixy,"ShiftPixy, Inc.",532.0,nasdaq_tech,data_science_b
+nasdaq_SPRT,support.com,"support.com, Inc.",533.0,nasdaq_tech,data_science_b
+nasdaq_WSTG,Wayside Technology Group,"Wayside Technology Group, Inc.",534.0,nasdaq_tech,data_science_b
+nasdaq_MIND,Mitcham Industries,"Mitcham Industries, Inc.",535.0,nasdaq_tech,data_science_b
+nasdaq_RESN,Resonant,Resonant Inc.,536.0,nasdaq_tech,data_science_b
+nasdaq_HSON,Hudson Global,"Hudson Global, Inc.",537.0,nasdaq_tech,data_science_b
+nasdaq_AUTO,AutoWeb,"AutoWeb, Inc.",538.0,nasdaq_tech,data_science_b
+nasdaq_LPTH,LightPath Technologies,"LightPath Technologies, Inc.",539.0,nasdaq_tech,data_science_b
+nasdaq_EMAN,eMagin Corporation,eMagin Corporation,540.0,nasdaq_tech,data_science_b
+nasdaq_INOD,Innodata,Innodata Inc.,541.0,nasdaq_tech,data_science_b
+nasdaq_CSPI,CSP,CSP Inc.,542.0,nasdaq_tech,data_science_b
+nasdaq_SIFY,Sify Technologies Limited,Sify Technologies Limited,543.0,nasdaq_tech,data_science_b
+nasdaq_WYY,WidePoint Corporation,WidePoint Corporation,544.0,nasdaq_tech,data_science_b
+nasdaq_ISSC,Innovative Solutions and Support,"Innovative Solutions and Support, Inc.",545.0,nasdaq_tech,data_science_b
+nasdaq_IDN,Intellicheck,"Intellicheck, Inc.",546.0,nasdaq_tech,data_science_b
+nasdaq_OSS,One Stop Systems,"One Stop Systems, Inc.",547.0,nasdaq_tech,data_science_b
+nasdaq_OTIV,On Track Innovations,On Track Innovations Ltd,548.0,nasdaq_tech,data_science_b
+nasdaq_MOXC,Moxian,"Moxian, Inc.",549.0,nasdaq_tech,data_science_b
+nasdaq_GIGM,GigaMedia Limited,GigaMedia Limited,550.0,nasdaq_tech,data_science_b
+nasdaq_MRIN,Marin Software Incorporated,Marin Software Incorporated,551.0,nasdaq_tech,data_science_b
+nasdaq_DGLY,Digital Ally,"Digital Ally, Inc.",552.0,nasdaq_tech,data_science_b
+nasdaq_CVR,Chicago Rivet & Machine,Chicago Rivet & Machine Co.,553.0,nasdaq_tech,data_science_b
+nasdaq_PFIN,P & F Industries,"P & F Industries, Inc.",554.0,nasdaq_tech,data_science_b
+nasdaq_CNET,ChinaNet Online Holdings,"ChinaNet Online Holdings, Inc.",555.0,nasdaq_tech,data_science_b
+nasdaq_CCIH,ChinaCache International Holdings,ChinaCache International Holdings Ltd.,556.0,nasdaq_tech,data_science_b
+nasdaq_MYSZ,My Size,"My Size, Inc.",557.0,nasdaq_tech,data_science_b
+nasdaq_MNGA,MagneGas Applied Technology Solutions,"MagneGas Applied Technology Solutions, Inc.",558.0,nasdaq_tech,data_science_b
+nasdaq_CVV,CVD Equipment Corporation,CVD Equipment Corporation,559.0,nasdaq_tech,data_science_b
+nasdaq_ZDGE,Zedge,"Zedge, Inc.",560.0,nasdaq_tech,data_science_b
+nasdaq_NETE,Net Element,"Net Element, Inc.",561.0,nasdaq_tech,data_science_b
+nasdaq_SRAX,Social Reality,"Social Reality, Inc.",562.0,nasdaq_tech,data_science_b
+nasdaq_GSUM,Gridsum Holding,Gridsum Holding Inc.,563.0,nasdaq_tech,data_science_b
+nasdaq_QRHC,Quest Resource Holding Corporation.,Quest Resource Holding Corporation.,564.0,nasdaq_tech,data_science_b
+nasdaq_SPCB,SuperCom,"SuperCom, Ltd.",565.0,nasdaq_tech,data_science_b
+nasdaq_RBCN,Rubicon Technology,"Rubicon Technology, Inc.",566.0,nasdaq_tech,data_science_b
+nasdaq_STRM,Streamline Health Solutions,"Streamline Health Solutions, Inc.",567.0,nasdaq_tech,data_science_b
+nasdaq_QUMU,Qumu Corporation,Qumu Corporation,568.0,nasdaq_tech,data_science_b
+nasdaq_CCNI,Command Center,"Command Center, Inc.",569.0,nasdaq_tech,data_science_b
+nasdaq_HHS,Harte-Hanks,"Harte-Hanks, Inc.",570.0,nasdaq_tech,data_science_b
+nasdaq_IIJI,Internet Initiative Japan,"Internet Initiative Japan, Inc.",571.0,nasdaq_tech,data_science_b
+nasdaq_IPAS,iPass,iPass Inc.,572.0,nasdaq_tech,data_science_b
+nasdaq_AMCN,AirMedia Group Inc,AirMedia Group Inc,573.0,nasdaq_tech,data_science_b
+nasdaq_EVOL,Evolving Systems,"Evolving Systems, Inc.",574.0,nasdaq_tech,data_science_b
+nasdaq_ACY,AeroCentury,AeroCentury Corp.,575.0,nasdaq_tech,data_science_b
+nasdaq_LINK,Interlink Electronics,"Interlink Electronics, Inc.",576.0,nasdaq_tech,data_science_b
+nasdaq_FPAY,FlexShopper,"FlexShopper, Inc.",577.0,nasdaq_tech,data_science_b
+nasdaq_SCKT,Socket Mobile,"Socket Mobile, Inc.",578.0,nasdaq_tech,data_science_b
+nasdaq_QBAK,Qualstar Corporation,Qualstar Corporation,579.0,nasdaq_tech,data_science_b
+nasdaq_SGMA,SigmaTron International,"SigmaTron International, Inc.",580.0,nasdaq_tech,data_science_b
+nasdaq_BKYI,BIO-key International,"BIO-key International, Inc.",581.0,nasdaq_tech,data_science_b
+nasdaq_JOB,GEE Group,GEE Group Inc.,582.0,nasdaq_tech,data_science_b
+nasdaq_NNDM,Nano Dimension,Nano Dimension Ltd.,583.0,nasdaq_tech,data_science_b
+nasdaq_TRT,Trio-Tech International,Trio-Tech International,584.0,nasdaq_tech,data_science_b
+nasdaq_BDR,Blonder Tongue Laboratories,"Blonder Tongue Laboratories, Inc.",585.0,nasdaq_tech,data_science_b
+nasdaq_LEDS,SemiLEDS Corporation,SemiLEDS Corporation,586.0,nasdaq_tech,data_science_b
+nasdaq_TSRI,TSR,"TSR, Inc.",587.0,nasdaq_tech,data_science_b
+nasdaq_STAF,Staffing 360 Solutions,"Staffing 360 Solutions, Inc.",588.0,nasdaq_tech,data_science_b
+nasdaq_AMRH,Ameri Holdings,"Ameri Holdings, Inc.",589.0,nasdaq_tech,data_science_b
+nasdaq_TISA,Top Image Systems,"Top Image Systems, Ltd.",590.0,nasdaq_tech,data_science_b
+nasdaq_CPAH,CounterPath Corporation,CounterPath Corporation,591.0,nasdaq_tech,data_science_b
+nasdaq_BOSC,B.O.S. Better Online Solutions,B.O.S. Better Online Solutions,592.0,nasdaq_tech,data_science_b
+nasdaq_BVSN,BroadVision,"BroadVision, Inc.",593.0,nasdaq_tech,data_science_b
+nasdaq_MOSY,MoSys,"MoSys, Inc.",594.0,nasdaq_tech,data_science_b
+nasdaq_CREX,Creative Realities,"Creative Realities, Inc.",595.0,nasdaq_tech,data_science_b
+nasdaq_ANY,Sphere 3D,Sphere 3D Corp.,596.0,nasdaq_tech,data_science_b
+nasdaq_IPDN,Professional Diversity Network,"Professional Diversity Network, Inc.",597.0,nasdaq_tech,data_science_b
+nasdaq_SPI,SPI Energy,"SPI Energy Co., Ltd.",598.0,nasdaq_tech,data_science_b
+nasdaq_FORTY,Formula Systems,Formula Systems (1985) Ltd.,599.0,nasdaq_tech,data_science_b
+nasdaq_INPX,Inpixon,Inpixon ,600.0,nasdaq_tech,data_science_b
+nasdaq_ELTK,Eltek,Eltek Ltd.,601.0,nasdaq_tech,data_science_b
+nasdaq_TCCO,Technical Communications Corporation,Technical Communications Corporation,602.0,nasdaq_tech,data_science_b
+nasdaq_SCON,Superconductor Technologies,Superconductor Technologies Inc.,603.0,nasdaq_tech,data_science_b
+nasdaq_BLIN ,Bridgeline Digital,"Bridgeline Digital, Inc.",604.0,nasdaq_tech,data_science_b
+nasdaq_FRSX,Foresight Autonomous Holdings,Foresight Autonomous Holdings Ltd.,605.0,nasdaq_tech,data_science_b
+nasdaq_JMU,JMU Limited,JMU Limited,606.0,nasdaq_tech,data_science_b
+nasdaq_SFET,Safe-T Group,Safe-T Group Ltd.,607.0,nasdaq_tech,data_science_b

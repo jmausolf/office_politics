@@ -1,1001 +1,1001 @@
-list_id,company,rank,source,job_type
-f1000_0,Walmart,1,fortune1000,data_science
-f1000_1,Berkshire Hathaway,2,fortune1000,data_science
-f1000_2,Apple,3,fortune1000,data_science
-f1000_3,Exxon Mobil,4,fortune1000,data_science
-f1000_4,McKesson,5,fortune1000,data_science
-f1000_5,UnitedHealth Group,6,fortune1000,data_science
-f1000_6,CVS Health,7,fortune1000,data_science
-f1000_7,General Motors,8,fortune1000,data_science
-f1000_8,AT&T,9,fortune1000,data_science
-f1000_9,Ford Motor,10,fortune1000,data_science
-f1000_10,AmerisourceBergen,11,fortune1000,data_science
-f1000_11,Amazon.com,12,fortune1000,data_science
-f1000_12,General Electric,13,fortune1000,data_science
-f1000_13,Verizon Communications,14,fortune1000,data_science
-f1000_14,Cardinal Health,15,fortune1000,data_science
-f1000_15,Costco,16,fortune1000,data_science
-f1000_16,Walgreens Boots Alliance,17,fortune1000,data_science
-f1000_17,Kroger,18,fortune1000,data_science
-f1000_18,Chevron,19,fortune1000,data_science
-f1000_19,Fannie Mae,20,fortune1000,data_science
-f1000_20,J.P. Morgan Chase,21,fortune1000,data_science
-f1000_21,Express Scripts Holding,22,fortune1000,data_science
-f1000_22,Home Depot,23,fortune1000,data_science
-f1000_23,Boeing,24,fortune1000,data_science
-f1000_24,Wells Fargo,25,fortune1000,data_science
-f1000_25,Bank of America Corp.,26,fortune1000,data_science
-f1000_26,Alphabet,27,fortune1000,data_science
-f1000_27,Microsoft,28,fortune1000,data_science
-f1000_28,Anthem,29,fortune1000,data_science
-f1000_29,Citigroup,30,fortune1000,data_science
-f1000_30,Comcast,31,fortune1000,data_science
-f1000_31,IBM,32,fortune1000,data_science
-f1000_32,State Farm Insurance Cos.,33,fortune1000,data_science
-f1000_33,Phillips 66,34,fortune1000,data_science
-f1000_34,Johnson & Johnson,35,fortune1000,data_science
-f1000_35,Procter & Gamble,36,fortune1000,data_science
-f1000_36,Valero Energy,37,fortune1000,data_science
-f1000_37,Target,38,fortune1000,data_science
-f1000_38,Freddie Mac,39,fortune1000,data_science
-f1000_39,Lowe's,40,fortune1000,data_science
-f1000_40,Dell Technologies,41,fortune1000,data_science
-f1000_41,MetLife,42,fortune1000,data_science
-f1000_42,Aetna,43,fortune1000,data_science
-f1000_43,PepsiCo,44,fortune1000,data_science
-f1000_44,Archer Daniels Midland,45,fortune1000,data_science
-f1000_45,UPS,46,fortune1000,data_science
-f1000_46,Intel,47,fortune1000,data_science
-f1000_47,Prudential Financial,48,fortune1000,data_science
-f1000_48,Albertsons Cos.,49,fortune1000,data_science
-f1000_49,United Technologies,50,fortune1000,data_science
-f1000_50,Marathon Petroleum,51,fortune1000,data_science
-f1000_51,Disney,52,fortune1000,data_science
-f1000_52,Humana,53,fortune1000,data_science
-f1000_53,Pfizer,54,fortune1000,data_science
-f1000_54,AIG,55,fortune1000,data_science
-f1000_55,Lockheed Martin,56,fortune1000,data_science
-f1000_56,Sysco,57,fortune1000,data_science
-f1000_57,FedEx,58,fortune1000,data_science
-f1000_58,Hewlett Packard Enterprise,59,fortune1000,data_science
-f1000_59,Cisco Systems,60,fortune1000,data_science
-f1000_60,HP,61,fortune1000,data_science
-f1000_61,Dow Chemical,62,fortune1000,data_science
-f1000_62,HCA Holdings,63,fortune1000,data_science
-f1000_63,Coca-Cola,64,fortune1000,data_science
-f1000_64,New York Life Insurance,65,fortune1000,data_science
-f1000_65,Centene,66,fortune1000,data_science
-f1000_66,American Airlines Group,67,fortune1000,data_science
-f1000_67,Nationwide,68,fortune1000,data_science
-f1000_68,Merck,69,fortune1000,data_science
-f1000_69,Cigna,70,fortune1000,data_science
-f1000_70,Delta Air Lines,71,fortune1000,data_science
-f1000_71,Best Buy,72,fortune1000,data_science
-f1000_72,Honeywell International,73,fortune1000,data_science
-f1000_73,Caterpillar,74,fortune1000,data_science
-f1000_74,Liberty Mutual Insurance Group,75,fortune1000,data_science
-f1000_75,Morgan Stanley,76,fortune1000,data_science
-f1000_76,Massachusetts Mutual Life Insurance,77,fortune1000,data_science
-f1000_77,Goldman Sachs Group,78,fortune1000,data_science
-f1000_78,Energy Transfer Equity,79,fortune1000,data_science
-f1000_79,TIAA,80,fortune1000,data_science
-f1000_80,Oracle,81,fortune1000,data_science
-f1000_81,Tyson Foods,82,fortune1000,data_science
-f1000_82,United Continental Holdings,83,fortune1000,data_science
-f1000_83,Allstate,84,fortune1000,data_science
-f1000_84,Publix Super Markets,85,fortune1000,data_science
-f1000_85,American Express,86,fortune1000,data_science
-f1000_86,TJX,87,fortune1000,data_science
-f1000_87,Nike,88,fortune1000,data_science
-f1000_88,Exelon,89,fortune1000,data_science
-f1000_89,General Dynamics,90,fortune1000,data_science
-f1000_90,Rite Aid,91,fortune1000,data_science
-f1000_91,Gilead Sciences,92,fortune1000,data_science
-f1000_92,CHS,93,fortune1000,data_science
-f1000_93,3M,94,fortune1000,data_science
-f1000_94,Time Warner,95,fortune1000,data_science
-f1000_95,Charter Communications,96,fortune1000,data_science
-f1000_96,Northwestern Mutual,97,fortune1000,data_science
-f1000_97,Facebook,98,fortune1000,data_science
-f1000_98,Travelers Cos.,99,fortune1000,data_science
-f1000_99,Capital One Financial,100,fortune1000,data_science
-f1000_100,Twenty-First Century Fox,101,fortune1000,data_science
-f1000_101,USAA,102,fortune1000,data_science
-f1000_102,World Fuel Services,103,fortune1000,data_science
-f1000_103,Philip Morris International,104,fortune1000,data_science
-f1000_104,Deere,105,fortune1000,data_science
-f1000_105,Kraft Heinz,106,fortune1000,data_science
-f1000_106,Tech Data,107,fortune1000,data_science
-f1000_107,Avnet,108,fortune1000,data_science
-f1000_108,Mondelez International,109,fortune1000,data_science
-f1000_109,Macy's,110,fortune1000,data_science
-f1000_110,AbbVie,111,fortune1000,data_science
-f1000_111,McDonald's,112,fortune1000,data_science
-f1000_112,DuPont,113,fortune1000,data_science
-f1000_113,Northrop Grumman,114,fortune1000,data_science
-f1000_114,ConocoPhillips,115,fortune1000,data_science
-f1000_115,Raytheon,116,fortune1000,data_science
-f1000_116,Andeavor,117,fortune1000,data_science
-f1000_117,Arrow Electronics,118,fortune1000,data_science
-f1000_118,Qualcomm,119,fortune1000,data_science
-f1000_119,Progressive,120,fortune1000,data_science
-f1000_120,Duke Energy,121,fortune1000,data_science
-f1000_121,Enterprise Products Partners,122,fortune1000,data_science
-f1000_122,Amgen,123,fortune1000,data_science
-f1000_123,US Foods Holding,124,fortune1000,data_science
-f1000_124,U.S. Bancorp,125,fortune1000,data_science
-f1000_125,Aflac,126,fortune1000,data_science
-f1000_126,Sears Holdings,127,fortune1000,data_science
-f1000_127,Dollar General,128,fortune1000,data_science
-f1000_128,AutoNation,129,fortune1000,data_science
-f1000_129,Community Health Systems,130,fortune1000,data_science
-f1000_130,Starbucks,131,fortune1000,data_science
-f1000_131,Eli Lilly,132,fortune1000,data_science
-f1000_132,International Paper,133,fortune1000,data_science
-f1000_133,Tenet Healthcare,134,fortune1000,data_science
-f1000_134,Abbott Laboratories,135,fortune1000,data_science
-f1000_135,Dollar Tree,136,fortune1000,data_science
-f1000_136,Whirlpool,137,fortune1000,data_science
-f1000_137,Southwest Airlines,138,fortune1000,data_science
-f1000_138,Emerson Electric,139,fortune1000,data_science
-f1000_139,Staples,140,fortune1000,data_science
-f1000_140,Plains GP Holdings,141,fortune1000,data_science
-f1000_141,Penske Automotive Group,142,fortune1000,data_science
-f1000_142,Union Pacific,143,fortune1000,data_science
-f1000_143,Danaher,144,fortune1000,data_science
-f1000_144,Southern,145,fortune1000,data_science
-f1000_145,ManpowerGroup,146,fortune1000,data_science
-f1000_146,Bristol-Myers Squibb,147,fortune1000,data_science
-f1000_147,Altria Group,148,fortune1000,data_science
-f1000_148,Fluor,149,fortune1000,data_science
-f1000_149,Kohl's,150,fortune1000,data_science
-f1000_150,Lear,151,fortune1000,data_science
-f1000_151,Jabil,152,fortune1000,data_science
-f1000_152,Hartford Financial Services Group,153,fortune1000,data_science
-f1000_153,Thermo Fisher Scientific,154,fortune1000,data_science
-f1000_154,Kimberly-Clark,155,fortune1000,data_science
-f1000_155,Molina Healthcare,156,fortune1000,data_science
-f1000_156,PG&E Corp.,157,fortune1000,data_science
-f1000_157,Supervalu,158,fortune1000,data_science
-f1000_158,Cummins,159,fortune1000,data_science
-f1000_159,CenturyLink,160,fortune1000,data_science
-f1000_160,AECOM,161,fortune1000,data_science
-f1000_161,Xerox,162,fortune1000,data_science
-f1000_162,Marriott International,163,fortune1000,data_science
-f1000_163,Paccar,164,fortune1000,data_science
-f1000_164,General Mills,165,fortune1000,data_science
-f1000_165,PNC Financial Services Group,166,fortune1000,data_science
-f1000_166,American Electric Power,167,fortune1000,data_science
-f1000_167,Icahn Enterprises,168,fortune1000,data_science
-f1000_168,Nucor,169,fortune1000,data_science
-f1000_169,NextEra Energy,170,fortune1000,data_science
-f1000_170,Performance Food Group,171,fortune1000,data_science
-f1000_171,PBF Energy,172,fortune1000,data_science
-f1000_172,Halliburton,173,fortune1000,data_science
-f1000_173,CarMax,174,fortune1000,data_science
-f1000_174,Freeport-McMoRan,175,fortune1000,data_science
-f1000_175,Whole Foods Market,176,fortune1000,data_science
-f1000_176,Bank of New York Mellon,177,fortune1000,data_science
-f1000_177,Gap,178,fortune1000,data_science
-f1000_178,Omnicom Group,179,fortune1000,data_science
-f1000_179,Genuine Parts,180,fortune1000,data_science
-f1000_180,DaVita,181,fortune1000,data_science
-f1000_181,Colgate-Palmolive,182,fortune1000,data_science
-f1000_182,PPG Industries,183,fortune1000,data_science
-f1000_183,Goodyear Tire & Rubber,184,fortune1000,data_science
-f1000_184,Synchrony Financial,185,fortune1000,data_science
-f1000_185,DISH Network,186,fortune1000,data_science
-f1000_186,Visa,187,fortune1000,data_science
-f1000_187,Nordstrom,188,fortune1000,data_science
-f1000_188,INTL FCStone,189,fortune1000,data_science
-f1000_189,WestRock,190,fortune1000,data_science
-f1000_190,XPO Logistics,191,fortune1000,data_science
-f1000_191,Aramark,192,fortune1000,data_science
-f1000_192,CBS,193,fortune1000,data_science
-f1000_193,AES,194,fortune1000,data_science
-f1000_194,WellCare Health Plans,195,fortune1000,data_science
-f1000_195,FirstEnergy,196,fortune1000,data_science
-f1000_196,Conagra Brands,197,fortune1000,data_science
-f1000_197,Synnex,198,fortune1000,data_science
-f1000_198,CDW,199,fortune1000,data_science
-f1000_199,Textron,200,fortune1000,data_science
-f1000_200,Waste Management,201,fortune1000,data_science
-f1000_201,Illinois Tool Works,202,fortune1000,data_science
-f1000_202,Office Depot,203,fortune1000,data_science
-f1000_203,Monsanto,204,fortune1000,data_science
-f1000_204,Cognizant Technology Solutions,205,fortune1000,data_science
-f1000_205,Texas Instruments,206,fortune1000,data_science
-f1000_206,Lincoln National,207,fortune1000,data_science
-f1000_207,Newell Brands,208,fortune1000,data_science
-f1000_208,Land O'Lakes,209,fortune1000,data_science
-f1000_209,Marsh & McLennan,210,fortune1000,data_science
-f1000_210,Ecolab,211,fortune1000,data_science
-f1000_211,C.H. Robinson Worldwide,212,fortune1000,data_science
-f1000_212,Loews,213,fortune1000,data_science
-f1000_213,CBRE Group,214,fortune1000,data_science
-f1000_214,Kinder Morgan,215,fortune1000,data_science
-f1000_215,Kellogg,216,fortune1000,data_science
-f1000_216,Western Digital,217,fortune1000,data_science
-f1000_217,Guardian Life Ins. Co. of America,218,fortune1000,data_science
-f1000_218,Ross Stores,219,fortune1000,data_science
-f1000_219,L Brands,220,fortune1000,data_science
-f1000_220,J.C. Penney,221,fortune1000,data_science
-f1000_221,Farmers Insurance Exchange,222,fortune1000,data_science
-f1000_222,Reynolds American,223,fortune1000,data_science
-f1000_223,Viacom,224,fortune1000,data_science
-f1000_224,Becton Dickinson,225,fortune1000,data_science
-f1000_225,Micron Technology,226,fortune1000,data_science
-f1000_226,Principal Financial,227,fortune1000,data_science
-f1000_227,Arconic,228,fortune1000,data_science
-f1000_228,NRG Energy,229,fortune1000,data_science
-f1000_229,VF,230,fortune1000,data_science
-f1000_230,Devon Energy,231,fortune1000,data_science
-f1000_231,D.R. Horton,232,fortune1000,data_science
-f1000_232,Bed Bath & Beyond,233,fortune1000,data_science
-f1000_233,Consolidated Edison,234,fortune1000,data_science
-f1000_234,Edison International,235,fortune1000,data_science
-f1000_235,Sherwin-Williams,236,fortune1000,data_science
-f1000_236,NGL Energy Partners,237,fortune1000,data_science
-f1000_237,Dominion Energy,238,fortune1000,data_science
-f1000_238,Ameriprise Financial,239,fortune1000,data_science
-f1000_239,ADP,240,fortune1000,data_science
-f1000_240,Hilton Worldwide Holdings,241,fortune1000,data_science
-f1000_241,First Data,242,fortune1000,data_science
-f1000_242,Henry Schein,243,fortune1000,data_science
-f1000_243,Toys 'R' Us,244,fortune1000,data_science
-f1000_244,BB&T Corp.,245,fortune1000,data_science
-f1000_245,Reinsurance Group of America,246,fortune1000,data_science
-f1000_246,Core-Mark Holding,247,fortune1000,data_science
-f1000_247,Biogen,248,fortune1000,data_science
-f1000_248,Las Vegas Sands,249,fortune1000,data_science
-f1000_249,Stanley Black & Decker,250,fortune1000,data_science
-f1000_250,Parker-Hannifin,251,fortune1000,data_science
-f1000_251,Stryker,252,fortune1000,data_science
-f1000_252,Estee Lauder,253,fortune1000,data_science
-f1000_253,Celgene,254,fortune1000,data_science
-f1000_254,BlackRock,255,fortune1000,data_science
-f1000_255,Xcel Energy,256,fortune1000,data_science
-f1000_256,CSX,257,fortune1000,data_science
-f1000_257,Unum Group,258,fortune1000,data_science
-f1000_258,Jacobs Engineering Group,259,fortune1000,data_science
-f1000_259,Lennar,260,fortune1000,data_science
-f1000_260,Group 1 Automotive,261,fortune1000,data_science
-f1000_261,Leucadia National,262,fortune1000,data_science
-f1000_262,Entergy,263,fortune1000,data_science
-f1000_263,PayPal Holdings,264,fortune1000,data_science
-f1000_264,Applied Materials,265,fortune1000,data_science
-f1000_265,Voya Financial,266,fortune1000,data_science
-f1000_266,Mastercard,267,fortune1000,data_science
-f1000_267,Priceline Group,268,fortune1000,data_science
-f1000_268,Liberty Interactive,269,fortune1000,data_science
-f1000_269,AutoZone,270,fortune1000,data_science
-f1000_270,State Street Corp.,271,fortune1000,data_science
-f1000_271,DTE Energy,272,fortune1000,data_science
-f1000_272,L3 Technologies,273,fortune1000,data_science
-f1000_273,HollyFrontier,274,fortune1000,data_science
-f1000_274,Praxair,275,fortune1000,data_science
-f1000_275,Universal Health Services,276,fortune1000,data_science
-f1000_276,Discover Financial Services,277,fortune1000,data_science
-f1000_277,Occidental Petroleum,278,fortune1000,data_science
-f1000_278,United States Steel,279,fortune1000,data_science
-f1000_279,Sempra Energy,280,fortune1000,data_science
-f1000_280,Baxter International,281,fortune1000,data_science
-f1000_281,W.W. Grainger,282,fortune1000,data_science
-f1000_282,Autoliv,283,fortune1000,data_science
-f1000_283,Norfolk Southern,284,fortune1000,data_science
-f1000_284,Baker Hughes,285,fortune1000,data_science
-f1000_285,Ally Financial,286,fortune1000,data_science
-f1000_286,Sonic Automotive,287,fortune1000,data_science
-f1000_287,Owens & Minor,288,fortune1000,data_science
-f1000_288,Huntsman,289,fortune1000,data_science
-f1000_289,Laboratory Corp. of America,290,fortune1000,data_science
-f1000_290,Murphy USA,291,fortune1000,data_science
-f1000_291,Advance Auto Parts,292,fortune1000,data_science
-f1000_292,Fidelity National Financial,293,fortune1000,data_science
-f1000_293,Air Products & Chemicals,294,fortune1000,data_science
-f1000_294,Hormel Foods,295,fortune1000,data_science
-f1000_295,Hertz Global Holdings,296,fortune1000,data_science
-f1000_296,MGM Resorts International,297,fortune1000,data_science
-f1000_297,Corning,298,fortune1000,data_science
-f1000_298,Republic Services,299,fortune1000,data_science
-f1000_299,Alcoa,300,fortune1000,data_science
-f1000_300,Fidelity National Information Services,301,fortune1000,data_science
-f1000_301,Pacific Life,302,fortune1000,data_science
-f1000_302,SunTrust Banks,303,fortune1000,data_science
-f1000_303,LKQ,304,fortune1000,data_science
-f1000_304,BorgWarner,305,fortune1000,data_science
-f1000_305,Ball,306,fortune1000,data_science
-f1000_306,CST Brands,307,fortune1000,data_science
-f1000_307,Public Service Enterprise Group,308,fortune1000,data_science
-f1000_308,Eastman Chemical,309,fortune1000,data_science
-f1000_309,eBay,310,fortune1000,data_science
-f1000_310,Mohawk Industries,311,fortune1000,data_science
-f1000_311,Oneok,312,fortune1000,data_science
-f1000_312,Frontier Communications,313,fortune1000,data_science
-f1000_313,Netflix,314,fortune1000,data_science
-f1000_314,American Family Insurance Group,315,fortune1000,data_science
-f1000_315,Thrivent Financial for Lutherans,316,fortune1000,data_science
-f1000_316,Expedia,317,fortune1000,data_science
-f1000_317,Lithia Motors,318,fortune1000,data_science
-f1000_318,Avis Budget Group,319,fortune1000,data_science
-f1000_319,Reliance Steel & Aluminum,320,fortune1000,data_science
-f1000_320,GameStop,321,fortune1000,data_science
-f1000_321,Tenneco,322,fortune1000,data_science
-f1000_322,O'Reilly Automotive,323,fortune1000,data_science
-f1000_323,Peter Kiewit Sons',324,fortune1000,data_science
-f1000_324,United Natural Foods,325,fortune1000,data_science
-f1000_325,salesforce.com,326,fortune1000,data_science
-f1000_326,Boston Scientific,327,fortune1000,data_science
-f1000_327,Newmont Mining,328,fortune1000,data_science
-f1000_328,Genworth Financial,329,fortune1000,data_science
-f1000_329,Live Nation Entertainment,330,fortune1000,data_science
-f1000_330,Veritiv,331,fortune1000,data_science
-f1000_331,News Corp.,332,fortune1000,data_science
-f1000_332,Crown Holdings,333,fortune1000,data_science
-f1000_333,Global Partners,334,fortune1000,data_science
-f1000_334,PVH,335,fortune1000,data_science
-f1000_335,Level 3 Communications,336,fortune1000,data_science
-f1000_336,Navistar International,337,fortune1000,data_science
-f1000_337,Univar,338,fortune1000,data_science
-f1000_338,Campbell Soup,339,fortune1000,data_science
-f1000_339,Dick's Sporting Goods,340,fortune1000,data_science
-f1000_340,Weyerhaeuser,341,fortune1000,data_science
-f1000_341,Mutual of Omaha Insurance,342,fortune1000,data_science
-f1000_342,Chesapeake Energy,343,fortune1000,data_science
-f1000_343,Anadarko Petroleum,344,fortune1000,data_science
-f1000_344,Interpublic Group,345,fortune1000,data_science
-f1000_345,J.M. Smucker,346,fortune1000,data_science
-f1000_346,Steel Dynamics,347,fortune1000,data_science
-f1000_347,Foot Locker,348,fortune1000,data_science
-f1000_348,Western Refining,349,fortune1000,data_science
-f1000_349,SpartanNash,350,fortune1000,data_science
-f1000_350,Dean Foods,351,fortune1000,data_science
-f1000_351,Zimmer Biomet Holdings,352,fortune1000,data_science
-f1000_352,PulteGroup,353,fortune1000,data_science
-f1000_353,W.R. Berkley,354,fortune1000,data_science
-f1000_354,Quanta Services,355,fortune1000,data_science
-f1000_355,EOG Resources,356,fortune1000,data_science
-f1000_356,Charles Schwab,357,fortune1000,data_science
-f1000_357,Eversource Energy,358,fortune1000,data_science
-f1000_358,Anixter International,359,fortune1000,data_science
-f1000_359,EMCOR Group,360,fortune1000,data_science
-f1000_360,Assurant,361,fortune1000,data_science
-f1000_361,CenterPoint Energy,362,fortune1000,data_science
-f1000_362,Harris,363,fortune1000,data_science
-f1000_363,HD Supply Holdings,364,fortune1000,data_science
-f1000_364,PPL,365,fortune1000,data_science
-f1000_365,Quest Diagnostics,366,fortune1000,data_science
-f1000_366,Williams,367,fortune1000,data_science
-f1000_367,WEC Energy Group,368,fortune1000,data_science
-f1000_368,Hershey,369,fortune1000,data_science
-f1000_369,AGCO,370,fortune1000,data_science
-f1000_370,Ralph Lauren,371,fortune1000,data_science
-f1000_371,Masco,372,fortune1000,data_science
-f1000_372,WESCO International,373,fortune1000,data_science
-f1000_373,LifePoint Health,374,fortune1000,data_science
-f1000_374,National Oilwell Varco,375,fortune1000,data_science
-f1000_375,Kindred Healthcare,376,fortune1000,data_science
-f1000_376,Mosaic,377,fortune1000,data_science
-f1000_377,Alliance Data Systems,378,fortune1000,data_science
-f1000_378,Computer Sciences,379,fortune1000,data_science
-f1000_379,Huntington Ingalls Industries,380,fortune1000,data_science
-f1000_380,Leidos Holdings,381,fortune1000,data_science
-f1000_381,Erie Insurance Group,382,fortune1000,data_science
-f1000_382,Tesla,383,fortune1000,data_science
-f1000_383,Ascena Retail Group,384,fortune1000,data_science
-f1000_384,Darden Restaurants,385,fortune1000,data_science
-f1000_385,Harman International Industries,386,fortune1000,data_science
-f1000_386,Nvidia,387,fortune1000,data_science
-f1000_387,R.R. Donnelley & Sons,388,fortune1000,data_science
-f1000_388,Fifth Third Bancorp,389,fortune1000,data_science
-f1000_389,Quintiles IMS Holdings,390,fortune1000,data_science
-f1000_390,Jones Lang LaSalle,391,fortune1000,data_science
-f1000_391,Dover,392,fortune1000,data_science
-f1000_392,Spirit AeroSystems Holdings,393,fortune1000,data_science
-f1000_393,Ryder System,394,fortune1000,data_science
-f1000_394,A-Mark Precious Metals,395,fortune1000,data_science
-f1000_395,Tractor Supply,396,fortune1000,data_science
-f1000_396,Sealed Air,397,fortune1000,data_science
-f1000_397,Auto-Owners Insurance,398,fortune1000,data_science
-f1000_398,Yum China Holdings,399,fortune1000,data_science
-f1000_399,Calpine,400,fortune1000,data_science
-f1000_400,Owens-Illinois,401,fortune1000,data_science
-f1000_401,Targa Resources,402,fortune1000,data_science
-f1000_402,JetBlue Airways,403,fortune1000,data_science
-f1000_403,Jones Financial (Edward Jones),404,fortune1000,data_science
-f1000_404,Franklin Resources,405,fortune1000,data_science
-f1000_405,Activision Blizzard,406,fortune1000,data_science
-f1000_406,J.B. Hunt Transport Services,407,fortune1000,data_science
-f1000_407,Constellation Brands,408,fortune1000,data_science
-f1000_408,NCR,409,fortune1000,data_science
-f1000_409,Asbury Automotive Group,410,fortune1000,data_science
-f1000_410,American Financial Group,411,fortune1000,data_science
-f1000_411,Discovery Communications,412,fortune1000,data_science
-f1000_412,Berry Global Group,413,fortune1000,data_science
-f1000_413,Sanmina,414,fortune1000,data_science
-f1000_414,CalAtlantic Group,415,fortune1000,data_science
-f1000_415,Dr Pepper Snapple Group,416,fortune1000,data_science
-f1000_416,Dillard's,417,fortune1000,data_science
-f1000_417,HRG Group,418,fortune1000,data_science
-f1000_418,CMS Energy,419,fortune1000,data_science
-f1000_419,Graybar Electric,420,fortune1000,data_science
-f1000_420,Builders FirstSource,421,fortune1000,data_science
-f1000_421,Yum Brands,422,fortune1000,data_science
-f1000_422,Casey's General Stores,423,fortune1000,data_science
-f1000_423,Amphenol,424,fortune1000,data_science
-f1000_424,Oshkosh,425,fortune1000,data_science
-f1000_425,iHeartMedia,426,fortune1000,data_science
-f1000_426,TreeHouse Foods,427,fortune1000,data_science
-f1000_427,Alleghany,428,fortune1000,data_science
-f1000_428,Expeditors International of Washington,429,fortune1000,data_science
-f1000_429,Avery Dennison,430,fortune1000,data_science
-f1000_430,Ameren,431,fortune1000,data_science
-f1000_431,Hanesbrands,432,fortune1000,data_science
-f1000_432,Motorola Solutions,433,fortune1000,data_science
-f1000_433,St. Jude Medical,434,fortune1000,data_science
-f1000_434,Harley-Davidson,435,fortune1000,data_science
-f1000_435,Regions Financial,436,fortune1000,data_science
-f1000_436,Intercontinental Exchange,437,fortune1000,data_science
-f1000_437,Alaska Air Group,438,fortune1000,data_science
-f1000_438,Old Republic International,439,fortune1000,data_science
-f1000_439,Lam Research,440,fortune1000,data_science
-f1000_440,AK Steel Holding,441,fortune1000,data_science
-f1000_441,Rockwell Automation,442,fortune1000,data_science
-f1000_442,Adobe Systems,443,fortune1000,data_science
-f1000_443,Avon Products,444,fortune1000,data_science
-f1000_444,Terex,445,fortune1000,data_science
-f1000_445,NVR,446,fortune1000,data_science
-f1000_446,Dana,447,fortune1000,data_science
-f1000_447,Realogy Holdings,448,fortune1000,data_science
-f1000_448,American Tower,449,fortune1000,data_science
-f1000_449,Packaging Corp. of America,450,fortune1000,data_science
-f1000_450,Citizens Financial Group,451,fortune1000,data_science
-f1000_451,United Rentals,452,fortune1000,data_science
-f1000_452,Clorox,453,fortune1000,data_science
-f1000_453,Genesis Healthcare,454,fortune1000,data_science
-f1000_454,M&T Bank Corp.,455,fortune1000,data_science
-f1000_455,Ingredion,456,fortune1000,data_science
-f1000_456,UGI,457,fortune1000,data_science
-f1000_457,Owens Corning,458,fortune1000,data_science
-f1000_458,S&P Global,459,fortune1000,data_science
-f1000_459,Markel,460,fortune1000,data_science
-f1000_460,Wyndham Worldwide,461,fortune1000,data_science
-f1000_461,Arthur J. Gallagher,462,fortune1000,data_science
-f1000_462,Burlington Stores,463,fortune1000,data_science
-f1000_463,First American Financial,464,fortune1000,data_science
-f1000_464,Symantec,465,fortune1000,data_science
-f1000_465,Patterson,466,fortune1000,data_science
-f1000_466,Olin,467,fortune1000,data_science
-f1000_467,NetApp,468,fortune1000,data_science
-f1000_468,Raymond James Financial,469,fortune1000,data_science
-f1000_469,TravelCenters of America,470,fortune1000,data_science
-f1000_470,Fiserv,471,fortune1000,data_science
-f1000_471,Host Hotels & Resorts,472,fortune1000,data_science
-f1000_472,Insight Enterprises,473,fortune1000,data_science
-f1000_473,Mattel,474,fortune1000,data_science
-f1000_474,AmTrust Financial Services,475,fortune1000,data_science
-f1000_475,Cincinnati Financial,476,fortune1000,data_science
-f1000_476,Simon Property Group,477,fortune1000,data_science
-f1000_477,Western Union,478,fortune1000,data_science
-f1000_478,KeyCorp,479,fortune1000,data_science
-f1000_479,Delek US Holdings,480,fortune1000,data_science
-f1000_480,Booz Allen Hamilton Holding,481,fortune1000,data_science
-f1000_481,Chemours,482,fortune1000,data_science
-f1000_482,Western & Southern Financial Group,483,fortune1000,data_science
-f1000_483,Celanese,484,fortune1000,data_science
-f1000_484,Windstream Holdings,485,fortune1000,data_science
-f1000_485,Seaboard,486,fortune1000,data_science
-f1000_486,Essendant,487,fortune1000,data_science
-f1000_487,Apache,488,fortune1000,data_science
-f1000_488,Airgas,489,fortune1000,data_science
-f1000_489,Kelly Services,490,fortune1000,data_science
-f1000_490,Liberty Media,491,fortune1000,data_science
-f1000_491,Rockwell Collins,492,fortune1000,data_science
-f1000_492,Robert Half International,493,fortune1000,data_science
-f1000_493,CH2M Hill,494,fortune1000,data_science
-f1000_494,Big Lots,495,fortune1000,data_science
-f1000_495,Michaels Cos.,496,fortune1000,data_science
-f1000_496,Toll Brothers,497,fortune1000,data_science
-f1000_497,Yahoo,498,fortune1000,data_science
-f1000_498,Vistra Energy,499,fortune1000,data_science
-f1000_499,ABM Industries,500,fortune1000,data_science
-f1000_500,Northern Trust,501,fortune1000,data_science
-f1000_501,MasTec,502,fortune1000,data_science
-f1000_502,Blackstone Group,503,fortune1000,data_science
-f1000_503,Telephone & Data Systems,504,fortune1000,data_science
-f1000_504,Domtar,505,fortune1000,data_science
-f1000_505,Williams-Sonoma,506,fortune1000,data_science
-f1000_506,Westlake Chemical,507,fortune1000,data_science
-f1000_507,Post Holdings,508,fortune1000,data_science
-f1000_508,Hasbro,509,fortune1000,data_science
-f1000_509,Juniper Networks,510,fortune1000,data_science
-f1000_510,Fortune Brands Home & Security,511,fortune1000,data_science
-f1000_511,Brookdale Senior Living,512,fortune1000,data_science
-f1000_512,Tutor Perini,513,fortune1000,data_science
-f1000_513,Navient,514,fortune1000,data_science
-f1000_514,Neiman Marcus Group,515,fortune1000,data_science
-f1000_515,Ashland Global Holdings,516,fortune1000,data_science
-f1000_516,Hanover Insurance Group,517,fortune1000,data_science
-f1000_517,CommScope Holding,518,fortune1000,data_science
-f1000_518,Spectra Energy,519,fortune1000,data_science
-f1000_519,Cintas,520,fortune1000,data_science
-f1000_520,Zoetis,521,fortune1000,data_science
-f1000_521,Molson Coors Brewing,522,fortune1000,data_science
-f1000_522,Regeneron Pharmaceuticals,523,fortune1000,data_science
-f1000_523,Ulta Beauty,524,fortune1000,data_science
-f1000_524,Hess,525,fortune1000,data_science
-f1000_525,Magellan Health,526,fortune1000,data_science
-f1000_526,Intuit,527,fortune1000,data_science
-f1000_527,Under Armour,528,fortune1000,data_science
-f1000_528,RPM International,529,fortune1000,data_science
-f1000_529,Cerner,530,fortune1000,data_science
-f1000_530,Sonoco Products,531,fortune1000,data_science
-f1000_531,Securian Financial Group,532,fortune1000,data_science
-f1000_532,Peabody Energy,533,fortune1000,data_science
-f1000_533,YRC Worldwide,534,fortune1000,data_science
-f1000_534,Commercial Metals,535,fortune1000,data_science
-f1000_535,Marathon Oil,536,fortune1000,data_science
-f1000_536,Polaris Industries,537,fortune1000,data_science
-f1000_537,Envision Healthcare,538,fortune1000,data_science
-f1000_538,Trinity Industries,539,fortune1000,data_science
-f1000_539,Thor Industries,540,fortune1000,data_science
-f1000_540,Caesars Entertainment,541,fortune1000,data_science
-f1000_541,Levi Strauss,542,fortune1000,data_science
-f1000_542,FMC Technologies,543,fortune1000,data_science
-f1000_543,VWR,544,fortune1000,data_science
-f1000_544,NiSource,545,fortune1000,data_science
-f1000_545,Coach,546,fortune1000,data_science
-f1000_546,Brunswick,547,fortune1000,data_science
-f1000_547,Wynn Resorts,548,fortune1000,data_science
-f1000_548,Orbital ATK,549,fortune1000,data_science
-f1000_549,CIT Group,550,fortune1000,data_science
-f1000_550,Science Applications International,551,fortune1000,data_science
-f1000_551,Hyatt Hotels,552,fortune1000,data_science
-f1000_552,McCormick,553,fortune1000,data_science
-f1000_553,Diplomat Pharmacy,554,fortune1000,data_science
-f1000_554,Barnes & Noble,555,fortune1000,data_science
-f1000_555,Electronic Arts,556,fortune1000,data_science
-f1000_556,FM Global,557,fortune1000,data_science
-f1000_557,Coty,558,fortune1000,data_science
-f1000_558,Smart & Final Stores,559,fortune1000,data_science
-f1000_559,Quad/Graphics,560,fortune1000,data_science
-f1000_560,Dynegy,561,fortune1000,data_science
-f1000_561,Graphic Packaging Holding,562,fortune1000,data_science
-f1000_562,Select Medical Holdings,563,fortune1000,data_science
-f1000_563,Welltower,564,fortune1000,data_science
-f1000_564,Advanced Micro Devices,565,fortune1000,data_science
-f1000_565,USG,566,fortune1000,data_science
-f1000_566,KBR,567,fortune1000,data_science
-f1000_567,Bloomin' Brands,568,fortune1000,data_science
-f1000_568,MDU Resources Group,569,fortune1000,data_science
-f1000_569,CSRA,570,fortune1000,data_science
-f1000_570,Laureate Education,571,fortune1000,data_science
-f1000_571,SCANA,572,fortune1000,data_science
-f1000_572,T. Rowe Price,573,fortune1000,data_science
-f1000_573,Watsco,574,fortune1000,data_science
-f1000_574,Rush Enterprises,575,fortune1000,data_science
-f1000_575,Agilent Technologies,576,fortune1000,data_science
-f1000_576,WhiteWave Foods,577,fortune1000,data_science
-f1000_577,Valspar,578,fortune1000,data_science
-f1000_578,Total System Services,579,fortune1000,data_science
-f1000_579,Torchmark,580,fortune1000,data_science
-f1000_580,Cabela's,581,fortune1000,data_science
-f1000_581,Beacon Roofing Supply,582,fortune1000,data_science
-f1000_582,CA,583,fortune1000,data_science
-f1000_583,LPL Financial Holdings,584,fortune1000,data_science
-f1000_584,Sprouts Farmers Market,585,fortune1000,data_science
-f1000_585,Swift Transportation,586,fortune1000,data_science
-f1000_586,Bemis,587,fortune1000,data_science
-f1000_587,Tiffany,588,fortune1000,data_science
-f1000_588,Flowserve,589,fortune1000,data_science
-f1000_589,CNO Financial Group,590,fortune1000,data_science
-f1000_590,Fastenal,591,fortune1000,data_science
-f1000_591,Sally Beauty Holdings,592,fortune1000,data_science
-f1000_592,American Axle & Manufacturing,593,fortune1000,data_science
-f1000_593,Flowers Foods,594,fortune1000,data_science
-f1000_594,Andersons,595,fortune1000,data_science
-f1000_595,Crown Castle International,596,fortune1000,data_science
-f1000_596,Boise Cascade,597,fortune1000,data_science
-f1000_597,ON Semiconductor,598,fortune1000,data_science
-f1000_598,Chipotle Mexican Grill,599,fortune1000,data_science
-f1000_599,Amkor Technology,600,fortune1000,data_science
-f1000_600,Triumph Group,601,fortune1000,data_science
-f1000_601,OneMain Holdings,602,fortune1000,data_science
-f1000_602,General Cable,603,fortune1000,data_science
-f1000_603,Ametek,604,fortune1000,data_science
-f1000_604,Alon USA Energy,605,fortune1000,data_science
-f1000_605,Pioneer Natural Resources,606,fortune1000,data_science
-f1000_606,Martin Marietta Materials,607,fortune1000,data_science
-f1000_607,Ingles Markets,608,fortune1000,data_science
-f1000_608,Roper Technologies,609,fortune1000,data_science
-f1000_609,Huntington Bancshares,610,fortune1000,data_science
-f1000_610,Xylem,611,fortune1000,data_science
-f1000_611,Unified Grocers,612,fortune1000,data_science
-f1000_612,Leggett & Platt,613,fortune1000,data_science
-f1000_613,Dentsply Sirona,614,fortune1000,data_science
-f1000_614,CACI International,615,fortune1000,data_science
-f1000_615,Mead Johnson Nutrition,616,fortune1000,data_science
-f1000_616,C.R. Bard,617,fortune1000,data_science
-f1000_617,Snap-on,618,fortune1000,data_science
-f1000_618,HealthSouth,619,fortune1000,data_science
-f1000_619,Nasdaq,620,fortune1000,data_science
-f1000_620,Avaya,621,fortune1000,data_science
-f1000_621,CF Industries Holdings,622,fortune1000,data_science
-f1000_622,Carlisle,623,fortune1000,data_science
-f1000_623,Equinix,624,fortune1000,data_science
-f1000_624,LSC Communications,625,fortune1000,data_science
-f1000_625,Colfax,626,fortune1000,data_science
-f1000_626,Lennox International,627,fortune1000,data_science
-f1000_627,Iasis Healthcare,628,fortune1000,data_science
-f1000_628,Silgan Holdings,629,fortune1000,data_science
-f1000_629,American Eagle Outfitters,630,fortune1000,data_science
-f1000_630,Moody's,631,fortune1000,data_science
-f1000_631,Calumet Specialty Products Partners,632,fortune1000,data_science
-f1000_632,CME Group,633,fortune1000,data_science
-f1000_633,KB Home,634,fortune1000,data_science
-f1000_634,Vulcan Materials,635,fortune1000,data_science
-f1000_635,Platform Specialty Products,636,fortune1000,data_science
-f1000_636,Vantiv,637,fortune1000,data_science
-f1000_637,Skechers U.S.A.,638,fortune1000,data_science
-f1000_638,Zebra Technologies,639,fortune1000,data_science
-f1000_639,Hub Group,640,fortune1000,data_science
-f1000_640,HSN,641,fortune1000,data_science
-f1000_641,Stericycle,642,fortune1000,data_science
-f1000_642,National General Holdings,643,fortune1000,data_science
-f1000_643,Taylor Morrison Home,644,fortune1000,data_science
-f1000_644,Urban Outfitters,645,fortune1000,data_science
-f1000_645,Resolute Forest Products,646,fortune1000,data_science
-f1000_646,ScanSource,647,fortune1000,data_science
-f1000_647,Camping World Holdings,648,fortune1000,data_science
-f1000_648,Iron Mountain,649,fortune1000,data_science
-f1000_649,Hubbell,650,fortune1000,data_science
-f1000_650,Pinnacle West Capital,651,fortune1000,data_science
-f1000_651,Church & Dwight,652,fortune1000,data_science
-f1000_652,Noble Energy,653,fortune1000,data_science
-f1000_653,Albemarle,654,fortune1000,data_science
-f1000_654,Cooper-Standard Holdings,655,fortune1000,data_science
-f1000_655,KKR,656,fortune1000,data_science
-f1000_656,Country Financial,657,fortune1000,data_science
-f1000_657,Ventas,658,fortune1000,data_science
-f1000_658,Hexion,659,fortune1000,data_science
-f1000_659,Analog Devices,660,fortune1000,data_science
-f1000_660,Citrix Systems,661,fortune1000,data_science
-f1000_661,Green Plains,662,fortune1000,data_science
-f1000_662,Pitney Bowes,663,fortune1000,data_science
-f1000_663,Scripps Networks Interactive,664,fortune1000,data_science
-f1000_664,Darling Ingredients,665,fortune1000,data_science
-f1000_665,Wayfair,666,fortune1000,data_science
-f1000_666,Tailored Brands,667,fortune1000,data_science
-f1000_667,Sabre,668,fortune1000,data_science
-f1000_668,Global Payments,669,fortune1000,data_science
-f1000_669,Atmos Energy,670,fortune1000,data_science
-f1000_670,TEGNA,671,fortune1000,data_science
-f1000_671,Diebold Nixdorf,672,fortune1000,data_science
-f1000_672,PolyOne,673,fortune1000,data_science
-f1000_673,TD Ameritrade Holding,674,fortune1000,data_science
-f1000_674,Abercrombie & Fitch,675,fortune1000,data_science
-f1000_675,Greif,676,fortune1000,data_science
-f1000_676,Alliant Energy,677,fortune1000,data_science
-f1000_677,American Water Works,678,fortune1000,data_science
-f1000_678,Acuity Brands,679,fortune1000,data_science
-f1000_679,Skyworks Solutions,680,fortune1000,data_science
-f1000_680,FMC,681,fortune1000,data_science
-f1000_681,Amerco,682,fortune1000,data_science
-f1000_682,CUNA Mutual Group,683,fortune1000,data_science
-f1000_683,Brinker International,684,fortune1000,data_science
-f1000_684,Buckeye Partners,685,fortune1000,data_science
-f1000_685,Warner Music Group,686,fortune1000,data_science
-f1000_686,Universal Forest Products,687,fortune1000,data_science
-f1000_687,American National Insurance,688,fortune1000,data_science
-f1000_688,Mercury General,689,fortune1000,data_science
-f1000_689,Regal Beloit,690,fortune1000,data_science
-f1000_690,Varian Medical Systems,691,fortune1000,data_science
-f1000_691,Aaron's,692,fortune1000,data_science
-f1000_692,Visteon,693,fortune1000,data_science
-f1000_693,Carter's,694,fortune1000,data_science
-f1000_694,Meritor,695,fortune1000,data_science
-f1000_695,Regal Entertainment Group,696,fortune1000,data_science
-f1000_696,Mednax,697,fortune1000,data_science
-f1000_697,TransDigm Group,698,fortune1000,data_science
-f1000_698,Landstar System,699,fortune1000,data_science
-f1000_699,Puget Energy,700,fortune1000,data_science
-f1000_700,Coca-Cola Bottling,701,fortune1000,data_science
-f1000_701,Kar Auction Services,702,fortune1000,data_science
-f1000_702,Equifax,703,fortune1000,data_science
-f1000_703,Groupon,704,fortune1000,data_science
-f1000_704,IAC/InterActiveCorp,705,fortune1000,data_science
-f1000_705,Weis Markets,706,fortune1000,data_science
-f1000_706,Allegheny Technologies,707,fortune1000,data_science
-f1000_707,Pinnacle Foods,708,fortune1000,data_science
-f1000_708,Tempur Sealy International,709,fortune1000,data_science
-f1000_709,SkyWest,710,fortune1000,data_science
-f1000_710,International Flavors & Fragrances,711,fortune1000,data_science
-f1000_711,BMC Stock Holdings,712,fortune1000,data_science
-f1000_712,Brown-Forman,713,fortune1000,data_science
-f1000_713,Alexion Pharmaceuticals,714,fortune1000,data_science
-f1000_714,KapStone Paper & Packaging,715,fortune1000,data_science
-f1000_715,Time,716,fortune1000,data_science
-f1000_716,TriNet Group,717,fortune1000,data_science
-f1000_717,Steelcase,718,fortune1000,data_science
-f1000_718,EchoStar,719,fortune1000,data_science
-f1000_719,Sentry Insurance Group,720,fortune1000,data_science
-f1000_720,Monster Beverage,721,fortune1000,data_science
-f1000_721,Gannett,722,fortune1000,data_science
-f1000_722,Fossil Group,723,fortune1000,data_science
-f1000_723,Univision Communications,724,fortune1000,data_science
-f1000_724,Meritage Homes,725,fortune1000,data_science
-f1000_725,MRC Global,726,fortune1000,data_science
-f1000_726,H&R Block,727,fortune1000,data_science
-f1000_727,Penn National Gaming,728,fortune1000,data_science
-f1000_728,Service Corp. International,729,fortune1000,data_science
-f1000_729,Brink's,730,fortune1000,data_science
-f1000_730,Old Dominion Freight Line,731,fortune1000,data_science
-f1000_731,Triple-S Management,732,fortune1000,data_science
-f1000_732,KLA-Tencor,733,fortune1000,data_science
-f1000_733,Edwards Lifesciences,734,fortune1000,data_science
-f1000_734,Rent-A-Center,735,fortune1000,data_science
-f1000_735,Comerica,736,fortune1000,data_science
-f1000_736,Paychex,737,fortune1000,data_science
-f1000_737,First Solar,738,fortune1000,data_science
-f1000_738,Insperity,739,fortune1000,data_science
-f1000_739,Scotts Miracle-Gro,740,fortune1000,data_science
-f1000_740,B/E Aerospace,741,fortune1000,data_science
-f1000_741,Westinghouse Air Brake Technologies,742,fortune1000,data_science
-f1000_742,Cooper Tire & Rubber,743,fortune1000,data_science
-f1000_743,Cinemark Holdings,744,fortune1000,data_science
-f1000_744,Keysight Technologies,745,fortune1000,data_science
-f1000_745,Convergys,746,fortune1000,data_science
-f1000_746,Cracker Barrel Old Country Store,747,fortune1000,data_science
-f1000_747,PriceSmart,748,fortune1000,data_science
-f1000_748,Broadridge Financial Solutions,749,fortune1000,data_science
-f1000_749,Scientific Games,750,fortune1000,data_science
-f1000_750,Genesco,751,fortune1000,data_science
-f1000_751,MSC Industrial Direct,752,fortune1000,data_science
-f1000_752,Ryerson Holding,753,fortune1000,data_science
-f1000_753,Acadia Healthcare,754,fortune1000,data_science
-f1000_754,Hologic,755,fortune1000,data_science
-f1000_755,Unisys,756,fortune1000,data_science
-f1000_756,Worthington Industries,757,fortune1000,data_science
-f1000_757,Sanderson Farms,758,fortune1000,data_science
-f1000_758,WABCO Holdings,759,fortune1000,data_science
-f1000_759,Panera Bread,760,fortune1000,data_science
-f1000_760,Metaldyne Performance Group,761,fortune1000,data_science
-f1000_761,Medical Mutual of Ohio,762,fortune1000,data_science
-f1000_762,AMC Networks,763,fortune1000,data_science
-f1000_763,Clean Harbors,764,fortune1000,data_science
-f1000_764,Hovnanian Enterprises,765,fortune1000,data_science
-f1000_765,TrueBlue,766,fortune1000,data_science
-f1000_766,Crane,767,fortune1000,data_science
-f1000_767,ServiceMaster Global Holdings,768,fortune1000,data_science
-f1000_768,Sinclair Broadcast Group,769,fortune1000,data_science
-f1000_769,Mutual of America Life Insurance,770,fortune1000,data_science
-f1000_770,BGC Partners,771,fortune1000,data_science
-f1000_771,DSW,772,fortune1000,data_science
-f1000_772,Intuitive Surgical,773,fortune1000,data_science
-f1000_773,ArcBest,774,fortune1000,data_science
-f1000_774,PC Connection,775,fortune1000,data_science
-f1000_775,A.O. Smith,776,fortune1000,data_science
-f1000_776,Greenbrier Cos.,777,fortune1000,data_science
-f1000_777,Great Plains Energy,778,fortune1000,data_science
-f1000_778,Bon-Ton Stores,779,fortune1000,data_science
-f1000_779,Dycom Industries,780,fortune1000,data_science
-f1000_780,Timken,781,fortune1000,data_science
-f1000_781,Aleris,782,fortune1000,data_science
-f1000_782,Legg Mason,783,fortune1000,data_science
-f1000_783,Hill-Rom Holdings,784,fortune1000,data_science
-f1000_784,Stifel Financial,785,fortune1000,data_science
-f1000_785,Verso,786,fortune1000,data_science
-f1000_786,Qorvo,787,fortune1000,data_science
-f1000_787,Ciena,788,fortune1000,data_science
-f1000_788,Tetra Tech,789,fortune1000,data_science
-f1000_789,Caleres,790,fortune1000,data_science
-f1000_790,Pool,791,fortune1000,data_science
-f1000_791,Hyster-Yale Materials Handling,792,fortune1000,data_science
-f1000_792,Westar Energy,793,fortune1000,data_science
-f1000_793,Public Storage,794,fortune1000,data_science
-f1000_794,Plexus,795,fortune1000,data_science
-f1000_795,Boston Properties,796,fortune1000,data_science
-f1000_796,GNC Holdings,797,fortune1000,data_science
-f1000_797,HCP,798,fortune1000,data_science
-f1000_798,Penn Mutual Life Insurance,799,fortune1000,data_science
-f1000_799,TTM Technologies,800,fortune1000,data_science
-f1000_800,Prologis,801,fortune1000,data_science
-f1000_801,Twitter,802,fortune1000,data_science
-f1000_802,Kemper,803,fortune1000,data_science
-f1000_803,Valmont Industries,804,fortune1000,data_science
-f1000_804,Crestwood Equity Partners,805,fortune1000,data_science
-f1000_805,Applied Industrial Technologies,806,fortune1000,data_science
-f1000_806,VCA,807,fortune1000,data_science
-f1000_807,Granite Construction,808,fortune1000,data_science
-f1000_808,Vornado Realty Trust,809,fortune1000,data_science
-f1000_809,Mettler-Toledo International,810,fortune1000,data_science
-f1000_810,A. Schulman,811,fortune1000,data_science
-f1000_811,Wolverine World Wide,812,fortune1000,data_science
-f1000_812,Graham Holdings,813,fortune1000,data_science
-f1000_813,Chico's FAS,814,fortune1000,data_science
-f1000_814,Domino's Pizza,815,fortune1000,data_science
-f1000_815,Zions Bancorp.,816,fortune1000,data_science
-f1000_816,Southwest Gas Holdings,817,fortune1000,data_science
-f1000_817,Tops Holding,818,fortune1000,data_science
-f1000_818,Hawaiian Holdings,819,fortune1000,data_science
-f1000_819,Vectren,820,fortune1000,data_science
-f1000_820,Gartner,821,fortune1000,data_science
-f1000_821,On Assignment,822,fortune1000,data_science
-f1000_822,Southwestern Energy,823,fortune1000,data_science
-f1000_823,Parexel International,824,fortune1000,data_science
-f1000_824,Equity Residential,825,fortune1000,data_science
-f1000_825,J.Crew Group,826,fortune1000,data_science
-f1000_826,Synopsys,827,fortune1000,data_science
-f1000_827,Moog,828,fortune1000,data_science
-f1000_828,Cabot,829,fortune1000,data_science
-f1000_829,ITT,830,fortune1000,data_science
-f1000_830,TRI Pointe Group,831,fortune1000,data_science
-f1000_831,Maximus,832,fortune1000,data_science
-f1000_832,Illumina,833,fortune1000,data_science
-f1000_833,Amica Mutual Insurance,834,fortune1000,data_science
-f1000_834,Alere,835,fortune1000,data_science
-f1000_835,Toro,836,fortune1000,data_science
-f1000_836,Sprague Resources,837,fortune1000,data_science
-f1000_837,G-III Apparel Group,838,fortune1000,data_science
-f1000_838,Hawaiian Electric Industries,839,fortune1000,data_science
-f1000_839,Pinnacle Entertainment,840,fortune1000,data_science
-f1000_840,Columbia Sportswear,841,fortune1000,data_science
-f1000_841,First Republic Bank,842,fortune1000,data_science
-f1000_842,Komatsu Mining,843,fortune1000,data_science
-f1000_843,Trimble,844,fortune1000,data_science
-f1000_844,Edgewell Personal Care,845,fortune1000,data_science
-f1000_845,Belden,846,fortune1000,data_science
-f1000_846,DST Systems,847,fortune1000,data_science
-f1000_847,WGL Holdings,848,fortune1000,data_science
-f1000_848,GGP,849,fortune1000,data_science
-f1000_849,Brocade Communications Systems,850,fortune1000,data_science
-f1000_850,Akamai Technologies,851,fortune1000,data_science
-f1000_851,Nationstar Mortgage Holdings,852,fortune1000,data_science
-f1000_852,Annaly Capital Management,853,fortune1000,data_science
-f1000_853,Kansas City Southern,854,fortune1000,data_science
-f1000_854,Revlon,855,fortune1000,data_science
-f1000_855,AptarGroup,856,fortune1000,data_science
-f1000_856,MDC Holdings,857,fortune1000,data_science
-f1000_857,Vishay Intertechnology,858,fortune1000,data_science
-f1000_858,Teradata,859,fortune1000,data_science
-f1000_859,Spirit Airlines,860,fortune1000,data_science
-f1000_860,EnerSys,861,fortune1000,data_science
-f1000_861,Snyder's-Lance,862,fortune1000,data_science
-f1000_862,Benchmark Electronics,863,fortune1000,data_science
-f1000_863,West,864,fortune1000,data_science
-f1000_864,Selective Insurance Group,865,fortune1000,data_science
-f1000_865,Party City Holdco,866,fortune1000,data_science
-f1000_866,Cheesecake Factory,867,fortune1000,data_science
-f1000_867,Lincoln Electric Holdings,868,fortune1000,data_science
-f1000_868,Carlyle Group,869,fortune1000,data_science
-f1000_869,Enable Midstream Partners,870,fortune1000,data_science
-f1000_870,Oceaneering International,871,fortune1000,data_science
-f1000_871,Vista Outdoor,872,fortune1000,data_science
-f1000_872,Middleby,873,fortune1000,data_science
-f1000_873,Herman Miller,874,fortune1000,data_science
-f1000_874,PerkinElmer,875,fortune1000,data_science
-f1000_875,OGE Energy,876,fortune1000,data_science
-f1000_876,PCM,877,fortune1000,data_science
-f1000_877,Louisiana-Pacific,878,fortune1000,data_science
-f1000_878,MPM Holdings,879,fortune1000,data_science
-f1000_879,Knights of Columbus,880,fortune1000,data_science
-f1000_880,Apollo Global Management,881,fortune1000,data_science
-f1000_881,Donaldson,882,fortune1000,data_science
-f1000_882,American Equity Investment Life Holding,883,fortune1000,data_science
-f1000_883,Super Micro Computer,884,fortune1000,data_science
-f1000_884,Xilinx,885,fortune1000,data_science
-f1000_885,Tupperware Brands,886,fortune1000,data_science
-f1000_886,Guess,887,fortune1000,data_science
-f1000_887,Nu Skin Enterprises,888,fortune1000,data_science
-f1000_888,Magellan Midstream Partners,889,fortune1000,data_science
-f1000_889,HNI,890,fortune1000,data_science
-f1000_890,Maxim Integrated Products,891,fortune1000,data_science
-f1000_891,Affiliated Managers Group,892,fortune1000,data_science
-f1000_892,Express,893,fortune1000,data_science
-f1000_893,Boyd Gaming,894,fortune1000,data_science
-f1000_894,GEO Group,895,fortune1000,data_science
-f1000_895,Tribune Media,896,fortune1000,data_science
-f1000_896,Microchip Technology,897,fortune1000,data_science
-f1000_897,Fitbit,898,fortune1000,data_science
-f1000_898,Waters,899,fortune1000,data_science
-f1000_899,Teledyne Technologies,900,fortune1000,data_science
-f1000_900,Digital Realty Trust,901,fortune1000,data_science
-f1000_901,RH,902,fortune1000,data_science
-f1000_902,Fred's,903,fortune1000,data_science
-f1000_903,Universal,904,fortune1000,data_science
-f1000_904,CDK Global,905,fortune1000,data_science
-f1000_905,IDEX,906,fortune1000,data_science
-f1000_906,Cliffs Natural Resources,907,fortune1000,data_science
-f1000_907,Curtiss-Wright,908,fortune1000,data_science
-f1000_908,Verisk Analytics,909,fortune1000,data_science
-f1000_909,NOW,910,fortune1000,data_science
-f1000_910,Apollo Education Group,911,fortune1000,data_science
-f1000_911,Kennametal,912,fortune1000,data_science
-f1000_912,H.B. Fuller,913,fortune1000,data_science
-f1000_913,PharMerica,914,fortune1000,data_science
-f1000_914,Engility Holdings,915,fortune1000,data_science
-f1000_915,Sears Hometown & Outlet Stores,916,fortune1000,data_science
-f1000_916,Bio-Rad Laboratories,917,fortune1000,data_science
-f1000_917,Federated Mutual Insurance,918,fortune1000,data_science
-f1000_918,Mueller Industries,919,fortune1000,data_science
-f1000_919,Red Hat,920,fortune1000,data_science
-f1000_920,NewMarket,921,fortune1000,data_science
-f1000_921,Hospitality Properties Trust,922,fortune1000,data_science
-f1000_922,AvalonBay Communities,923,fortune1000,data_science
-f1000_923,Renewable Energy Group,924,fortune1000,data_science
-f1000_924,Consol Energy,925,fortune1000,data_science
-f1000_925,Ferrellgas Partners,926,fortune1000,data_science
-f1000_926,Tower International,927,fortune1000,data_science
-f1000_927,Autodesk,928,fortune1000,data_science
-f1000_928,99 Cents Only Stores,929,fortune1000,data_science
-f1000_929,E*Trade Financial,930,fortune1000,data_science
-f1000_930,Woodward,931,fortune1000,data_science
-f1000_931,Esterline Technologies,932,fortune1000,data_science
-f1000_932,Itron,933,fortune1000,data_science
-f1000_933,Werner Enterprises,934,fortune1000,data_science
-f1000_934,Stewart Information Services,935,fortune1000,data_science
-f1000_935,Hexcel,936,fortune1000,data_science
-f1000_936,Genesee & Wyoming,937,fortune1000,data_science
-f1000_937,Primoris Services,938,fortune1000,data_science
-f1000_938,SPX FLOW,939,fortune1000,data_science
-f1000_939,F5 Networks,940,fortune1000,data_science
-f1000_940,VeriFone Systems,941,fortune1000,data_science
-f1000_941,Texas Roadhouse,942,fortune1000,data_science
-f1000_942,NLV Financial,943,fortune1000,data_science
-f1000_943,Buffalo Wild Wings,944,fortune1000,data_science
-f1000_944,Continental Resources,945,fortune1000,data_science
-f1000_945,Arch Coal,946,fortune1000,data_science
-f1000_946,Roadrunner Transportation Systems,947,fortune1000,data_science
-f1000_947,Cooper Cos.,948,fortune1000,data_science
-f1000_948,hhgregg,949,fortune1000,data_science
-f1000_949,Euronet Worldwide,950,fortune1000,data_science
-f1000_950,Griffon,951,fortune1000,data_science
-f1000_951,CoreLogic,952,fortune1000,data_science
-f1000_952,Nuance Communications,953,fortune1000,data_science
-f1000_953,Matson,954,fortune1000,data_science
-f1000_954,Popular,955,fortune1000,data_science
-f1000_955,Alliance Holdings,956,fortune1000,data_science
-f1000_956,REV Group,957,fortune1000,data_science
-f1000_957,Rexnord,958,fortune1000,data_science
-f1000_958,Cypress Semiconductor,959,fortune1000,data_science
-f1000_959,Portland General Electric,960,fortune1000,data_science
-f1000_960,Ply Gem Holdings,961,fortune1000,data_science
-f1000_961,Cal-Maine Foods,962,fortune1000,data_science
-f1000_962,Alliance One International,963,fortune1000,data_science
-f1000_963,AMN Healthcare Services,964,fortune1000,data_science
-f1000_964,American Greetings,965,fortune1000,data_science
-f1000_965,Blackhawk Network Holdings,966,fortune1000,data_science
-f1000_966,Pier 1 Imports,967,fortune1000,data_science
-f1000_967,Finish Line,968,fortune1000,data_science
-f1000_968,BlueLinx Holdings,969,fortune1000,data_science
-f1000_969,New Jersey Resources,970,fortune1000,data_science
-f1000_970,Deckers Outdoor,971,fortune1000,data_science
-f1000_971,Murphy Oil,972,fortune1000,data_science
-f1000_972,Teleflex,973,fortune1000,data_science
-f1000_973,Par Pacific Holdings,974,fortune1000,data_science
-f1000_974,SL Green Realty,975,fortune1000,data_science
-f1000_975,GMS,976,fortune1000,data_science
-f1000_976,CoreCivic,977,fortune1000,data_science
-f1000_977,Deluxe,978,fortune1000,data_science
-f1000_978,Catalent,979,fortune1000,data_science
-f1000_979,GoDaddy,980,fortune1000,data_science
-f1000_980,Wabash National,981,fortune1000,data_science
-f1000_981,Adtalem Global Education,982,fortune1000,data_science
-f1000_982,United Refining,983,fortune1000,data_science
-f1000_983,Allison Transmission Holdings,984,fortune1000,data_science
-f1000_984,Atlas Air Worldwide Holdings,985,fortune1000,data_science
-f1000_985,ResMed,986,fortune1000,data_science
-f1000_986,Delta Tucker Holdings,987,fortune1000,data_science
-f1000_987,FleetCor Technologies,988,fortune1000,data_science
-f1000_988,Central Garden & Pet,989,fortune1000,data_science
-f1000_989,Beazer Homes USA,990,fortune1000,data_science
-f1000_990,New York Community Bancorp,991,fortune1000,data_science
-f1000_991,Cadence Design Systems,992,fortune1000,data_science
-f1000_992,Carpenter Technology,993,fortune1000,data_science
-f1000_993,Marriott Vacations Worldwide,994,fortune1000,data_science
-f1000_994,FTI Consulting,995,fortune1000,data_science
-f1000_995,Nordson,996,fortune1000,data_science
-f1000_996,Briggs & Stratton,997,fortune1000,data_science
-f1000_997,Kaman,998,fortune1000,data_science
-f1000_998,Overstock.com,999,fortune1000,data_science
-f1000_999,Regis,1000,fortune1000,data_science
+list_id,company,raw_company,rank,source,job_type
+f1000_0,Walmart,Walmart,1,fortune1000,data_science
+f1000_1,Berkshire Hathaway,Berkshire Hathaway,2,fortune1000,data_science
+f1000_2,Apple,Apple,3,fortune1000,data_science
+f1000_3,Exxon Mobil,Exxon Mobil,4,fortune1000,data_science
+f1000_4,McKesson,McKesson,5,fortune1000,data_science
+f1000_5,UnitedHealth Group,UnitedHealth Group,6,fortune1000,data_science
+f1000_6,CVS Health,CVS Health,7,fortune1000,data_science
+f1000_7,General Motors,General Motors,8,fortune1000,data_science
+f1000_8,AT&T,AT&T,9,fortune1000,data_science
+f1000_9,Ford Motor,Ford Motor,10,fortune1000,data_science
+f1000_10,AmerisourceBergen,AmerisourceBergen,11,fortune1000,data_science
+f1000_11,Amazon.com,Amazon.com,12,fortune1000,data_science
+f1000_12,General Electric,General Electric,13,fortune1000,data_science
+f1000_13,Verizon Communications,Verizon Communications,14,fortune1000,data_science
+f1000_14,Cardinal Health,Cardinal Health,15,fortune1000,data_science
+f1000_15,Costco,Costco,16,fortune1000,data_science
+f1000_16,Walgreens Boots Alliance,Walgreens Boots Alliance,17,fortune1000,data_science
+f1000_17,Kroger,Kroger,18,fortune1000,data_science
+f1000_18,Chevron,Chevron,19,fortune1000,data_science
+f1000_19,Fannie Mae,Fannie Mae,20,fortune1000,data_science
+f1000_20,J.P. Morgan Chase,J.P. Morgan Chase,21,fortune1000,data_science
+f1000_21,Express Scripts Holding,Express Scripts Holding,22,fortune1000,data_science
+f1000_22,Home Depot,Home Depot,23,fortune1000,data_science
+f1000_23,Boeing,Boeing,24,fortune1000,data_science
+f1000_24,Wells Fargo,Wells Fargo,25,fortune1000,data_science
+f1000_25,Bank of America Corp.,Bank of America Corp.,26,fortune1000,data_science
+f1000_26,Alphabet,Alphabet,27,fortune1000,data_science
+f1000_27,Microsoft,Microsoft,28,fortune1000,data_science
+f1000_28,Anthem,Anthem,29,fortune1000,data_science
+f1000_29,Citigroup,Citigroup,30,fortune1000,data_science
+f1000_30,Comcast,Comcast,31,fortune1000,data_science
+f1000_31,IBM,IBM,32,fortune1000,data_science
+f1000_32,State Farm Insurance Cos.,State Farm Insurance Cos.,33,fortune1000,data_science
+f1000_33,Phillips 66,Phillips 66,34,fortune1000,data_science
+f1000_34,Johnson & Johnson,Johnson & Johnson,35,fortune1000,data_science
+f1000_35,Procter & Gamble,Procter & Gamble,36,fortune1000,data_science
+f1000_36,Valero Energy,Valero Energy,37,fortune1000,data_science
+f1000_37,Target,Target,38,fortune1000,data_science
+f1000_38,Freddie Mac,Freddie Mac,39,fortune1000,data_science
+f1000_39,Lowe's,Lowe's,40,fortune1000,data_science
+f1000_40,Dell Technologies,Dell Technologies,41,fortune1000,data_science
+f1000_41,MetLife,MetLife,42,fortune1000,data_science
+f1000_42,Aetna,Aetna,43,fortune1000,data_science
+f1000_43,PepsiCo,PepsiCo,44,fortune1000,data_science
+f1000_44,Archer Daniels Midland,Archer Daniels Midland,45,fortune1000,data_science
+f1000_45,UPS,UPS,46,fortune1000,data_science
+f1000_46,Intel,Intel,47,fortune1000,data_science
+f1000_47,Prudential Financial,Prudential Financial,48,fortune1000,data_science
+f1000_48,Albertsons Cos.,Albertsons Cos.,49,fortune1000,data_science
+f1000_49,United Technologies,United Technologies,50,fortune1000,data_science
+f1000_50,Marathon Petroleum,Marathon Petroleum,51,fortune1000,data_science
+f1000_51,Disney,Disney,52,fortune1000,data_science
+f1000_52,Humana,Humana,53,fortune1000,data_science
+f1000_53,Pfizer,Pfizer,54,fortune1000,data_science
+f1000_54,AIG,AIG,55,fortune1000,data_science
+f1000_55,Lockheed Martin,Lockheed Martin,56,fortune1000,data_science
+f1000_56,Sysco,Sysco,57,fortune1000,data_science
+f1000_57,FedEx,FedEx,58,fortune1000,data_science
+f1000_58,Hewlett Packard Enterprise,Hewlett Packard Enterprise,59,fortune1000,data_science
+f1000_59,Cisco Systems,Cisco Systems,60,fortune1000,data_science
+f1000_60,HP,HP,61,fortune1000,data_science
+f1000_61,Dow Chemical,Dow Chemical,62,fortune1000,data_science
+f1000_62,HCA Holdings,HCA Holdings,63,fortune1000,data_science
+f1000_63,Coca-Cola,Coca-Cola,64,fortune1000,data_science
+f1000_64,New York Life Insurance,New York Life Insurance,65,fortune1000,data_science
+f1000_65,Centene,Centene,66,fortune1000,data_science
+f1000_66,American Airlines Group,American Airlines Group,67,fortune1000,data_science
+f1000_67,Nationwide,Nationwide,68,fortune1000,data_science
+f1000_68,Merck,Merck,69,fortune1000,data_science
+f1000_69,Cigna,Cigna,70,fortune1000,data_science
+f1000_70,Delta Air Lines,Delta Air Lines,71,fortune1000,data_science
+f1000_71,Best Buy,Best Buy,72,fortune1000,data_science
+f1000_72,Honeywell International,Honeywell International,73,fortune1000,data_science
+f1000_73,Caterpillar,Caterpillar,74,fortune1000,data_science
+f1000_74,Liberty Mutual Insurance Group,Liberty Mutual Insurance Group,75,fortune1000,data_science
+f1000_75,Morgan Stanley,Morgan Stanley,76,fortune1000,data_science
+f1000_76,Massachusetts Mutual Life Insurance,Massachusetts Mutual Life Insurance,77,fortune1000,data_science
+f1000_77,Goldman Sachs Group,Goldman Sachs Group,78,fortune1000,data_science
+f1000_78,Energy Transfer Equity,Energy Transfer Equity,79,fortune1000,data_science
+f1000_79,TIAA,TIAA,80,fortune1000,data_science
+f1000_80,Oracle,Oracle,81,fortune1000,data_science
+f1000_81,Tyson Foods,Tyson Foods,82,fortune1000,data_science
+f1000_82,United Continental Holdings,United Continental Holdings,83,fortune1000,data_science
+f1000_83,Allstate,Allstate,84,fortune1000,data_science
+f1000_84,Publix Super Markets,Publix Super Markets,85,fortune1000,data_science
+f1000_85,American Express,American Express,86,fortune1000,data_science
+f1000_86,TJX,TJX,87,fortune1000,data_science
+f1000_87,Nike,Nike,88,fortune1000,data_science
+f1000_88,Exelon,Exelon,89,fortune1000,data_science
+f1000_89,General Dynamics,General Dynamics,90,fortune1000,data_science
+f1000_90,Rite Aid,Rite Aid,91,fortune1000,data_science
+f1000_91,Gilead Sciences,Gilead Sciences,92,fortune1000,data_science
+f1000_92,CHS,CHS,93,fortune1000,data_science
+f1000_93,3M,3M,94,fortune1000,data_science
+f1000_94,Time Warner,Time Warner,95,fortune1000,data_science
+f1000_95,Charter Communications,Charter Communications,96,fortune1000,data_science
+f1000_96,Northwestern Mutual,Northwestern Mutual,97,fortune1000,data_science
+f1000_97,Facebook,Facebook,98,fortune1000,data_science
+f1000_98,Travelers Cos.,Travelers Cos.,99,fortune1000,data_science
+f1000_99,Capital One Financial,Capital One Financial,100,fortune1000,data_science
+f1000_100,Twenty-First Century Fox,Twenty-First Century Fox,101,fortune1000,data_science
+f1000_101,USAA,USAA,102,fortune1000,data_science
+f1000_102,World Fuel Services,World Fuel Services,103,fortune1000,data_science
+f1000_103,Philip Morris International,Philip Morris International,104,fortune1000,data_science
+f1000_104,Deere,Deere,105,fortune1000,data_science
+f1000_105,Kraft Heinz,Kraft Heinz,106,fortune1000,data_science
+f1000_106,Tech Data,Tech Data,107,fortune1000,data_science
+f1000_107,Avnet,Avnet,108,fortune1000,data_science
+f1000_108,Mondelez International,Mondelez International,109,fortune1000,data_science
+f1000_109,Macy's,Macy's,110,fortune1000,data_science
+f1000_110,AbbVie,AbbVie,111,fortune1000,data_science
+f1000_111,McDonald's,McDonald's,112,fortune1000,data_science
+f1000_112,DuPont,DuPont,113,fortune1000,data_science
+f1000_113,Northrop Grumman,Northrop Grumman,114,fortune1000,data_science
+f1000_114,ConocoPhillips,ConocoPhillips,115,fortune1000,data_science
+f1000_115,Raytheon,Raytheon,116,fortune1000,data_science
+f1000_116,Andeavor,Andeavor,117,fortune1000,data_science
+f1000_117,Arrow Electronics,Arrow Electronics,118,fortune1000,data_science
+f1000_118,Qualcomm,Qualcomm,119,fortune1000,data_science
+f1000_119,Progressive,Progressive,120,fortune1000,data_science
+f1000_120,Duke Energy,Duke Energy,121,fortune1000,data_science
+f1000_121,Enterprise Products Partners,Enterprise Products Partners,122,fortune1000,data_science
+f1000_122,Amgen,Amgen,123,fortune1000,data_science
+f1000_123,US Foods Holding,US Foods Holding,124,fortune1000,data_science
+f1000_124,U.S. Bancorp,U.S. Bancorp,125,fortune1000,data_science
+f1000_125,Aflac,Aflac,126,fortune1000,data_science
+f1000_126,Sears Holdings,Sears Holdings,127,fortune1000,data_science
+f1000_127,Dollar General,Dollar General,128,fortune1000,data_science
+f1000_128,AutoNation,AutoNation,129,fortune1000,data_science
+f1000_129,Community Health Systems,Community Health Systems,130,fortune1000,data_science
+f1000_130,Starbucks,Starbucks,131,fortune1000,data_science
+f1000_131,Eli Lilly,Eli Lilly,132,fortune1000,data_science
+f1000_132,International Paper,International Paper,133,fortune1000,data_science
+f1000_133,Tenet Healthcare,Tenet Healthcare,134,fortune1000,data_science
+f1000_134,Abbott Laboratories,Abbott Laboratories,135,fortune1000,data_science
+f1000_135,Dollar Tree,Dollar Tree,136,fortune1000,data_science
+f1000_136,Whirlpool,Whirlpool,137,fortune1000,data_science
+f1000_137,Southwest Airlines,Southwest Airlines,138,fortune1000,data_science
+f1000_138,Emerson Electric,Emerson Electric,139,fortune1000,data_science
+f1000_139,Staples,Staples,140,fortune1000,data_science
+f1000_140,Plains GP Holdings,Plains GP Holdings,141,fortune1000,data_science
+f1000_141,Penske Automotive Group,Penske Automotive Group,142,fortune1000,data_science
+f1000_142,Union Pacific,Union Pacific,143,fortune1000,data_science
+f1000_143,Danaher,Danaher,144,fortune1000,data_science
+f1000_144,Southern,Southern,145,fortune1000,data_science
+f1000_145,ManpowerGroup,ManpowerGroup,146,fortune1000,data_science
+f1000_146,Bristol-Myers Squibb,Bristol-Myers Squibb,147,fortune1000,data_science
+f1000_147,Altria Group,Altria Group,148,fortune1000,data_science
+f1000_148,Fluor,Fluor,149,fortune1000,data_science
+f1000_149,Kohl's,Kohl's,150,fortune1000,data_science
+f1000_150,Lear,Lear,151,fortune1000,data_science
+f1000_151,Jabil,Jabil,152,fortune1000,data_science
+f1000_152,Hartford Financial Services Group,Hartford Financial Services Group,153,fortune1000,data_science
+f1000_153,Thermo Fisher Scientific,Thermo Fisher Scientific,154,fortune1000,data_science
+f1000_154,Kimberly-Clark,Kimberly-Clark,155,fortune1000,data_science
+f1000_155,Molina Healthcare,Molina Healthcare,156,fortune1000,data_science
+f1000_156,PG&E Corp.,PG&E Corp.,157,fortune1000,data_science
+f1000_157,Supervalu,Supervalu,158,fortune1000,data_science
+f1000_158,Cummins,Cummins,159,fortune1000,data_science
+f1000_159,CenturyLink,CenturyLink,160,fortune1000,data_science
+f1000_160,AECOM,AECOM,161,fortune1000,data_science
+f1000_161,Xerox,Xerox,162,fortune1000,data_science
+f1000_162,Marriott International,Marriott International,163,fortune1000,data_science
+f1000_163,Paccar,Paccar,164,fortune1000,data_science
+f1000_164,General Mills,General Mills,165,fortune1000,data_science
+f1000_165,PNC Financial Services Group,PNC Financial Services Group,166,fortune1000,data_science
+f1000_166,American Electric Power,American Electric Power,167,fortune1000,data_science
+f1000_167,Icahn Enterprises,Icahn Enterprises,168,fortune1000,data_science
+f1000_168,Nucor,Nucor,169,fortune1000,data_science
+f1000_169,NextEra Energy,NextEra Energy,170,fortune1000,data_science
+f1000_170,Performance Food Group,Performance Food Group,171,fortune1000,data_science
+f1000_171,PBF Energy,PBF Energy,172,fortune1000,data_science
+f1000_172,Halliburton,Halliburton,173,fortune1000,data_science
+f1000_173,CarMax,CarMax,174,fortune1000,data_science
+f1000_174,Freeport-McMoRan,Freeport-McMoRan,175,fortune1000,data_science
+f1000_175,Whole Foods Market,Whole Foods Market,176,fortune1000,data_science
+f1000_176,Bank of New York Mellon,Bank of New York Mellon,177,fortune1000,data_science
+f1000_177,Gap,Gap,178,fortune1000,data_science
+f1000_178,Omnicom Group,Omnicom Group,179,fortune1000,data_science
+f1000_179,Genuine Parts,Genuine Parts,180,fortune1000,data_science
+f1000_180,DaVita,DaVita,181,fortune1000,data_science
+f1000_181,Colgate-Palmolive,Colgate-Palmolive,182,fortune1000,data_science
+f1000_182,PPG Industries,PPG Industries,183,fortune1000,data_science
+f1000_183,Goodyear Tire & Rubber,Goodyear Tire & Rubber,184,fortune1000,data_science
+f1000_184,Synchrony Financial,Synchrony Financial,185,fortune1000,data_science
+f1000_185,DISH Network,DISH Network,186,fortune1000,data_science
+f1000_186,Visa,Visa,187,fortune1000,data_science
+f1000_187,Nordstrom,Nordstrom,188,fortune1000,data_science
+f1000_188,INTL FCStone,INTL FCStone,189,fortune1000,data_science
+f1000_189,WestRock,WestRock,190,fortune1000,data_science
+f1000_190,XPO Logistics,XPO Logistics,191,fortune1000,data_science
+f1000_191,Aramark,Aramark,192,fortune1000,data_science
+f1000_192,CBS,CBS,193,fortune1000,data_science
+f1000_193,AES,AES,194,fortune1000,data_science
+f1000_194,WellCare Health Plans,WellCare Health Plans,195,fortune1000,data_science
+f1000_195,FirstEnergy,FirstEnergy,196,fortune1000,data_science
+f1000_196,Conagra Brands,Conagra Brands,197,fortune1000,data_science
+f1000_197,Synnex,Synnex,198,fortune1000,data_science
+f1000_198,CDW,CDW,199,fortune1000,data_science
+f1000_199,Textron,Textron,200,fortune1000,data_science
+f1000_200,Waste Management,Waste Management,201,fortune1000,data_science
+f1000_201,Illinois Tool Works,Illinois Tool Works,202,fortune1000,data_science
+f1000_202,Office Depot,Office Depot,203,fortune1000,data_science
+f1000_203,Monsanto,Monsanto,204,fortune1000,data_science
+f1000_204,Cognizant Technology Solutions,Cognizant Technology Solutions,205,fortune1000,data_science
+f1000_205,Texas Instruments,Texas Instruments,206,fortune1000,data_science
+f1000_206,Lincoln National,Lincoln National,207,fortune1000,data_science
+f1000_207,Newell Brands,Newell Brands,208,fortune1000,data_science
+f1000_208,Land O'Lakes,Land O'Lakes,209,fortune1000,data_science
+f1000_209,Marsh & McLennan,Marsh & McLennan,210,fortune1000,data_science
+f1000_210,Ecolab,Ecolab,211,fortune1000,data_science
+f1000_211,C.H. Robinson Worldwide,C.H. Robinson Worldwide,212,fortune1000,data_science
+f1000_212,Loews,Loews,213,fortune1000,data_science
+f1000_213,CBRE Group,CBRE Group,214,fortune1000,data_science
+f1000_214,Kinder Morgan,Kinder Morgan,215,fortune1000,data_science
+f1000_215,Kellogg,Kellogg,216,fortune1000,data_science
+f1000_216,Western Digital,Western Digital,217,fortune1000,data_science
+f1000_217,Guardian Life Ins. Co. of America,Guardian Life Ins. Co. of America,218,fortune1000,data_science
+f1000_218,Ross Stores,Ross Stores,219,fortune1000,data_science
+f1000_219,L Brands,L Brands,220,fortune1000,data_science
+f1000_220,J.C. Penney,J.C. Penney,221,fortune1000,data_science
+f1000_221,Farmers Insurance Exchange,Farmers Insurance Exchange,222,fortune1000,data_science
+f1000_222,Reynolds American,Reynolds American,223,fortune1000,data_science
+f1000_223,Viacom,Viacom,224,fortune1000,data_science
+f1000_224,Becton Dickinson,Becton Dickinson,225,fortune1000,data_science
+f1000_225,Micron Technology,Micron Technology,226,fortune1000,data_science
+f1000_226,Principal Financial,Principal Financial,227,fortune1000,data_science
+f1000_227,Arconic,Arconic,228,fortune1000,data_science
+f1000_228,NRG Energy,NRG Energy,229,fortune1000,data_science
+f1000_229,VF,VF,230,fortune1000,data_science
+f1000_230,Devon Energy,Devon Energy,231,fortune1000,data_science
+f1000_231,D.R. Horton,D.R. Horton,232,fortune1000,data_science
+f1000_232,Bed Bath & Beyond,Bed Bath & Beyond,233,fortune1000,data_science
+f1000_233,Consolidated Edison,Consolidated Edison,234,fortune1000,data_science
+f1000_234,Edison International,Edison International,235,fortune1000,data_science
+f1000_235,Sherwin-Williams,Sherwin-Williams,236,fortune1000,data_science
+f1000_236,NGL Energy Partners,NGL Energy Partners,237,fortune1000,data_science
+f1000_237,Dominion Energy,Dominion Energy,238,fortune1000,data_science
+f1000_238,Ameriprise Financial,Ameriprise Financial,239,fortune1000,data_science
+f1000_239,ADP,ADP,240,fortune1000,data_science
+f1000_240,Hilton Worldwide Holdings,Hilton Worldwide Holdings,241,fortune1000,data_science
+f1000_241,First Data,First Data,242,fortune1000,data_science
+f1000_242,Henry Schein,Henry Schein,243,fortune1000,data_science
+f1000_243,Toys 'R' Us,Toys 'R' Us,244,fortune1000,data_science
+f1000_244,BB&T Corp.,BB&T Corp.,245,fortune1000,data_science
+f1000_245,Reinsurance Group of America,Reinsurance Group of America,246,fortune1000,data_science
+f1000_246,Core-Mark Holding,Core-Mark Holding,247,fortune1000,data_science
+f1000_247,Biogen,Biogen,248,fortune1000,data_science
+f1000_248,Las Vegas Sands,Las Vegas Sands,249,fortune1000,data_science
+f1000_249,Stanley Black & Decker,Stanley Black & Decker,250,fortune1000,data_science
+f1000_250,Parker-Hannifin,Parker-Hannifin,251,fortune1000,data_science
+f1000_251,Stryker,Stryker,252,fortune1000,data_science
+f1000_252,Estee Lauder,Estee Lauder,253,fortune1000,data_science
+f1000_253,Celgene,Celgene,254,fortune1000,data_science
+f1000_254,BlackRock,BlackRock,255,fortune1000,data_science
+f1000_255,Xcel Energy,Xcel Energy,256,fortune1000,data_science
+f1000_256,CSX,CSX,257,fortune1000,data_science
+f1000_257,Unum Group,Unum Group,258,fortune1000,data_science
+f1000_258,Jacobs Engineering Group,Jacobs Engineering Group,259,fortune1000,data_science
+f1000_259,Lennar,Lennar,260,fortune1000,data_science
+f1000_260,Group 1 Automotive,Group 1 Automotive,261,fortune1000,data_science
+f1000_261,Leucadia National,Leucadia National,262,fortune1000,data_science
+f1000_262,Entergy,Entergy,263,fortune1000,data_science
+f1000_263,PayPal Holdings,PayPal Holdings,264,fortune1000,data_science
+f1000_264,Applied Materials,Applied Materials,265,fortune1000,data_science
+f1000_265,Voya Financial,Voya Financial,266,fortune1000,data_science
+f1000_266,Mastercard,Mastercard,267,fortune1000,data_science
+f1000_267,Priceline Group,Priceline Group,268,fortune1000,data_science
+f1000_268,Liberty Interactive,Liberty Interactive,269,fortune1000,data_science
+f1000_269,AutoZone,AutoZone,270,fortune1000,data_science
+f1000_270,State Street Corp.,State Street Corp.,271,fortune1000,data_science
+f1000_271,DTE Energy,DTE Energy,272,fortune1000,data_science
+f1000_272,L3 Technologies,L3 Technologies,273,fortune1000,data_science
+f1000_273,HollyFrontier,HollyFrontier,274,fortune1000,data_science
+f1000_274,Praxair,Praxair,275,fortune1000,data_science
+f1000_275,Universal Health Services,Universal Health Services,276,fortune1000,data_science
+f1000_276,Discover Financial Services,Discover Financial Services,277,fortune1000,data_science
+f1000_277,Occidental Petroleum,Occidental Petroleum,278,fortune1000,data_science
+f1000_278,United States Steel,United States Steel,279,fortune1000,data_science
+f1000_279,Sempra Energy,Sempra Energy,280,fortune1000,data_science
+f1000_280,Baxter International,Baxter International,281,fortune1000,data_science
+f1000_281,W.W. Grainger,W.W. Grainger,282,fortune1000,data_science
+f1000_282,Autoliv,Autoliv,283,fortune1000,data_science
+f1000_283,Norfolk Southern,Norfolk Southern,284,fortune1000,data_science
+f1000_284,Baker Hughes,Baker Hughes,285,fortune1000,data_science
+f1000_285,Ally Financial,Ally Financial,286,fortune1000,data_science
+f1000_286,Sonic Automotive,Sonic Automotive,287,fortune1000,data_science
+f1000_287,Owens & Minor,Owens & Minor,288,fortune1000,data_science
+f1000_288,Huntsman,Huntsman,289,fortune1000,data_science
+f1000_289,Laboratory Corp. of America,Laboratory Corp. of America,290,fortune1000,data_science
+f1000_290,Murphy USA,Murphy USA,291,fortune1000,data_science
+f1000_291,Advance Auto Parts,Advance Auto Parts,292,fortune1000,data_science
+f1000_292,Fidelity National Financial,Fidelity National Financial,293,fortune1000,data_science
+f1000_293,Air Products & Chemicals,Air Products & Chemicals,294,fortune1000,data_science
+f1000_294,Hormel Foods,Hormel Foods,295,fortune1000,data_science
+f1000_295,Hertz Global Holdings,Hertz Global Holdings,296,fortune1000,data_science
+f1000_296,MGM Resorts International,MGM Resorts International,297,fortune1000,data_science
+f1000_297,Corning,Corning,298,fortune1000,data_science
+f1000_298,Republic Services,Republic Services,299,fortune1000,data_science
+f1000_299,Alcoa,Alcoa,300,fortune1000,data_science
+f1000_300,Fidelity National Information Services,Fidelity National Information Services,301,fortune1000,data_science
+f1000_301,Pacific Life,Pacific Life,302,fortune1000,data_science
+f1000_302,SunTrust Banks,SunTrust Banks,303,fortune1000,data_science
+f1000_303,LKQ,LKQ,304,fortune1000,data_science
+f1000_304,BorgWarner,BorgWarner,305,fortune1000,data_science
+f1000_305,Ball,Ball,306,fortune1000,data_science
+f1000_306,CST Brands,CST Brands,307,fortune1000,data_science
+f1000_307,Public Service Enterprise Group,Public Service Enterprise Group,308,fortune1000,data_science
+f1000_308,Eastman Chemical,Eastman Chemical,309,fortune1000,data_science
+f1000_309,eBay,eBay,310,fortune1000,data_science
+f1000_310,Mohawk Industries,Mohawk Industries,311,fortune1000,data_science
+f1000_311,Oneok,Oneok,312,fortune1000,data_science
+f1000_312,Frontier Communications,Frontier Communications,313,fortune1000,data_science
+f1000_313,Netflix,Netflix,314,fortune1000,data_science
+f1000_314,American Family Insurance Group,American Family Insurance Group,315,fortune1000,data_science
+f1000_315,Thrivent Financial for Lutherans,Thrivent Financial for Lutherans,316,fortune1000,data_science
+f1000_316,Expedia,Expedia,317,fortune1000,data_science
+f1000_317,Lithia Motors,Lithia Motors,318,fortune1000,data_science
+f1000_318,Avis Budget Group,Avis Budget Group,319,fortune1000,data_science
+f1000_319,Reliance Steel & Aluminum,Reliance Steel & Aluminum,320,fortune1000,data_science
+f1000_320,GameStop,GameStop,321,fortune1000,data_science
+f1000_321,Tenneco,Tenneco,322,fortune1000,data_science
+f1000_322,O'Reilly Automotive,O'Reilly Automotive,323,fortune1000,data_science
+f1000_323,Peter Kiewit Sons',Peter Kiewit Sons',324,fortune1000,data_science
+f1000_324,United Natural Foods,United Natural Foods,325,fortune1000,data_science
+f1000_325,salesforce.com,salesforce.com,326,fortune1000,data_science
+f1000_326,Boston Scientific,Boston Scientific,327,fortune1000,data_science
+f1000_327,Newmont Mining,Newmont Mining,328,fortune1000,data_science
+f1000_328,Genworth Financial,Genworth Financial,329,fortune1000,data_science
+f1000_329,Live Nation Entertainment,Live Nation Entertainment,330,fortune1000,data_science
+f1000_330,Veritiv,Veritiv,331,fortune1000,data_science
+f1000_331,News Corp.,News Corp.,332,fortune1000,data_science
+f1000_332,Crown Holdings,Crown Holdings,333,fortune1000,data_science
+f1000_333,Global Partners,Global Partners,334,fortune1000,data_science
+f1000_334,PVH,PVH,335,fortune1000,data_science
+f1000_335,Level 3 Communications,Level 3 Communications,336,fortune1000,data_science
+f1000_336,Navistar International,Navistar International,337,fortune1000,data_science
+f1000_337,Univar,Univar,338,fortune1000,data_science
+f1000_338,Campbell Soup,Campbell Soup,339,fortune1000,data_science
+f1000_339,Dick's Sporting Goods,Dick's Sporting Goods,340,fortune1000,data_science
+f1000_340,Weyerhaeuser,Weyerhaeuser,341,fortune1000,data_science
+f1000_341,Mutual of Omaha Insurance,Mutual of Omaha Insurance,342,fortune1000,data_science
+f1000_342,Chesapeake Energy,Chesapeake Energy,343,fortune1000,data_science
+f1000_343,Anadarko Petroleum,Anadarko Petroleum,344,fortune1000,data_science
+f1000_344,Interpublic Group,Interpublic Group,345,fortune1000,data_science
+f1000_345,J.M. Smucker,J.M. Smucker,346,fortune1000,data_science
+f1000_346,Steel Dynamics,Steel Dynamics,347,fortune1000,data_science
+f1000_347,Foot Locker,Foot Locker,348,fortune1000,data_science
+f1000_348,Western Refining,Western Refining,349,fortune1000,data_science
+f1000_349,SpartanNash,SpartanNash,350,fortune1000,data_science
+f1000_350,Dean Foods,Dean Foods,351,fortune1000,data_science
+f1000_351,Zimmer Biomet Holdings,Zimmer Biomet Holdings,352,fortune1000,data_science
+f1000_352,PulteGroup,PulteGroup,353,fortune1000,data_science
+f1000_353,W.R. Berkley,W.R. Berkley,354,fortune1000,data_science
+f1000_354,Quanta Services,Quanta Services,355,fortune1000,data_science
+f1000_355,EOG Resources,EOG Resources,356,fortune1000,data_science
+f1000_356,Charles Schwab,Charles Schwab,357,fortune1000,data_science
+f1000_357,Eversource Energy,Eversource Energy,358,fortune1000,data_science
+f1000_358,Anixter International,Anixter International,359,fortune1000,data_science
+f1000_359,EMCOR Group,EMCOR Group,360,fortune1000,data_science
+f1000_360,Assurant,Assurant,361,fortune1000,data_science
+f1000_361,CenterPoint Energy,CenterPoint Energy,362,fortune1000,data_science
+f1000_362,Harris,Harris,363,fortune1000,data_science
+f1000_363,HD Supply Holdings,HD Supply Holdings,364,fortune1000,data_science
+f1000_364,PPL,PPL,365,fortune1000,data_science
+f1000_365,Quest Diagnostics,Quest Diagnostics,366,fortune1000,data_science
+f1000_366,Williams,Williams,367,fortune1000,data_science
+f1000_367,WEC Energy Group,WEC Energy Group,368,fortune1000,data_science
+f1000_368,Hershey,Hershey,369,fortune1000,data_science
+f1000_369,AGCO,AGCO,370,fortune1000,data_science
+f1000_370,Ralph Lauren,Ralph Lauren,371,fortune1000,data_science
+f1000_371,Masco,Masco,372,fortune1000,data_science
+f1000_372,WESCO International,WESCO International,373,fortune1000,data_science
+f1000_373,LifePoint Health,LifePoint Health,374,fortune1000,data_science
+f1000_374,National Oilwell Varco,National Oilwell Varco,375,fortune1000,data_science
+f1000_375,Kindred Healthcare,Kindred Healthcare,376,fortune1000,data_science
+f1000_376,Mosaic,Mosaic,377,fortune1000,data_science
+f1000_377,Alliance Data Systems,Alliance Data Systems,378,fortune1000,data_science
+f1000_378,Computer Sciences,Computer Sciences,379,fortune1000,data_science
+f1000_379,Huntington Ingalls Industries,Huntington Ingalls Industries,380,fortune1000,data_science
+f1000_380,Leidos Holdings,Leidos Holdings,381,fortune1000,data_science
+f1000_381,Erie Insurance Group,Erie Insurance Group,382,fortune1000,data_science
+f1000_382,Tesla,Tesla,383,fortune1000,data_science
+f1000_383,Ascena Retail Group,Ascena Retail Group,384,fortune1000,data_science
+f1000_384,Darden Restaurants,Darden Restaurants,385,fortune1000,data_science
+f1000_385,Harman International Industries,Harman International Industries,386,fortune1000,data_science
+f1000_386,Nvidia,Nvidia,387,fortune1000,data_science
+f1000_387,R.R. Donnelley & Sons,R.R. Donnelley & Sons,388,fortune1000,data_science
+f1000_388,Fifth Third Bancorp,Fifth Third Bancorp,389,fortune1000,data_science
+f1000_389,Quintiles IMS Holdings,Quintiles IMS Holdings,390,fortune1000,data_science
+f1000_390,Jones Lang LaSalle,Jones Lang LaSalle,391,fortune1000,data_science
+f1000_391,Dover,Dover,392,fortune1000,data_science
+f1000_392,Spirit AeroSystems Holdings,Spirit AeroSystems Holdings,393,fortune1000,data_science
+f1000_393,Ryder System,Ryder System,394,fortune1000,data_science
+f1000_394,A-Mark Precious Metals,A-Mark Precious Metals,395,fortune1000,data_science
+f1000_395,Tractor Supply,Tractor Supply,396,fortune1000,data_science
+f1000_396,Sealed Air,Sealed Air,397,fortune1000,data_science
+f1000_397,Auto-Owners Insurance,Auto-Owners Insurance,398,fortune1000,data_science
+f1000_398,Yum China Holdings,Yum China Holdings,399,fortune1000,data_science
+f1000_399,Calpine,Calpine,400,fortune1000,data_science
+f1000_400,Owens-Illinois,Owens-Illinois,401,fortune1000,data_science
+f1000_401,Targa Resources,Targa Resources,402,fortune1000,data_science
+f1000_402,JetBlue Airways,JetBlue Airways,403,fortune1000,data_science
+f1000_403,Jones Financial (Edward Jones),Jones Financial (Edward Jones),404,fortune1000,data_science
+f1000_404,Franklin Resources,Franklin Resources,405,fortune1000,data_science
+f1000_405,Activision Blizzard,Activision Blizzard,406,fortune1000,data_science
+f1000_406,J.B. Hunt Transport Services,J.B. Hunt Transport Services,407,fortune1000,data_science
+f1000_407,Constellation Brands,Constellation Brands,408,fortune1000,data_science
+f1000_408,NCR,NCR,409,fortune1000,data_science
+f1000_409,Asbury Automotive Group,Asbury Automotive Group,410,fortune1000,data_science
+f1000_410,American Financial Group,American Financial Group,411,fortune1000,data_science
+f1000_411,Discovery Communications,Discovery Communications,412,fortune1000,data_science
+f1000_412,Berry Global Group,Berry Global Group,413,fortune1000,data_science
+f1000_413,Sanmina,Sanmina,414,fortune1000,data_science
+f1000_414,CalAtlantic Group,CalAtlantic Group,415,fortune1000,data_science
+f1000_415,Dr Pepper Snapple Group,Dr Pepper Snapple Group,416,fortune1000,data_science
+f1000_416,Dillard's,Dillard's,417,fortune1000,data_science
+f1000_417,HRG Group,HRG Group,418,fortune1000,data_science
+f1000_418,CMS Energy,CMS Energy,419,fortune1000,data_science
+f1000_419,Graybar Electric,Graybar Electric,420,fortune1000,data_science
+f1000_420,Builders FirstSource,Builders FirstSource,421,fortune1000,data_science
+f1000_421,Yum Brands,Yum Brands,422,fortune1000,data_science
+f1000_422,Casey's General Stores,Casey's General Stores,423,fortune1000,data_science
+f1000_423,Amphenol,Amphenol,424,fortune1000,data_science
+f1000_424,Oshkosh,Oshkosh,425,fortune1000,data_science
+f1000_425,iHeartMedia,iHeartMedia,426,fortune1000,data_science
+f1000_426,TreeHouse Foods,TreeHouse Foods,427,fortune1000,data_science
+f1000_427,Alleghany,Alleghany,428,fortune1000,data_science
+f1000_428,Expeditors International of Washington,Expeditors International of Washington,429,fortune1000,data_science
+f1000_429,Avery Dennison,Avery Dennison,430,fortune1000,data_science
+f1000_430,Ameren,Ameren,431,fortune1000,data_science
+f1000_431,Hanesbrands,Hanesbrands,432,fortune1000,data_science
+f1000_432,Motorola Solutions,Motorola Solutions,433,fortune1000,data_science
+f1000_433,St. Jude Medical,St. Jude Medical,434,fortune1000,data_science
+f1000_434,Harley-Davidson,Harley-Davidson,435,fortune1000,data_science
+f1000_435,Regions Financial,Regions Financial,436,fortune1000,data_science
+f1000_436,Intercontinental Exchange,Intercontinental Exchange,437,fortune1000,data_science
+f1000_437,Alaska Air Group,Alaska Air Group,438,fortune1000,data_science
+f1000_438,Old Republic International,Old Republic International,439,fortune1000,data_science
+f1000_439,Lam Research,Lam Research,440,fortune1000,data_science
+f1000_440,AK Steel Holding,AK Steel Holding,441,fortune1000,data_science
+f1000_441,Rockwell Automation,Rockwell Automation,442,fortune1000,data_science
+f1000_442,Adobe Systems,Adobe Systems,443,fortune1000,data_science
+f1000_443,Avon Products,Avon Products,444,fortune1000,data_science
+f1000_444,Terex,Terex,445,fortune1000,data_science
+f1000_445,NVR,NVR,446,fortune1000,data_science
+f1000_446,Dana,Dana,447,fortune1000,data_science
+f1000_447,Realogy Holdings,Realogy Holdings,448,fortune1000,data_science
+f1000_448,American Tower,American Tower,449,fortune1000,data_science
+f1000_449,Packaging Corp. of America,Packaging Corp. of America,450,fortune1000,data_science
+f1000_450,Citizens Financial Group,Citizens Financial Group,451,fortune1000,data_science
+f1000_451,United Rentals,United Rentals,452,fortune1000,data_science
+f1000_452,Clorox,Clorox,453,fortune1000,data_science
+f1000_453,Genesis Healthcare,Genesis Healthcare,454,fortune1000,data_science
+f1000_454,M&T Bank Corp.,M&T Bank Corp.,455,fortune1000,data_science
+f1000_455,Ingredion,Ingredion,456,fortune1000,data_science
+f1000_456,UGI,UGI,457,fortune1000,data_science
+f1000_457,Owens Corning,Owens Corning,458,fortune1000,data_science
+f1000_458,S&P Global,S&P Global,459,fortune1000,data_science
+f1000_459,Markel,Markel,460,fortune1000,data_science
+f1000_460,Wyndham Worldwide,Wyndham Worldwide,461,fortune1000,data_science
+f1000_461,Arthur J. Gallagher,Arthur J. Gallagher,462,fortune1000,data_science
+f1000_462,Burlington Stores,Burlington Stores,463,fortune1000,data_science
+f1000_463,First American Financial,First American Financial,464,fortune1000,data_science
+f1000_464,Symantec,Symantec,465,fortune1000,data_science
+f1000_465,Patterson,Patterson,466,fortune1000,data_science
+f1000_466,Olin,Olin,467,fortune1000,data_science
+f1000_467,NetApp,NetApp,468,fortune1000,data_science
+f1000_468,Raymond James Financial,Raymond James Financial,469,fortune1000,data_science
+f1000_469,TravelCenters of America,TravelCenters of America,470,fortune1000,data_science
+f1000_470,Fiserv,Fiserv,471,fortune1000,data_science
+f1000_471,Host Hotels & Resorts,Host Hotels & Resorts,472,fortune1000,data_science
+f1000_472,Insight Enterprises,Insight Enterprises,473,fortune1000,data_science
+f1000_473,Mattel,Mattel,474,fortune1000,data_science
+f1000_474,AmTrust Financial Services,AmTrust Financial Services,475,fortune1000,data_science
+f1000_475,Cincinnati Financial,Cincinnati Financial,476,fortune1000,data_science
+f1000_476,Simon Property Group,Simon Property Group,477,fortune1000,data_science
+f1000_477,Western Union,Western Union,478,fortune1000,data_science
+f1000_478,KeyCorp,KeyCorp,479,fortune1000,data_science
+f1000_479,Delek US Holdings,Delek US Holdings,480,fortune1000,data_science
+f1000_480,Booz Allen Hamilton Holding,Booz Allen Hamilton Holding,481,fortune1000,data_science
+f1000_481,Chemours,Chemours,482,fortune1000,data_science
+f1000_482,Western & Southern Financial Group,Western & Southern Financial Group,483,fortune1000,data_science
+f1000_483,Celanese,Celanese,484,fortune1000,data_science
+f1000_484,Windstream Holdings,Windstream Holdings,485,fortune1000,data_science
+f1000_485,Seaboard,Seaboard,486,fortune1000,data_science
+f1000_486,Essendant,Essendant,487,fortune1000,data_science
+f1000_487,Apache,Apache,488,fortune1000,data_science
+f1000_488,Airgas,Airgas,489,fortune1000,data_science
+f1000_489,Kelly Services,Kelly Services,490,fortune1000,data_science
+f1000_490,Liberty Media,Liberty Media,491,fortune1000,data_science
+f1000_491,Rockwell Collins,Rockwell Collins,492,fortune1000,data_science
+f1000_492,Robert Half International,Robert Half International,493,fortune1000,data_science
+f1000_493,CH2M Hill,CH2M Hill,494,fortune1000,data_science
+f1000_494,Big Lots,Big Lots,495,fortune1000,data_science
+f1000_495,Michaels Cos.,Michaels Cos.,496,fortune1000,data_science
+f1000_496,Toll Brothers,Toll Brothers,497,fortune1000,data_science
+f1000_497,Yahoo,Yahoo,498,fortune1000,data_science
+f1000_498,Vistra Energy,Vistra Energy,499,fortune1000,data_science
+f1000_499,ABM Industries,ABM Industries,500,fortune1000,data_science
+f1000_500,Northern Trust,Northern Trust,501,fortune1000,data_science
+f1000_501,MasTec,MasTec,502,fortune1000,data_science
+f1000_502,Blackstone Group,Blackstone Group,503,fortune1000,data_science
+f1000_503,Telephone & Data Systems,Telephone & Data Systems,504,fortune1000,data_science
+f1000_504,Domtar,Domtar,505,fortune1000,data_science
+f1000_505,Williams-Sonoma,Williams-Sonoma,506,fortune1000,data_science
+f1000_506,Westlake Chemical,Westlake Chemical,507,fortune1000,data_science
+f1000_507,Post Holdings,Post Holdings,508,fortune1000,data_science
+f1000_508,Hasbro,Hasbro,509,fortune1000,data_science
+f1000_509,Juniper Networks,Juniper Networks,510,fortune1000,data_science
+f1000_510,Fortune Brands Home & Security,Fortune Brands Home & Security,511,fortune1000,data_science
+f1000_511,Brookdale Senior Living,Brookdale Senior Living,512,fortune1000,data_science
+f1000_512,Tutor Perini,Tutor Perini,513,fortune1000,data_science
+f1000_513,Navient,Navient,514,fortune1000,data_science
+f1000_514,Neiman Marcus Group,Neiman Marcus Group,515,fortune1000,data_science
+f1000_515,Ashland Global Holdings,Ashland Global Holdings,516,fortune1000,data_science
+f1000_516,Hanover Insurance Group,Hanover Insurance Group,517,fortune1000,data_science
+f1000_517,CommScope Holding,CommScope Holding,518,fortune1000,data_science
+f1000_518,Spectra Energy,Spectra Energy,519,fortune1000,data_science
+f1000_519,Cintas,Cintas,520,fortune1000,data_science
+f1000_520,Zoetis,Zoetis,521,fortune1000,data_science
+f1000_521,Molson Coors Brewing,Molson Coors Brewing,522,fortune1000,data_science
+f1000_522,Regeneron Pharmaceuticals,Regeneron Pharmaceuticals,523,fortune1000,data_science
+f1000_523,Ulta Beauty,Ulta Beauty,524,fortune1000,data_science
+f1000_524,Hess,Hess,525,fortune1000,data_science
+f1000_525,Magellan Health,Magellan Health,526,fortune1000,data_science
+f1000_526,Intuit,Intuit,527,fortune1000,data_science
+f1000_527,Under Armour,Under Armour,528,fortune1000,data_science
+f1000_528,RPM International,RPM International,529,fortune1000,data_science
+f1000_529,Cerner,Cerner,530,fortune1000,data_science
+f1000_530,Sonoco Products,Sonoco Products,531,fortune1000,data_science
+f1000_531,Securian Financial Group,Securian Financial Group,532,fortune1000,data_science
+f1000_532,Peabody Energy,Peabody Energy,533,fortune1000,data_science
+f1000_533,YRC Worldwide,YRC Worldwide,534,fortune1000,data_science
+f1000_534,Commercial Metals,Commercial Metals,535,fortune1000,data_science
+f1000_535,Marathon Oil,Marathon Oil,536,fortune1000,data_science
+f1000_536,Polaris Industries,Polaris Industries,537,fortune1000,data_science
+f1000_537,Envision Healthcare,Envision Healthcare,538,fortune1000,data_science
+f1000_538,Trinity Industries,Trinity Industries,539,fortune1000,data_science
+f1000_539,Thor Industries,Thor Industries,540,fortune1000,data_science
+f1000_540,Caesars Entertainment,Caesars Entertainment,541,fortune1000,data_science
+f1000_541,Levi Strauss,Levi Strauss,542,fortune1000,data_science
+f1000_542,FMC Technologies,FMC Technologies,543,fortune1000,data_science
+f1000_543,VWR,VWR,544,fortune1000,data_science
+f1000_544,NiSource,NiSource,545,fortune1000,data_science
+f1000_545,Coach,Coach,546,fortune1000,data_science
+f1000_546,Brunswick,Brunswick,547,fortune1000,data_science
+f1000_547,Wynn Resorts,Wynn Resorts,548,fortune1000,data_science
+f1000_548,Orbital ATK,Orbital ATK,549,fortune1000,data_science
+f1000_549,CIT Group,CIT Group,550,fortune1000,data_science
+f1000_550,Science Applications International,Science Applications International,551,fortune1000,data_science
+f1000_551,Hyatt Hotels,Hyatt Hotels,552,fortune1000,data_science
+f1000_552,McCormick,McCormick,553,fortune1000,data_science
+f1000_553,Diplomat Pharmacy,Diplomat Pharmacy,554,fortune1000,data_science
+f1000_554,Barnes & Noble,Barnes & Noble,555,fortune1000,data_science
+f1000_555,Electronic Arts,Electronic Arts,556,fortune1000,data_science
+f1000_556,FM Global,FM Global,557,fortune1000,data_science
+f1000_557,Coty,Coty,558,fortune1000,data_science
+f1000_558,Smart & Final Stores,Smart & Final Stores,559,fortune1000,data_science
+f1000_559,Quad/Graphics,Quad/Graphics,560,fortune1000,data_science
+f1000_560,Dynegy,Dynegy,561,fortune1000,data_science
+f1000_561,Graphic Packaging Holding,Graphic Packaging Holding,562,fortune1000,data_science
+f1000_562,Select Medical Holdings,Select Medical Holdings,563,fortune1000,data_science
+f1000_563,Welltower,Welltower,564,fortune1000,data_science
+f1000_564,Advanced Micro Devices,Advanced Micro Devices,565,fortune1000,data_science
+f1000_565,USG,USG,566,fortune1000,data_science
+f1000_566,KBR,KBR,567,fortune1000,data_science
+f1000_567,Bloomin' Brands,Bloomin' Brands,568,fortune1000,data_science
+f1000_568,MDU Resources Group,MDU Resources Group,569,fortune1000,data_science
+f1000_569,CSRA,CSRA,570,fortune1000,data_science
+f1000_570,Laureate Education,Laureate Education,571,fortune1000,data_science
+f1000_571,SCANA,SCANA,572,fortune1000,data_science
+f1000_572,T. Rowe Price,T. Rowe Price,573,fortune1000,data_science
+f1000_573,Watsco,Watsco,574,fortune1000,data_science
+f1000_574,Rush Enterprises,Rush Enterprises,575,fortune1000,data_science
+f1000_575,Agilent Technologies,Agilent Technologies,576,fortune1000,data_science
+f1000_576,WhiteWave Foods,WhiteWave Foods,577,fortune1000,data_science
+f1000_577,Valspar,Valspar,578,fortune1000,data_science
+f1000_578,Total System Services,Total System Services,579,fortune1000,data_science
+f1000_579,Torchmark,Torchmark,580,fortune1000,data_science
+f1000_580,Cabela's,Cabela's,581,fortune1000,data_science
+f1000_581,Beacon Roofing Supply,Beacon Roofing Supply,582,fortune1000,data_science
+f1000_582,CA,CA,583,fortune1000,data_science
+f1000_583,LPL Financial Holdings,LPL Financial Holdings,584,fortune1000,data_science
+f1000_584,Sprouts Farmers Market,Sprouts Farmers Market,585,fortune1000,data_science
+f1000_585,Swift Transportation,Swift Transportation,586,fortune1000,data_science
+f1000_586,Bemis,Bemis,587,fortune1000,data_science
+f1000_587,Tiffany,Tiffany,588,fortune1000,data_science
+f1000_588,Flowserve,Flowserve,589,fortune1000,data_science
+f1000_589,CNO Financial Group,CNO Financial Group,590,fortune1000,data_science
+f1000_590,Fastenal,Fastenal,591,fortune1000,data_science
+f1000_591,Sally Beauty Holdings,Sally Beauty Holdings,592,fortune1000,data_science
+f1000_592,American Axle & Manufacturing,American Axle & Manufacturing,593,fortune1000,data_science
+f1000_593,Flowers Foods,Flowers Foods,594,fortune1000,data_science
+f1000_594,Andersons,Andersons,595,fortune1000,data_science
+f1000_595,Crown Castle International,Crown Castle International,596,fortune1000,data_science
+f1000_596,Boise Cascade,Boise Cascade,597,fortune1000,data_science
+f1000_597,ON Semiconductor,ON Semiconductor,598,fortune1000,data_science
+f1000_598,Chipotle Mexican Grill,Chipotle Mexican Grill,599,fortune1000,data_science
+f1000_599,Amkor Technology,Amkor Technology,600,fortune1000,data_science
+f1000_600,Triumph Group,Triumph Group,601,fortune1000,data_science
+f1000_601,OneMain Holdings,OneMain Holdings,602,fortune1000,data_science
+f1000_602,General Cable,General Cable,603,fortune1000,data_science
+f1000_603,Ametek,Ametek,604,fortune1000,data_science
+f1000_604,Alon USA Energy,Alon USA Energy,605,fortune1000,data_science
+f1000_605,Pioneer Natural Resources,Pioneer Natural Resources,606,fortune1000,data_science
+f1000_606,Martin Marietta Materials,Martin Marietta Materials,607,fortune1000,data_science
+f1000_607,Ingles Markets,Ingles Markets,608,fortune1000,data_science
+f1000_608,Roper Technologies,Roper Technologies,609,fortune1000,data_science
+f1000_609,Huntington Bancshares,Huntington Bancshares,610,fortune1000,data_science
+f1000_610,Xylem,Xylem,611,fortune1000,data_science
+f1000_611,Unified Grocers,Unified Grocers,612,fortune1000,data_science
+f1000_612,Leggett & Platt,Leggett & Platt,613,fortune1000,data_science
+f1000_613,Dentsply Sirona,Dentsply Sirona,614,fortune1000,data_science
+f1000_614,CACI International,CACI International,615,fortune1000,data_science
+f1000_615,Mead Johnson Nutrition,Mead Johnson Nutrition,616,fortune1000,data_science
+f1000_616,C.R. Bard,C.R. Bard,617,fortune1000,data_science
+f1000_617,Snap-on,Snap-on,618,fortune1000,data_science
+f1000_618,HealthSouth,HealthSouth,619,fortune1000,data_science
+f1000_619,Nasdaq,Nasdaq,620,fortune1000,data_science
+f1000_620,Avaya,Avaya,621,fortune1000,data_science
+f1000_621,CF Industries Holdings,CF Industries Holdings,622,fortune1000,data_science
+f1000_622,Carlisle,Carlisle,623,fortune1000,data_science
+f1000_623,Equinix,Equinix,624,fortune1000,data_science
+f1000_624,LSC Communications,LSC Communications,625,fortune1000,data_science
+f1000_625,Colfax,Colfax,626,fortune1000,data_science
+f1000_626,Lennox International,Lennox International,627,fortune1000,data_science
+f1000_627,Iasis Healthcare,Iasis Healthcare,628,fortune1000,data_science
+f1000_628,Silgan Holdings,Silgan Holdings,629,fortune1000,data_science
+f1000_629,American Eagle Outfitters,American Eagle Outfitters,630,fortune1000,data_science
+f1000_630,Moody's,Moody's,631,fortune1000,data_science
+f1000_631,Calumet Specialty Products Partners,Calumet Specialty Products Partners,632,fortune1000,data_science
+f1000_632,CME Group,CME Group,633,fortune1000,data_science
+f1000_633,KB Home,KB Home,634,fortune1000,data_science
+f1000_634,Vulcan Materials,Vulcan Materials,635,fortune1000,data_science
+f1000_635,Platform Specialty Products,Platform Specialty Products,636,fortune1000,data_science
+f1000_636,Vantiv,Vantiv,637,fortune1000,data_science
+f1000_637,Skechers U.S.A.,Skechers U.S.A.,638,fortune1000,data_science
+f1000_638,Zebra Technologies,Zebra Technologies,639,fortune1000,data_science
+f1000_639,Hub Group,Hub Group,640,fortune1000,data_science
+f1000_640,HSN,HSN,641,fortune1000,data_science
+f1000_641,Stericycle,Stericycle,642,fortune1000,data_science
+f1000_642,National General Holdings,National General Holdings,643,fortune1000,data_science
+f1000_643,Taylor Morrison Home,Taylor Morrison Home,644,fortune1000,data_science
+f1000_644,Urban Outfitters,Urban Outfitters,645,fortune1000,data_science
+f1000_645,Resolute Forest Products,Resolute Forest Products,646,fortune1000,data_science
+f1000_646,ScanSource,ScanSource,647,fortune1000,data_science
+f1000_647,Camping World Holdings,Camping World Holdings,648,fortune1000,data_science
+f1000_648,Iron Mountain,Iron Mountain,649,fortune1000,data_science
+f1000_649,Hubbell,Hubbell,650,fortune1000,data_science
+f1000_650,Pinnacle West Capital,Pinnacle West Capital,651,fortune1000,data_science
+f1000_651,Church & Dwight,Church & Dwight,652,fortune1000,data_science
+f1000_652,Noble Energy,Noble Energy,653,fortune1000,data_science
+f1000_653,Albemarle,Albemarle,654,fortune1000,data_science
+f1000_654,Cooper-Standard Holdings,Cooper-Standard Holdings,655,fortune1000,data_science
+f1000_655,KKR,KKR,656,fortune1000,data_science
+f1000_656,Country Financial,Country Financial,657,fortune1000,data_science
+f1000_657,Ventas,Ventas,658,fortune1000,data_science
+f1000_658,Hexion,Hexion,659,fortune1000,data_science
+f1000_659,Analog Devices,Analog Devices,660,fortune1000,data_science
+f1000_660,Citrix Systems,Citrix Systems,661,fortune1000,data_science
+f1000_661,Green Plains,Green Plains,662,fortune1000,data_science
+f1000_662,Pitney Bowes,Pitney Bowes,663,fortune1000,data_science
+f1000_663,Scripps Networks Interactive,Scripps Networks Interactive,664,fortune1000,data_science
+f1000_664,Darling Ingredients,Darling Ingredients,665,fortune1000,data_science
+f1000_665,Wayfair,Wayfair,666,fortune1000,data_science
+f1000_666,Tailored Brands,Tailored Brands,667,fortune1000,data_science
+f1000_667,Sabre,Sabre,668,fortune1000,data_science
+f1000_668,Global Payments,Global Payments,669,fortune1000,data_science
+f1000_669,Atmos Energy,Atmos Energy,670,fortune1000,data_science
+f1000_670,TEGNA,TEGNA,671,fortune1000,data_science
+f1000_671,Diebold Nixdorf,Diebold Nixdorf,672,fortune1000,data_science
+f1000_672,PolyOne,PolyOne,673,fortune1000,data_science
+f1000_673,TD Ameritrade Holding,TD Ameritrade Holding,674,fortune1000,data_science
+f1000_674,Abercrombie & Fitch,Abercrombie & Fitch,675,fortune1000,data_science
+f1000_675,Greif,Greif,676,fortune1000,data_science
+f1000_676,Alliant Energy,Alliant Energy,677,fortune1000,data_science
+f1000_677,American Water Works,American Water Works,678,fortune1000,data_science
+f1000_678,Acuity Brands,Acuity Brands,679,fortune1000,data_science
+f1000_679,Skyworks Solutions,Skyworks Solutions,680,fortune1000,data_science
+f1000_680,FMC,FMC,681,fortune1000,data_science
+f1000_681,Amerco,Amerco,682,fortune1000,data_science
+f1000_682,CUNA Mutual Group,CUNA Mutual Group,683,fortune1000,data_science
+f1000_683,Brinker International,Brinker International,684,fortune1000,data_science
+f1000_684,Buckeye Partners,Buckeye Partners,685,fortune1000,data_science
+f1000_685,Warner Music Group,Warner Music Group,686,fortune1000,data_science
+f1000_686,Universal Forest Products,Universal Forest Products,687,fortune1000,data_science
+f1000_687,American National Insurance,American National Insurance,688,fortune1000,data_science
+f1000_688,Mercury General,Mercury General,689,fortune1000,data_science
+f1000_689,Regal Beloit,Regal Beloit,690,fortune1000,data_science
+f1000_690,Varian Medical Systems,Varian Medical Systems,691,fortune1000,data_science
+f1000_691,Aaron's,Aaron's,692,fortune1000,data_science
+f1000_692,Visteon,Visteon,693,fortune1000,data_science
+f1000_693,Carter's,Carter's,694,fortune1000,data_science
+f1000_694,Meritor,Meritor,695,fortune1000,data_science
+f1000_695,Regal Entertainment Group,Regal Entertainment Group,696,fortune1000,data_science
+f1000_696,Mednax,Mednax,697,fortune1000,data_science
+f1000_697,TransDigm Group,TransDigm Group,698,fortune1000,data_science
+f1000_698,Landstar System,Landstar System,699,fortune1000,data_science
+f1000_699,Puget Energy,Puget Energy,700,fortune1000,data_science
+f1000_700,Coca-Cola Bottling,Coca-Cola Bottling,701,fortune1000,data_science
+f1000_701,Kar Auction Services,Kar Auction Services,702,fortune1000,data_science
+f1000_702,Equifax,Equifax,703,fortune1000,data_science
+f1000_703,Groupon,Groupon,704,fortune1000,data_science
+f1000_704,IAC/InterActiveCorp,IAC/InterActiveCorp,705,fortune1000,data_science
+f1000_705,Weis Markets,Weis Markets,706,fortune1000,data_science
+f1000_706,Allegheny Technologies,Allegheny Technologies,707,fortune1000,data_science
+f1000_707,Pinnacle Foods,Pinnacle Foods,708,fortune1000,data_science
+f1000_708,Tempur Sealy International,Tempur Sealy International,709,fortune1000,data_science
+f1000_709,SkyWest,SkyWest,710,fortune1000,data_science
+f1000_710,International Flavors & Fragrances,International Flavors & Fragrances,711,fortune1000,data_science
+f1000_711,BMC Stock Holdings,BMC Stock Holdings,712,fortune1000,data_science
+f1000_712,Brown-Forman,Brown-Forman,713,fortune1000,data_science
+f1000_713,Alexion Pharmaceuticals,Alexion Pharmaceuticals,714,fortune1000,data_science
+f1000_714,KapStone Paper & Packaging,KapStone Paper & Packaging,715,fortune1000,data_science
+f1000_715,Time,Time,716,fortune1000,data_science
+f1000_716,TriNet Group,TriNet Group,717,fortune1000,data_science
+f1000_717,Steelcase,Steelcase,718,fortune1000,data_science
+f1000_718,EchoStar,EchoStar,719,fortune1000,data_science
+f1000_719,Sentry Insurance Group,Sentry Insurance Group,720,fortune1000,data_science
+f1000_720,Monster Beverage,Monster Beverage,721,fortune1000,data_science
+f1000_721,Gannett,Gannett,722,fortune1000,data_science
+f1000_722,Fossil Group,Fossil Group,723,fortune1000,data_science
+f1000_723,Univision Communications,Univision Communications,724,fortune1000,data_science
+f1000_724,Meritage Homes,Meritage Homes,725,fortune1000,data_science
+f1000_725,MRC Global,MRC Global,726,fortune1000,data_science
+f1000_726,H&R Block,H&R Block,727,fortune1000,data_science
+f1000_727,Penn National Gaming,Penn National Gaming,728,fortune1000,data_science
+f1000_728,Service Corp. International,Service Corp. International,729,fortune1000,data_science
+f1000_729,Brink's,Brink's,730,fortune1000,data_science
+f1000_730,Old Dominion Freight Line,Old Dominion Freight Line,731,fortune1000,data_science
+f1000_731,Triple-S Management,Triple-S Management,732,fortune1000,data_science
+f1000_732,KLA-Tencor,KLA-Tencor,733,fortune1000,data_science
+f1000_733,Edwards Lifesciences,Edwards Lifesciences,734,fortune1000,data_science
+f1000_734,Rent-A-Center,Rent-A-Center,735,fortune1000,data_science
+f1000_735,Comerica,Comerica,736,fortune1000,data_science
+f1000_736,Paychex,Paychex,737,fortune1000,data_science
+f1000_737,First Solar,First Solar,738,fortune1000,data_science
+f1000_738,Insperity,Insperity,739,fortune1000,data_science
+f1000_739,Scotts Miracle-Gro,Scotts Miracle-Gro,740,fortune1000,data_science
+f1000_740,B/E Aerospace,B/E Aerospace,741,fortune1000,data_science
+f1000_741,Westinghouse Air Brake Technologies,Westinghouse Air Brake Technologies,742,fortune1000,data_science
+f1000_742,Cooper Tire & Rubber,Cooper Tire & Rubber,743,fortune1000,data_science
+f1000_743,Cinemark Holdings,Cinemark Holdings,744,fortune1000,data_science
+f1000_744,Keysight Technologies,Keysight Technologies,745,fortune1000,data_science
+f1000_745,Convergys,Convergys,746,fortune1000,data_science
+f1000_746,Cracker Barrel Old Country Store,Cracker Barrel Old Country Store,747,fortune1000,data_science
+f1000_747,PriceSmart,PriceSmart,748,fortune1000,data_science
+f1000_748,Broadridge Financial Solutions,Broadridge Financial Solutions,749,fortune1000,data_science
+f1000_749,Scientific Games,Scientific Games,750,fortune1000,data_science
+f1000_750,Genesco,Genesco,751,fortune1000,data_science
+f1000_751,MSC Industrial Direct,MSC Industrial Direct,752,fortune1000,data_science
+f1000_752,Ryerson Holding,Ryerson Holding,753,fortune1000,data_science
+f1000_753,Acadia Healthcare,Acadia Healthcare,754,fortune1000,data_science
+f1000_754,Hologic,Hologic,755,fortune1000,data_science
+f1000_755,Unisys,Unisys,756,fortune1000,data_science
+f1000_756,Worthington Industries,Worthington Industries,757,fortune1000,data_science
+f1000_757,Sanderson Farms,Sanderson Farms,758,fortune1000,data_science
+f1000_758,WABCO Holdings,WABCO Holdings,759,fortune1000,data_science
+f1000_759,Panera Bread,Panera Bread,760,fortune1000,data_science
+f1000_760,Metaldyne Performance Group,Metaldyne Performance Group,761,fortune1000,data_science
+f1000_761,Medical Mutual of Ohio,Medical Mutual of Ohio,762,fortune1000,data_science
+f1000_762,AMC Networks,AMC Networks,763,fortune1000,data_science
+f1000_763,Clean Harbors,Clean Harbors,764,fortune1000,data_science
+f1000_764,Hovnanian Enterprises,Hovnanian Enterprises,765,fortune1000,data_science
+f1000_765,TrueBlue,TrueBlue,766,fortune1000,data_science
+f1000_766,Crane,Crane,767,fortune1000,data_science
+f1000_767,ServiceMaster Global Holdings,ServiceMaster Global Holdings,768,fortune1000,data_science
+f1000_768,Sinclair Broadcast Group,Sinclair Broadcast Group,769,fortune1000,data_science
+f1000_769,Mutual of America Life Insurance,Mutual of America Life Insurance,770,fortune1000,data_science
+f1000_770,BGC Partners,BGC Partners,771,fortune1000,data_science
+f1000_771,DSW,DSW,772,fortune1000,data_science
+f1000_772,Intuitive Surgical,Intuitive Surgical,773,fortune1000,data_science
+f1000_773,ArcBest,ArcBest,774,fortune1000,data_science
+f1000_774,PC Connection,PC Connection,775,fortune1000,data_science
+f1000_775,A.O. Smith,A.O. Smith,776,fortune1000,data_science
+f1000_776,Greenbrier Cos.,Greenbrier Cos.,777,fortune1000,data_science
+f1000_777,Great Plains Energy,Great Plains Energy,778,fortune1000,data_science
+f1000_778,Bon-Ton Stores,Bon-Ton Stores,779,fortune1000,data_science
+f1000_779,Dycom Industries,Dycom Industries,780,fortune1000,data_science
+f1000_780,Timken,Timken,781,fortune1000,data_science
+f1000_781,Aleris,Aleris,782,fortune1000,data_science
+f1000_782,Legg Mason,Legg Mason,783,fortune1000,data_science
+f1000_783,Hill-Rom Holdings,Hill-Rom Holdings,784,fortune1000,data_science
+f1000_784,Stifel Financial,Stifel Financial,785,fortune1000,data_science
+f1000_785,Verso,Verso,786,fortune1000,data_science
+f1000_786,Qorvo,Qorvo,787,fortune1000,data_science
+f1000_787,Ciena,Ciena,788,fortune1000,data_science
+f1000_788,Tetra Tech,Tetra Tech,789,fortune1000,data_science
+f1000_789,Caleres,Caleres,790,fortune1000,data_science
+f1000_790,Pool,Pool,791,fortune1000,data_science
+f1000_791,Hyster-Yale Materials Handling,Hyster-Yale Materials Handling,792,fortune1000,data_science
+f1000_792,Westar Energy,Westar Energy,793,fortune1000,data_science
+f1000_793,Public Storage,Public Storage,794,fortune1000,data_science
+f1000_794,Plexus,Plexus,795,fortune1000,data_science
+f1000_795,Boston Properties,Boston Properties,796,fortune1000,data_science
+f1000_796,GNC Holdings,GNC Holdings,797,fortune1000,data_science
+f1000_797,HCP,HCP,798,fortune1000,data_science
+f1000_798,Penn Mutual Life Insurance,Penn Mutual Life Insurance,799,fortune1000,data_science
+f1000_799,TTM Technologies,TTM Technologies,800,fortune1000,data_science
+f1000_800,Prologis,Prologis,801,fortune1000,data_science
+f1000_801,Twitter,Twitter,802,fortune1000,data_science
+f1000_802,Kemper,Kemper,803,fortune1000,data_science
+f1000_803,Valmont Industries,Valmont Industries,804,fortune1000,data_science
+f1000_804,Crestwood Equity Partners,Crestwood Equity Partners,805,fortune1000,data_science
+f1000_805,Applied Industrial Technologies,Applied Industrial Technologies,806,fortune1000,data_science
+f1000_806,VCA,VCA,807,fortune1000,data_science
+f1000_807,Granite Construction,Granite Construction,808,fortune1000,data_science
+f1000_808,Vornado Realty Trust,Vornado Realty Trust,809,fortune1000,data_science
+f1000_809,Mettler-Toledo International,Mettler-Toledo International,810,fortune1000,data_science
+f1000_810,A. Schulman,A. Schulman,811,fortune1000,data_science
+f1000_811,Wolverine World Wide,Wolverine World Wide,812,fortune1000,data_science
+f1000_812,Graham Holdings,Graham Holdings,813,fortune1000,data_science
+f1000_813,Chico's FAS,Chico's FAS,814,fortune1000,data_science
+f1000_814,Domino's Pizza,Domino's Pizza,815,fortune1000,data_science
+f1000_815,Zions Bancorp.,Zions Bancorp.,816,fortune1000,data_science
+f1000_816,Southwest Gas Holdings,Southwest Gas Holdings,817,fortune1000,data_science
+f1000_817,Tops Holding,Tops Holding,818,fortune1000,data_science
+f1000_818,Hawaiian Holdings,Hawaiian Holdings,819,fortune1000,data_science
+f1000_819,Vectren,Vectren,820,fortune1000,data_science
+f1000_820,Gartner,Gartner,821,fortune1000,data_science
+f1000_821,On Assignment,On Assignment,822,fortune1000,data_science
+f1000_822,Southwestern Energy,Southwestern Energy,823,fortune1000,data_science
+f1000_823,Parexel International,Parexel International,824,fortune1000,data_science
+f1000_824,Equity Residential,Equity Residential,825,fortune1000,data_science
+f1000_825,J.Crew Group,J.Crew Group,826,fortune1000,data_science
+f1000_826,Synopsys,Synopsys,827,fortune1000,data_science
+f1000_827,Moog,Moog,828,fortune1000,data_science
+f1000_828,Cabot,Cabot,829,fortune1000,data_science
+f1000_829,ITT,ITT,830,fortune1000,data_science
+f1000_830,TRI Pointe Group,TRI Pointe Group,831,fortune1000,data_science
+f1000_831,Maximus,Maximus,832,fortune1000,data_science
+f1000_832,Illumina,Illumina,833,fortune1000,data_science
+f1000_833,Amica Mutual Insurance,Amica Mutual Insurance,834,fortune1000,data_science
+f1000_834,Alere,Alere,835,fortune1000,data_science
+f1000_835,Toro,Toro,836,fortune1000,data_science
+f1000_836,Sprague Resources,Sprague Resources,837,fortune1000,data_science
+f1000_837,G-III Apparel Group,G-III Apparel Group,838,fortune1000,data_science
+f1000_838,Hawaiian Electric Industries,Hawaiian Electric Industries,839,fortune1000,data_science
+f1000_839,Pinnacle Entertainment,Pinnacle Entertainment,840,fortune1000,data_science
+f1000_840,Columbia Sportswear,Columbia Sportswear,841,fortune1000,data_science
+f1000_841,First Republic Bank,First Republic Bank,842,fortune1000,data_science
+f1000_842,Komatsu Mining,Komatsu Mining,843,fortune1000,data_science
+f1000_843,Trimble,Trimble,844,fortune1000,data_science
+f1000_844,Edgewell Personal Care,Edgewell Personal Care,845,fortune1000,data_science
+f1000_845,Belden,Belden,846,fortune1000,data_science
+f1000_846,DST Systems,DST Systems,847,fortune1000,data_science
+f1000_847,WGL Holdings,WGL Holdings,848,fortune1000,data_science
+f1000_848,GGP,GGP,849,fortune1000,data_science
+f1000_849,Brocade Communications Systems,Brocade Communications Systems,850,fortune1000,data_science
+f1000_850,Akamai Technologies,Akamai Technologies,851,fortune1000,data_science
+f1000_851,Nationstar Mortgage Holdings,Nationstar Mortgage Holdings,852,fortune1000,data_science
+f1000_852,Annaly Capital Management,Annaly Capital Management,853,fortune1000,data_science
+f1000_853,Kansas City Southern,Kansas City Southern,854,fortune1000,data_science
+f1000_854,Revlon,Revlon,855,fortune1000,data_science
+f1000_855,AptarGroup,AptarGroup,856,fortune1000,data_science
+f1000_856,MDC Holdings,MDC Holdings,857,fortune1000,data_science
+f1000_857,Vishay Intertechnology,Vishay Intertechnology,858,fortune1000,data_science
+f1000_858,Teradata,Teradata,859,fortune1000,data_science
+f1000_859,Spirit Airlines,Spirit Airlines,860,fortune1000,data_science
+f1000_860,EnerSys,EnerSys,861,fortune1000,data_science
+f1000_861,Snyder's-Lance,Snyder's-Lance,862,fortune1000,data_science
+f1000_862,Benchmark Electronics,Benchmark Electronics,863,fortune1000,data_science
+f1000_863,West,West,864,fortune1000,data_science
+f1000_864,Selective Insurance Group,Selective Insurance Group,865,fortune1000,data_science
+f1000_865,Party City Holdco,Party City Holdco,866,fortune1000,data_science
+f1000_866,Cheesecake Factory,Cheesecake Factory,867,fortune1000,data_science
+f1000_867,Lincoln Electric Holdings,Lincoln Electric Holdings,868,fortune1000,data_science
+f1000_868,Carlyle Group,Carlyle Group,869,fortune1000,data_science
+f1000_869,Enable Midstream Partners,Enable Midstream Partners,870,fortune1000,data_science
+f1000_870,Oceaneering International,Oceaneering International,871,fortune1000,data_science
+f1000_871,Vista Outdoor,Vista Outdoor,872,fortune1000,data_science
+f1000_872,Middleby,Middleby,873,fortune1000,data_science
+f1000_873,Herman Miller,Herman Miller,874,fortune1000,data_science
+f1000_874,PerkinElmer,PerkinElmer,875,fortune1000,data_science
+f1000_875,OGE Energy,OGE Energy,876,fortune1000,data_science
+f1000_876,PCM,PCM,877,fortune1000,data_science
+f1000_877,Louisiana-Pacific,Louisiana-Pacific,878,fortune1000,data_science
+f1000_878,MPM Holdings,MPM Holdings,879,fortune1000,data_science
+f1000_879,Knights of Columbus,Knights of Columbus,880,fortune1000,data_science
+f1000_880,Apollo Global Management,Apollo Global Management,881,fortune1000,data_science
+f1000_881,Donaldson,Donaldson,882,fortune1000,data_science
+f1000_882,American Equity Investment Life Holding,American Equity Investment Life Holding,883,fortune1000,data_science
+f1000_883,Super Micro Computer,Super Micro Computer,884,fortune1000,data_science
+f1000_884,Xilinx,Xilinx,885,fortune1000,data_science
+f1000_885,Tupperware Brands,Tupperware Brands,886,fortune1000,data_science
+f1000_886,Guess,Guess,887,fortune1000,data_science
+f1000_887,Nu Skin Enterprises,Nu Skin Enterprises,888,fortune1000,data_science
+f1000_888,Magellan Midstream Partners,Magellan Midstream Partners,889,fortune1000,data_science
+f1000_889,HNI,HNI,890,fortune1000,data_science
+f1000_890,Maxim Integrated Products,Maxim Integrated Products,891,fortune1000,data_science
+f1000_891,Affiliated Managers Group,Affiliated Managers Group,892,fortune1000,data_science
+f1000_892,Express,Express,893,fortune1000,data_science
+f1000_893,Boyd Gaming,Boyd Gaming,894,fortune1000,data_science
+f1000_894,GEO Group,GEO Group,895,fortune1000,data_science
+f1000_895,Tribune Media,Tribune Media,896,fortune1000,data_science
+f1000_896,Microchip Technology,Microchip Technology,897,fortune1000,data_science
+f1000_897,Fitbit,Fitbit,898,fortune1000,data_science
+f1000_898,Waters,Waters,899,fortune1000,data_science
+f1000_899,Teledyne Technologies,Teledyne Technologies,900,fortune1000,data_science
+f1000_900,Digital Realty Trust,Digital Realty Trust,901,fortune1000,data_science
+f1000_901,RH,RH,902,fortune1000,data_science
+f1000_902,Fred's,Fred's,903,fortune1000,data_science
+f1000_903,Universal,Universal,904,fortune1000,data_science
+f1000_904,CDK Global,CDK Global,905,fortune1000,data_science
+f1000_905,IDEX,IDEX,906,fortune1000,data_science
+f1000_906,Cliffs Natural Resources,Cliffs Natural Resources,907,fortune1000,data_science
+f1000_907,Curtiss-Wright,Curtiss-Wright,908,fortune1000,data_science
+f1000_908,Verisk Analytics,Verisk Analytics,909,fortune1000,data_science
+f1000_909,NOW,NOW,910,fortune1000,data_science
+f1000_910,Apollo Education Group,Apollo Education Group,911,fortune1000,data_science
+f1000_911,Kennametal,Kennametal,912,fortune1000,data_science
+f1000_912,H.B. Fuller,H.B. Fuller,913,fortune1000,data_science
+f1000_913,PharMerica,PharMerica,914,fortune1000,data_science
+f1000_914,Engility Holdings,Engility Holdings,915,fortune1000,data_science
+f1000_915,Sears Hometown & Outlet Stores,Sears Hometown & Outlet Stores,916,fortune1000,data_science
+f1000_916,Bio-Rad Laboratories,Bio-Rad Laboratories,917,fortune1000,data_science
+f1000_917,Federated Mutual Insurance,Federated Mutual Insurance,918,fortune1000,data_science
+f1000_918,Mueller Industries,Mueller Industries,919,fortune1000,data_science
+f1000_919,Red Hat,Red Hat,920,fortune1000,data_science
+f1000_920,NewMarket,NewMarket,921,fortune1000,data_science
+f1000_921,Hospitality Properties Trust,Hospitality Properties Trust,922,fortune1000,data_science
+f1000_922,AvalonBay Communities,AvalonBay Communities,923,fortune1000,data_science
+f1000_923,Renewable Energy Group,Renewable Energy Group,924,fortune1000,data_science
+f1000_924,Consol Energy,Consol Energy,925,fortune1000,data_science
+f1000_925,Ferrellgas Partners,Ferrellgas Partners,926,fortune1000,data_science
+f1000_926,Tower International,Tower International,927,fortune1000,data_science
+f1000_927,Autodesk,Autodesk,928,fortune1000,data_science
+f1000_928,99 Cents Only Stores,99 Cents Only Stores,929,fortune1000,data_science
+f1000_929,E*Trade Financial,E*Trade Financial,930,fortune1000,data_science
+f1000_930,Woodward,Woodward,931,fortune1000,data_science
+f1000_931,Esterline Technologies,Esterline Technologies,932,fortune1000,data_science
+f1000_932,Itron,Itron,933,fortune1000,data_science
+f1000_933,Werner Enterprises,Werner Enterprises,934,fortune1000,data_science
+f1000_934,Stewart Information Services,Stewart Information Services,935,fortune1000,data_science
+f1000_935,Hexcel,Hexcel,936,fortune1000,data_science
+f1000_936,Genesee & Wyoming,Genesee & Wyoming,937,fortune1000,data_science
+f1000_937,Primoris Services,Primoris Services,938,fortune1000,data_science
+f1000_938,SPX FLOW,SPX FLOW,939,fortune1000,data_science
+f1000_939,F5 Networks,F5 Networks,940,fortune1000,data_science
+f1000_940,VeriFone Systems,VeriFone Systems,941,fortune1000,data_science
+f1000_941,Texas Roadhouse,Texas Roadhouse,942,fortune1000,data_science
+f1000_942,NLV Financial,NLV Financial,943,fortune1000,data_science
+f1000_943,Buffalo Wild Wings,Buffalo Wild Wings,944,fortune1000,data_science
+f1000_944,Continental Resources,Continental Resources,945,fortune1000,data_science
+f1000_945,Arch Coal,Arch Coal,946,fortune1000,data_science
+f1000_946,Roadrunner Transportation Systems,Roadrunner Transportation Systems,947,fortune1000,data_science
+f1000_947,Cooper Cos.,Cooper Cos.,948,fortune1000,data_science
+f1000_948,hhgregg,hhgregg,949,fortune1000,data_science
+f1000_949,Euronet Worldwide,Euronet Worldwide,950,fortune1000,data_science
+f1000_950,Griffon,Griffon,951,fortune1000,data_science
+f1000_951,CoreLogic,CoreLogic,952,fortune1000,data_science
+f1000_952,Nuance Communications,Nuance Communications,953,fortune1000,data_science
+f1000_953,Matson,Matson,954,fortune1000,data_science
+f1000_954,Popular,Popular,955,fortune1000,data_science
+f1000_955,Alliance Holdings,Alliance Holdings,956,fortune1000,data_science
+f1000_956,REV Group,REV Group,957,fortune1000,data_science
+f1000_957,Rexnord,Rexnord,958,fortune1000,data_science
+f1000_958,Cypress Semiconductor,Cypress Semiconductor,959,fortune1000,data_science
+f1000_959,Portland General Electric,Portland General Electric,960,fortune1000,data_science
+f1000_960,Ply Gem Holdings,Ply Gem Holdings,961,fortune1000,data_science
+f1000_961,Cal-Maine Foods,Cal-Maine Foods,962,fortune1000,data_science
+f1000_962,Alliance One International,Alliance One International,963,fortune1000,data_science
+f1000_963,AMN Healthcare Services,AMN Healthcare Services,964,fortune1000,data_science
+f1000_964,American Greetings,American Greetings,965,fortune1000,data_science
+f1000_965,Blackhawk Network Holdings,Blackhawk Network Holdings,966,fortune1000,data_science
+f1000_966,Pier 1 Imports,Pier 1 Imports,967,fortune1000,data_science
+f1000_967,Finish Line,Finish Line,968,fortune1000,data_science
+f1000_968,BlueLinx Holdings,BlueLinx Holdings,969,fortune1000,data_science
+f1000_969,New Jersey Resources,New Jersey Resources,970,fortune1000,data_science
+f1000_970,Deckers Outdoor,Deckers Outdoor,971,fortune1000,data_science
+f1000_971,Murphy Oil,Murphy Oil,972,fortune1000,data_science
+f1000_972,Teleflex,Teleflex,973,fortune1000,data_science
+f1000_973,Par Pacific Holdings,Par Pacific Holdings,974,fortune1000,data_science
+f1000_974,SL Green Realty,SL Green Realty,975,fortune1000,data_science
+f1000_975,GMS,GMS,976,fortune1000,data_science
+f1000_976,CoreCivic,CoreCivic,977,fortune1000,data_science
+f1000_977,Deluxe,Deluxe,978,fortune1000,data_science
+f1000_978,Catalent,Catalent,979,fortune1000,data_science
+f1000_979,GoDaddy,GoDaddy,980,fortune1000,data_science
+f1000_980,Wabash National,Wabash National,981,fortune1000,data_science
+f1000_981,Adtalem Global Education,Adtalem Global Education,982,fortune1000,data_science
+f1000_982,United Refining,United Refining,983,fortune1000,data_science
+f1000_983,Allison Transmission Holdings,Allison Transmission Holdings,984,fortune1000,data_science
+f1000_984,Atlas Air Worldwide Holdings,Atlas Air Worldwide Holdings,985,fortune1000,data_science
+f1000_985,ResMed,ResMed,986,fortune1000,data_science
+f1000_986,Delta Tucker Holdings,Delta Tucker Holdings,987,fortune1000,data_science
+f1000_987,FleetCor Technologies,FleetCor Technologies,988,fortune1000,data_science
+f1000_988,Central Garden & Pet,Central Garden & Pet,989,fortune1000,data_science
+f1000_989,Beazer Homes USA,Beazer Homes USA,990,fortune1000,data_science
+f1000_990,New York Community Bancorp,New York Community Bancorp,991,fortune1000,data_science
+f1000_991,Cadence Design Systems,Cadence Design Systems,992,fortune1000,data_science
+f1000_992,Carpenter Technology,Carpenter Technology,993,fortune1000,data_science
+f1000_993,Marriott Vacations Worldwide,Marriott Vacations Worldwide,994,fortune1000,data_science
+f1000_994,FTI Consulting,FTI Consulting,995,fortune1000,data_science
+f1000_995,Nordson,Nordson,996,fortune1000,data_science
+f1000_996,Briggs & Stratton,Briggs & Stratton,997,fortune1000,data_science
+f1000_997,Kaman,Kaman,998,fortune1000,data_science
+f1000_998,Overstock.com,Overstock.com,999,fortune1000,data_science
+f1000_999,Regis,Regis,1000,fortune1000,data_science
