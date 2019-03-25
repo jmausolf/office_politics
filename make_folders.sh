@@ -9,37 +9,241 @@
 ##################################
 
 
-#profiles='P01DH P02DL P03NH P04NL P05RH P06RL'
-
-#topics=datascience managementconsulting quant chemicalengineer
-
-#profiles=('P01DH' 'P02DL' 'P03NH' 'P04NL' 'P05RH' 'P06RL')
-
-#mkdir -p {P01DH,P02DL,P03NH,P04NL,P05RH,P06RL}/{folder1,folder2,folder3,folder4,folder5,folder6,folder7,folder8}
+#TODO 
+#Unique Resume Types for Jobs
+#Data Science, Stats, Quant are Roughly the Same Type
+#Managerment Consulting and Law Different?
 
 
-#mkdir -p {P01DH,P02DL,P03NH,P04NL,P05RH,P06RL}/{data_science,management_consulting,quant}
+#Copy Same Resume Template to Each Folder
+#for profile in P0{1DH,2DL,3NH,4NL,5RH,6RL}; do
+#    for topic in {data_science,management_consulting,quant}; do
+#        mkdir -p "$profile/$topic/tex"
+#        cp resume_template.tex "$profile/$topic/tex"
+#        #cp Resume_Matthew_Zachary_Hartman.pdf "$profile/$topic" 
+#    done
+#done
 
-for profile in P0{1DH,2DL,3NH,4NL,5RH,6RL}; do
-    for topic in {data_science,management_consulting,quant}; do
+
+#Copy Same Resume to Each Partisan Folder
+#for profile in P0{1DH,2DL,5RH,6RL}; do
+#  for topic in {data_science,stats,quant,mba,consultant,law}; do
+#        mkdir -p "$profile/$topic/tex"
+#        subpath="$profile/$topic/tex"
+#        cp resume_templates/partisan_resume_template.tex $subpath
+#        mv $subpath/partisan_resume_template.tex $subpath/resume_template.tex
+#        echo 'copying partisan_resume_template.tex to ' $subpath
+#    done
+#done
+
+
+#Copy Neutral Resume to Each Neutral Folder
+#for profile in P0{3NH,4NL}; do
+#  for topic in {data_science,stats,quant,mba,consultant,law}; do
+#        mkdir -p "$profile/$topic/tex"
+#        subpath="$profile/$topic/tex"
+#        cp resume_templates/neutral_resume_template.tex $subpath
+#        mv $subpath/neutral_resume_template.tex $subpath/resume_template.tex
+#        echo 'copying neutral_resume_template.tex to ' $subpath
+#    done
+#done
+
+#######################
+## Basic Template All 
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+#for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+#  for topic in {data_science,stats,quant,mba,consultant,law}; do
+#        mkdir -p "$profile/$topic/tex"
+#        subpath="$profile/$topic/tex"
+#        cp resume_templates/resume_template_A.tex $subpath
+#        cp resume_templates/resume_template_B.tex $subpath
+#        echo 'copying resume_template_A.tex to ' $subpath
+#        echo 'copying resume_template_B.tex to ' $subpath
+#    done
+#done
+
+#mkdir -p logs
+
+
+
+#######################
+## Data Science 
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=data_science
         mkdir -p "$profile/$topic/tex"
-        #cp messages.py "$profile/$topic"
-        cp resume_template.tex "$profile/$topic/tex"
-        #cp Resume_Matthew_Zachary_Hartman.pdf "$profile/$topic" 
-    done
+        subpath="$profile/$topic/tex"
+        cp resume_templates/data_science_template_A.tex $subpath
+        cp resume_templates/data_science_template_B.tex $subpath
+        mv $subpath"/data_science_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/data_science_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying data_science_template_A.tex to ' $subpath
+        echo 'copying data_science_template_B.tex to ' $subpath
 done
-
+echo 'renaming data_science_templates_A/B.tex to resume_templates_A/B.tex'
 
 mkdir -p logs
 
 
-# set counter value to 0
-#c=0
-# loop trough the array l1 (while the counter $c is less than the length of the array $l1)
-#while [ "$c" -lt "${#profiles[@]}" ]; do
-  # echo the corresponding value of array l2 to the file.txt in the directory
-  #echo "${topics[$c]}"
-  #echo "${profiles[$c]}${topics[$c]}"
-  # increment the counter
-  #let c=c+1
-#done
+#######################
+## Stats
+#######################
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=stats
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/stats_template_A.tex $subpath
+        cp resume_templates/stats_template_B.tex $subpath
+        mv $subpath"/stats_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/stats_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying stats_template_A.tex to ' $subpath
+        echo 'copying stats_template_B.tex to ' $subpath
+done
+echo 'renaming stats_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+#######################
+## Quant
+#######################
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=quant
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/quant_template_A.tex $subpath
+        cp resume_templates/quant_template_B.tex $subpath
+        mv $subpath"/quant_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/quant_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying quant_template_A.tex to ' $subpath
+        echo 'copying quant_template_B.tex to ' $subpath
+done
+echo 'renaming quant_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+#######################
+## Computer Science
+#######################
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=computer_science
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/computer_science_template_A.tex $subpath
+        cp resume_templates/computer_science_template_B.tex $subpath
+        mv $subpath"/computer_science_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/computer_science_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying computer_science_template_A.tex to ' $subpath
+        echo 'copying computer_science_template_B.tex to ' $subpath
+done
+echo 'renaming computer_science_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+
+
+
+#######################
+## MBA
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=mba
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/mba_template_A.tex $subpath
+        cp resume_templates/mba_template_B.tex $subpath
+        mv $subpath"/mba_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/mba_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying mba_template_A.tex to ' $subpath
+        echo 'copying mba_template_B.tex to ' $subpath
+done
+echo 'renaming mba_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+#######################
+## MBA - Analyst
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=mba_analyst
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/mba_template_A.tex $subpath
+        cp resume_templates/mba_template_B.tex $subpath
+        mv $subpath"/mba_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/mba_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying mba_template_A.tex to ' $subpath
+        echo 'copying mba_template_B.tex to ' $subpath
+done
+echo 'renaming mba_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+
+#######################
+## MBA - Finance
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=mba_finance
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/mba_finance_template_A.tex $subpath
+        cp resume_templates/mba_finance_template_B.tex $subpath
+        mv $subpath"/mba_finance_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/mba_finance_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying mba_finance_template_A.tex to ' $subpath
+        echo 'copying mba_finance_template_B.tex to ' $subpath
+done
+echo 'renaming mba_finance_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+#######################
+## Consultant
+#######################
+
+
+#Copy A and B Versions of Resume to Each Folder
+for profile in P0{1DH,2DL,5RH,6RL,3NH,4NL}; do
+  topic=consultant
+        mkdir -p "$profile/$topic/tex"
+        subpath="$profile/$topic/tex"
+        cp resume_templates/mba_template_A.tex $subpath
+        cp resume_templates/mba_template_B.tex $subpath
+        mv $subpath"/mba_template_A.tex" $subpath"/resume_template_A.tex"
+        mv $subpath"/mba_template_B.tex" $subpath"/resume_template_B.tex"
+        echo 'copying mba_template_A.tex to ' $subpath
+        echo 'copying mba_template_B.tex to ' $subpath
+done
+echo 'renaming mba_templates_A/B.tex to resume_templates_A/B.tex'
+
+mkdir -p logs
+
+
+

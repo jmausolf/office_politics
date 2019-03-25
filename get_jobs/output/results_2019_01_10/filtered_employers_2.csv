@@ -1,0 +1,298 @@
+cid,list_id,company,position,office,office_state,job_type
+c01,glassdoor_25,23andMe,Scientist / Senior Scientist - Statistical Genetics,Mountain View,CA,stats
+c02,f1000_93,3M,3M HIS Advanced Data Scientist,Murray,UT,stats
+c03,f1000_239,ADP,Lead Data Scientist,New York,NY,stats
+c04,f1000_54,AIG,NLP Scientist,New York,NY,stats
+c05,f1000_762,AMC Networks,Analyst - Research,New York,NY,stats
+c06,f1000_8,AT&T,Senior-Data Scientist,Plano,TX,stats
+c07,f1000_110,AbbVie,Manager - Statistics,North Chicago,IL,stats
+c08,f1000_134,Abbott Laboratories,Senior Statistician,Irving,TX,stats
+c09,vault_109,Accenture,Data Scientist,Chicago,IL,data_science
+c10,nasdaq_ADBE,Adobe,Research Scientist,Seattle,WA,stats
+c11,f1000_42,Aetna,Lead Data Scientist,Hartford,CT,stats
+c12,f1000_125,Aflac,Head of Quantitative Risk,New York,NY,stats
+c13,f1000_575,Agilent Technologies,Senior Biostatistician,Carpinteria,CA,stats
+c14,f1000_48,Albertsons,Lead Data Scientist,Pleasanton,CA,stats
+c15,f1000_834,Alere,Principal Biostatistician,Scarborough,ME,stats
+c16,f1000_955,Alliance,Data Scientist,Woodland,CA,stats
+c17,f1000_83,Allstate,Allstate Technology Leadership Development Program,Charlotte,NC,stats
+c18,f1000_285,Ally Financial,Data Scientist,Charlotte,NC,stats
+c19,f1000_11,Amazon,Applied Scientist,Seattle,WA,stats
+c20,f1000_66,American Airlines,Consultant/Senior Consultant - IT Operations Research and Advanced Analytics,Fort Worth,TX,stats
+c21,f1000_85,American Express,Engineer - Machine Learning / Data Scientist,Phoenix,AZ,stats
+c22,f1000_964,American Greetings,Statistical Analyst I,Westlake,OH,stats
+c23,f1000_238,Ameriprise Financial,Vice President - Data Scientist - Auto & Home,Green Bay,WI,stats
+c24,f1000_122,Amgen,Biostatistics Mgr,Thousand Oaks,CA,stats
+c25,vault_118,Analysis,UWSD18-430 Senior Data Scientist/ Principal Analyst,Alexandria,VA,data_science
+c26,f1000_28,Anthem,Data Scientist,Chicago,IL,stats
+c27,f1000_2,Apple,AppleCare Data Scientist,Santa Clara Valley,CA,stats
+c28,f1000_264,Applied Materials,Data Scientist IV ,Santa Clara,CA,stats
+c29,f1000_264,Applied Materials,Data Scientist,Santa Clara,CA,stats
+c30,f1000_227,Arconic,Senior Data Scientist,Cleveland,OH,stats
+c31,vault_79,Arent Fox,Trademark Associate,Washington,DC,consultant
+c32,forbes_62,Asana,Data Scientist - Growth,San Francisco,CA,stats
+c33,f1000_397,Auto-Owners Insurance,Data Scientist - Experienced,Lansing,MI,stats
+c34,f1000_244,BB&T,BSA/AML Quantitative Associate,Winston-Salem,NC,stats
+c35,f1000_770,BGC Partners,Commercial Real Estate Business Consultant,Chicago,IL,stats
+c36,vault_63,Baker & Hostetler,Associate - Business,Cincinnati,OH,consultant
+c37,f1000_284,Baker Hughes,Staff Data Scientist- - TX,Houston,TX,stats
+c38,vault_30,Baker McKenzie,IP Litigation Associate,Dallas,TX,consultant
+c39,f1000_305,Ball,Research Analyst Associate,Albuquerque,NM,stats
+c40,f1000_25,Bank of America,Data Scientist II,Charlotte,NC,stats
+c41,f1000_224,Becton Dickinson,Systems Verification Scientist II,San Jose,CA,stats
+c42,f1000_247,Biogen,Principal Biostatistician,Cambridge,MA,stats
+c43,f1000_23,Boeing,Mid-level User Experience Researcher,Bellevue,WA,stats
+c44,f1000_480,Booz Allen Hamilton,Data Scientist - Mid,Washington,DC,stats
+c45,glassdoor_54,Boston Consulting,Expert Data Scientist,Seattle,WA,stats
+c46,f1000_146,Bristol-Myers Squibb,Senior Biostatistician,Princeton,NJ,stats
+c47,f1000_614,CACI,Data Scientist,Charlottesville,VA,stats
+c48,f1000_213,CBRE,UX - UI Researcher,Seattle,WA,stats
+c49,f1000_92,CHS,Research and Product Analyst,Inver Grove Heights,MN,stats
+c50,f1000_549,CIT,AVP - Audit - Quantitative Analytics,Livingston,NJ,stats
+c51,f1000_6,CVS Health,Data Scientist Advisor Analytics,Woonsocket,RI,stats
+c52,f1000_173,CarMax,Sr Data Scientist,Richmond,VA,stats
+c53,f1000_253,Celgene,Senior Statistician,Berkeley Heights,NJ,stats
+c54,f1000_65,Centene,Biostatistician II,Clayton,MO,stats
+c55,f1000_159,CenturyLink,SR DATA SCIENTIST,Broomfield,CO,stats
+c56,f1000_529,Cerner,Data Scientist,Malvern,PA,stats
+c57,f1000_356,Charles Schwab,Quantitative Analyst/Senior Quantitative Analyst,Chicago,IL,stats
+c58,f1000_18,Chevron,Statistician,Richmond,CA,stats
+c59,f1000_598,Chipotle Mexican Grill,Data Scientist - Enterprise Analytics,Newport Beach,CA,stats
+c60,f1000_69,Cigna,Sr Data Scientist-Healthcare,Raleigh,NC,stats
+c61,f1000_452,Clorox,Data Scientist,Durham,NC,stats
+c62,f1000_30,Comcast,Advertising Research Analyst,Quincy,MA,stats
+c63,f1000_196,Conagra Brands,Sr Data Scientist,Chicago,IL,stats
+c64,vault_26,Cooley,Car Wash Associate,Irving,TX,consultant
+c65,f1000_947,Cooper,Quality Statistical Data Analyst,Findlay,OH,stats
+c66,f1000_951,CoreLogic,Principal - Science & Analytics-Earthquake Scientist,Oakland,CA,stats
+c67,f1000_297,Corning,Data Scientist,Corning,NY,stats
+c68,bi_0,Credit Karma,Senior Data Scientist - Engineering,San Francisco,CA,stats
+c69,vault_170,Credit Suisse,Data Strategy/Machine Learning Architect,New York,NY,data_science
+c70,vault_208,Crowe,Data Scientist - Applied Technology,Chicago,IL,stats
+c71,vault_68,Crowell & Moring,Antitrust Associate,New York,NY,consultant
+c72,f1000_158,Cummins,Senior Data Scientist,Columbus,IN,stats
+c73,forbes_17,Cylance,Staff Data Scientist,Irvine,CA,stats
+c74,vault_32,DLA Piper,Associate,Austin,TX,consultant
+c75,f1000_180,DaVita,Data Scientist - Operations Innovation,Denver,CO,stats
+c76,f1000_446,Dana,Research Fellow - Computational Biologist/Biostatistician in Irizarry Lab,Boston,MA,stats
+c77,vault_93,Davis Wright Tremaine,Energy Associate,San Francisco,CA,consultant
+c78,f1000_104,Deere,Student Researcher JDTIC - - IA,Ames,IA,stats
+c79,vault_203,Deloitte,Data Scientist - Client Experience / Research and Insights,Washington,DC,stats
+c80,f1000_339,Dick's Sporting Goods,Data Scientist - Labor Planning & Analytics,Coraopolis,PA,stats
+c81,f1000_276,Discover Financial Services,Lead Data Scientist,Riverwoods,IL,stats
+c82,f1000_411,Discovery Communications,Senior Data Scientist,New York,NY,stats
+c83,f1000_51,Disney,HR Decision Scientist,Burbank,CA,stats
+c84,f1000_51,Disney,Sr Retail Data Scientist,Kissimmee,FL,stats
+c85,nasdaq_DOCU,DocuSign,Principal Data Scientist,Seattle,WA,stats
+c86,f1000_135,Dollar Tree,REAL ESTATE ANALYST,Chesapeake,VA,stats
+c87,bi_3,DoorDash,Senior Data Scientist - Analytics,San Francisco,CA,stats
+c88,f1000_112,DuPont,Research Investigator,Parlin,NJ,stats
+c89,vault_89,Duane Morris,Associate Attorney,Baltimore,MD,consultant
+c90,vault_198,EY,Senior Data Scientist,Cambridge,MA,data_science
+c91,nasdaq_ETN,Eaton,Equity Data Scientist,Boston,MA,stats
+c92,f1000_844,Edgewell Personal Care,Associate Scientist - Product Research And Testing,Ormond Beach,FL,stats
+c93,f1000_234,Edison,Data Scientist,San Jose,CA,stats
+c94,glassdoor_135,Edward Jones,Senior Data Scientist,St. Louis,MO,stats
+c95,f1000_733,Edwards Lifesciences,Biostatistician II Transcatheter Heart Valve,Irvine,CA,stats
+c96,f1000_555,Electronic Arts,Data Scientist,Redwood City,CA,stats
+c97,f1000_131,Eli Lilly,Consultant Statistician-Data Standards,Indianapolis,IN,stats
+c98,nasdaq_EIGI,Endurance,Senior Data Scientist - Product,Waltham,MA,stats
+c99,f1000_914,Engility,Data Scientist,Huntsville,AL,stats
+c100,f1000_702,Equifax,Senior Statistical Consultant,Atlanta,GA,stats
+c101,nasdaq_ERIC,Ericsson,Data Scientist,Plano,TX,stats
+c102,f1000_88,Exelon,Sr Data Analytics Specialist,Oak Brook,IL,stats
+c103,f1000_316,Expedia,Senior Data Scientist,Bellevue,WA,stats
+c104,f1000_892,Express,Real Estate Analyst,Richmond,VA,stats
+c105,f1000_21,Express Scripts,Sr UX Researcher,St. Louis,MO,stats
+c106,f1000_3,ExxonMobil,Research Data Scientist,Houston,TX,stats
+c107,f1000_556,FM Global,Sr Data Scientist-Predictive Analytics,Johnston,RI,stats
+c108,f1000_994,FTI Consulting,Director - Reputation Data Scientist - - Strategic Communications,Washington,DC,stats
+c109,f1000_97,Facebook,Research Scientist - Applied Statistics,Menlo Park,CA,stats
+c110,cnbc_44,Fanatics,Lead/Principal Data Scientist,San Mateo,CA,stats
+c111,f1000_57,FedEx,Sr Analyst-Operations Research,Harrison,AR,stats
+c112,glassdoor_134,FedEx Freight,Sr Analyst-Operations Research,Harrison,AR,stats
+c113,vault_78,Fenwick & West,Corporate M&A Associate,Mountain View,CA,consultant
+c114,f1000_388,Fifth Third Bank,Quant Analyst II,Chicago,IL,stats
+c115,f1000_841,First Republic Bank,Quantitative Risk Analyst,San Francisco,CA,stats
+c116,f1000_470,Fiserv,Project Research - Analyst,Brookfield,WI,stats
+c117,f1000_470,Fiserv,Research Project Manager,Brookfield,WI,stats
+c118,f1000_9,Ford Motor,Statistician / Business Intelligence Scientist,Dearborn,MI,stats
+c119,vault_87,Fox Rothschild,Land Use Associate,New York,NY,consultant
+c120,f1000_38,Freddie Mac,Senior Data Scientist,McLean,VA,stats
+c121,f1000_796,GNC,Computer Scientist/Software Engineer,Greenville,PA,stats
+c122,f1000_177,Gap,IT Scientific Program Analyst,Rockville,MD,stats
+c123,f1000_820,Gartner,Associate Data Scientist,Arlington,VA,stats
+c124,f1000_1,Geico,Data Scientist,Chevy Chase,MD,stats
+c125,f1000_12,General Electric,Data Scientist,Washington,DC,stats
+c126,f1000_91,Gilead Sciences,Clinical Data Scientist,Foster City,CA,stats
+c127,f1000_77,Goldman Sachs,FICC - Commodities - Quantitative Sales Strategist,New York,NY,stats
+c128,vault_44,Goodwin Procter,Public M&A Associate,Boston,MA,consultant
+c129,glassdoor_57,Google,Sampling Statistician - CX Lab,Mountain View,CA,stats
+c130,glassdoor_17,Grand Rounds,Senior Data Scientist,San Francisco,CA,stats
+c131,vault_205,Grant Thornton,348 Tax WNTO Tax Statistician Associate - WNTO National Tax Standards Group,Washington,DC,stats
+c132,vault_52,Greenberg Traurig,Mid-Level M&A Associate,Fort Lauderdale,FL,consultant
+c133,f1000_703,Groupon,Data Scientist,Seattle,WA,stats
+c134,nasdaq_GWRE,Guidewire Software,Senior Data Scientist - Cyber Risk Analytics - - CA,San Mateo,CA,stats
+c135,f1000_62,HCA,Data Scientist II,Nashville,TN,stats
+c136,f1000_889,HNI,Data Scientist,Muscatine,IA,stats
+c137,f1000_516,Hanover Insurance,Sr Data Scientist,Worcester,MA,stats
+c138,f1000_362,Harris,Marketing Research Analyst - - NC,Matthews,NC,stats
+c139,f1000_58,Hewlett Packard Enterprise,Research Engineer - Data Scientist - Statistics,Palo Alto,CA,stats
+c140,vault_58,Holland & Knight,Real Estate Associate,New York,NY,consultant
+c141,f1000_22,Home Depot,Data Scientist - Online,Atlanta,GA,stats
+c142,f1000_72,Honeywell,Sr Data Scientist,Atlanta,GA,stats
+c143,cnbc_30,Houzz,User Experience Researcher,Palo Alto,CA,stats
+c144,f1000_52,Humana,Data Scientist 2,Louisville,KY,stats
+c145,nasdaq_INFO,IHS Markit,Research Analyst II,Austin,TX,stats
+c146,f1000_832,Illumina,Principal Biostatistician,Foster City,CA,stats
+c147,nasdaq_INOV,Inovalon,Senior Analyst - Financial and Quantitative Analytics,Bowie,MD,stats
+c148,nasdaq_INOV,Inovalon,Manager - Financial and Quantitative Analytics,Bowie,MD,stats
+c149,bi_15,Instacart,Senior Data Scientist - Fulfillment,San Francisco,CA,stats
+c150,f1000_46,Intel,Data Scientist,Albuquerque,NM,stats
+c151,f1000_526,Intuit,Senior Data Scientist,Plano,TX,stats
+c152,f1000_772,Intuitive Surgical,Machine Learning Scientist,Norcross,GA,stats
+c153,glassdoor_112,John Deere,Student Researcher JDTIC - - IA,Ames,IA,stats
+c154,f1000_34,Johnson & Johnson,Principal Statistician,Spring House,PA,stats
+c155,f1000_566,KBR,Engineer/Scientist,Quantico,VA,stats
+c156,f1000_732,KLA-Tencor,Machine Learning Research Position,Milpitas,CA,stats
+c157,vault_111,KPMG,Manager - Data Scientist - NLP,New York,NY,data_science
+c158,glassdoor_147,Kaiser Permanente,Data Consultant - SAS - Epidemiology - Bio-statistics,Oakland,CA,stats
+c159,glassdoor_106,Keller Williams,Real Estate Sales Agent,Cincinnati,OH,stats
+c160,f1000_802,Kemper,Senior Data Scientist,Chicago,IL,stats
+c161,f1000_105,Kraft Heinz,Data Scientist - People Analytics,Chicago,IL,stats
+c162,cnbc_25,LanzaTech,Synthetic Biology Research Associate,Skokie,IL,stats
+c163,f1000_570,Laureate Education,Director - Institutional Research,Minneapolis,MN,stats
+c164,glassdoor_73,Lawrence Livermore National Laboratory,Postdoctoral Research Staff Member-Applied Statistics,Livermore,CA,stats
+c165,f1000_55,Lockheed Martin,Data Scientist,Rochester,NY,stats
+c166,nasdaq_LOGM,LogMein,Senior Data Scientist - Customer Success,Boston,MA,stats
+c167,cnbc_4,Lyft,Data Scientist,San Francisco,CA,stats
+c168,f1000_454,M&T Bank,Market Research Manager,Buffalo,NY,stats
+c169,glassdoor_117,MD Anderson Cancer Center,Statistical Analyst - Epigenetics and Molecular Carcinogenesis,Smithville,TX,stats
+c170,f1000_296,MGM Resorts,Data Scientist,Las Vegas,NV,stats
+c171,bi_11,Magic Leap,Artificial General Intelligence Principal Applied Research Engineer,San Francisco,CA,stats
+c172,glassdoor_133,Massachusetts General Hospital,Biostatistician,Charlestown,MA,stats
+c173,vault_56,McDermott Will & Emery,Associate - Employment,Menlo Park,CA,consultant
+c174,vault_100,McKinsey & Company,Data Scientist,Chicago,IL,data_science
+c175,nasdaq_MDSO,Medidata Solutions,Sr Business Analyst - Clinical Research,New York,NY,stats
+c176,glassdoor_115,Memorial Sloan Kettering,Assistant Research Biostatistician - Epidemiology and Biostatistics,New York,NY,stats
+c177,f1000_68,Merck,Non-clinical Senior Statistician,West Point,PA,stats
+c178,f1000_41,MetLife,Data Scientist,Cary,NC,stats
+c179,f1000_27,Microsoft,Researcher,Redmond,WA,stats
+c180,f1000_108,Mondelez,Senior Scientist I - Data Science,East Hanover,NJ,stats
+c181,nasdaq_MDB,MongoDB,UX Researcher,New York,NY,stats
+c182,f1000_203,Monsanto,Data Scientist,St. Louis,MO,stats
+c183,f1000_630,Moody's,Data Scientist,San Francisco,CA,stats
+c184,f1000_75,Morgan Stanley,Data Scientist,New York,NY,stats
+c185,vault_23,Morrison & Foerster,Corporate Associate Attorney,Washington,DC,consultant
+c186,f1000_432,Motorola Solutions,Data Scientist - Natural Language Processing,Chicago,IL,stats
+c187,f1000_67,Nationwide,Research Assistant - RI Gene Therapy,Columbus,OH,stats
+c188,glassdoor_78,Navy Federal Credit Union,Member Research Strategist II,Vienna,VA,stats
+c189,f1000_313,Netflix,Senior Data Scientist,Los Gatos,CA,stats
+c190,glassdoor_113,NewYork-Presbyterian Hospital,Program Director Research Science Value Institute,Manhattan,NY,stats
+c191,f1000_207,Newell Brands,Data Scientist,Atlanta,GA,stats
+c192,f1000_169,NextEra Energy,Data Scientist,Juno Beach,FL,stats
+c193,f1000_87,Nike,Lead Data Scientist,Beaverton,OR,stats
+c194,nasdaq_NOK,Nokia,Data Scientist - NSW,Pembroke Pines,FL,stats
+c195,f1000_187,Nordstrom,Data Scientist - Supply Chain,Seattle,WA,stats
+c196,f1000_283,Norfolk Southern,Operations Research Trainee,Atlanta,GA,stats
+c197,f1000_113,Northrop Grumman,Operations Research Analyst,Scott AFB,IL,stats
+c198,f1000_386,Nvidia,Sr Data Scientist,Santa Clara,CA,stats
+c199,f1000_277,Occidental Petroleum,Sr Scientist,Wichita,KS,stats
+c200,vault_104,Oliver Wyman,Data Engineer,New York,NY,data_science
+c201,nasdaq_OMCL,Omnicell,Senior Data Scientist,Mountain View,CA,stats
+c202,f1000_601,OneMain,Lead Quantitative Analyst,Evansville,IN,stats
+c203,f1000_80,Oracle,Senior Data Scientist,New York,NY,stats
+c204,f1000_165,PNC Financial Services,Data Scientist,Pittsburgh,PA,stats
+c205,f1000_364,PPL,Senior Data Scientist/Lead Data Scientist,Washington,DC,stats
+c206,f1000_163,Paccar,Lead Data Scientist,Renton,WA,stats
+c207,nasdaq_PANW,Palo Alto Networks,Sr Data Scientist,Santa Clara,CA,stats
+c208,f1000_263,PayPal,Real Estate Analyst,Scottsdale,AZ,stats
+c209,vault_84,Pepper Hamilton,Health Sciences Department M&A Associate,Philadelphia,NY,consultant
+c210,f1000_43,PepsiCo,R&D Senior Data Scientist,Barrington,IL,stats
+c211,vault_49,Perkins Coie,Patent Litigation Associate Attorney - Junior,Denver,CO,consultant
+c212,nasdaq_PRSP,Perspecta,Statistician IV,Springfield,VA,stats
+c213,f1000_53,Pfizer,Senior Statistical Programmer,Groton,CT,stats
+c214,f1000_35,Procter & Gamble,DATA SCIENTIST-PHD RETAIL FOCUS,Cincinnati,OH,stats
+c215,f1000_119,Progressive,Data Scientist,Draper,UT,stats
+c216,f1000_119,Progressive,Data Scientist Machine Vision,Mayfield Heights,OH,stats
+c217,nasdaq_PFPT,Proofpoint,Senior Data Scientist,Raleigh,NC,stats
+c218,forbes_6,Qualtrics,UX Data Scientist,Seattle,WA,stats
+c219,nasdaq_QTM,Quantum,Research Engineer,Saline,MI,stats
+c220,f1000_115,Raytheon,Senior Data Scientist,McKinney,TX,stats
+c221,f1000_923,Renewable Energy,Research Associate I - Metabolic Engineering,San Francisco,CA,stats
+c222,f1000_222,Reynolds American,Sr Staff Scientist - Survey Research,Winston-Salem,NC,stats
+c223,f1000_218,Ross Stores,Sr Analyst - Real Estate Market Research,Dublin,CA,stats
+c224,f1000_458,S&P Global,Data Scientist,New York,NY,stats
+c225,f1000_458,S&P Global,Senior Data Scientist,New York,NY,stats
+c226,glassdoor_76,SAP,Senior Data Scientist Job,Palo Alto,CA,stats
+c227,f1000_667,Sabre,UX Research Team Lead,Southlake,TX,stats
+c228,glassdoor_60,Salesforce,Data Scientist - Quip,San Francisco,CA,stats
+c229,f1000_591,Sally Beauty,Senior Market Analyst - Real Estate,Denton,TX,stats
+c230,f1000_646,ScanSource,Marketing Data Scientist,Greenville,SC,stats
+c231,f1000_728,Service,Statistician / Bayesian,Bridgewater,NJ,stats
+c232,nasdaq_NOW,ServiceNow,Staff UX Researcher,San Diego,CA,stats
+c233,vault_40,Shearman & Sterling,Associate - Finance,New York,NY,consultant
+c234,nasdaq_SNAP,Snap,Data Scientist,Los Angeles,CA,stats
+c235,forbes_16,Snowflake,Data Scientist - Finance,San Mateo,CA,stats
+c236,cnbc_49,SoFi,Data Scientist - Modeler - Fraud Risk,San Francisco,CA,stats
+c237,f1000_144,Southern,Statistical Analyst,Rosemead,CA,stats
+c238,f1000_137,Southwest Airlines,Senior Developer,Dallas,TX,stats
+c239,f1000_349,SpartanNash,Data Scientist - Supply Chain,Grand Rapids,MI,stats
+c240,nasdaq_SQ,Square,Data Scientist - Risk,San Francisco,CA,stats
+c241,f1000_249,Stanley Black & Decker,Lead Data Scientist,Hartford,CT,stats
+c242,f1000_139,Staples,Associate Data Scientist,Framingham,MA,stats
+c243,f1000_130,Starbucks,senior decision scientist - Customer Analytics and Insights - WA,Seattle,WA,stats
+c244,f1000_32,State Farm Insurance,Actuarial Statistician,Bloomington,IL,stats
+c245,vault_71,Steptoe & Johnson,Commercial Litigation Associate,San Francisco,CA,consultant
+c246,forbes_12,SurveyMonkey,Senior Manager of Engineering - Surveys,San Mateo,CA,stats
+c247,f1000_464,Symantec,Sr Principal Data Scientist LifeLock Consumer Product,Mountain View,CA,stats
+c248,f1000_56,Sysco,Principal Data Scientist,Houston,TX,stats
+c249,glassdoor_108,T-Mobile,Sr Data Scientist,Bellevue,WA,stats
+c250,f1000_37,Target,Lead Data Scientist - DFE,Sunnyvale,CA,stats
+c251,f1000_106,Tech Data,Sr Data Scientist,Clearwater,FL,stats
+c252,f1000_382,Tesla,Data Scientist,Fremont,CA,stats
+c253,f1000_788,Tetra Tech,Senior Environmental Scientist,San Diego,CA,stats
+c254,vault_102,The Boston Consulting,Expert Data Scientist,Seattle,WA,data_science
+c255,glassdoor_96,The Clorox Company,Data Scientist,Durham,NC,stats
+c256,f1000_153,Thermo Fisher Scientific,Data Scientist,Carlsbad,CA,stats
+c257,f1000_715,Time,Principal Data Scientist,New York,NY,stats
+c258,f1000_94,Time Warner,Principal Data Scientist,New York,NY,stats
+c259,f1000_395,Tractor Supply,Data Scientist - Marketing,Brentwood,TN,stats
+c260,f1000_98,Travelers,Manager - Analytics & Research,Hartford,CT,stats
+c261,nasdaq_TRIP,TripAdvisor,Senior Data Scientist,Needham,MA,stats
+c262,f1000_801,Twitter,Data Scientist,San Francisco,CA,stats
+c263,hedge_4,Two Sigma,Data Scientist - Investment Research,New York,NY,data_science
+c264,f1000_101,USAA,State Management Analyst I,San Antonio,TX,stats
+c265,cnbc_1,Uber,Data Scientist - Maps,San Francisco,CA,stats
+c266,f1000_523,Ulta Beauty,Director Real Estate Market Research,Bolingbrook,IL,stats
+c267,glassdoor_67,Ultimate Software,DATA SCIENTIST,Fort Lauderdale,FL,stats
+c268,f1000_755,Unisys,Experienced Research Analyst,Boyce,VA,stats
+c269,f1000_5,UnitedHealth,Senior Statistical Analyst,San Antonio,TX,stats
+c270,glassdoor_100,VMware,Lead UX Researcher - NSX,Palo Alto,CA,stats
+c271,f1000_636,Vantiv,Data Scientist,Cincinnati,OH,stats
+c272,vault_70,Venable,Corporate Associate,New York,NY,consultant
+c273,f1000_908,Verisk Analytics,Sr Analytic Scientist,San Francisco,CA,stats
+c274,nasdaq_VERI,Veritone,Senior Data Scientist,Costa Mesa,CA,stats
+c275,nasdaq_VSAT,ViaSat,Data Scientist,Tempe,AZ,stats
+c276,f1000_186,Visa,Data Scientist / Sr Data Scientist,Foster City,CA,stats
+c277,nasdaq_VMW,Vmware,Lead UX Researcher - NSX,Palo Alto,CA,stats
+c278,f1000_265,Voya Financial,Sr Data Scientist,Windsor,CT,stats
+c279,f1000_0,Walmart,DATA SCIENTIST,San Bruno,CA,stats
+c280,f1000_898,Waters,Senior Data Scientist,Stamford,CT,stats
+c281,f1000_665,Wayfair,Operations Research Analyst,Boston,MA,stats
+c282,cnbc_22,WeWork,Data Scientist - Applied Sciences,Palo Alto,CA,stats
+c283,vault_10,Weil Gotshal & Manges,Associate fr den Bereich Litigation am Standort Frankfurt am Main,Denver International Airport,CO,consultant
+c284,f1000_24,Wells Fargo,Front Office Mortgage Quant,Washington,DC,stats
+c285,f1000_863,West,Research Analyst,Irvine,CA,stats
+c286,f1000_216,Western Digital,Senior Operations Data Scientist,Milpitas,CA,stats
+c287,vault_18,White & Case,Litigation Associate,Los Angeles,CA,consultant
+c288,f1000_366,Williams,Sr Data Scientist,San Francisco,CA,stats
+c289,f1000_505,Williams-Sonoma,Sr Data Scientist,San Francisco,CA,stats
+c290,vault_19,WilmerHale,Corporate Senior Associate,Boston,MA,consultant
+c291,nasdaq_WDAY,Workday,Enterprise Data Stategy & Governance Lead,Pleasanton,CA,stats
+c292,f1000_190,XPO Logistics,Data Scientist,High Point,NC,stats
+c293,vault_124,ZS,Data Science Consultant,New York,NY,data_science
+c294,f1000_351,Zimmer Biomet,Market Research Senior Analyst,Warsaw,IN,stats
+c295,f1000_520,Zoetis,Protein Therapeutics Sr/Principal Scientist Immunoinformatics,Kalamazoo,MI,stats
+c296,f1000_309,eBay,Data Scientist/Statistician,San Jose,CA,stats
+c297,f1000_425,iHeartMedia,Data Scientist - MediaMonitors,Austin,TX,stats

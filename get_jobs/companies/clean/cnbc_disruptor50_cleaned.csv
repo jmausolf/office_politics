@@ -1,0 +1,51 @@
+list_id,company,raw_company,rank,source,job_type
+cnbc_0,SpaceX,SpaceX,1,cnbc_disruptor50,data_science
+cnbc_1,Uber,Uber,2,cnbc_disruptor50,data_science
+cnbc_2,Airbnb,Airbnb,3,cnbc_disruptor50,data_science
+cnbc_3,Didi Chuxing,Didi Chuxing,4,cnbc_disruptor50,data_science
+cnbc_4,Lyft,Lyft,5,cnbc_disruptor50,data_science
+cnbc_5,Grab,Grab,6,cnbc_disruptor50,data_science
+cnbc_6,23andMe,23andMe,7,cnbc_disruptor50,data_science
+cnbc_7,Udacity,Udacity,8,cnbc_disruptor50,data_science
+cnbc_8,Rent the Runway,Rent the Runway,9,cnbc_disruptor50,data_science
+cnbc_9,Coinbase,Coinbase,10,cnbc_disruptor50,data_science
+cnbc_10,TransferWise,TransferWise,11,cnbc_disruptor50,data_science
+cnbc_11,Oscar Health,Oscar Health,12,cnbc_disruptor50,data_science
+cnbc_12,Payoneer,Payoneer,13,cnbc_disruptor50,data_science
+cnbc_13,SurveyMonkey,SurveyMonkey,14,cnbc_disruptor50,data_science
+cnbc_14,Progyny,Progyny,15,cnbc_disruptor50,data_science
+cnbc_15,Adyen,Adyen,16,cnbc_disruptor50,data_science
+cnbc_16,TheRealReal,TheRealReal,17,cnbc_disruptor50,data_science
+cnbc_17,Indigo Agriculture,Indigo Agriculture,18,cnbc_disruptor50,data_science
+cnbc_18,Ezetap,Ezetap,19,cnbc_disruptor50,data_science
+cnbc_19,Peloton,Peloton,20,cnbc_disruptor50,data_science
+cnbc_20,Ginkgo Bioworks,Ginkgo Bioworks,21,cnbc_disruptor50,data_science
+cnbc_21,LISNR,LISNR,22,cnbc_disruptor50,data_science
+cnbc_22,WeWork,WeWork,23,cnbc_disruptor50,data_science
+cnbc_23,Ellevest,Ellevest,24,cnbc_disruptor50,data_science
+cnbc_24,Zipline International,Zipline International,25,cnbc_disruptor50,data_science
+cnbc_25,LanzaTech,LanzaTech,26,cnbc_disruptor50,data_science
+cnbc_26,Crowdstrike,Crowdstrike,27,cnbc_disruptor50,data_science
+cnbc_27,Xiaomi,Xiaomi,28,cnbc_disruptor50,data_science
+cnbc_28,Flirtey,Flirtey,29,cnbc_disruptor50,data_science
+cnbc_29,Veritas Genetics,Veritas Genetics,30,cnbc_disruptor50,data_science
+cnbc_30,Houzz,Houzz,31,cnbc_disruptor50,data_science
+cnbc_31,C3 IoT,C3 IoT,32,cnbc_disruptor50,data_science
+cnbc_32,Palantir Technologies,Palantir Technologies,33,cnbc_disruptor50,data_science
+cnbc_33,Darktrace,Darktrace,34,cnbc_disruptor50,data_science
+cnbc_34,Duolingo,Duolingo,35,cnbc_disruptor50,data_science
+cnbc_35,Pinterest,Pinterest,36,cnbc_disruptor50,data_science
+cnbc_36,Thinx,Thinx,37,cnbc_disruptor50,data_science
+cnbc_37,Robinhood,Robinhood,38,cnbc_disruptor50,data_science
+cnbc_38,Uptake,Uptake,39,cnbc_disruptor50,data_science
+cnbc_39,Drawbridge,Drawbridge,40,cnbc_disruptor50,data_science
+cnbc_40,InMobi,InMobi,41,cnbc_disruptor50,data_science
+cnbc_41,Coursera,Coursera,42,cnbc_disruptor50,data_science
+cnbc_42,Stripe,Stripe,43,cnbc_disruptor50,data_science
+cnbc_43,Illumio,Illumio,44,cnbc_disruptor50,data_science
+cnbc_44,Fanatics,Fanatics,45,cnbc_disruptor50,data_science
+cnbc_45,Auris Health,Auris Health,46,cnbc_disruptor50,data_science
+cnbc_46,Luminar,Luminar,47,cnbc_disruptor50,data_science
+cnbc_47,Apeel Sciences,Apeel Sciences,48,cnbc_disruptor50,data_science
+cnbc_48,GitHub,GitHub,49,cnbc_disruptor50,data_science
+cnbc_49,SoFi,SoFi,50,cnbc_disruptor50,data_science

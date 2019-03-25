@@ -1,0 +1,189 @@
+cid,list_id,company,position,office,office_state,job_type
+c01,f1000_93,3M,HR Workforce Analytics Data Scientist,Maplewood,MN,quant
+c02,f1000_134,Abbott Laboratories,Senior Manager - Data Analytics,Columbus,OH,quant
+c03,vault_109,Accenture,Guidewire Business Analyst,New York,NY,mba
+c04,forbes_48,Acquia,Manager - UX Research,Boston,MA,quant
+c05,f1000_42,Aetna,Lead Data Scientist - 54594BR,Hartford,CT,quant
+c06,f1000_125,Aflac,Head of Quantitative Risk,New York,NY,quant
+c07,f1000_955,Alliance,Healthcare Data Analyst,Oakland,CA,quant
+c08,f1000_83,Allstate,Experienced Quantitative Analyst - Insurance Modeling,Chicago,IL,quant
+c09,f1000_285,Ally Financial,Data Scientist,Charlotte,NC,quant
+c10,vault_119,Alvarez & Marsal,Systems Analyst,New York,NY,mba
+c11,f1000_11,Amazon,Data Scientist,Seattle,WA,quant
+c12,f1000_85,American Express,Analyst-Compliance - Financial Crimes Research Scientist,New York,NY,quant
+c13,f1000_964,American Greetings,Quantitative Analyst I,Westlake,OH,quant
+c14,f1000_122,Amgen,Core Data Scientist,Thousand Oaks,CA,quant
+c15,vault_118,Analysis,UWSD18-406 Financial Analyst II,Pensacola,FL,mba
+c16,f1000_2,Apple,Data Analyst,Austin,TX,quant
+c17,nasdaq_TEAM,Atlassian,Program Manager for Data Center Customer Retention,San Francisco,CA,quant
+c18,vault_101,Bain & Company,Agile Project Manager,Boston,MA,mba
+c19,vault_185,Baird,Financial Analyst - FP&A,Milwaukee,WI,mba
+c20,f1000_25,Bank of America,Quantitative Analyst II,Charlotte,NC,quant
+c21,f1000_224,Becton Dickinson,Senior Manager Data Science,San Diego,CA,quant
+c22,f1000_254,BlackRock,Index and Data Relationship Manager,New York,NY,quant
+c23,glassdoor_91,Blizzard Entertainment,Analyst - Business Data Platform,Irvine,CA,quant
+c24,f1000_23,Boeing,Corporate Citizenship Data Analyst,Chicago,IL,quant
+c25,f1000_480,Booz Allen Hamilton,Data Analyst - Mid,Buckley AFB,CO,quant
+c26,vault_199,Brown Brothers Harriman,Finance Business Analyst II,New York,NY,mba
+c27,f1000_614,CACI,Sr Navy/USMC AIS Analyst,San Diego,CA,quant
+c28,f1000_213,CBRE,Data Analyst,Cincinnati,OH,quant
+c29,f1000_549,CIT,VP - Quantitative Liquidity Management,Pasadena,CA,quant
+c30,f1000_6,CVS Health,Analytics - Data Engineer,Woonsocket,RI,quant
+c31,nasdaq_CARG,CarGurus,Senior Product Data Analyst,Cambridge,MA,quant
+c32,f1000_173,CarMax,Sr Data Scientist,Richmond,VA,quant
+c33,nasdaq_CSLT,Castlight Health,Data Engineer,San Francisco,CA,quant
+c34,glassdoor_90,Cengage,Associate Research Manager,Boston,MA,quant
+c35,f1000_65,Centene,Data Scientist III,Arlington,VA,quant
+c36,f1000_159,CenturyLink,Director Data Sciences and Analytics,Broomfield,CO,quant
+c37,f1000_356,Charles Schwab,Quantitative Analyst/Senior Quantitative Analyst,Chicago,IL,quant
+c38,f1000_651,Church & Dwight,Senior Manager - Market Research,Ewing,NJ,quant
+c39,vault_123,ClearView Healthcare Partners,Life Sciences Strategy Analyst,Newton,MA,mba
+c40,f1000_63,Coca-Cola,Contour Supply Chain - Data Enablement Lead,Atlanta,GA,quant
+c41,f1000_30,Comcast,Advertising Research Analyst,Quincy,MA,quant
+c42,glassdoor_81,Compass,Data Scientist/Statistician,Tysons Corner,VA,quant
+c43,f1000_947,Cooper,Quality Statistical Data Analyst,Findlay,OH,quant
+c44,f1000_557,Coty,e-Data Analyst - Luxury Portfolio,New York,NY,quant
+c45,vault_166,Cowen,Credit Analyst,New York,NY,mba
+c46,bi_0,Credit Karma,Senior Director - Data Science,San Francisco,CA,quant
+c47,vault_170,Credit Suisse,Business Analyst,Raleigh,NC,mba
+c48,vault_208,Crowe,Data Scientist - Applied Technology,Indianapolis,IN,data_science
+c49,f1000_185,DISH Network,Data Analyst,Englewood,CO,quant
+c50,f1000_180,DaVita,Data Analyst,Denver,CO,quant
+c51,f1000_446,Dana,Mgr Research Operations,Boston,MA,quant
+c52,vault_203,Deloitte,Data Scientist,Washington,DC,data_science
+c53,f1000_276,Discover Financial Services,Principal Data Analyst,Riverwoods,IL,quant
+c54,f1000_411,Discovery Communications,Senior Manager - Data Science,New York,NY,quant
+c55,nasdaq_DOCU,DocuSign,Director - Product Data Science,San Francisco,CA,quant
+c56,nasdaq_DBX,Dropbox,Data Analyst - Growth,San Francisco,CA,quant
+c57,vault_198,EY,Senior Business Analyst,Nashville,TN,mba
+c58,f1000_914,Engility,Data Analyst,Chantilly,VA,quant
+c59,f1000_702,Equifax,Data Scientist,Atlanta,GA,quant
+c60,f1000_824,Equity Residential,Data Scientist,Chicago,IL,quant
+c61,f1000_88,Exelon,Sr Quantitative Analyst,Baltimore,MD,quant
+c62,f1000_892,Express,Market Research Analyst,Hawthorne,CA,quant
+c63,f1000_994,FTI Consulting,Senior Consultant - Data & Analytics,Chicago,IL,quant
+c64,f1000_97,Facebook,Quantitative UX Researcher,Seattle,WA,quant
+c65,f1000_19,Fannie Mae,Quantitative Modeler,Washington,DC,quant
+c66,f1000_388,Fifth Third Bank,Quant Analyst II,Chicago,IL,quant
+c67,f1000_841,First Republic Bank,Quantitative Analyst,San Francisco,CA,quant
+c68,f1000_9,Ford Motor,Quantitative Analyst/Statistician - Data Science,Dearborn,MI,quant
+c69,f1000_38,Freddie Mac,Quantitative Analytics Senior,McLean,VA,quant
+c70,f1000_312,Frontier Communications,Senior Data Scientist,Norwalk,CT,quant
+c71,f1000_177,Gap,Scientific Program Analyst - Vaccine Research,Rockville,MD,quant
+c72,f1000_820,Gartner,Sr Director - Quantitative Analytics - FLORS,Arlington,VA,quant
+c73,f1000_1,Geico,Data Analyst,Chevy Chase,MD,quant
+c74,f1000_12,General Electric,Senior Data Scientist,Boston,MA,quant
+c75,nasdaq_GLUU,Glu Mobile,Senior Data Analyst,San Francisco,CA,quant
+c76,f1000_979,GoDaddy,Data Scientist - Statistical Modeling and Inference,Gilbert,AZ,quant
+c77,f1000_77,Goldman Sachs,Quant Developer FICC SMM,New York,NY,quant
+c78,glassdoor_57,Google,Data Scientist/Quantitative Analyst - Revenue Strategy and Operations,Redwood City,CA,quant
+c79,glassdoor_17,Grand Rounds,Data Science Manager,San Francisco,CA,quant
+c80,vault_205,Grant Thornton,Data Scientist,Washington,DC,data_science
+c81,f1000_703,Groupon,Senior Manager - Paid Marketing Data Science & Analytics,Seattle,WA,quant
+c82,f1000_22,Home Depot,Senior Analyst - Data Science Online,Atlanta,GA,quant
+c83,vault_162,Houlihan Lokey,Financial Analyst - Portfolio Valuations,New York,NY,mba
+c84,nasdaq_HUBS,HubSpot,Senior Finance Data Analyst,Boston,MA,quant
+c85,f1000_52,Humana,Principal Data Scientist,Louisville,KY,quant
+c86,nasdaq_INFO,IHS Markit,Snr Data Scientist,Englewood,CO,quant
+c87,f1000_188,INTL FCStone,Data Business Analyst,Chicago,IL,quant
+c88,nasdaq_INOV,Inovalon,Analyst - Financial and Quantitative Analytics,Bowie,MD,quant
+c89,forbes_19,Intercom,Senior Data Analyst,San Francisco,CA,quant
+c90,f1000_132,International Paper,HR Reporting - Analytics - and Data Integrity Management Analyst,Memphis,TN,quant
+c91,f1000_526,Intuit,Principal Quantitative Policy Lead - Financial Risk,Mountain View,CA,quant
+c92,f1000_151,Jabil,Sr Manager HR Data and Analytics,Saint Petersburg,FL,quant
+c93,vault_174,Jefferies,Legal and Compliance Analyst - Jefferies Finance,New York,NY,mba
+c94,f1000_402,JetBlue Airways,Senior Analyst Data Cust Relation Mgmt,Long Island City,NY,quant
+c95,f1000_34,Johnson & Johnson,SENIOR MANAGER RD DATA AND ANALYTICS,West Chester,PA,quant
+c96,vault_111,KPMG,Financial Analyst,Montvale,NJ,mba
+c97,glassdoor_147,Kaiser Permanente,Marketing Sr Data Analyst,Burbank,CA,quant
+c98,f1000_802,Kemper,Senior Data Scientist,Chicago,IL,quant
+c99,f1000_105,Kraft Heinz,Sr Data Engineer,Chicago,IL,quant
+c100,f1000_583,LPL Financial,AVP - Research,San Diego,CA,quant
+c101,f1000_570,Laureate Education,Data Analyst,Columbia,MD,quant
+c102,cnbc_4,Lyft,Research Scientist - Decision Science Products,San Francisco,CA,quant
+c103,f1000_454,M&T Bank,Sr Quantitative Risk Analyst,Buffalo,NY,quant
+c104,glassdoor_117,MD Anderson Cancer Center,Research Statistical Analyst - Bioinformatics and Computational Biology,Houston,TX,quant
+c105,vault_181,Macquarie,Market Data Business Analyst - Vendor Manager,New York,NY,mba
+c106,f1000_525,Magellan Health,Data and Reporting Analyst II,Salt Lake City,UT,quant
+c107,f1000_162,Marriott,Director-Advanced Data Science,Bethesda,MD,quant
+c108,glassdoor_133,Massachusetts General Hospital,Data Analyst - Senior,Boston,MA,quant
+c109,f1000_4,McKesson,Data Engineer,Phoenix,AZ,quant
+c110,vault_100,McKinsey & Company,Senior Financial Analyst - Digital,Tampa,FL,mba
+c111,f1000_761,Medical Mutual of Ohio,Data Financial Analyst,Cleveland,OH,quant
+c112,nasdaq_MDSO,Medidata Solutions,Clinical Data QC Analyst,Iselin,NJ,quant
+c113,glassdoor_115,Memorial Sloan Kettering,Ops Research Engineer/Data Scientist,New York,NY,quant
+c114,f1000_27,Microsoft,Quantitative Treasury Analyst,Redmond,WA,quant
+c115,f1000_108,Mondelez,Global Procurement Data Science Lead,East Hanover,NJ,quant
+c116,f1000_630,Moody's,Director - Quantitative Research,San Francisco,CA,quant
+c117,f1000_75,Morgan Stanley,Equity Research Sector Quant,New York,NY,quant
+c118,f1000_513,Navient,Senior Internal Auditor - Data Analytics,Reston,VA,quant
+c119,glassdoor_78,Navy Federal Credit Union,Member Research Strategist II,Vienna,VA,quant
+c120,f1000_169,NextEra Energy,Quantitative Analyst,Juno Beach,FL,quant
+c121,f1000_87,Nike,Senior Data Scientist,Portland,OR,quant
+c122,vault_188,Nomura,Investment Banking Analyst - Latin America,New York,NY,mba
+c123,f1000_187,Nordstrom,Lead Analyst,Seattle,WA,quant
+c124,f1000_500,Northern Trust,Senior Associate Analyst - Investments,Chicago,IL,quant
+c125,f1000_113,Northrop Grumman,Operations Research Analyst,Scott AFB,IL,quant
+c126,vault_104,Oliver Wyman,Aircraft Records Analyst,Atlanta,GA,mba
+c127,f1000_601,OneMain,Quantitative Analytics Manager,Wilmington,DE,quant
+c128,f1000_80,Oracle,Client Success Analyst DataRaker Utilities Analytics Team,Reston,VA,quant
+c129,vault_172,PJT Partners,Analyst - PJT Camberview,San Francisco,CA,mba
+c130,f1000_165,PNC Financial Services,Quantitative Analytics & Model Development Analyst,Pittsburgh,PA,quant
+c131,f1000_301,Pacific Life,Assistant Actuary,Newport Beach,CA,quant
+c132,f1000_263,PayPal,Data Scientist 2,San Jose,CA,quant
+c133,nasdaq_PRSP,Perspecta,Data Scientist III,Springfield,VA,quant
+c134,f1000_53,Pfizer,Principal Scientist - Computational Biology NGS Analyst,Cambridge,MA,quant
+c135,f1000_119,Progressive,Data Analyst,Highland Heights,OH,quant
+c136,f1000_119,Progressive,Data Science - Sr Manager,Draper,UT,quant
+c137,vault_202,PwC,Data Scientist - Manager,Chicago,IL,data_science
+c138,forbes_6,Qualtrics,Sr UX Data Scientist,Seattle,WA,quant
+c139,f1000_370,Ralph Lauren,Data Engineer - Global Analytics,Lyndhurst,NJ,quant
+c140,f1000_468,Raymond James Financial,Research Associate,Saint Petersburg,FL,quant
+c141,f1000_115,Raytheon,Senior Data Scientist,McKinney,TX,quant
+c142,f1000_923,Renewable Energy,Geospatial Data Science Postdoctoral Researcher,Golden,CO,quant
+c143,vault_175,Rothschild,Analyst - Financial Institutions Group,New York,NY,mba
+c144,glassdoor_70,Ryan,Research Laboratory Technician - Arms & Hands Core - Full-time,Chicago,IL,quant
+c145,glassdoor_60,Salesforce,Data Science and Machine Learning - Technical Director,San Francisco,CA,quant
+c146,f1000_646,ScanSource,Marketing Data Scientist,Greenville,SC,quant
+c147,f1000_728,Service,Finance Data Analytics Manager,Atlanta,GA,quant
+c148,f1000_476,Simon Property,Sr Retail Data Transformation Analyst,Indianapolis,IN,quant
+c149,forbes_1,Slack,Senior Survey Scientist - Research,San Francisco,CA,quant
+c150,vault_145,Smartronix,Project Manager,Maxwell AFB,AL,mba
+c151,nasdaq_SNAP,Snap,UX Researcher,West Valley City,UT,quant
+c152,cnbc_49,SoFi,Director - Operations Data Science,San Francisco,CA,quant
+c153,f1000_144,Southern,Sr Data Scientist,Costa Mesa,CA,quant
+c154,f1000_349,SpartanNash,Data Scientist - Supply Chain,Grand Rapids,MI,quant
+c155,nasdaq_SPLK,Splunk,Data Engineer,San Francisco,CA,quant
+c156,nasdaq_SQ,Square,Manager Sales Research,New York,NY,quant
+c157,f1000_139,Staples,Operations Research Analyst,Framingham,MA,quant
+c158,f1000_130,Starbucks,senior data scientist - Supply Chain Advanced Analytics - SSC - - WA,Seattle,WA,quant
+c159,f1000_32,State Farm Insurance,Lead Analyst Advanced Analytics/Data Science,Athens,GA,quant
+c160,f1000_270,State Street,Quantitative Analyst AVP,Boston,MA,quant
+c161,glassdoor_108,T-Mobile,Sr Analyst - Data Analytics & Visualization,Bellevue,WA,quant
+c162,f1000_79,TIAA,Data Analyst - Bank Ops,Jacksonville,FL,quant
+c163,f1000_401,Targa Resources,Application Specialist - Data Engineer - T8960,Houston,TX,quant
+c164,f1000_37,Target,Lead Operations Research Analyst - Network Planning,Minneapolis,MN,quant
+c165,vault_102,The Boston Consulting,Business Analyst,Boston,MA,mba
+c166,f1000_153,Thermo Fisher Scientific,Sr Analyst - Research and Market Intelligence,Pittsburgh,PA,quant
+c167,f1000_715,Time,Data Analyst,Needham,MA,quant
+c168,f1000_94,Time Warner,Data Analyst,Needham,MA,quant
+c169,f1000_801,Twitter,Research Specialist,San Francisco,CA,quant
+c170,hedge_4,Two Sigma,Research Scientist,New York,NY,stats
+c171,vault_167,UBS,IT Project Manager,Nashville,TN,mba
+c172,cnbc_1,Uber,Data Analyst - Strategic Finance,San Francisco,CA,quant
+c173,f1000_523,Ulta Beauty,Director Real Estate Market Research,Bolingbrook,IL,quant
+c174,f1000_5,UnitedHealth,Data Analyst,San Antonio,TX,quant
+c175,f1000_903,Universal,RESEARCH ANALYST TEM,Los Angeles,CA,quant
+c176,f1000_908,Verisk Analytics,Principal II - Research & Dev,Buffalo Grove,IL,quant
+c177,f1000_223,Viacom,Manager - Sourcing - Research and Insights,Hollywood,CA,quant
+c178,f1000_265,Voya Financial,Director of Quantitative Equity Research,New York,NY,quant
+c179,f1000_0,Walmart,Staff Data Scientist,Sunnyvale,CA,quant
+c180,f1000_665,Wayfair,Manager - Quantitative Integrated Marketing,Boston,MA,quant
+c181,cnbc_22,WeWork,Senior Data Analyst,New York,NY,quant
+c182,f1000_24,Wells Fargo,Quant Model Developer,New York,NY,quant
+c183,f1000_863,West,Quantitative Analyst,San Ramon,CA,quant
+c184,vault_163,William Blair,MANAGER - INVESTMENT BANKING MARKETING,Chicago,IL,mba
+c185,f1000_366,Williams,Sr Data Scientist,San Francisco,CA,quant
+c186,f1000_255,Xcel Energy,Quantitative Systems Consultant Job,Denver,CO,quant
+c187,vault_124,ZS,Solutions Analyst,San Francisco,CA,mba
+c188,f1000_309,eBay,Senior Data Engineer,San Jose,CA,quant

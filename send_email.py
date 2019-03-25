@@ -4,13 +4,21 @@ from email.mime.multipart import MIMEMultipart
 from smtplib import SMTP
 from make_cover_letters import *
 from make_resumes import *
-from credentials import *
 import inspect
+
+
+def abbreviate_middle(name):
+	split_name = name.split(' ')
+	f, m, l = split_name[0], split_name[1], split_name[2]
+	m = '{}.'.format(m[0])
+	name = '{} {} {}'.format(f, m, l)
+	return name
 
 
 def send_email(profile, 
 			job_type,
 			contact,
+			contact_last_name,
 			job,
 			office, 
 			company,
@@ -25,18 +33,60 @@ def send_email(profile,
 			ba_ctyst,
 			internship1,
 			int1_ctyst,
+			int1_title,
 			internship2,
 			int2_ctyst,
+			int2_title,
 			treatment,
 			phone, 
 			gmail_user,
 			gmail_pass,
-			contact_email
+			contact_email,
+			rgb,
+			pair,
+			pair_version
 			):
 	
-	
-	subject = "{} Position - {}".format(job, company)
+	#TODO Pass "Pair" to Email
+	#Need alt style for a number of elements in the email,
+	#such as the resume style, cover_letter style, subject line,
+	#signature, etc
 
+	#To avoid confounding whether one 'style' is better or worse
+	#with partisan or non-partisan, the 'style' needs to be randomized
+	#as well.
+
+	#By passing the pair 'a' or 'b' to the send_email 
+	#func, any style element can have at random an a and b version
+
+
+	#TODO
+	#within CL sub of 'University of X, Y,' --> 'University of X-Y,'
+
+	if company in job:
+
+		if pair_version == 'A':
+			subject = "{} Opening".format(job)
+		elif pair_version == 'B':
+			subject = "Position | {} ".format(job)
+
+	else:
+		#Adjust long job post (if exists, in one pair)
+		#rename to only adjust email title (not cl)
+		h = job.count(' - ')
+		if len(job) > 40 and h > 1:
+			if pair_version == 'A':
+				job_post = job.rsplit(' - ', h-1)[0]
+			else:
+				job_post = job
+		else:
+			job_post = job
+			
+
+		if pair_version == 'A':
+			subject = "{} Opening - {}".format(job_post, company)
+		elif pair_version == 'B':
+			subject = "Position | {}".format(job_post)
 
 	msgRoot = MIMEMultipart('mixed')
 	msgRoot['Subject'] = subject
@@ -50,11 +100,23 @@ def send_email(profile,
 	msgAlt = MIMEMultipart('alternative')
 	msgRoot.attach(msgAlt)
 
+
+	#Alter Full Name Format in CL/Email
+	#(Keep full name in the from field)
+	if pair_version == 'A':
+		phone = '{}'.format(phone.replace('-', '.'))
+		pass
+	elif pair_version == 'B':
+		name = abbreviate_middle(name)
+		phone = '({}'.format(phone.replace('-', ') ', 1))
+
+
 	#Message (Text Version & HTML Version)
 	message_output = make_html_text_cl(
 		profile, 
 		job_type, 
-		contact, 
+		contact,
+		contact_last_name, 
 		job, 
 		office, 
 		company, 
@@ -68,7 +130,9 @@ def send_email(profile,
 		int2_ctyst,
 		treatment, 
 		phone, 
-		gmail_user
+		gmail_user,
+		rgb,
+		pair_version
 		)
 
 
@@ -95,12 +159,16 @@ def send_email(profile,
 				ba_ctyst, 
 				internship1,
 				int1_ctyst,
+				int1_title,
 				internship2,
 				int2_ctyst,
-				treatment)
+				int2_title,
+				treatment,
+				pair_version)
 
 	#Resume
-	resume_filename = "Resume_{}.pdf".format(name.replace(' ', '_'))
+	clean_name = name.replace(' ', '_').replace('.', '')
+	resume_filename = "Resume_{}.pdf".format(clean_name)
 	resume_path = "{}/{}/tex/{}".format(profile, job_type, resume_filename)
 
 	#Attach Resume
