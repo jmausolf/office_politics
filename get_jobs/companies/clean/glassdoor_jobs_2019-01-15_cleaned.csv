@@ -1,0 +1,151 @@
+list_id,company,raw_company,rank,source,job_type
+glassdoor_0,Heap,Heap,1,glassdoor_med_small,data_science
+glassdoor_1,Horizon Innovations,Horizon Innovations,2,glassdoor_med_small,data_science
+glassdoor_2,Silverline,Silverline,3,glassdoor_med_small,data_science
+glassdoor_3,Marketing 360,Marketing 360,4,glassdoor_med_small,data_science
+glassdoor_4,Digital Prospectors,Digital Prospectors,5,glassdoor_med_small,data_science
+glassdoor_5,GetUWired,GetUWired,6,glassdoor_med_small,data_science
+glassdoor_6,Weave,Weave,7,glassdoor_med_small,data_science
+glassdoor_7,Malouf,Malouf,8,glassdoor_med_small,data_science
+glassdoor_8,Highspot,Highspot,9,glassdoor_med_small,data_science
+glassdoor_9,Peabody Properties,Peabody Properties,10,glassdoor_med_small,data_science
+glassdoor_10,South Carolina Federal Credit Union,South Carolina Federal Credit Union,11,glassdoor_med_small,data_science
+glassdoor_11,driversselect,driversselect,12,glassdoor_med_small,data_science
+glassdoor_12,Disruptive Advertising,Disruptive Advertising,13,glassdoor_med_small,data_science
+glassdoor_13,New Western,New Western,14,glassdoor_med_small,data_science
+glassdoor_14,NetWorth Realty,NetWorth Realty,15,glassdoor_med_small,data_science
+glassdoor_15,iCIMS,iCIMS,16,glassdoor_med_small,data_science
+glassdoor_16,Sundance Vacations,Sundance Vacations,17,glassdoor_med_small,data_science
+glassdoor_17,Grand Rounds,Grand Rounds,18,glassdoor_med_small,data_science
+glassdoor_18,Pariveda Solutions,Pariveda Solutions,19,glassdoor_med_small,data_science
+glassdoor_19,nbkc bank,nbkc bank,20,glassdoor_med_small,data_science
+glassdoor_20,G-TECH Services,G-TECH Services,21,glassdoor_med_small,data_science
+glassdoor_21,The Predictive Index,The Predictive Index,22,glassdoor_med_small,data_science
+glassdoor_22,Acceleration Partners,Acceleration Partners,23,glassdoor_med_small,data_science
+glassdoor_23,Bombas,Bombas,24,glassdoor_med_small,data_science
+glassdoor_24,Front,Front,25,glassdoor_med_small,data_science
+glassdoor_25,23andMe,23andMe,26,glassdoor_med_small,data_science
+glassdoor_26,Optima Tax Relief,Optima Tax Relief,27,glassdoor_med_small,data_science
+glassdoor_27,OppLoans,OppLoans,28,glassdoor_med_small,data_science
+glassdoor_28,Common Thread Collective,Common Thread Collective,29,glassdoor_med_small,data_science
+glassdoor_29,Life.Church,Life.Church,30,glassdoor_med_small,data_science
+glassdoor_30,CarSense,CarSense,31,glassdoor_med_small,data_science
+glassdoor_31,Best Version Media,Best Version Media,32,glassdoor_med_small,data_science
+glassdoor_32,KeepTruckin,KeepTruckin,33,glassdoor_med_small,data_science
+glassdoor_33,vCom Solutions,vCom Solutions,34,glassdoor_med_small,data_science
+glassdoor_34,WillowTree,WillowTree,35,glassdoor_med_small,data_science
+glassdoor_35,Emser Tile,Emser Tile,36,glassdoor_med_small,data_science
+glassdoor_36,Greenhouse Software,Greenhouse Software,37,glassdoor_med_small,data_science
+glassdoor_37,Thrive Mortgage,Thrive Mortgage,38,glassdoor_med_small,data_science
+glassdoor_38,Spreetail,Spreetail,39,glassdoor_med_small,data_science
+glassdoor_39,Towne Properties,Towne Properties,40,glassdoor_med_small,data_science
+glassdoor_40,Sage Intacct,Sage Intacct,41,glassdoor_med_small,data_science
+glassdoor_41,Glint,Glint,42,glassdoor_med_small,data_science
+glassdoor_42,Healthy Spot,Healthy Spot,43,glassdoor_med_small,data_science
+glassdoor_43,Thomas J. Henry Injury Attorneys,Thomas J. Henry Injury Attorneys,44,glassdoor_med_small,data_science
+glassdoor_44,Moogsoft,Moogsoft,45,glassdoor_med_small,data_science
+glassdoor_45,Berkshire,Berkshire,46,glassdoor_med_small,data_science
+glassdoor_46,Indigo (MA),Indigo (MA),47,glassdoor_med_small,data_science
+glassdoor_47,Corporate Brokers,Corporate Brokers,48,glassdoor_med_small,data_science
+glassdoor_48,eXp Realty,eXp Realty,49,glassdoor_med_small,data_science
+glassdoor_49,SailPoint Technologies,SailPoint Technologies,50,glassdoor_med_small,data_science
+glassdoor_50,Bain & Company,Bain & Company,1,glassdoor_large,data_science
+glassdoor_51,Zoom Video Communications,Zoom Video Communications,2,glassdoor_large,data_science
+glassdoor_52,In-N-Out Burger,In-N-Out Burger,3,glassdoor_large,data_science
+glassdoor_53,Procore Technologies,Procore Technologies,4,glassdoor_large,data_science
+glassdoor_54,Boston Consulting Group,Boston Consulting Group,5,glassdoor_large,data_science
+glassdoor_55,LinkedIn,LinkedIn,6,glassdoor_large,data_science
+glassdoor_56,Facebook,Facebook,7,glassdoor_large,data_science
+glassdoor_57,Google,Google,8,glassdoor_large,data_science
+glassdoor_58,lululemon,lululemon,9,glassdoor_large,data_science
+glassdoor_59,Southwest Airlines,Southwest Airlines,10,glassdoor_large,data_science
+glassdoor_60,Salesforce,Salesforce,11,glassdoor_large,data_science
+glassdoor_61,Intuitive Surgical,Intuitive Surgical,12,glassdoor_large,data_science
+glassdoor_62,St. Jude Children's Research Hospital,St. Jude Children's Research Hospital,13,glassdoor_large,data_science
+glassdoor_63,Slalom,Slalom,14,glassdoor_large,data_science
+glassdoor_64,Power Home Remodeling,Power Home Remodeling,15,glassdoor_large,data_science
+glassdoor_65,HubSpot,HubSpot,16,glassdoor_large,data_science
+glassdoor_66,DocuSign,DocuSign,17,glassdoor_large,data_science
+glassdoor_67,Ultimate Software,Ultimate Software,18,glassdoor_large,data_science
+glassdoor_68,McKinsey & Company,McKinsey & Company,19,glassdoor_large,data_science
+glassdoor_69,Paylocity,Paylocity,20,glassdoor_large,data_science
+glassdoor_70,"Ryan, LLC","Ryan, LLC",21,glassdoor_large,data_science
+glassdoor_71,Sammons Financial Group,Sammons Financial Group,22,glassdoor_large,data_science
+glassdoor_72,Trader Joe's,Trader Joe's,23,glassdoor_large,data_science
+glassdoor_73,Lawrence Livermore National Laboratory,Lawrence Livermore National Laboratory,24,glassdoor_large,data_science
+glassdoor_74,Smile Brands,Smile Brands,25,glassdoor_large,data_science
+glassdoor_75,Fast Enterprises,Fast Enterprises,26,glassdoor_large,data_science
+glassdoor_76,SAP,SAP,27,glassdoor_large,data_science
+glassdoor_77,Delta Air Lines,Delta Air Lines,28,glassdoor_large,data_science
+glassdoor_78,Navy Federal Credit Union,Navy Federal Credit Union,29,glassdoor_large,data_science
+glassdoor_79,Adobe,Adobe,30,glassdoor_large,data_science
+glassdoor_80,H E B,H E B,31,glassdoor_large,data_science
+glassdoor_81,Compass,Compass,32,glassdoor_large,data_science
+glassdoor_82,Illumina,Illumina,33,glassdoor_large,data_science
+glassdoor_83,Microsoft,Microsoft,34,glassdoor_large,data_science
+glassdoor_84,Trilogy Health Services,Trilogy Health Services,35,glassdoor_large,data_science
+glassdoor_85,NVIDIA,NVIDIA,36,glassdoor_large,data_science
+glassdoor_86,E. & J. Gallo Winery,E. & J. Gallo Winery,37,glassdoor_large,data_science
+glassdoor_87,Intuit,Intuit,38,glassdoor_large,data_science
+glassdoor_88,NIH,NIH,39,glassdoor_large,data_science
+glassdoor_89,TaskUs,TaskUs,40,glassdoor_large,data_science
+glassdoor_90,Cengage,Cengage,41,glassdoor_large,data_science
+glassdoor_91,Blizzard Entertainment,Blizzard Entertainment,42,glassdoor_large,data_science
+glassdoor_92,Equity Residential,Equity Residential,43,glassdoor_large,data_science
+glassdoor_93,Kronos Incorporated,Kronos Incorporated,44,glassdoor_large,data_science
+glassdoor_94,Nebraska Furniture Mart,Nebraska Furniture Mart,45,glassdoor_large,data_science
+glassdoor_95,Wegmans Food Markets,Wegmans Food Markets,46,glassdoor_large,data_science
+glassdoor_96,The Clorox Company,The Clorox Company,47,glassdoor_large,data_science
+glassdoor_97,SpaceX,SpaceX,48,glassdoor_large,data_science
+glassdoor_98,Johnson & Johnson,Johnson & Johnson,49,glassdoor_large,data_science
+glassdoor_99,Crowe,Crowe,50,glassdoor_large,data_science
+glassdoor_100,VMware,VMware,51,glassdoor_large,data_science
+glassdoor_101,Northside Hospital,Northside Hospital,52,glassdoor_large,data_science
+glassdoor_102,Vi,Vi,53,glassdoor_large,data_science
+glassdoor_103,ABC Supply Co.,ABC Supply Co.,54,glassdoor_large,data_science
+glassdoor_104,AvalonBay Communities,AvalonBay Communities,55,glassdoor_large,data_science
+glassdoor_105,Boston Scientific,Boston Scientific,56,glassdoor_large,data_science
+glassdoor_106,Keller Williams,Keller Williams,57,glassdoor_large,data_science
+glassdoor_107,AppDynamics,AppDynamics,58,glassdoor_large,data_science
+glassdoor_108,T-Mobile,T-Mobile,59,glassdoor_large,data_science
+glassdoor_109,Rose International,Rose International,60,glassdoor_large,data_science
+glassdoor_110,Hilti North America,Hilti North America,61,glassdoor_large,data_science
+glassdoor_111,Paycom,Paycom,62,glassdoor_large,data_science
+glassdoor_112,John Deere,John Deere,63,glassdoor_large,data_science
+glassdoor_113,NewYork-Presbyterian Hospital,NewYork-Presbyterian Hospital,64,glassdoor_large,data_science
+glassdoor_114,Oshkosh Corporation,Oshkosh Corporation,65,glassdoor_large,data_science
+glassdoor_115,Memorial Sloan Kettering,Memorial Sloan Kettering,66,glassdoor_large,data_science
+glassdoor_116,VIPKID,VIPKID,67,glassdoor_large,data_science
+glassdoor_117,MD Anderson Cancer Center,MD Anderson Cancer Center,68,glassdoor_large,data_science
+glassdoor_118,Cisco Systems,Cisco Systems,69,glassdoor_large,data_science
+glassdoor_119,Travelers,Travelers,70,glassdoor_large,data_science
+glassdoor_120,Apple,Apple,71,glassdoor_large,data_science
+glassdoor_121,Omni Hotels,Omni Hotels,72,glassdoor_large,data_science
+glassdoor_122,BAYADA Home Health Care,BAYADA Home Health Care,73,glassdoor_large,data_science
+glassdoor_123,Aptive Environmental,Aptive Environmental,74,glassdoor_large,data_science
+glassdoor_124,Goldman Sachs,Goldman Sachs,75,glassdoor_large,data_science
+glassdoor_125,Kimpton Hotels & Restaurants,Kimpton Hotels & Restaurants,76,glassdoor_large,data_science
+glassdoor_126,Texas Instruments,Texas Instruments,77,glassdoor_large,data_science
+glassdoor_127,Great Lakes Caring,Great Lakes Caring,78,glassdoor_large,data_science
+glassdoor_128,Costco Wholesale,Costco Wholesale,79,glassdoor_large,data_science
+glassdoor_129,Deloitte,Deloitte,80,glassdoor_large,data_science
+glassdoor_130,Discount Tire,Discount Tire,81,glassdoor_large,data_science
+glassdoor_131,NetApp,NetApp,82,glassdoor_large,data_science
+glassdoor_132,Phoenix Children's Hospital,Phoenix Children's Hospital,83,glassdoor_large,data_science
+glassdoor_133,Massachusetts General Hospital,Massachusetts General Hospital,84,glassdoor_large,data_science
+glassdoor_134,FedEx Freight,FedEx Freight,85,glassdoor_large,data_science
+glassdoor_135,Edward Jones,Edward Jones,86,glassdoor_large,data_science
+glassdoor_136,HP Inc.,HP Inc.,87,glassdoor_large,data_science
+glassdoor_137,Accenture,Accenture,88,glassdoor_large,data_science
+glassdoor_138,Texas Health Resources,Texas Health Resources,89,glassdoor_large,data_science
+glassdoor_139,Sport Clips,Sport Clips,90,glassdoor_large,data_science
+glassdoor_140,Gensler,Gensler,91,glassdoor_large,data_science
+glassdoor_141,Expedia Group,Expedia Group,92,glassdoor_large,data_science
+glassdoor_142,BOK Financial,BOK Financial,93,glassdoor_large,data_science
+glassdoor_143,Chevron,Chevron,94,glassdoor_large,data_science
+glassdoor_144,EY,EY,95,glassdoor_large,data_science
+glassdoor_145,Raising Cane's,Raising Cane's,96,glassdoor_large,data_science
+glassdoor_146,FLIK Hospitality Group,FLIK Hospitality Group,97,glassdoor_large,data_science
+glassdoor_147,Kaiser Permanente,Kaiser Permanente,98,glassdoor_large,data_science
+glassdoor_148,World Wide Technology,World Wide Technology,99,glassdoor_large,data_science
+glassdoor_149,Morgan Stanley,Morgan Stanley,100,glassdoor_large,data_science

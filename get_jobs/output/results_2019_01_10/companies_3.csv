@@ -1,0 +1,2129 @@
+list_id,company,job_type
+f1000_0,Walmart,quant
+f1000_1,Geico,quant
+f1000_2,Apple,quant
+f1000_3,ExxonMobil,quant
+f1000_4,McKesson,quant
+f1000_5,UnitedHealth,quant
+f1000_6,CVS Health,quant
+f1000_7,General Motors,quant
+f1000_8,AT&T,quant
+f1000_9,Ford Motor,quant
+f1000_10,AmerisourceBergen,quant
+f1000_11,Amazon,quant
+f1000_12,General Electric,quant
+f1000_13,Verizon Communications,quant
+f1000_14,Cardinal Health,quant
+f1000_15,Costco,quant
+f1000_16,Walgreens,quant
+f1000_17,Kroger,quant
+f1000_18,Chevron,quant
+f1000_19,Fannie Mae,quant
+f1000_20,J.P. Morgan Chase,quant
+f1000_21,Express Scripts,quant
+f1000_22,Home Depot,quant
+f1000_23,Boeing,quant
+f1000_24,Wells Fargo,quant
+f1000_25,Bank of America,quant
+f1000_26,Alphabet,quant
+f1000_27,Microsoft,quant
+f1000_28,Anthem,quant
+f1000_29,Citigroup,quant
+f1000_30,Comcast,quant
+f1000_31,IBM,quant
+f1000_32,State Farm Insurance,quant
+f1000_33,Phillips 66,quant
+f1000_34,Johnson & Johnson,quant
+f1000_35,Procter & Gamble,quant
+f1000_36,Valero Energy,quant
+f1000_37,Target,quant
+f1000_38,Freddie Mac,quant
+f1000_39,Lowe's,quant
+f1000_40,Dell Technologies,quant
+f1000_41,MetLife,quant
+f1000_42,Aetna,quant
+f1000_43,PepsiCo,quant
+f1000_44,Archer Daniels Midland,quant
+f1000_45,UPS,quant
+f1000_46,Intel,quant
+f1000_47,Prudential Financial,quant
+f1000_48,Albertsons,quant
+f1000_49,United Technologies,quant
+f1000_50,Marathon Petroleum,quant
+f1000_51,Disney,quant
+f1000_52,Humana,quant
+f1000_53,Pfizer,quant
+f1000_54,AIG,quant
+f1000_55,Lockheed Martin,quant
+f1000_56,Sysco,quant
+f1000_57,FedEx,quant
+f1000_58,Hewlett Packard Enterprise,quant
+f1000_59,Cisco Systems,quant
+f1000_60,HP,quant
+f1000_61,Dow Chemical,quant
+f1000_62,HCA,quant
+f1000_63,Coca-Cola,quant
+f1000_64,New York Life Insurance,quant
+f1000_65,Centene,quant
+f1000_66,American Airlines,quant
+f1000_67,Nationwide,quant
+f1000_68,Merck,quant
+f1000_69,Cigna,quant
+f1000_70,Delta Air Lines,quant
+f1000_71,Best Buy,quant
+f1000_72,Honeywell,quant
+f1000_73,Caterpillar,quant
+f1000_74,Liberty Mutual Insurance,quant
+f1000_75,Morgan Stanley,quant
+f1000_76,Massachusetts Mutual Life Insurance,quant
+f1000_77,Goldman Sachs,quant
+f1000_78,Energy Transfer Equity,quant
+f1000_79,TIAA,quant
+f1000_80,Oracle,quant
+f1000_81,Tyson Foods,quant
+f1000_82,United Continental,quant
+f1000_83,Allstate,quant
+f1000_84,Publix Super Markets,quant
+f1000_85,American Express,quant
+f1000_86,TJX,quant
+f1000_87,Nike,quant
+f1000_88,Exelon,quant
+f1000_89,General Dynamics,quant
+f1000_90,Rite Aid,quant
+f1000_91,Gilead Sciences,quant
+f1000_92,CHS,quant
+f1000_93,3M,quant
+f1000_94,Time Warner,quant
+f1000_95,Charter Communications,quant
+f1000_96,Northwestern Mutual,quant
+f1000_97,Facebook,quant
+f1000_98,Travelers,quant
+f1000_99,Capital One Financial,quant
+f1000_100,Twenty-First Century Fox,quant
+f1000_101,USAA,quant
+f1000_102,World Fuel Services,quant
+f1000_103,Philip Morris,quant
+f1000_104,Deere,quant
+f1000_105,Kraft Heinz,quant
+f1000_106,Tech Data,quant
+f1000_107,Avnet,quant
+f1000_108,Mondelez,quant
+f1000_109,Macy's,quant
+f1000_110,AbbVie,quant
+f1000_111,McDonald's,quant
+f1000_112,DuPont,quant
+f1000_113,Northrop Grumman,quant
+f1000_114,ConocoPhillips,quant
+f1000_115,Raytheon,quant
+f1000_116,Andeavor,quant
+f1000_117,Arrow Electronics,quant
+f1000_118,Qualcomm,quant
+f1000_119,Progressive,quant
+f1000_120,Duke Energy,quant
+f1000_121,Enterprise Products Partners,quant
+f1000_122,Amgen,quant
+f1000_123,US Foods,quant
+f1000_124,U.S. Bank,quant
+f1000_125,Aflac,quant
+f1000_126,Sears,quant
+f1000_127,Dollar General,quant
+f1000_128,AutoNation,quant
+f1000_129,Community Health Systems,quant
+f1000_130,Starbucks,quant
+f1000_131,Eli Lilly,quant
+f1000_132,International Paper,quant
+f1000_133,Tenet Healthcare,quant
+f1000_134,Abbott Laboratories,quant
+f1000_135,Dollar Tree,quant
+f1000_136,Whirlpool,quant
+f1000_137,Southwest Airlines,quant
+f1000_138,Emerson Electric,quant
+f1000_139,Staples,quant
+f1000_140,Plains GP,quant
+f1000_141,Penske Automotive,quant
+f1000_142,Union Pacific,quant
+f1000_143,Danaher,quant
+f1000_144,Southern,quant
+f1000_145,ManpowerGroup,quant
+f1000_146,Bristol-Myers Squibb,quant
+f1000_147,Altria,quant
+f1000_148,Fluor,quant
+f1000_149,Kohl's,quant
+f1000_150,Lear,quant
+f1000_151,Jabil,quant
+f1000_152,Hartford Financial Services,quant
+f1000_153,Thermo Fisher Scientific,quant
+f1000_154,Kimberly-Clark,quant
+f1000_155,Molina Healthcare,quant
+f1000_156,PG&E,quant
+f1000_157,Supervalu,quant
+f1000_158,Cummins,quant
+f1000_159,CenturyLink,quant
+f1000_160,Aecom,quant
+f1000_161,Xerox,quant
+f1000_162,Marriott,quant
+f1000_163,Paccar,quant
+f1000_164,General Mills,quant
+f1000_165,PNC Financial Services,quant
+f1000_166,American Electric Power,quant
+f1000_167,Icahn Enterprises,quant
+f1000_168,Nucor,quant
+f1000_169,NextEra Energy,quant
+f1000_170,Performance Food,quant
+f1000_171,PBF Energy,quant
+f1000_172,Halliburton,quant
+f1000_173,CarMax,quant
+f1000_174,Freeport-McMoRan,quant
+f1000_175,Whole Foods Market,quant
+f1000_176,Bank of New York Mellon,quant
+f1000_177,Gap,quant
+f1000_178,Omnicom,quant
+f1000_179,Genuine Parts,quant
+f1000_180,DaVita,quant
+f1000_181,Colgate-Palmolive,quant
+f1000_182,PPG Industries,quant
+f1000_183,Goodyear Tire & Rubber,quant
+f1000_184,Synchrony Financial,quant
+f1000_185,DISH Network,quant
+f1000_186,Visa,quant
+f1000_187,Nordstrom,quant
+f1000_188,INTL FCStone,quant
+f1000_189,WestRock,quant
+f1000_190,XPO Logistics,quant
+f1000_191,Aramark,quant
+f1000_192,CBS,quant
+f1000_193,AES,quant
+f1000_194,WellCare Health Plans,quant
+f1000_195,FirstEnergy,quant
+f1000_196,Conagra Brands,quant
+f1000_197,Synnex,quant
+f1000_198,CDW,quant
+f1000_199,Textron,quant
+f1000_200,Waste Management,quant
+f1000_201,Illinois Tool Works,quant
+f1000_202,Office Depot,quant
+f1000_203,Monsanto,quant
+f1000_204,Cognizant Technology Solutions,quant
+f1000_205,Texas Instruments,quant
+f1000_206,Lincoln National,quant
+f1000_207,Newell Brands,quant
+f1000_208,Land O'Lakes,quant
+f1000_209,Marsh & McLennan,quant
+f1000_210,Ecolab,quant
+f1000_211,C.H. Robinson Worldwide,quant
+f1000_212,Loews,quant
+f1000_213,CBRE,quant
+f1000_214,Kinder Morgan,quant
+f1000_215,Kellogg,quant
+f1000_216,Western Digital,quant
+f1000_217,Guardian Life Ins. Co. of America,quant
+f1000_218,Ross Stores,quant
+f1000_219,L Brands,quant
+f1000_220,J.C. Penney,quant
+f1000_221,Farmers Insurance Exchange,quant
+f1000_222,Reynolds American,quant
+f1000_223,Viacom,quant
+f1000_224,Becton Dickinson,quant
+f1000_225,Micron Technology,quant
+f1000_226,Principal Financial,quant
+f1000_227,Arconic,quant
+f1000_228,NRG Energy,quant
+f1000_229,VF,quant
+f1000_230,Devon Energy,quant
+f1000_231,D.R. Horton,quant
+f1000_232,Bed Bath & Beyond,quant
+f1000_233,Consolidated Edison,quant
+f1000_234,Edison,quant
+f1000_235,Sherwin-Williams,quant
+f1000_236,NGL Energy Partners,quant
+f1000_237,Dominion Energy,quant
+f1000_238,Ameriprise Financial,quant
+f1000_239,ADP,quant
+f1000_240,Hilton Worldwide,quant
+f1000_241,First Data,quant
+f1000_242,Henry Schein,quant
+f1000_243,Toys 'R' Us,quant
+f1000_244,BB&T,quant
+f1000_245,Reinsurance of America,quant
+f1000_246,Core-Mark,quant
+f1000_247,Biogen,quant
+f1000_248,Las Vegas Sands,quant
+f1000_249,Stanley Black & Decker,quant
+f1000_250,Parker-Hannifin,quant
+f1000_251,Stryker,quant
+f1000_252,Estee Lauder,quant
+f1000_253,Celgene,quant
+f1000_254,BlackRock,quant
+f1000_255,Xcel Energy,quant
+f1000_256,CSX,quant
+f1000_257,Unum,quant
+f1000_258,Jacobs Engineering,quant
+f1000_259,Lennar,quant
+f1000_260,Group 1 Automotive,quant
+f1000_261,Leucadia National,quant
+f1000_262,Entergy,quant
+f1000_263,PayPal,quant
+f1000_264,Applied Materials,quant
+f1000_265,Voya Financial,quant
+f1000_266,Mastercard,quant
+f1000_267,Priceline,quant
+f1000_268,Liberty Interactive,quant
+f1000_269,AutoZone,quant
+f1000_270,State Street,quant
+f1000_271,DTE Energy,quant
+f1000_272,L3 Technologies,quant
+f1000_273,HollyFrontier,quant
+f1000_274,Praxair,quant
+f1000_275,Universal Health Services,quant
+f1000_276,Discover Financial Services,quant
+f1000_277,Occidental Petroleum,quant
+f1000_278,United States Steel,quant
+f1000_279,Sempra Energy,quant
+f1000_280,Baxter,quant
+f1000_281,W.W. Grainger,quant
+f1000_282,Autoliv,quant
+f1000_283,Norfolk Southern,quant
+f1000_284,Baker Hughes,quant
+f1000_285,Ally Financial,quant
+f1000_286,Sonic Automotive,quant
+f1000_287,Owens & Minor,quant
+f1000_288,Huntsman,quant
+f1000_289,Laboratory Corp. of America,quant
+f1000_290,Murphy USA,quant
+f1000_291,Advance Auto Parts,quant
+f1000_292,Fidelity National Financial,quant
+f1000_293,Air Products & Chemicals,quant
+f1000_294,Hormel Foods,quant
+f1000_295,Hertz Global,quant
+f1000_296,MGM Resorts,quant
+f1000_297,Corning,quant
+f1000_298,Republic Services,quant
+f1000_299,Alcoa,quant
+f1000_300,Fidelity National Information Services,quant
+f1000_301,Pacific Life,quant
+f1000_302,SunTrust Banks,quant
+f1000_303,LKQ,quant
+f1000_304,BorgWarner,quant
+f1000_305,Ball,quant
+f1000_306,CST Brands,quant
+f1000_307,Public Service Enterprise,quant
+f1000_308,Eastman Chemical,quant
+f1000_309,eBay,quant
+f1000_310,Mohawk Industries,quant
+f1000_311,Oneok,quant
+f1000_312,Frontier Communications,quant
+f1000_313,Netflix,quant
+f1000_314,American Family Insurance,quant
+f1000_315,Thrivent Financial for Lutherans,quant
+f1000_316,Expedia,quant
+f1000_317,Lithia Motors,quant
+f1000_318,Avis Budget,quant
+f1000_319,Reliance Steel & Aluminum,quant
+f1000_320,GameStop,quant
+f1000_321,Tenneco,quant
+f1000_322,O'Reilly Automotive,quant
+f1000_323,Peter Kiewit Sons',quant
+f1000_324,United Natural Foods,quant
+f1000_325,salesforce.com,quant
+f1000_326,Boston Scientific,quant
+f1000_327,Newmont Mining,quant
+f1000_328,Genworth Financial,quant
+f1000_329,Live Nation Entertainment,quant
+f1000_330,Veritiv,quant
+f1000_331,News Corp,quant
+f1000_332,Crown,quant
+f1000_333,Global Partners,quant
+f1000_334,PVH,quant
+f1000_335,Level 3 Communications,quant
+f1000_336,Navistar,quant
+f1000_337,Univar,quant
+f1000_338,Campbell Soup,quant
+f1000_339,Dick's Sporting Goods,quant
+f1000_340,Weyerhaeuser,quant
+f1000_341,Mutual of Omaha Insurance,quant
+f1000_342,Chesapeake Energy,quant
+f1000_343,Anadarko Petroleum,quant
+f1000_344,Interpublic,quant
+f1000_345,J.M. Smucker,quant
+f1000_346,Steel Dynamics,quant
+f1000_347,Foot Locker,quant
+f1000_348,Western Refining,quant
+f1000_349,SpartanNash,quant
+f1000_350,Dean Foods,quant
+f1000_351,Zimmer Biomet,quant
+f1000_352,PulteGroup,quant
+f1000_353,W.R. Berkley,quant
+f1000_354,Quanta Services,quant
+f1000_355,EOG Resources,quant
+f1000_356,Charles Schwab,quant
+f1000_357,Eversource Energy,quant
+f1000_358,Anixter,quant
+f1000_359,Emcor,quant
+f1000_360,Assurant,quant
+f1000_361,CenterPoint Energy,quant
+f1000_362,Harris,quant
+f1000_363,HD Supply,quant
+f1000_364,PPL,quant
+f1000_365,Quest Diagnostics,quant
+f1000_366,Williams,quant
+f1000_367,WEC Energy,quant
+f1000_368,Hershey,quant
+f1000_369,AGCO,quant
+f1000_370,Ralph Lauren,quant
+f1000_371,Masco,quant
+f1000_372,Wesco,quant
+f1000_373,LifePoint Health,quant
+f1000_374,National Oilwell Varco,quant
+f1000_375,Kindred Healthcare,quant
+f1000_376,Mosaic,quant
+f1000_377,Alliance Data Systems,quant
+f1000_378,Computer Sciences,quant
+f1000_379,Huntington Ingalls Industries,quant
+f1000_380,Leidos,quant
+f1000_381,Erie Insurance,quant
+f1000_382,Tesla,quant
+f1000_383,Ascena Retail,quant
+f1000_384,Darden Restaurants,quant
+f1000_385,Harman Industries,quant
+f1000_386,Nvidia,quant
+f1000_387,R.R. Donnelley & Sons,quant
+f1000_388,Fifth Third Bank,quant
+f1000_389,Quintiles IMS,quant
+f1000_390,Jones Lang LaSalle,quant
+f1000_391,Dover,quant
+f1000_392,Spirit AeroSystems,quant
+f1000_393,Ryder System,quant
+f1000_394,A-Mark Precious Metals,quant
+f1000_395,Tractor Supply,quant
+f1000_396,Sealed Air,quant
+f1000_397,Auto-Owners Insurance,quant
+f1000_398,Yum China,quant
+f1000_399,Calpine,quant
+f1000_400,Owens-Illinois,quant
+f1000_401,Targa Resources,quant
+f1000_402,JetBlue Airways,quant
+f1000_403,Jones Financial,quant
+f1000_404,Franklin Resources,quant
+f1000_405,Activision Blizzard,quant
+f1000_406,J.B. Hunt Transport Services,quant
+f1000_407,Constellation Brands,quant
+f1000_408,NCR,quant
+f1000_409,Asbury Automotive,quant
+f1000_410,American Financial,quant
+f1000_411,Discovery Communications,quant
+f1000_412,Berry Global,quant
+f1000_413,Sanmina,quant
+f1000_414,CalAtlantic,quant
+f1000_415,Dr Pepper Snapple,quant
+f1000_416,Dillard's,quant
+f1000_417,HRG,quant
+f1000_418,CMS Energy,quant
+f1000_419,Graybar Electric,quant
+f1000_420,Builders FirstSource,quant
+f1000_421,Yum Brands,quant
+f1000_422,Casey's General Stores,quant
+f1000_423,Amphenol,quant
+f1000_424,Oshkosh,quant
+f1000_425,iHeartMedia,quant
+f1000_426,TreeHouse Foods,quant
+f1000_427,Alleghany,quant
+f1000_428,Expeditors of Washington,quant
+f1000_429,Avery Dennison,quant
+f1000_430,Ameren,quant
+f1000_431,Hanesbrands,quant
+f1000_432,Motorola Solutions,quant
+f1000_433,St. Jude Medical,quant
+f1000_434,Harley-Davidson,quant
+f1000_435,Regions Financial,quant
+f1000_436,Intercontinental Exchange,quant
+f1000_437,Alaska Air,quant
+f1000_438,Old Republic,quant
+f1000_439,Lam Research,quant
+f1000_440,AK Steel,quant
+f1000_441,Rockwell Automation,quant
+f1000_442,Adobe Systems,quant
+f1000_443,Avon Products,quant
+f1000_444,Terex,quant
+f1000_445,NVR,quant
+f1000_446,Dana,quant
+f1000_447,Realogy,quant
+f1000_448,American Tower,quant
+f1000_449,Packaging Corp. of America,quant
+f1000_450,Citizens Financial,quant
+f1000_451,United Rentals,quant
+f1000_452,Clorox,quant
+f1000_453,Genesis Healthcare,quant
+f1000_454,M&T Bank,quant
+f1000_455,Ingredion,quant
+f1000_456,UGI,quant
+f1000_457,Owens Corning,quant
+f1000_458,S&P Global,quant
+f1000_459,Markel,quant
+f1000_460,Wyndham Worldwide,quant
+f1000_461,Arthur J. Gallagher,quant
+f1000_462,Burlington Stores,quant
+f1000_463,First American Financial,quant
+f1000_464,Symantec,quant
+f1000_465,Patterson,quant
+f1000_466,Olin,quant
+f1000_467,NetApp,quant
+f1000_468,Raymond James Financial,quant
+f1000_469,TravelCenters of America,quant
+f1000_470,Fiserv,quant
+f1000_471,Host Hotels & Resorts,quant
+f1000_472,Insight Enterprises,quant
+f1000_473,Mattel,quant
+f1000_474,AmTrust Financial Services,quant
+f1000_475,Cincinnati Financial,quant
+f1000_476,Simon Property,quant
+f1000_477,Western Union,quant
+f1000_478,KeyCorp,quant
+f1000_479,Delek US,quant
+f1000_480,Booz Allen Hamilton,quant
+f1000_481,Chemours,quant
+f1000_482,Western & Southern Financial,quant
+f1000_483,Celanese,quant
+f1000_484,Windstream,quant
+f1000_485,Seaboard,quant
+f1000_486,Essendant,quant
+f1000_487,Apache,quant
+f1000_488,Airgas,quant
+f1000_489,Kelly Services,quant
+f1000_490,Liberty Media,quant
+f1000_491,Rockwell Collins,quant
+f1000_492,Robert Half,quant
+f1000_493,CH2M Hill,quant
+f1000_494,Big Lots,quant
+f1000_495,Michaels,quant
+f1000_496,Toll Brothers,quant
+f1000_497,Yahoo,quant
+f1000_498,Vistra Energy,quant
+f1000_499,ABM Industries,quant
+f1000_500,Northern Trust,quant
+f1000_501,MasTec,quant
+f1000_502,Blackstone,quant
+f1000_503,Telephone & Data Systems,quant
+f1000_504,Domtar,quant
+f1000_505,Williams-Sonoma,quant
+f1000_506,Westlake Chemical,quant
+f1000_507,Post,quant
+f1000_508,Hasbro,quant
+f1000_509,Juniper Networks,quant
+f1000_510,Fortune Brands Home & Security,quant
+f1000_511,Brookdale Senior Living,quant
+f1000_512,Tutor Perini,quant
+f1000_513,Navient,quant
+f1000_514,Neiman Marcus,quant
+f1000_515,Ashland Global,quant
+f1000_516,Hanover Insurance,quant
+f1000_517,CommScope,quant
+f1000_518,Spectra Energy,quant
+f1000_519,Cintas,quant
+f1000_520,Zoetis,quant
+f1000_521,Molson Coors Brewing,quant
+f1000_522,Regeneron Pharmaceuticals,quant
+f1000_523,Ulta Beauty,quant
+f1000_524,Hess,quant
+f1000_525,Magellan Health,quant
+f1000_526,Intuit,quant
+f1000_527,Under Armour,quant
+f1000_528,RPM,quant
+f1000_529,Cerner,quant
+f1000_530,Sonoco Products,quant
+f1000_531,Securian Financial,quant
+f1000_532,Peabody Energy,quant
+f1000_533,YRC Worldwide,quant
+f1000_534,Commercial Metals,quant
+f1000_535,Marathon Oil,quant
+f1000_536,Polaris Industries,quant
+f1000_537,Envision Healthcare,quant
+f1000_538,Trinity Industries,quant
+f1000_539,Thor Industries,quant
+f1000_540,Caesars Entertainment,quant
+f1000_541,Levi Strauss,quant
+f1000_542,FMC Technologies,quant
+f1000_543,VWR,quant
+f1000_544,NiSource,quant
+f1000_545,Coach,quant
+f1000_546,Brunswick,quant
+f1000_547,Wynn Resorts,quant
+f1000_548,Orbital ATK,quant
+f1000_549,CIT,quant
+f1000_550,Science Applications,quant
+f1000_551,Hyatt Hotels,quant
+f1000_552,McCormick,quant
+f1000_553,Diplomat Pharmacy,quant
+f1000_554,Barnes & Noble,quant
+f1000_555,Electronic Arts,quant
+f1000_556,FM Global,quant
+f1000_557,Coty,quant
+f1000_558,Smart & Final Stores,quant
+f1000_559,Quad/Graphics,quant
+f1000_560,Dynegy,quant
+f1000_561,Graphic Packaging,quant
+f1000_562,Select Medical,quant
+f1000_563,Welltower,quant
+f1000_564,Advanced Micro Devices,quant
+f1000_565,USG,quant
+f1000_566,KBR,quant
+f1000_567,Bloomin' Brands,quant
+f1000_568,MDU Resources,quant
+f1000_569,CSRA,quant
+f1000_570,Laureate Education,quant
+f1000_571,Scana,quant
+f1000_572,T. Rowe Price,quant
+f1000_573,Watsco,quant
+f1000_574,Rush Enterprises,quant
+f1000_575,Agilent Technologies,quant
+f1000_576,WhiteWave Foods,quant
+f1000_577,Valspar,quant
+f1000_578,Total System Services,quant
+f1000_579,Torchmark,quant
+f1000_580,Cabela's,quant
+f1000_581,Beacon Roofing Supply,quant
+f1000_582,CA,quant
+f1000_583,LPL Financial,quant
+f1000_584,Sprouts Farmers Market,quant
+f1000_585,Swift Transportation,quant
+f1000_586,Bemis,quant
+f1000_587,Tiffany,quant
+f1000_588,Flowserve,quant
+f1000_589,CNO Financial,quant
+f1000_590,Fastenal,quant
+f1000_591,Sally Beauty,quant
+f1000_592,American Axle & Manufacturing,quant
+f1000_593,Flowers Foods,quant
+f1000_594,Andersons,quant
+f1000_595,Crown Castle,quant
+f1000_596,Boise Cascade,quant
+f1000_597,ON Semiconductor,quant
+f1000_598,Chipotle Mexican Grill,quant
+f1000_599,Amkor Technology,quant
+f1000_600,Triumph,quant
+f1000_601,OneMain,quant
+f1000_602,General Cable,quant
+f1000_603,Ametek,quant
+f1000_604,Alon USA Energy,quant
+f1000_605,Pioneer Natural Resources,quant
+f1000_606,Martin Marietta Materials,quant
+f1000_607,Ingles Markets,quant
+f1000_608,Roper Technologies,quant
+f1000_609,Huntington Bancshares,quant
+f1000_610,Xylem,quant
+f1000_611,Unified Grocers,quant
+f1000_612,Leggett & Platt,quant
+f1000_613,Dentsply Sirona,quant
+f1000_614,CACI,quant
+f1000_615,Mead Johnson Nutrition,quant
+f1000_616,C.R. Bard,quant
+f1000_617,Snap-on,quant
+f1000_618,HealthSouth,quant
+f1000_619,Nasdaq,quant
+f1000_620,Avaya,quant
+f1000_621,CF Industries,quant
+f1000_622,Carlisle,quant
+f1000_623,Equinix,quant
+f1000_624,LSC Communications,quant
+f1000_625,Colfax,quant
+f1000_626,Lennox,quant
+f1000_627,Iasis Healthcare,quant
+f1000_628,Silgan,quant
+f1000_629,American Eagle Outfitters,quant
+f1000_630,Moody's,quant
+f1000_631,Calumet Specialty Products Partners,quant
+f1000_632,CME,quant
+f1000_633,KB Home,quant
+f1000_634,Vulcan Materials,quant
+f1000_635,Platform Specialty Products,quant
+f1000_636,Vantiv,quant
+f1000_637,Skechers U.S.A.,quant
+f1000_638,Zebra Technologies,quant
+f1000_639,Hub,quant
+f1000_640,HSN,quant
+f1000_641,Stericycle,quant
+f1000_642,National General,quant
+f1000_643,Taylor Morrison Home,quant
+f1000_644,Urban Outfitters,quant
+f1000_645,Resolute Forest Products,quant
+f1000_646,ScanSource,quant
+f1000_647,Camping World,quant
+f1000_648,Iron Mountain,quant
+f1000_649,Hubbell,quant
+f1000_650,Pinnacle West Capital,quant
+f1000_651,Church & Dwight,quant
+f1000_652,Noble Energy,quant
+f1000_653,Albemarle,quant
+f1000_654,Cooper-Standard,quant
+f1000_655,KKR,quant
+f1000_656,Country Financial,quant
+f1000_657,Ventas,quant
+f1000_658,Hexion,quant
+f1000_659,Analog Devices,quant
+f1000_660,Citrix Systems,quant
+f1000_661,Green Plains,quant
+f1000_662,Pitney Bowes,quant
+f1000_663,Scripps Networks Interactive,quant
+f1000_664,Darling Ingredients,quant
+f1000_665,Wayfair,quant
+f1000_666,Tailored Brands,quant
+f1000_667,Sabre,quant
+f1000_668,Global Payments,quant
+f1000_669,Atmos Energy,quant
+f1000_670,Tegna,quant
+f1000_671,Diebold Nixdorf,quant
+f1000_672,PolyOne,quant
+f1000_673,TD Ameritrade,quant
+f1000_674,Abercrombie & Fitch,quant
+f1000_675,Greif,quant
+f1000_676,Alliant Energy,quant
+f1000_677,American Water Works,quant
+f1000_678,Acuity Brands,quant
+f1000_679,Skyworks Solutions,quant
+f1000_680,FMC,quant
+f1000_681,Amerco,quant
+f1000_682,CUNA Mutual,quant
+f1000_683,Brinker,quant
+f1000_684,Buckeye Partners,quant
+f1000_685,Warner Music,quant
+f1000_686,Universal Forest Products,quant
+f1000_687,American National Insurance,quant
+f1000_688,Mercury General,quant
+f1000_689,Regal Beloit,quant
+f1000_690,Varian Medical Systems,quant
+f1000_691,Aaron's,quant
+f1000_692,Visteon,quant
+f1000_693,Carter's,quant
+f1000_694,Meritor,quant
+f1000_695,Regal Entertainment,quant
+f1000_696,Mednax,quant
+f1000_697,TransDigm,quant
+f1000_698,Landstar System,quant
+f1000_699,Puget Energy,quant
+f1000_700,Coca-Cola Bottling,quant
+f1000_701,Kar Auction Services,quant
+f1000_702,Equifax,quant
+f1000_703,Groupon,quant
+f1000_704,IAC/InterActiveCorp,quant
+f1000_705,Weis Markets,quant
+f1000_706,Allegheny Technologies,quant
+f1000_707,Pinnacle Foods,quant
+f1000_708,Tempur Sealy,quant
+f1000_709,SkyWest,quant
+f1000_710,International Flavors & Fragrances,quant
+f1000_711,BMC Stock,quant
+f1000_712,Brown-Forman,quant
+f1000_713,Alexion Pharmaceuticals,quant
+f1000_714,KapStone Paper & Packaging,quant
+f1000_715,Time,quant
+f1000_716,TriNet,quant
+f1000_717,Steelcase,quant
+f1000_718,EchoStar,quant
+f1000_719,Sentry Insurance,quant
+f1000_720,Monster Beverage,quant
+f1000_721,Gannett,quant
+f1000_722,Fossil,quant
+f1000_723,Univision Communications,quant
+f1000_724,Meritage Homes,quant
+f1000_725,MRC Global,quant
+f1000_726,H&R Block,quant
+f1000_727,Penn National Gaming,quant
+f1000_728,Service,quant
+f1000_729,Brink's,quant
+f1000_730,Old Dominion Freight Line,quant
+f1000_731,Triple-S Management,quant
+f1000_732,KLA-Tencor,quant
+f1000_733,Edwards Lifesciences,quant
+f1000_734,Rent-A-Center,quant
+f1000_735,Comerica,quant
+f1000_736,Paychex,quant
+f1000_737,First Solar,quant
+f1000_738,Insperity,quant
+f1000_739,Scotts Miracle-Gro,quant
+f1000_740,B/E Aerospace,quant
+f1000_741,Westinghouse Air Brake Technologies,quant
+f1000_742,Cooper Tire & Rubber,quant
+f1000_743,Cinemark,quant
+f1000_744,Keysight Technologies,quant
+f1000_745,Convergys,quant
+f1000_746,Cracker Barrel Old Country Store,quant
+f1000_747,PriceSmart,quant
+f1000_748,Broadridge Financial Solutions,quant
+f1000_749,Scientific Games,quant
+f1000_750,Genesco,quant
+f1000_751,MSC Industrial Direct,quant
+f1000_752,Ryerson,quant
+f1000_753,Acadia Healthcare,quant
+f1000_754,Hologic,quant
+f1000_755,Unisys,quant
+f1000_756,Worthington Industries,quant
+f1000_757,Sanderson Farms,quant
+f1000_758,Wabco,quant
+f1000_759,Panera Bread,quant
+f1000_760,Metaldyne Performance,quant
+f1000_761,Medical Mutual of Ohio,quant
+f1000_762,AMC Networks,quant
+f1000_763,Clean Harbors,quant
+f1000_764,Hovnanian Enterprises,quant
+f1000_765,TrueBlue,quant
+f1000_766,Crane,quant
+f1000_767,ServiceMaster Global,quant
+f1000_768,Sinclair Broadcast,quant
+f1000_769,Mutual of America Life Insurance,quant
+f1000_770,BGC Partners,quant
+f1000_771,DSW,quant
+f1000_772,Intuitive Surgical,quant
+f1000_773,ArcBest,quant
+f1000_774,PC Connection,quant
+f1000_775,A.O. Smith,quant
+f1000_776,Greenbrier,quant
+f1000_777,Great Plains Energy,quant
+f1000_778,Bon-Ton Stores,quant
+f1000_779,Dycom Industries,quant
+f1000_780,Timken,quant
+f1000_781,Aleris,quant
+f1000_782,Legg Mason,quant
+f1000_783,Hill-Rom,quant
+f1000_784,Stifel Financial,quant
+f1000_785,Verso,quant
+f1000_786,Qorvo,quant
+f1000_787,Ciena,quant
+f1000_788,Tetra Tech,quant
+f1000_789,Caleres,quant
+f1000_790,Pool,quant
+f1000_791,Hyster-Yale Materials Handling,quant
+f1000_792,Westar Energy,quant
+f1000_793,Public Storage,quant
+f1000_794,Plexus,quant
+f1000_795,Boston Properties,quant
+f1000_796,GNC,quant
+f1000_797,HCP,quant
+f1000_798,Penn Mutual Life Insurance,quant
+f1000_799,TTM Technologies,quant
+f1000_800,Prologis,quant
+f1000_801,Twitter,quant
+f1000_802,Kemper,quant
+f1000_803,Valmont Industries,quant
+f1000_804,Crestwood Equity Partners,quant
+f1000_805,Applied Industrial Technologies,quant
+f1000_806,VCA,quant
+f1000_807,Granite Construction,quant
+f1000_808,Vornado Realty Trust,quant
+f1000_809,Mettler-Toledo,quant
+f1000_810,A. Schulman,quant
+f1000_811,Wolverine World Wide,quant
+f1000_812,Graham,quant
+f1000_813,Chico's FAS,quant
+f1000_814,Domino's Pizza,quant
+f1000_815,Zions Bancorp,quant
+f1000_816,Southwest Gas,quant
+f1000_817,Tops,quant
+f1000_818,Hawaiian,quant
+f1000_819,Vectren,quant
+f1000_820,Gartner,quant
+f1000_821,On Assignment,quant
+f1000_822,Southwestern Energy,quant
+f1000_823,Parexel,quant
+f1000_824,Equity Residential,quant
+f1000_825,J.Crew,quant
+f1000_826,Synopsys,quant
+f1000_827,Moog,quant
+f1000_828,Cabot,quant
+f1000_829,ITT,quant
+f1000_830,TRI Pointe,quant
+f1000_831,Maximus,quant
+f1000_832,Illumina,quant
+f1000_833,Amica Mutual Insurance,quant
+f1000_834,Alere,quant
+f1000_835,Toro,quant
+f1000_836,Sprague Resources,quant
+f1000_837,G-III Apparel,quant
+f1000_838,Hawaiian Electric Industries,quant
+f1000_839,Pinnacle Entertainment,quant
+f1000_840,Columbia Sportswear,quant
+f1000_841,First Republic Bank,quant
+f1000_842,Komatsu Mining,quant
+f1000_843,Trimble,quant
+f1000_844,Edgewell Personal Care,quant
+f1000_845,Belden,quant
+f1000_846,DST Systems,quant
+f1000_847,WGL,quant
+f1000_848,GGP,quant
+f1000_849,Brocade Communications Systems,quant
+f1000_850,Akamai Technologies,quant
+f1000_851,Nationstar Mortgage,quant
+f1000_852,Annaly Capital Management,quant
+f1000_853,Kansas City Southern,quant
+f1000_854,Revlon,quant
+f1000_855,AptarGroup,quant
+f1000_856,MDC,quant
+f1000_857,Vishay Intertechnology,quant
+f1000_858,Teradata,quant
+f1000_859,Spirit Airlines,quant
+f1000_860,EnerSys,quant
+f1000_861,Snyder's-Lance,quant
+f1000_862,Benchmark Electronics,quant
+f1000_863,West,quant
+f1000_864,Selective Insurance,quant
+f1000_865,Party City Holdco,quant
+f1000_866,Cheesecake Factory,quant
+f1000_867,Lincoln Electric,quant
+f1000_868,Carlyle,quant
+f1000_869,Enable Midstream Partners,quant
+f1000_870,Oceaneering,quant
+f1000_871,Vista Outdoor,quant
+f1000_872,Middleby,quant
+f1000_873,Herman Miller,quant
+f1000_874,PerkinElmer,quant
+f1000_875,OGE Energy,quant
+f1000_876,PCM,quant
+f1000_877,Louisiana-Pacific,quant
+f1000_878,MPM,quant
+f1000_879,Knights of Columbus,quant
+f1000_880,Apollo Global Management,quant
+f1000_881,Donaldson,quant
+f1000_882,American Equity Investment Life,quant
+f1000_883,Super Micro Computer,quant
+f1000_884,Xilinx,quant
+f1000_885,Tupperware Brands,quant
+f1000_886,Guess,quant
+f1000_887,Nu Skin Enterprises,quant
+f1000_888,Magellan Midstream Partners,quant
+f1000_889,HNI,quant
+f1000_890,Maxim Integrated Products,quant
+f1000_891,Affiliated Managers,quant
+f1000_892,Express,quant
+f1000_893,Boyd Gaming,quant
+f1000_894,GEO,quant
+f1000_895,Tribune Media,quant
+f1000_896,Microchip Technology,quant
+f1000_897,Fitbit,quant
+f1000_898,Waters,quant
+f1000_899,Teledyne Technologies,quant
+f1000_900,Digital Realty Trust,quant
+f1000_901,RH,quant
+f1000_902,Fred's,quant
+f1000_903,Universal,quant
+f1000_904,CDK Global,quant
+f1000_905,IDEX,quant
+f1000_906,Cliffs Natural Resources,quant
+f1000_907,Curtiss-Wright,quant
+f1000_908,Verisk Analytics,quant
+f1000_909,NOW,quant
+f1000_910,Apollo Education,quant
+f1000_911,Kennametal,quant
+f1000_912,H.B. Fuller,quant
+f1000_913,PharMerica,quant
+f1000_914,Engility,quant
+f1000_915,Sears Hometown & Outlet Stores,quant
+f1000_916,Bio-Rad Laboratories,quant
+f1000_917,Federated Mutual Insurance,quant
+f1000_918,Mueller Industries,quant
+f1000_919,Red Hat,quant
+f1000_920,NewMarket,quant
+f1000_921,Hospitality Properties Trust,quant
+f1000_922,AvalonBay Communities,quant
+f1000_923,Renewable Energy,quant
+f1000_924,Consol Energy,quant
+f1000_925,Ferrellgas Partners,quant
+f1000_926,Tower,quant
+f1000_927,Autodesk,quant
+f1000_928,99 Cents Only Stores,quant
+f1000_929,E Trade Financial,quant
+f1000_930,Woodward,quant
+f1000_931,Esterline Technologies,quant
+f1000_932,Itron,quant
+f1000_933,Werner Enterprises,quant
+f1000_934,Stewart Information Services,quant
+f1000_935,Hexcel,quant
+f1000_936,Genesee & Wyoming,quant
+f1000_937,Primoris Services,quant
+f1000_938,Spx Flow,quant
+f1000_939,F5 Networks,quant
+f1000_940,VeriFone Systems,quant
+f1000_941,Texas Roadhouse,quant
+f1000_942,NLV Financial,quant
+f1000_943,Buffalo Wild Wings,quant
+f1000_944,Continental Resources,quant
+f1000_945,Arch Coal,quant
+f1000_946,Roadrunner Transportation Systems,quant
+f1000_947,Cooper,quant
+f1000_948,hhgregg,quant
+f1000_949,Euronet Worldwide,quant
+f1000_950,Griffon,quant
+f1000_951,CoreLogic,quant
+f1000_952,Nuance Communications,quant
+f1000_953,Matson,quant
+f1000_954,Popular,quant
+f1000_955,Alliance,quant
+f1000_956,REV,quant
+f1000_957,Rexnord,quant
+f1000_958,Cypress Semiconductor,quant
+f1000_959,Portland General Electric,quant
+f1000_960,Ply Gem,quant
+f1000_961,Cal-Maine Foods,quant
+f1000_962,Alliance One,quant
+f1000_963,AMN Healthcare Services,quant
+f1000_964,American Greetings,quant
+f1000_965,Blackhawk Network,quant
+f1000_966,Pier 1 Imports,quant
+f1000_967,Finish Line,quant
+f1000_968,BlueLinx,quant
+f1000_969,New Jersey Resources,quant
+f1000_970,Deckers Outdoor,quant
+f1000_971,Murphy Oil,quant
+f1000_972,Teleflex,quant
+f1000_973,Par Pacific,quant
+f1000_974,SL Green Realty,quant
+f1000_975,GMS,quant
+f1000_976,CoreCivic,quant
+f1000_977,Deluxe,quant
+f1000_978,Catalent,quant
+f1000_979,GoDaddy,quant
+f1000_980,Wabash National,quant
+f1000_981,Adtalem Global Education,quant
+f1000_982,United Refining,quant
+f1000_983,Allison Transmission,quant
+f1000_984,Atlas Air Worldwide,quant
+f1000_985,ResMed,quant
+f1000_986,Delta Tucker,quant
+f1000_987,FleetCor Technologies,quant
+f1000_988,Central Garden & Pet,quant
+f1000_989,Beazer Homes USA,quant
+f1000_990,New York Community Bancorp,quant
+f1000_991,Cadence Design Systems,quant
+f1000_992,Carpenter Technology,quant
+f1000_993,Marriott Vacations Worldwide,quant
+f1000_994,FTI Consulting,quant
+f1000_995,Nordson,quant
+f1000_996,Briggs & Stratton,quant
+f1000_997,Kaman,quant
+f1000_998,Overstock.com,quant
+f1000_999,Regis,quant
+hedge_0,Bridgewater Associates,stats
+hedge_1,AQR Capital Management,stats
+hedge_2,J.P. Morgan Asset Management,stats
+hedge_3,Renaissance Technologies,stats
+hedge_4,Two Sigma,stats
+hedge_5,D. E. Shaw & Co,stats
+hedge_6,Millennium Management,stats
+hedge_7,Man,stats
+hedge_8,Och-Ziff Capital Management,stats
+hedge_9,Winton,stats
+hedge_10,Elliott Management,stats
+hedge_11,Baupost,stats
+hedge_12,Adage Capital Management,stats
+hedge_13,Viking Global Investors,stats
+hedge_15,Davidson Kempner Capital Management,stats
+hedge_16,Citadel,stats
+hedge_17,Marshall Wace,stats
+hedge_18,Lone Pine Capital,stats
+hedge_19,Credit Suisse Asset Management,stats
+hedge_20,Farallon Capital Management,stats
+hedge_21,GAM,stats
+hedge_22,King Street Capital Management,stats
+hedge_23,Platinum Asset Management,stats
+hedge_24,Hillhouse Capital Management,stats
+hedge_25,ValueAct Capital Management,stats
+hedge_26,Pacific Investment Management Co,stats
+hedge_27,Anchorage Capital,stats
+hedge_28,York Capital Management,stats
+hedge_29,Appaloosa Management,stats
+hedge_30,Canyon Partners,stats
+hedge_31,Third Point,stats
+hedge_32,Egerton Capital,stats
+hedge_33,Brevan Howard Capital Management,stats
+hedge_34,Centerbridge Partners,stats
+hedge_35,BlueMountain Capital Management,stats
+hedge_36,Cevian Capital,stats
+hedge_37,Brummer & Partners,stats
+hedge_38,Wellington Alternative Investments,stats
+hedge_39,Moore Capital Management,stats
+hedge_40,Fortress Investment,stats
+hedge_41,Trian Fund Management,stats
+hedge_42,Value Partners,stats
+hedge_43,Goldman Sachs Asset Management,stats
+hedge_44,Graham Capital Management,stats
+hedge_45,Capula Investment Management,stats
+hedge_46,TCI Fund Management,stats
+hedge_47,Balyasny Asset Management,stats
+hedge_48,Henderson AlphaGen,stats
+hedge_49,Highfields Capital Management,stats
+hedge_50,CQS,stats
+hedge_51,GoldenTree Asset Management,stats
+hedge_52,GSO Capital Partners,stats
+hedge_53,Pershing Square Capital Management,stats
+hedge_54,Beach Point Capital Management,stats
+hedge_55,Angelo Gordon & Co,stats
+hedge_56,Lansdowne Partners,stats
+hedge_57,Bracebridge Capital,stats
+hedge_58,Discovery Capital Management,stats
+hedge_59,PointState Capital,stats
+hedge_60,Magnetar Capital,stats
+hedge_61,Nephila Capital,stats
+hedge_62,CarVal Investors,stats
+hedge_63,HBK Capital Management,stats
+hedge_64,Tudor Investment,stats
+hedge_65,Fir Tree Partners,stats
+hedge_66,Carlson Capital,stats
+hedge_67,Glenview Capital Management,stats
+hedge_68,Paulson & Co,stats
+hedge_69,Tiger Global Management,stats
+hedge_70,Marathon Asset Management,stats
+hedge_71,Soroban Capital Partners,stats
+hedge_72,Element Capital Management,stats
+hedge_73,Maverick Capital,stats
+hedge_74,Coatue Management,stats
+hedge_75,Grantham Mayo Van Otterloo,stats
+hedge_76,Cerberus Capital Management,stats
+hedge_77,Senator Investment,stats
+hedge_78,Systematica Investments,stats
+hedge_79,Greenlight Capital,stats
+hedge_80,Caxton Associates,stats
+hedge_81,Lazard Asset Management,stats
+hedge_82,Candriam Investors,stats
+hedge_83,Pictet Asset Management,stats
+hedge_84,Silver Point Capital,stats
+hedge_85,Odey Asset Management,stats
+hedge_86,Capital Fund Management,stats
+hedge_87,Eton Park Capital Management,stats
+hedge_88,Blue Ridge Capital,stats
+hedge_89,GSA Capital Partners,stats
+hedge_90,Eminence Capital,stats
+hedge_91,Pine River Capital Management,stats
+hedge_92,MKP Capital Management,stats
+hedge_93,Taconic Capital Advisors,stats
+hedge_94,Arrowgrass Capital Partners,stats
+hedge_95,JANA Partners,stats
+hedge_96,Scopia Capital,stats
+hedge_97,Redwood Capital Management,stats
+hedge_98,Dymon Asia,stats
+hedge_99,Indus Capital Partners,stats
+hedge_100,Paloma,stats
+vault_0,Cravath Swaine & Moore,data_science
+vault_1,Wachtell Lipton Rosen & Katz,data_science
+vault_2,Skadden Arps Slate Meagher & Flom and Affiliates,data_science
+vault_3,Sullivan & Cromwell,data_science
+vault_4,Latham & Watkins,data_science
+vault_5,Davis Polk & Wardwell,data_science
+vault_6,Simpson Thacher & Bartlett,data_science
+vault_7,Kirkland & Ellis,data_science
+vault_8,Gibson Dunn & Crutcher,data_science
+vault_9,Paul Weiss Rifkind Wharton & Garrison,data_science
+vault_10,Weil Gotshal & Manges,data_science
+vault_11,Quinn Emanuel Urquhart & Sullivan,data_science
+vault_12,Sidley Austin,data_science
+vault_13,Cleary Gottlieb Steen & Hamilton,data_science
+vault_14,Covington & Burling,data_science
+vault_15,Jones Day,data_science
+vault_16,Williams & Connolly,data_science
+vault_17,Debevoise & Plimpton,data_science
+vault_18,White & Case,data_science
+vault_19,WilmerHale,data_science
+vault_20,Ropes & Gray,data_science
+vault_21,Paul Hastings,data_science
+vault_22,Boies Schiller Flexner,data_science
+vault_23,Morrison & Foerster,data_science
+vault_24,Hogan Lovells US,data_science
+vault_25,O'Melveny & Myers,data_science
+vault_26,Cooley,data_science
+vault_27,Proskauer Rose,data_science
+vault_28,Akin Gump Strauss Hauer & Feld,data_science
+vault_29,Arnold & Porter Kaye Scholer,data_science
+vault_30,Baker McKenzie,data_science
+vault_31,Mayer Brown,data_science
+vault_32,DLA Piper,data_science
+vault_33,K&L Gates,data_science
+vault_34,Clifford Chance US,data_science
+vault_35,Linklaters,data_science
+vault_36,Munger Tolles & Olson,data_science
+vault_37,Orrick Herrington & Sutcliffe,data_science
+vault_38,Wilson Sonsini Goodrich & Rosati,data_science
+vault_39,Milbank Tweed Hadley & McCloy,data_science
+vault_40,Shearman & Sterling,data_science
+vault_41,Morgan Lewis & Bockius,data_science
+vault_42,King & Spalding,data_science
+vault_43,Baker Botts,data_science
+vault_44,Goodwin Procter,data_science
+vault_45,Allen & Overy,data_science
+vault_46,Winston & Strawn,data_science
+vault_47,Cadwalader Wickersham & Taft,data_science
+vault_48,Fried Frank Harris Shriver & Jacobson,data_science
+vault_49,Perkins Coie,data_science
+vault_50,Willkie Farr & Gallagher,data_science
+vault_51,Dechert,data_science
+vault_52,Greenberg Traurig,data_science
+vault_53,Alston & Bird,data_science
+vault_54,Jenner & Block,data_science
+vault_55,Freshfields Bruckhaus Deringer,data_science
+vault_56,McDermott Will & Emery,data_science
+vault_57,Cahill Gordon & Reindel,data_science
+vault_58,Holland & Knight,data_science
+vault_59,Dentons,data_science
+vault_60,Susman Godfrey,data_science
+vault_61,Pillsbury Winthrop Shaw Pittman,data_science
+vault_62,Reed Smith,data_science
+vault_63,Baker & Hostetler,data_science
+vault_64,Vinson & Elkins,data_science
+vault_65,Norton Rose Fulbright,data_science
+vault_66,Irell & Manella,data_science
+vault_67,Nixon Peabody,data_science
+vault_68,Crowell & Moring,data_science
+vault_69,Fish & Richardson,data_science
+vault_70,Venable,data_science
+vault_71,Steptoe & Johnson,data_science
+vault_72,Bryan Cave Leighton Paisner,data_science
+vault_73,Squire Patton Boggs,data_science
+vault_74,Foley & Lardner,data_science
+vault_75,Sheppard Mullin Richter & Hampton,data_science
+vault_76,McGuireWoods,data_science
+vault_77,Locke Lord,data_science
+vault_78,Fenwick & West,data_science
+vault_79,Arent Fox,data_science
+vault_80,Hunton Andrews Kurth,data_science
+vault_81,Katten Muchin Rosenman,data_science
+vault_82,Schulte Roth & Zabel,data_science
+vault_83,Seyfarth Shaw,data_science
+vault_84,Pepper Hamilton,data_science
+vault_85,Hughes Hubbard & Reed,data_science
+vault_86,Mintz Levin Cohn Ferris Glovsky and Popeo,data_science
+vault_87,Fox Rothschild,data_science
+vault_88,Haynes and Boone,data_science
+vault_89,Duane Morris,data_science
+vault_90,Drinker Biddle & Reath,data_science
+vault_91,Blank Rome,data_science
+vault_92,Troutman Sanders,data_science
+vault_93,Davis Wright Tremaine,data_science
+vault_94,Kilpatrick Townsend & Stockton,data_science
+vault_95,Kramer Levin Naftalis & Frankel,data_science
+vault_96,Ballard Spahr,data_science
+vault_97,Kellogg Hansen Todd Figel & Frederick,data_science
+vault_98,Littler Mendelson,data_science
+vault_99,Wiley Rein,data_science
+vault_100,McKinsey & Company,mba
+vault_101,Bain & Company,mba
+vault_102,The Boston Consulting,mba
+vault_103,Deloitte Consulting,mba
+vault_104,Oliver Wyman,mba
+vault_105,Putnam Associates,mba
+vault_106,EY-Parthenon,mba
+vault_107,PricewaterhouseCoopers Advisory Services,mba
+vault_108,The Bridgespan,mba
+vault_109,Accenture,mba
+vault_110,A.T. Kearney,mba
+vault_111,KPMG,mba
+vault_112,Strategy& part of the PwC network,mba
+vault_113,L.E.K. Consulting,mba
+vault_114,GE Healthcare Partners,mba
+vault_115,The Brattle,mba
+vault_116,Roland Berger,mba
+vault_117,Insight Sourcing,mba
+vault_118,Analysis,mba
+vault_119,Alvarez & Marsal,mba
+vault_121,The Keystone,mba
+vault_122,ghSMART,mba
+vault_123,ClearView Healthcare Partners,mba
+vault_124,ZS,mba
+vault_125,Health Advances,mba
+vault_126,LeapPoint,mba
+vault_127,OC&C Strategy Consultants,mba
+vault_128,Eagle Hill Consulting,mba
+vault_129,Simon-Kucher & Partners,mba
+vault_131,Protiviti,mba
+vault_132,Trinity Partners,mba
+vault_133,Clarkston Consulting,mba
+vault_134,Ignyte,mba
+vault_135,Bates White Economic Consulting,mba
+vault_136,NERA Economic Consulting,mba
+vault_137,Charles River Associates,mba
+vault_138,The Chartis,mba
+vault_139,Cicero,mba
+vault_140,Innosight,mba
+vault_141,Censeo Consulting,mba
+vault_142,Keystone Strategy,mba
+vault_143,The Cambridge,mba
+vault_144,Arthur D. Little,mba
+vault_145,Smartronix,mba
+vault_146,Kenway Consulting,mba
+vault_147,Pace Harmon,mba
+vault_148,DayBlink Consulting,mba
+vault_149,Vivaldi,mba
+vault_150,Cornerstone Research,mba
+vault_151,Alira Health,mba
+vault_152,Goldman Sachs & Co,mba
+vault_153,Evercore,mba
+vault_154,Centerview Partners,mba
+vault_156,Greenhill & Co,mba
+vault_157,Moelis & Company,mba
+vault_158,Perella Weinberg Partners,mba
+vault_159,Guggenheim Securities,mba
+vault_161,Lazard,mba
+vault_162,Houlihan Lokey,mba
+vault_163,William Blair,mba
+vault_164,Pj Solomon,mba
+vault_165,Harris Williams,mba
+vault_166,Cowen,mba
+vault_167,UBS,mba
+vault_168,Loop Capital Markets,mba
+vault_169,J.P. Morgan,mba
+vault_170,Credit Suisse,mba
+vault_171,Barclays Investment Bank,mba
+vault_172,PJT Partners,mba
+vault_173,Citi Institutional Clients,mba
+vault_174,Jefferies,mba
+vault_175,Rothschild,mba
+vault_176,Allen & Company,mba
+vault_177,Qatalyst Partners,mba
+vault_178,Deutsche Bank AG,mba
+vault_179,RBC Capital Markets,mba
+vault_180,Wells Fargo & Company,mba
+vault_181,Macquarie,mba
+vault_182,Piper Jaffray Companies,mba
+vault_183,BMO Capital Markets,mba
+vault_184,Oppenheimer & Co,mba
+vault_185,Baird,mba
+vault_186,Deloitte Corporate Finance,mba
+vault_187,BNP Paribas USA,mba
+vault_188,Nomura,mba
+vault_189,HSBC North America,mba
+vault_191,LionTree Advisors,mba
+vault_192,Royal Bank of Scotland,mba
+vault_193,Cantor Fitzgerald,mba
+vault_195,Tudor Pickering Holt & Co,mba
+vault_196,Societe Generale Corporate & Investment Banking,mba
+vault_198,EY,mba
+vault_199,Brown Brothers Harriman,mba
+vault_200,CIBC World Markets,mba
+vault_201,Lloyds Banking,mba
+vault_202,PwC,data_science
+vault_203,Deloitte,data_science
+vault_205,Grant Thornton,data_science
+vault_206,Bdo Usa,data_science
+vault_207,Plante Moran,data_science
+vault_208,Crowe,data_science
+vault_209,Baker Tilly Virchow Krause,data_science
+vault_210,Moss Adams,data_science
+vault_211,Rsm Us,data_science
+vault_212,Dixon Hughes Goodman,data_science
+vault_213,Eide Bailly,data_science
+vault_214,Friedman,data_science
+vault_215,Frank Rimerman Co,data_science
+vault_216,Brown Smith Wallace,data_science
+vault_217,Cbiz Mhm,data_science
+vault_218,Elliott Davis,data_science
+vault_219,Armanino,data_science
+vault_220,PKF O'Connor Davies,data_science
+vault_221,BPM,data_science
+vault_222,Withum,data_science
+vault_223,Schenck SC,data_science
+vault_224,Sikich,data_science
+vault_225,Rehmann,data_science
+vault_226,Marks Paneth,data_science
+vault_227,MBE CPAs,data_science
+vault_228,Margolin Winer & Evens,data_science
+vault_229,Ernst & Young,data_science
+vault_230,CliftonLarsonAllen,data_science
+vault_231,CohnReznick,data_science
+vault_232,BKD,data_science
+vault_233,Cherry Bekaert,data_science
+vault_234,Marcum,data_science
+vault_235,EisnerAmper,data_science
+vault_236,Wipfli,data_science
+vault_237,Cohen & Company,data_science
+vault_238,UHY Advisors,data_science
+vault_239,RubinBrown,data_science
+vault_240,Mazars USA,data_science
+vault_241,The Siegfried,data_science
+vault_242,Citrin Cooperman & Company,data_science
+vault_243,Blum Shapiro & Co,data_science
+vault_244,Carr Riggs & Ingram,data_science
+vault_245,Novogradac & Company,data_science
+vault_246,Anchin Block & Anchin,data_science
+vault_247,Warren Averett,data_science
+vault_248,Berdon,data_science
+vault_249,Weaver,data_science
+vault_250,Blue & Co,data_science
+vault_251,Doeren Mayhew,data_science
+nasdaq_TSM,Taiwan Semiconductor Manufacturing Company,quant
+nasdaq_SAP,Sap Se,quant
+nasdaq_ADBE,Adobe,quant
+nasdaq_CRM,Salesforce.com,quant
+nasdaq_IBM,International Business Machines,quant
+nasdaq_AVGO,Broadcom,quant
+nasdaq_VMW,Vmware,quant
+nasdaq_ADP,Automatic Data Processing,quant
+nasdaq_BIDU,Baidu,quant
+nasdaq_INFY,Infosys Limited,quant
+nasdaq_AABA,Altaba,quant
+nasdaq_WDAY,Workday,quant
+nasdaq_NOW,ServiceNow,quant
+nasdaq_NOK,Nokia,quant
+nasdaq_ETN,Eaton,quant
+nasdaq_SQ,Square,quant
+nasdaq_NXPI,NXP Semiconductors N.V.,quant
+nasdaq_WIT,Wipro Limited,quant
+nasdaq_TEAM,Atlassian,quant
+nasdaq_HPE,Hewlett Packard Enterprise Company,quant
+nasdaq_INFO,IHS Markit,quant
+nasdaq_VRSN,VeriSign,quant
+nasdaq_PANW,Palo Alto Networks,quant
+nasdaq_SPLK,Splunk,quant
+nasdaq_DXC,DXC Technology Company,quant
+nasdaq_CHKP,Check Point Software Technologies,quant
+nasdaq_ANET,Arista Networks,quant
+nasdaq_SHOP,Shopify,quant
+nasdaq_WPP,WPP,quant
+nasdaq_VEEV,Veeva Systems,quant
+nasdaq_ANSS,Ansys,quant
+nasdaq_STM,STMicroelectronics N.V.,quant
+nasdaq_FTNT,Fortinet,quant
+nasdaq_MTCH,Match,quant
+nasdaq_TTWO,Take-Two Interactive Software,quant
+nasdaq_SSNC,SS&C Technologies,quant
+nasdaq_STX,Seagate Technology,quant
+nasdaq_MRVL,Marvell Technology,quant
+nasdaq_ASML,Asml N.V.,quant
+nasdaq_PTC,PTC,quant
+nasdaq_DATA,Tableau Software,quant
+nasdaq_JKHY,Jack Henry & Associates,quant
+nasdaq_YNDX,Yandex N.V.,quant
+nasdaq_TWLO,Twilio,quant
+nasdaq_OTEX,Open Text,quant
+nasdaq_ATHM,Autohome,quant
+nasdaq_DBX,Dropbox,quant
+nasdaq_LN,LINE,quant
+nasdaq_IPG,Interpublic of Companies,quant
+nasdaq_DOX,Amdocs Limited,quant
+nasdaq_WUBA,58.com,quant
+nasdaq_NTNX,Nutanix,quant
+nasdaq_SNAP,Snap,quant
+nasdaq_ULTI,The Ultimate Software,quant
+nasdaq_MFGP,Micro Focus Intl,quant
+nasdaq_ASX,ASE Technology,quant
+nasdaq_FDS,FactSet Research Systems,quant
+nasdaq_TRIP,TripAdvisor,quant
+nasdaq_EBIX,Ebix,quant
+nasdaq_OKTA,Okta,quant
+nasdaq_UBNT,Ubiquiti Networks,quant
+nasdaq_PAYC,Paycom Software,quant
+nasdaq_DOCU,DocuSign,quant
+nasdaq_PAGS,PagSeguro Digital,quant
+nasdaq_TYL,Tyler Technologies,quant
+nasdaq_EPAM,EPAM Systems,quant
+nasdaq_PNR,Pentair,quant
+nasdaq_BKI,Black Knight,quant
+nasdaq_RNG,Ringcentral,quant
+nasdaq_IPGP,IPG Photonics,quant
+nasdaq_AER,Aercap N.V.,quant
+nasdaq_GWRE,Guidewire Software,quant
+nasdaq_ZEN,Zendesk,quant
+nasdaq_IDTI,Integrated Device Technology,quant
+nasdaq_AZPN,Aspen Technology,quant
+nasdaq_NATI,National Instruments,quant
+nasdaq_MIDD,The Middleby,quant
+nasdaq_STNE,StoneCo,quant
+nasdaq_ZS,Zscaler,quant
+nasdaq_LOGI,Logitech S.A.,quant
+nasdaq_TTD,The Trade Desk,quant
+nasdaq_HUBS,HubSpot,quant
+nasdaq_ARRS,Arris,quant
+nasdaq_ESTC,Elastic N.V.,quant
+nasdaq_MPWR,Monolithic Power Systems,quant
+nasdaq_TSG,The Stars,quant
+nasdaq_RP,RealPage,quant
+nasdaq_PFPT,Proofpoint,quant
+nasdaq_NEWR,New Relic,quant
+nasdaq_SWI,SolarWinds,quant
+nasdaq_CDAY,Ceridian HCM,quant
+nasdaq_CREE,Cree,quant
+nasdaq_WIX,Wix.com,quant
+nasdaq_PVTL,Pivotal Software,quant
+nasdaq_MLNX,Mellanox Technologies,quant
+nasdaq_NICE,NICE,quant
+nasdaq_GDI,Gardner Denver,quant
+nasdaq_LOGM,LogMein,quant
+nasdaq_UMC,United Microelectronics,quant
+nasdaq_GTES,Gates Industrial,quant
+nasdaq_AYX,Alteryx,quant
+nasdaq_FLEX,Flex,quant
+nasdaq_SMI,Semiconductor Manufacturing,quant
+nasdaq_PSTG,Pure Storage,quant
+nasdaq_SINA,Sina,quant
+nasdaq_NVT,nVent Electric,quant
+nasdaq_MOMO,Momo,quant
+nasdaq_BB,BlackBerry Limited,quant
+nasdaq_HUYA,HUYA,quant
+nasdaq_MDSO,Medidata Solutions,quant
+nasdaq_INXN,InterXion N.V.,quant
+nasdaq_AL,Air Lease,quant
+nasdaq_PEGA,Pegasystems,quant
+nasdaq_AUO,AU Optronics,quant
+nasdaq_MDB,MongoDB,quant
+nasdaq_ZNGA,Zynga,quant
+nasdaq_CARG,CarGurus,quant
+nasdaq_COUP,Coupa Software,quant
+nasdaq_PS,Pluralsight,quant
+nasdaq_SLAB,Silicon Laboratories,quant
+nasdaq_WB,Weibo,quant
+nasdaq_VSAT,ViaSat,quant
+nasdaq_COMM,CommScope Company,quant
+nasdaq_PLAN,Anaplan,quant
+nasdaq_JCOM,j2 Global,quant
+nasdaq_SMTC,Semtech,quant
+nasdaq_YY,YY,quant
+nasdaq_AAN,Aaron& 39 s,quant
+nasdaq_FEYE,FireEye,quant
+nasdaq_PCTY,Paylocity,quant
+nasdaq_ACIW,ACI Worldwide,quant
+nasdaq_BLKB,Blackbaud,quant
+nasdaq_ASGN,ASGN,quant
+nasdaq_CSOD,Cornerstone OnDemand,quant
+nasdaq_PRSP,Perspecta,quant
+nasdaq_QLYS,Qualys,quant
+nasdaq_TWOU,2U,quant
+nasdaq_CLDR,Cloudera,quant
+nasdaq_MANH,Manhattan Associates,quant
+nasdaq_VRNT,Verint Systems,quant
+nasdaq_TRTN,Triton Limited,quant
+nasdaq_CVLT,Commvault Systems,quant
+nasdaq_RAMP,LiveRamp,quant
+nasdaq_CYBR,CyberArk Software,quant
+nasdaq_SAIC,Science Applications International Corporation,quant
+nasdaq_CCMP,Cabot Microelectronics,quant
+nasdaq_BOX,Box,quant
+nasdaq_FIVN,Five9,quant
+nasdaq_ERIC,Ericsson,quant
+nasdaq_SMAR,Smartsheet,quant
+nasdaq_ALRM,Alarm.com,quant
+nasdaq_AVLR,Avalara,quant
+nasdaq_OMCL,Omnicell,quant
+nasdaq_FNSR,Finisar,quant
+nasdaq_JBT,John Bean Technologies,quant
+nasdaq_KFY,Korn Ferry,quant
+nasdaq_APY,Apergy,quant
+nasdaq_VIAV,Viavi Solutions,quant
+nasdaq_EB,Eventbrite,quant
+nasdaq_JOBS,51job,quant
+nasdaq_ELLI,Ellie Mae,quant
+nasdaq_BL,BlackLine,quant
+nasdaq_SOGO,Sogou,quant
+nasdaq_SAIL,SailPoint Technologies,quant
+nasdaq_QTWO,Q2,quant
+nasdaq_TENB,Tenable,quant
+nasdaq_SEND,SendGrid,quant
+nasdaq_DSGX,The Descartes Systems,quant
+nasdaq_ZUO,Zuora,quant
+nasdaq_GLOB,Globant S.A.,quant
+nasdaq_CRUS,Cirrus Logic,quant
+nasdaq_INOV,Inovalon,quant
+nasdaq_EPAY,Bottomline Technologies,quant
+nasdaq_APPF,AppFolio,quant
+nasdaq_EVTC,Evertec,quant
+nasdaq_ALTR,Altair Engineering,quant
+nasdaq_BRKS,Brooks Automation,quant
+nasdaq_UPWK,Upwork,quant
+nasdaq_MIME,Mimecast Limited,quant
+nasdaq_MDRX,Allscripts Healthcare Solutions,quant
+nasdaq_APPN,Appian,quant
+nasdaq_NTCT,NetScout Systems,quant
+nasdaq_LXFT,Luxoft,quant
+nasdaq_EGHT,8x8,quant
+nasdaq_SWCH,Switch,quant
+nasdaq_POWI,Power Integrations,quant
+nasdaq_MB,Mindbody,quant
+nasdaq_WBT,Welbilt,quant
+nasdaq_CISN,Cision,quant
+nasdaq_ACIA,Acacia Communications,quant
+nasdaq_EVBG,Everbridge,quant
+nasdaq_RPD,Rapid7,quant
+nasdaq_SVMK,SVMK,quant
+nasdaq_SEDG,SolarEdge Technologies,quant
+nasdaq_WK,Workiva,quant
+nasdaq_CRTO,Criteo S.A.,quant
+nasdaq_PRGS,Progress Software,quant
+nasdaq_DIOD,Diodes,quant
+nasdaq_BNFT,Benefitfocus,quant
+nasdaq_YEXT,Yext,quant
+nasdaq_CARS,Cars.com,quant
+nasdaq_TSEM,Tower Semiconductor,quant
+nasdaq_SPSC,SPS Commerce,quant
+nasdaq_VRNS,Varonis Systems,quant
+nasdaq_MSTR,MicroStrategy,quant
+nasdaq_TTEC,TTEC,quant
+nasdaq_IPHI,Inphi,quant
+nasdaq_AYR,Aircastle Limited,quant
+nasdaq_BITA,Bitauto Limited,quant
+nasdaq_KLIC,Kulicke and Soffa Industries,quant
+nasdaq_INST,Instructure,quant
+nasdaq_GDS,GDS Limited,quant
+nasdaq_VRTU,Virtusa,quant
+nasdaq_OSIS,OSI Systems,quant
+nasdaq_SCWX,SecureWorks,quant
+nasdaq_SYNA,Synaptics,quant
+nasdaq_ATU,Actuant,quant
+nasdaq_GLUU,Glu Mobile,quant
+nasdaq_SSTK,Shutterstock,quant
+nasdaq_MXL,MaxLinear,quant
+nasdaq_DDD,3D Systems,quant
+nasdaq_SIMO,Silicon Motion Technology,quant
+nasdaq_SPXC,SPX,quant
+nasdaq_LPSN,LivePerson,quant
+nasdaq_MGRC,McGrath RentCorp,quant
+nasdaq_LTRPA,Liberty TripAdvisor,quant
+nasdaq_DAVA,Endava,quant
+nasdaq_LORL,Loral Space and Communications,quant
+nasdaq_AMBA,Ambarella,quant
+nasdaq_PRO,PROS,quant
+nasdaq_PSDO,Presidio,quant
+nasdaq_EFII,Electronics for Imaging,quant
+nasdaq_SYKE,Sykes Enterprises,quant
+nasdaq_CASA,Casa Systems,quant
+nasdaq_FSCT,ForeScout Technologies,quant
+nasdaq_AQUA,Evoqua Water Technologies,quant
+nasdaq_CSGS,CSG Systems,quant
+nasdaq_MTSI,MACOM Technology Solutions,quant
+nasdaq_CLS,Celestica,quant
+nasdaq_NXGN,NextGen Healthcare,quant
+nasdaq_TLND,Talend S.A.,quant
+nasdaq_SSYS,Stratasys,quant
+nasdaq_EIGI,Endurance,quant
+nasdaq_FORM,FormFactor,quant
+nasdaq_CSIQ,Canadian Solar,quant
+nasdaq_PLUS,ePlus,quant
+nasdaq_TNC,Tennant Company,quant
+nasdaq_XPER,Xperi,quant
+nasdaq_TRUE,TrueCar,quant
+nasdaq_CARB,Carbonite,quant
+nasdaq_LSCC,Lattice Semiconductor,quant
+nasdaq_MCRN,Milacron,quant
+nasdaq_SXI,Standex,quant
+nasdaq_CBLK,Carbon Black,quant
+nasdaq_AGMH,AGM,quant
+nasdaq_KAI,Kadant,quant
+nasdaq_CTS,CTS,quant
+nasdaq_RMBS,Rambus,quant
+nasdaq_CMCM,Cheetah Mobile,quant
+nasdaq_CRAY,Cray,quant
+nasdaq_KFRC,Kforce,quant
+nasdaq_BILI,Bilibili,quant
+nasdaq_JT,Jianpu Technology,quant
+nasdaq_SFUN,Fang Limited,quant
+nasdaq_CTK,CooTek,quant
+nasdaq_QADA,QAD,quant
+nasdaq_BAND,Bandwidth,quant
+nasdaq_HSTM,HealthStream,quant
+nasdaq_PRFT,Perficient,quant
+nasdaq_SPWR,SunPower,quant
+nasdaq_EXTR,Extreme Networks,quant
+nasdaq_SOHU,Sohu.com Limited,quant
+nasdaq_EXTN,Exterran,quant
+nasdaq_PLAB,Photronics,quant
+nasdaq_TGH,Textainer Limited,quant
+nasdaq_TCX,Tucows,quant
+nasdaq_TYPE,Monotype Imaging,quant
+nasdaq_LASR,nLIGHT,quant
+nasdaq_HSII,Heidrick & Struggles,quant
+nasdaq_UPLD,Upland Software,quant
+nasdaq_HMI,Huami,quant
+nasdaq_ENPH,Enphase Energy,quant
+nasdaq_SPNS,Sapiens Corporation N.V.,quant
+nasdaq_QTNA,Quantenna Communications,quant
+nasdaq_DOMO,Domo,quant
+nasdaq_CMTL,Comtech Telecommunications,quant
+nasdaq_VNET,21Vianet,quant
+nasdaq_ACLS,Axcelis Technologies,quant
+nasdaq_SGH,SMART Global,quant
+nasdaq_RBBN,Ribbon Communications,quant
+nasdaq_OSPN,OneSpan,quant
+nasdaq_SWIR,Sierra Wireless,quant
+nasdaq_CEVA,CEVA,quant
+nasdaq_GILT,Gilat Satellite Networks,quant
+nasdaq_ATEN,A10 Networks,quant
+nasdaq_CAMP,CalAmp,quant
+nasdaq_MOBL,MobileIron,quant
+nasdaq_JKS,JinkoSolar Company Limited,quant
+nasdaq_CAI,CAI,quant
+nasdaq_PKE,Park Electrochemical,quant
+nasdaq_NVEC,NVE,quant
+nasdaq_BBSI,Barrett Business Services,quant
+nasdaq_MODN,Model N,quant
+nasdaq_ATTU,Attunity,quant
+nasdaq_HIMX,Himax Technologies,quant
+nasdaq_ICHR,Ichor,quant
+nasdaq_MITK,Mitek Systems,quant
+nasdaq_KE,Kimball Electronics,quant
+nasdaq_HLIT,Harmonic,quant
+nasdaq_ERII,Energy Recovery,quant
+nasdaq_SSTI,ShotSpotter,quant
+nasdaq_VECO,Veeco Instruments,quant
+nasdaq_MGIC,Magic Software Enterprises,quant
+nasdaq_CPSI,Computer Programs and Systems,quant
+nasdaq_RST,Rosetta Stone,quant
+nasdaq_UCTT,Ultra Clean,quant
+nasdaq_PHUN,Phunware,quant
+nasdaq_GTYH,GTY Technology,quant
+nasdaq_CYOU,Changyou.com Limited,quant
+nasdaq_CSLT,Castlight Health,quant
+nasdaq_SLP,Simulations Plus,quant
+nasdaq_MIXT,MiX Telematics Limited,quant
+nasdaq_MAXR,Maxar Technologies,quant
+nasdaq_KEYW,The KEYW,quant
+nasdaq_DQ,DAQO New Energy,quant
+nasdaq_GFN,General Finance,quant
+nasdaq_AGYS,Agilysys,quant
+nasdaq_ZIXI,Zix,quant
+nasdaq_NPTN,NeoPhotonics,quant
+nasdaq_MTLS,Materialise NV,quant
+nasdaq_AAOI,Applied Optoelectronics,quant
+nasdaq_AMSWA,American Software,quant
+nasdaq_DGII,Digi,quant
+nasdaq_CCRN,Cross Country Healthcare,quant
+nasdaq_ECOM ,ChannelAdvisor,quant
+nasdaq_AQ,Aquantia,quant
+nasdaq_CRNT,Ceragon Networks,quant
+nasdaq_PDFS,PDF Solutions,quant
+nasdaq_OOMA,Ooma,quant
+nasdaq_IMMR,Immersion,quant
+nasdaq_SNCR,Synchronoss Technologies,quant
+nasdaq_CDLX,Cardlytics,quant
+nasdaq_SRT,StarTek,quant
+nasdaq_DSPG,DSP,quant
+nasdaq_MJCO,Majesco,quant
+nasdaq_BCOV,Brightcove,quant
+nasdaq_AOSL,Alpha and Omega Semiconductor Limited,quant
+nasdaq_SILC,Silicom,quant
+nasdaq_GRNQ,Greenpro Capital,quant
+nasdaq_AMBR,Amber Road,quant
+nasdaq_TWIN,Twin Disc,quant
+nasdaq_BGSF,BG Staffing,quant
+nasdaq_MX,MagnaChip Semiconductor,quant
+nasdaq_DMRC,Digimarc,quant
+nasdaq_TEUM,Pareteum,quant
+nasdaq_ALLT,Allot,quant
+nasdaq_RUBI,The Rubicon Project,quant
+nasdaq_WATT,Energous,quant
+nasdaq_LEAF,Leaf,quant
+nasdaq_AVID,Avid Technology,quant
+nasdaq_KVHI,KVH Industries,quant
+nasdaq_TRVG,trivago N.V.,quant
+nasdaq_HIVE,Aerohive Networks,quant
+nasdaq_EGAN,eGain,quant
+nasdaq_SPA,Sparton,quant
+nasdaq_AXTI,AXT,quant
+nasdaq_MTC,MMTec,quant
+nasdaq_ACMR,ACM Research,quant
+nasdaq_INS,Intelligent Systems,quant
+nasdaq_FSNN,Fusion Connect,quant
+nasdaq_IOTS,Adesto Technologies,quant
+nasdaq_PCYG,Park City,quant
+nasdaq_GSIT,GSI Technology,quant
+nasdaq_BRQS,Borqs Technologies,quant
+nasdaq_CYRN,Cyren,quant
+nasdaq_ALYA,Alithya,quant
+nasdaq_MDCA,MDC Partners,quant
+nasdaq_VUZI,Vuzix,quant
+nasdaq_EVER,EverQuote,quant
+nasdaq_TLRA,Telaria,quant
+nasdaq_ALOT,AstroNova,quant
+nasdaq_MNTX,Manitex,quant
+nasdaq_XNET,Xunlei Limited,quant
+nasdaq_INAP,Internap,quant
+nasdaq_TZOO,Travelzoo,quant
+nasdaq_EMKR,Emcore,quant
+nasdaq_LIQT,LiqTech,quant
+nasdaq_PXLW,Pixelworks,quant
+nasdaq_INSE,Inspired Entertainment,quant
+nasdaq_IVAC,Intevac,quant
+nasdaq_SHSP,SharpSpring,quant
+nasdaq_SMTX,SMTC,quant
+nasdaq_RDCM,Radcom,quant
+nasdaq_PNTR,Pointer Telocation,quant
+nasdaq_RENN,Renren,quant
+nasdaq_RMBL,RumbleOn,quant
+nasdaq_AIRG,Airgain,quant
+nasdaq_RNWK,RealNetworks,quant
+nasdaq_MRAM,Everspin Technologies,quant
+nasdaq_KOPN,Kopin,quant
+nasdaq_MAMS,MAM Software,quant
+nasdaq_VERI,Veritone,quant
+nasdaq_SQNS,Sequans Communications S.A.,quant
+nasdaq_GEC,Great Elm Capital,quant
+nasdaq_ASUR,Asure Software,quant
+nasdaq_IMOS,ChipMOS TECHNOLOGIES,quant
+nasdaq_QUIK,QuickLogic,quant
+nasdaq_NTWK,NetSol Technologies,quant
+nasdaq_PCTI,PC-Tel,quant
+nasdaq_GSB,GlobalSCAPE,quant
+nasdaq_SGOC,Sgoco,quant
+nasdaq_NH,NantHealth,quant
+nasdaq_AWRE,Aware,quant
+nasdaq_LTRX,Lantronix,quant
+nasdaq_DTSS,Datasea,quant
+nasdaq_PERI,Perion Network,quant
+nasdaq_RDVT,Red Violet,quant
+nasdaq_AVNW,Aviat Networks,quant
+nasdaq_JG,Aurora Mobile Limited,quant
+nasdaq_MTEC,MTech Acquisition,quant
+nasdaq_CLPS,CLPS Incorporation,quant
+nasdaq_TACT,TransAct Technologies,quant
+nasdaq_INVE,Identiv,quant
+nasdaq_ASYS,Amtech Systems,quant
+nasdaq_VISI,Volt Information Sciences,quant
+nasdaq_SYNC,Synacor,quant
+nasdaq_IEC,IEC Electronics,quant
+nasdaq_CTG,Computer Task,quant
+nasdaq_KTCC,Key Tronic,quant
+nasdaq_DLHC,DLH,quant
+nasdaq_AEYE,AudioEye,quant
+nasdaq_SEAC,SeaChange,quant
+nasdaq_ICLK,iClick Interactive Asia Limited,quant
+nasdaq_WISA,Summit Wireless Technologies,quant
+nasdaq_IMI,Intermolecular,quant
+nasdaq_BKTI,BK Technologies,quant
+nasdaq_QTM,Quantum,quant
+nasdaq_SOL,Renesola,quant
+nasdaq_HQCL,Hanwha Q CELLS,quant
+nasdaq_SMSI,Smith Micro Software,quant
+nasdaq_MTBC,Medical Transcription Billing,quant
+nasdaq_OIIM,O2Micro Limited,quant
+nasdaq_GVP,GSE Systems,quant
+nasdaq_TAOP,Taoping,quant
+nasdaq_MNDO,Mind C.T.I.,quant
+nasdaq_RCMT,RCM Technologies,quant
+nasdaq_ATOM,Atomera,quant
+nasdaq_PIXY,ShiftPixy,quant
+nasdaq_SPRT,support.com,quant
+nasdaq_WSTG,Wayside Technology,quant
+nasdaq_MIND,Mitcham Industries,quant
+nasdaq_RESN,Resonant,quant
+nasdaq_HSON,Hudson Global,quant
+nasdaq_AUTO,AutoWeb,quant
+nasdaq_LPTH,LightPath Technologies,quant
+nasdaq_EMAN,eMagin,quant
+nasdaq_INOD,Innodata,quant
+nasdaq_CSPI,CSP,quant
+nasdaq_SIFY,Sify Technologies Limited,quant
+nasdaq_WYY,WidePoint,quant
+nasdaq_ISSC,Innovative Solutions and Support,quant
+nasdaq_IDN,Intellicheck,quant
+nasdaq_OSS,One Stop Systems,quant
+nasdaq_OTIV,On Track Innovations,quant
+nasdaq_MOXC,Moxian,quant
+nasdaq_GIGM,GigaMedia Limited,quant
+nasdaq_MRIN,Marin Software,quant
+nasdaq_DGLY,Digital Ally,quant
+nasdaq_CVR,Chicago Rivet & Machine,quant
+nasdaq_PFIN,P & F Industries,quant
+nasdaq_CNET,ChinaNet Online,quant
+nasdaq_CCIH,ChinaCache,quant
+nasdaq_MYSZ,My Size,quant
+nasdaq_MNGA,MagneGas Applied Technology Solutions,quant
+nasdaq_CVV,CVD Equipment,quant
+nasdaq_ZDGE,Zedge,quant
+nasdaq_NETE,Net Element,quant
+nasdaq_SRAX,Social Reality,quant
+nasdaq_GSUM,Gridsum,quant
+nasdaq_QRHC,Quest Resource,quant
+nasdaq_SPCB,SuperCom,quant
+nasdaq_RBCN,Rubicon Technology,quant
+nasdaq_STRM,Streamline Health Solutions,quant
+nasdaq_QUMU,Qumu,quant
+nasdaq_CCNI,Command Center,quant
+nasdaq_HHS,Harte-Hanks,quant
+nasdaq_IIJI,Internet Initiative Japan,quant
+nasdaq_IPAS,iPass,quant
+nasdaq_AMCN,AirMedia,quant
+nasdaq_EVOL,Evolving Systems,quant
+nasdaq_ACY,AeroCentury,quant
+nasdaq_LINK,Interlink Electronics,quant
+nasdaq_FPAY,FlexShopper,quant
+nasdaq_SCKT,Socket Mobile,quant
+nasdaq_QBAK,Qualstar,quant
+nasdaq_SGMA,SigmaTron,quant
+nasdaq_BKYI,BIO-key,quant
+nasdaq_JOB,GEE,quant
+nasdaq_NNDM,Nano Dimension,quant
+nasdaq_TRT,Trio-Tech,quant
+nasdaq_BDR,Blonder Tongue Laboratories,quant
+nasdaq_LEDS,SemiLEDS,quant
+nasdaq_TSRI,TSR,quant
+nasdaq_STAF,Staffing 360 Solutions,quant
+nasdaq_AMRH,Ameri,quant
+nasdaq_TISA,Top Image Systems,quant
+nasdaq_CPAH,CounterPath,quant
+nasdaq_BOSC,B.O.S. Better Online Solutions,quant
+nasdaq_BVSN,BroadVision,quant
+nasdaq_MOSY,MoSys,quant
+nasdaq_CREX,Creative Realities,quant
+nasdaq_ANY,Sphere 3D,quant
+nasdaq_IPDN,Professional Diversity Network,quant
+nasdaq_SPI,SPI Energy,quant
+nasdaq_FORTY,Formula Systems,quant
+nasdaq_INPX,Inpixon,quant
+nasdaq_ELTK,Eltek,quant
+nasdaq_TCCO,Technical Communications,quant
+nasdaq_SCON,Superconductor Technologies,quant
+nasdaq_BLIN ,Bridgeline Digital,quant
+nasdaq_FRSX,Foresight Autonomous,quant
+nasdaq_JMU,JMU Limited,quant
+nasdaq_SFET,Safe-T,quant
+glassdoor_0,Heap,quant
+glassdoor_1,Horizon Innovations,quant
+glassdoor_2,Silverline,quant
+glassdoor_3,Marketing 360,quant
+glassdoor_4,Digital Prospectors,quant
+glassdoor_5,GetUWired,quant
+glassdoor_6,Weave,quant
+glassdoor_7,Malouf,quant
+glassdoor_8,Highspot,quant
+glassdoor_9,Peabody Properties,quant
+glassdoor_10,South Carolina Federal Credit Union,quant
+glassdoor_11,driversselect,quant
+glassdoor_12,Disruptive Advertising,quant
+glassdoor_13,New Western,quant
+glassdoor_14,NetWorth Realty,quant
+glassdoor_15,iCIMS,quant
+glassdoor_16,Sundance Vacations,quant
+glassdoor_17,Grand Rounds,quant
+glassdoor_18,Pariveda Solutions,quant
+glassdoor_19,nbkc bank,quant
+glassdoor_20,G-TECH Services,quant
+glassdoor_21,The Predictive Index,quant
+glassdoor_22,Acceleration Partners,quant
+glassdoor_23,Bombas,quant
+glassdoor_24,Front,quant
+glassdoor_25,23andMe,quant
+glassdoor_26,Optima Tax Relief,quant
+glassdoor_27,OppLoans,quant
+glassdoor_28,Common Thread Collective,quant
+glassdoor_29,Life.Church,quant
+glassdoor_30,CarSense,quant
+glassdoor_31,Best Version Media,quant
+glassdoor_32,KeepTruckin,quant
+glassdoor_33,vCom Solutions,quant
+glassdoor_34,WillowTree,quant
+glassdoor_35,Emser Tile,quant
+glassdoor_36,Greenhouse Software,quant
+glassdoor_37,Thrive Mortgage,quant
+glassdoor_38,Spreetail,quant
+glassdoor_39,Towne Properties,quant
+glassdoor_40,Sage Intacct,quant
+glassdoor_41,Glint,quant
+glassdoor_42,Healthy Spot,quant
+glassdoor_43,Thomas J. Henry Injury Attorneys,quant
+glassdoor_44,Moogsoft,quant
+glassdoor_45,Berkshire,quant
+glassdoor_46,Indigo,quant
+glassdoor_47,Corporate Brokers,quant
+glassdoor_48,eXp Realty,quant
+glassdoor_51,Zoom Video Communications,quant
+glassdoor_52,In-N-Out Burger,quant
+glassdoor_53,Procore Technologies,quant
+glassdoor_54,Boston Consulting,quant
+glassdoor_55,LinkedIn,quant
+glassdoor_57,Google,quant
+glassdoor_58,lululemon,quant
+glassdoor_60,Salesforce,quant
+glassdoor_62,St. Jude Children's Research Hospital,quant
+glassdoor_63,Slalom,quant
+glassdoor_64,Power Home Remodeling,quant
+glassdoor_67,Ultimate Software,quant
+glassdoor_70,Ryan,quant
+glassdoor_71,Sammons Financial,quant
+glassdoor_72,Trader Joe's,quant
+glassdoor_73,Lawrence Livermore National Laboratory,quant
+glassdoor_74,Smile Brands,quant
+glassdoor_75,Fast Enterprises,quant
+glassdoor_76,SAP,quant
+glassdoor_78,Navy Federal Credit Union,quant
+glassdoor_80,H E B,quant
+glassdoor_81,Compass,quant
+glassdoor_84,Trilogy Health Services,quant
+glassdoor_86,E. & J. Gallo Winery,quant
+glassdoor_88,NIH,quant
+glassdoor_89,TaskUs,quant
+glassdoor_90,Cengage,quant
+glassdoor_91,Blizzard Entertainment,quant
+glassdoor_93,Kronos,quant
+glassdoor_94,Nebraska Furniture Mart,quant
+glassdoor_95,Wegmans Food Markets,quant
+glassdoor_96,The Clorox Company,quant
+glassdoor_97,SpaceX,quant
+glassdoor_100,VMware,quant
+glassdoor_101,Northside Hospital,quant
+glassdoor_102,Vi,quant
+glassdoor_103,ABC Supply Co,quant
+glassdoor_106,Keller Williams,quant
+glassdoor_107,AppDynamics,quant
+glassdoor_108,T-Mobile,quant
+glassdoor_109,Rose,quant
+glassdoor_110,Hilti North America,quant
+glassdoor_111,Paycom,quant
+glassdoor_112,John Deere,quant
+glassdoor_113,NewYork-Presbyterian Hospital,quant
+glassdoor_115,Memorial Sloan Kettering,quant
+glassdoor_116,Vipkid,quant
+glassdoor_117,MD Anderson Cancer Center,quant
+glassdoor_121,Omni Hotels,quant
+glassdoor_122,BAYADA Home Health Care,quant
+glassdoor_123,Aptive Environmental,quant
+glassdoor_125,Kimpton Hotels & Restaurants,quant
+glassdoor_127,Great Lakes Caring,quant
+glassdoor_128,Costco Wholesale,quant
+glassdoor_130,Discount Tire,quant
+glassdoor_132,Phoenix Children's Hospital,quant
+glassdoor_133,Massachusetts General Hospital,quant
+glassdoor_134,FedEx Freight,quant
+glassdoor_135,Edward Jones,quant
+glassdoor_138,Texas Health Resources,quant
+glassdoor_139,Sport Clips,quant
+glassdoor_140,Gensler,quant
+glassdoor_142,BOK Financial,quant
+glassdoor_145,Raising Cane's,quant
+glassdoor_146,FLIK Hospitality,quant
+glassdoor_147,Kaiser Permanente,quant
+glassdoor_148,World Wide Technology,quant
+forbes_0,Stripe,quant
+forbes_1,Slack,quant
+forbes_3,Tanium,quant
+forbes_5,CrowdStrike,quant
+forbes_6,Qualtrics,quant
+forbes_7,Squarespace,quant
+forbes_8,Elastic,quant
+forbes_10,Mailchimp,quant
+forbes_11,Cloudflare,quant
+forbes_12,SurveyMonkey,quant
+forbes_13,UiPath,quant
+forbes_14,Medallia,quant
+forbes_15,PagerDuty,quant
+forbes_16,Snowflake,quant
+forbes_17,Cylance,quant
+forbes_18,Datadog,quant
+forbes_19,Intercom,quant
+forbes_20,Rubrik,quant
+forbes_21,Yardi,quant
+forbes_22,InVision,quant
+forbes_23,nCino,quant
+forbes_24,AppDirect,quant
+forbes_25,Sprinklr,quant
+forbes_26,Apttus,quant
+forbes_28,Toast,quant
+forbes_29,Veeam,quant
+forbes_30,Confluent,quant
+forbes_31,HashiCorp,quant
+forbes_32,Gusto,quant
+forbes_33,Looker,quant
+forbes_34,Databricks,quant
+forbes_35,Darktrace,quant
+forbes_36,Uptake,quant
+forbes_37,Automation Anywhere,quant
+forbes_38,Automattic,quant
+forbes_39,PointClickCare,quant
+forbes_40,Sisense,quant
+forbes_41,AvidXchange,quant
+forbes_42,Vlocity,quant
+forbes_43,Lookout,quant
+forbes_44,Canva,quant
+forbes_45,ServiceTitan,quant
+forbes_46,Checkr,quant
+forbes_47,WalkMe,quant
+forbes_48,Acquia,quant
+forbes_49,Gainsight,quant
+forbes_50,Turbonomic,quant
+forbes_51,DataStax,quant
+forbes_52,Segment,quant
+forbes_54,SMS Assist,quant
+forbes_55,Fastly,quant
+forbes_56,Zapier,quant
+forbes_57,Welltok,quant
+forbes_58,Dataminr,quant
+forbes_59,Freshworks,quant
+forbes_60,ThoughtSpot,quant
+forbes_61,Workfront,quant
+forbes_62,Asana,quant
+forbes_63,FinancialForce,quant
+forbes_64,Fuze,quant
+forbes_65,Optimizely,quant
+forbes_66,BrowserStack,quant
+forbes_67,Auth0,quant
+forbes_68,Illumio,quant
+forbes_69,Hootsuite,quant
+forbes_70,Health Catalyst,quant
+forbes_71,iCims,quant
+forbes_72,DigitalOcean,quant
+forbes_73,JFrog,quant
+forbes_74,American Well,quant
+forbes_75,C3 IoT,quant
+forbes_76,NewVoiceMedia,quant
+forbes_77,ZipRecruiter,quant
+forbes_78,Onshape,quant
+forbes_79,Collibra,quant
+forbes_80,Airtable,quant
+forbes_81,Evernote,quant
+forbes_83,Pipedrive,quant
+forbes_84,Braze,quant
+forbes_85,Algolia,quant
+forbes_86,Sumo Logic,quant
+forbes_87,Carta,quant
+forbes_88,Netskope,quant
+forbes_89,Pindrop Security,quant
+forbes_90,Drift,quant
+forbes_91,Outreach,quant
+forbes_92,Podium,quant
+forbes_93,Exabeam,quant
+forbes_94,Cloudinary,quant
+forbes_95,Namely,quant
+forbes_96,Endgame,quant
+forbes_98,Dialpad,quant
+forbes_99,Pendo,quant
+cnbc_1,Uber,quant
+cnbc_2,Airbnb,quant
+cnbc_3,Didi Chuxing,quant
+cnbc_4,Lyft,quant
+cnbc_5,Grab,quant
+cnbc_7,Udacity,quant
+cnbc_8,Rent the Runway,quant
+cnbc_9,Coinbase,quant
+cnbc_10,TransferWise,quant
+cnbc_11,Oscar Health,quant
+cnbc_12,Payoneer,quant
+cnbc_14,Progyny,quant
+cnbc_15,Adyen,quant
+cnbc_16,TheRealReal,quant
+cnbc_17,Indigo Agriculture,quant
+cnbc_18,Ezetap,quant
+cnbc_19,Peloton,quant
+cnbc_20,Ginkgo Bioworks,quant
+cnbc_21,Lisnr,quant
+cnbc_22,WeWork,quant
+cnbc_23,Ellevest,quant
+cnbc_24,Zipline,quant
+cnbc_25,LanzaTech,quant
+cnbc_26,Crowdstrike,quant
+cnbc_27,Xiaomi,quant
+cnbc_28,Flirtey,quant
+cnbc_29,Veritas Genetics,quant
+cnbc_30,Houzz,quant
+cnbc_32,Palantir Technologies,quant
+cnbc_34,Duolingo,quant
+cnbc_35,Pinterest,quant
+cnbc_36,Thinx,quant
+cnbc_37,Robinhood,quant
+cnbc_39,Drawbridge,quant
+cnbc_40,InMobi,quant
+cnbc_41,Coursera,quant
+cnbc_44,Fanatics,quant
+cnbc_45,Auris Health,quant
+cnbc_46,Luminar,quant
+cnbc_47,Apeel Sciences,quant
+cnbc_48,GitHub,quant
+cnbc_49,SoFi,quant
+bi_0,Credit Karma,quant
+bi_1,Wish,quant
+bi_3,DoorDash,quant
+bi_5,Intarcia Therapeutics,quant
+bi_9,Machine Zone,quant
+bi_11,Magic Leap,quant
+bi_13,Moderna Therapeutics,quant
+bi_15,Instacart,quant
+bi_17,Samumed,quant
+bi_20,Palantir,quant

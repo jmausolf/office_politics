@@ -1,0 +1,2129 @@
+list_id,company,job_type,keywords,counter
+f1000_0,Walmart,consultant,"['associate', 'consultant']",0
+f1000_1,Geico,consultant,"['associate', 'consultant']",1
+f1000_2,Apple,consultant,"['associate', 'consultant']",2
+f1000_3,ExxonMobil,consultant,"['associate', 'consultant']",3
+f1000_4,McKesson,consultant,"['associate', 'consultant']",4
+f1000_5,UnitedHealth,consultant,"['associate', 'consultant']",5
+f1000_6,CVS Health,consultant,"['associate', 'consultant']",6
+f1000_7,General Motors,consultant,"['associate', 'consultant']",7
+f1000_8,AT&T,consultant,"['associate', 'consultant']",8
+f1000_9,Ford Motor,consultant,"['associate', 'consultant']",9
+f1000_10,AmerisourceBergen,consultant,"['associate', 'consultant']",10
+f1000_11,Amazon,consultant,"['associate', 'consultant']",11
+f1000_12,General Electric,consultant,"['associate', 'consultant']",12
+f1000_13,Verizon Communications,consultant,"['associate', 'consultant']",13
+f1000_14,Cardinal Health,consultant,"['associate', 'consultant']",14
+f1000_15,Costco,consultant,"['associate', 'consultant']",15
+f1000_16,Walgreens,consultant,"['associate', 'consultant']",16
+f1000_17,Kroger,consultant,"['associate', 'consultant']",17
+f1000_18,Chevron,consultant,"['associate', 'consultant']",18
+f1000_19,Fannie Mae,consultant,"['associate', 'consultant']",19
+f1000_20,J.P. Morgan Chase,consultant,"['associate', 'consultant']",20
+f1000_21,Express Scripts,consultant,"['associate', 'consultant']",21
+f1000_22,Home Depot,consultant,"['associate', 'consultant']",22
+f1000_23,Boeing,consultant,"['associate', 'consultant']",23
+f1000_24,Wells Fargo,consultant,"['associate', 'consultant']",24
+f1000_25,Bank of America,consultant,"['associate', 'consultant']",25
+f1000_26,Alphabet,consultant,"['associate', 'consultant']",26
+f1000_27,Microsoft,consultant,"['associate', 'consultant']",27
+f1000_28,Anthem,consultant,"['associate', 'consultant']",28
+f1000_29,Citigroup,consultant,"['associate', 'consultant']",29
+f1000_30,Comcast,consultant,"['associate', 'consultant']",30
+f1000_31,IBM,consultant,"['associate', 'consultant']",31
+f1000_32,State Farm Insurance,consultant,"['associate', 'consultant']",32
+f1000_33,Phillips 66,consultant,"['associate', 'consultant']",33
+f1000_34,Johnson & Johnson,consultant,"['associate', 'consultant']",34
+f1000_35,Procter & Gamble,consultant,"['associate', 'consultant']",35
+f1000_36,Valero Energy,consultant,"['associate', 'consultant']",36
+f1000_37,Target,consultant,"['associate', 'consultant']",37
+f1000_38,Freddie Mac,consultant,"['associate', 'consultant']",38
+f1000_39,Lowe's,consultant,"['associate', 'consultant']",39
+f1000_40,Dell Technologies,consultant,"['associate', 'consultant']",40
+f1000_41,MetLife,consultant,"['associate', 'consultant']",41
+f1000_42,Aetna,consultant,"['associate', 'consultant']",42
+f1000_43,PepsiCo,consultant,"['associate', 'consultant']",43
+f1000_44,Archer Daniels Midland,consultant,"['associate', 'consultant']",44
+f1000_45,UPS,consultant,"['associate', 'consultant']",45
+f1000_46,Intel,consultant,"['associate', 'consultant']",46
+f1000_47,Prudential Financial,consultant,"['associate', 'consultant']",47
+f1000_48,Albertsons,consultant,"['associate', 'consultant']",48
+f1000_49,United Technologies,consultant,"['associate', 'consultant']",49
+f1000_50,Marathon Petroleum,consultant,"['associate', 'consultant']",50
+f1000_51,Disney,consultant,"['associate', 'consultant']",51
+f1000_52,Humana,consultant,"['associate', 'consultant']",52
+f1000_53,Pfizer,consultant,"['associate', 'consultant']",53
+f1000_54,AIG,consultant,"['associate', 'consultant']",54
+f1000_55,Lockheed Martin,consultant,"['associate', 'consultant']",55
+f1000_56,Sysco,consultant,"['associate', 'consultant']",56
+f1000_57,FedEx,consultant,"['associate', 'consultant']",57
+f1000_58,Hewlett Packard Enterprise,consultant,"['associate', 'consultant']",58
+f1000_59,Cisco Systems,consultant,"['associate', 'consultant']",59
+f1000_60,HP,consultant,"['associate', 'consultant']",60
+f1000_61,Dow Chemical,consultant,"['associate', 'consultant']",61
+f1000_62,HCA,consultant,"['associate', 'consultant']",62
+f1000_63,Coca-Cola,consultant,"['associate', 'consultant']",63
+f1000_64,New York Life Insurance,consultant,"['associate', 'consultant']",64
+f1000_65,Centene,consultant,"['associate', 'consultant']",65
+f1000_66,American Airlines,consultant,"['associate', 'consultant']",66
+f1000_67,Nationwide,consultant,"['associate', 'consultant']",67
+f1000_68,Merck,consultant,"['associate', 'consultant']",68
+f1000_69,Cigna,consultant,"['associate', 'consultant']",69
+f1000_70,Delta Air Lines,consultant,"['associate', 'consultant']",70
+f1000_71,Best Buy,consultant,"['associate', 'consultant']",71
+f1000_72,Honeywell,consultant,"['associate', 'consultant']",72
+f1000_73,Caterpillar,consultant,"['associate', 'consultant']",73
+f1000_74,Liberty Mutual Insurance,consultant,"['associate', 'consultant']",74
+f1000_75,Morgan Stanley,consultant,"['associate', 'consultant']",75
+f1000_76,Massachusetts Mutual Life Insurance,consultant,"['associate', 'consultant']",76
+f1000_77,Goldman Sachs,consultant,"['associate', 'consultant']",77
+f1000_78,Energy Transfer Equity,consultant,"['associate', 'consultant']",78
+f1000_79,TIAA,consultant,"['associate', 'consultant']",79
+f1000_80,Oracle,consultant,"['associate', 'consultant']",80
+f1000_81,Tyson Foods,consultant,"['associate', 'consultant']",81
+f1000_82,United Continental,consultant,"['associate', 'consultant']",82
+f1000_83,Allstate,consultant,"['associate', 'consultant']",83
+f1000_84,Publix Super Markets,consultant,"['associate', 'consultant']",84
+f1000_85,American Express,consultant,"['associate', 'consultant']",85
+f1000_86,TJX,consultant,"['associate', 'consultant']",86
+f1000_87,Nike,consultant,"['associate', 'consultant']",87
+f1000_88,Exelon,consultant,"['associate', 'consultant']",88
+f1000_89,General Dynamics,consultant,"['associate', 'consultant']",89
+f1000_90,Rite Aid,consultant,"['associate', 'consultant']",90
+f1000_91,Gilead Sciences,consultant,"['associate', 'consultant']",91
+f1000_92,CHS,consultant,"['associate', 'consultant']",92
+f1000_93,3M,consultant,"['associate', 'consultant']",93
+f1000_94,Time Warner,consultant,"['associate', 'consultant']",94
+f1000_95,Charter Communications,consultant,"['associate', 'consultant']",95
+f1000_96,Northwestern Mutual,consultant,"['associate', 'consultant']",96
+f1000_97,Facebook,consultant,"['associate', 'consultant']",97
+f1000_98,Travelers,consultant,"['associate', 'consultant']",98
+f1000_99,Capital One Financial,consultant,"['associate', 'consultant']",99
+f1000_100,Twenty-First Century Fox,consultant,"['associate', 'consultant']",100
+f1000_101,USAA,consultant,"['associate', 'consultant']",101
+f1000_102,World Fuel Services,consultant,"['associate', 'consultant']",102
+f1000_103,Philip Morris,consultant,"['associate', 'consultant']",103
+f1000_104,Deere,consultant,"['associate', 'consultant']",104
+f1000_105,Kraft Heinz,consultant,"['associate', 'consultant']",105
+f1000_106,Tech Data,consultant,"['associate', 'consultant']",106
+f1000_107,Avnet,consultant,"['associate', 'consultant']",107
+f1000_108,Mondelez,consultant,"['associate', 'consultant']",108
+f1000_109,Macy's,consultant,"['associate', 'consultant']",109
+f1000_110,AbbVie,consultant,"['associate', 'consultant']",110
+f1000_111,McDonald's,consultant,"['associate', 'consultant']",111
+f1000_112,DuPont,consultant,"['associate', 'consultant']",112
+f1000_113,Northrop Grumman,consultant,"['associate', 'consultant']",113
+f1000_114,ConocoPhillips,consultant,"['associate', 'consultant']",114
+f1000_115,Raytheon,consultant,"['associate', 'consultant']",115
+f1000_116,Andeavor,consultant,"['associate', 'consultant']",116
+f1000_117,Arrow Electronics,consultant,"['associate', 'consultant']",117
+f1000_118,Qualcomm,consultant,"['associate', 'consultant']",118
+f1000_119,Progressive,consultant,"['associate', 'consultant']",119
+f1000_120,Duke Energy,consultant,"['associate', 'consultant']",120
+f1000_121,Enterprise Products Partners,consultant,"['associate', 'consultant']",121
+f1000_122,Amgen,consultant,"['associate', 'consultant']",122
+f1000_123,US Foods,consultant,"['associate', 'consultant']",123
+f1000_124,U.S. Bank,consultant,"['associate', 'consultant']",124
+f1000_125,Aflac,consultant,"['associate', 'consultant']",125
+f1000_126,Sears,consultant,"['associate', 'consultant']",126
+f1000_127,Dollar General,consultant,"['associate', 'consultant']",127
+f1000_128,AutoNation,consultant,"['associate', 'consultant']",128
+f1000_129,Community Health Systems,consultant,"['associate', 'consultant']",129
+f1000_130,Starbucks,consultant,"['associate', 'consultant']",130
+f1000_131,Eli Lilly,consultant,"['associate', 'consultant']",131
+f1000_132,International Paper,consultant,"['associate', 'consultant']",132
+f1000_133,Tenet Healthcare,consultant,"['associate', 'consultant']",133
+f1000_134,Abbott Laboratories,consultant,"['associate', 'consultant']",134
+f1000_135,Dollar Tree,consultant,"['associate', 'consultant']",135
+f1000_136,Whirlpool,consultant,"['associate', 'consultant']",136
+f1000_137,Southwest Airlines,consultant,"['associate', 'consultant']",137
+f1000_138,Emerson Electric,consultant,"['associate', 'consultant']",138
+f1000_139,Staples,consultant,"['associate', 'consultant']",139
+f1000_140,Plains GP,consultant,"['associate', 'consultant']",140
+f1000_141,Penske Automotive,consultant,"['associate', 'consultant']",141
+f1000_142,Union Pacific,consultant,"['associate', 'consultant']",142
+f1000_143,Danaher,consultant,"['associate', 'consultant']",143
+f1000_144,Southern,consultant,"['associate', 'consultant']",144
+f1000_145,ManpowerGroup,consultant,"['associate', 'consultant']",145
+f1000_146,Bristol-Myers Squibb,consultant,"['associate', 'consultant']",146
+f1000_147,Altria,consultant,"['associate', 'consultant']",147
+f1000_148,Fluor,consultant,"['associate', 'consultant']",148
+f1000_149,Kohl's,consultant,"['associate', 'consultant']",149
+f1000_150,Lear,consultant,"['associate', 'consultant']",150
+f1000_151,Jabil,consultant,"['associate', 'consultant']",151
+f1000_152,Hartford Financial Services,consultant,"['associate', 'consultant']",152
+f1000_153,Thermo Fisher Scientific,consultant,"['associate', 'consultant']",153
+f1000_154,Kimberly-Clark,consultant,"['associate', 'consultant']",154
+f1000_155,Molina Healthcare,consultant,"['associate', 'consultant']",155
+f1000_156,PG&E,consultant,"['associate', 'consultant']",156
+f1000_157,Supervalu,consultant,"['associate', 'consultant']",157
+f1000_158,Cummins,consultant,"['associate', 'consultant']",158
+f1000_159,CenturyLink,consultant,"['associate', 'consultant']",159
+f1000_160,Aecom,consultant,"['associate', 'consultant']",160
+f1000_161,Xerox,consultant,"['associate', 'consultant']",161
+f1000_162,Marriott,consultant,"['associate', 'consultant']",162
+f1000_163,Paccar,consultant,"['associate', 'consultant']",163
+f1000_164,General Mills,consultant,"['associate', 'consultant']",164
+f1000_165,PNC Financial Services,consultant,"['associate', 'consultant']",165
+f1000_166,American Electric Power,consultant,"['associate', 'consultant']",166
+f1000_167,Icahn Enterprises,consultant,"['associate', 'consultant']",167
+f1000_168,Nucor,consultant,"['associate', 'consultant']",168
+f1000_169,NextEra Energy,consultant,"['associate', 'consultant']",169
+f1000_170,Performance Food,consultant,"['associate', 'consultant']",170
+f1000_171,PBF Energy,consultant,"['associate', 'consultant']",171
+f1000_172,Halliburton,consultant,"['associate', 'consultant']",172
+f1000_173,CarMax,consultant,"['associate', 'consultant']",173
+f1000_174,Freeport-McMoRan,consultant,"['associate', 'consultant']",174
+f1000_175,Whole Foods Market,consultant,"['associate', 'consultant']",175
+f1000_176,Bank of New York Mellon,consultant,"['associate', 'consultant']",176
+f1000_177,Gap,consultant,"['associate', 'consultant']",177
+f1000_178,Omnicom,consultant,"['associate', 'consultant']",178
+f1000_179,Genuine Parts,consultant,"['associate', 'consultant']",179
+f1000_180,DaVita,consultant,"['associate', 'consultant']",180
+f1000_181,Colgate-Palmolive,consultant,"['associate', 'consultant']",181
+f1000_182,PPG Industries,consultant,"['associate', 'consultant']",182
+f1000_183,Goodyear Tire & Rubber,consultant,"['associate', 'consultant']",183
+f1000_184,Synchrony Financial,consultant,"['associate', 'consultant']",184
+f1000_185,DISH Network,consultant,"['associate', 'consultant']",185
+f1000_186,Visa,consultant,"['associate', 'consultant']",186
+f1000_187,Nordstrom,consultant,"['associate', 'consultant']",187
+f1000_188,INTL FCStone,consultant,"['associate', 'consultant']",188
+f1000_189,WestRock,consultant,"['associate', 'consultant']",189
+f1000_190,XPO Logistics,consultant,"['associate', 'consultant']",190
+f1000_191,Aramark,consultant,"['associate', 'consultant']",191
+f1000_192,CBS,consultant,"['associate', 'consultant']",192
+f1000_193,AES,consultant,"['associate', 'consultant']",193
+f1000_194,WellCare Health Plans,consultant,"['associate', 'consultant']",194
+f1000_195,FirstEnergy,consultant,"['associate', 'consultant']",195
+f1000_196,Conagra Brands,consultant,"['associate', 'consultant']",196
+f1000_197,Synnex,consultant,"['associate', 'consultant']",197
+f1000_198,CDW,consultant,"['associate', 'consultant']",198
+f1000_199,Textron,consultant,"['associate', 'consultant']",199
+f1000_200,Waste Management,consultant,"['associate', 'consultant']",200
+f1000_201,Illinois Tool Works,consultant,"['associate', 'consultant']",201
+f1000_202,Office Depot,consultant,"['associate', 'consultant']",202
+f1000_203,Monsanto,consultant,"['associate', 'consultant']",203
+f1000_204,Cognizant Technology Solutions,consultant,"['associate', 'consultant']",204
+f1000_205,Texas Instruments,consultant,"['associate', 'consultant']",205
+f1000_206,Lincoln National,consultant,"['associate', 'consultant']",206
+f1000_207,Newell Brands,consultant,"['associate', 'consultant']",207
+f1000_208,Land O'Lakes,consultant,"['associate', 'consultant']",208
+f1000_209,Marsh & McLennan,consultant,"['associate', 'consultant']",209
+f1000_210,Ecolab,consultant,"['associate', 'consultant']",210
+f1000_211,C.H. Robinson Worldwide,consultant,"['associate', 'consultant']",211
+f1000_212,Loews,consultant,"['associate', 'consultant']",212
+f1000_213,CBRE,consultant,"['associate', 'consultant']",213
+f1000_214,Kinder Morgan,consultant,"['associate', 'consultant']",214
+f1000_215,Kellogg,consultant,"['associate', 'consultant']",215
+f1000_216,Western Digital,consultant,"['associate', 'consultant']",216
+f1000_217,Guardian Life Ins. Co. of America,consultant,"['associate', 'consultant']",217
+f1000_218,Ross Stores,consultant,"['associate', 'consultant']",218
+f1000_219,L Brands,consultant,"['associate', 'consultant']",219
+f1000_220,J.C. Penney,consultant,"['associate', 'consultant']",220
+f1000_221,Farmers Insurance Exchange,consultant,"['associate', 'consultant']",221
+f1000_222,Reynolds American,consultant,"['associate', 'consultant']",222
+f1000_223,Viacom,consultant,"['associate', 'consultant']",223
+f1000_224,Becton Dickinson,consultant,"['associate', 'consultant']",224
+f1000_225,Micron Technology,consultant,"['associate', 'consultant']",225
+f1000_226,Principal Financial,consultant,"['associate', 'consultant']",226
+f1000_227,Arconic,consultant,"['associate', 'consultant']",227
+f1000_228,NRG Energy,consultant,"['associate', 'consultant']",228
+f1000_229,VF,consultant,"['associate', 'consultant']",229
+f1000_230,Devon Energy,consultant,"['associate', 'consultant']",230
+f1000_231,D.R. Horton,consultant,"['associate', 'consultant']",231
+f1000_232,Bed Bath & Beyond,consultant,"['associate', 'consultant']",232
+f1000_233,Consolidated Edison,consultant,"['associate', 'consultant']",233
+f1000_234,Edison,consultant,"['associate', 'consultant']",234
+f1000_235,Sherwin-Williams,consultant,"['associate', 'consultant']",235
+f1000_236,NGL Energy Partners,consultant,"['associate', 'consultant']",236
+f1000_237,Dominion Energy,consultant,"['associate', 'consultant']",237
+f1000_238,Ameriprise Financial,consultant,"['associate', 'consultant']",238
+f1000_239,ADP,consultant,"['associate', 'consultant']",239
+f1000_240,Hilton Worldwide,consultant,"['associate', 'consultant']",240
+f1000_241,First Data,consultant,"['associate', 'consultant']",241
+f1000_242,Henry Schein,consultant,"['associate', 'consultant']",242
+f1000_243,Toys 'R' Us,consultant,"['associate', 'consultant']",243
+f1000_244,BB&T,consultant,"['associate', 'consultant']",244
+f1000_245,Reinsurance of America,consultant,"['associate', 'consultant']",245
+f1000_246,Core-Mark,consultant,"['associate', 'consultant']",246
+f1000_247,Biogen,consultant,"['associate', 'consultant']",247
+f1000_248,Las Vegas Sands,consultant,"['associate', 'consultant']",248
+f1000_249,Stanley Black & Decker,consultant,"['associate', 'consultant']",249
+f1000_250,Parker-Hannifin,consultant,"['associate', 'consultant']",250
+f1000_251,Stryker,consultant,"['associate', 'consultant']",251
+f1000_252,Estee Lauder,consultant,"['associate', 'consultant']",252
+f1000_253,Celgene,consultant,"['associate', 'consultant']",253
+f1000_254,BlackRock,consultant,"['associate', 'consultant']",254
+f1000_255,Xcel Energy,consultant,"['associate', 'consultant']",255
+f1000_256,CSX,consultant,"['associate', 'consultant']",256
+f1000_257,Unum,consultant,"['associate', 'consultant']",257
+f1000_258,Jacobs Engineering,consultant,"['associate', 'consultant']",258
+f1000_259,Lennar,consultant,"['associate', 'consultant']",259
+f1000_260,Group 1 Automotive,consultant,"['associate', 'consultant']",260
+f1000_261,Leucadia National,consultant,"['associate', 'consultant']",261
+f1000_262,Entergy,consultant,"['associate', 'consultant']",262
+f1000_263,PayPal,consultant,"['associate', 'consultant']",263
+f1000_264,Applied Materials,consultant,"['associate', 'consultant']",264
+f1000_265,Voya Financial,consultant,"['associate', 'consultant']",265
+f1000_266,Mastercard,consultant,"['associate', 'consultant']",266
+f1000_267,Priceline,consultant,"['associate', 'consultant']",267
+f1000_268,Liberty Interactive,consultant,"['associate', 'consultant']",268
+f1000_269,AutoZone,consultant,"['associate', 'consultant']",269
+f1000_270,State Street,consultant,"['associate', 'consultant']",270
+f1000_271,DTE Energy,consultant,"['associate', 'consultant']",271
+f1000_272,L3 Technologies,consultant,"['associate', 'consultant']",272
+f1000_273,HollyFrontier,consultant,"['associate', 'consultant']",273
+f1000_274,Praxair,consultant,"['associate', 'consultant']",274
+f1000_275,Universal Health Services,consultant,"['associate', 'consultant']",275
+f1000_276,Discover Financial Services,consultant,"['associate', 'consultant']",276
+f1000_277,Occidental Petroleum,consultant,"['associate', 'consultant']",277
+f1000_278,United States Steel,consultant,"['associate', 'consultant']",278
+f1000_279,Sempra Energy,consultant,"['associate', 'consultant']",279
+f1000_280,Baxter,consultant,"['associate', 'consultant']",280
+f1000_281,W.W. Grainger,consultant,"['associate', 'consultant']",281
+f1000_282,Autoliv,consultant,"['associate', 'consultant']",282
+f1000_283,Norfolk Southern,consultant,"['associate', 'consultant']",283
+f1000_284,Baker Hughes,consultant,"['associate', 'consultant']",284
+f1000_285,Ally Financial,consultant,"['associate', 'consultant']",285
+f1000_286,Sonic Automotive,consultant,"['associate', 'consultant']",286
+f1000_287,Owens & Minor,consultant,"['associate', 'consultant']",287
+f1000_288,Huntsman,consultant,"['associate', 'consultant']",288
+f1000_289,Laboratory Corp. of America,consultant,"['associate', 'consultant']",289
+f1000_290,Murphy USA,consultant,"['associate', 'consultant']",290
+f1000_291,Advance Auto Parts,consultant,"['associate', 'consultant']",291
+f1000_292,Fidelity National Financial,consultant,"['associate', 'consultant']",292
+f1000_293,Air Products & Chemicals,consultant,"['associate', 'consultant']",293
+f1000_294,Hormel Foods,consultant,"['associate', 'consultant']",294
+f1000_295,Hertz Global,consultant,"['associate', 'consultant']",295
+f1000_296,MGM Resorts,consultant,"['associate', 'consultant']",296
+f1000_297,Corning,consultant,"['associate', 'consultant']",297
+f1000_298,Republic Services,consultant,"['associate', 'consultant']",298
+f1000_299,Alcoa,consultant,"['associate', 'consultant']",299
+f1000_300,Fidelity National Information Services,consultant,"['associate', 'consultant']",300
+f1000_301,Pacific Life,consultant,"['associate', 'consultant']",301
+f1000_302,SunTrust Banks,consultant,"['associate', 'consultant']",302
+f1000_303,LKQ,consultant,"['associate', 'consultant']",303
+f1000_304,BorgWarner,consultant,"['associate', 'consultant']",304
+f1000_305,Ball,consultant,"['associate', 'consultant']",305
+f1000_306,CST Brands,consultant,"['associate', 'consultant']",306
+f1000_307,Public Service Enterprise,consultant,"['associate', 'consultant']",307
+f1000_308,Eastman Chemical,consultant,"['associate', 'consultant']",308
+f1000_309,eBay,consultant,"['associate', 'consultant']",309
+f1000_310,Mohawk Industries,consultant,"['associate', 'consultant']",310
+f1000_311,Oneok,consultant,"['associate', 'consultant']",311
+f1000_312,Frontier Communications,consultant,"['associate', 'consultant']",312
+f1000_313,Netflix,consultant,"['associate', 'consultant']",313
+f1000_314,American Family Insurance,consultant,"['associate', 'consultant']",314
+f1000_315,Thrivent Financial for Lutherans,consultant,"['associate', 'consultant']",315
+f1000_316,Expedia,consultant,"['associate', 'consultant']",316
+f1000_317,Lithia Motors,consultant,"['associate', 'consultant']",317
+f1000_318,Avis Budget,consultant,"['associate', 'consultant']",318
+f1000_319,Reliance Steel & Aluminum,consultant,"['associate', 'consultant']",319
+f1000_320,GameStop,consultant,"['associate', 'consultant']",320
+f1000_321,Tenneco,consultant,"['associate', 'consultant']",321
+f1000_322,O'Reilly Automotive,consultant,"['associate', 'consultant']",322
+f1000_323,Peter Kiewit Sons',consultant,"['associate', 'consultant']",323
+f1000_324,United Natural Foods,consultant,"['associate', 'consultant']",324
+f1000_325,salesforce.com,consultant,"['associate', 'consultant']",325
+f1000_326,Boston Scientific,consultant,"['associate', 'consultant']",326
+f1000_327,Newmont Mining,consultant,"['associate', 'consultant']",327
+f1000_328,Genworth Financial,consultant,"['associate', 'consultant']",328
+f1000_329,Live Nation Entertainment,consultant,"['associate', 'consultant']",329
+f1000_330,Veritiv,consultant,"['associate', 'consultant']",330
+f1000_331,News Corp,consultant,"['associate', 'consultant']",331
+f1000_332,Crown,consultant,"['associate', 'consultant']",332
+f1000_333,Global Partners,consultant,"['associate', 'consultant']",333
+f1000_334,PVH,consultant,"['associate', 'consultant']",334
+f1000_335,Level 3 Communications,consultant,"['associate', 'consultant']",335
+f1000_336,Navistar,consultant,"['associate', 'consultant']",336
+f1000_337,Univar,consultant,"['associate', 'consultant']",337
+f1000_338,Campbell Soup,consultant,"['associate', 'consultant']",338
+f1000_339,Dick's Sporting Goods,consultant,"['associate', 'consultant']",339
+f1000_340,Weyerhaeuser,consultant,"['associate', 'consultant']",340
+f1000_341,Mutual of Omaha Insurance,consultant,"['associate', 'consultant']",341
+f1000_342,Chesapeake Energy,consultant,"['associate', 'consultant']",342
+f1000_343,Anadarko Petroleum,consultant,"['associate', 'consultant']",343
+f1000_344,Interpublic,consultant,"['associate', 'consultant']",344
+f1000_345,J.M. Smucker,consultant,"['associate', 'consultant']",345
+f1000_346,Steel Dynamics,consultant,"['associate', 'consultant']",346
+f1000_347,Foot Locker,consultant,"['associate', 'consultant']",347
+f1000_348,Western Refining,consultant,"['associate', 'consultant']",348
+f1000_349,SpartanNash,consultant,"['associate', 'consultant']",349
+f1000_350,Dean Foods,consultant,"['associate', 'consultant']",350
+f1000_351,Zimmer Biomet,consultant,"['associate', 'consultant']",351
+f1000_352,PulteGroup,consultant,"['associate', 'consultant']",352
+f1000_353,W.R. Berkley,consultant,"['associate', 'consultant']",353
+f1000_354,Quanta Services,consultant,"['associate', 'consultant']",354
+f1000_355,EOG Resources,consultant,"['associate', 'consultant']",355
+f1000_356,Charles Schwab,consultant,"['associate', 'consultant']",356
+f1000_357,Eversource Energy,consultant,"['associate', 'consultant']",357
+f1000_358,Anixter,consultant,"['associate', 'consultant']",358
+f1000_359,Emcor,consultant,"['associate', 'consultant']",359
+f1000_360,Assurant,consultant,"['associate', 'consultant']",360
+f1000_361,CenterPoint Energy,consultant,"['associate', 'consultant']",361
+f1000_362,Harris,consultant,"['associate', 'consultant']",362
+f1000_363,HD Supply,consultant,"['associate', 'consultant']",363
+f1000_364,PPL,consultant,"['associate', 'consultant']",364
+f1000_365,Quest Diagnostics,consultant,"['associate', 'consultant']",365
+f1000_366,Williams,consultant,"['associate', 'consultant']",366
+f1000_367,WEC Energy,consultant,"['associate', 'consultant']",367
+f1000_368,Hershey,consultant,"['associate', 'consultant']",368
+f1000_369,AGCO,consultant,"['associate', 'consultant']",369
+f1000_370,Ralph Lauren,consultant,"['associate', 'consultant']",370
+f1000_371,Masco,consultant,"['associate', 'consultant']",371
+f1000_372,Wesco,consultant,"['associate', 'consultant']",372
+f1000_373,LifePoint Health,consultant,"['associate', 'consultant']",373
+f1000_374,National Oilwell Varco,consultant,"['associate', 'consultant']",374
+f1000_375,Kindred Healthcare,consultant,"['associate', 'consultant']",375
+f1000_376,Mosaic,consultant,"['associate', 'consultant']",376
+f1000_377,Alliance Data Systems,consultant,"['associate', 'consultant']",377
+f1000_378,Computer Sciences,consultant,"['associate', 'consultant']",378
+f1000_379,Huntington Ingalls Industries,consultant,"['associate', 'consultant']",379
+f1000_380,Leidos,consultant,"['associate', 'consultant']",380
+f1000_381,Erie Insurance,consultant,"['associate', 'consultant']",381
+f1000_382,Tesla,consultant,"['associate', 'consultant']",382
+f1000_383,Ascena Retail,consultant,"['associate', 'consultant']",383
+f1000_384,Darden Restaurants,consultant,"['associate', 'consultant']",384
+f1000_385,Harman Industries,consultant,"['associate', 'consultant']",385
+f1000_386,Nvidia,consultant,"['associate', 'consultant']",386
+f1000_387,R.R. Donnelley & Sons,consultant,"['associate', 'consultant']",387
+f1000_388,Fifth Third Bank,consultant,"['associate', 'consultant']",388
+f1000_389,Quintiles IMS,consultant,"['associate', 'consultant']",389
+f1000_390,Jones Lang LaSalle,consultant,"['associate', 'consultant']",390
+f1000_391,Dover,consultant,"['associate', 'consultant']",391
+f1000_392,Spirit AeroSystems,consultant,"['associate', 'consultant']",392
+f1000_393,Ryder System,consultant,"['associate', 'consultant']",393
+f1000_394,A-Mark Precious Metals,consultant,"['associate', 'consultant']",394
+f1000_395,Tractor Supply,consultant,"['associate', 'consultant']",395
+f1000_396,Sealed Air,consultant,"['associate', 'consultant']",396
+f1000_397,Auto-Owners Insurance,consultant,"['associate', 'consultant']",397
+f1000_398,Yum China,consultant,"['associate', 'consultant']",398
+f1000_399,Calpine,consultant,"['associate', 'consultant']",399
+f1000_400,Owens-Illinois,consultant,"['associate', 'consultant']",400
+f1000_401,Targa Resources,consultant,"['associate', 'consultant']",401
+f1000_402,JetBlue Airways,consultant,"['associate', 'consultant']",402
+f1000_403,Jones Financial,consultant,"['associate', 'consultant']",403
+f1000_404,Franklin Resources,consultant,"['associate', 'consultant']",404
+f1000_405,Activision Blizzard,consultant,"['associate', 'consultant']",405
+f1000_406,J.B. Hunt Transport Services,consultant,"['associate', 'consultant']",406
+f1000_407,Constellation Brands,consultant,"['associate', 'consultant']",407
+f1000_408,NCR,consultant,"['associate', 'consultant']",408
+f1000_409,Asbury Automotive,consultant,"['associate', 'consultant']",409
+f1000_410,American Financial,consultant,"['associate', 'consultant']",410
+f1000_411,Discovery Communications,consultant,"['associate', 'consultant']",411
+f1000_412,Berry Global,consultant,"['associate', 'consultant']",412
+f1000_413,Sanmina,consultant,"['associate', 'consultant']",413
+f1000_414,CalAtlantic,consultant,"['associate', 'consultant']",414
+f1000_415,Dr Pepper Snapple,consultant,"['associate', 'consultant']",415
+f1000_416,Dillard's,consultant,"['associate', 'consultant']",416
+f1000_417,HRG,consultant,"['associate', 'consultant']",417
+f1000_418,CMS Energy,consultant,"['associate', 'consultant']",418
+f1000_419,Graybar Electric,consultant,"['associate', 'consultant']",419
+f1000_420,Builders FirstSource,consultant,"['associate', 'consultant']",420
+f1000_421,Yum Brands,consultant,"['associate', 'consultant']",421
+f1000_422,Casey's General Stores,consultant,"['associate', 'consultant']",422
+f1000_423,Amphenol,consultant,"['associate', 'consultant']",423
+f1000_424,Oshkosh,consultant,"['associate', 'consultant']",424
+f1000_425,iHeartMedia,consultant,"['associate', 'consultant']",425
+f1000_426,TreeHouse Foods,consultant,"['associate', 'consultant']",426
+f1000_427,Alleghany,consultant,"['associate', 'consultant']",427
+f1000_428,Expeditors of Washington,consultant,"['associate', 'consultant']",428
+f1000_429,Avery Dennison,consultant,"['associate', 'consultant']",429
+f1000_430,Ameren,consultant,"['associate', 'consultant']",430
+f1000_431,Hanesbrands,consultant,"['associate', 'consultant']",431
+f1000_432,Motorola Solutions,consultant,"['associate', 'consultant']",432
+f1000_433,St. Jude Medical,consultant,"['associate', 'consultant']",433
+f1000_434,Harley-Davidson,consultant,"['associate', 'consultant']",434
+f1000_435,Regions Financial,consultant,"['associate', 'consultant']",435
+f1000_436,Intercontinental Exchange,consultant,"['associate', 'consultant']",436
+f1000_437,Alaska Air,consultant,"['associate', 'consultant']",437
+f1000_438,Old Republic,consultant,"['associate', 'consultant']",438
+f1000_439,Lam Research,consultant,"['associate', 'consultant']",439
+f1000_440,AK Steel,consultant,"['associate', 'consultant']",440
+f1000_441,Rockwell Automation,consultant,"['associate', 'consultant']",441
+f1000_442,Adobe Systems,consultant,"['associate', 'consultant']",442
+f1000_443,Avon Products,consultant,"['associate', 'consultant']",443
+f1000_444,Terex,consultant,"['associate', 'consultant']",444
+f1000_445,NVR,consultant,"['associate', 'consultant']",445
+f1000_446,Dana,consultant,"['associate', 'consultant']",446
+f1000_447,Realogy,consultant,"['associate', 'consultant']",447
+f1000_448,American Tower,consultant,"['associate', 'consultant']",448
+f1000_449,Packaging Corp. of America,consultant,"['associate', 'consultant']",449
+f1000_450,Citizens Financial,consultant,"['associate', 'consultant']",450
+f1000_451,United Rentals,consultant,"['associate', 'consultant']",451
+f1000_452,Clorox,consultant,"['associate', 'consultant']",452
+f1000_453,Genesis Healthcare,consultant,"['associate', 'consultant']",453
+f1000_454,M&T Bank,consultant,"['associate', 'consultant']",454
+f1000_455,Ingredion,consultant,"['associate', 'consultant']",455
+f1000_456,UGI,consultant,"['associate', 'consultant']",456
+f1000_457,Owens Corning,consultant,"['associate', 'consultant']",457
+f1000_458,S&P Global,consultant,"['associate', 'consultant']",458
+f1000_459,Markel,consultant,"['associate', 'consultant']",459
+f1000_460,Wyndham Worldwide,consultant,"['associate', 'consultant']",460
+f1000_461,Arthur J. Gallagher,consultant,"['associate', 'consultant']",461
+f1000_462,Burlington Stores,consultant,"['associate', 'consultant']",462
+f1000_463,First American Financial,consultant,"['associate', 'consultant']",463
+f1000_464,Symantec,consultant,"['associate', 'consultant']",464
+f1000_465,Patterson,consultant,"['associate', 'consultant']",465
+f1000_466,Olin,consultant,"['associate', 'consultant']",466
+f1000_467,NetApp,consultant,"['associate', 'consultant']",467
+f1000_468,Raymond James Financial,consultant,"['associate', 'consultant']",468
+f1000_469,TravelCenters of America,consultant,"['associate', 'consultant']",469
+f1000_470,Fiserv,consultant,"['associate', 'consultant']",470
+f1000_471,Host Hotels & Resorts,consultant,"['associate', 'consultant']",471
+f1000_472,Insight Enterprises,consultant,"['associate', 'consultant']",472
+f1000_473,Mattel,consultant,"['associate', 'consultant']",473
+f1000_474,AmTrust Financial Services,consultant,"['associate', 'consultant']",474
+f1000_475,Cincinnati Financial,consultant,"['associate', 'consultant']",475
+f1000_476,Simon Property,consultant,"['associate', 'consultant']",476
+f1000_477,Western Union,consultant,"['associate', 'consultant']",477
+f1000_478,KeyCorp,consultant,"['associate', 'consultant']",478
+f1000_479,Delek US,consultant,"['associate', 'consultant']",479
+f1000_480,Booz Allen Hamilton,consultant,"['associate', 'consultant']",480
+f1000_481,Chemours,consultant,"['associate', 'consultant']",481
+f1000_482,Western & Southern Financial,consultant,"['associate', 'consultant']",482
+f1000_483,Celanese,consultant,"['associate', 'consultant']",483
+f1000_484,Windstream,consultant,"['associate', 'consultant']",484
+f1000_485,Seaboard,consultant,"['associate', 'consultant']",485
+f1000_486,Essendant,consultant,"['associate', 'consultant']",486
+f1000_487,Apache,consultant,"['associate', 'consultant']",487
+f1000_488,Airgas,consultant,"['associate', 'consultant']",488
+f1000_489,Kelly Services,consultant,"['associate', 'consultant']",489
+f1000_490,Liberty Media,consultant,"['associate', 'consultant']",490
+f1000_491,Rockwell Collins,consultant,"['associate', 'consultant']",491
+f1000_492,Robert Half,consultant,"['associate', 'consultant']",492
+f1000_493,CH2M Hill,consultant,"['associate', 'consultant']",493
+f1000_494,Big Lots,consultant,"['associate', 'consultant']",494
+f1000_495,Michaels,consultant,"['associate', 'consultant']",495
+f1000_496,Toll Brothers,consultant,"['associate', 'consultant']",496
+f1000_497,Yahoo,consultant,"['associate', 'consultant']",497
+f1000_498,Vistra Energy,consultant,"['associate', 'consultant']",498
+f1000_499,ABM Industries,consultant,"['associate', 'consultant']",499
+f1000_500,Northern Trust,consultant,"['associate', 'consultant']",500
+f1000_501,MasTec,consultant,"['associate', 'consultant']",501
+f1000_502,Blackstone,consultant,"['associate', 'consultant']",502
+f1000_503,Telephone & Data Systems,consultant,"['associate', 'consultant']",503
+f1000_504,Domtar,consultant,"['associate', 'consultant']",504
+f1000_505,Williams-Sonoma,consultant,"['associate', 'consultant']",505
+f1000_506,Westlake Chemical,consultant,"['associate', 'consultant']",506
+f1000_507,Post,consultant,"['associate', 'consultant']",507
+f1000_508,Hasbro,consultant,"['associate', 'consultant']",508
+f1000_509,Juniper Networks,consultant,"['associate', 'consultant']",509
+f1000_510,Fortune Brands Home & Security,consultant,"['associate', 'consultant']",510
+f1000_511,Brookdale Senior Living,consultant,"['associate', 'consultant']",511
+f1000_512,Tutor Perini,consultant,"['associate', 'consultant']",512
+f1000_513,Navient,consultant,"['associate', 'consultant']",513
+f1000_514,Neiman Marcus,consultant,"['associate', 'consultant']",514
+f1000_515,Ashland Global,consultant,"['associate', 'consultant']",515
+f1000_516,Hanover Insurance,consultant,"['associate', 'consultant']",516
+f1000_517,CommScope,consultant,"['associate', 'consultant']",517
+f1000_518,Spectra Energy,consultant,"['associate', 'consultant']",518
+f1000_519,Cintas,consultant,"['associate', 'consultant']",519
+f1000_520,Zoetis,consultant,"['associate', 'consultant']",520
+f1000_521,Molson Coors Brewing,consultant,"['associate', 'consultant']",521
+f1000_522,Regeneron Pharmaceuticals,consultant,"['associate', 'consultant']",522
+f1000_523,Ulta Beauty,consultant,"['associate', 'consultant']",523
+f1000_524,Hess,consultant,"['associate', 'consultant']",524
+f1000_525,Magellan Health,consultant,"['associate', 'consultant']",525
+f1000_526,Intuit,consultant,"['associate', 'consultant']",526
+f1000_527,Under Armour,consultant,"['associate', 'consultant']",527
+f1000_528,RPM,consultant,"['associate', 'consultant']",528
+f1000_529,Cerner,consultant,"['associate', 'consultant']",529
+f1000_530,Sonoco Products,consultant,"['associate', 'consultant']",530
+f1000_531,Securian Financial,consultant,"['associate', 'consultant']",531
+f1000_532,Peabody Energy,consultant,"['associate', 'consultant']",532
+f1000_533,YRC Worldwide,consultant,"['associate', 'consultant']",533
+f1000_534,Commercial Metals,consultant,"['associate', 'consultant']",534
+f1000_535,Marathon Oil,consultant,"['associate', 'consultant']",535
+f1000_536,Polaris Industries,consultant,"['associate', 'consultant']",536
+f1000_537,Envision Healthcare,consultant,"['associate', 'consultant']",537
+f1000_538,Trinity Industries,consultant,"['associate', 'consultant']",538
+f1000_539,Thor Industries,consultant,"['associate', 'consultant']",539
+f1000_540,Caesars Entertainment,consultant,"['associate', 'consultant']",540
+f1000_541,Levi Strauss,consultant,"['associate', 'consultant']",541
+f1000_542,FMC Technologies,consultant,"['associate', 'consultant']",542
+f1000_543,VWR,consultant,"['associate', 'consultant']",543
+f1000_544,NiSource,consultant,"['associate', 'consultant']",544
+f1000_545,Coach,consultant,"['associate', 'consultant']",545
+f1000_546,Brunswick,consultant,"['associate', 'consultant']",546
+f1000_547,Wynn Resorts,consultant,"['associate', 'consultant']",547
+f1000_548,Orbital ATK,consultant,"['associate', 'consultant']",548
+f1000_549,CIT,consultant,"['associate', 'consultant']",549
+f1000_550,Science Applications,consultant,"['associate', 'consultant']",550
+f1000_551,Hyatt Hotels,consultant,"['associate', 'consultant']",551
+f1000_552,McCormick,consultant,"['associate', 'consultant']",552
+f1000_553,Diplomat Pharmacy,consultant,"['associate', 'consultant']",553
+f1000_554,Barnes & Noble,consultant,"['associate', 'consultant']",554
+f1000_555,Electronic Arts,consultant,"['associate', 'consultant']",555
+f1000_556,FM Global,consultant,"['associate', 'consultant']",556
+f1000_557,Coty,consultant,"['associate', 'consultant']",557
+f1000_558,Smart & Final Stores,consultant,"['associate', 'consultant']",558
+f1000_559,Quad/Graphics,consultant,"['associate', 'consultant']",559
+f1000_560,Dynegy,consultant,"['associate', 'consultant']",560
+f1000_561,Graphic Packaging,consultant,"['associate', 'consultant']",561
+f1000_562,Select Medical,consultant,"['associate', 'consultant']",562
+f1000_563,Welltower,consultant,"['associate', 'consultant']",563
+f1000_564,Advanced Micro Devices,consultant,"['associate', 'consultant']",564
+f1000_565,USG,consultant,"['associate', 'consultant']",565
+f1000_566,KBR,consultant,"['associate', 'consultant']",566
+f1000_567,Bloomin' Brands,consultant,"['associate', 'consultant']",567
+f1000_568,MDU Resources,consultant,"['associate', 'consultant']",568
+f1000_569,CSRA,consultant,"['associate', 'consultant']",569
+f1000_570,Laureate Education,consultant,"['associate', 'consultant']",570
+f1000_571,Scana,consultant,"['associate', 'consultant']",571
+f1000_572,T. Rowe Price,consultant,"['associate', 'consultant']",572
+f1000_573,Watsco,consultant,"['associate', 'consultant']",573
+f1000_574,Rush Enterprises,consultant,"['associate', 'consultant']",574
+f1000_575,Agilent Technologies,consultant,"['associate', 'consultant']",575
+f1000_576,WhiteWave Foods,consultant,"['associate', 'consultant']",576
+f1000_577,Valspar,consultant,"['associate', 'consultant']",577
+f1000_578,Total System Services,consultant,"['associate', 'consultant']",578
+f1000_579,Torchmark,consultant,"['associate', 'consultant']",579
+f1000_580,Cabela's,consultant,"['associate', 'consultant']",580
+f1000_581,Beacon Roofing Supply,consultant,"['associate', 'consultant']",581
+f1000_582,CA,consultant,"['associate', 'consultant']",582
+f1000_583,LPL Financial,consultant,"['associate', 'consultant']",583
+f1000_584,Sprouts Farmers Market,consultant,"['associate', 'consultant']",584
+f1000_585,Swift Transportation,consultant,"['associate', 'consultant']",585
+f1000_586,Bemis,consultant,"['associate', 'consultant']",586
+f1000_587,Tiffany,consultant,"['associate', 'consultant']",587
+f1000_588,Flowserve,consultant,"['associate', 'consultant']",588
+f1000_589,CNO Financial,consultant,"['associate', 'consultant']",589
+f1000_590,Fastenal,consultant,"['associate', 'consultant']",590
+f1000_591,Sally Beauty,consultant,"['associate', 'consultant']",591
+f1000_592,American Axle & Manufacturing,consultant,"['associate', 'consultant']",592
+f1000_593,Flowers Foods,consultant,"['associate', 'consultant']",593
+f1000_594,Andersons,consultant,"['associate', 'consultant']",594
+f1000_595,Crown Castle,consultant,"['associate', 'consultant']",595
+f1000_596,Boise Cascade,consultant,"['associate', 'consultant']",596
+f1000_597,ON Semiconductor,consultant,"['associate', 'consultant']",597
+f1000_598,Chipotle Mexican Grill,consultant,"['associate', 'consultant']",598
+f1000_599,Amkor Technology,consultant,"['associate', 'consultant']",599
+f1000_600,Triumph,consultant,"['associate', 'consultant']",600
+f1000_601,OneMain,consultant,"['associate', 'consultant']",601
+f1000_602,General Cable,consultant,"['associate', 'consultant']",602
+f1000_603,Ametek,consultant,"['associate', 'consultant']",603
+f1000_604,Alon USA Energy,consultant,"['associate', 'consultant']",604
+f1000_605,Pioneer Natural Resources,consultant,"['associate', 'consultant']",605
+f1000_606,Martin Marietta Materials,consultant,"['associate', 'consultant']",606
+f1000_607,Ingles Markets,consultant,"['associate', 'consultant']",607
+f1000_608,Roper Technologies,consultant,"['associate', 'consultant']",608
+f1000_609,Huntington Bancshares,consultant,"['associate', 'consultant']",609
+f1000_610,Xylem,consultant,"['associate', 'consultant']",610
+f1000_611,Unified Grocers,consultant,"['associate', 'consultant']",611
+f1000_612,Leggett & Platt,consultant,"['associate', 'consultant']",612
+f1000_613,Dentsply Sirona,consultant,"['associate', 'consultant']",613
+f1000_614,CACI,consultant,"['associate', 'consultant']",614
+f1000_615,Mead Johnson Nutrition,consultant,"['associate', 'consultant']",615
+f1000_616,C.R. Bard,consultant,"['associate', 'consultant']",616
+f1000_617,Snap-on,consultant,"['associate', 'consultant']",617
+f1000_618,HealthSouth,consultant,"['associate', 'consultant']",618
+f1000_619,Nasdaq,consultant,"['associate', 'consultant']",619
+f1000_620,Avaya,consultant,"['associate', 'consultant']",620
+f1000_621,CF Industries,consultant,"['associate', 'consultant']",621
+f1000_622,Carlisle,consultant,"['associate', 'consultant']",622
+f1000_623,Equinix,consultant,"['associate', 'consultant']",623
+f1000_624,LSC Communications,consultant,"['associate', 'consultant']",624
+f1000_625,Colfax,consultant,"['associate', 'consultant']",625
+f1000_626,Lennox,consultant,"['associate', 'consultant']",626
+f1000_627,Iasis Healthcare,consultant,"['associate', 'consultant']",627
+f1000_628,Silgan,consultant,"['associate', 'consultant']",628
+f1000_629,American Eagle Outfitters,consultant,"['associate', 'consultant']",629
+f1000_630,Moody's,consultant,"['associate', 'consultant']",630
+f1000_631,Calumet Specialty Products Partners,consultant,"['associate', 'consultant']",631
+f1000_632,CME,consultant,"['associate', 'consultant']",632
+f1000_633,KB Home,consultant,"['associate', 'consultant']",633
+f1000_634,Vulcan Materials,consultant,"['associate', 'consultant']",634
+f1000_635,Platform Specialty Products,consultant,"['associate', 'consultant']",635
+f1000_636,Vantiv,consultant,"['associate', 'consultant']",636
+f1000_637,Skechers U.S.A.,consultant,"['associate', 'consultant']",637
+f1000_638,Zebra Technologies,consultant,"['associate', 'consultant']",638
+f1000_639,Hub,consultant,"['associate', 'consultant']",639
+f1000_640,HSN,consultant,"['associate', 'consultant']",640
+f1000_641,Stericycle,consultant,"['associate', 'consultant']",641
+f1000_642,National General,consultant,"['associate', 'consultant']",642
+f1000_643,Taylor Morrison Home,consultant,"['associate', 'consultant']",643
+f1000_644,Urban Outfitters,consultant,"['associate', 'consultant']",644
+f1000_645,Resolute Forest Products,consultant,"['associate', 'consultant']",645
+f1000_646,ScanSource,consultant,"['associate', 'consultant']",646
+f1000_647,Camping World,consultant,"['associate', 'consultant']",647
+f1000_648,Iron Mountain,consultant,"['associate', 'consultant']",648
+f1000_649,Hubbell,consultant,"['associate', 'consultant']",649
+f1000_650,Pinnacle West Capital,consultant,"['associate', 'consultant']",650
+f1000_651,Church & Dwight,consultant,"['associate', 'consultant']",651
+f1000_652,Noble Energy,consultant,"['associate', 'consultant']",652
+f1000_653,Albemarle,consultant,"['associate', 'consultant']",653
+f1000_654,Cooper-Standard,consultant,"['associate', 'consultant']",654
+f1000_655,KKR,consultant,"['associate', 'consultant']",655
+f1000_656,Country Financial,consultant,"['associate', 'consultant']",656
+f1000_657,Ventas,consultant,"['associate', 'consultant']",657
+f1000_658,Hexion,consultant,"['associate', 'consultant']",658
+f1000_659,Analog Devices,consultant,"['associate', 'consultant']",659
+f1000_660,Citrix Systems,consultant,"['associate', 'consultant']",660
+f1000_661,Green Plains,consultant,"['associate', 'consultant']",661
+f1000_662,Pitney Bowes,consultant,"['associate', 'consultant']",662
+f1000_663,Scripps Networks Interactive,consultant,"['associate', 'consultant']",663
+f1000_664,Darling Ingredients,consultant,"['associate', 'consultant']",664
+f1000_665,Wayfair,consultant,"['associate', 'consultant']",665
+f1000_666,Tailored Brands,consultant,"['associate', 'consultant']",666
+f1000_667,Sabre,consultant,"['associate', 'consultant']",667
+f1000_668,Global Payments,consultant,"['associate', 'consultant']",668
+f1000_669,Atmos Energy,consultant,"['associate', 'consultant']",669
+f1000_670,Tegna,consultant,"['associate', 'consultant']",670
+f1000_671,Diebold Nixdorf,consultant,"['associate', 'consultant']",671
+f1000_672,PolyOne,consultant,"['associate', 'consultant']",672
+f1000_673,TD Ameritrade,consultant,"['associate', 'consultant']",673
+f1000_674,Abercrombie & Fitch,consultant,"['associate', 'consultant']",674
+f1000_675,Greif,consultant,"['associate', 'consultant']",675
+f1000_676,Alliant Energy,consultant,"['associate', 'consultant']",676
+f1000_677,American Water Works,consultant,"['associate', 'consultant']",677
+f1000_678,Acuity Brands,consultant,"['associate', 'consultant']",678
+f1000_679,Skyworks Solutions,consultant,"['associate', 'consultant']",679
+f1000_680,FMC,consultant,"['associate', 'consultant']",680
+f1000_681,Amerco,consultant,"['associate', 'consultant']",681
+f1000_682,CUNA Mutual,consultant,"['associate', 'consultant']",682
+f1000_683,Brinker,consultant,"['associate', 'consultant']",683
+f1000_684,Buckeye Partners,consultant,"['associate', 'consultant']",684
+f1000_685,Warner Music,consultant,"['associate', 'consultant']",685
+f1000_686,Universal Forest Products,consultant,"['associate', 'consultant']",686
+f1000_687,American National Insurance,consultant,"['associate', 'consultant']",687
+f1000_688,Mercury General,consultant,"['associate', 'consultant']",688
+f1000_689,Regal Beloit,consultant,"['associate', 'consultant']",689
+f1000_690,Varian Medical Systems,consultant,"['associate', 'consultant']",690
+f1000_691,Aaron's,consultant,"['associate', 'consultant']",691
+f1000_692,Visteon,consultant,"['associate', 'consultant']",692
+f1000_693,Carter's,consultant,"['associate', 'consultant']",693
+f1000_694,Meritor,consultant,"['associate', 'consultant']",694
+f1000_695,Regal Entertainment,consultant,"['associate', 'consultant']",695
+f1000_696,Mednax,consultant,"['associate', 'consultant']",696
+f1000_697,TransDigm,consultant,"['associate', 'consultant']",697
+f1000_698,Landstar System,consultant,"['associate', 'consultant']",698
+f1000_699,Puget Energy,consultant,"['associate', 'consultant']",699
+f1000_700,Coca-Cola Bottling,consultant,"['associate', 'consultant']",700
+f1000_701,Kar Auction Services,consultant,"['associate', 'consultant']",701
+f1000_702,Equifax,consultant,"['associate', 'consultant']",702
+f1000_703,Groupon,consultant,"['associate', 'consultant']",703
+f1000_704,IAC/InterActiveCorp,consultant,"['associate', 'consultant']",704
+f1000_705,Weis Markets,consultant,"['associate', 'consultant']",705
+f1000_706,Allegheny Technologies,consultant,"['associate', 'consultant']",706
+f1000_707,Pinnacle Foods,consultant,"['associate', 'consultant']",707
+f1000_708,Tempur Sealy,consultant,"['associate', 'consultant']",708
+f1000_709,SkyWest,consultant,"['associate', 'consultant']",709
+f1000_710,International Flavors & Fragrances,consultant,"['associate', 'consultant']",710
+f1000_711,BMC Stock,consultant,"['associate', 'consultant']",711
+f1000_712,Brown-Forman,consultant,"['associate', 'consultant']",712
+f1000_713,Alexion Pharmaceuticals,consultant,"['associate', 'consultant']",713
+f1000_714,KapStone Paper & Packaging,consultant,"['associate', 'consultant']",714
+f1000_715,Time,consultant,"['associate', 'consultant']",715
+f1000_716,TriNet,consultant,"['associate', 'consultant']",716
+f1000_717,Steelcase,consultant,"['associate', 'consultant']",717
+f1000_718,EchoStar,consultant,"['associate', 'consultant']",718
+f1000_719,Sentry Insurance,consultant,"['associate', 'consultant']",719
+f1000_720,Monster Beverage,consultant,"['associate', 'consultant']",720
+f1000_721,Gannett,consultant,"['associate', 'consultant']",721
+f1000_722,Fossil,consultant,"['associate', 'consultant']",722
+f1000_723,Univision Communications,consultant,"['associate', 'consultant']",723
+f1000_724,Meritage Homes,consultant,"['associate', 'consultant']",724
+f1000_725,MRC Global,consultant,"['associate', 'consultant']",725
+f1000_726,H&R Block,consultant,"['associate', 'consultant']",726
+f1000_727,Penn National Gaming,consultant,"['associate', 'consultant']",727
+f1000_728,Service,consultant,"['associate', 'consultant']",728
+f1000_729,Brink's,consultant,"['associate', 'consultant']",729
+f1000_730,Old Dominion Freight Line,consultant,"['associate', 'consultant']",730
+f1000_731,Triple-S Management,consultant,"['associate', 'consultant']",731
+f1000_732,KLA-Tencor,consultant,"['associate', 'consultant']",732
+f1000_733,Edwards Lifesciences,consultant,"['associate', 'consultant']",733
+f1000_734,Rent-A-Center,consultant,"['associate', 'consultant']",734
+f1000_735,Comerica,consultant,"['associate', 'consultant']",735
+f1000_736,Paychex,consultant,"['associate', 'consultant']",736
+f1000_737,First Solar,consultant,"['associate', 'consultant']",737
+f1000_738,Insperity,consultant,"['associate', 'consultant']",738
+f1000_739,Scotts Miracle-Gro,consultant,"['associate', 'consultant']",739
+f1000_740,B/E Aerospace,consultant,"['associate', 'consultant']",740
+f1000_741,Westinghouse Air Brake Technologies,consultant,"['associate', 'consultant']",741
+f1000_742,Cooper Tire & Rubber,consultant,"['associate', 'consultant']",742
+f1000_743,Cinemark,consultant,"['associate', 'consultant']",743
+f1000_744,Keysight Technologies,consultant,"['associate', 'consultant']",744
+f1000_745,Convergys,consultant,"['associate', 'consultant']",745
+f1000_746,Cracker Barrel Old Country Store,consultant,"['associate', 'consultant']",746
+f1000_747,PriceSmart,consultant,"['associate', 'consultant']",747
+f1000_748,Broadridge Financial Solutions,consultant,"['associate', 'consultant']",748
+f1000_749,Scientific Games,consultant,"['associate', 'consultant']",749
+f1000_750,Genesco,consultant,"['associate', 'consultant']",750
+f1000_751,MSC Industrial Direct,consultant,"['associate', 'consultant']",751
+f1000_752,Ryerson,consultant,"['associate', 'consultant']",752
+f1000_753,Acadia Healthcare,consultant,"['associate', 'consultant']",753
+f1000_754,Hologic,consultant,"['associate', 'consultant']",754
+f1000_755,Unisys,consultant,"['associate', 'consultant']",755
+f1000_756,Worthington Industries,consultant,"['associate', 'consultant']",756
+f1000_757,Sanderson Farms,consultant,"['associate', 'consultant']",757
+f1000_758,Wabco,consultant,"['associate', 'consultant']",758
+f1000_759,Panera Bread,consultant,"['associate', 'consultant']",759
+f1000_760,Metaldyne Performance,consultant,"['associate', 'consultant']",760
+f1000_761,Medical Mutual of Ohio,consultant,"['associate', 'consultant']",761
+f1000_762,AMC Networks,consultant,"['associate', 'consultant']",762
+f1000_763,Clean Harbors,consultant,"['associate', 'consultant']",763
+f1000_764,Hovnanian Enterprises,consultant,"['associate', 'consultant']",764
+f1000_765,TrueBlue,consultant,"['associate', 'consultant']",765
+f1000_766,Crane,consultant,"['associate', 'consultant']",766
+f1000_767,ServiceMaster Global,consultant,"['associate', 'consultant']",767
+f1000_768,Sinclair Broadcast,consultant,"['associate', 'consultant']",768
+f1000_769,Mutual of America Life Insurance,consultant,"['associate', 'consultant']",769
+f1000_770,BGC Partners,consultant,"['associate', 'consultant']",770
+f1000_771,DSW,consultant,"['associate', 'consultant']",771
+f1000_772,Intuitive Surgical,consultant,"['associate', 'consultant']",772
+f1000_773,ArcBest,consultant,"['associate', 'consultant']",773
+f1000_774,PC Connection,consultant,"['associate', 'consultant']",774
+f1000_775,A.O. Smith,consultant,"['associate', 'consultant']",775
+f1000_776,Greenbrier,consultant,"['associate', 'consultant']",776
+f1000_777,Great Plains Energy,consultant,"['associate', 'consultant']",777
+f1000_778,Bon-Ton Stores,consultant,"['associate', 'consultant']",778
+f1000_779,Dycom Industries,consultant,"['associate', 'consultant']",779
+f1000_780,Timken,consultant,"['associate', 'consultant']",780
+f1000_781,Aleris,consultant,"['associate', 'consultant']",781
+f1000_782,Legg Mason,consultant,"['associate', 'consultant']",782
+f1000_783,Hill-Rom,consultant,"['associate', 'consultant']",783
+f1000_784,Stifel Financial,consultant,"['associate', 'consultant']",784
+f1000_785,Verso,consultant,"['associate', 'consultant']",785
+f1000_786,Qorvo,consultant,"['associate', 'consultant']",786
+f1000_787,Ciena,consultant,"['associate', 'consultant']",787
+f1000_788,Tetra Tech,consultant,"['associate', 'consultant']",788
+f1000_789,Caleres,consultant,"['associate', 'consultant']",789
+f1000_790,Pool,consultant,"['associate', 'consultant']",790
+f1000_791,Hyster-Yale Materials Handling,consultant,"['associate', 'consultant']",791
+f1000_792,Westar Energy,consultant,"['associate', 'consultant']",792
+f1000_793,Public Storage,consultant,"['associate', 'consultant']",793
+f1000_794,Plexus,consultant,"['associate', 'consultant']",794
+f1000_795,Boston Properties,consultant,"['associate', 'consultant']",795
+f1000_796,GNC,consultant,"['associate', 'consultant']",796
+f1000_797,HCP,consultant,"['associate', 'consultant']",797
+f1000_798,Penn Mutual Life Insurance,consultant,"['associate', 'consultant']",798
+f1000_799,TTM Technologies,consultant,"['associate', 'consultant']",799
+f1000_800,Prologis,consultant,"['associate', 'consultant']",800
+f1000_801,Twitter,consultant,"['associate', 'consultant']",801
+f1000_802,Kemper,consultant,"['associate', 'consultant']",802
+f1000_803,Valmont Industries,consultant,"['associate', 'consultant']",803
+f1000_804,Crestwood Equity Partners,consultant,"['associate', 'consultant']",804
+f1000_805,Applied Industrial Technologies,consultant,"['associate', 'consultant']",805
+f1000_806,VCA,consultant,"['associate', 'consultant']",806
+f1000_807,Granite Construction,consultant,"['associate', 'consultant']",807
+f1000_808,Vornado Realty Trust,consultant,"['associate', 'consultant']",808
+f1000_809,Mettler-Toledo,consultant,"['associate', 'consultant']",809
+f1000_810,A. Schulman,consultant,"['associate', 'consultant']",810
+f1000_811,Wolverine World Wide,consultant,"['associate', 'consultant']",811
+f1000_812,Graham,consultant,"['associate', 'consultant']",812
+f1000_813,Chico's FAS,consultant,"['associate', 'consultant']",813
+f1000_814,Domino's Pizza,consultant,"['associate', 'consultant']",814
+f1000_815,Zions Bancorp,consultant,"['associate', 'consultant']",815
+f1000_816,Southwest Gas,consultant,"['associate', 'consultant']",816
+f1000_817,Tops,consultant,"['associate', 'consultant']",817
+f1000_818,Hawaiian,consultant,"['associate', 'consultant']",818
+f1000_819,Vectren,consultant,"['associate', 'consultant']",819
+f1000_820,Gartner,consultant,"['associate', 'consultant']",820
+f1000_821,On Assignment,consultant,"['associate', 'consultant']",821
+f1000_822,Southwestern Energy,consultant,"['associate', 'consultant']",822
+f1000_823,Parexel,consultant,"['associate', 'consultant']",823
+f1000_824,Equity Residential,consultant,"['associate', 'consultant']",824
+f1000_825,J.Crew,consultant,"['associate', 'consultant']",825
+f1000_826,Synopsys,consultant,"['associate', 'consultant']",826
+f1000_827,Moog,consultant,"['associate', 'consultant']",827
+f1000_828,Cabot,consultant,"['associate', 'consultant']",828
+f1000_829,ITT,consultant,"['associate', 'consultant']",829
+f1000_830,TRI Pointe,consultant,"['associate', 'consultant']",830
+f1000_831,Maximus,consultant,"['associate', 'consultant']",831
+f1000_832,Illumina,consultant,"['associate', 'consultant']",832
+f1000_833,Amica Mutual Insurance,consultant,"['associate', 'consultant']",833
+f1000_834,Alere,consultant,"['associate', 'consultant']",834
+f1000_835,Toro,consultant,"['associate', 'consultant']",835
+f1000_836,Sprague Resources,consultant,"['associate', 'consultant']",836
+f1000_837,G-III Apparel,consultant,"['associate', 'consultant']",837
+f1000_838,Hawaiian Electric Industries,consultant,"['associate', 'consultant']",838
+f1000_839,Pinnacle Entertainment,consultant,"['associate', 'consultant']",839
+f1000_840,Columbia Sportswear,consultant,"['associate', 'consultant']",840
+f1000_841,First Republic Bank,consultant,"['associate', 'consultant']",841
+f1000_842,Komatsu Mining,consultant,"['associate', 'consultant']",842
+f1000_843,Trimble,consultant,"['associate', 'consultant']",843
+f1000_844,Edgewell Personal Care,consultant,"['associate', 'consultant']",844
+f1000_845,Belden,consultant,"['associate', 'consultant']",845
+f1000_846,DST Systems,consultant,"['associate', 'consultant']",846
+f1000_847,WGL,consultant,"['associate', 'consultant']",847
+f1000_848,GGP,consultant,"['associate', 'consultant']",848
+f1000_849,Brocade Communications Systems,consultant,"['associate', 'consultant']",849
+f1000_850,Akamai Technologies,consultant,"['associate', 'consultant']",850
+f1000_851,Nationstar Mortgage,consultant,"['associate', 'consultant']",851
+f1000_852,Annaly Capital Management,consultant,"['associate', 'consultant']",852
+f1000_853,Kansas City Southern,consultant,"['associate', 'consultant']",853
+f1000_854,Revlon,consultant,"['associate', 'consultant']",854
+f1000_855,AptarGroup,consultant,"['associate', 'consultant']",855
+f1000_856,MDC,consultant,"['associate', 'consultant']",856
+f1000_857,Vishay Intertechnology,consultant,"['associate', 'consultant']",857
+f1000_858,Teradata,consultant,"['associate', 'consultant']",858
+f1000_859,Spirit Airlines,consultant,"['associate', 'consultant']",859
+f1000_860,EnerSys,consultant,"['associate', 'consultant']",860
+f1000_861,Snyder's-Lance,consultant,"['associate', 'consultant']",861
+f1000_862,Benchmark Electronics,consultant,"['associate', 'consultant']",862
+f1000_863,West,consultant,"['associate', 'consultant']",863
+f1000_864,Selective Insurance,consultant,"['associate', 'consultant']",864
+f1000_865,Party City Holdco,consultant,"['associate', 'consultant']",865
+f1000_866,Cheesecake Factory,consultant,"['associate', 'consultant']",866
+f1000_867,Lincoln Electric,consultant,"['associate', 'consultant']",867
+f1000_868,Carlyle,consultant,"['associate', 'consultant']",868
+f1000_869,Enable Midstream Partners,consultant,"['associate', 'consultant']",869
+f1000_870,Oceaneering,consultant,"['associate', 'consultant']",870
+f1000_871,Vista Outdoor,consultant,"['associate', 'consultant']",871
+f1000_872,Middleby,consultant,"['associate', 'consultant']",872
+f1000_873,Herman Miller,consultant,"['associate', 'consultant']",873
+f1000_874,PerkinElmer,consultant,"['associate', 'consultant']",874
+f1000_875,OGE Energy,consultant,"['associate', 'consultant']",875
+f1000_876,PCM,consultant,"['associate', 'consultant']",876
+f1000_877,Louisiana-Pacific,consultant,"['associate', 'consultant']",877
+f1000_878,MPM,consultant,"['associate', 'consultant']",878
+f1000_879,Knights of Columbus,consultant,"['associate', 'consultant']",879
+f1000_880,Apollo Global Management,consultant,"['associate', 'consultant']",880
+f1000_881,Donaldson,consultant,"['associate', 'consultant']",881
+f1000_882,American Equity Investment Life,consultant,"['associate', 'consultant']",882
+f1000_883,Super Micro Computer,consultant,"['associate', 'consultant']",883
+f1000_884,Xilinx,consultant,"['associate', 'consultant']",884
+f1000_885,Tupperware Brands,consultant,"['associate', 'consultant']",885
+f1000_886,Guess,consultant,"['associate', 'consultant']",886
+f1000_887,Nu Skin Enterprises,consultant,"['associate', 'consultant']",887
+f1000_888,Magellan Midstream Partners,consultant,"['associate', 'consultant']",888
+f1000_889,HNI,consultant,"['associate', 'consultant']",889
+f1000_890,Maxim Integrated Products,consultant,"['associate', 'consultant']",890
+f1000_891,Affiliated Managers,consultant,"['associate', 'consultant']",891
+f1000_892,Express,consultant,"['associate', 'consultant']",892
+f1000_893,Boyd Gaming,consultant,"['associate', 'consultant']",893
+f1000_894,GEO,consultant,"['associate', 'consultant']",894
+f1000_895,Tribune Media,consultant,"['associate', 'consultant']",895
+f1000_896,Microchip Technology,consultant,"['associate', 'consultant']",896
+f1000_897,Fitbit,consultant,"['associate', 'consultant']",897
+f1000_898,Waters,consultant,"['associate', 'consultant']",898
+f1000_899,Teledyne Technologies,consultant,"['associate', 'consultant']",899
+f1000_900,Digital Realty Trust,consultant,"['associate', 'consultant']",900
+f1000_901,RH,consultant,"['associate', 'consultant']",901
+f1000_902,Fred's,consultant,"['associate', 'consultant']",902
+f1000_903,Universal,consultant,"['associate', 'consultant']",903
+f1000_904,CDK Global,consultant,"['associate', 'consultant']",904
+f1000_905,IDEX,consultant,"['associate', 'consultant']",905
+f1000_906,Cliffs Natural Resources,consultant,"['associate', 'consultant']",906
+f1000_907,Curtiss-Wright,consultant,"['associate', 'consultant']",907
+f1000_908,Verisk Analytics,consultant,"['associate', 'consultant']",908
+f1000_909,NOW,consultant,"['associate', 'consultant']",909
+f1000_910,Apollo Education,consultant,"['associate', 'consultant']",910
+f1000_911,Kennametal,consultant,"['associate', 'consultant']",911
+f1000_912,H.B. Fuller,consultant,"['associate', 'consultant']",912
+f1000_913,PharMerica,consultant,"['associate', 'consultant']",913
+f1000_914,Engility,consultant,"['associate', 'consultant']",914
+f1000_915,Sears Hometown & Outlet Stores,consultant,"['associate', 'consultant']",915
+f1000_916,Bio-Rad Laboratories,consultant,"['associate', 'consultant']",916
+f1000_917,Federated Mutual Insurance,consultant,"['associate', 'consultant']",917
+f1000_918,Mueller Industries,consultant,"['associate', 'consultant']",918
+f1000_919,Red Hat,consultant,"['associate', 'consultant']",919
+f1000_920,NewMarket,consultant,"['associate', 'consultant']",920
+f1000_921,Hospitality Properties Trust,consultant,"['associate', 'consultant']",921
+f1000_922,AvalonBay Communities,consultant,"['associate', 'consultant']",922
+f1000_923,Renewable Energy,consultant,"['associate', 'consultant']",923
+f1000_924,Consol Energy,consultant,"['associate', 'consultant']",924
+f1000_925,Ferrellgas Partners,consultant,"['associate', 'consultant']",925
+f1000_926,Tower,consultant,"['associate', 'consultant']",926
+f1000_927,Autodesk,consultant,"['associate', 'consultant']",927
+f1000_928,99 Cents Only Stores,consultant,"['associate', 'consultant']",928
+f1000_929,E Trade Financial,consultant,"['associate', 'consultant']",929
+f1000_930,Woodward,consultant,"['associate', 'consultant']",930
+f1000_931,Esterline Technologies,consultant,"['associate', 'consultant']",931
+f1000_932,Itron,consultant,"['associate', 'consultant']",932
+f1000_933,Werner Enterprises,consultant,"['associate', 'consultant']",933
+f1000_934,Stewart Information Services,consultant,"['associate', 'consultant']",934
+f1000_935,Hexcel,consultant,"['associate', 'consultant']",935
+f1000_936,Genesee & Wyoming,consultant,"['associate', 'consultant']",936
+f1000_937,Primoris Services,consultant,"['associate', 'consultant']",937
+f1000_938,Spx Flow,consultant,"['associate', 'consultant']",938
+f1000_939,F5 Networks,consultant,"['associate', 'consultant']",939
+f1000_940,VeriFone Systems,consultant,"['associate', 'consultant']",940
+f1000_941,Texas Roadhouse,consultant,"['associate', 'consultant']",941
+f1000_942,NLV Financial,consultant,"['associate', 'consultant']",942
+f1000_943,Buffalo Wild Wings,consultant,"['associate', 'consultant']",943
+f1000_944,Continental Resources,consultant,"['associate', 'consultant']",944
+f1000_945,Arch Coal,consultant,"['associate', 'consultant']",945
+f1000_946,Roadrunner Transportation Systems,consultant,"['associate', 'consultant']",946
+f1000_947,Cooper,consultant,"['associate', 'consultant']",947
+f1000_948,hhgregg,consultant,"['associate', 'consultant']",948
+f1000_949,Euronet Worldwide,consultant,"['associate', 'consultant']",949
+f1000_950,Griffon,consultant,"['associate', 'consultant']",950
+f1000_951,CoreLogic,consultant,"['associate', 'consultant']",951
+f1000_952,Nuance Communications,consultant,"['associate', 'consultant']",952
+f1000_953,Matson,consultant,"['associate', 'consultant']",953
+f1000_954,Popular,consultant,"['associate', 'consultant']",954
+f1000_955,Alliance,consultant,"['associate', 'consultant']",955
+f1000_956,REV,consultant,"['associate', 'consultant']",956
+f1000_957,Rexnord,consultant,"['associate', 'consultant']",957
+f1000_958,Cypress Semiconductor,consultant,"['associate', 'consultant']",958
+f1000_959,Portland General Electric,consultant,"['associate', 'consultant']",959
+f1000_960,Ply Gem,consultant,"['associate', 'consultant']",960
+f1000_961,Cal-Maine Foods,consultant,"['associate', 'consultant']",961
+f1000_962,Alliance One,consultant,"['associate', 'consultant']",962
+f1000_963,AMN Healthcare Services,consultant,"['associate', 'consultant']",963
+f1000_964,American Greetings,consultant,"['associate', 'consultant']",964
+f1000_965,Blackhawk Network,consultant,"['associate', 'consultant']",965
+f1000_966,Pier 1 Imports,consultant,"['associate', 'consultant']",966
+f1000_967,Finish Line,consultant,"['associate', 'consultant']",967
+f1000_968,BlueLinx,consultant,"['associate', 'consultant']",968
+f1000_969,New Jersey Resources,consultant,"['associate', 'consultant']",969
+f1000_970,Deckers Outdoor,consultant,"['associate', 'consultant']",970
+f1000_971,Murphy Oil,consultant,"['associate', 'consultant']",971
+f1000_972,Teleflex,consultant,"['associate', 'consultant']",972
+f1000_973,Par Pacific,consultant,"['associate', 'consultant']",973
+f1000_974,SL Green Realty,consultant,"['associate', 'consultant']",974
+f1000_975,GMS,consultant,"['associate', 'consultant']",975
+f1000_976,CoreCivic,consultant,"['associate', 'consultant']",976
+f1000_977,Deluxe,consultant,"['associate', 'consultant']",977
+f1000_978,Catalent,consultant,"['associate', 'consultant']",978
+f1000_979,GoDaddy,consultant,"['associate', 'consultant']",979
+f1000_980,Wabash National,consultant,"['associate', 'consultant']",980
+f1000_981,Adtalem Global Education,consultant,"['associate', 'consultant']",981
+f1000_982,United Refining,consultant,"['associate', 'consultant']",982
+f1000_983,Allison Transmission,consultant,"['associate', 'consultant']",983
+f1000_984,Atlas Air Worldwide,consultant,"['associate', 'consultant']",984
+f1000_985,ResMed,consultant,"['associate', 'consultant']",985
+f1000_986,Delta Tucker,consultant,"['associate', 'consultant']",986
+f1000_987,FleetCor Technologies,consultant,"['associate', 'consultant']",987
+f1000_988,Central Garden & Pet,consultant,"['associate', 'consultant']",988
+f1000_989,Beazer Homes USA,consultant,"['associate', 'consultant']",989
+f1000_990,New York Community Bancorp,consultant,"['associate', 'consultant']",990
+f1000_991,Cadence Design Systems,consultant,"['associate', 'consultant']",991
+f1000_992,Carpenter Technology,consultant,"['associate', 'consultant']",992
+f1000_993,Marriott Vacations Worldwide,consultant,"['associate', 'consultant']",993
+f1000_994,FTI Consulting,consultant,"['associate', 'consultant']",994
+f1000_995,Nordson,consultant,"['associate', 'consultant']",995
+f1000_996,Briggs & Stratton,consultant,"['associate', 'consultant']",996
+f1000_997,Kaman,consultant,"['associate', 'consultant']",997
+f1000_998,Overstock.com,consultant,"['associate', 'consultant']",998
+f1000_999,Regis,consultant,"['associate', 'consultant']",999
+nasdaq_TSM,Taiwan Semiconductor Manufacturing Company,consultant,"['associate', 'consultant']",1000
+nasdaq_SAP,Sap Se,consultant,"['associate', 'consultant']",1001
+nasdaq_ADBE,Adobe,consultant,"['associate', 'consultant']",1002
+nasdaq_CRM,Salesforce.com,consultant,"['associate', 'consultant']",1003
+nasdaq_IBM,International Business Machines,consultant,"['associate', 'consultant']",1004
+nasdaq_AVGO,Broadcom,consultant,"['associate', 'consultant']",1005
+nasdaq_VMW,Vmware,consultant,"['associate', 'consultant']",1006
+nasdaq_ADP,Automatic Data Processing,consultant,"['associate', 'consultant']",1007
+nasdaq_BIDU,Baidu,consultant,"['associate', 'consultant']",1008
+nasdaq_INFY,Infosys Limited,consultant,"['associate', 'consultant']",1009
+nasdaq_AABA,Altaba,consultant,"['associate', 'consultant']",1010
+nasdaq_WDAY,Workday,consultant,"['associate', 'consultant']",1011
+nasdaq_NOW,ServiceNow,consultant,"['associate', 'consultant']",1012
+nasdaq_NOK,Nokia,consultant,"['associate', 'consultant']",1013
+nasdaq_ETN,Eaton,consultant,"['associate', 'consultant']",1014
+nasdaq_SQ,Square,consultant,"['associate', 'consultant']",1015
+nasdaq_NXPI,NXP Semiconductors N.V.,consultant,"['associate', 'consultant']",1016
+nasdaq_WIT,Wipro Limited,consultant,"['associate', 'consultant']",1017
+nasdaq_TEAM,Atlassian,consultant,"['associate', 'consultant']",1018
+nasdaq_HPE,Hewlett Packard Enterprise Company,consultant,"['associate', 'consultant']",1019
+nasdaq_INFO,IHS Markit,consultant,"['associate', 'consultant']",1020
+nasdaq_VRSN,VeriSign,consultant,"['associate', 'consultant']",1021
+nasdaq_PANW,Palo Alto Networks,consultant,"['associate', 'consultant']",1022
+nasdaq_SPLK,Splunk,consultant,"['associate', 'consultant']",1023
+nasdaq_DXC,DXC Technology Company,consultant,"['associate', 'consultant']",1024
+nasdaq_CHKP,Check Point Software Technologies,consultant,"['associate', 'consultant']",1025
+nasdaq_ANET,Arista Networks,consultant,"['associate', 'consultant']",1026
+nasdaq_SHOP,Shopify,consultant,"['associate', 'consultant']",1027
+nasdaq_WPP,WPP,consultant,"['associate', 'consultant']",1028
+nasdaq_VEEV,Veeva Systems,consultant,"['associate', 'consultant']",1029
+nasdaq_ANSS,Ansys,consultant,"['associate', 'consultant']",1030
+nasdaq_STM,STMicroelectronics N.V.,consultant,"['associate', 'consultant']",1031
+nasdaq_FTNT,Fortinet,consultant,"['associate', 'consultant']",1032
+nasdaq_MTCH,Match,consultant,"['associate', 'consultant']",1033
+nasdaq_TTWO,Take-Two Interactive Software,consultant,"['associate', 'consultant']",1034
+nasdaq_SSNC,SS&C Technologies,consultant,"['associate', 'consultant']",1035
+nasdaq_STX,Seagate Technology,consultant,"['associate', 'consultant']",1036
+nasdaq_MRVL,Marvell Technology,consultant,"['associate', 'consultant']",1037
+nasdaq_ASML,Asml N.V.,consultant,"['associate', 'consultant']",1038
+nasdaq_PTC,PTC,consultant,"['associate', 'consultant']",1039
+nasdaq_DATA,Tableau Software,consultant,"['associate', 'consultant']",1040
+nasdaq_JKHY,Jack Henry & Associates,consultant,"['associate', 'consultant']",1041
+nasdaq_YNDX,Yandex N.V.,consultant,"['associate', 'consultant']",1042
+nasdaq_TWLO,Twilio,consultant,"['associate', 'consultant']",1043
+nasdaq_OTEX,Open Text,consultant,"['associate', 'consultant']",1044
+nasdaq_ATHM,Autohome,consultant,"['associate', 'consultant']",1045
+nasdaq_DBX,Dropbox,consultant,"['associate', 'consultant']",1046
+nasdaq_LN,LINE,consultant,"['associate', 'consultant']",1047
+nasdaq_IPG,Interpublic of Companies,consultant,"['associate', 'consultant']",1048
+nasdaq_DOX,Amdocs Limited,consultant,"['associate', 'consultant']",1049
+nasdaq_WUBA,58.com,consultant,"['associate', 'consultant']",1050
+nasdaq_NTNX,Nutanix,consultant,"['associate', 'consultant']",1051
+nasdaq_SNAP,Snap,consultant,"['associate', 'consultant']",1052
+nasdaq_ULTI,The Ultimate Software,consultant,"['associate', 'consultant']",1053
+nasdaq_MFGP,Micro Focus Intl,consultant,"['associate', 'consultant']",1054
+nasdaq_ASX,ASE Technology,consultant,"['associate', 'consultant']",1055
+nasdaq_FDS,FactSet Research Systems,consultant,"['associate', 'consultant']",1056
+nasdaq_TRIP,TripAdvisor,consultant,"['associate', 'consultant']",1057
+nasdaq_EBIX,Ebix,consultant,"['associate', 'consultant']",1058
+nasdaq_OKTA,Okta,consultant,"['associate', 'consultant']",1059
+nasdaq_UBNT,Ubiquiti Networks,consultant,"['associate', 'consultant']",1060
+nasdaq_PAYC,Paycom Software,consultant,"['associate', 'consultant']",1061
+nasdaq_DOCU,DocuSign,consultant,"['associate', 'consultant']",1062
+nasdaq_PAGS,PagSeguro Digital,consultant,"['associate', 'consultant']",1063
+nasdaq_TYL,Tyler Technologies,consultant,"['associate', 'consultant']",1064
+nasdaq_EPAM,EPAM Systems,consultant,"['associate', 'consultant']",1065
+nasdaq_PNR,Pentair,consultant,"['associate', 'consultant']",1066
+nasdaq_BKI,Black Knight,consultant,"['associate', 'consultant']",1067
+nasdaq_RNG,Ringcentral,consultant,"['associate', 'consultant']",1068
+nasdaq_IPGP,IPG Photonics,consultant,"['associate', 'consultant']",1069
+nasdaq_AER,Aercap N.V.,consultant,"['associate', 'consultant']",1070
+nasdaq_GWRE,Guidewire Software,consultant,"['associate', 'consultant']",1071
+nasdaq_ZEN,Zendesk,consultant,"['associate', 'consultant']",1072
+nasdaq_IDTI,Integrated Device Technology,consultant,"['associate', 'consultant']",1073
+nasdaq_AZPN,Aspen Technology,consultant,"['associate', 'consultant']",1074
+nasdaq_NATI,National Instruments,consultant,"['associate', 'consultant']",1075
+nasdaq_MIDD,The Middleby,consultant,"['associate', 'consultant']",1076
+nasdaq_STNE,StoneCo,consultant,"['associate', 'consultant']",1077
+nasdaq_ZS,Zscaler,consultant,"['associate', 'consultant']",1078
+nasdaq_LOGI,Logitech S.A.,consultant,"['associate', 'consultant']",1079
+nasdaq_TTD,The Trade Desk,consultant,"['associate', 'consultant']",1080
+nasdaq_HUBS,HubSpot,consultant,"['associate', 'consultant']",1081
+nasdaq_ARRS,Arris,consultant,"['associate', 'consultant']",1082
+nasdaq_ESTC,Elastic N.V.,consultant,"['associate', 'consultant']",1083
+nasdaq_MPWR,Monolithic Power Systems,consultant,"['associate', 'consultant']",1084
+nasdaq_TSG,The Stars,consultant,"['associate', 'consultant']",1085
+nasdaq_RP,RealPage,consultant,"['associate', 'consultant']",1086
+nasdaq_PFPT,Proofpoint,consultant,"['associate', 'consultant']",1087
+nasdaq_NEWR,New Relic,consultant,"['associate', 'consultant']",1088
+nasdaq_SWI,SolarWinds,consultant,"['associate', 'consultant']",1089
+nasdaq_CDAY,Ceridian HCM,consultant,"['associate', 'consultant']",1090
+nasdaq_CREE,Cree,consultant,"['associate', 'consultant']",1091
+nasdaq_WIX,Wix.com,consultant,"['associate', 'consultant']",1092
+nasdaq_PVTL,Pivotal Software,consultant,"['associate', 'consultant']",1093
+nasdaq_MLNX,Mellanox Technologies,consultant,"['associate', 'consultant']",1094
+nasdaq_NICE,NICE,consultant,"['associate', 'consultant']",1095
+nasdaq_GDI,Gardner Denver,consultant,"['associate', 'consultant']",1096
+nasdaq_LOGM,LogMein,consultant,"['associate', 'consultant']",1097
+nasdaq_UMC,United Microelectronics,consultant,"['associate', 'consultant']",1098
+nasdaq_GTES,Gates Industrial,consultant,"['associate', 'consultant']",1099
+nasdaq_AYX,Alteryx,consultant,"['associate', 'consultant']",1100
+nasdaq_FLEX,Flex,consultant,"['associate', 'consultant']",1101
+nasdaq_SMI,Semiconductor Manufacturing,consultant,"['associate', 'consultant']",1102
+nasdaq_PSTG,Pure Storage,consultant,"['associate', 'consultant']",1103
+nasdaq_SINA,Sina,consultant,"['associate', 'consultant']",1104
+nasdaq_NVT,nVent Electric,consultant,"['associate', 'consultant']",1105
+nasdaq_MOMO,Momo,consultant,"['associate', 'consultant']",1106
+nasdaq_BB,BlackBerry Limited,consultant,"['associate', 'consultant']",1107
+nasdaq_HUYA,HUYA,consultant,"['associate', 'consultant']",1108
+nasdaq_MDSO,Medidata Solutions,consultant,"['associate', 'consultant']",1109
+nasdaq_INXN,InterXion N.V.,consultant,"['associate', 'consultant']",1110
+nasdaq_AL,Air Lease,consultant,"['associate', 'consultant']",1111
+nasdaq_PEGA,Pegasystems,consultant,"['associate', 'consultant']",1112
+nasdaq_AUO,AU Optronics,consultant,"['associate', 'consultant']",1113
+nasdaq_MDB,MongoDB,consultant,"['associate', 'consultant']",1114
+nasdaq_ZNGA,Zynga,consultant,"['associate', 'consultant']",1115
+nasdaq_CARG,CarGurus,consultant,"['associate', 'consultant']",1116
+nasdaq_COUP,Coupa Software,consultant,"['associate', 'consultant']",1117
+nasdaq_PS,Pluralsight,consultant,"['associate', 'consultant']",1118
+nasdaq_SLAB,Silicon Laboratories,consultant,"['associate', 'consultant']",1119
+nasdaq_WB,Weibo,consultant,"['associate', 'consultant']",1120
+nasdaq_VSAT,ViaSat,consultant,"['associate', 'consultant']",1121
+nasdaq_COMM,CommScope Company,consultant,"['associate', 'consultant']",1122
+nasdaq_PLAN,Anaplan,consultant,"['associate', 'consultant']",1123
+nasdaq_JCOM,j2 Global,consultant,"['associate', 'consultant']",1124
+nasdaq_SMTC,Semtech,consultant,"['associate', 'consultant']",1125
+nasdaq_YY,YY,consultant,"['associate', 'consultant']",1126
+nasdaq_AAN,Aaron& 39 s,consultant,"['associate', 'consultant']",1127
+nasdaq_FEYE,FireEye,consultant,"['associate', 'consultant']",1128
+nasdaq_PCTY,Paylocity,consultant,"['associate', 'consultant']",1129
+nasdaq_ACIW,ACI Worldwide,consultant,"['associate', 'consultant']",1130
+nasdaq_BLKB,Blackbaud,consultant,"['associate', 'consultant']",1131
+nasdaq_ASGN,ASGN,consultant,"['associate', 'consultant']",1132
+nasdaq_CSOD,Cornerstone OnDemand,consultant,"['associate', 'consultant']",1133
+nasdaq_PRSP,Perspecta,consultant,"['associate', 'consultant']",1134
+nasdaq_QLYS,Qualys,consultant,"['associate', 'consultant']",1135
+nasdaq_TWOU,2U,consultant,"['associate', 'consultant']",1136
+nasdaq_CLDR,Cloudera,consultant,"['associate', 'consultant']",1137
+nasdaq_MANH,Manhattan Associates,consultant,"['associate', 'consultant']",1138
+nasdaq_VRNT,Verint Systems,consultant,"['associate', 'consultant']",1139
+nasdaq_TRTN,Triton Limited,consultant,"['associate', 'consultant']",1140
+nasdaq_CVLT,Commvault Systems,consultant,"['associate', 'consultant']",1141
+nasdaq_RAMP,LiveRamp,consultant,"['associate', 'consultant']",1142
+nasdaq_CYBR,CyberArk Software,consultant,"['associate', 'consultant']",1143
+nasdaq_SAIC,Science Applications International Corporation,consultant,"['associate', 'consultant']",1144
+nasdaq_CCMP,Cabot Microelectronics,consultant,"['associate', 'consultant']",1145
+nasdaq_BOX,Box,consultant,"['associate', 'consultant']",1146
+nasdaq_FIVN,Five9,consultant,"['associate', 'consultant']",1147
+nasdaq_ERIC,Ericsson,consultant,"['associate', 'consultant']",1148
+nasdaq_SMAR,Smartsheet,consultant,"['associate', 'consultant']",1149
+nasdaq_ALRM,Alarm.com,consultant,"['associate', 'consultant']",1150
+nasdaq_AVLR,Avalara,consultant,"['associate', 'consultant']",1151
+nasdaq_OMCL,Omnicell,consultant,"['associate', 'consultant']",1152
+nasdaq_FNSR,Finisar,consultant,"['associate', 'consultant']",1153
+nasdaq_JBT,John Bean Technologies,consultant,"['associate', 'consultant']",1154
+nasdaq_KFY,Korn Ferry,consultant,"['associate', 'consultant']",1155
+nasdaq_APY,Apergy,consultant,"['associate', 'consultant']",1156
+nasdaq_VIAV,Viavi Solutions,consultant,"['associate', 'consultant']",1157
+nasdaq_EB,Eventbrite,consultant,"['associate', 'consultant']",1158
+nasdaq_JOBS,51job,consultant,"['associate', 'consultant']",1159
+nasdaq_ELLI,Ellie Mae,consultant,"['associate', 'consultant']",1160
+nasdaq_BL,BlackLine,consultant,"['associate', 'consultant']",1161
+nasdaq_SOGO,Sogou,consultant,"['associate', 'consultant']",1162
+nasdaq_SAIL,SailPoint Technologies,consultant,"['associate', 'consultant']",1163
+nasdaq_QTWO,Q2,consultant,"['associate', 'consultant']",1164
+nasdaq_TENB,Tenable,consultant,"['associate', 'consultant']",1165
+nasdaq_SEND,SendGrid,consultant,"['associate', 'consultant']",1166
+nasdaq_DSGX,The Descartes Systems,consultant,"['associate', 'consultant']",1167
+nasdaq_ZUO,Zuora,consultant,"['associate', 'consultant']",1168
+nasdaq_GLOB,Globant S.A.,consultant,"['associate', 'consultant']",1169
+nasdaq_CRUS,Cirrus Logic,consultant,"['associate', 'consultant']",1170
+nasdaq_INOV,Inovalon,consultant,"['associate', 'consultant']",1171
+nasdaq_EPAY,Bottomline Technologies,consultant,"['associate', 'consultant']",1172
+nasdaq_APPF,AppFolio,consultant,"['associate', 'consultant']",1173
+nasdaq_EVTC,Evertec,consultant,"['associate', 'consultant']",1174
+nasdaq_ALTR,Altair Engineering,consultant,"['associate', 'consultant']",1175
+nasdaq_BRKS,Brooks Automation,consultant,"['associate', 'consultant']",1176
+nasdaq_UPWK,Upwork,consultant,"['associate', 'consultant']",1177
+nasdaq_MIME,Mimecast Limited,consultant,"['associate', 'consultant']",1178
+nasdaq_MDRX,Allscripts Healthcare Solutions,consultant,"['associate', 'consultant']",1179
+nasdaq_APPN,Appian,consultant,"['associate', 'consultant']",1180
+nasdaq_NTCT,NetScout Systems,consultant,"['associate', 'consultant']",1181
+nasdaq_LXFT,Luxoft,consultant,"['associate', 'consultant']",1182
+nasdaq_EGHT,8x8,consultant,"['associate', 'consultant']",1183
+nasdaq_SWCH,Switch,consultant,"['associate', 'consultant']",1184
+nasdaq_POWI,Power Integrations,consultant,"['associate', 'consultant']",1185
+nasdaq_MB,Mindbody,consultant,"['associate', 'consultant']",1186
+nasdaq_WBT,Welbilt,consultant,"['associate', 'consultant']",1187
+nasdaq_CISN,Cision,consultant,"['associate', 'consultant']",1188
+nasdaq_ACIA,Acacia Communications,consultant,"['associate', 'consultant']",1189
+nasdaq_EVBG,Everbridge,consultant,"['associate', 'consultant']",1190
+nasdaq_RPD,Rapid7,consultant,"['associate', 'consultant']",1191
+nasdaq_SVMK,SVMK,consultant,"['associate', 'consultant']",1192
+nasdaq_SEDG,SolarEdge Technologies,consultant,"['associate', 'consultant']",1193
+nasdaq_WK,Workiva,consultant,"['associate', 'consultant']",1194
+nasdaq_CRTO,Criteo S.A.,consultant,"['associate', 'consultant']",1195
+nasdaq_PRGS,Progress Software,consultant,"['associate', 'consultant']",1196
+nasdaq_DIOD,Diodes,consultant,"['associate', 'consultant']",1197
+nasdaq_BNFT,Benefitfocus,consultant,"['associate', 'consultant']",1198
+nasdaq_YEXT,Yext,consultant,"['associate', 'consultant']",1199
+nasdaq_CARS,Cars.com,consultant,"['associate', 'consultant']",1200
+nasdaq_TSEM,Tower Semiconductor,consultant,"['associate', 'consultant']",1201
+nasdaq_SPSC,SPS Commerce,consultant,"['associate', 'consultant']",1202
+nasdaq_VRNS,Varonis Systems,consultant,"['associate', 'consultant']",1203
+nasdaq_MSTR,MicroStrategy,consultant,"['associate', 'consultant']",1204
+nasdaq_TTEC,TTEC,consultant,"['associate', 'consultant']",1205
+nasdaq_IPHI,Inphi,consultant,"['associate', 'consultant']",1206
+nasdaq_AYR,Aircastle Limited,consultant,"['associate', 'consultant']",1207
+nasdaq_BITA,Bitauto Limited,consultant,"['associate', 'consultant']",1208
+nasdaq_KLIC,Kulicke and Soffa Industries,consultant,"['associate', 'consultant']",1209
+nasdaq_INST,Instructure,consultant,"['associate', 'consultant']",1210
+nasdaq_GDS,GDS Limited,consultant,"['associate', 'consultant']",1211
+nasdaq_VRTU,Virtusa,consultant,"['associate', 'consultant']",1212
+nasdaq_OSIS,OSI Systems,consultant,"['associate', 'consultant']",1213
+nasdaq_SCWX,SecureWorks,consultant,"['associate', 'consultant']",1214
+nasdaq_SYNA,Synaptics,consultant,"['associate', 'consultant']",1215
+nasdaq_ATU,Actuant,consultant,"['associate', 'consultant']",1216
+nasdaq_GLUU,Glu Mobile,consultant,"['associate', 'consultant']",1217
+nasdaq_SSTK,Shutterstock,consultant,"['associate', 'consultant']",1218
+nasdaq_MXL,MaxLinear,consultant,"['associate', 'consultant']",1219
+nasdaq_DDD,3D Systems,consultant,"['associate', 'consultant']",1220
+nasdaq_SIMO,Silicon Motion Technology,consultant,"['associate', 'consultant']",1221
+nasdaq_SPXC,SPX,consultant,"['associate', 'consultant']",1222
+nasdaq_LPSN,LivePerson,consultant,"['associate', 'consultant']",1223
+nasdaq_MGRC,McGrath RentCorp,consultant,"['associate', 'consultant']",1224
+nasdaq_LTRPA,Liberty TripAdvisor,consultant,"['associate', 'consultant']",1225
+nasdaq_DAVA,Endava,consultant,"['associate', 'consultant']",1226
+nasdaq_LORL,Loral Space and Communications,consultant,"['associate', 'consultant']",1227
+nasdaq_AMBA,Ambarella,consultant,"['associate', 'consultant']",1228
+nasdaq_PRO,PROS,consultant,"['associate', 'consultant']",1229
+nasdaq_PSDO,Presidio,consultant,"['associate', 'consultant']",1230
+nasdaq_EFII,Electronics for Imaging,consultant,"['associate', 'consultant']",1231
+nasdaq_SYKE,Sykes Enterprises,consultant,"['associate', 'consultant']",1232
+nasdaq_CASA,Casa Systems,consultant,"['associate', 'consultant']",1233
+nasdaq_FSCT,ForeScout Technologies,consultant,"['associate', 'consultant']",1234
+nasdaq_AQUA,Evoqua Water Technologies,consultant,"['associate', 'consultant']",1235
+nasdaq_CSGS,CSG Systems,consultant,"['associate', 'consultant']",1236
+nasdaq_MTSI,MACOM Technology Solutions,consultant,"['associate', 'consultant']",1237
+nasdaq_CLS,Celestica,consultant,"['associate', 'consultant']",1238
+nasdaq_NXGN,NextGen Healthcare,consultant,"['associate', 'consultant']",1239
+nasdaq_TLND,Talend S.A.,consultant,"['associate', 'consultant']",1240
+nasdaq_SSYS,Stratasys,consultant,"['associate', 'consultant']",1241
+nasdaq_EIGI,Endurance,consultant,"['associate', 'consultant']",1242
+nasdaq_FORM,FormFactor,consultant,"['associate', 'consultant']",1243
+nasdaq_CSIQ,Canadian Solar,consultant,"['associate', 'consultant']",1244
+nasdaq_PLUS,ePlus,consultant,"['associate', 'consultant']",1245
+nasdaq_TNC,Tennant Company,consultant,"['associate', 'consultant']",1246
+nasdaq_XPER,Xperi,consultant,"['associate', 'consultant']",1247
+nasdaq_TRUE,TrueCar,consultant,"['associate', 'consultant']",1248
+nasdaq_CARB,Carbonite,consultant,"['associate', 'consultant']",1249
+nasdaq_LSCC,Lattice Semiconductor,consultant,"['associate', 'consultant']",1250
+nasdaq_MCRN,Milacron,consultant,"['associate', 'consultant']",1251
+nasdaq_SXI,Standex,consultant,"['associate', 'consultant']",1252
+nasdaq_CBLK,Carbon Black,consultant,"['associate', 'consultant']",1253
+nasdaq_AGMH,AGM,consultant,"['associate', 'consultant']",1254
+nasdaq_KAI,Kadant,consultant,"['associate', 'consultant']",1255
+nasdaq_CTS,CTS,consultant,"['associate', 'consultant']",1256
+nasdaq_RMBS,Rambus,consultant,"['associate', 'consultant']",1257
+nasdaq_CMCM,Cheetah Mobile,consultant,"['associate', 'consultant']",1258
+nasdaq_CRAY,Cray,consultant,"['associate', 'consultant']",1259
+nasdaq_KFRC,Kforce,consultant,"['associate', 'consultant']",1260
+nasdaq_BILI,Bilibili,consultant,"['associate', 'consultant']",1261
+nasdaq_JT,Jianpu Technology,consultant,"['associate', 'consultant']",1262
+nasdaq_SFUN,Fang Limited,consultant,"['associate', 'consultant']",1263
+nasdaq_CTK,CooTek,consultant,"['associate', 'consultant']",1264
+nasdaq_QADA,QAD,consultant,"['associate', 'consultant']",1265
+nasdaq_BAND,Bandwidth,consultant,"['associate', 'consultant']",1266
+nasdaq_HSTM,HealthStream,consultant,"['associate', 'consultant']",1267
+nasdaq_PRFT,Perficient,consultant,"['associate', 'consultant']",1268
+nasdaq_SPWR,SunPower,consultant,"['associate', 'consultant']",1269
+nasdaq_EXTR,Extreme Networks,consultant,"['associate', 'consultant']",1270
+nasdaq_SOHU,Sohu.com Limited,consultant,"['associate', 'consultant']",1271
+nasdaq_EXTN,Exterran,consultant,"['associate', 'consultant']",1272
+nasdaq_PLAB,Photronics,consultant,"['associate', 'consultant']",1273
+nasdaq_TGH,Textainer Limited,consultant,"['associate', 'consultant']",1274
+nasdaq_TCX,Tucows,consultant,"['associate', 'consultant']",1275
+nasdaq_TYPE,Monotype Imaging,consultant,"['associate', 'consultant']",1276
+nasdaq_LASR,nLIGHT,consultant,"['associate', 'consultant']",1277
+nasdaq_HSII,Heidrick & Struggles,consultant,"['associate', 'consultant']",1278
+nasdaq_UPLD,Upland Software,consultant,"['associate', 'consultant']",1279
+nasdaq_HMI,Huami,consultant,"['associate', 'consultant']",1280
+nasdaq_ENPH,Enphase Energy,consultant,"['associate', 'consultant']",1281
+nasdaq_SPNS,Sapiens Corporation N.V.,consultant,"['associate', 'consultant']",1282
+nasdaq_QTNA,Quantenna Communications,consultant,"['associate', 'consultant']",1283
+nasdaq_DOMO,Domo,consultant,"['associate', 'consultant']",1284
+nasdaq_CMTL,Comtech Telecommunications,consultant,"['associate', 'consultant']",1285
+nasdaq_VNET,21Vianet,consultant,"['associate', 'consultant']",1286
+nasdaq_ACLS,Axcelis Technologies,consultant,"['associate', 'consultant']",1287
+nasdaq_SGH,SMART Global,consultant,"['associate', 'consultant']",1288
+nasdaq_RBBN,Ribbon Communications,consultant,"['associate', 'consultant']",1289
+nasdaq_OSPN,OneSpan,consultant,"['associate', 'consultant']",1290
+nasdaq_SWIR,Sierra Wireless,consultant,"['associate', 'consultant']",1291
+nasdaq_CEVA,CEVA,consultant,"['associate', 'consultant']",1292
+nasdaq_GILT,Gilat Satellite Networks,consultant,"['associate', 'consultant']",1293
+nasdaq_ATEN,A10 Networks,consultant,"['associate', 'consultant']",1294
+nasdaq_CAMP,CalAmp,consultant,"['associate', 'consultant']",1295
+nasdaq_MOBL,MobileIron,consultant,"['associate', 'consultant']",1296
+nasdaq_JKS,JinkoSolar Company Limited,consultant,"['associate', 'consultant']",1297
+nasdaq_CAI,CAI,consultant,"['associate', 'consultant']",1298
+nasdaq_PKE,Park Electrochemical,consultant,"['associate', 'consultant']",1299
+nasdaq_NVEC,NVE,consultant,"['associate', 'consultant']",1300
+nasdaq_BBSI,Barrett Business Services,consultant,"['associate', 'consultant']",1301
+nasdaq_MODN,Model N,consultant,"['associate', 'consultant']",1302
+nasdaq_ATTU,Attunity,consultant,"['associate', 'consultant']",1303
+nasdaq_HIMX,Himax Technologies,consultant,"['associate', 'consultant']",1304
+nasdaq_ICHR,Ichor,consultant,"['associate', 'consultant']",1305
+nasdaq_MITK,Mitek Systems,consultant,"['associate', 'consultant']",1306
+nasdaq_KE,Kimball Electronics,consultant,"['associate', 'consultant']",1307
+nasdaq_HLIT,Harmonic,consultant,"['associate', 'consultant']",1308
+nasdaq_ERII,Energy Recovery,consultant,"['associate', 'consultant']",1309
+nasdaq_SSTI,ShotSpotter,consultant,"['associate', 'consultant']",1310
+nasdaq_VECO,Veeco Instruments,consultant,"['associate', 'consultant']",1311
+nasdaq_MGIC,Magic Software Enterprises,consultant,"['associate', 'consultant']",1312
+nasdaq_CPSI,Computer Programs and Systems,consultant,"['associate', 'consultant']",1313
+nasdaq_RST,Rosetta Stone,consultant,"['associate', 'consultant']",1314
+nasdaq_UCTT,Ultra Clean,consultant,"['associate', 'consultant']",1315
+nasdaq_PHUN,Phunware,consultant,"['associate', 'consultant']",1316
+nasdaq_GTYH,GTY Technology,consultant,"['associate', 'consultant']",1317
+nasdaq_CYOU,Changyou.com Limited,consultant,"['associate', 'consultant']",1318
+nasdaq_CSLT,Castlight Health,consultant,"['associate', 'consultant']",1319
+nasdaq_SLP,Simulations Plus,consultant,"['associate', 'consultant']",1320
+nasdaq_MIXT,MiX Telematics Limited,consultant,"['associate', 'consultant']",1321
+nasdaq_MAXR,Maxar Technologies,consultant,"['associate', 'consultant']",1322
+nasdaq_KEYW,The KEYW,consultant,"['associate', 'consultant']",1323
+nasdaq_DQ,DAQO New Energy,consultant,"['associate', 'consultant']",1324
+nasdaq_GFN,General Finance,consultant,"['associate', 'consultant']",1325
+nasdaq_AGYS,Agilysys,consultant,"['associate', 'consultant']",1326
+nasdaq_ZIXI,Zix,consultant,"['associate', 'consultant']",1327
+nasdaq_NPTN,NeoPhotonics,consultant,"['associate', 'consultant']",1328
+nasdaq_MTLS,Materialise NV,consultant,"['associate', 'consultant']",1329
+nasdaq_AAOI,Applied Optoelectronics,consultant,"['associate', 'consultant']",1330
+nasdaq_AMSWA,American Software,consultant,"['associate', 'consultant']",1331
+nasdaq_DGII,Digi,consultant,"['associate', 'consultant']",1332
+nasdaq_CCRN,Cross Country Healthcare,consultant,"['associate', 'consultant']",1333
+nasdaq_ECOM ,ChannelAdvisor,consultant,"['associate', 'consultant']",1334
+nasdaq_AQ,Aquantia,consultant,"['associate', 'consultant']",1335
+nasdaq_CRNT,Ceragon Networks,consultant,"['associate', 'consultant']",1336
+nasdaq_PDFS,PDF Solutions,consultant,"['associate', 'consultant']",1337
+nasdaq_OOMA,Ooma,consultant,"['associate', 'consultant']",1338
+nasdaq_IMMR,Immersion,consultant,"['associate', 'consultant']",1339
+nasdaq_SNCR,Synchronoss Technologies,consultant,"['associate', 'consultant']",1340
+nasdaq_CDLX,Cardlytics,consultant,"['associate', 'consultant']",1341
+nasdaq_SRT,StarTek,consultant,"['associate', 'consultant']",1342
+nasdaq_DSPG,DSP,consultant,"['associate', 'consultant']",1343
+nasdaq_MJCO,Majesco,consultant,"['associate', 'consultant']",1344
+nasdaq_BCOV,Brightcove,consultant,"['associate', 'consultant']",1345
+nasdaq_AOSL,Alpha and Omega Semiconductor Limited,consultant,"['associate', 'consultant']",1346
+nasdaq_SILC,Silicom,consultant,"['associate', 'consultant']",1347
+nasdaq_GRNQ,Greenpro Capital,consultant,"['associate', 'consultant']",1348
+nasdaq_AMBR,Amber Road,consultant,"['associate', 'consultant']",1349
+nasdaq_TWIN,Twin Disc,consultant,"['associate', 'consultant']",1350
+nasdaq_BGSF,BG Staffing,consultant,"['associate', 'consultant']",1351
+nasdaq_MX,MagnaChip Semiconductor,consultant,"['associate', 'consultant']",1352
+nasdaq_DMRC,Digimarc,consultant,"['associate', 'consultant']",1353
+nasdaq_TEUM,Pareteum,consultant,"['associate', 'consultant']",1354
+nasdaq_ALLT,Allot,consultant,"['associate', 'consultant']",1355
+nasdaq_RUBI,The Rubicon Project,consultant,"['associate', 'consultant']",1356
+nasdaq_WATT,Energous,consultant,"['associate', 'consultant']",1357
+nasdaq_LEAF,Leaf,consultant,"['associate', 'consultant']",1358
+nasdaq_AVID,Avid Technology,consultant,"['associate', 'consultant']",1359
+nasdaq_KVHI,KVH Industries,consultant,"['associate', 'consultant']",1360
+nasdaq_TRVG,trivago N.V.,consultant,"['associate', 'consultant']",1361
+nasdaq_HIVE,Aerohive Networks,consultant,"['associate', 'consultant']",1362
+nasdaq_EGAN,eGain,consultant,"['associate', 'consultant']",1363
+nasdaq_SPA,Sparton,consultant,"['associate', 'consultant']",1364
+nasdaq_AXTI,AXT,consultant,"['associate', 'consultant']",1365
+nasdaq_MTC,MMTec,consultant,"['associate', 'consultant']",1366
+nasdaq_ACMR,ACM Research,consultant,"['associate', 'consultant']",1367
+nasdaq_INS,Intelligent Systems,consultant,"['associate', 'consultant']",1368
+nasdaq_FSNN,Fusion Connect,consultant,"['associate', 'consultant']",1369
+nasdaq_IOTS,Adesto Technologies,consultant,"['associate', 'consultant']",1370
+nasdaq_PCYG,Park City,consultant,"['associate', 'consultant']",1371
+nasdaq_GSIT,GSI Technology,consultant,"['associate', 'consultant']",1372
+nasdaq_BRQS,Borqs Technologies,consultant,"['associate', 'consultant']",1373
+nasdaq_CYRN,Cyren,consultant,"['associate', 'consultant']",1374
+nasdaq_ALYA,Alithya,consultant,"['associate', 'consultant']",1375
+nasdaq_MDCA,MDC Partners,consultant,"['associate', 'consultant']",1376
+nasdaq_VUZI,Vuzix,consultant,"['associate', 'consultant']",1377
+nasdaq_EVER,EverQuote,consultant,"['associate', 'consultant']",1378
+nasdaq_TLRA,Telaria,consultant,"['associate', 'consultant']",1379
+nasdaq_ALOT,AstroNova,consultant,"['associate', 'consultant']",1380
+nasdaq_MNTX,Manitex,consultant,"['associate', 'consultant']",1381
+nasdaq_XNET,Xunlei Limited,consultant,"['associate', 'consultant']",1382
+nasdaq_INAP,Internap,consultant,"['associate', 'consultant']",1383
+nasdaq_TZOO,Travelzoo,consultant,"['associate', 'consultant']",1384
+nasdaq_EMKR,Emcore,consultant,"['associate', 'consultant']",1385
+nasdaq_LIQT,LiqTech,consultant,"['associate', 'consultant']",1386
+nasdaq_PXLW,Pixelworks,consultant,"['associate', 'consultant']",1387
+nasdaq_INSE,Inspired Entertainment,consultant,"['associate', 'consultant']",1388
+nasdaq_IVAC,Intevac,consultant,"['associate', 'consultant']",1389
+nasdaq_SHSP,SharpSpring,consultant,"['associate', 'consultant']",1390
+nasdaq_SMTX,SMTC,consultant,"['associate', 'consultant']",1391
+nasdaq_RDCM,Radcom,consultant,"['associate', 'consultant']",1392
+nasdaq_PNTR,Pointer Telocation,consultant,"['associate', 'consultant']",1393
+nasdaq_RENN,Renren,consultant,"['associate', 'consultant']",1394
+nasdaq_RMBL,RumbleOn,consultant,"['associate', 'consultant']",1395
+nasdaq_AIRG,Airgain,consultant,"['associate', 'consultant']",1396
+nasdaq_RNWK,RealNetworks,consultant,"['associate', 'consultant']",1397
+nasdaq_MRAM,Everspin Technologies,consultant,"['associate', 'consultant']",1398
+nasdaq_KOPN,Kopin,consultant,"['associate', 'consultant']",1399
+nasdaq_MAMS,MAM Software,consultant,"['associate', 'consultant']",1400
+nasdaq_VERI,Veritone,consultant,"['associate', 'consultant']",1401
+nasdaq_SQNS,Sequans Communications S.A.,consultant,"['associate', 'consultant']",1402
+nasdaq_GEC,Great Elm Capital,consultant,"['associate', 'consultant']",1403
+nasdaq_ASUR,Asure Software,consultant,"['associate', 'consultant']",1404
+nasdaq_IMOS,ChipMOS TECHNOLOGIES,consultant,"['associate', 'consultant']",1405
+nasdaq_QUIK,QuickLogic,consultant,"['associate', 'consultant']",1406
+nasdaq_NTWK,NetSol Technologies,consultant,"['associate', 'consultant']",1407
+nasdaq_PCTI,PC-Tel,consultant,"['associate', 'consultant']",1408
+nasdaq_GSB,GlobalSCAPE,consultant,"['associate', 'consultant']",1409
+nasdaq_SGOC,Sgoco,consultant,"['associate', 'consultant']",1410
+nasdaq_NH,NantHealth,consultant,"['associate', 'consultant']",1411
+nasdaq_AWRE,Aware,consultant,"['associate', 'consultant']",1412
+nasdaq_LTRX,Lantronix,consultant,"['associate', 'consultant']",1413
+nasdaq_DTSS,Datasea,consultant,"['associate', 'consultant']",1414
+nasdaq_PERI,Perion Network,consultant,"['associate', 'consultant']",1415
+nasdaq_RDVT,Red Violet,consultant,"['associate', 'consultant']",1416
+nasdaq_AVNW,Aviat Networks,consultant,"['associate', 'consultant']",1417
+nasdaq_JG,Aurora Mobile Limited,consultant,"['associate', 'consultant']",1418
+nasdaq_MTEC,MTech Acquisition,consultant,"['associate', 'consultant']",1419
+nasdaq_CLPS,CLPS Incorporation,consultant,"['associate', 'consultant']",1420
+nasdaq_TACT,TransAct Technologies,consultant,"['associate', 'consultant']",1421
+nasdaq_INVE,Identiv,consultant,"['associate', 'consultant']",1422
+nasdaq_ASYS,Amtech Systems,consultant,"['associate', 'consultant']",1423
+nasdaq_VISI,Volt Information Sciences,consultant,"['associate', 'consultant']",1424
+nasdaq_SYNC,Synacor,consultant,"['associate', 'consultant']",1425
+nasdaq_IEC,IEC Electronics,consultant,"['associate', 'consultant']",1426
+nasdaq_CTG,Computer Task,consultant,"['associate', 'consultant']",1427
+nasdaq_KTCC,Key Tronic,consultant,"['associate', 'consultant']",1428
+nasdaq_DLHC,DLH,consultant,"['associate', 'consultant']",1429
+nasdaq_AEYE,AudioEye,consultant,"['associate', 'consultant']",1430
+nasdaq_SEAC,SeaChange,consultant,"['associate', 'consultant']",1431
+nasdaq_ICLK,iClick Interactive Asia Limited,consultant,"['associate', 'consultant']",1432
+nasdaq_WISA,Summit Wireless Technologies,consultant,"['associate', 'consultant']",1433
+nasdaq_IMI,Intermolecular,consultant,"['associate', 'consultant']",1434
+nasdaq_BKTI,BK Technologies,consultant,"['associate', 'consultant']",1435
+nasdaq_QTM,Quantum,consultant,"['associate', 'consultant']",1436
+nasdaq_SOL,Renesola,consultant,"['associate', 'consultant']",1437
+nasdaq_HQCL,Hanwha Q CELLS,consultant,"['associate', 'consultant']",1438
+nasdaq_SMSI,Smith Micro Software,consultant,"['associate', 'consultant']",1439
+nasdaq_MTBC,Medical Transcription Billing,consultant,"['associate', 'consultant']",1440
+nasdaq_OIIM,O2Micro Limited,consultant,"['associate', 'consultant']",1441
+nasdaq_GVP,GSE Systems,consultant,"['associate', 'consultant']",1442
+nasdaq_TAOP,Taoping,consultant,"['associate', 'consultant']",1443
+nasdaq_MNDO,Mind C.T.I.,consultant,"['associate', 'consultant']",1444
+nasdaq_RCMT,RCM Technologies,consultant,"['associate', 'consultant']",1445
+nasdaq_ATOM,Atomera,consultant,"['associate', 'consultant']",1446
+nasdaq_PIXY,ShiftPixy,consultant,"['associate', 'consultant']",1447
+nasdaq_SPRT,support.com,consultant,"['associate', 'consultant']",1448
+nasdaq_WSTG,Wayside Technology,consultant,"['associate', 'consultant']",1449
+nasdaq_MIND,Mitcham Industries,consultant,"['associate', 'consultant']",1450
+nasdaq_RESN,Resonant,consultant,"['associate', 'consultant']",1451
+nasdaq_HSON,Hudson Global,consultant,"['associate', 'consultant']",1452
+nasdaq_AUTO,AutoWeb,consultant,"['associate', 'consultant']",1453
+nasdaq_LPTH,LightPath Technologies,consultant,"['associate', 'consultant']",1454
+nasdaq_EMAN,eMagin,consultant,"['associate', 'consultant']",1455
+nasdaq_INOD,Innodata,consultant,"['associate', 'consultant']",1456
+nasdaq_CSPI,CSP,consultant,"['associate', 'consultant']",1457
+nasdaq_SIFY,Sify Technologies Limited,consultant,"['associate', 'consultant']",1458
+nasdaq_WYY,WidePoint,consultant,"['associate', 'consultant']",1459
+nasdaq_ISSC,Innovative Solutions and Support,consultant,"['associate', 'consultant']",1460
+nasdaq_IDN,Intellicheck,consultant,"['associate', 'consultant']",1461
+nasdaq_OSS,One Stop Systems,consultant,"['associate', 'consultant']",1462
+nasdaq_OTIV,On Track Innovations,consultant,"['associate', 'consultant']",1463
+nasdaq_MOXC,Moxian,consultant,"['associate', 'consultant']",1464
+nasdaq_GIGM,GigaMedia Limited,consultant,"['associate', 'consultant']",1465
+nasdaq_MRIN,Marin Software,consultant,"['associate', 'consultant']",1466
+nasdaq_DGLY,Digital Ally,consultant,"['associate', 'consultant']",1467
+nasdaq_CVR,Chicago Rivet & Machine,consultant,"['associate', 'consultant']",1468
+nasdaq_PFIN,P & F Industries,consultant,"['associate', 'consultant']",1469
+nasdaq_CNET,ChinaNet Online,consultant,"['associate', 'consultant']",1470
+nasdaq_CCIH,ChinaCache,consultant,"['associate', 'consultant']",1471
+nasdaq_MYSZ,My Size,consultant,"['associate', 'consultant']",1472
+nasdaq_MNGA,MagneGas Applied Technology Solutions,consultant,"['associate', 'consultant']",1473
+nasdaq_CVV,CVD Equipment,consultant,"['associate', 'consultant']",1474
+nasdaq_ZDGE,Zedge,consultant,"['associate', 'consultant']",1475
+nasdaq_NETE,Net Element,consultant,"['associate', 'consultant']",1476
+nasdaq_SRAX,Social Reality,consultant,"['associate', 'consultant']",1477
+nasdaq_GSUM,Gridsum,consultant,"['associate', 'consultant']",1478
+nasdaq_QRHC,Quest Resource,consultant,"['associate', 'consultant']",1479
+nasdaq_SPCB,SuperCom,consultant,"['associate', 'consultant']",1480
+nasdaq_RBCN,Rubicon Technology,consultant,"['associate', 'consultant']",1481
+nasdaq_STRM,Streamline Health Solutions,consultant,"['associate', 'consultant']",1482
+nasdaq_QUMU,Qumu,consultant,"['associate', 'consultant']",1483
+nasdaq_CCNI,Command Center,consultant,"['associate', 'consultant']",1484
+nasdaq_HHS,Harte-Hanks,consultant,"['associate', 'consultant']",1485
+nasdaq_IIJI,Internet Initiative Japan,consultant,"['associate', 'consultant']",1486
+nasdaq_IPAS,iPass,consultant,"['associate', 'consultant']",1487
+nasdaq_AMCN,AirMedia,consultant,"['associate', 'consultant']",1488
+nasdaq_EVOL,Evolving Systems,consultant,"['associate', 'consultant']",1489
+nasdaq_ACY,AeroCentury,consultant,"['associate', 'consultant']",1490
+nasdaq_LINK,Interlink Electronics,consultant,"['associate', 'consultant']",1491
+nasdaq_FPAY,FlexShopper,consultant,"['associate', 'consultant']",1492
+nasdaq_SCKT,Socket Mobile,consultant,"['associate', 'consultant']",1493
+nasdaq_QBAK,Qualstar,consultant,"['associate', 'consultant']",1494
+nasdaq_SGMA,SigmaTron,consultant,"['associate', 'consultant']",1495
+nasdaq_BKYI,BIO-key,consultant,"['associate', 'consultant']",1496
+nasdaq_JOB,GEE,consultant,"['associate', 'consultant']",1497
+nasdaq_NNDM,Nano Dimension,consultant,"['associate', 'consultant']",1498
+nasdaq_TRT,Trio-Tech,consultant,"['associate', 'consultant']",1499
+nasdaq_BDR,Blonder Tongue Laboratories,consultant,"['associate', 'consultant']",1500
+nasdaq_LEDS,SemiLEDS,consultant,"['associate', 'consultant']",1501
+nasdaq_TSRI,TSR,consultant,"['associate', 'consultant']",1502
+nasdaq_STAF,Staffing 360 Solutions,consultant,"['associate', 'consultant']",1503
+nasdaq_AMRH,Ameri,consultant,"['associate', 'consultant']",1504
+nasdaq_TISA,Top Image Systems,consultant,"['associate', 'consultant']",1505
+nasdaq_CPAH,CounterPath,consultant,"['associate', 'consultant']",1506
+nasdaq_BOSC,B.O.S. Better Online Solutions,consultant,"['associate', 'consultant']",1507
+nasdaq_BVSN,BroadVision,consultant,"['associate', 'consultant']",1508
+nasdaq_MOSY,MoSys,consultant,"['associate', 'consultant']",1509
+nasdaq_CREX,Creative Realities,consultant,"['associate', 'consultant']",1510
+nasdaq_ANY,Sphere 3D,consultant,"['associate', 'consultant']",1511
+nasdaq_IPDN,Professional Diversity Network,consultant,"['associate', 'consultant']",1512
+nasdaq_SPI,SPI Energy,consultant,"['associate', 'consultant']",1513
+nasdaq_FORTY,Formula Systems,consultant,"['associate', 'consultant']",1514
+nasdaq_INPX,Inpixon,consultant,"['associate', 'consultant']",1515
+nasdaq_ELTK,Eltek,consultant,"['associate', 'consultant']",1516
+nasdaq_TCCO,Technical Communications,consultant,"['associate', 'consultant']",1517
+nasdaq_SCON,Superconductor Technologies,consultant,"['associate', 'consultant']",1518
+nasdaq_BLIN ,Bridgeline Digital,consultant,"['associate', 'consultant']",1519
+nasdaq_FRSX,Foresight Autonomous,consultant,"['associate', 'consultant']",1520
+nasdaq_JMU,JMU Limited,consultant,"['associate', 'consultant']",1521
+nasdaq_SFET,Safe-T,consultant,"['associate', 'consultant']",1522
+glassdoor_0,Heap,consultant,"['associate', 'consultant']",1523
+glassdoor_1,Horizon Innovations,consultant,"['associate', 'consultant']",1524
+glassdoor_2,Silverline,consultant,"['associate', 'consultant']",1525
+glassdoor_3,Marketing 360,consultant,"['associate', 'consultant']",1526
+glassdoor_4,Digital Prospectors,consultant,"['associate', 'consultant']",1527
+glassdoor_5,GetUWired,consultant,"['associate', 'consultant']",1528
+glassdoor_6,Weave,consultant,"['associate', 'consultant']",1529
+glassdoor_7,Malouf,consultant,"['associate', 'consultant']",1530
+glassdoor_8,Highspot,consultant,"['associate', 'consultant']",1531
+glassdoor_9,Peabody Properties,consultant,"['associate', 'consultant']",1532
+glassdoor_10,South Carolina Federal Credit Union,consultant,"['associate', 'consultant']",1533
+glassdoor_11,driversselect,consultant,"['associate', 'consultant']",1534
+glassdoor_12,Disruptive Advertising,consultant,"['associate', 'consultant']",1535
+glassdoor_13,New Western,consultant,"['associate', 'consultant']",1536
+glassdoor_14,NetWorth Realty,consultant,"['associate', 'consultant']",1537
+glassdoor_15,iCIMS,consultant,"['associate', 'consultant']",1538
+glassdoor_16,Sundance Vacations,consultant,"['associate', 'consultant']",1539
+glassdoor_17,Grand Rounds,consultant,"['associate', 'consultant']",1540
+glassdoor_18,Pariveda Solutions,consultant,"['associate', 'consultant']",1541
+glassdoor_19,nbkc bank,consultant,"['associate', 'consultant']",1542
+glassdoor_20,G-TECH Services,consultant,"['associate', 'consultant']",1543
+glassdoor_21,The Predictive Index,consultant,"['associate', 'consultant']",1544
+glassdoor_22,Acceleration Partners,consultant,"['associate', 'consultant']",1545
+glassdoor_23,Bombas,consultant,"['associate', 'consultant']",1546
+glassdoor_24,Front,consultant,"['associate', 'consultant']",1547
+glassdoor_25,23andMe,consultant,"['associate', 'consultant']",1548
+glassdoor_26,Optima Tax Relief,consultant,"['associate', 'consultant']",1549
+glassdoor_27,OppLoans,consultant,"['associate', 'consultant']",1550
+glassdoor_28,Common Thread Collective,consultant,"['associate', 'consultant']",1551
+glassdoor_29,Life.Church,consultant,"['associate', 'consultant']",1552
+glassdoor_30,CarSense,consultant,"['associate', 'consultant']",1553
+glassdoor_31,Best Version Media,consultant,"['associate', 'consultant']",1554
+glassdoor_32,KeepTruckin,consultant,"['associate', 'consultant']",1555
+glassdoor_33,vCom Solutions,consultant,"['associate', 'consultant']",1556
+glassdoor_34,WillowTree,consultant,"['associate', 'consultant']",1557
+glassdoor_35,Emser Tile,consultant,"['associate', 'consultant']",1558
+glassdoor_36,Greenhouse Software,consultant,"['associate', 'consultant']",1559
+glassdoor_37,Thrive Mortgage,consultant,"['associate', 'consultant']",1560
+glassdoor_38,Spreetail,consultant,"['associate', 'consultant']",1561
+glassdoor_39,Towne Properties,consultant,"['associate', 'consultant']",1562
+glassdoor_40,Sage Intacct,consultant,"['associate', 'consultant']",1563
+glassdoor_41,Glint,consultant,"['associate', 'consultant']",1564
+glassdoor_42,Healthy Spot,consultant,"['associate', 'consultant']",1565
+glassdoor_43,Thomas J. Henry Injury Attorneys,consultant,"['associate', 'consultant']",1566
+glassdoor_44,Moogsoft,consultant,"['associate', 'consultant']",1567
+glassdoor_45,Berkshire,consultant,"['associate', 'consultant']",1568
+glassdoor_46,Indigo,consultant,"['associate', 'consultant']",1569
+glassdoor_47,Corporate Brokers,consultant,"['associate', 'consultant']",1570
+glassdoor_48,eXp Realty,consultant,"['associate', 'consultant']",1571
+glassdoor_51,Zoom Video Communications,consultant,"['associate', 'consultant']",1572
+glassdoor_52,In-N-Out Burger,consultant,"['associate', 'consultant']",1573
+glassdoor_53,Procore Technologies,consultant,"['associate', 'consultant']",1574
+glassdoor_54,Boston Consulting,consultant,"['associate', 'consultant']",1575
+glassdoor_55,LinkedIn,consultant,"['associate', 'consultant']",1576
+glassdoor_57,Google,consultant,"['associate', 'consultant']",1577
+glassdoor_58,lululemon,consultant,"['associate', 'consultant']",1578
+glassdoor_60,Salesforce,consultant,"['associate', 'consultant']",1579
+glassdoor_62,St. Jude Children's Research Hospital,consultant,"['associate', 'consultant']",1580
+glassdoor_63,Slalom,consultant,"['associate', 'consultant']",1581
+glassdoor_64,Power Home Remodeling,consultant,"['associate', 'consultant']",1582
+glassdoor_67,Ultimate Software,consultant,"['associate', 'consultant']",1583
+glassdoor_70,Ryan,consultant,"['associate', 'consultant']",1584
+glassdoor_71,Sammons Financial,consultant,"['associate', 'consultant']",1585
+glassdoor_72,Trader Joe's,consultant,"['associate', 'consultant']",1586
+glassdoor_73,Lawrence Livermore National Laboratory,consultant,"['associate', 'consultant']",1587
+glassdoor_74,Smile Brands,consultant,"['associate', 'consultant']",1588
+glassdoor_75,Fast Enterprises,consultant,"['associate', 'consultant']",1589
+glassdoor_76,SAP,consultant,"['associate', 'consultant']",1590
+glassdoor_78,Navy Federal Credit Union,consultant,"['associate', 'consultant']",1591
+glassdoor_80,H E B,consultant,"['associate', 'consultant']",1592
+glassdoor_81,Compass,consultant,"['associate', 'consultant']",1593
+glassdoor_84,Trilogy Health Services,consultant,"['associate', 'consultant']",1594
+glassdoor_86,E. & J. Gallo Winery,consultant,"['associate', 'consultant']",1595
+glassdoor_88,NIH,consultant,"['associate', 'consultant']",1596
+glassdoor_89,TaskUs,consultant,"['associate', 'consultant']",1597
+glassdoor_90,Cengage,consultant,"['associate', 'consultant']",1598
+glassdoor_91,Blizzard Entertainment,consultant,"['associate', 'consultant']",1599
+glassdoor_93,Kronos,consultant,"['associate', 'consultant']",1600
+glassdoor_94,Nebraska Furniture Mart,consultant,"['associate', 'consultant']",1601
+glassdoor_95,Wegmans Food Markets,consultant,"['associate', 'consultant']",1602
+glassdoor_96,The Clorox Company,consultant,"['associate', 'consultant']",1603
+glassdoor_97,SpaceX,consultant,"['associate', 'consultant']",1604
+glassdoor_100,VMware,consultant,"['associate', 'consultant']",1605
+glassdoor_101,Northside Hospital,consultant,"['associate', 'consultant']",1606
+glassdoor_102,Vi,consultant,"['associate', 'consultant']",1607
+glassdoor_103,ABC Supply Co,consultant,"['associate', 'consultant']",1608
+glassdoor_106,Keller Williams,consultant,"['associate', 'consultant']",1609
+glassdoor_107,AppDynamics,consultant,"['associate', 'consultant']",1610
+glassdoor_108,T-Mobile,consultant,"['associate', 'consultant']",1611
+glassdoor_109,Rose,consultant,"['associate', 'consultant']",1612
+glassdoor_110,Hilti North America,consultant,"['associate', 'consultant']",1613
+glassdoor_111,Paycom,consultant,"['associate', 'consultant']",1614
+glassdoor_112,John Deere,consultant,"['associate', 'consultant']",1615
+glassdoor_113,NewYork-Presbyterian Hospital,consultant,"['associate', 'consultant']",1616
+glassdoor_115,Memorial Sloan Kettering,consultant,"['associate', 'consultant']",1617
+glassdoor_116,Vipkid,consultant,"['associate', 'consultant']",1618
+glassdoor_117,MD Anderson Cancer Center,consultant,"['associate', 'consultant']",1619
+glassdoor_121,Omni Hotels,consultant,"['associate', 'consultant']",1620
+glassdoor_122,BAYADA Home Health Care,consultant,"['associate', 'consultant']",1621
+glassdoor_123,Aptive Environmental,consultant,"['associate', 'consultant']",1622
+glassdoor_125,Kimpton Hotels & Restaurants,consultant,"['associate', 'consultant']",1623
+glassdoor_127,Great Lakes Caring,consultant,"['associate', 'consultant']",1624
+glassdoor_128,Costco Wholesale,consultant,"['associate', 'consultant']",1625
+glassdoor_130,Discount Tire,consultant,"['associate', 'consultant']",1626
+glassdoor_132,Phoenix Children's Hospital,consultant,"['associate', 'consultant']",1627
+glassdoor_133,Massachusetts General Hospital,consultant,"['associate', 'consultant']",1628
+glassdoor_134,FedEx Freight,consultant,"['associate', 'consultant']",1629
+glassdoor_135,Edward Jones,consultant,"['associate', 'consultant']",1630
+glassdoor_138,Texas Health Resources,consultant,"['associate', 'consultant']",1631
+glassdoor_139,Sport Clips,consultant,"['associate', 'consultant']",1632
+glassdoor_140,Gensler,consultant,"['associate', 'consultant']",1633
+glassdoor_142,BOK Financial,consultant,"['associate', 'consultant']",1634
+glassdoor_145,Raising Cane's,consultant,"['associate', 'consultant']",1635
+glassdoor_146,FLIK Hospitality,consultant,"['associate', 'consultant']",1636
+glassdoor_147,Kaiser Permanente,consultant,"['associate', 'consultant']",1637
+glassdoor_148,World Wide Technology,consultant,"['associate', 'consultant']",1638
+forbes_0,Stripe,consultant,"['associate', 'consultant']",1639
+forbes_1,Slack,consultant,"['associate', 'consultant']",1640
+forbes_3,Tanium,consultant,"['associate', 'consultant']",1641
+forbes_5,CrowdStrike,consultant,"['associate', 'consultant']",1642
+forbes_6,Qualtrics,consultant,"['associate', 'consultant']",1643
+forbes_7,Squarespace,consultant,"['associate', 'consultant']",1644
+forbes_8,Elastic,consultant,"['associate', 'consultant']",1645
+forbes_10,Mailchimp,consultant,"['associate', 'consultant']",1646
+forbes_11,Cloudflare,consultant,"['associate', 'consultant']",1647
+forbes_12,SurveyMonkey,consultant,"['associate', 'consultant']",1648
+forbes_13,UiPath,consultant,"['associate', 'consultant']",1649
+forbes_14,Medallia,consultant,"['associate', 'consultant']",1650
+forbes_15,PagerDuty,consultant,"['associate', 'consultant']",1651
+forbes_16,Snowflake,consultant,"['associate', 'consultant']",1652
+forbes_17,Cylance,consultant,"['associate', 'consultant']",1653
+forbes_18,Datadog,consultant,"['associate', 'consultant']",1654
+forbes_19,Intercom,consultant,"['associate', 'consultant']",1655
+forbes_20,Rubrik,consultant,"['associate', 'consultant']",1656
+forbes_21,Yardi,consultant,"['associate', 'consultant']",1657
+forbes_22,InVision,consultant,"['associate', 'consultant']",1658
+forbes_23,nCino,consultant,"['associate', 'consultant']",1659
+forbes_24,AppDirect,consultant,"['associate', 'consultant']",1660
+forbes_25,Sprinklr,consultant,"['associate', 'consultant']",1661
+forbes_26,Apttus,consultant,"['associate', 'consultant']",1662
+forbes_28,Toast,consultant,"['associate', 'consultant']",1663
+forbes_29,Veeam,consultant,"['associate', 'consultant']",1664
+forbes_30,Confluent,consultant,"['associate', 'consultant']",1665
+forbes_31,HashiCorp,consultant,"['associate', 'consultant']",1666
+forbes_32,Gusto,consultant,"['associate', 'consultant']",1667
+forbes_33,Looker,consultant,"['associate', 'consultant']",1668
+forbes_34,Databricks,consultant,"['associate', 'consultant']",1669
+forbes_35,Darktrace,consultant,"['associate', 'consultant']",1670
+forbes_36,Uptake,consultant,"['associate', 'consultant']",1671
+forbes_37,Automation Anywhere,consultant,"['associate', 'consultant']",1672
+forbes_38,Automattic,consultant,"['associate', 'consultant']",1673
+forbes_39,PointClickCare,consultant,"['associate', 'consultant']",1674
+forbes_40,Sisense,consultant,"['associate', 'consultant']",1675
+forbes_41,AvidXchange,consultant,"['associate', 'consultant']",1676
+forbes_42,Vlocity,consultant,"['associate', 'consultant']",1677
+forbes_43,Lookout,consultant,"['associate', 'consultant']",1678
+forbes_44,Canva,consultant,"['associate', 'consultant']",1679
+forbes_45,ServiceTitan,consultant,"['associate', 'consultant']",1680
+forbes_46,Checkr,consultant,"['associate', 'consultant']",1681
+forbes_47,WalkMe,consultant,"['associate', 'consultant']",1682
+forbes_48,Acquia,consultant,"['associate', 'consultant']",1683
+forbes_49,Gainsight,consultant,"['associate', 'consultant']",1684
+forbes_50,Turbonomic,consultant,"['associate', 'consultant']",1685
+forbes_51,DataStax,consultant,"['associate', 'consultant']",1686
+forbes_52,Segment,consultant,"['associate', 'consultant']",1687
+forbes_54,SMS Assist,consultant,"['associate', 'consultant']",1688
+forbes_55,Fastly,consultant,"['associate', 'consultant']",1689
+forbes_56,Zapier,consultant,"['associate', 'consultant']",1690
+forbes_57,Welltok,consultant,"['associate', 'consultant']",1691
+forbes_58,Dataminr,consultant,"['associate', 'consultant']",1692
+forbes_59,Freshworks,consultant,"['associate', 'consultant']",1693
+forbes_60,ThoughtSpot,consultant,"['associate', 'consultant']",1694
+forbes_61,Workfront,consultant,"['associate', 'consultant']",1695
+forbes_62,Asana,consultant,"['associate', 'consultant']",1696
+forbes_63,FinancialForce,consultant,"['associate', 'consultant']",1697
+forbes_64,Fuze,consultant,"['associate', 'consultant']",1698
+forbes_65,Optimizely,consultant,"['associate', 'consultant']",1699
+forbes_66,BrowserStack,consultant,"['associate', 'consultant']",1700
+forbes_67,Auth0,consultant,"['associate', 'consultant']",1701
+forbes_68,Illumio,consultant,"['associate', 'consultant']",1702
+forbes_69,Hootsuite,consultant,"['associate', 'consultant']",1703
+forbes_70,Health Catalyst,consultant,"['associate', 'consultant']",1704
+forbes_71,iCims,consultant,"['associate', 'consultant']",1705
+forbes_72,DigitalOcean,consultant,"['associate', 'consultant']",1706
+forbes_73,JFrog,consultant,"['associate', 'consultant']",1707
+forbes_74,American Well,consultant,"['associate', 'consultant']",1708
+forbes_75,C3 IoT,consultant,"['associate', 'consultant']",1709
+forbes_76,NewVoiceMedia,consultant,"['associate', 'consultant']",1710
+forbes_77,ZipRecruiter,consultant,"['associate', 'consultant']",1711
+forbes_78,Onshape,consultant,"['associate', 'consultant']",1712
+forbes_79,Collibra,consultant,"['associate', 'consultant']",1713
+forbes_80,Airtable,consultant,"['associate', 'consultant']",1714
+forbes_81,Evernote,consultant,"['associate', 'consultant']",1715
+forbes_83,Pipedrive,consultant,"['associate', 'consultant']",1716
+forbes_84,Braze,consultant,"['associate', 'consultant']",1717
+forbes_85,Algolia,consultant,"['associate', 'consultant']",1718
+forbes_86,Sumo Logic,consultant,"['associate', 'consultant']",1719
+forbes_87,Carta,consultant,"['associate', 'consultant']",1720
+forbes_88,Netskope,consultant,"['associate', 'consultant']",1721
+forbes_89,Pindrop Security,consultant,"['associate', 'consultant']",1722
+forbes_90,Drift,consultant,"['associate', 'consultant']",1723
+forbes_91,Outreach,consultant,"['associate', 'consultant']",1724
+forbes_92,Podium,consultant,"['associate', 'consultant']",1725
+forbes_93,Exabeam,consultant,"['associate', 'consultant']",1726
+forbes_94,Cloudinary,consultant,"['associate', 'consultant']",1727
+forbes_95,Namely,consultant,"['associate', 'consultant']",1728
+forbes_96,Endgame,consultant,"['associate', 'consultant']",1729
+forbes_98,Dialpad,consultant,"['associate', 'consultant']",1730
+forbes_99,Pendo,consultant,"['associate', 'consultant']",1731
+cnbc_1,Uber,consultant,"['associate', 'consultant']",1732
+cnbc_2,Airbnb,consultant,"['associate', 'consultant']",1733
+cnbc_3,Didi Chuxing,consultant,"['associate', 'consultant']",1734
+cnbc_4,Lyft,consultant,"['associate', 'consultant']",1735
+cnbc_5,Grab,consultant,"['associate', 'consultant']",1736
+cnbc_7,Udacity,consultant,"['associate', 'consultant']",1737
+cnbc_8,Rent the Runway,consultant,"['associate', 'consultant']",1738
+cnbc_9,Coinbase,consultant,"['associate', 'consultant']",1739
+cnbc_10,TransferWise,consultant,"['associate', 'consultant']",1740
+cnbc_11,Oscar Health,consultant,"['associate', 'consultant']",1741
+cnbc_12,Payoneer,consultant,"['associate', 'consultant']",1742
+cnbc_14,Progyny,consultant,"['associate', 'consultant']",1743
+cnbc_15,Adyen,consultant,"['associate', 'consultant']",1744
+cnbc_16,TheRealReal,consultant,"['associate', 'consultant']",1745
+cnbc_17,Indigo Agriculture,consultant,"['associate', 'consultant']",1746
+cnbc_18,Ezetap,consultant,"['associate', 'consultant']",1747
+cnbc_19,Peloton,consultant,"['associate', 'consultant']",1748
+cnbc_20,Ginkgo Bioworks,consultant,"['associate', 'consultant']",1749
+cnbc_21,Lisnr,consultant,"['associate', 'consultant']",1750
+cnbc_22,WeWork,consultant,"['associate', 'consultant']",1751
+cnbc_23,Ellevest,consultant,"['associate', 'consultant']",1752
+cnbc_24,Zipline,consultant,"['associate', 'consultant']",1753
+cnbc_25,LanzaTech,consultant,"['associate', 'consultant']",1754
+cnbc_26,Crowdstrike,consultant,"['associate', 'consultant']",1755
+cnbc_27,Xiaomi,consultant,"['associate', 'consultant']",1756
+cnbc_28,Flirtey,consultant,"['associate', 'consultant']",1757
+cnbc_29,Veritas Genetics,consultant,"['associate', 'consultant']",1758
+cnbc_30,Houzz,consultant,"['associate', 'consultant']",1759
+cnbc_32,Palantir Technologies,consultant,"['associate', 'consultant']",1760
+cnbc_34,Duolingo,consultant,"['associate', 'consultant']",1761
+cnbc_35,Pinterest,consultant,"['associate', 'consultant']",1762
+cnbc_36,Thinx,consultant,"['associate', 'consultant']",1763
+cnbc_37,Robinhood,consultant,"['associate', 'consultant']",1764
+cnbc_39,Drawbridge,consultant,"['associate', 'consultant']",1765
+cnbc_40,InMobi,consultant,"['associate', 'consultant']",1766
+cnbc_41,Coursera,consultant,"['associate', 'consultant']",1767
+cnbc_44,Fanatics,consultant,"['associate', 'consultant']",1768
+cnbc_45,Auris Health,consultant,"['associate', 'consultant']",1769
+cnbc_46,Luminar,consultant,"['associate', 'consultant']",1770
+cnbc_47,Apeel Sciences,consultant,"['associate', 'consultant']",1771
+cnbc_48,GitHub,consultant,"['associate', 'consultant']",1772
+cnbc_49,SoFi,consultant,"['associate', 'consultant']",1773
+bi_0,Credit Karma,consultant,"['associate', 'consultant']",1774
+bi_1,Wish,consultant,"['associate', 'consultant']",1775
+bi_3,DoorDash,consultant,"['associate', 'consultant']",1776
+bi_5,Intarcia Therapeutics,consultant,"['associate', 'consultant']",1777
+bi_9,Machine Zone,consultant,"['associate', 'consultant']",1778
+bi_11,Magic Leap,consultant,"['associate', 'consultant']",1779
+bi_13,Moderna Therapeutics,consultant,"['associate', 'consultant']",1780
+bi_15,Instacart,consultant,"['associate', 'consultant']",1781
+bi_17,Samumed,consultant,"['associate', 'consultant']",1782
+bi_20,Palantir,consultant,"['associate', 'consultant']",1783
+hedge_0,Bridgewater Associates,mba,"['business analyst', 'financial analyst', 'project manager']",1784
+hedge_1,AQR Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1785
+hedge_2,J.P. Morgan Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1786
+hedge_3,Renaissance Technologies,mba,"['business analyst', 'financial analyst', 'project manager']",1787
+hedge_4,Two Sigma,mba,"['business analyst', 'financial analyst', 'project manager']",1788
+hedge_5,D. E. Shaw & Co,mba,"['business analyst', 'financial analyst', 'project manager']",1789
+hedge_6,Millennium Management,mba,"['business analyst', 'financial analyst', 'project manager']",1790
+hedge_7,Man,mba,"['business analyst', 'financial analyst', 'project manager']",1791
+hedge_8,Och-Ziff Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1792
+hedge_9,Winton,mba,"['business analyst', 'financial analyst', 'project manager']",1793
+hedge_10,Elliott Management,mba,"['business analyst', 'financial analyst', 'project manager']",1794
+hedge_11,Baupost,mba,"['business analyst', 'financial analyst', 'project manager']",1795
+hedge_12,Adage Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1796
+hedge_13,Viking Global Investors,mba,"['business analyst', 'financial analyst', 'project manager']",1797
+hedge_15,Davidson Kempner Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1798
+hedge_16,Citadel,mba,"['business analyst', 'financial analyst', 'project manager']",1799
+hedge_17,Marshall Wace,mba,"['business analyst', 'financial analyst', 'project manager']",1800
+hedge_18,Lone Pine Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1801
+hedge_19,Credit Suisse Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1802
+hedge_20,Farallon Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1803
+hedge_21,GAM,mba,"['business analyst', 'financial analyst', 'project manager']",1804
+hedge_22,King Street Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1805
+hedge_23,Platinum Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1806
+hedge_24,Hillhouse Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1807
+hedge_25,ValueAct Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1808
+hedge_26,Pacific Investment Management Co,mba,"['business analyst', 'financial analyst', 'project manager']",1809
+hedge_27,Anchorage Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1810
+hedge_28,York Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1811
+hedge_29,Appaloosa Management,mba,"['business analyst', 'financial analyst', 'project manager']",1812
+hedge_30,Canyon Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1813
+hedge_31,Third Point,mba,"['business analyst', 'financial analyst', 'project manager']",1814
+hedge_32,Egerton Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1815
+hedge_33,Brevan Howard Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1816
+hedge_34,Centerbridge Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1817
+hedge_35,BlueMountain Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1818
+hedge_36,Cevian Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1819
+hedge_37,Brummer & Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1820
+hedge_38,Wellington Alternative Investments,mba,"['business analyst', 'financial analyst', 'project manager']",1821
+hedge_39,Moore Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1822
+hedge_40,Fortress Investment,mba,"['business analyst', 'financial analyst', 'project manager']",1823
+hedge_41,Trian Fund Management,mba,"['business analyst', 'financial analyst', 'project manager']",1824
+hedge_42,Value Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1825
+hedge_43,Goldman Sachs Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1826
+hedge_44,Graham Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1827
+hedge_45,Capula Investment Management,mba,"['business analyst', 'financial analyst', 'project manager']",1828
+hedge_46,TCI Fund Management,mba,"['business analyst', 'financial analyst', 'project manager']",1829
+hedge_47,Balyasny Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1830
+hedge_48,Henderson AlphaGen,mba,"['business analyst', 'financial analyst', 'project manager']",1831
+hedge_49,Highfields Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1832
+hedge_50,CQS,mba,"['business analyst', 'financial analyst', 'project manager']",1833
+hedge_51,GoldenTree Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1834
+hedge_52,GSO Capital Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1835
+hedge_53,Pershing Square Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1836
+hedge_54,Beach Point Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1837
+hedge_55,Angelo Gordon & Co,mba,"['business analyst', 'financial analyst', 'project manager']",1838
+hedge_56,Lansdowne Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1839
+hedge_57,Bracebridge Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1840
+hedge_58,Discovery Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1841
+hedge_59,PointState Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1842
+hedge_60,Magnetar Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1843
+hedge_61,Nephila Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1844
+hedge_62,CarVal Investors,mba,"['business analyst', 'financial analyst', 'project manager']",1845
+hedge_63,HBK Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1846
+hedge_64,Tudor Investment,mba,"['business analyst', 'financial analyst', 'project manager']",1847
+hedge_65,Fir Tree Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1848
+hedge_66,Carlson Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1849
+hedge_67,Glenview Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1850
+hedge_68,Paulson & Co,mba,"['business analyst', 'financial analyst', 'project manager']",1851
+hedge_69,Tiger Global Management,mba,"['business analyst', 'financial analyst', 'project manager']",1852
+hedge_70,Marathon Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1853
+hedge_71,Soroban Capital Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1854
+hedge_72,Element Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1855
+hedge_73,Maverick Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1856
+hedge_74,Coatue Management,mba,"['business analyst', 'financial analyst', 'project manager']",1857
+hedge_75,Grantham Mayo Van Otterloo,mba,"['business analyst', 'financial analyst', 'project manager']",1858
+hedge_76,Cerberus Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1859
+hedge_77,Senator Investment,mba,"['business analyst', 'financial analyst', 'project manager']",1860
+hedge_78,Systematica Investments,mba,"['business analyst', 'financial analyst', 'project manager']",1861
+hedge_79,Greenlight Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1862
+hedge_80,Caxton Associates,mba,"['business analyst', 'financial analyst', 'project manager']",1863
+hedge_81,Lazard Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1864
+hedge_82,Candriam Investors,mba,"['business analyst', 'financial analyst', 'project manager']",1865
+hedge_83,Pictet Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1866
+hedge_84,Silver Point Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1867
+hedge_85,Odey Asset Management,mba,"['business analyst', 'financial analyst', 'project manager']",1868
+hedge_86,Capital Fund Management,mba,"['business analyst', 'financial analyst', 'project manager']",1869
+hedge_87,Eton Park Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1870
+hedge_88,Blue Ridge Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1871
+hedge_89,GSA Capital Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1872
+hedge_90,Eminence Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1873
+hedge_91,Pine River Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1874
+hedge_92,MKP Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1875
+hedge_93,Taconic Capital Advisors,mba,"['business analyst', 'financial analyst', 'project manager']",1876
+hedge_94,Arrowgrass Capital Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1877
+hedge_95,JANA Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1878
+hedge_96,Scopia Capital,mba,"['business analyst', 'financial analyst', 'project manager']",1879
+hedge_97,Redwood Capital Management,mba,"['business analyst', 'financial analyst', 'project manager']",1880
+hedge_98,Dymon Asia,mba,"['business analyst', 'financial analyst', 'project manager']",1881
+hedge_99,Indus Capital Partners,mba,"['business analyst', 'financial analyst', 'project manager']",1882
+hedge_100,Paloma,mba,"['business analyst', 'financial analyst', 'project manager']",1883
+vault_0,Cravath Swaine & Moore,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1884
+vault_1,Wachtell Lipton Rosen & Katz,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1885
+vault_2,Skadden Arps Slate Meagher & Flom and Affiliates,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1886
+vault_3,Sullivan & Cromwell,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1887
+vault_4,Latham & Watkins,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1888
+vault_5,Davis Polk & Wardwell,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1889
+vault_6,Simpson Thacher & Bartlett,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1890
+vault_7,Kirkland & Ellis,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1891
+vault_8,Gibson Dunn & Crutcher,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1892
+vault_9,Paul Weiss Rifkind Wharton & Garrison,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1893
+vault_10,Weil Gotshal & Manges,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1894
+vault_11,Quinn Emanuel Urquhart & Sullivan,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1895
+vault_12,Sidley Austin,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1896
+vault_13,Cleary Gottlieb Steen & Hamilton,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1897
+vault_14,Covington & Burling,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1898
+vault_15,Jones Day,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1899
+vault_16,Williams & Connolly,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1900
+vault_17,Debevoise & Plimpton,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1901
+vault_18,White & Case,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1902
+vault_19,WilmerHale,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1903
+vault_20,Ropes & Gray,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1904
+vault_21,Paul Hastings,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1905
+vault_22,Boies Schiller Flexner,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1906
+vault_23,Morrison & Foerster,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1907
+vault_24,Hogan Lovells US,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1908
+vault_25,O'Melveny & Myers,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1909
+vault_26,Cooley,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1910
+vault_27,Proskauer Rose,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1911
+vault_28,Akin Gump Strauss Hauer & Feld,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1912
+vault_29,Arnold & Porter Kaye Scholer,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1913
+vault_30,Baker McKenzie,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1914
+vault_31,Mayer Brown,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1915
+vault_32,DLA Piper,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1916
+vault_33,K&L Gates,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1917
+vault_34,Clifford Chance US,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1918
+vault_35,Linklaters,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1919
+vault_36,Munger Tolles & Olson,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1920
+vault_37,Orrick Herrington & Sutcliffe,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1921
+vault_38,Wilson Sonsini Goodrich & Rosati,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1922
+vault_39,Milbank Tweed Hadley & McCloy,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1923
+vault_40,Shearman & Sterling,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1924
+vault_41,Morgan Lewis & Bockius,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1925
+vault_42,King & Spalding,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1926
+vault_43,Baker Botts,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1927
+vault_44,Goodwin Procter,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1928
+vault_45,Allen & Overy,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1929
+vault_46,Winston & Strawn,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1930
+vault_47,Cadwalader Wickersham & Taft,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1931
+vault_48,Fried Frank Harris Shriver & Jacobson,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1932
+vault_49,Perkins Coie,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1933
+vault_50,Willkie Farr & Gallagher,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1934
+vault_51,Dechert,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1935
+vault_52,Greenberg Traurig,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1936
+vault_53,Alston & Bird,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1937
+vault_54,Jenner & Block,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1938
+vault_55,Freshfields Bruckhaus Deringer,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1939
+vault_56,McDermott Will & Emery,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1940
+vault_57,Cahill Gordon & Reindel,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1941
+vault_58,Holland & Knight,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1942
+vault_59,Dentons,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1943
+vault_60,Susman Godfrey,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1944
+vault_61,Pillsbury Winthrop Shaw Pittman,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1945
+vault_62,Reed Smith,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1946
+vault_63,Baker & Hostetler,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1947
+vault_64,Vinson & Elkins,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1948
+vault_65,Norton Rose Fulbright,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1949
+vault_66,Irell & Manella,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1950
+vault_67,Nixon Peabody,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1951
+vault_68,Crowell & Moring,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1952
+vault_69,Fish & Richardson,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1953
+vault_70,Venable,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1954
+vault_71,Steptoe & Johnson,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1955
+vault_72,Bryan Cave Leighton Paisner,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1956
+vault_73,Squire Patton Boggs,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1957
+vault_74,Foley & Lardner,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1958
+vault_75,Sheppard Mullin Richter & Hampton,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1959
+vault_76,McGuireWoods,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1960
+vault_77,Locke Lord,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1961
+vault_78,Fenwick & West,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1962
+vault_79,Arent Fox,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1963
+vault_80,Hunton Andrews Kurth,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1964
+vault_81,Katten Muchin Rosenman,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1965
+vault_82,Schulte Roth & Zabel,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1966
+vault_83,Seyfarth Shaw,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1967
+vault_84,Pepper Hamilton,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1968
+vault_85,Hughes Hubbard & Reed,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1969
+vault_86,Mintz Levin Cohn Ferris Glovsky and Popeo,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1970
+vault_87,Fox Rothschild,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1971
+vault_88,Haynes and Boone,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1972
+vault_89,Duane Morris,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1973
+vault_90,Drinker Biddle & Reath,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1974
+vault_91,Blank Rome,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1975
+vault_92,Troutman Sanders,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1976
+vault_93,Davis Wright Tremaine,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1977
+vault_94,Kilpatrick Townsend & Stockton,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1978
+vault_95,Kramer Levin Naftalis & Frankel,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1979
+vault_96,Ballard Spahr,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1980
+vault_97,Kellogg Hansen Todd Figel & Frederick,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1981
+vault_98,Littler Mendelson,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1982
+vault_99,Wiley Rein,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1983
+vault_100,McKinsey & Company,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1984
+vault_101,Bain & Company,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1985
+vault_102,The Boston Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1986
+vault_103,Deloitte Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1987
+vault_104,Oliver Wyman,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1988
+vault_105,Putnam Associates,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1989
+vault_106,EY-Parthenon,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1990
+vault_107,PricewaterhouseCoopers Advisory Services,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1991
+vault_108,The Bridgespan,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1992
+vault_109,Accenture,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1993
+vault_110,A.T. Kearney,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1994
+vault_111,KPMG,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1995
+vault_112,Strategy& part of the PwC network,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1996
+vault_113,L.E.K. Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1997
+vault_114,GE Healthcare Partners,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1998
+vault_115,The Brattle,quant,"['quant', 'quantitative finance', 'quantitative analyst']",1999
+vault_116,Roland Berger,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2000
+vault_117,Insight Sourcing,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2001
+vault_118,Analysis,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2002
+vault_119,Alvarez & Marsal,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2003
+vault_121,The Keystone,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2004
+vault_122,ghSMART,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2005
+vault_123,ClearView Healthcare Partners,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2006
+vault_124,ZS,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2007
+vault_125,Health Advances,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2008
+vault_126,LeapPoint,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2009
+vault_127,OC&C Strategy Consultants,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2010
+vault_128,Eagle Hill Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2011
+vault_129,Simon-Kucher & Partners,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2012
+vault_131,Protiviti,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2013
+vault_132,Trinity Partners,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2014
+vault_133,Clarkston Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2015
+vault_134,Ignyte,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2016
+vault_135,Bates White Economic Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2017
+vault_136,NERA Economic Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2018
+vault_137,Charles River Associates,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2019
+vault_138,The Chartis,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2020
+vault_139,Cicero,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2021
+vault_140,Innosight,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2022
+vault_141,Censeo Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2023
+vault_142,Keystone Strategy,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2024
+vault_143,The Cambridge,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2025
+vault_144,Arthur D. Little,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2026
+vault_145,Smartronix,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2027
+vault_146,Kenway Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2028
+vault_147,Pace Harmon,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2029
+vault_148,DayBlink Consulting,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2030
+vault_149,Vivaldi,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2031
+vault_150,Cornerstone Research,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2032
+vault_151,Alira Health,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2033
+vault_202,PwC,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2034
+vault_203,Deloitte,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2035
+vault_205,Grant Thornton,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2036
+vault_206,Bdo Usa,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2037
+vault_207,Plante Moran,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2038
+vault_208,Crowe,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2039
+vault_209,Baker Tilly Virchow Krause,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2040
+vault_210,Moss Adams,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2041
+vault_211,Rsm Us,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2042
+vault_212,Dixon Hughes Goodman,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2043
+vault_213,Eide Bailly,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2044
+vault_214,Friedman,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2045
+vault_215,Frank Rimerman Co,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2046
+vault_216,Brown Smith Wallace,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2047
+vault_217,Cbiz Mhm,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2048
+vault_218,Elliott Davis,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2049
+vault_219,Armanino,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2050
+vault_220,PKF O'Connor Davies,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2051
+vault_221,BPM,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2052
+vault_222,Withum,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2053
+vault_223,Schenck SC,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2054
+vault_224,Sikich,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2055
+vault_225,Rehmann,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2056
+vault_226,Marks Paneth,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2057
+vault_227,MBE CPAs,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2058
+vault_228,Margolin Winer & Evens,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2059
+vault_229,Ernst & Young,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2060
+vault_230,CliftonLarsonAllen,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2061
+vault_231,CohnReznick,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2062
+vault_232,BKD,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2063
+vault_233,Cherry Bekaert,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2064
+vault_234,Marcum,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2065
+vault_235,EisnerAmper,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2066
+vault_236,Wipfli,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2067
+vault_237,Cohen & Company,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2068
+vault_238,UHY Advisors,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2069
+vault_239,RubinBrown,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2070
+vault_240,Mazars USA,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2071
+vault_241,The Siegfried,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2072
+vault_242,Citrin Cooperman & Company,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2073
+vault_243,Blum Shapiro & Co,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2074
+vault_244,Carr Riggs & Ingram,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2075
+vault_245,Novogradac & Company,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2076
+vault_246,Anchin Block & Anchin,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2077
+vault_247,Warren Averett,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2078
+vault_248,Berdon,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2079
+vault_249,Weaver,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2080
+vault_250,Blue & Co,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2081
+vault_251,Doeren Mayhew,quant,"['quant', 'quantitative finance', 'quantitative analyst']",2082
+vault_152,Goldman Sachs & Co,stats,"['statistics', 'statistical analyst', 'statistician']",2083
+vault_153,Evercore,stats,"['statistics', 'statistical analyst', 'statistician']",2084
+vault_154,Centerview Partners,stats,"['statistics', 'statistical analyst', 'statistician']",2085
+vault_156,Greenhill & Co,stats,"['statistics', 'statistical analyst', 'statistician']",2086
+vault_157,Moelis & Company,stats,"['statistics', 'statistical analyst', 'statistician']",2087
+vault_158,Perella Weinberg Partners,stats,"['statistics', 'statistical analyst', 'statistician']",2088
+vault_159,Guggenheim Securities,stats,"['statistics', 'statistical analyst', 'statistician']",2089
+vault_161,Lazard,stats,"['statistics', 'statistical analyst', 'statistician']",2090
+vault_162,Houlihan Lokey,stats,"['statistics', 'statistical analyst', 'statistician']",2091
+vault_163,William Blair,stats,"['statistics', 'statistical analyst', 'statistician']",2092
+vault_164,Pj Solomon,stats,"['statistics', 'statistical analyst', 'statistician']",2093
+vault_165,Harris Williams,stats,"['statistics', 'statistical analyst', 'statistician']",2094
+vault_166,Cowen,stats,"['statistics', 'statistical analyst', 'statistician']",2095
+vault_167,UBS,stats,"['statistics', 'statistical analyst', 'statistician']",2096
+vault_168,Loop Capital Markets,stats,"['statistics', 'statistical analyst', 'statistician']",2097
+vault_169,J.P. Morgan,stats,"['statistics', 'statistical analyst', 'statistician']",2098
+vault_170,Credit Suisse,stats,"['statistics', 'statistical analyst', 'statistician']",2099
+vault_171,Barclays Investment Bank,stats,"['statistics', 'statistical analyst', 'statistician']",2100
+vault_172,PJT Partners,stats,"['statistics', 'statistical analyst', 'statistician']",2101
+vault_173,Citi Institutional Clients,stats,"['statistics', 'statistical analyst', 'statistician']",2102
+vault_174,Jefferies,stats,"['statistics', 'statistical analyst', 'statistician']",2103
+vault_175,Rothschild,stats,"['statistics', 'statistical analyst', 'statistician']",2104
+vault_176,Allen & Company,stats,"['statistics', 'statistical analyst', 'statistician']",2105
+vault_177,Qatalyst Partners,stats,"['statistics', 'statistical analyst', 'statistician']",2106
+vault_178,Deutsche Bank AG,stats,"['statistics', 'statistical analyst', 'statistician']",2107
+vault_179,RBC Capital Markets,stats,"['statistics', 'statistical analyst', 'statistician']",2108
+vault_180,Wells Fargo & Company,stats,"['statistics', 'statistical analyst', 'statistician']",2109
+vault_181,Macquarie,stats,"['statistics', 'statistical analyst', 'statistician']",2110
+vault_182,Piper Jaffray Companies,stats,"['statistics', 'statistical analyst', 'statistician']",2111
+vault_183,BMO Capital Markets,stats,"['statistics', 'statistical analyst', 'statistician']",2112
+vault_184,Oppenheimer & Co,stats,"['statistics', 'statistical analyst', 'statistician']",2113
+vault_185,Baird,stats,"['statistics', 'statistical analyst', 'statistician']",2114
+vault_186,Deloitte Corporate Finance,stats,"['statistics', 'statistical analyst', 'statistician']",2115
+vault_187,BNP Paribas USA,stats,"['statistics', 'statistical analyst', 'statistician']",2116
+vault_188,Nomura,stats,"['statistics', 'statistical analyst', 'statistician']",2117
+vault_189,HSBC North America,stats,"['statistics', 'statistical analyst', 'statistician']",2118
+vault_191,LionTree Advisors,stats,"['statistics', 'statistical analyst', 'statistician']",2119
+vault_192,Royal Bank of Scotland,stats,"['statistics', 'statistical analyst', 'statistician']",2120
+vault_193,Cantor Fitzgerald,stats,"['statistics', 'statistical analyst', 'statistician']",2121
+vault_195,Tudor Pickering Holt & Co,stats,"['statistics', 'statistical analyst', 'statistician']",2122
+vault_196,Societe Generale Corporate & Investment Banking,stats,"['statistics', 'statistical analyst', 'statistician']",2123
+vault_198,EY,stats,"['statistics', 'statistical analyst', 'statistician']",2124
+vault_199,Brown Brothers Harriman,stats,"['statistics', 'statistical analyst', 'statistician']",2125
+vault_200,CIBC World Markets,stats,"['statistics', 'statistical analyst', 'statistician']",2126
+vault_201,Lloyds Banking,stats,"['statistics', 'statistical analyst', 'statistician']",2127

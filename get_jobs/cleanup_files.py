@@ -36,9 +36,8 @@ def countdown(seconds):
     sys.stdout.flush()
 
 
-def cleanup_files(remove=True, subdir='output', force=False):
+def cleanup_files(date, remove=True, subdir='output', force=False):
 	n = 10
-	date = get_date()
 	indeed_jobs = 'indeed_jobs_*_{}*'.format(date)
 	emp_key_tmp = '../employers_key_{}*'.format(date)
 	err_no_rest = 'error_no_results_{}*'.format(date)
@@ -50,6 +49,7 @@ def cleanup_files(remove=True, subdir='output', force=False):
 		rm errors_filtered_jobs_*
 		rm filtered_employers_*
 		rm selected_filtered_jobs_*
+		rm tmp_*.csv
 		rm {0}
 		rm {1}	
 		rm {2}	
@@ -67,6 +67,7 @@ def cleanup_files(remove=True, subdir='output', force=False):
 		mv errors_filtered_jobs_* {0}/. 2>/dev/null
 		mv filtered_employers_* {0}/. 2>/dev/null
 		mv selected_filtered_jobs_* {0}/. 2>/dev/null
+		mv tmp_*.csv {0}/. 2>/dev/null
 		mv {1} {0}/. 2>/dev/null
 		mv {2} {0}/. 2>/dev/null
 		mv {3} {0}/. 2>/dev/null

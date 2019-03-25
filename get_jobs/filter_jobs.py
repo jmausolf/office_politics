@@ -57,7 +57,6 @@ def job_type_to_key(job_type, lower=True):
 
 
 def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
-
 	#Determine Type of Keyword
 	#From a Row or Direct Inject
 	if inject is False:
@@ -80,7 +79,11 @@ def job_match(row, col='job_keyword', stem=False, n=4, inject=False):
 
 	#Isolate Stem
 	if stem is True:
-		key = key[:-n]
+		if len(key) > 4:
+			n = len(key)//3
+			key = key[:-n]
+		else:
+			pass
 
 	return key in job
 
@@ -265,18 +268,30 @@ def job_selector(infile, job_cols):
 	df['maybe_cid_match_count'] = df.groupby(gb)[cm].transform('sum')
 
 
+	#Intern Filter
+	df['internship'] = False
+	intern_crit = 	(
+						df['job'].str.contains(r'([iI]nternship)(s*\W*(?!\w))') |
+						df['job'].str.contains(r'([iI]ntern)(s*\W*(?!\w))') 
+
+					)
+	df.loc[intern_crit, 'internship'] = True
+
+
 	#Find Ideal Jobs
 	df['ideal_job'] = False
 	ideal_crit = (
-				  df.apply(job_match, axis=1, col=j[0]) |
-				  df.apply(job_match, axis=1, col=j[1]) |
-				  df.apply(job_match, axis=1, col=j[0], stem=True) |
-				  df.apply(job_match, axis=1, col=j[1], stem=True)
-				 )
+					(
+					  df.apply(job_match, axis=1, col=j[0]) |
+					  df.apply(job_match, axis=1, col=j[1]) |
+					  df.apply(job_match, axis=1, col=j[0], stem=True) |
+					  df.apply(job_match, axis=1, col=j[1], stem=True)
+					) &
+					( df['internship'] == False )
+				 )	
 	df.loc[ideal_crit, 'ideal_job'] = True
 
 	#Summarize Ideal Jobs (How Many by Company)
-	#df['ideal_count'] = df.groupby(['company'])['ideal_job'].transform('sum')
 	df['ideal_count'] = df.groupby(['qry_company'])['ideal_job'].transform('sum')
 
 
@@ -288,6 +303,9 @@ def job_selector(infile, job_cols):
 
 	#Ensure Backup Jobs Are True Only If Not Also Ideal Jobs
 	df.loc[( df['ideal_job'] == True ), 'bkup_job'] = False
+
+	#Remove Internships from Backup Jobs
+	df.loc[( df['internship'] == True), 'bkup_job'] = False	
 
 	#Summarize Backup Jobs (How Many by Company)
 	df['bkup_count'] = df.groupby(['qry_company'])['bkup_job'].transform('sum')
@@ -417,7 +435,7 @@ def get_employers(infile, outfile=None):
 	jobs = job_selector(infile, ['job_type', 'job_keyword'])
 
 	#Make Cleaned File
-	keep_cols = ['qry_company', 'position', 'office', 'office_state', 
+	keep_cols = ['list_id', 'qry_company', 'position', 'office', 'office_state', 
 				 'job_type']
 	df_tmp = jobs[keep_cols].copy().reset_index()
 
@@ -425,7 +443,7 @@ def get_employers(infile, outfile=None):
 	df_tmp['index'] = df_tmp.index
 	cid = df_tmp.apply(make_cid, axis=1)
 	df = pd.concat([cid, df_tmp[keep_cols]], axis=1)
-	cols = ['cid', 'company', 'position', 'office', 'office_state', 
+	cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 
 			'job_type']
 	df.columns = cols
 	print(df)
@@ -435,4 +453,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_3_2018-11-08.csv')
+#get_employers('indeed_jobs_1_2019-01-18.csv', 'filter_test.csv')

@@ -1,21 +1,36 @@
 import ast, csv, os, pdb
 import numpy as np
 import pandas as pd
+import datetime
 from get_jobs.filter_jobs import index_to_n
 
 
 
-################
-#0a TODO Join with Contact Name/Email by Company
-#and see if you can get the order in a logical way
-#################
+def get_date():
+	#Get Date for Filenames
+	now = datetime.datetime.now()
+	date = now.strftime("%Y-%m-%d")
+	return date
 
+
+def get_leads(df,
+				leads_key='keys/leadiro_matched_key.csv'
+				):
+
+	leads = pd.read_csv(leads_key)
+	df = df.merge(leads, how='left')
+
+
+	#TODO Issue a Warning if name/email have NAN 
+	#after the merge
+	print(df)
+	return df
 
 
 def get_regions(df,
 				state_col,
 				region_col='state',
-				region_key='region_key.csv'
+				region_key='keys/region_key.csv'
 				):
 
 	sc = state_col
@@ -23,20 +38,29 @@ def get_regions(df,
 
 	regions = pd.read_csv(region_key)
 	df = df.merge(regions, how='left', left_on=sc, right_on=rc)
-	df.to_csv('test_regions.csv', index=False)
+
+	#TODO Issue a Warning if region/prox region have NAN 
+	#after the merge
+	df.dropna(inplace=True)
+	df.to_csv('merged_regions.csv', index=False)
 	return df
 
 
 #Assign Applicant Prestige
-def assign_prestige(df, probs=[.7,.3], col='prestige_level'):
-	df[col] = np.random.choice(['High', 'Low'], df.shape[0], p=probs)
+def assign_prestige(df, 
+					probs=[.7,.3],
+					labels=['High', 'Low'],
+					col='prestige_level'):
+	df[col] = np.random.choice(labels, df.shape[0], p=probs)
 	return df
 
 
 #Assign Order
-def assign_order(df, probs=[.5,.5], col='order'):
-	df[col] = np.random.choice([1, 2], df.shape[0], p=probs)
+def assign_order(df, order_list=[1, 2],
+				 probs=[.5,.5], col='order'):
+	df[col] = np.random.choice(order_list, df.shape[0], p=probs)
 	return df
+
 
 def set_order(order_number, order_int=None):
 	assert isinstance(order_number, int), "order must be an integer"
@@ -56,6 +80,58 @@ def set_order(order_number, order_int=None):
 	else:
 		return None
 
+
+#Assign Materials Version
+def assign_materials_version(df, version_list=['A', 'B'],
+							 probs=[.5,.5], col='version'):
+	df[col] = np.random.choice(version_list, df.shape[0], p=probs)
+	return df
+
+def set_version(version_letter, version_list=None):
+	assert isinstance(version_letter, str), "version_letter must be string"
+
+	if version_list is None:
+		vA = 'A'
+		vB = 'B'
+	else:
+		assert len(version_list) == 2, "only two versions possible"
+		vA = version_list[0]
+		vB = version_list[1]
+
+	if version_letter == vA:
+		return vB
+	if version_letter == vB:
+		return vA
+	else:
+		return None
+
+
+#Assign Treatment leader
+def assign_treatment_leader(df, 
+							 leader_list=['president', 'vice president'],
+							 probs=[.5,.5], col='leader'):
+	df[col] = np.random.choice(leader_list, df.shape[0], p=probs)
+	return df
+
+def set_leader(leader_letter, leader_list=None):
+	assert isinstance(leader_letter, str), "leader_letter must be string"
+
+	if leader_list is None:
+		p = 'president'
+		vp = 'vice president'
+	else:
+		assert len(leader_list) == 2, "only two versions possible"
+		p = leader_list[0]
+		vp = leader_list[1]
+
+	if leader_letter == p:
+		return vp
+	if leader_letter == vp:
+		return p
+	else:
+		return None
+
+
 #Assign Partisanship
 def assign_partisanship(df, condition, 
 						probs=[.5,.5], labels=None,
@@ -63,15 +139,12 @@ def assign_partisanship(df, condition,
 
 	qc = condition
 	qc_condition = ( 
-					( isinstance(qc, str) is True ) &
-					( qc == 'treatment' or qc == 'control') 
-				 )
+						( isinstance(qc, str) is True ) &
+						( qc == 'treatment' or qc == 'control') 
+				   )
 	assert qc_condition, "condition should equal 'treatment' or 'control' "
 
-
-
-
-
+	#Assign Labels
 	if labels is None:
 		if condition == 'treatment':
 			df[col] = np.random.choice(['DEM', 'REP'], 
@@ -108,13 +181,19 @@ def assign_partisanship(df, condition,
 
 	return df
 
-#3
+
+
+
+
+
 def make_pairs(df,
 			   treatment_labs,
 			   treatment_probs,
 			   control_label,
 			   pair_key,
-			   order_var=None
+			   order=None,
+			   version=None,
+			   leader=None,
 			   ):
 
 	'''
@@ -138,10 +217,20 @@ def make_pairs(df,
 	The pair_key is the id variable to be given the matched pair.
 		e.g. pair_key could be the company id to send resumes, 'cid'
 
-	The order_var is the previously assigned random integer (1, 2)
+	The order is the name of the variable for the 
+		previously assigned random integer (1, 2)
 		determining which subject (Control or Treatment) 
 		should be first. 
-		If order does not matter, use order_var=None
+
+	The version is the name of the variable for the 
+		previously assigned materials version (A, B)
+		determining which resume and cover letter version
+		a subject is assigned.
+		
+	The leader is the name of the variable for the 
+		previously assigned leadership position
+		('president', 'vice president')
+		for the treatment/control leadership positions
 
 	Example Parameters:
 	df :: an experimental data frame
@@ -149,7 +238,9 @@ def make_pairs(df,
 	treatment_probs :: [.4, .6]
 	control_label :: 'NEU'
 	pair_key :: 'cid'
-	order_var :: 'order'
+	order :: 'order'
+	version :: 'version'
+	leader :: 'leadership'
 	'''
 
 	#Control Matched Subjects
@@ -162,27 +253,44 @@ def make_pairs(df,
 							labels=treatment_labs, 
 							probs=treatment_probs)
 
+	# Determine Order and Version for Treatment
+	# Using Randomly Assigned Order and Version for Control
+
 	#Order
-	if order_var is not None:
-		order_int = sorted(T[order_var].unique().tolist())
+	if order is not None:
+		order_int = sorted(T[order].unique().tolist())
 		assert len(order_int) == 2, "order must be one of two ints"
-		T[order_var] = T[order_var].apply(lambda x: set_order(x, order_int))
+		T[order] = T[order].apply(lambda x: set_order(x, order_int))
+		pass
+
+	#Version
+	if version is not None:
+		versions = sorted(T[version].unique().tolist())
+		assert len(versions) == 2, "only two versions are possible"
+		T[version] = T[version].apply(lambda x: set_version(x, versions))
+		pass
+
+	#Leadership
+	if leader is not None:
+		leaders = sorted(T[leader].unique().tolist())
+		assert len(leaders) == 2, "only two leaderships are possible"
+		T[leader] = T[leader].apply(lambda x: set_version(x, leaders))
 		pass
 
 	#Create Matched Pairs
 	MP = C.append(T, ignore_index=True)
 
 	#Sort Matched Pairs and Return
-	if order_var is not None:
-		MP.sort_values(by=[pair_key, order_var], inplace=True)
+	if order is not None:
+		MP.sort_values(by=[pair_key, order], inplace=True)
 	else:
 		MP.sort_values(by=[pair_key], inplace=True)
 	return MP
 
 
-#4Join Profile ID based on Prestige and Partisanship
+#Join Profile ID based on Prestige and Partisanship
 def add_profile_key(experiment_df, 
-					profile_key='profiles.csv', 
+					profile_key='keys/profiles.csv', 
 					prestige_col='prestige_level',
 					party_col='party'):
 
@@ -195,6 +303,7 @@ def add_profile_key(experiment_df,
 							 on=[pst, pid])
 
 	return df
+
 
 #Drop Extra Columns
 def cleanup_cols(df, rm_col_list):
@@ -213,7 +322,6 @@ def cleanup_cols(df, rm_col_list):
 	return df[keep_cols].copy().reset_index(drop=True)
 
 
-
 def add_applicant_id(df, col='id'):
 
 	#Make Appplicant ID
@@ -224,31 +332,154 @@ def add_applicant_id(df, col='id'):
 	df_id = df['id'].copy()
 	df = cleanup_cols(df, ['index', 'id'])
 	df = pd.concat([df_id, df], axis=1) 
-	return df 
+	return df
 
 
-emp = pd.read_csv('employers_key.csv')
-emp = get_regions(emp, 'office_state')
-emp = assign_prestige(emp, probs=[.7, .3])
-emp = assign_order(emp)
-emp = make_pairs(emp,
-				 ['DEM', 'REP'],
-				 [.4, .6],
-				 'NEU',
-				 'cid',
-				 'order'
-				 )
-emp = add_profile_key(emp)
+def store_details(df, **kwargs):
 
-rm_cols = ['state_name', 'state', 'prestige_level', 'party', 'order', 'name']
-emp = cleanup_cols(emp, rm_cols)
-emp = add_applicant_id(emp)
+	details = []
+	for k, v in kwargs.items():
+		df[k] = str(v)
+		details.append(k)
 
-print(emp)
-emp.to_csv('test_exp.csv', index=False)
+	return [df, details]
 
-#TODO
-#Number all rows by id, a1, a2, ...
+
+def main(employers,
+		 state_col,
+		 prestige_probs,
+		 prestige_labs,
+		 treatment_probs,
+		 treatment_labs,
+		 control_lab,
+		 pair_key,
+		 order,
+		 order_list,
+		 version,
+		 version_list,
+		 leader,
+		 leader_list,
+		 rm_cols='default',
+		 order_cols='default',
+		 outfile='experiment.csv'
+		):
+
+
+	#Load Employer Data
+	emp = pd.read_csv(employers)
+
+	#Get Regions
+	emp = get_regions(emp, state_col)
+
+	#Get Leads
+	emp = get_leads(emp)
+
+	#Make Assignments
+	emp = assign_prestige(emp, 
+						  probs=prestige_probs,
+						  labels=prestige_labs
+						  )
+	emp = assign_order(emp, col=order,
+							order_list=order_list)
+	emp = assign_materials_version(emp, col=version,
+										version_list=version_list)
+	emp = assign_treatment_leader(emp, col=leader,
+										leader_list=leader_list)
+	emp = make_pairs(emp,
+					 treatment_labs,
+					 treatment_probs,
+					 control_lab,
+					 pair_key,
+					 order,
+					 version,
+					 leader,
+					 )
+	emp = add_profile_key(emp)
+
+	#Add Experiment Details to Full File
+	details = store_details(emp,
+						exp_date=get_date(),
+						exp_employers=employers,
+						exp_state_col=state_col,
+						exp_prestige_probs=prestige_probs,
+						exp_prestige_labs=prestige_labs,
+						exp_treatment_probs=treatment_probs,
+						exp_treatment_labs=treatment_labs,
+						exp_control_lab=control_lab,
+						exp_pair_key=pair_key,
+						exp_order=order,
+						exp_order_list=order_list,
+						exp_version=version,
+						exp_version_list=version_list,
+						exp_leader=leader,
+						exp_leader_list=leader_list,
+						exp_rm_cols=rm_cols
+						)
+
+
+
+	#Store Detailed File in Logs
+	emp = details[0]
+	stem = outfile.replace('.csv', '')
+	log = 'logs/protocol_{}_{}.csv'.format(stem, get_date())
+	log_exp_details = emp.to_csv(log)
+
+
+	#Remove Default Columns
+	if rm_cols == 'default':
+		rm_cols = ['state_name', 'state', 'prestige_level', 
+				   'party', order, 'name']
+	
+	#Or User Provided Column List
+	else:
+		assert isinstance(rm_cols, list), 'provide a list of cols to remove'
+
+
+	#Make Clean File to Run
+	log_cols = details[1]
+	rm_cols = rm_cols+log_cols
+	emp = cleanup_cols(emp, rm_cols)
+	emp = add_applicant_id(emp)
+
+	#Order Remaining Columns
+	if order_cols is False:
+		pass
+	elif order_cols == 'default':
+		cols_order = ['id', 'cid', 'list_id', 'company',
+					  'contact_name', 'contact_last_name', 'contact_email',
+					  'office', 'office_state', 'region', 'proximal_region', 
+					  'position', 'job_type', 'profile', 
+					  version, leader]
+		emp = emp[cols_order]
+	else:
+		assert isinstance(order_cols, list), 'provide a column order list'+\
+											 'or set order_cols=False'
+		emp = emp[order_cols]
+
+
+	print(emp)
+	print('[*] saving experimental protocol to {}'.format(outfile))
+	emp.to_csv(outfile, index=False)
+	
+
+
+main(employers='keys/cleaned_employers_key.csv',
+     state_col='office_state',
+     prestige_probs=[.7, .3],
+     prestige_labs=['High', 'Low'],
+     treatment_probs=[.4, .6],
+     treatment_labs=['DEM', 'REP'],
+     control_lab='NEU',
+     pair_key='cid',
+     order='order',
+     order_list=[1,2],
+     version='version',
+     version_list=['A', 'B'],
+     leader='leadership',
+     leader_list=['president', 'vice president'],
+     rm_cols='default',
+     order_cols='default'
+    )
 
 
 
