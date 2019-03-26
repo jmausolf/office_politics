@@ -151,7 +151,7 @@ def main(master_company,
 		 output,
 		 seconds,
 		 pyver,
-		 scrape=True):
+		 filter_only=False):
 
 
 	#Cleanup Files
@@ -164,8 +164,8 @@ def main(master_company,
 	#Define Final Output File
 	final_outfile = '../keys/employers_key.csv'
 
-
-	if scrape is True:
+	print("filter only is {}".format(filter_only))
+	if filter_only is False:
 
 		
 		company_csvs = make_company_csvs(master_company)
@@ -214,20 +214,50 @@ def main(master_company,
 		company_error_check(master_company, df, final_outfile, date)
 
 
-	else:
+	if filter_only is True:
 		#Dedupe the Filtered Jobs
-		exists = os.path.isfile('./{}'.format(f))
-		assert exists is True, 'the expected job file does not exist...'+ \
-				'rerun using scape=True'
+		#exists = os.path.isfile('./{}'.format(f))
+		#assert exists is True, 'the expected job file does not exist...'+ \
+		#		'rerun using scrape=True'
+
+
+		company_csvs = make_company_csvs(master_company)
+		print(company_csvs)
+
+		for c in company_csvs:
+
+			#Extract Job Rank
+			jt_rank = c.replace('companies_', '').replace('.csv', '')
+
+			#Run Filter
+			scraper_out = 'indeed_jobs_{}'.format(jt_rank)
+			scraper_stem = scraper_out.replace('.csv', '')
+			indeed_jobs = "{}_{}.csv".format(scraper_stem, date)
+			filter_out = 'filtered_employers_{}.csv'.format(jt_rank)		
+			df = get_employers(indeed_jobs, filter_out)
+
+			#Add Column Job_Type_Rank
+			jt_rank = c.replace('companies_', '').replace('.csv', '')
+			df['job_type_rank'] = jt_rank
+
+			#Create Appended DF
+			exists = os.path.isfile('./{}'.format(f))
+			if not exists:
+				df.to_csv(f, index=False, header=True)
+			else:
+				df.to_csv(f, index=False, header=False, mode='a')
+
+
+		#Dedupe the Filtered Jobs
 		df = pd.read_csv(f)
 		df = dedupe_company_jobs(df)
 
 		#Clean Results and Reset CID
-		df = make_clean_df(df)	
+		df = make_clean_df(df)
 
 		#Write Out Results
 		df.to_csv(final_outfile, index=False, header=True)
-
+		
 		#Error Check
 		master_company = pd.read_csv(master_company)
 		company_error_check(master_company, df, final_outfile, date)
@@ -247,18 +277,20 @@ if __name__=="__main__":
     parser.add_argument("-p", "--param", default='job_params.csv', type=str)
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
-    parser.add_argument("-s", "--seconds", default=1, type=int)
+    parser.add_argument("-sec", "--seconds", default=1, type=int)
+    parser.add_argument("-filter", "--filter_only", default=False, action='store_true')
 
     #Get Jobs Args
     parser.add_argument("-py", "--pyver", default='python3', type=str)
     args = parser.parse_args()
-
+    print(args.date)
     main('master_companies.csv',
     	  args.date,
           args.param, 
           args.cid, 
           args.output, 
           args.seconds,
-          args.pyver)
+          args.pyver,
+          args.filter_only)
 
 
