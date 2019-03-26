@@ -461,10 +461,65 @@ def main(employers,
 	print(emp)
 	print('[*] saving experimental protocol to {}'.format(outfile))
 	emp.to_csv(outfile, index=False)
+	return outfile, emp
 	
 
+def check_profile_load(df=None, protocol_file=None, limit=500):
+	err_message1 = '[*] must provide either a dataframe or csv...'
+	err_message2 = '[*] must only provide a dataframe OR csv, not both...'
+	assert any(v is not None for v in [df, protocol_file]), err_message1
+	assert any(v is None for v in [df, protocol_file]), err_message2
 
-main(employers='keys/cleaned_employers_key.csv',
+	if df is not None:
+		print('[*] evaluating profile load for given dataframe...')
+		counts = df['profile'].value_counts()
+
+	if protocol_file is not None:
+		print('[*] evaluating profile load for {}...'.format(protocol_file))
+		df = pd.read_csv(protocol_file)
+		counts = df['profile'].value_counts()
+		
+	print(counts)
+	if counts.max() > limit:
+		return False
+	else:
+		return True
+
+def replicate_match_pairs(protocol_file):
+
+	df = pd.read_csv(protocol_file)
+	df_A = df.loc[(df['version']=='A')].copy()
+	df_B = df.loc[(df['version']=='B')].copy()
+
+	result1 = check_profile_load(df=df_A)
+	result2 = check_profile_load(df=df_B)
+
+	if result1 is True and result2 is True:
+		return True
+	else: 
+		return False
+
+
+def need_batches(protocol_file):
+
+	result = check_profile_load(protocol_file=protocol_file)
+
+	if result is True:
+		print('no, good to go without batching')
+	else:
+		print('might need batching')
+		#Check A/B pairs and see if it still needs batching
+		subresults = replicate_match_pairs(protocol_file)
+		if subresults is True:
+			print("okay without batching")
+		else:
+			print("no, still needs batching even divided into A/B pairs")
+
+
+
+'''
+protocol_outfile, protocol_df = main(
+	 employers='keys/cleaned_employers_key.csv',
      state_col='office_state',
      prestige_probs=[.7, .3],
      prestige_labs=['High', 'Low'],
@@ -482,7 +537,32 @@ main(employers='keys/cleaned_employers_key.csv',
      order_cols='default'
     )
 
+#print(protocol_outfile)
+#c = check_profile_load(protocol_file=protocol_outfile)
+#print(c)
+
+#replicate_match_pairs(protocol_outfile)
+need_batches(protocol_outfile)
+'''
+need_batches("experiment_test.csv")
+need_batches("experiment_test_smtp_limits.csv")
+
+#check_profile_load(df="ntes", protocol_file="tesr")
+#c = check_profile_load(protocol_file="experiment_test.csv")
+#print(c)
+#c = check_profile_load(protocol_file="experiment_test_smtp_limits.csv")
+#print(c)
 
 
+
+#check_profile_load(protocol_file=protocol_outfile)
+#check_profile_load()
+
+#TODO 
+#Once main is run, run the batch counter and metrics figures
+#one function should calculate the value counts for each profile/email account
+#e.g. counts = my_series.value_counts()
+#if counts["profile"] > 500, then....
+#or artificially split df_A, df_B from main and gen counts for each profile, and if > 500, then split into batches and recheck
 
 
