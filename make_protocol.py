@@ -9,7 +9,7 @@ from get_jobs.filter_jobs import index_to_n
 def get_date():
 	#Get Date for Filenames
 	now = datetime.datetime.now()
-	date = now.strftime("%Y-%m-%d")
+	date = now.strftime("%Y-%m-%d-%X").replace(':','')
 	return date
 
 
@@ -361,7 +361,7 @@ def main(employers,
 		 leader_list,
 		 rm_cols='default',
 		 order_cols='default',
-		 outfile='experiment.csv'
+		 outfile_stem='experiment'
 		):
 
 
@@ -417,11 +417,12 @@ def main(employers,
 						)
 
 
+	#Outfile
+	outfile = '{}_{}.csv'.format(outfile_stem, get_date())
+	log = 'logs/protocol_'+outfile
 
 	#Store Detailed File in Logs
 	emp = details[0]
-	stem = outfile.replace('.csv', '')
-	log = 'logs/protocol_{}_{}.csv'.format(stem, get_date())
 	log_exp_details = emp.to_csv(log)
 
 
