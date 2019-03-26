@@ -541,25 +541,36 @@ def make_batches(protocol_file, limit=500):
 	
 	if need_batches(protocol_file) is True:
 		protocol_df = pd.read_csv(protocol_file)
-		#make batches
 		r1, r2 = replicate_match_pairs(protocol_file, ret_max=True)
 		max_load = max(r1, r2)
 		batches = (max_load // limit)+1
 		print('[*] TOTAL of {} batches are suggested...'.format(batches))
-		#print(r1, r2)
-		#print(max(r1, r2))
 
-		#TODO, determine an even integer batch number, e.g. 922 or 924 to get 
-		#the number of batches
-		#chunks = np.split(protocol_df, batches)
-		chunks = split(protocol_df, 924)
+		n = protocol_df.shape[0] // batches
+		if n % 2 == 0:
+			pass
+		else: 
+			n +=1
+
+		chunks = split(protocol_df, n)
 		batch_number = 0
+		batches = []
 		for c in chunks:
-			print("Shape: {}; {}".format(c.shape, c.index))
-			batch_number +=1
-			c.to_csv('test_{}.csv'.format(batch_number), index=False)
+			if c.shape[0] > 0:
+				print("Shape: {}; {}".format(c.shape, c.index))
+				batch_number +=1
+				protocol_stem = protocol_file.split('.csv')[0]
+				outfile = '{}_batch_{}.csv'.format(protocol_stem, batch_number)
+				batches.append(outfile)
+				c.to_csv(outfile, index=False)
+			else:
+				pass
 
-		pass
+		print(batches)
+		#Recheck Batches for Compliance
+		for b in batches:
+			make_batches(b)
+
 	else:
 		pass
 
@@ -584,16 +595,19 @@ protocol_outfile, protocol_df = main(
      rm_cols='default',
      order_cols='default'
     )
+'''
 
 #print(protocol_outfile)
 #c = check_profile_load(protocol_file=protocol_outfile)
 #print(c)
 
 #replicate_match_pairs(protocol_outfile)
-need_batches(protocol_outfile)
-'''
-make_batches("experiment_test.csv")
+#need_batches(protocol_outfile)
+
+#make_batches("experiment_test.csv")
 make_batches("experiment_test_smtp_limits.csv")
+#make_batches("experiment_test_2019-03-26-005950_batch2.csv")
+#make_batches(protocol_outfile)
 
 
 #########################
