@@ -34,6 +34,12 @@ def select_punct_strip(text):
     return re.sub(r'\s{2,}', " ", tmp)
 
 
+def select_punct_strip_2(text):
+	#exceptions:: / \ - & .
+    tmp = re.sub(r'[]\\?!#$%(){}+*:;,_`\\|~\\[<=>@\\^]', " ", text)
+    return re.sub(r'\s{2,}', " ", tmp)
+
+
 def parens_content_replace(text):
 	return re.sub(r'\(.*?\)', '', text)
 
@@ -179,8 +185,7 @@ def clean_job(row, col='job'):
 def clean_company(row, col='web_company'):
 	c = row[col]
 	c = remove_non_ascii_2(c)	
-	#c = remove_punct(c)
-	c = select_punct_strip(c)
+	c = select_punct_strip_2(c)
 
 	if c.isupper() and len(c) > 4:
 		c = c.title()
@@ -204,6 +209,8 @@ def company_match(row,
 			return False
 	else:
 		if qry_company != res_company and qry_company in res_company:
+			return True
+		elif qry_company != res_company and res_company in qry_company:
 			return True
 		else:
 			return False
@@ -453,4 +460,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_1_2019-01-18.csv', 'filter_test.csv')
+#get_employers('indeed_jobs_7_2019-03-23.csv', 'errors_filtered_jobs_7_test.csv')

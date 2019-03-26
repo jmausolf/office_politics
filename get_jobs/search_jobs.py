@@ -39,7 +39,7 @@ def error_logger(list_id, company, job_keyword, url, date):
 def search_url(job_keyword, company):
     url_stem = "https://www.indeed.com/jobs?q="
     job = url_str(job_keyword)
-    cid = "company%3A{}".format(url_str(company))
+    cid = "company%3A({})".format(url_str(company))
     loc = "l=Anywhere"
     jt = "jt=fulltime"
     qry = "{}+{}&{}&{}".format(job, cid, loc, jt)
@@ -126,8 +126,14 @@ def load_job_tiles(counter, job_key, job_type,
     last_post_loc = "xpath", pat2
     last_post = d.find_elements(*last_post_loc)
 
+    #Source 3: Last Post / First Post (If Only One Post Exists) v2
+    p3_class = 'jobsearch-SerpJobCard row sjlast result clickcard'
+    pat3 = "//div[@class='{}']".format(p3_class)
+    last_post_loc_v2 = "xpath", pat3
+    last_post_v2 = d.find_elements(*last_post_loc_v2)
+
     #All Posts
-    posts = main_posts+last_post
+    posts = main_posts+last_post+last_post_v2
 
     #Job Names
     job_pat = "a[class='turnstileLink']"

@@ -12,7 +12,7 @@ f1000_9,Ford Motor,10,fortune1000,data_science,computer_science,mba,mba_finance,
 f1000_10,AmerisourceBergen,11,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_11,Amazon,12,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_12,General Electric,13,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_13,Verizon Communications,14,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_13,Verizon,14,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_14,Cardinal Health,15,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_15,Costco,16,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_16,Walgreens,17,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -25,30 +25,30 @@ f1000_22,Home Depot,23,fortune1000,data_science,computer_science,mba,mba_finance
 f1000_23,Boeing,24,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_24,Wells Fargo,25,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_25,Bank of America,26,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_26,Alphabet,27,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_26,Waymo,27,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_27,Microsoft,28,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_28,Anthem,29,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_29,Citigroup,30,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_29,Citi,30,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_30,Comcast,31,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_31,IBM,32,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_32,State Farm Insurance,33,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_33,Phillips 66,34,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_34,Johnson & Johnson,35,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_35,Procter & Gamble,36,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_35,Procter and Gamble,36,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_36,Valero Energy,37,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_37,Target,38,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_38,Freddie Mac,39,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_39,Lowe's,40,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_40,Dell Technologies,41,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_40,Dell,41,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_41,MetLife,42,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_42,Aetna,43,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_43,PepsiCo,44,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_44,Archer Daniels Midland,45,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_45,UPS,46,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_45,United Parcel Service,46,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_46,Intel,47,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_47,Prudential Financial,48,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_47,Prudential,48,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_48,Albertsons,49,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_49,United Technologies,50,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_49,United Technologies Corp. Headquarters,50,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_50,Marathon Petroleum,51,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_51,Disney,52,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_52,Humana,53,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -58,14 +58,14 @@ f1000_55,Lockheed Martin,56,fortune1000,data_science,computer_science,mba,mba_fi
 f1000_56,Sysco,57,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_57,FedEx,58,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_58,Hewlett Packard Enterprise,59,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_59,Cisco Systems,60,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_59,Cisco,60,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_60,HP,61,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_61,Dow Chemical,62,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_62,HCA,63,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_63,Coca-Cola,64,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_64,New York Life Insurance,65,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_65,Centene,66,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_66,American Airlines Group,67,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_66,American Airlines,67,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_67,Nationwide,68,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_68,Merck,69,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_69,Cigna,70,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -73,15 +73,15 @@ f1000_70,Delta Air Lines,71,fortune1000,data_science,computer_science,mba,mba_fi
 f1000_71,Best Buy,72,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_72,Honeywell,73,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_73,Caterpillar,74,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_74,Liberty Mutual Insurance Group,75,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_74,Liberty Mutual,75,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_75,Morgan Stanley,76,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_76,Massachusetts Mutual Life Insurance,77,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_77,Goldman Sachs Group,78,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_78,Energy Transfer Equity,79,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_77,Goldman Sachs,78,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_78,Energy Transfer Family of Partnerships,79,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_79,TIAA,80,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_80,Oracle,81,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_81,Tyson Foods,82,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_82,United Continental,83,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_82,United Airlines,83,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_83,Allstate,84,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_84,Publix Super Markets,85,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_85,American Express,86,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -94,12 +94,12 @@ f1000_91,Gilead Sciences,92,fortune1000,data_science,computer_science,mba,mba_fi
 f1000_92,CHS,93,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_93,3M,94,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_94,Time Warner,95,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_95,Charter Communications,96,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_95,Spectrum,96,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_96,Northwestern Mutual,97,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_97,Facebook,98,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_98,Travelers,99,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_99,Capital One Financial,100,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_100,Twenty-First Century Fox,101,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_99,Capital One,100,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_100,Twentieth Century Fox,101,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_101,USAA,102,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_102,World Fuel Services,103,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_103,Philip Morris,104,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -120,7 +120,7 @@ f1000_117,Arrow Electronics,118,fortune1000,data_science,computer_science,mba,mb
 f1000_118,Qualcomm,119,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_119,Progressive,120,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_120,Duke Energy,121,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_121,Enterprise Products Partners,122,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_121,Enterprise Products,122,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_122,Amgen,123,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_123,US Foods,124,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_124,U.S. Bank,125,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -148,14 +148,14 @@ f1000_145,ManpowerGroup,146,fortune1000,data_science,computer_science,mba,mba_fi
 f1000_146,Bristol-Myers Squibb,147,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_147,Altria Group,148,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_148,Fluor,149,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_149,Kohl's,150,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_149,Kohls,150,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_150,Lear,151,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_151,Jabil,152,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_152,Hartford Financial Services Group,153,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_152,The Hartford,153,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_153,Thermo Fisher Scientific,154,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_154,Kimberly-Clark,155,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_155,Molina Healthcare,156,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_156,PG&E,157,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_156,Pacific Gas and Electric Company,157,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_157,Supervalu,158,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_158,Cummins,159,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_159,CenturyLink,160,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -175,14 +175,14 @@ f1000_172,Halliburton,173,fortune1000,data_science,computer_science,mba,mba_fina
 f1000_173,CarMax,174,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_174,Freeport-McMoRan,175,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_175,Whole Foods Market,176,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_176,Bank of New York Mellon,177,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_176,BNY Mellon,177,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_177,GAP,178,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_178,Omnicom Group,179,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_179,Genuine Parts,180,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_180,DaVita,181,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_181,Colgate-Palmolive,182,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_182,PPG Industries,183,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_183,Goodyear Tire & Rubber,184,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_183,Goodyear,184,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_184,Synchrony Financial,185,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_185,DISH Network,186,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_186,Visa,187,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -207,7 +207,7 @@ f1000_204,Cognizant Technology Solutions,205,fortune1000,data_science,computer_s
 f1000_205,Texas Instruments,206,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_206,Lincoln National,207,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_207,Newell Brands,208,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_208,Land O'Lakes,209,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_208,Land O’Lakes,209,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_209,Marsh & McLennan,210,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_210,Ecolab,211,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_211,C.H. Robinson Worldwide,212,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -216,7 +216,7 @@ f1000_213,CBRE Group,214,fortune1000,data_science,computer_science,mba,mba_finan
 f1000_214,Kinder Morgan,215,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_215,Kellogg,216,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_216,Western Digital,217,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_217,Guardian Life Ins. Co. of America,218,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_217,Guardian Life Insurance Company,218,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_218,Ross Stores,219,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_219,L Brands,220,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_220,J.C. Penney,221,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -239,17 +239,17 @@ f1000_236,NGL Energy Partners,237,fortune1000,data_science,computer_science,mba,
 f1000_237,Dominion Energy,238,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_238,Ameriprise Financial,239,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_239,ADP,240,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_240,Hilton Worldwide,241,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_240,Hilton Corporate,241,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_241,First Data,242,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_242,Henry Schein,243,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_243,Toys 'R' Us,244,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_244,BB&T,245,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_245,Reinsurance Group of America,246,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_245,RGA,246,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_246,Core-Mark,247,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_247,Biogen,248,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_248,Las Vegas Sands,249,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_249,Stanley Black & Decker,250,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_250,Parker-Hannifin,251,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_250,Parker Hannifin,251,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_251,Stryker,252,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_252,Estee Lauder,253,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_253,Celgene,254,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -266,7 +266,7 @@ f1000_263,PayPal,264,fortune1000,data_science,computer_science,mba,mba_finance,s
 f1000_264,Applied Materials,265,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_265,Voya Financial,266,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_266,Mastercard,267,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_267,Priceline Group,268,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_267,Priceline.com,268,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_268,Liberty Interactive,269,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_269,AutoZone,270,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_270,State Street,271,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -280,7 +280,7 @@ f1000_277,Occidental Petroleum,278,fortune1000,data_science,computer_science,mba
 f1000_278,United States Steel,279,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_279,Sempra Energy,280,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_280,Baxter,281,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_281,W.W. Grainger,282,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_281,Grainger,282,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_282,Autoliv,283,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_283,Norfolk Southern,284,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_284,Baker Hughes,285,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -299,14 +299,14 @@ f1000_296,MGM Resorts,297,fortune1000,data_science,computer_science,mba,mba_fina
 f1000_297,Corning,298,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_298,Republic Services,299,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_299,Alcoa,300,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_300,Fidelity National Information Services,301,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_300,FIS Global,301,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_301,Pacific Life,302,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_302,SunTrust Banks,303,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_303,LKQ,304,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_304,BorgWarner,305,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_305,Ball,306,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_306,CST Brands,307,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_307,Public Service Enterprise Group,308,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_307,PSEG,308,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_308,Eastman Chemical,309,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_309,eBay,310,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_310,Mohawk Industries,311,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -321,7 +321,7 @@ f1000_318,Avis Budget Group,319,fortune1000,data_science,computer_science,mba,mb
 f1000_319,Reliance Steel & Aluminum,320,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_320,GameStop,321,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_321,Tenneco,322,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_322,O'Reilly Automotive,323,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_322,O'Reilly Auto Parts,323,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_323,Peter Kiewit Sons',324,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_324,United Natural Foods,325,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_325,Salesforce,326,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -409,7 +409,7 @@ f1000_406,J.B. Hunt Transport Services,407,fortune1000,data_science,computer_sci
 f1000_407,Constellation Brands,408,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_408,NCR,409,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_409,Asbury Automotive Group,410,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-f1000_410,American Financial Group,411,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_410,Great American Insurance Group,411,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_411,Discovery Communications,412,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_412,Berry Global Group,413,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_413,Sanmina,414,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -1961,7 +1961,6 @@ glassdoor_117,MD Anderson Cancer Center,68,glassdoor_large,data_science,computer
 glassdoor_121,Omni Hotels,72,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 glassdoor_122,BAYADA Home Health Care,73,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 glassdoor_123,Aptive Environmental,74,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-glassdoor_124,Goldman Sachs,75,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 glassdoor_125,Kimpton Hotels & Restaurants,76,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 glassdoor_127,Great Lakes Caring,78,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 glassdoor_128,Costco Wholesale,79,glassdoor_large,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -2122,12 +2121,12 @@ bi_13,Moderna Therapeutics,12,business_insider25,data_science,computer_science,m
 bi_15,Instacart,10,business_insider25,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 bi_17,Samumed,8,business_insider25,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 bi_20,Palantir,5,business_insider25,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_FLWS,1-800 Flowers Com,0,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+ru_FLWS,1-800-Flowers.com,0,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_FCCY,1St Constitution Bank,1,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SRCE,1St Source,2,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_FOXA,21St Century Fox,3,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_XXII,22Nd Century,5,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_EGHT,8X8 Inc New,9,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+ru_EGHT,8X8 Inc,9,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AVHI,A V Homes,10,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AAC,AAC,12,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AAON,Aaon,13,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -2213,7 +2212,6 @@ ru_ASPS,Altisource Portfolio,135,ru3000,data_science,computer_science,mba,mba_fi
 ru_AIMC,Altra Industrial Motion,136,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_MO,Altria,137,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMAG,Amag Pharmaceuticals,138,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_AMZN,Amazon Com,139,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMBC,Ambac Financial,140,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMBR,Amber Rd,142,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMC,Amc Entertainment,143,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -2222,13 +2220,11 @@ ru_AMED,Amedisys,146,ru3000,data_science,computer_science,mba,mba_finance,stats,
 ru_APEI,Amer Public Education,147,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMRC,Ameresco,150,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AIG,American,161,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_AAL,American Airlines,151,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AAT,American Assets Trst,152,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AXL,American Axle & Mfg,153,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_ACC,American Campus Commun,154,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AEO,American Eagle Outfitter,155,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AEL,American Equity Invst,157,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_AFG,American Financial,159,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMH,American Homes 4 Rent,160,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_ANAT,American National Ins,162,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AMNB,American Natl Bankshares,163,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -2375,7 +2371,6 @@ ru_BELFB,Bel Fuse,360,ru3000,data_science,computer_science,mba,mba_finance,stats
 ru_BLCM,Bellicum Pharmaceuticals,362,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_BEL,Belmond,363,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_BNCL,Beneficial Bank,366,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_WRB,Berkley W R,368,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_BHLB,Berkshire Hills Bank,370,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_BERY,Berry Global,371,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_BGFV,Big 5 Sporting Goods,375,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -2843,7 +2838,6 @@ ru_FOE,Ferro,1035,ru3000,data_science,computer_science,mba,mba_finance,stats,qua
 ru_FG,FGL,1036,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_FGEN,Fibrogen,1037,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_FDBC,Fidelity D&D Bank,1038,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_FIS,Fidelity Natl Info,1039,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_LION,Fidelity Southern,1040,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_FRGI,Fiesta Restaurant,1041,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_FNGN,Financial Engines,1043,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3237,7 +3231,6 @@ ru_KMG,Kmg Chemicals,1567,ru3000,data_science,computer_science,mba,mba_finance,s
 ru_KNX,Knight-Swift Transport,1568,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_KNL,Knoll,1569,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_KN,Knowles,1570,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_KSS,Kohls,1571,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_KOP,Koppers,1573,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_KOS,Kosmos Energy,1575,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_KRA,Kraton,1576,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3580,7 +3573,6 @@ ru_KIDS,Orthopediatrics,2051,ru3000,data_science,computer_science,mba,mba_financ
 ru_OTTR,Otter Tail,2054,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_OUT,Outfront Media,2055,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_OSG,Overseas Shipholding,2056,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_OSTK,Overstock Com,2057,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_OVID,Ovid Therapeutics,2058,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_OI,Owens Illinois,2061,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_OXFD,Oxford Immunotec Global,2062,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3605,7 +3597,6 @@ ru_PK,Park Hotels & Resorts,2084,ru3000,data_science,computer_science,mba,mba_fi
 ru_PRK,Park National,2085,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PKOH,Park Ohio,2086,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PKBK,Parke Bank,2087,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_PH,Parker Hannifin,2088,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PE,Parsley Energy,2089,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PATK,Patrick Inds,2091,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PEGI,Pattern Energy,2092,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3637,6 +3628,7 @@ ru_PETQ,Petiq,2131,ru3000,data_science,computer_science,mba,mba_finance,stats,qu
 ru_PETS,Petmed Express,2132,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PFNX,Pfenex,2133,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PFSW,Pfsweb,2135,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+ru_PCG,Pg&E,2136,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PGTI,Pgt Innovations,2137,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PHH,PHH,2138,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_PHIIK,PHI,2139,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3797,7 +3789,6 @@ ru_SAFE,Saftey Income & Growth,2369,ru3000,data_science,computer_science,mba,mba
 ru_SGA,Saga Communications,2370,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SAGE,Sage Therapeutics,2371,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SAIA,Saia,2372,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_CRM,Salesforce Com,2374,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SN,Sanchez Energy,2376,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SD,Sandridge Energy,2378,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SASR,Sandy Spring Bank,2379,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3880,7 +3871,6 @@ ru_SM,Sm Energy,2479,ru3000,data_science,computer_science,mba,mba_finance,stats,
 ru_SND,Smart Sand,2482,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SMBK,Smartfinancial,2483,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_AOS,Smith A O,2484,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_SJM,Smucker J M,2485,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SNA,Snap On,2486,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SOI,Solaris Oilfield,2487,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SLDB,Solid Biosciences,2488,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -3918,7 +3908,7 @@ ru_SRCI,Src Energy,2531,ru3000,data_science,computer_science,mba,mba_finance,sta
 ru_JOE,St Joe,2533,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_STAA,Staar Surgical,2534,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_STAG,Stag Indl,2535,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_STMP,Stamps Com,2536,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+ru_STMP,Stamps.com,2536,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_SMP,Standard Motor Products,2537,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_STWD,Starwood Property Trust,2541,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_STFC,State Auto Financial,2542,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -4073,7 +4063,6 @@ ru_UCFC,United Community Financial,2771,ru3000,data_science,computer_science,mba
 ru_UBNK,United Financial Bank,2774,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_UFCS,United Fire,2775,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_UIHC,United Ins,2776,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_UPS,United Parcel Service,2778,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_UBFO,United Security Banc,2780,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_USM,United States Cellular,2781,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_USLM,United States Lime & Min,2782,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
@@ -4141,7 +4130,7 @@ ru_VSEC,VSE,2879,ru3000,data_science,computer_science,mba,mba_finance,stats,quan
 ru_WPC,W P Carey,2882,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_WTI,W&T Offshore,2883,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_WAB,Wabtec,2886,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
-ru_WDR,Waddell & Reed Financial,2887,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+ru_WDR,Waddell and Reed,2887,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_WAGE,Wageworks,2888,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_WD,Walker & Dunlop,2890,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 ru_HCC,Warrior Met Coal,2892,ru3000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
