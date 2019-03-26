@@ -9,9 +9,15 @@ import re
 from make_cover_letters import *
 from send_email import *
 import pdb
-import time
+import time, datetime
 import sys
 
+
+def get_date():
+	#Get Date for Filenames
+	now = datetime.datetime.now()
+	date = now.strftime("%Y-%m-%d-%X").replace(':','')
+	return date
 
 
 def join_profiles_credentials():
@@ -684,13 +690,15 @@ def send_email_iter(row):
 		return 'error::'+str(e)
 
 
-def deploy_matched_pairs_emails(df, experiment_csv, matched_pair):
+def deploy_matched_pairs_emails(df, experiment_csv, 
+								matched_pair, batch_datetime):
 	df['metadata'] = df.apply(send_email_iter, axis=1)
 
 	#write result file
 	infile = experiment_csv.split('.')[0]
-	outfile = "logs/results_log_{0}_pairs_{1}.csv".format(
-												infile, 
+	outfile = "logs/{0}_protocol_{1}_results_pair_{2}.csv".format(
+												batch_datetime,
+												infile,
 												matched_pair)
 	df.to_csv(outfile, index=False)
 
@@ -713,14 +721,17 @@ def display_time_elapsed(start, end, companies=None, version=None):
 
 
 def deploy_emails(experiment_csv):
+	batch_datetime = get_date()
+
 	s1 = time.time()
 	df = join_experiment_profiles_counter(experiment_csv)
-	ex_out = "logs/{}_output.csv".format(experiment_csv.split(".")[0])
+	infile = experiment_csv.split('.')[0]
+	ex_out = "logs/{0}_protocol_{1}_matched_output.csv".format(batch_datetime, infile)
 	df.to_csv(ex_out, index=False)
 
 	#Matched Pairs A
 	df_A = df.loc[(df['matched_pair']=='A')].copy()
-	deploy_matched_pairs_emails(df_A, experiment_csv, "A")
+	deploy_matched_pairs_emails(df_A, experiment_csv, "A", batch_datetime)
 	e1 = time.time()
 
 	for i in range(10,0,-1):
@@ -732,7 +743,7 @@ def deploy_emails(experiment_csv):
 	#Matched Pairs B
 	s2 = time.time()
 	df_B = df.loc[(df['matched_pair']=='B')].copy()
-	deploy_matched_pairs_emails(df_B, experiment_csv, "B")
+	deploy_matched_pairs_emails(df_B, experiment_csv, "B", batch_datetime)
 	e2 = time.time()
 
 	display_time_elapsed(s1, e1, df_A.shape[0], "A")
@@ -740,7 +751,8 @@ def deploy_emails(experiment_csv):
 
 
 
-deploy_emails("experiment_test.csv")
+deploy_emails("experiment_test_2019-03-26-005950_batch1.csv")
+#deploy_emails("experiment_test_2019-03-26-005950_batch2.csv")
 
 
 
