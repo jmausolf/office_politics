@@ -464,56 +464,104 @@ def main(employers,
 	return outfile, emp
 	
 
-def check_profile_load(df=None, protocol_file=None, limit=500):
+def check_profile_load(df=None, protocol_file=None, limit=500,
+					   df_name='dataframe', ret_max=False):
 	err_message1 = '[*] must provide either a dataframe or csv...'
 	err_message2 = '[*] must only provide a dataframe OR csv, not both...'
 	assert any(v is not None for v in [df, protocol_file]), err_message1
 	assert any(v is None for v in [df, protocol_file]), err_message2
 
 	if df is not None:
-		print('[*] evaluating profile load for given dataframe...')
+		m = '[*] evaluating profile load for {}...'.format(df_name)
 		counts = df['profile'].value_counts()
 
 	if protocol_file is not None:
-		print('[*] evaluating profile load for {}...'.format(protocol_file))
+		m = '[*] evaluating profile load for {}...'.format(protocol_file)
 		df = pd.read_csv(protocol_file)
 		counts = df['profile'].value_counts()
 		
-	print(counts)
-	if counts.max() > limit:
-		return False
+	
+	if ret_max is True:
+		return counts.max()
 	else:
-		return True
+		print(m)
+		print(counts)
+		if counts.max() > limit:
+			return False
+		else:
+			return True
 
-def replicate_match_pairs(protocol_file):
+
+def replicate_match_pairs(protocol_file, ret_max=False):
 
 	df = pd.read_csv(protocol_file)
 	df_A = df.loc[(df['version']=='A')].copy()
 	df_B = df.loc[(df['version']=='B')].copy()
 
-	result1 = check_profile_load(df=df_A)
-	result2 = check_profile_load(df=df_B)
+	result1 = check_profile_load(df=df_A, df_name='df_A', ret_max=ret_max)
+	result2 = check_profile_load(df=df_B, df_name='df_B', ret_max=ret_max)
 
-	if result1 is True and result2 is True:
-		return True
-	else: 
-		return False
+	if ret_max is False:
+		if result1 is True and result2 is True:
+			return True
+		else: 
+			return False
+	else:
+		return result1, result2
 
 
 def need_batches(protocol_file):
-
+	print('\n[*] CHECKING to see if batches are required....')
 	result = check_profile_load(protocol_file=protocol_file)
-
 	if result is True:
-		print('no, good to go without batching')
+		print('[*] NO: batches are not required...')
+		return False
 	else:
-		print('might need batching')
+		print('[*] WARNING: batches may be required for protocol...')
+		
 		#Check A/B pairs and see if it still needs batching
 		subresults = replicate_match_pairs(protocol_file)
 		if subresults is True:
-			print("okay without batching")
+			print('[*] NO: batches not required for using A/B pairs...')
+			print('[*] ENSURE: at least a 24 hour delay between batches...')
+			return False
 		else:
-			print("no, still needs batching even divided into A/B pairs")
+			print('[*] YES: batches ARE REQUIRED even using A/B pairs...')
+			return True
+
+
+def index_marks(nrows, chunk_size):
+	return range(1 * chunk_size, (nrows // chunk_size + 1) * chunk_size, chunk_size)
+
+def split(dfm, chunk_size):
+	indices = index_marks(dfm.shape[0], chunk_size)
+	return np.split(dfm, indices)
+
+def make_batches(protocol_file, limit=500):
+	
+	if need_batches(protocol_file) is True:
+		protocol_df = pd.read_csv(protocol_file)
+		#make batches
+		r1, r2 = replicate_match_pairs(protocol_file, ret_max=True)
+		max_load = max(r1, r2)
+		batches = (max_load // limit)+1
+		print('[*] TOTAL of {} batches are suggested...'.format(batches))
+		#print(r1, r2)
+		#print(max(r1, r2))
+
+		#TODO, determine an even integer batch number, e.g. 922 or 924 to get 
+		#the number of batches
+		#chunks = np.split(protocol_df, batches)
+		chunks = split(protocol_df, 924)
+		batch_number = 0
+		for c in chunks:
+			print("Shape: {}; {}".format(c.shape, c.index))
+			batch_number +=1
+			c.to_csv('test_{}.csv'.format(batch_number), index=False)
+
+		pass
+	else:
+		pass
 
 
 
@@ -544,8 +592,26 @@ protocol_outfile, protocol_df = main(
 #replicate_match_pairs(protocol_outfile)
 need_batches(protocol_outfile)
 '''
-need_batches("experiment_test.csv")
-need_batches("experiment_test_smtp_limits.csv")
+make_batches("experiment_test.csv")
+make_batches("experiment_test_smtp_limits.csv")
+
+
+#########################
+#TODO for batches, if returns false, then attempt splitting the 
+#protocol outfile into batches, 
+#perhaps the number of batches can be determined by some 
+#fract division // with limit
+#whatever that number of divisibility, equals that many batches....
+#then double check the results of need batches 
+#for every new batch file...
+
+#In [4]: import numpy as np
+#In [5]: np.array_split(df, 3)
+
+#########################
+
+
+
 
 #check_profile_load(df="ntes", protocol_file="tesr")
 #c = check_profile_load(protocol_file="experiment_test.csv")
