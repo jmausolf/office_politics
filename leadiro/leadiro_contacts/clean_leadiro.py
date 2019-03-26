@@ -5,7 +5,7 @@ import re, os, sys
 import zipfile
 from fuzzywuzzy import process
 import warnings
-
+import argparse, textwrap
 
 
 def remove_punct(text):
@@ -190,24 +190,58 @@ def fuzzy_match_df_cols(left_df, right_df,
 
 
 
-def main():
 
-	#Clean File Names
-	rename_file_spaces()
+def clean_leadiro_main(
+		combined_leadiro_file='leadiro_combined.csv',
+		leadiro_col = 'company',
+		emp_file = '../../keys/employers_key.csv',
+		emp_col = 'company',
+		local_out = '../leadiro_matched.csv',
+		matched_leadiro_key = '../../keys/leadiro_matched_key.csv',
+		match_only=False
 
-	#Convert Leadiro XLSX to CSV
-	convert_files_xlsx_csv()
+	):
 
-	#Combine Files and Drop Duplicates
-	combine_leadiro('leadiro_combined.csv')
+	if match_only is False:
+	
+		#Clean File Names
+		rename_file_spaces()
 
-	#Fuzzy Match Leadiro Company Names and Employer Key Company Names
-	fuzzy_match_df_cols('leadiro_combined.csv', '../keys/employers_key.csv',
-						'company', 'company',
-						outfile='leadiro_matched.csv')
+		#Convert Leadiro XLSX to CSV
+		convert_files_xlsx_csv()
 
-	#Clean Output and Select One Lead Per Company
-	clean_leadiro('leadiro_matched.csv', '../keys/leadiro_matched_key.csv')
+		#Combine Files and Drop Duplicates
+		combine_leadiro(combined_leadiro_file)
+
+		#Fuzzy Match Leadiro Company Names and Employer Key Company Names
+		fuzzy_match_df_cols(combined_leadiro_file, emp_file,
+							leadiro_col, emp_col,
+							outfile=local_out)
+
+		#Clean Output and Select One Lead Per Company
+		clean_leadiro(local_out, matched_leadiro_key)
+
+	else:
+
+		#Fuzzy Match Leadiro Company Names and Employer Key Company Names
+		fuzzy_match_df_cols(combined_leadiro_file, emp_file,
+							leadiro_col, emp_col,
+							outfile=local_out)
+
+		#Clean Output and Select One Lead Per Company
+		clean_leadiro(local_out, matched_leadiro_key)
 
 
-main()
+
+if __name__=="__main__":
+
+
+    clean_leadiro_main(
+		combined_leadiro_file='leadiro_combined.csv',
+		leadiro_col = 'company',
+		emp_file = '../../keys/employers_key.csv',
+		emp_col = 'company',
+		local_out = 'leadiro_matched.csv',
+		matched_leadiro_key = '../../keys/leadiro_matched_key.csv',
+		match_only=False
+	)
