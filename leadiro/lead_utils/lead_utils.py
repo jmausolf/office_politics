@@ -1,16 +1,3 @@
-
-
-#Basic Process for Collecting Leadiro with GUI
-
-
-#Upload ABM File and Apply Filters Online
-#Manually Review Contacts in Shopping Cart, Download
-#Once Downloaded, Run Clean Leadiro Matcher Against Employers Key
-#Make Antijoin Function
-#(Left join employers key and matched leads, select missing field, e.g. contact_email)
-#Drop those with a contact email in the merged list, these are the ones still missing an employer
-#Alternatively 
-
 import pandas as pd
 import numpy as np
 import time
@@ -53,6 +40,7 @@ def ret_abm_start(emp_key='../keys/cleaned_employers_key.csv',
 	abm_start = pd.merge(emp_key_master, abm_master, how='left')
 	abm_start = abm_start[[abm_col]]
 	abm_start.to_csv('lead_utils/initial_abm.csv', index=False)
+	abm_start.to_excel('lead_utils/initial_abm.xlsx', index=False)
 	return abm_start
 
 
@@ -62,6 +50,7 @@ def update_abm(leadiro_remaining, abm_start, abm_col='company'):
 	abm_remaining = pd.merge(leadiro_remaining, abm_start, how='left')
 	abm_remaining = abm_remaining[[abm_col]]
 	abm_remaining.to_csv('lead_utils/updated_abm.csv', index=False)
+	abm_remaining.to_excel('lead_utils/updated_abm.xlsx', index=False)
 	return abm_remaining
 
 
