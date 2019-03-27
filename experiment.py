@@ -34,7 +34,7 @@ def ret_mba_treatment(row, infile='keys/mba_treatment_key.csv'):
 	job_type = row['job_type']
 	ug_treatment = row['treatment']
 
-	if job_type not in ['mba', 'mba_finance', 'mba_analyst', 'consultant']:
+	if job_type not in ['mba', 'mba_finance', 'mba_analyst']:
 		return ug_treatment
 	else:
 
@@ -64,13 +64,13 @@ def select_ga(row, count):
 		#Select Match from Region or Proximal Region
 		gaf = pd.read_csv("keys/ga_school_key.csv")
 
-		criteria_base = ( (gaf['region']==region) & 
-						(gaf['job_type']==job_type) & 					
+		criteria_base = ( (gaf['region']==region) &
+						(gaf['job_type']==job_type) &
 						(gaf['prestige']==profile[-1]) )
 
 		criteria_prox = (((gaf['region']==region) |
-						  (gaf['region']==proximal)) & 
-						(gaf['job_type']==job_type) & 					
+						  (gaf['region']==proximal)) &
+						(gaf['job_type']==job_type) &
 						(gaf['prestige']==profile[-1]))
 
 		#TODO
@@ -80,7 +80,7 @@ def select_ga(row, count):
 			ga = gaf.loc[criteria_base].copy()
 			if ga.shape[0] == 0:
 				ga = gaf.loc[criteria_prox].copy()
-			else: 
+			else:
 				pass
 		except:
 			ga = gaf.loc[criteria_prox].copy()
@@ -109,26 +109,26 @@ def select_ga(row, count):
 	elif count == 1:
 		#Select Match from Region or Proximal Region
 		gaf = pd.read_csv("keys/ga_school_key_tmp.csv")
-		criteria_base = ( (gaf['region']==region) & 
-						(gaf['job_type']==job_type) & 					
+		criteria_base = ( (gaf['region']==region) &
+						(gaf['job_type']==job_type) &
 						(gaf['prestige']==profile[-1]) )
 
 		criteria_prox = (((gaf['region']==region) |
-						  (gaf['region']==proximal)) & 
-						(gaf['job_type']==job_type) & 					
+						  (gaf['region']==proximal)) &
+						(gaf['job_type']==job_type) &
 						(gaf['prestige']==profile[-1]))
 
 		try:
 			ga = gaf.loc[criteria_base].copy()
 			if ga.shape[0] == 0:
 				ga = gaf.loc[criteria_prox].copy()
-			else: 
+			else:
 				pass
 		except:
 			ga = gaf.loc[criteria_prox].copy()
 
 		#Add Pair Label
-		ga['matched_pair'] = 'B' 
+		ga['matched_pair'] = 'B'
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
@@ -154,11 +154,11 @@ def select_ug(row, count):
 	#First Matched Pair
 	if count == 0:
 		ugf = pd.read_csv("keys/ug_school_key.csv")
-		criteria = ((ugf['profile']==profile) & 
-					(ugf['region']==region) & 
+		criteria = ((ugf['profile']==profile) &
+					(ugf['region']==region) &
 					(ugf['sid']!=school))
-		ug = ugf.loc[criteria] 
-		
+		ug = ugf.loc[criteria]
+
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ug.index.values, 1)
 		df = ug.ix[rows]
@@ -179,11 +179,11 @@ def select_ug(row, count):
 	#Second Matched Pair
 	elif count == 1:
 		ugf = pd.read_csv("keys/ug_school_key_tmp.csv")
-		criteria = ((ugf['profile']==profile) & 
-					(ugf['region']==region) & 
+		criteria = ((ugf['profile']==profile) &
+					(ugf['region']==region) &
 					(ugf['sid']!=school))
 		ug = ugf.loc[criteria]
-		
+
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ug.index.values, 1)
 		df = ug.ix[rows]
@@ -192,7 +192,7 @@ def select_ug(row, count):
 		df = df.drop(['region', 'profile', 'sid'], axis=1)
 		keys = df.columns.tolist()
 		vals = df.values.tolist()[0]
-		return vals		
+		return vals
 
 	else:
 		pass
@@ -203,11 +203,11 @@ def internships_general(job_type, prestige, company, count):
 	#First Matched Pair
 	if count == 0:
 		intf = pd.read_csv("keys/int_key.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
+		criteria = ((intf['job_type']==job_type) &
+					(intf['prestige']==prestige) &
 					(intf['internship']!=company))
-		int_df = intf.loc[criteria] 
-		
+		int_df = intf.loc[criteria]
+
 		#Random Selection of Internships Meeting Criteria
 		rows = np.random.choice(int_df.index.values, 2, replace=False)
 		df = int_df.ix[rows]
@@ -229,11 +229,11 @@ def internships_general(job_type, prestige, company, count):
 	#Second Matched Pair
 	elif count == 1:
 		intf = pd.read_csv("keys/int_key_tmp.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
+		criteria = ((intf['job_type']==job_type) &
+					(intf['prestige']==prestige) &
 					(intf['internship']!=company))
-		int_df = intf.loc[criteria] 
-		
+		int_df = intf.loc[criteria]
+
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(int_df.index.values, 2, replace=False)
 		df = int_df.ix[rows]
@@ -244,209 +244,7 @@ def internships_general(job_type, prestige, company, count):
 		keys = df.columns.tolist()
 		vals = df.values.tolist()
 		internships =  vals[0]+vals[1]
-		return internships	
-
-	else:
-		pass
-
-
-def internships_mba(job_type, prestige, company, count):
-
-	#First Matched Pair
-	if count == 0:
-		intf = pd.read_csv("keys/int_key.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
-					(intf['internship']!=company))
-		int_df = intf.loc[criteria] 
-		
-		#Random Selection of Internships Meeting Criteria
-		rows = np.random.choice(int_df.index.values, 2, replace=False)
-		df = int_df.ix[rows]
-		#Drop Selections from Internship to Avoid Selection for Pair 2
-		int_selection = df['int_id'].values.tolist()
-		tmp = intf[((intf.int_id != int_selection[0]) &
-				    (intf.int_id != int_selection[1]))]
-		tmp.to_csv("keys/int_key_tmp.csv", index=False)
-
-
-		#Return Results
-		df = df.drop(['job_type', 'prestige'], axis=1)
-		keys = df.columns.tolist()
-		vals = df.values.tolist()
-		internships =  vals[0]+vals[1]
 		return internships
-
-
-	#Second Matched Pair
-	elif count == 1:
-		intf = pd.read_csv("keys/int_key_tmp.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
-					(intf['internship']!=company))
-		int_df = intf.loc[criteria] 
-		
-		#Random Selection of Schools Meeting Criteria
-		rows = np.random.choice(int_df.index.values, 2, replace=False)
-		df = int_df.ix[rows]
-
-
-		#Return Results
-		df = df.drop(['job_type', 'prestige'], axis=1)
-		keys = df.columns.tolist()
-		vals = df.values.tolist()
-		internships =  vals[0]+vals[1]
-		return internships	
-
-	else:
-		pass
-
-
-def internships_consultant(job_type, prestige, company, count):
-	'''
-	Selects a consulting company as the 'first' or most recent 
-	work experience. Selects a non-consulting firm as the 'second'
-	or pre-MBA work experience.
-	'''
-
-	#First Matched Pair
-	if count == 0:
-		#Base Internships Meeting Criteria for Pair A
-		intf = pd.read_csv("keys/int_key.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
-					(intf['internship']!=company))
-		int_df = intf.loc[criteria]
-
-		#First Internship
-		int_1 = int_df.loc[(int_df['int_type']=='first')]
-		i1 = np.random.choice(int_1.index.values, 1, replace=False)
-		df_1 = int_1.ix[i1]
-
-		#Second Internship
-		int_2 = int_df.loc[(int_df['int_type']=='second')]
-		i2 = np.random.choice(int_2.index.values, 1, replace=False)
-		df_2 = int_2.ix[i2]
-		
-		#Both Internships
-		df = pd.concat([df_1, df_2], axis=0)
-
-		#Drop Selections from Internship to Avoid Selection for Pair 2
-		int_selection = df['int_id'].values.tolist()
-		tmp = intf[((intf.int_id != int_selection[0]) &
-				    (intf.int_id != int_selection[1]))]
-		tmp.to_csv("keys/int_key_tmp.csv", index=False)
-
-
-		#Return Results
-		df = df.drop(['job_type', 'prestige'], axis=1)
-		keys = df.columns.tolist()
-		vals = df.values.tolist()
-		internships =  vals[0]+vals[1]
-		return internships
-
-
-	#Second Matched Pair
-	elif count == 1:
-		intf = pd.read_csv("keys/int_key_tmp.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
-					(intf['internship']!=company))
-		int_df = intf.loc[criteria]
-
-		#First Internship
-		int_1 = int_df.loc[(int_df['int_type']=='first')]
-		i1 = np.random.choice(int_1.index.values, 1, replace=False)
-		df_1 = int_1.ix[i1]
-
-		#Second Internship
-		int_2 = int_df.loc[(int_df['int_type']=='second')]
-		i2 = np.random.choice(int_2.index.values, 1, replace=False)
-		df_2 = int_2.ix[i2]
-		
-		#Both Internships
-		df = pd.concat([df_1, df_2], axis=0)
-
-		#Return Results
-		df = df.drop(['job_type', 'prestige'], axis=1)
-		keys = df.columns.tolist()
-		vals = df.values.tolist()
-		internships =  vals[0]+vals[1]
-		return internships	
-
-	else:
-		pass
-
-
-def internships_quant(job_type, prestige, company, count):
-	'''
-	Selects different first/second internships based on int_key
-	'''
-
-	#First Matched Pair
-	if count == 0:
-		#Base Internships Meeting Criteria for Pair A
-		intf = pd.read_csv("keys/int_key.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
-					(intf['internship']!=company))
-		int_df = intf.loc[criteria]
-
-		#First Internship
-		int_1 = int_df.loc[(int_df['int_type']=='first')]
-		i1 = np.random.choice(int_1.index.values, 1, replace=False)
-		df_1 = int_1.ix[i1]
-
-		#Second Internship
-		int_2 = int_df.loc[(int_df['int_type']=='second')]
-		i2 = np.random.choice(int_2.index.values, 1, replace=False)
-		df_2 = int_2.ix[i2]
-		
-		#Both Internships
-		df = pd.concat([df_1, df_2], axis=0)
-
-		#Drop Selections from Internship to Avoid Selection for Pair 2
-		int_selection = df['int_id'].values.tolist()
-		tmp = intf[((intf.int_id != int_selection[0]) &
-				    (intf.int_id != int_selection[1]))]
-		tmp.to_csv("keys/int_key_tmp.csv", index=False)
-
-
-		#Return Results
-		df = df.drop(['job_type', 'prestige'], axis=1)
-		keys = df.columns.tolist()
-		vals = df.values.tolist()
-		internships =  vals[0]+vals[1]
-		return internships
-
-
-	#Second Matched Pair
-	elif count == 1:
-		intf = pd.read_csv("keys/int_key_tmp.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
-					(intf['internship']!=company))
-		int_df = intf.loc[criteria]
-
-		#First Internship
-		int_1 = int_df.loc[(int_df['int_type']=='first')]
-		i1 = np.random.choice(int_1.index.values, 1, replace=False)
-		df_1 = int_1.ix[i1]
-
-		#Second Internship
-		int_2 = int_df.loc[(int_df['int_type']=='second')]
-		i2 = np.random.choice(int_2.index.values, 1, replace=False)
-		df_2 = int_2.ix[i2]
-		
-		#Both Internships
-		df = pd.concat([df_1, df_2], axis=0)
-
-		#Return Results
-		df = df.drop(['job_type', 'prestige'], axis=1)
-		keys = df.columns.tolist()
-		vals = df.values.tolist()
-		internships =  vals[0]+vals[1]
-		return internships	
 
 	else:
 		pass
@@ -461,8 +259,8 @@ def internships_ordered(job_type, prestige, company, count):
 	if count == 0:
 		#Base Internships Meeting Criteria for Pair A
 		intf = pd.read_csv("keys/int_key.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
+		criteria = ((intf['job_type']==job_type) &
+					(intf['prestige']==prestige) &
 					(intf['internship']!=company))
 		int_df = intf.loc[criteria]
 
@@ -475,7 +273,7 @@ def internships_ordered(job_type, prestige, company, count):
 		int_2 = int_df.loc[(int_df['int_type']=='second')]
 		i2 = np.random.choice(int_2.index.values, 1, replace=False)
 		df_2 = int_2.ix[i2]
-		
+
 		#Both Internships
 		df = pd.concat([df_1, df_2], axis=0)
 
@@ -497,8 +295,8 @@ def internships_ordered(job_type, prestige, company, count):
 	#Second Matched Pair
 	elif count == 1:
 		intf = pd.read_csv("keys/int_key_tmp.csv")
-		criteria = ((intf['job_type']==job_type) & 
-					(intf['prestige']==prestige) & 
+		criteria = ((intf['job_type']==job_type) &
+					(intf['prestige']==prestige) &
 					(intf['internship']!=company))
 		int_df = intf.loc[criteria]
 
@@ -511,7 +309,7 @@ def internships_ordered(job_type, prestige, company, count):
 		int_2 = int_df.loc[(int_df['int_type']=='second')]
 		i2 = np.random.choice(int_2.index.values, 1, replace=False)
 		df_2 = int_2.ix[i2]
-		
+
 		#Both Internships
 		df = pd.concat([df_1, df_2], axis=0)
 
@@ -520,7 +318,7 @@ def internships_ordered(job_type, prestige, company, count):
 		keys = df.columns.tolist()
 		vals = df.values.tolist()
 		internships =  vals[0]+vals[1]
-		return internships	
+		return internships
 
 	else:
 		pass
@@ -533,10 +331,10 @@ def select_int(row, count):
 	prestige = row[1]
 	company = row[2]
 
-	if job_type in ['data_science', 'computer_science', 
+	if job_type in ['data_science', 'computer_science',
 					'mba', 'mba_finance', 'mba_analyst']:
 		internships = internships_general(job_type, prestige, company, count)
-	if job_type in ['consultant', 'quant', 'stats']:
+	if job_type in ['quant', 'stats']:
 		internships = internships_ordered(job_type, prestige, company, count)
 	else:
 		pass
@@ -558,25 +356,25 @@ def join_ex_pair(ex_df, cid):
 	#print(ex)
 
 	#Select GA Schools
-	ga_vals = ['department', 'sid', 'ga_sid', 'school', 
+	ga_vals = ['department', 'sid', 'ga_sid', 'school',
 			   'school_ctyst', 'school_cszip', 'school_address',
 			   'title', 'rgb', 'matched_pair']
 	ga_keys = ['profile', 'job_type', 'region', 'proximal_region']
 
 
 	#Select UG Schools
-	ug_vals = ['ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst', 
+	ug_vals = ['ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst',
 			   'treatment', 'prestige']
 	ug_keys = ['profile', 'region', 'sid']
 
 
 	#Select Internships
-	int_vals = ['int_id1', 'internship1', 'int1_ctyst', 'int1_title', 'int1_type', 
+	int_vals = ['int_id1', 'internship1', 'int1_ctyst', 'int1_title', 'int1_type',
 				'int_id2', 'internship2', 'int2_ctyst', 'int2_title', 'int2_type']
 	int_keys = ['job_type', 'prestige', 'company']
 
 
-	#Determine Unique GA/UG Profiles for Matched Pairs 
+	#Determine Unique GA/UG Profiles for Matched Pairs
 	#(Meeting Profile Criteria)
 	pairs = []
 	for i in list(ex.index):
@@ -619,16 +417,16 @@ def join_experiment_profiles_counter(experiment_file):
 	for c in cids:
 		pair = join_ex_pair(ex_full, c)
 		matched_pairs.append(pair)
-	
+
 	ex_all = pd.concat(matched_pairs)
 	profiles = join_profiles_credentials()
 	df = pd.merge(ex_all, profiles, on=['profile'])
 
-	#Update MBA Treatments 
+	#Update MBA Treatments
 	df['treatment'] = df.apply(ret_mba_treatment, axis=1)
 
 	#Update Treatment Leadership Position
-	df['treatment'] = df.apply(update_treatment_leadership, axis=1)	
+	df['treatment'] = df.apply(update_treatment_leadership, axis=1)
 
 	#Sort by ID
 	df['sort'] = df['id'].str.extract('(\d+)', expand=False).astype(int)
@@ -660,16 +458,16 @@ def send_email_iter(row):
 					contact=row['contact_name'],
 					contact_last_name=row['contact_last_name'],
 					job=row['position'],
-					office=row['office'], 
+					office=row['office'],
 					company=row['company'],
-					name=row['name'], 
-					title=row['title'], 
+					name=row['name'],
+					title=row['title'],
 					school=row['school'],
 					school_ctyst=row['school_ctyst'],
 					school_cszip=row['school_cszip'],
 					school_address=row['school_address'],
 					department=row['department'],
-					ba_school=row['ug_school'], 
+					ba_school=row['ug_school'],
 					ba_ctyst=row['ug_ctyst'],
 					internship1=row['internship1'],
 					int1_ctyst=row['int1_ctyst'],
@@ -678,7 +476,7 @@ def send_email_iter(row):
 					int2_ctyst=row['int2_ctyst'],
 					int2_title=row['int2_title'],
 					treatment=row['treatment'],
-					phone=row['phone'], 
+					phone=row['phone'],
 					gmail_user=row['gmail_user'],
 					gmail_pass=row['gmail_pass'],
 					contact_email=row['contact_email'],
@@ -686,7 +484,7 @@ def send_email_iter(row):
 					pair=row['matched_pair'],
 					pair_version=row['version']
 					)
-		
+
 		return 'metadata::'+meta
 
 
@@ -697,12 +495,12 @@ def send_email_iter(row):
 		return 'error::'+str(e)
 
 
-def deploy_matched_pairs_emails(df, experiment_csv, 
+def deploy_matched_pairs_emails(df, experiment_csv,
 								matched_pair, batch_datetime):
 	df['metadata'] = df.apply(send_email_iter, axis=1)
 
 	#write result file
-	infile = experiment_csv.split('.')[0]
+	infile = experiment_csv.split('protocols/')[1].split('.')[0]
 	outfile = "logs/{0}_protocol_{1}_results_pair_{2}.csv".format(
 												batch_datetime,
 												infile,
@@ -714,7 +512,7 @@ def deploy_matched_pairs_emails(df, experiment_csv,
 def display_time_elapsed(start, end, companies=None, version=None):
 	time_elapsed = ((end-start)/60)
 	time_message = '[*] {} minutes elapsed...'.format(time_elapsed)
-	
+
 	if companies is None and version is None:
 		print(time_message)
 
@@ -733,9 +531,9 @@ def deploy_emails(experiment_csv):
 	s1 = time.time()
 	df = join_experiment_profiles_counter(experiment_csv)
 
-	infile = experiment_csv.split('.')[0]
+	infile = experiment_csv.split('protocols/')[1].split('.')[0]
 	ex_out = "logs/{0}_protocol_{1}_matched_output.csv".format(
-															batch_datetime, 
+															batch_datetime,
 															infile)
 	df.to_csv(ex_out, index=False)
 
@@ -760,6 +558,7 @@ def deploy_emails(experiment_csv):
 	display_time_elapsed(s2, e2, df_B.shape[0], "B")
 
 
+deploy_emails("protocols/experiment_test.csv")
 
 #deploy_emails("experiment_test_2019-03-26-005950_batch1.csv")
 #deploy_emails("experiment_test_2019-03-26-005950_batch2.csv")
@@ -773,11 +572,4 @@ def deploy_emails(experiment_csv):
 
 #SMTP Tests
 #deploy_emails("experiment_test_smtp_limits.csv")
-deploy_emails("smtp_test2_experiment_2019-03-26-224927.csv")
-
-
-
-
-
-
-
+#deploy_emails("smtp_test2_experiment_2019-03-26-224927.csv")

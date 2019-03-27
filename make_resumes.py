@@ -47,7 +47,7 @@ def modify_resume(path, tex_file, pairs, name, replace=False):
 	r = read_tex(infile)
 	for pair in pairs:
 		r = rep_pair(r, pair)
-		
+
 	#write results
 	if replace is True:
 		output = open(infile, "w")
@@ -55,28 +55,28 @@ def modify_resume(path, tex_file, pairs, name, replace=False):
 		clean_name = name.replace(' ', '_').replace('.', '')
 		outfile = "Resume_{}.tex".format(clean_name)
 		output = open("{}/{}".format(path, outfile), "w")
-	
+
 	output.write(r)
 	output.close()
 
 
-def make_resume_pairs(name, 
+def make_resume_pairs(name,
 					  phone,
 					  gmail_user,
-					  school, 
+					  school,
 					  school_ctyst,
 					  school_cszip,
 					  school_address,
 					  department,
-					  ba_school, 
-					  ba_ctyst, 
+					  ba_school,
+					  ba_ctyst,
 					  internship1,
 					  int1_ctyst,
 					  int1_title,
 					  internship2,
 					  int2_ctyst,
 					  int2_title,
-					  treatment 
+					  treatment
 					):
 
 
@@ -117,16 +117,16 @@ def inject_safe_latex(key):
 
 def make_resume(profile,
 				job_type,
-				name, 
+				name,
 				phone,
 				gmail_user,
-				school, 
+				school,
 				school_ctyst,
 				school_cszip,
 				school_address,
 				department,
-				ba_school, 
-				ba_ctyst, 
+				ba_school,
+				ba_ctyst,
 				internship1,
 				int1_ctyst,
 				int1_title,
@@ -160,8 +160,8 @@ def make_resume(profile,
 	school_clean = article_strip(school)
 
 
-	#Department Adjustment for MBA/Consultants
-	if job_type in ['mba', 'mba_finance', 'mba_analyst', 'consultant']:
+	#Department Adjustment for MBAs
+	if job_type in ['mba', 'mba_finance', 'mba_analyst']:
 		department = article_strip(department.split(' at ')[0])
 	else:
 		pass
@@ -176,16 +176,16 @@ def make_resume(profile,
 		resume_infile = "resume_template_B.tex"
 		#phone = '({}'.format(phone.replace('-', ') ', 1))
 
-	rp = make_resume_pairs(name, 
+	rp = make_resume_pairs(name,
 						   phone,
 						   gmail_user,
-						   school_clean, 
+						   school_clean,
 						   school_ctyst,
 						   school_cszip,
 						   school_address,
 						   department,
-						   ba_school, 
-						   ba_ctyst, 
+						   ba_school,
+						   ba_ctyst,
 						   internship1,
 						   int1_ctyst,
 						   int1_title,
@@ -201,7 +201,3 @@ def make_resume(profile,
 
 	#compile new resume
 	compile_xelatex(path, outfile)
-
-
-
-

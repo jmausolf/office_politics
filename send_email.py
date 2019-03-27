@@ -15,21 +15,21 @@ def abbreviate_middle(name):
 	return name
 
 
-def send_email(profile, 
+def send_email(profile,
 			job_type,
 			contact,
 			contact_last_name,
 			job,
-			office, 
+			office,
 			company,
-			name, 
-			title, 
+			name,
+			title,
 			school,
 			school_ctyst,
 			school_cszip,
 			school_address,
 			department,
-			ba_school, 
+			ba_school,
 			ba_ctyst,
 			internship1,
 			int1_ctyst,
@@ -38,7 +38,7 @@ def send_email(profile,
 			int2_ctyst,
 			int2_title,
 			treatment,
-			phone, 
+			phone,
 			gmail_user,
 			gmail_pass,
 			contact_email,
@@ -46,19 +46,6 @@ def send_email(profile,
 			pair,
 			pair_version
 			):
-	
-	#TODO Pass "Pair" to Email
-	#Need alt style for a number of elements in the email,
-	#such as the resume style, cover_letter style, subject line,
-	#signature, etc
-
-	#To avoid confounding whether one 'style' is better or worse
-	#with partisan or non-partisan, the 'style' needs to be randomized
-	#as well.
-
-	#By passing the pair 'a' or 'b' to the send_email 
-	#func, any style element can have at random an a and b version
-
 
 	#TODO
 	#within CL sub of 'University of X, Y,' --> 'University of X-Y,'
@@ -81,7 +68,7 @@ def send_email(profile,
 				job_post = job
 		else:
 			job_post = job
-			
+
 
 		if pair_version == 'A':
 			subject = "{} Opening - {}".format(job_post, company)
@@ -93,9 +80,9 @@ def send_email(profile,
 	msgRoot['From'] = name
 	msgRoot['To'] = contact_email
 	msgRoot.preamble = ''
-	
 
-	#Create alternative portion to allow adding 
+
+	#Create alternative portion to allow adding
 	#both plain and HTML versions of the cover letter
 	msgAlt = MIMEMultipart('alternative')
 	msgRoot.attach(msgAlt)
@@ -113,23 +100,23 @@ def send_email(profile,
 
 	#Message (Text Version & HTML Version)
 	message_output = make_html_text_cl(
-		profile, 
-		job_type, 
+		profile,
+		job_type,
 		contact,
-		contact_last_name, 
-		job, 
-		office, 
-		company, 
-		name, 
-		title, 
+		contact_last_name,
+		job,
+		office,
+		company,
+		name,
+		title,
 		school,
 		department,
 		internship1,
 		int1_ctyst,
 		internship2,
 		int2_ctyst,
-		treatment, 
-		phone, 
+		treatment,
+		phone,
 		gmail_user,
 		rgb,
 		pair_version
@@ -147,16 +134,16 @@ def send_email(profile,
 	#Write Resume Code
 	make_resume(profile,
 				job_type,
-				name, 
+				name,
 				phone,
 				gmail_user,
-				school, 
+				school,
 				school_ctyst,
 				school_cszip,
 				school_address,
 				department,
-				ba_school, 
-				ba_ctyst, 
+				ba_school,
+				ba_ctyst,
 				internship1,
 				int1_ctyst,
 				int1_title,
@@ -186,10 +173,10 @@ def send_email(profile,
 					To : {}
 					Attachment: {}
 					Text: {}
-			""".format(	msgRoot['Subject'], 
-						msgRoot['From'], 
-						msgRoot['To'], 
-						resume_path, 
+			""".format(	msgRoot['Subject'],
+						msgRoot['From'],
+						msgRoot['To'],
+						resume_path,
 						snip))
 
 
@@ -206,5 +193,3 @@ def send_email(profile,
 
 
 	return meta.replace('\n', '|')
-
-

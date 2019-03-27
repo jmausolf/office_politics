@@ -21,7 +21,7 @@ def keep_or_replace(app_company, intern_company):
 
 
 def sub_cover_letter_internship(app_company, job_type_prestige):
-	
+
 	d = job_type_prestige.copy()
 	#print(d)
 	try:
@@ -106,15 +106,15 @@ def make_html_sig(name, title, school, phone, gmail_user, rgb, pair_version):
 	return sig_html
 
 
-def make_text_cl(profile, 
+def make_text_cl(profile,
 				job_type,
 				contact,
 				contact_last_name,
 				job,
-				office, 
+				office,
 				company,
-				name, 
-				title, 
+				name,
+				title,
 				school,
 				department,
 				internship1,
@@ -122,7 +122,7 @@ def make_text_cl(profile,
 				internship2,
 				int2_ctyst,
 				treatment,
-				phone, 
+				phone,
 				gmail_user,
 				pair_version,
 				add_sig=True
@@ -142,7 +142,7 @@ def make_text_cl(profile,
 			.format(cl().__class__.__name__, method_name))
 
 	app_first_name = name.split(' ')[0]
-	message_body = cl_text(contact, contact_last_name, job, office, company, 
+	message_body = cl_text(contact, contact_last_name, job, office, company,
 						   internships, school, department, treatment, internship1, internship2)
 
 	if add_sig is True:
@@ -154,15 +154,15 @@ def make_text_cl(profile,
 	return message_text
 
 
-def make_html_text_cl(profile, 
+def make_html_text_cl(profile,
 				job_type,
 				contact,
 				contact_last_name,
 				job,
-				office, 
+				office,
 				company,
-				name, 
-				title, 
+				name,
+				title,
 				school,
 				department,
 				internship1,
@@ -170,20 +170,20 @@ def make_html_text_cl(profile,
 				internship2,
 				int2_ctyst,
 				treatment,
-				phone, 
+				phone,
 				gmail_user,
 				rgb,
 				pair_version
 				):
 
 	#Make department lowercase in cl (if not MBA type)
-	if job_type not in ['mba', 'mba_finance', 'mba_analyst', 'consultant']:
+	if job_type not in ['mba', 'mba_finance', 'mba_analyst']:
 		department = department.lower()
 	else:
 		pass
 
 	#Make Text CL (no sig)
-	message_text_body = make_text_cl(profile, 
+	message_text_body = make_text_cl(profile,
 								  job_type,
 								  contact,
 								  contact_last_name,
@@ -225,5 +225,3 @@ def make_html_text_cl(profile,
 	return message_text, message_html
 
 #join_experiment_profiles("experiment_test.csv")
-
-
