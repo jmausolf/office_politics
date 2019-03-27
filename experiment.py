@@ -754,7 +754,8 @@ def deploy_emails(experiment_csv):
 #deploy_emails("experiment_test_2019-03-26-005950_batch1.csv")
 #deploy_emails("experiment_test_2019-03-26-005950_batch2.csv")
 
-deploy_emails("experiment_test_smtp_limits.csv")
+#deploy_emails("experiment_test_smtp_limits.csv")
+deploy_emails("experiment_2019-03-26-224927.csv")
 
 
 
