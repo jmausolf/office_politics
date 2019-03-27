@@ -262,9 +262,10 @@ def join_emp_key_master_companies(emp_key, master_key):
     #Fill NA Values in Last Column
     df_master = df_master.fillna(axis=0, method='bfill')
     df_master = df_master.fillna(axis=0, method='ffill')
-
     df = pd.merge(df_employ, df_master, on=['list_id', 'company'], how='left')
+    df = df.dropna(axis=0)
     return df
+
 
 def make_ranking_col(emp_key, master_key, rank_cols):
     df = join_emp_key_master_companies(emp_key, master_key)
@@ -338,16 +339,18 @@ def reclass_arbitrate(row):
 
 def reclassify_jobs(emp_key,
                     master_key,
-                    rank_cols,
                     outfile='../keys/cleaned_employers_key.csv',
                     clean=True):
 
+    #Get Ranks
+    rdf = pd.read_csv(master_key)
+    ranks = rdf.filter(regex="^job_type_*").columns.values.tolist()
+
     #Prep
-    df = make_ranking_col(emp_key, master_key, rank_cols)
+    df = make_ranking_col(emp_key, master_key, ranks)
     df['job_rank'] = df[['job_type', 'job_ranks']].apply(compare_ranks, axis=1)
     print('[*] extracting job keys, order for all job ranks and types....')
     df['keys'] = df.apply(get_keys, axis=1)
-
     print(df)
     
     #Main Reclassification and Arbitration
@@ -378,10 +381,8 @@ cleaned_emp_key('../keys/employers_key.csv',
 ## Reclassify Job Types
 #######################################
 
-ranks = ['job_type_1', 'job_type_2', 'job_type_3',
-         'job_type_4', 'job_type_5', 'job_type_6']
 reclassify_jobs('../keys/cleaned_employers_key.csv',
-                'master_companies.csv', ranks)
+               'master_companies.csv')
 
 
 
