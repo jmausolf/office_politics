@@ -47,8 +47,6 @@ def send_email(profile,
 			pair_version
 			):
 
-	#TODO
-	#within CL sub of 'University of X, Y,' --> 'University of X-Y,'
 
 	if company in job:
 

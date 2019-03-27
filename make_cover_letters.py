@@ -128,7 +128,15 @@ def make_text_cl(profile,
 				add_sig=True
 				):
 
+	#Internships
 	internships = "{} and {}".format(internship1, internship2)
+
+	#Sub 'University of X, Y,' --> 'University of X-Y,'
+	if job_type not in ['mba', 'mba_finance', 'mba_analyst']:
+		school = school.replace(', ', '-')
+	else:
+		department = department.replace(', ', '-')
+
 
 	#Select Version of Cover Letter for Job Type
 	method_name = "{}_{}".format(job_type, pair_version)
