@@ -36,19 +36,25 @@ def error_logger(list_id, company, job_keyword, url, date):
     return
 
 
-def search_url(job_keyword, company):
+def search_url(job_keyword, company, isrecent, days):
     url_stem = "https://www.indeed.com/jobs?q="
     job = url_str(job_keyword)
     cid = "company%3A({})".format(url_str(company))
     loc = "l=Anywhere"
     jt = "jt=fulltime"
     qry = "{}+{}&{}&{}".format(job, cid, loc, jt)
-    url = url_stem+qry
+
+    if isrecent is False:
+        url = url_stem+qry
+    else:
+        recent = '&fromage={}'.format(days)
+        url = url_stem+qry+recent
+
     return url
 
 
-def qry_indeed_jobs(job_keyword, company, seconds):
-    url = search_url(job_keyword, company)
+def qry_indeed_jobs(job_keyword, company, seconds, isrecent, days):
+    url = search_url(job_keyword, company, isrecent, days)
     d.get(url)
     time.sleep(rt(seconds))
     return url
@@ -196,8 +202,10 @@ def load_job_tiles(counter, job_key, job_type,
         return True
 
 
-def get_jobs(job_key, job_type, company, list_id, count, seconds, date):
-    qry_url = qry_indeed_jobs(job_key, company, seconds)
+def get_jobs(job_key, job_type, company,
+             list_id, count, seconds, date,
+             isrecent, days):
+    qry_url = qry_indeed_jobs(job_key, company, seconds, isrecent, days)
 
     job_tiles = load_job_tiles(count,
                                job_key, 
@@ -239,7 +247,9 @@ def iterator(row):
                 counter+=1
                 print("[*] searching for {} jobs at {}...".format(k, company))
                 
-                get_jobs(k, job_type, company, list_id, counter, seconds, date)
+                get_jobs(k, job_type, company,
+                         list_id, counter, seconds, date,
+                         isrecent, days)
                 qc.append(k)
 
                 if len(qc) == n:
@@ -255,7 +265,7 @@ def iterator(row):
 
     except Exception as e:
         print('[*] ERROR: {}'.format(e))
-        error_logger(list_id, company, k, search_url(company, k))
+        error_logger(list_id, company, k, search_url(k, company, False, 30))
         return
 
 
@@ -336,6 +346,8 @@ if __name__=="__main__":
     parser.add_argument("-c", "--cid", default='companies.csv', type=str)
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
     parser.add_argument("-s", "--seconds", default=5, type=int)
+    parser.add_argument("-r", "--recent", default=False, action='store_true')
+    parser.add_argument("-dy", "--days", default=30, type=int)
     args = parser.parse_args()
     
     #Start Get Jobs Scraper
@@ -346,14 +358,21 @@ if __name__=="__main__":
     #Set Global Parameters
     global date
     global seconds
+    global isrecent
+    global days
     global filestem
     global complete
 
     date = args.date
     seconds = args.seconds
+    isrecent = args.recent
+    days = args.days
     filestem = args.output
     complete = False
     attempts = 0
+
+    print(isrecent)
+    print(days)
 
     #Create Master Collection File
     cid = pd.read_csv(args.cid)
