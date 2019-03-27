@@ -7,7 +7,6 @@ import pandas as pd
 import subprocess
 from search_jobs import *
 from filter_jobs import *
-from get_jobs import *
 from cleanup_files import *
 
 
@@ -60,20 +59,29 @@ def get_jobs_scraper(date,
 					 cid,
 					 output,
 					 seconds,
-					 pyver):
+					 pyver,
+					 isrecent,
+					 days):
 
-	    # Run Indeed Job Search
-    get_jobs_cmd = "{} search_jobs.py -d {} -p {} -c {} -o {} -s {}".format(
-                    pyver,
-                    date,
-                    param, 
-                    cid, 
-                    output, 
-                    seconds
-                    )
+	if isrecent is True:
+		isrecent = '--recent'
+	else:
+		isrecent = ''
 
-    print(get_jobs_cmd)
-    subprocess.call(get_jobs_cmd, shell=True)
+	# Run Indeed Job Search
+	get_jobs_cmd = "{} search_jobs.py -d {} -p {} -c {} -o {} -s {} {} -dy {}".format(
+				pyver,
+				date,
+				param, 
+				cid, 
+				output, 
+				seconds,
+				isrecent,
+				days,
+				)
+
+	print(get_jobs_cmd)
+	subprocess.call(get_jobs_cmd, shell=True)
 
 
 def dedupe_company_jobs(df):
@@ -151,7 +159,9 @@ def main(master_company,
 		 output,
 		 seconds,
 		 pyver,
-		 filter_only=False):
+		 filter_only,
+		 isrecent,
+		 days):
 
 
 	#Cleanup Files
@@ -178,7 +188,8 @@ def main(master_company,
 
 			#Run Webscraper for Each Company/Job Type CSV
 			scraper_out = 'indeed_jobs_{}'.format(jt_rank)
-			get_jobs_scraper(date, param, c, scraper_out, seconds, pyver)
+			get_jobs_scraper(date, param, c, scraper_out, 
+							 seconds, pyver, isrecent, days)
 
 			#Run Filter
 			scraper_stem = scraper_out.replace('.csv', '')
@@ -279,11 +290,13 @@ if __name__=="__main__":
     parser.add_argument("-o", "--output", default='indeed_jobs', type=str)
     parser.add_argument("-sec", "--seconds", default=1, type=int)
     parser.add_argument("-filter", "--filter_only", default=False, action='store_true')
+    parser.add_argument("-r", "--recent", default=False, action='store_true')
+    parser.add_argument("-dy", "--days", default=30, type=int)
 
     #Get Jobs Args
     parser.add_argument("-py", "--pyver", default='python3', type=str)
     args = parser.parse_args()
-    print(args.date)
+
     main('master_companies.csv',
     	  args.date,
           args.param, 
@@ -291,6 +304,10 @@ if __name__=="__main__":
           args.output, 
           args.seconds,
           args.pyver,
-          args.filter_only)
+          args.filter_only,
+          args.recent,
+          args.days)
 
+    clean_cmd = '{} clean_emp_key.py'.format(args.pyver)
+    subprocess.call(clean_cmd, shell=True)
 
