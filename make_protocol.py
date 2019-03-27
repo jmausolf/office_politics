@@ -464,8 +464,9 @@ def main(employers,
 	return outfile, emp
 	
 
-def check_profile_load(df=None, protocol_file=None, limit=500,
+def check_profile_load(limit, df=None, protocol_file=None,
 					   df_name='dataframe', ret_max=False):
+
 	err_message1 = '[*] must provide either a dataframe or csv...'
 	err_message2 = '[*] must only provide a dataframe OR csv, not both...'
 	assert any(v is not None for v in [df, protocol_file]), err_message1
@@ -492,14 +493,16 @@ def check_profile_load(df=None, protocol_file=None, limit=500,
 			return True
 
 
-def replicate_match_pairs(protocol_file, ret_max=False):
+def replicate_match_pairs(protocol_file, limit, ret_max=False):
 
 	df = pd.read_csv(protocol_file)
 	df_A = df.loc[(df['version']=='A')].copy()
 	df_B = df.loc[(df['version']=='B')].copy()
 
-	result1 = check_profile_load(df=df_A, df_name='df_A', ret_max=ret_max)
-	result2 = check_profile_load(df=df_B, df_name='df_B', ret_max=ret_max)
+	result1 = check_profile_load(limit, df=df_A, 
+								 df_name='df_A', ret_max=ret_max)
+	result2 = check_profile_load(limit, df=df_B, 
+								 df_name='df_B', ret_max=ret_max)
 
 	if ret_max is False:
 		if result1 is True and result2 is True:
@@ -510,9 +513,9 @@ def replicate_match_pairs(protocol_file, ret_max=False):
 		return result1, result2
 
 
-def need_batches(protocol_file):
+def need_batches(protocol_file, limit):
 	print('\n[*] CHECKING to see if batches are required....')
-	result = check_profile_load(protocol_file=protocol_file)
+	result = check_profile_load(limit, protocol_file=protocol_file)
 	if result is True:
 		print('[*] NO: batches are not required...')
 		return False
@@ -520,7 +523,7 @@ def need_batches(protocol_file):
 		print('[*] WARNING: batches may be required for protocol...')
 		
 		#Check A/B pairs and see if it still needs batching
-		subresults = replicate_match_pairs(protocol_file)
+		subresults = replicate_match_pairs(protocol_file, limit)
 		if subresults is True:
 			print('[*] NO: batches not required for using A/B pairs...')
 			print('[*] ENSURE: at least a 24 hour delay between batches...')
@@ -531,17 +534,22 @@ def need_batches(protocol_file):
 
 
 def index_marks(nrows, chunk_size):
-	return range(1 * chunk_size, (nrows // chunk_size + 1) * chunk_size, chunk_size)
+	first = 1 * chunk_size
+	second = (nrows // chunk_size + 1) * chunk_size
+	third = chunk_size
+	return range(first, second, third)
+
 
 def split(dfm, chunk_size):
 	indices = index_marks(dfm.shape[0], chunk_size)
 	return np.split(dfm, indices)
 
-def make_batches(protocol_file, limit=500):
+
+def make_batches(protocol_file, limit):
 	
-	if need_batches(protocol_file) is True:
+	if need_batches(protocol_file, limit) is True:
 		protocol_df = pd.read_csv(protocol_file)
-		r1, r2 = replicate_match_pairs(protocol_file, ret_max=True)
+		r1, r2 = replicate_match_pairs(protocol_file, limit, ret_max=True)
 		max_load = max(r1, r2)
 		batches = (max_load // limit)+1
 		print('[*] TOTAL of {} batches are suggested...'.format(batches))
@@ -566,13 +574,16 @@ def make_batches(protocol_file, limit=500):
 			else:
 				pass
 
-		print(batches)
+	
 		#Recheck Batches for Compliance
 		for b in batches:
-			make_batches(b)
+			make_batches(b, limit)
+
+		return batches
 
 	else:
-		pass
+		return ["No batches"]
+
 
 
 
@@ -595,54 +606,15 @@ protocol_outfile, protocol_df = main(
      rm_cols='default',
      order_cols='default'
     )
+
+
+batches = make_batches(protocol_outfile, limit=1000)
+print([protocol_outfile]+batches)
 '''
 
-#print(protocol_outfile)
-#c = check_profile_load(protocol_file=protocol_outfile)
-#print(c)
-
-#replicate_match_pairs(protocol_outfile)
-#need_batches(protocol_outfile)
-
-#make_batches("experiment_test.csv")
-make_batches("experiment_test_smtp_limits.csv")
-#make_batches("experiment_test_2019-03-26-005950_batch2.csv")
-#make_batches(protocol_outfile)
-
-
-#########################
-#TODO for batches, if returns false, then attempt splitting the 
-#protocol outfile into batches, 
-#perhaps the number of batches can be determined by some 
-#fract division // with limit
-#whatever that number of divisibility, equals that many batches....
-#then double check the results of need batches 
-#for every new batch file...
-
-#In [4]: import numpy as np
-#In [5]: np.array_split(df, 3)
-
-#########################
+make_batches('experiment_2019-03-26-224927.csv', limit=1000)
 
 
 
-
-#check_profile_load(df="ntes", protocol_file="tesr")
-#c = check_profile_load(protocol_file="experiment_test.csv")
-#print(c)
-#c = check_profile_load(protocol_file="experiment_test_smtp_limits.csv")
-#print(c)
-
-
-
-#check_profile_load(protocol_file=protocol_outfile)
-#check_profile_load()
-
-#TODO 
-#Once main is run, run the batch counter and metrics figures
-#one function should calculate the value counts for each profile/email account
-#e.g. counts = my_series.value_counts()
-#if counts["profile"] > 500, then....
-#or artificially split df_A, df_B from main and gen counts for each profile, and if > 500, then split into batches and recheck
 
 
