@@ -4,19 +4,6 @@ import os, sys, subprocess, time
 
 n = 5
 
-#Run Main Leadiro Matching
-'''
-clean_leadiro_main(
-	combined_leadiro_file='leadiro_contacts/leadiro_combined.csv',
-	leadiro_col = 'company',
-	emp_file = '../keys/employers_key.csv',
-	emp_col = 'company',
-	local_out = 'leadiro_matched.csv',
-	matched_leadiro_key = '../keys/leadiro_matched_key.csv',
-	match_only=True
-	)
-'''
-
 #Combine Leadiro Files, Clean, and Match
 os.chdir('leadiro_contacts')
 subprocess.call('python3 clean_leadiro.py', shell=True)
