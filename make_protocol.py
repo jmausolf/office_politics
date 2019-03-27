@@ -459,6 +459,7 @@ def main(employers,
 
 
 	print(emp)
+	print(emp.isna().sum())
 	print('[*] saving experimental protocol to {}'.format(outfile))
 	emp.to_csv(outfile, index=False)
 	return outfile, emp
@@ -587,7 +588,7 @@ def make_batches(protocol_file, limit):
 
 
 
-'''
+
 protocol_outfile, protocol_df = main(
 	 employers='keys/cleaned_employers_key.csv',
      state_col='office_state',
@@ -610,9 +611,9 @@ protocol_outfile, protocol_df = main(
 
 batches = make_batches(protocol_outfile, limit=1000)
 print([protocol_outfile]+batches)
-'''
 
-make_batches('experiment_2019-03-26-224927.csv', limit=1000)
+
+#make_batches('experiment_2019-03-26-224927.csv', limit=1000)
 
 
 

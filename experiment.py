@@ -604,6 +604,13 @@ def join_ex_pair(ex_df, cid):
 
 def join_experiment_profiles_counter(experiment_file):
 	ex_full = pd.read_csv(experiment_file)
+
+	#Exit If Experiment Contains Nan
+	if ex_full.isna().sum().max() > 0:
+		print('[*] WARNING NAN in Experimental Protocol, Haulting Run...')
+		print(ex_full.isna().sum())
+		sys.exit()
+
 	cids = ex_full.cid.unique()
 	print("[*] generating {} requested matched pairs...".format(len(cids)))
 
@@ -725,8 +732,11 @@ def deploy_emails(experiment_csv):
 
 	s1 = time.time()
 	df = join_experiment_profiles_counter(experiment_csv)
+
 	infile = experiment_csv.split('.')[0]
-	ex_out = "logs/{0}_protocol_{1}_matched_output.csv".format(batch_datetime, infile)
+	ex_out = "logs/{0}_protocol_{1}_matched_output.csv".format(
+															batch_datetime, 
+															infile)
 	df.to_csv(ex_out, index=False)
 
 	#Matched Pairs A
@@ -755,7 +765,15 @@ def deploy_emails(experiment_csv):
 #deploy_emails("experiment_test_2019-03-26-005950_batch2.csv")
 
 #deploy_emails("experiment_test_smtp_limits.csv")
-deploy_emails("experiment_2019-03-26-224927.csv")
+
+#Test null emails hault
+#deploy_emails("experiment_2019-03-26-234721.csv")
+#deploy_emails("experiment_test.csv")
+
+
+#SMTP Tests
+#deploy_emails("experiment_test_smtp_limits.csv")
+deploy_emails("smtp_test2_experiment_2019-03-26-224927.csv")
 
 
 
