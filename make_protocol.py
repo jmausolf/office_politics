@@ -418,8 +418,8 @@ def main(employers,
 
 
 	#Outfile
-	outfile = '{}_{}.csv'.format(outfile_stem, get_date())
-	log = 'logs/protocol_'+outfile
+	outfile = 'protocols/{}_{}.csv'.format(outfile_stem, get_date())
+	log = 'logs/protocol_'+outfile.split('protocols/')[1]
 
 	#Store Detailed File in Logs
 	emp = details[0]
@@ -609,7 +609,7 @@ protocol_outfile, protocol_df = main(
     )
 
 
-batches = make_batches(protocol_outfile, limit=1000)
+batches = make_batches(protocol_outfile, limit=300)
 print([protocol_outfile]+batches)
 
 
