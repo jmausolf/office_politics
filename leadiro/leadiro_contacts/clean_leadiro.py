@@ -6,6 +6,10 @@ import zipfile
 from fuzzywuzzy import process
 import warnings
 import argparse, textwrap
+sys.path.append("..")
+#sys.path.append(".")
+
+from replace_dict import *
 
 
 def remove_punct(text):
@@ -102,6 +106,13 @@ def combine_leadiro(outfile, stem='leadiro', clean=True):
 	clean_cols = [re.sub(r'\s', '_', c).lower() for c in clean_cols]
 	df.columns = clean_cols
 
+	# Adhoc Value Replacements (To Correct Fuzzy Mismatch)
+	df['company'] = df['company'].replace(leadiro_changes)
+
+	# Blacklist (Remove Companies Mistakenly Downloaded)
+	df['company'] = df['company'].replace(blacklist_companies)
+	df = df.dropna(subset=['company'])
+
 	#Save
 	df.to_csv(outfile, index=False)
 	print(df)
@@ -184,9 +195,16 @@ def fuzzy_match_df_cols(left_df, right_df,
 	df['match_score']=pd.Series(ratio_match)
 	df[rc] = df.apply(score_filter, axis=1, col=rc)
 
-	#Write Result
+	#Write Full Result
 	df.to_csv(outfile, index=False)
-	print(df[[lc, rc, 'match_score']].head(10))
+
+
+	#Make Simple Result File
+	outfile = outfile.split('.csv')[0]+'_simple.csv'
+	df = df[[lc, rc, 'match_score']]
+	df.to_csv(outfile, index=False)
+	print(df)
+
 
 
 
@@ -212,6 +230,8 @@ def clean_leadiro_main(
 
 		#Combine Files and Drop Duplicates
 		combine_leadiro(combined_leadiro_file)
+
+		#Adjust Emp Key
 
 		#Fuzzy Match Leadiro Company Names and Employer Key Company Names
 		fuzzy_match_df_cols(combined_leadiro_file, emp_file,

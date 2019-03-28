@@ -37,3 +37,5 @@ print(end_message)
 print('[*] opening new abm list in {} seconds'.format(n))
 countdown(n)
 subprocess.call('open lead_utils/updated_abm.xlsx', shell=True)
+subprocess.call('open leadiro_contacts/leadiro_matched_simple.csv ', shell=True)
+
