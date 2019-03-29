@@ -57,21 +57,21 @@ def send_email(profile,
 
 	else:
 		#Adjust long job post (if exists, in one pair)
-		#rename to only adjust email title (not cl)
+		#Rename to only adjust in both email subject and CL
 		h = job.count(' - ')
 		if len(job) > 40 and h > 1:
 			if pair_version == 'A':
-				job_post = job.rsplit(' - ', h-1)[0]
+				job = job.rsplit(' - ', h-1)[0]
 			else:
-				job_post = job
+				pass
 		else:
-			job_post = job
+			pass
 
 
 		if pair_version == 'A':
-			subject = "{} Opening - {}".format(job_post, company)
+			subject = "{} Opening - {}".format(job, company)
 		elif pair_version == 'B':
-			subject = "Position | {}".format(job_post)
+			subject = "Position | {}".format(job)
 
 	msgRoot = MIMEMultipart('mixed')
 	msgRoot['Subject'] = subject
