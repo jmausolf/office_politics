@@ -4,7 +4,7 @@
 #IDEA to Make a Dict Replacement Key for the Employers Key 
 #Such that the employers in that key are fixed so that they align in the fuzzy match?
 
-
+#TODO Changes to emp key or cleaned emp key?? UPDATE IN CLEANING CODE
 emp_key_adjustments = {
 	'J.Crew Group':'J. Crew Group',
 	'ICF':'ICF International'
