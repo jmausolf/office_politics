@@ -12,12 +12,7 @@
 \usepackage{titlesec}					%custom \section
 \usepackage{amsmath} % bold math
 
-%Reset Margins (WIDE)
-%\addtolength{\oddsidemargin}{-.875in}
-%\addtolength{\evensidemargin}{-.875in}
-%\addtolength{\textwidth}{1.75in}
-%\addtolength{\topmargin}{-.875in}
-%\addtolength{\textheight}{1.75in}
+
 
 \addtolength{\oddsidemargin}{-.75in}
 \addtolength{\evensidemargin}{-.75in}
@@ -28,15 +23,10 @@
 %Make Tab Space
 \newcommand\tab[1][0.25cm]{\hspace*{#1}}
 
-%\addtolength{\oddsidemargin}{-.5in}
-%\addtolength{\evensidemargin}{-.5in}
-%\addtolength{\textwidth}{2in}
-%\addtolength{\topmargin}{-.5in}
-%\addtolength{\textheight}{2in}
+
 
 \usepackage[inline]{enumitem}
-%\usepackage{enumitem}
-%\usepackage{booktabs}
+
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -51,18 +41,16 @@
 
 %CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
-%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+
 \titleformat{\section}{\Large\scshape\center}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
-%\addtolength{\voffset}{-1.3cm}
+
 
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
 \usepackage[none]{hyphenat}
 
-%Ragged bottom
-%\raggedbottom
+
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
@@ -72,7 +60,7 @@
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
 
-%\usepackage{fancyhdr} % For Header/Footer
+
 
 %---- Itemized columns
 \usepackage{array,booktabs}
@@ -123,25 +111,7 @@
 \sloppy
 
 
-%% Page Style to put numbers at the top.
-%\setcounter{page}{1}
-%\pagenumbering{arabic}
-% Turn on the style
-%\pagestyle{fancy}
-% Clear the header and footer
-%\fancyhead{}
-%\fancyfoot{}
-% Set the right side of the footer to be the page number
-%\fancyfoot[R]{\thepage}
 
-% Redefine plain style, which is used for titlepage and chapter beginnings
-%\fancyhf{} % sets both header and footer to nothing
-%\renewcommand{\headrulewidth}{0pt}
-%\fancyfoot[R]{\small\thepage}
-%\fancyfoot[L]{\small\emph{Last updated - February 2017}}
-
-%\fancyhead[R]{\thepage}
-%\fancyhead[L]{February 2017}
 
 %Turn off page numbers
 \pagenumbering{gobble}
@@ -177,6 +147,7 @@
 \section{Summary}
 \begin{supertabular}{p{17.3cm}}
 	\small Results-oriented MBA candidate and business professional with over 5 years of experience spanning project management and business analytics. Proven track record in business analytics, with an MBA focus on \emph{general management} and competencies in project management, marketing, and team leadership.\\
+  \multicolumn{1}{c}{} \\
 \end{supertabular}
 
 
@@ -203,8 +174,10 @@
 \section{Work Experience}
 \begin{supertabular}{p{13.9cm}>{\raggedleft\arraybackslash}p{3.4cm}}
 
+  \multicolumn{2}{c}{} \\
+
 	\textsc{INTERNSHIP1}, IC1_CITYSTATE
-	%\vspace{1mm}
+	%\vspace{2mm}
 	& \textsc{May-Aug 2018} \\
 	\small	\emph{INT1TITLE} & \\
 	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
@@ -214,12 +187,10 @@
 		\item \footnotesize Demonstrated capacity to apply market and competitive analysis research to business plan development.
 	\end{enumerate*} & \\
 	\multicolumn{2}{c}{} \\
-
-
-
+  \multicolumn{2}{c}{} \\
 
 	\textsc{INTERNSHIP2}, IC2_CITYSTATE
-	%\vspace{1mm}
+	%\vspace{2mm}
 	& \textsc{2012-2017} \\
 	\small	\emph{Business Analyst II} (2015-2017), \emph{Business Analyst I} (2012-2015) & \\
 	\begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
@@ -231,10 +202,6 @@
 
 	\end{enumerate*} & \\
 	\multicolumn{2}{c}{} \\
-
-
-
-
 
 \end{supertabular}
 
@@ -259,8 +226,7 @@
 	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
                                 \item \small Organized group activities and directed fundraisers as TREATMENT
                                 \item \small American Management Association
-                                \end{enumerate*}  \vspace{1mm} \\
-
+                                \end{enumerate*}  \vspace{2mm} \\
 
 
 \end{supertabular}
@@ -283,7 +249,7 @@
 	& \begin{enumerate*}[label =$\circ$, itemjoin={\newline}]
                                 \item \small Machine Learning, Predictive Analytics, Forecasting
                                 \item \small Econometrics, Descriptive and Diagnostic Analytics
-                                \item \small Time Series, Multilevel Modeling \end{enumerate*}  \vspace{1mm} \\
+                                \item \small Time Series, Multilevel Modeling \end{enumerate*}  \vspace{2mm} \\
 
 
 
@@ -304,7 +270,6 @@
 	 	\item \small \emph{Microsoft Office}: Excel, Word, PowerPoint, Outlook, Access
 	 	\item \small \emph{Google}: Slides, Sheets, Documents, Gmail, Drive
 	\end{enumerate*} \\
-	%\emph{Hobbies:} 		& \small Running, Lacrosse, Hiking, Adventure Tourism, Skiing \\
 
 \end{supertabular}
 
