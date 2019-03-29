@@ -1,0 +1,6 @@
+selenium>=2.53.6
+pandas>=0.23.4
+numpy>=1.15.2
+DateTime>=4.2
+nltk>=3.2.1
+textile>=3.0.1
