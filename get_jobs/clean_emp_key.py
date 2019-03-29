@@ -359,8 +359,12 @@ def reclassify_jobs(emp_key,
 
 
     if clean is True:
-        keep_cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 'job_type_reclass', 'rank', 'source']
-        org_cols = ['cid', 'list_id', 'company', 'position', 'office', 'office_state', 'job_type', 'rank', 'source']
+        keep_cols = ['cid', 'list_id', 'company', 'position', 
+                     'office', 'office_state', 'job_type_reclass', 
+                     'rank', 'source', 'file_rank']
+        org_cols = ['cid', 'list_id', 'company', 'position',
+                    'office', 'office_state', 'job_type', 'list_rank', 
+                    'source', 'file_rank']
         df = df[keep_cols]
         df.columns = org_cols
 

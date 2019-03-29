@@ -1,30 +1,28 @@
 
 
-
-#IDEA to Make a Dict Replacement Key for the Employers Key 
-#Such that the employers in that key are fixed so that they align in the fuzzy match?
-
-#TODO Changes to emp key or cleaned emp key?? UPDATE IN CLEANING CODE
+#Employers Key Replac
 emp_key_adjustments = {
 	'J.Crew Group':'J. Crew Group',
-	'ICF':'ICF International'
+	'ICF':'ICF International',
+	'NIC':'NIC, Inc.',
+	'Rose':'Rose International',
+	'XO':'XO Group Inc',
 	
 }
 
 
 
-#need to do something with faulty matches from leadiro from abm
-#e.g. speedway llc downloaded, but needed International Speedway Corp
-#Simply create a blacklist such that if the company == X on the 
-#combined CSV, drop the row
 
-#drop
-#Speedway LLC
 
 leadiro_changes = {
+	'Electronic Arts Inc. (Ea)':'Electronic Arts',
 	'Visa Inc. (Visa)':'Visa',
 	'Davita Inc.':'Davita',
-	'Cross Country Healthcare, Inc. (Cross Country)':'Cross Country Healthcare'
+	'Cross Country Healthcare, Inc. (Cross Country)':'Cross Country Healthcare',
+	'Axon Enterprise, Inc. (AXON)':'Axon Enterprise',
+	'Owens-Illinois, Inc. (Oi)':'Owens-Illinois',
+	'Rbc Capital Markets, LLC (Royal Bank of Canada)':'RBC Capital Markets',
+	'Jacobs Engineering Group Inc. (Jacobs)':'Jacobs Engineering',
 }
 
 
