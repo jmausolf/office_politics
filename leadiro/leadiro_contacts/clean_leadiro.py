@@ -141,6 +141,70 @@ def clean_leadiro(infile, outfile='leadiro_mathed_key.csv'):
 	return df
 
 
+def make_emp_key_replacements(emp_key):
+	df = pd.read_csv(emp_key)
+	print(len(emp_key_adjustments))
+
+	# Adhoc Value Replacements (To Correct Fuzzy Mismatch)
+	df['company'] = df['company'].replace(emp_key_adjustments)
+	df.to_csv(emp_key, index=False)
+	print('[*] modifying {} and overwriting file'.format(emp_key))
+	
+	return df
+
+
+def company_match(row, 
+				  leadiro_col='in_company', 
+				  key_col='out_company',
+				  exact=True,
+				  ratio=False):
+
+	leadiro_col = row[leadiro_col].lower()
+	key_col = row[key_col].lower()
+
+	parens_search = re.search(r'\(.*?\)', leadiro_col)
+	if parens_search:
+		leadiro_parens = parens_search.group(0)
+		leadiro_parens = leadiro_parens.replace('(', '').replace(')', '')
+	else:
+		leadiro_parens = '()'
+
+	if ratio is True:
+		r = (len(leadiro_col) / len(key_col))
+		return r
+	else:
+
+		if exact is True:
+			if leadiro_col == key_col:
+				return True
+			elif leadiro_parens == key_col:
+				return True
+			else:
+				return False
+		else:
+			if leadiro_col != key_col and key_col in leadiro_col:
+				return True
+			else:
+				return False
+
+
+def match_warning(row, 
+				  match_col='match',
+				  maybe_match_col='maybe_match',
+				  ratio_match='ratio_match'
+				  ):
+	match_col = row[match_col]
+	maybe_match_col = row[maybe_match_col]
+	ratio_match = row[ratio_match]
+
+	if match_col is False and maybe_match_col is False:
+		return "WARNING"
+	elif match_col is False and ratio_match > 4:
+		return "WARNING"
+	else:
+		return "PASS"
+
+
 def match_names(left_names, right_names):
 
 	names_array=[]
@@ -198,10 +262,17 @@ def fuzzy_match_df_cols(left_df, right_df,
 	#Write Full Result
 	df.to_csv(outfile, index=False)
 
+	#Evaluate Matches / Warn for False Matches
+	df['match'] = df.apply(company_match, axis=1, exact=True)
+	df['maybe_match'] = df.apply(company_match, axis=1, exact=False)
+	df['ratio_match'] = df.apply(company_match, axis=1, ratio=True)
+	df['match_warning'] = df.apply(match_warning, axis=1)
+	sort_cols = ['match_warning', 'ratio_match', 'match_score']
+	df = df.sort_values(by=sort_cols, ascending=False)
 
 	#Make Simple Result File
 	outfile = outfile.split('.csv')[0]+'_simple.csv'
-	df = df[[lc, rc, 'match_score']]
+	df = df[[lc, rc, 'match_score', 'ratio_match', 'match_warning']]
 	df.to_csv(outfile, index=False)
 	print(df)
 
@@ -232,6 +303,7 @@ def clean_leadiro_main(
 		combine_leadiro(combined_leadiro_file)
 
 		#Adjust Emp Key
+		make_emp_key_replacements(emp_file)
 
 		#Fuzzy Match Leadiro Company Names and Employer Key Company Names
 		fuzzy_match_df_cols(combined_leadiro_file, emp_file,
@@ -242,6 +314,9 @@ def clean_leadiro_main(
 		clean_leadiro(local_out, matched_leadiro_key)
 
 	else:
+
+		#Adjust Emp Key
+		make_emp_key_replacements(emp_file)
 
 		#Fuzzy Match Leadiro Company Names and Employer Key Company Names
 		fuzzy_match_df_cols(combined_leadiro_file, emp_file,
@@ -259,7 +334,7 @@ if __name__=="__main__":
     clean_leadiro_main(
 		combined_leadiro_file='leadiro_combined.csv',
 		leadiro_col = 'company',
-		emp_file = '../../keys/employers_key.csv',
+		emp_file = '../../keys/cleaned_employers_key.csv',
 		emp_col = 'company',
 		local_out = 'leadiro_matched.csv',
 		matched_leadiro_key = '../../keys/leadiro_matched_key.csv',

@@ -17,18 +17,6 @@ print(start_message)
 leads_remaining = get_leadiro_remaining()
 
 
-#Rematch to look for dupes
-'''
-clean_leadiro_main(
-	combined_leadiro_file='leadiro_contacts/leadiro_combined.csv',
-	leadiro_col = 'company',
-	emp_file = 'lead_utils/leadiro_remaining_raw.csv',
-	emp_col = 'company',
-	local_out = 'leadiro_matched.csv',
-	matched_leadiro_key = 'lead_utils/leadiro_matched_key.csv',
-	match_only=True
-	)
-'''
 
 
 abm_updated = update_abm(leads_remaining, abm_start)
