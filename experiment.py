@@ -325,16 +325,14 @@ def internships_ordered(job_type, prestige, company, count):
 
 
 def select_int(row, count):
-	#print(row)
 
 	job_type = row[0]
 	prestige = row[1]
 	company = row[2]
 
-	if job_type in ['data_science', 'computer_science',
-					'mba', 'mba_finance', 'mba_analyst']:
+	if job_type in ['data_science', 'mba', 'mba_finance', 'mba_analyst']:
 		internships = internships_general(job_type, prestige, company, count)
-	if job_type in ['quant', 'stats']:
+	if job_type in ['quant', 'stats', 'computer_science',]:
 		internships = internships_ordered(job_type, prestige, company, count)
 	else:
 		pass
@@ -353,7 +351,6 @@ def join_ex_pair(ex_df, cid):
 
 	#Experiment Pair DF
 	ex = ex_df.loc[(ex_df['cid']==cid)].reset_index()
-	#print(ex)
 
 	#Select GA Schools
 	ga_vals = ['department', 'sid', 'ga_sid', 'school',
