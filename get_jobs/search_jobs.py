@@ -320,19 +320,32 @@ def perform_job_search(jobs, date):
 
         to_collect = remaining_jobs(jobs, attempts)
         print(to_collect)
-        to_collect.apply(iterator, axis=1)
+        if to_collect.shape[0] == 0:
+            #Inspect Results
+            f = "{}_{}.csv".format(filestem, date)
+            print(pd.read_csv(f))
+            print("[*] successfully searched indeed jobs...experiment-on...")
+            complete = True
 
-        #Inspect Results
-        f = "{}_{}.csv".format(filestem, date)
-        print(pd.read_csv(f))
-        print("[*] successfully searched indeed jobs...experiment-on...")
-        complete = True
+        else:
+
+            to_collect.apply(iterator, axis=1)
+
+            #Inspect Results
+            f = "{}_{}.csv".format(filestem, date)
+            print(pd.read_csv(f))
+            print("[*] successfully searched indeed jobs...experiment-on...")
+            complete = True
 
     except:
         print("[*] ERROR in Job Search")
         attempts+=1
         to_collect = remaining_jobs(jobs, attempts)
         print(to_collect)
+        if to_collect.shape[0] == 0:
+            complete = True
+        else:
+            pass
         
 
 
@@ -371,8 +384,6 @@ if __name__=="__main__":
     complete = False
     attempts = 0
 
-    print(isrecent)
-    print(days)
 
     #Create Master Collection File
     cid = pd.read_csv(args.cid)
