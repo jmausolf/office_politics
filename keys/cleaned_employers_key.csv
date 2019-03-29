@@ -176,7 +176,7 @@ c0174,f1000_24,Wells Fargo,Nlp Data Scientist / Analytic Consultant 4,Irving,TX,
 c0175,f1000_240,Hilton Corporate,Manager - Data Engineer and Architect,McLean,VA,data_science,241.0,fortune1000,1
 c0176,f1000_242,Henry Schein,Software Engineer 2 - Ascend,American Fork,UT,computer_science,243.0,fortune1000,1
 c0177,f1000_244,BB&T,Data Scientist,Charlotte,NC,data_science,245.0,fortune1000,1
-c0178,f1000_245,RGA,Business Analyst,Chesterfield,MO,mba_finance,246.0,fortune1000,1
+c0178,f1000_245,Reinsurance Group of America,Business Analyst,Chesterfield,MO,mba_finance,246.0,fortune1000,1
 c0179,f1000_246,Core-Mark,Food Service Program Manager,Leitchfield,KY,mba,247.0,fortune1000,1
 c0180,f1000_247,Biogen,Associate Director - Enterprise Analytics & Data Science,Cambridge,MA,data_science,248.0,fortune1000,1
 c0181,f1000_248,Las Vegas Sands,Senior Manager - eCommerce Analytics and Data Science,Las Vegas,NV,data_science,249.0,fortune1000,1
@@ -1440,7 +1440,7 @@ c1438,ru_FFBC,First Financial Bank,Senior Applications Analyst,Cincinnati,OH,mba
 c1439,ru_FFIN,First Financial Bankshares,Project Manager,Abilene,TX,mba,1065.0,ru3000,1
 c1440,ru_FGEN,Fibrogen,Sr Manager/ Manager of Statistical Programming,San Francisco,CA,stats,1037.0,ru3000,1
 c1441,ru_FHB,First Hawaiian,Project Manager,Honolulu,HI,mba,1069.0,ru3000,1
-c1442,ru_FI,Frank'S,Financial Analyst - FP&A,Houston,TX,mba_finance,1129.0,ru3000,1
+c1442,ru_FI,Frank's International,Financial Analyst - FP&A,Houston,TX,mba_finance,1129.0,ru3000,1
 c1443,ru_FII,Federated Investors,Lead Data Scientist,Pittsburgh,PA,data_science,1031.0,ru3000,1
 c1444,ru_FIVE,Five Below,IT Product Manager/Business Analyst,Philadelphia,PA,mba,1087.0,ru3000,1
 c1445,ru_FIX,Comfort Systems Usa,Assistant Project Manager,Louisville,CO,mba,678.0,ru3000,1
@@ -1506,7 +1506,7 @@ c1504,ru_HBNC,Horizon Bank,Commercial Credit Analyst,Austin,TX,mba_finance,1359.
 c1505,ru_HCA,Hca Healthcare,Sr Big Data Engineer,Nashville,TN,data_science,1297.0,ru3000,1
 c1506,ru_HCI,HCI,Program Manager,Fort Hood,TX,mba,1298.0,ru3000,1
 c1507,ru_HCKT,Hackett,Solutions and Implementation Project Manager,Roswell,GA,mba,1265.0,ru3000,1
-c1508,ru_HCSG,Healthcare,Data Scientist,Emeryville,CA,data_science,1303.0,ru3000,1
+c1508,ru_HCSG,"Healthcare Services Group, Inc.",Data Scientist,Emeryville,CA,data_science,1303.0,ru3000,1
 c1509,ru_HEAR,Turtle Beach,Software Engineer,San Jose,CA,computer_science,2736.0,ru3000,1
 c1510,ru_HEES,H&E Equipment Services,Project Manager,Baton Rouge,LA,mba,1263.0,ru3000,1
 c1511,ru_HEI.A,Heico,Software Engineer,Highland Heights,OH,computer_science,1310.0,ru3000,1
@@ -1516,7 +1516,7 @@ c1514,ru_HGV,Hilton Grand Vacations,Manager Digital Product Management,Orlando,F
 c1515,ru_HHC,Howard Hughes,Research Assistant,Boston,MA,data_science,1370.0,ru3000,1
 c1516,ru_HI,Hillenbrand,Health & Wellness Program Manager,Batesville,IN,mba,1340.0,ru3000,1
 c1517,ru_HIBB,Hibbett Sports,Web Project Manager,Birmingham,AL,mba,1335.0,ru3000,1
-c1518,ru_HIL,Hill,Data Scientist,Charlottesville,VA,data_science,1338.0,ru3000,1
+c1518,ru_HIL,Hill International,Data Scientist,Charlottesville,VA,data_science,1338.0,ru3000,1
 c1519,ru_HIW,Highwoods Properties,Project Manager,Nashville,TN,mba,1337.0,ru3000,1
 c1520,ru_HLF,Herbalife Nutrition,Fantastic Sr Scientist,Lake Forest,CA,data_science,1319.0,ru3000,1
 c1521,ru_HLNE,Hamilton Lane,Compliance Analyst,Philadelphia,PA,mba_finance,1275.0,ru3000,1
@@ -2243,7 +2243,7 @@ c2246,ru_NP,Neenah,Business Segment Finance Manager,Neenah,WI,mba_finance,1902.0
 c2247,ru_PAG,Penske Automotive,Senior IT Project Manager,Reading,PA,mba,2117.0,ru3000,2
 c2248,ru_PBIP,Prudential Bank,PGIM Fixed Income - Analyst,Newark,NJ,mba_finance,2216.0,ru3000,2
 c2249,ru_PGNX,Progenics Pharmaceutical,Project Manager/Monitoring Oversight Lead,New York,NY,mba,2202.0,ru3000,2
-c2251,ru_QUAD,Quad / Graphics,Project Manager,Portland,OR,mba,2238.0,ru3000,2
+c2251,ru_QUAD,Quad/Graphics,Project Manager,Portland,OR,mba,2238.0,ru3000,2
 c2252,ru_REGN,Regeneron Pharmaceutical,Process Data Scientist,Rensselaer,NY,data_science,2290.0,ru3000,2
 c2253,ru_RTEC,Rudolph Technologies,Director Software Engineering,Wilmington,MA,computer_science,2355.0,ru3000,2
 c2254,ru_SEIC,Sei Investments,Analyst - Manager Research,Oaks,PA,mba_finance,2416.0,ru3000,2

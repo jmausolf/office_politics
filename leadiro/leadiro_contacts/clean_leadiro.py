@@ -143,12 +143,11 @@ def clean_leadiro(infile, outfile='leadiro_mathed_key.csv'):
 
 def make_emp_key_replacements(emp_key):
 	df = pd.read_csv(emp_key)
-	print(len(emp_key_adjustments))
 
 	# Adhoc Value Replacements (To Correct Fuzzy Mismatch)
 	df['company'] = df['company'].replace(emp_key_adjustments)
 	df.to_csv(emp_key, index=False)
-	print('[*] modifying {} and overwriting file'.format(emp_key))
+	print('[*] modifying {} and overwriting file...'.format(emp_key))
 	
 	return df
 
