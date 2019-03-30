@@ -10,7 +10,10 @@ warnings.filterwarnings("ignore", 'This pattern has match groups')
 
 
 def remove_non_ascii_2(text):
-    return re.sub(r'[^\x00-\x7F]+', "", text)
+	try:
+		return re.sub(r'[^\x00-\x7F]+', "", text)
+	except:
+		return "NONE"
 
 
 def remove_punct(text):
@@ -36,8 +39,8 @@ def select_punct_strip(text):
 
 def select_punct_strip_2(text):
 	#exceptions:: / \ - & .
-    tmp = re.sub(r'[]\\?!#$%(){}+*:;,_`\\|~\\[<=>@\\^]', " ", text)
-    return re.sub(r'\s{2,}', " ", tmp)
+	tmp = re.sub(r'[]\\?!#$%(){}+*:;,_`\\|~\\[<=>@\\^]', " ", text)
+	return re.sub(r'\s{2,}', " ", tmp)
 
 
 def parens_content_replace(text):
@@ -460,4 +463,4 @@ def get_employers(infile, outfile=None):
 	return df
 
 
-#get_employers('indeed_jobs_7_2019-03-23.csv', 'errors_filtered_jobs_7_test.csv')
+#get_employers('indeed_jobs_3_2019-03-29.csv', 'errors_filtered_jobs_3.csv')
