@@ -52,13 +52,18 @@ leadiro_changes = {
 	'Nic Inc. (Nic)':'NIC',
 	'Omnicell, Inc. (OMNICELL)':'Omnicell',
 	'Waddell & Reed, Inc.':'Waddell & Reed Financial',
-	'HCA Inc. (Hospital Coporation of America)':'HCA Healthcare'
+	'HCA Inc. (Hospital Coporation of America)':'HCA Healthcare',
+	'Adtran, Inc. (Adtran)':'Adtran',
+	'Valvoline Inc. (VALVOLINE)':'Valvoline',
+	'Ericsson Inc. (Ericsson GE MBL Communications)':'Ericsson',
+	'Hd Supply, Inc. (Hd Supply Global Support Ctr)':'HD Supply',
+	'Snap Inc. (Snapchat)':'Snap',
 
 }
 
 
 blacklist_companies = {
 	'Speedway LLC':None,
-	'Williams-Sonoma, Inc. (WILLIAMS SONOMA)':None,
+	#'Williams-Sonoma, Inc. (WILLIAMS SONOMA)':None,
 }
 
