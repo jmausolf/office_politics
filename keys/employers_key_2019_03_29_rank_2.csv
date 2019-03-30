@@ -1,0 +1,1162 @@
+cid,list_id,company,position,office,office_state,job_type
+c01,nasdaq_DDD,3D Systems,Cloud Software Engineer,San Diego,CA,computer_science
+c02,nasdaq_ACIW,ACI Worldwide,Sr Software Engineer,Omaha,NE,computer_science
+c03,f1000_193,AES,Signals Software Engineer,Colorado Springs,CO,computer_science
+c04,f1000_369,AGCO,Software Developer I Job,Tremont,IL,computer_science
+c05,f1000_691,Aaron's,Software Engineer,Kennesaw,GA,computer_science
+c06,forbes_48,Acquia,Software Engineer,Boston,MA,computer_science
+c07,ru_ADTN,Adtran,Software Engineer,Franklin,MA,computer_science
+c08,ru_AVAV,Aerovironment,Software Engineer Sr,Simi Valley,CA,computer_science
+c09,nasdaq_AGYS,Agilysys,Software Engineer Lead,Bellevue,WA,computer_science
+c10,nasdaq_ALRM,Alarm.com,Software Engineer,Redwood City,CA,computer_science
+c11,ru_ALLE,Allegion,Software Developer in Test,Golden,CO,computer_science
+c12,nasdaq_ALTR,Altair Engineering,Software Engineer,Gardena,CA,computer_science
+c13,nasdaq_AYX,Alteryx,Software Engineer,Broomfield,CO,computer_science
+c14,f1000_474,AmTrust Financial Services,ETL Development Manager,Cleveland,OH,computer_science
+c15,ru_DOX,Amdocs,Software Engineer,Richardson,TX,computer_science
+c16,nasdaq_AMRH,Ameri,Software Engineer,Carlsbad,CA,computer_science
+c17,f1000_85,American Express,Software Engineer,New York,NY,computer_science
+c18,ru_AMH,American Homes 4 Rent,Web Developer,Las Vegas,NV,computer_science
+c19,f1000_448,American Tower,Senior Software Engineer,Cary,NC,computer_science
+c20,f1000_238,Ameriprise Financial,Senior Software Engineer,Minneapolis,MN,computer_science
+c21,f1000_603,Ametek,Associate Software Engineer,Middlefield,CT,computer_science
+c22,nasdaq_ASYS,Amtech Systems,Software Engineer I,Albuquerque,NM,computer_science
+c23,ru_AFSI,Amtrust Financial,ETL Development Manager,Cleveland,OH,computer_science
+c24,f1000_659,Analog Devices,Senior Embedded Software Engineer,Munster,IN,computer_science
+c25,f1000_358,Anixter,Hybris Web Developer,Glenview,IL,computer_science
+c26,nasdaq_ANSS,Ansys,Software Developer II,Canonsburg,PA,computer_science
+c27,f1000_28,Anthem,Front End Software Engineer,Laurel,MD,computer_science
+c28,nasdaq_APY,Apergy,Lead Software Engineer,Frederick,CO,computer_science
+c29,glassdoor_107,AppDynamics,Software Engineer,Raleigh,NC,computer_science
+c30,ru_APTI,Apptio,Software Development Engineer II,Bellevue,WA,computer_science
+c31,ru_APTV,Aptiv,Software Engineer,Troy,MI,computer_science
+c32,f1000_191,Aramark,Senior Full Stack Engineer - iBuyEfficient,Aliso Viejo,CA,computer_science
+c33,f1000_117,Arrow Electronics,Web Engineer 1,Cambridge,MA,computer_science
+c34,f1000_360,Assurant,Software Engineer,Miami,FL,computer_science
+c35,nasdaq_ASUR,Asure Software,Software Engineer,Burlington,VT,computer_science
+c36,ru_ATHN,Athenahealth,Senior Software Engineer - Tooling and Automation,Watertown,MA,computer_science
+c37,nasdaq_TEAM,Atlassian,Software Engineer - Identity,Mountain View,CA,computer_science
+c38,f1000_269,AutoZone,Software Engineer Manager,Elk Grove,CA,computer_science
+c39,f1000_922,AvalonBay Communities,Salesforce Software Engineer,Arlington,VA,computer_science
+c40,f1000_620,Avaya,Software Engineer III,Thornton,CO,computer_science
+c41,forbes_41,AvidXchange,Software Engineer II,Charlotte,NC,computer_science
+c42,ru_AVA,Avista,Software Engineer,Cedar Rapids,IA,computer_science
+c43,f1000_770,BGC Partners,Software Engineer,Chicago,IL,computer_science
+c44,f1000_176,BNY Mellon,Lead Java Developer,Jersey City,NJ,computer_science
+c45,nasdaq_BAND,Bandwidth,Software Engineer,Raleigh,NC,computer_science
+c46,f1000_232,Bed Bath & Beyond,Java Microservices Developer,Union,NJ,computer_science
+c47,f1000_845,Belden,SOFTWARE ENGINEER - BROADCAST SOLUTIONS - GRASS VALLEY - HILLSBORO - OR,Hillsboro,OR,computer_science
+c48,f1000_862,Benchmark Electronics,Software Engineer I,Rochester,MN,computer_science
+c49,glassdoor_45,Berkshire,NET Software Engineer II ,Omaha,NE,computer_science
+c50,nasdaq_BL,BlackLine,Staff Software Engineer Front End,Woodland Hills,CA,computer_science
+c51,nasdaq_BLKB,Blackbaud,Software Engineer,Charleston,SC,computer_science
+c52,glassdoor_91,Blizzard Entertainment,Software Engineer - Tools,Irvine,CA,computer_science
+c53,f1000_23,Boeing,Software Engineer,St. Louis,MO,computer_science
+c54,glassdoor_54,Boston Consulting Group,Software Engineer,Boston,MA,computer_science
+c55,f1000_326,Boston Scientific,Senior Software Engineer,Valencia,CA,computer_science
+c56,f1000_893,Boyd Gaming,SENIOR SOFTWARE ENGINEER,Las Vegas,NV,computer_science
+c57,nasdaq_BCOV,Brightcove,Senior Software Engineer,Scottsdale,AZ,computer_science
+c58,f1000_511,Brookdale Senior Living,Software Developer,Milwaukee,WI,computer_science
+c59,nasdaq_BRKS,Brooks Automation,Software Engineer,Fremont,CA,computer_science
+c60,f1000_546,Brunswick,Mercury Marine - Software Engineer,Fond du Lac,WI,computer_science
+c61,ru_BKE,Buckle,IT - Software Developer,Kearney,NE,computer_science
+c62,f1000_420,Builders FirstSource,Manager Software Engineering,Dallas,TX,computer_science
+c63,f1000_904,CDK Global,Software Engineer I,Seattle,WA,computer_science
+c64,ru_CME,CME,Lead Software Engineer - Trade Execution,New York,NY,computer_science
+c65,f1000_632,CME Group,Lead Software Engineer - Trade Execution,New York,NY,computer_science
+c66,ru_CABO,Cable One,Senior Java Developer,Phoenix,AZ,computer_science
+c67,ru_CALX,Calix,Software Engineer,Minneapolis,MN,computer_science
+c68,ru_ELY,Callaway Golf,Principal eCommerce Software Engineer,Carlsbad,CA,computer_science
+c69,ru_CSII,Cardiovascular Systems,Sr Full Stack Developer,Saint Paul,MN,computer_science
+c70,ru_CRCM,Care.com,Software Engineer,Canoga Park,CA,computer_science
+c71,f1000_622,Carlisle,IT Senior Software Developer,Mobile,AL,computer_science
+c72,nasdaq_CASA,Casa Systems,Software Engineer - AMF/N3IWF,Andover,MA,computer_science
+c73,glassdoor_90,Cengage,Associate Software Engineer,Washington,DC,computer_science
+c74,nasdaq_CHKP,Check Point Software Technologies,Software Engineer,San Carlos,CA,computer_science
+c75,forbes_46,Checkr,Software Engineer - Full Stack,San Francisco,CA,computer_science
+c76,ru_CHGG,Chegg,Front End Developer / Software Engineer React/Redux,New York,NY,computer_science
+c77,f1000_342,Chesapeake Energy,Software Developer II,Oklahoma City,OK,computer_science
+c78,ru_CHH,Choice Hotels,Software Engineer II,Phoenix,AZ,computer_science
+c79,f1000_787,Ciena,FullStack Software Engineer,Petaluma,CA,computer_science
+c80,ru_CIA,Citizens,Java Developer,Jacksonville,FL,computer_science
+c81,f1000_763,Clean Harbors,Senior Software Engineer,Norwell,MA,computer_science
+c82,cnbc_9,Coinbase,Senior Software Engineer - Reliability,San Francisco,CA,computer_science
+c83,ru_CMCO,Columbus Mckinnon,NET Software Engineer,Charlotte,NC,computer_science
+c84,f1000_735,Comerica,Engineer III-Full Stack Developer,Auburn Hills,MI,computer_science
+c85,ru_CMP,Compass Minerals,Software Engineer,Overland Park,KS,computer_science
+c86,nasdaq_CTG,Computer Task Group,Java Developer,Secaucus,NJ,computer_science
+c87,nasdaq_CMTL,Comtech Telecommunications,Senior Software Engineer,Tempe,AZ,computer_science
+c88,forbes_30,Confluent,Java Engineer,Austin,TX,computer_science
+c89,ru_CTRL,Control4,Senior Software Engineer Full Stack,Draper,UT,computer_science
+c90,f1000_947,Cooper,Software Developer,Findlay,OH,computer_science
+c91,f1000_742,Cooper Tire & Rubber,Software Developer,Findlay,OH,computer_science
+c92,ru_CPRT,Copart,Software Engineer,Dallas,TX,computer_science
+c93,nasdaq_CSOD,Cornerstone OnDemand,Senior Software Engineer - DevOps & Build Release,Santa Monica,CA,computer_science
+c94,ru_CRVL,Corvel,Senior Software Engineer,Portland,OR,computer_science
+c95,ru_CSGP,Costar,Software Developer,San Diego,CA,computer_science
+c96,f1000_15,Costco,Software Developer 2839,Issaquah,WA,computer_science
+c97,glassdoor_128,Costco Wholesale,Software Developer 2841,Issaquah,WA,computer_science
+c98,f1000_766,Crane,Software Engineer,Fremont,CA,computer_science
+c99,ru_CRD.B,Crawford & Company,Senior Software Engineer,Sunrise,FL,computer_science
+c100,nasdaq_CRAY,Cray,Software Engineer,Chippewa Falls,WI,computer_science
+c101,bi_0,Credit Karma,Staff Software Engineer,Charlotte,NC,computer_science
+c102,f1000_158,Cummins,Senior Software Engineer,Columbus,IN,computer_science
+c103,f1000_907,Curtiss-Wright,Associate Software Engineer,Idaho Falls,ID,computer_science
+c104,ru_CUTR,Cutera,Senior Embedded Software Engineer,Brisbane,CA,computer_science
+c105,f1000_846,DST Systems,Software Engineer,Kansas City,MO,computer_science
+c106,f1000_180,DaVita,Full-stack Developer,Denver,CO,computer_science
+c107,f1000_104,Deere,API Software Engineer,Moline,IL,computer_science
+c108,f1000_70,Delta Air Lines,IT Architect - Microservices - Java API,Atlanta,GA,computer_science
+c109,f1000_339,Dick's Sporting Goods,Software Engineer - A/R,Coraopolis,PA,computer_science
+c110,f1000_127,Dollar General,SOFTWARE ENGINEER II,Goodlettsville,TN,computer_science
+c111,nasdaq_DOMO,Domo,Software Engineer - Internationalization and Localization,American Fork,UT,computer_science
+c112,ru_DFIN,Donnelley Financial,Software Engineer,Chicago,IL,computer_science
+c113,f1000_391,Dover,Software Engineer,Austin,TX,computer_science
+c114,cnbc_39,Drawbridge,Software Engineer,San Mateo,CA,computer_science
+c115,f1000_779,Dycom Industries,Software Engineer,Palm Beach Gardens,FL,computer_science
+c116,f1000_929,E Trade Financial,Senior Java Developer,Jersey City,NJ,computer_science
+c117,nasdaq_EPAM,EPAM Systems,Lead Software Engineer,Pittsburgh,PA,computer_science
+c118,forbes_8,Elastic,Elastic Code - Senior Software Engineer - Backend,Los Angeles,CA,computer_science
+c119,nasdaq_ELLI,Ellie Mae,Sr Software Engineer - UI,Pleasanton,CA,computer_science
+c120,nasdaq_EMKR,Emcore,Software Engineer,Alhambra,CA,computer_science
+c121,ru_EIG,Employers,Software Developer,Lexington,KY,computer_science
+c122,forbes_96,Endgame,Senior Software Engineer,Arlington,VA,computer_science
+c123,f1000_931,Esterline Technologies,Software Engineer,Cedar Rapids,IA,computer_science
+c124,nasdaq_EVER,EverQuote,Senior Software Engineer - Platform/Back End/Big Data,Cambridge,MA,computer_science
+c125,nasdaq_EVBG,Everbridge,Software Engineer I,Lansing,MI,computer_science
+c126,ru_RE,Everest Re,Java Configuration Developer,Liberty Corner,NJ,computer_science
+c127,ru_EVRI,Everi,Software Developer I,Chicago,IL,computer_science
+c128,forbes_81,Evernote,Software Engineer - Organization,Redwood City,CA,computer_science
+c129,nasdaq_EVTC,Evertec,Sr Software Developer,San Juan,PR,computer_science
+c130,forbes_93,Exabeam,Software Engineer Web Front-End,San Mateo,CA,computer_science
+c131,ru_XELA,Exela Technologies,SQL Administrator,Redmond,WA,computer_science
+c132,f1000_892,Express,Software Engineer,New York,NY,computer_science
+c133,f1000_21,Express Scripts,Net Software Engineer,St. Louis,MO,computer_science
+c134,ru_EXR,Extra Space Storage,Software Engineer,Salt Lake City,UT,computer_science
+c135,f1000_3,ExxonMobil,Full Stack Web Developer,Houston,TX,computer_science
+c136,f1000_300,FIS Global,Software Engineer I,Norcross,GA,computer_science
+c137,f1000_19,Fannie Mae,Software Engineer I,Herndon,VA,computer_science
+c138,forbes_55,Fastly,Software Engineer - Varnish,San Francisco,CA,computer_science
+c139,f1000_57,FedEx,Software Developer II,Coraopolis,PA,computer_science
+c140,nasdaq_FEYE,FireEye,Senior Software Engineer,Milpitas,CA,computer_science
+c141,ru_THFF,First Financial,Software Engineer,Houston,TX,computer_science
+c142,f1000_897,Fitbit,Software Engineer - iOS,San Diego,CA,computer_science
+c143,nasdaq_FIVN,Five9,Senior Voice Software Engineer,San Ramon,CA,computer_science
+c144,ru_FBC,Flagstar Bank,Sr Java Developer,Troy,MI,computer_science
+c145,nasdaq_FLEX,Flex,Embedded Software Engineer,Irving,TX,computer_science
+c146,ru_FLNT,Fluent,Software Developer,New York,NY,computer_science
+c147,f1000_347,Foot Locker,Peoplesoft Software Engineer,Camp Hill,PA,computer_science
+c148,nasdaq_FTNT,Fortinet,Software Development Engineer 3,Sunnyvale,CA,computer_science
+c149,ru_FTV,Fortive,Data Science Software Engineer,Pittsburgh,PA,computer_science
+c150,f1000_312,Frontier Communications,User Interface Software Engineer,Everett,WA,computer_science
+c151,f1000_1,Geico,Lead Software Engineer I,Chevy Chase,MD,computer_science
+c152,f1000_7,General Motors,Senior Mobile Software Engineer,Detroit,MI,computer_science
+c153,glassdoor_140,Gensler,Software Developer,La Crosse,WI,computer_science
+c154,nasdaq_GLUU,Glu Mobile,Sr Software Engineer - Unity,San Francisco,CA,computer_science
+c155,f1000_979,GoDaddy,Senior Software Engineer - Web,Kirkland,WA,computer_science
+c156,ru_GPRO,Gopro,Lead Software Engineer,San Mateo,CA,computer_science
+c157,ru_GWB,Great Western Bank,Sr Net Software Developer,Sioux Falls,SD,computer_science
+c158,ru_GRUB,Grubhub,Sr Software Engineer - Delivery Team,New York,NY,computer_science
+c159,f1000_726,H&R Block,Software Engineer,Kansas City,MO,computer_science
+c160,f1000_62,HCA,Senior Software Developer II,Nashville,TN,computer_science
+c161,ru_HMSY,HMS,Sr Software Engineer,Danvers,MA,computer_science
+c162,f1000_640,HSN,Java Developer,Saint Petersburg,FL,computer_science
+c163,f1000_434,Harley-Davidson,Staff Software Engineer - Infotainment,Wauwatosa,WI,computer_science
+c164,ru_HSC,Harsco,Software Development Engineer Test,Columbia,SC,computer_science
+c165,ru_HVT,Haverty Furniture,Software Engineer,Atlanta,GA,computer_science
+c166,f1000_818,Hawaiian,Software Developer Engineer - IT - Enterprise Data,Phoenix,AZ,computer_science
+c167,nasdaq_HSTM,HealthStream,Software Developer,San Diego,CA,computer_science
+c168,glassdoor_0,Heap,Software Engineer - Product,San Francisco,CA,computer_science
+c169,ru_HEI.A,Heico,Software Engineering Manager,Hillsboro,OR,computer_science
+c170,f1000_242,Henry Schein,Software Engineer I,American Fork,UT,computer_science
+c171,f1000_783,Hill-Rom,Lead Software Engineer R&D,Batesville,IN,computer_science
+c172,ru_HTH,Hilltop,Software Developer,Dallas,TX,computer_science
+c173,cnbc_30,Houzz,DevOps/Software Engineer Data Infrastructure,Palo Alto,CA,computer_science
+c174,nasdaq_HUBS,HubSpot,Senior Software Engineer - CMS,Boston,MA,computer_science
+c175,f1000_379,Huntington Ingalls Industries,IT Software Engineer 2,Newport News,VA,computer_science
+c176,ru_HURN,Huron Consulting,Software Engineer - ECC - - IL,Chicago,IL,computer_science
+c177,f1000_31,IBM,Software Engineer,New York,NY,computer_science
+c178,f1000_188,INTL FCStone,Full-Stack Web/Mobile Engineer,Winter Park,FL,computer_science
+c179,nasdaq_IMMR,Immersion,Senior Java Developer,Baltimore,MD,computer_science
+c180,ru_IMPV,Imperva,Senior Software Engineer - Rust/C/C,Los Angeles,CA,computer_science
+c181,nasdaq_INST,Instructure,Software Engineer,Chicago,IL,computer_science
+c182,ru_IBKR,Interactive Brokers,Software Development Manager,Greenwich,CT,computer_science
+c183,ru_TILE,Interface,Junior Software Engineer - Kirtland AFB - US Citizenship Required,Albuquerque,NM,computer_science
+c184,f1000_344,Interpublic Group,Cybersecurity Software Developer,New York,NY,computer_science
+c185,forbes_73,JFrog,Senior Software Developer,Sunnyvale,CA,computer_science
+c186,f1000_402,JetBlue Airways,Developer Application Services,Long Island City,NY,computer_science
+c187,glassdoor_112,John Deere,API Software Engineer,Moline,IL,computer_science
+c188,f1000_509,Juniper Networks,Software Engineer 3,Sunnyvale,CA,computer_science
+c189,ru_KEYW,Keyw,Software Engineer,Washington,DC,computer_science
+c190,nasdaq_KFRC,Kforce,Java/J2EE Software Developer,Phoenix,AZ,computer_science
+c191,f1000_149,Kohls,Software Engineer,Milpitas,CA,computer_science
+c192,nasdaq_KFY,Korn Ferry,Senior Storage Systems Software Engineer,San Jose,CA,computer_science
+c193,f1000_17,Kroger,Software Engineering Manager,Cincinnati,OH,computer_science
+c194,f1000_303,LKQ,Software Engineer,Nashville,TN,computer_science
+c195,f1000_583,LPL Financial,Associate Java Developer,San Diego,CA,computer_science
+c196,nasdaq_LTRX,Lantronix,Principal Cloud Software Engineer,Irvine,CA,computer_science
+c197,ru_TREE,Lendingtree,Sr Software Engineer,Charlotte,NC,computer_science
+c198,f1000_626,Lennox,Sr Embedded Software Engineer,Carrollton,TX,computer_science
+c199,f1000_867,Lincoln Electric,Embedded Software Engineer,Cleveland,OH,computer_science
+c200,forbes_33,Looker,Senior Front-End Engineer - Application Framework,San Francisco Bay Area,CA,computer_science
+c201,forbes_43,Lookout,Senior Frontend Software Engineer,San Francisco,CA,computer_science
+c202,ru_LOW,Lowes,Software Engineer,Mooresville,NC,computer_science
+c203,ru_LULU,Lululemon Athletica,Senior Software Engineer,Seattle,WA,computer_science
+c204,ru_LL,Lumber Liquidators,Web Developer - JAVA - -- - Virginia,Richmond,VA,computer_science
+c205,f1000_454,M&T Bank,Software Engineer I,Buffalo,NY,computer_science
+c206,f1000_296,MGM Resorts,Principal Software Engineer,Las Vegas,NV,computer_science
+c207,f1000_525,Magellan Health,Senior Software Engineer,Glen Allen,VA,computer_science
+c208,forbes_10,Mailchimp,Software Engineer - Data Systems,Brooklyn,NY,computer_science
+c209,nasdaq_MANH,Manhattan Associates,Software Engineer - R&D,Atlanta,GA,computer_science
+c210,ru_MANT,Mantech,Software Engineer,Quantico,VA,computer_science
+c211,ru_MCS,Marcus,Cloud Engineer/Full Stack Developer,Irving,TX,computer_science
+c212,f1000_459,Markel,Software Engineer,Richmond,VA,computer_science
+c213,f1000_162,Marriott,Senior Software Engineer,Bethesda,MD,computer_science
+c214,f1000_993,Marriott Vacations Worldwide,Web Developer,Orlando,FL,computer_science
+c215,ru_MATW,Matthews,Software Engineer,Pittsburgh,PA,computer_science
+c216,f1000_831,Maximus,Sr Java Developer,Farmers Branch,TX,computer_science
+c217,f1000_761,Medical Mutual of Ohio,Software Developer III,Strongsville,OH,computer_science
+c218,nasdaq_MDSO,Medidata Solutions,Senior Software Engineer,New York,NY,computer_science
+c219,ru_MRCY,Mercury Systems,Software Engineer,Oxnard,CA,computer_science
+c220,f1000_41,MetLife,Sr Software Develop Engineer,Cary,NC,computer_science
+c221,f1000_896,Microchip Technology,Software Engineer,San Jose,CA,computer_science
+c222,ru_MKSI,Mks Instruments,Software Engineer,North Logan,UT,computer_science
+c223,f1000_155,Molina Healthcare,Analyst - HEDIS/ Quality Reporting-BI and ETL Developer,Long Beach,CA,computer_science
+c224,ru_MGI,Moneygram,Software Engineer II,Saint Louis Park,MN,computer_science
+c225,nasdaq_MPWR,Monolithic Power Systems,Sr IT Software Engineer,San Jose,CA,computer_science
+c226,f1000_827,Moog,Embedded Software Engineer,West Melbourne,FL,computer_science
+c227,ru_MORN,Morningstar,Senior Software Engineer,Chicago,IL,computer_science
+c228,f1000_376,Mosaic,Senior Software Engineer,Oakland,CA,computer_science
+c229,ru_MSCI,Msci,Senior Software Developer,Norman,OK,computer_science
+c230,ru_MTSC,Mts Systems,Software Engineer,Eden Prairie,MN,computer_science
+c231,f1000_408,NCR,C Software Engineer,Atlanta,GA,computer_science
+c232,ru_EGOV,NIC,FULL STACK MOBILE DEVELOPER,Olathe,KS,computer_science
+c233,ru_NMIH,NMI,Software Engineer,Roselle,IL,computer_science
+c234,f1000_909,NOW,Software Developer,Cuyahoga Falls,OH,computer_science
+c235,f1000_619,Nasdaq,Software Engineer,Lakewood,CO,computer_science
+c236,ru_NTRA,Natera,Senior Software Engineer in Test,San Carlos,CA,computer_science
+c237,f1000_642,National General,Software Developer II,Chicago,IL,computer_science
+c238,nasdaq_NATI,National Instruments,Software Engineer - Senior - Semiconductor Test Systems,Austin,TX,computer_science
+c239,f1000_374,National Oilwell Varco,Software Development Supervisor,Houston,TX,computer_science
+c240,ru_EYE,National Vision,Programmer / Analyst Sr Java,Clifton,NJ,computer_science
+c241,ru_NWLI,National Western Life,Software Developer,Austin,TX,computer_science
+c242,f1000_513,Navient,Senior Software Engineer,Austin,TX,computer_science
+c243,ru_NAVG,Navigators,Mid-Level Software Developer,Colorado Springs,CO,computer_science
+c244,ru_NNI,Nelnet,IT Software Engineer,Burleson,TX,computer_science
+c245,f1000_467,NetApp,Software Engineer,Sunnyvale,CA,computer_science
+c246,nasdaq_NXGN,NextGen Healthcare,Software Engineer,Atlanta,GA,computer_science
+c247,f1000_87,Nike,Software Engineer I,Beaverton,OR,computer_science
+c248,nasdaq_NOK,Nokia,Software Engineer,Irving,TX,computer_science
+c249,f1000_283,Norfolk Southern,Java Developer,Atlanta,GA,computer_science
+c250,f1000_113,Northrop Grumman,Software Engineer,Redondo Beach,CA,computer_science
+c251,f1000_96,Northwestern Mutual,Software Engineer,Milwaukee,WI,computer_science
+c252,ru_NXPI,Nxp Semiconductors,Embedded Software Developer for ARM based Systems,Austin,TX,computer_science
+c253,f1000_277,Occidental Petroleum,Full Stack Developer,Houston,TX,computer_science
+c254,f1000_870,Oceaneering,Field Software Engineer,Hanover,MD,computer_science
+c255,f1000_601,OneMain,Software Engineer,Chicago,IL,computer_science
+c256,glassdoor_27,OppLoans,Software Engineer,Chicago,IL,computer_science
+c257,f1000_80,Oracle,Software Developer 4,Redwood City,CA,computer_science
+c258,ru_ORBC,Orbcomm,Java Developer / Release and Deployment Manager,Salt Lake City,UT,computer_science
+c259,ru_OUT,Outfront Media,Application Web Developer,New York,NY,computer_science
+c260,f1000_876,PCM,SQL Developer,Annapolis,MD,computer_science
+c261,ru_PHIIK,PHI,Software Engineer,New Iberia,LA,computer_science
+c262,f1000_307,PSEG,Software Engineer,Hancocks Bridge,NJ,computer_science
+c263,forbes_15,PagerDuty,Senior Software Engineer - Billing & Monetization,Atlanta,GA,computer_science
+c264,f1000_759,Panera Bread,Analyst - Software Engineer,St. Louis,MO,computer_science
+c265,glassdoor_18,Pariveda Solutions,Software Engineer,Seattle,WA,computer_science
+c266,f1000_465,Patterson,Senior 3D Software Engineer,Chatsworth,CA,computer_science
+c267,cnbc_12,Payoneer,Software Engineer-Full Stack Developer,New York,NY,computer_science
+c268,f1000_798,Penn Mutual Life Insurance,Software Engineer,Horsham,PA,computer_science
+c269,nasdaq_PRFT,Perficient,Senior Software Engineer,Chicago,IL,computer_science
+c270,f1000_874,PerkinElmer,Software Engineer in Test,Ontario,CA,computer_science
+c271,nasdaq_PHUN,Phunware,Software Engineer - Android,Austin,TX,computer_science
+c272,f1000_605,Pioneer Natural Resources,Oracle Developer III - Staff Developer,Irving,TX,computer_science
+c273,f1000_662,Pitney Bowes,Principal Software Engineer,Danbury,CT,computer_science
+c274,nasdaq_PVTL,Pivotal Software,Software Engineer - Pivotal Labs,Atlanta,GA,computer_science
+c275,forbes_39,PointClickCare,Senior Software Engineer,Bloomington,MN,computer_science
+c276,f1000_536,Polaris Industries,Embedded Software Engineer - CV,Sunnyvale,CA,computer_science
+c277,f1000_954,Popular,Software Engineer,Chicago,IL,computer_science
+c278,glassdoor_64,Power Home Remodeling,Full Stack Ruby on Rails Developer,Philadelphia,PA,computer_science
+c279,f1000_267,Priceline.com,Senior Software Engineer,Norwalk,CT,computer_science
+c280,glassdoor_53,Procore Technologies,Senior Software Engineer,Austin,TX,computer_science
+c281,nasdaq_PSTG,Pure Storage,Senior Software Engineer - UI,Bellevue,WA,computer_science
+c282,ru_QUOT,Quotient Technology,Software Engineer,Mountain View,CA,computer_science
+c283,ru_RCM,R1 Rcm,Senior Front-End Software Engineer,Murray,UT,computer_science
+c284,f1000_468,Raymond James Financial,Senior Application Developer - Java,Saint Petersburg,FL,computer_science
+c285,nasdaq_RP,RealPage,Software Engineer,Richardson,TX,computer_science
+c286,ru_RDFN,Redfin,Software Developer II,Seattle,WA,computer_science
+c287,nasdaq_RNG,Ringcentral,Senior Software Engineer,Boulder,CO,computer_science
+c288,f1000_492,Robert Half,Software Engineer II,San Ramon,CA,computer_science
+c289,f1000_441,Rockwell Automation,Software Engineer Systems,Alpharetta,GA,computer_science
+c290,f1000_574,Rush Enterprises,Software Engineer,New Braunfels,TX,computer_science
+c291,f1000_667,Sabre,Software Engineer,Patuxent River,MD,computer_science
+c292,glassdoor_40,Sage Intacct,Sr Software Engineer Lead,San Jose,CA,computer_science
+c293,nasdaq_SAIL,SailPoint Technologies,Software Engineer,Austin,TX,computer_science
+c294,ru_SLB,Schlumberger,MAXWELL ACQUISITION SOFTWARE ENGINEER,Sugar Land,TX,computer_science
+c295,ru_SCHL,Scholastic,Associate Software Engineer,New York,NY,computer_science
+c296,f1000_749,Scientific Games,Sr Software Engineer,Reno,NV,computer_science
+c297,f1000_396,Sealed Air,Senior Embedded Software Engineer,Charlotte,NC,computer_science
+c298,f1000_126,Sears,Software Engineer III,Hoffman Estates,IL,computer_science
+c299,nasdaq_SEND,SendGrid,Software Development Engineer in Test,Denver,CO,computer_science
+c300,forbes_45,ServiceTitan,Software Engineer,Los Angeles,CA,computer_science
+c301,f1000_235,Sherwin-Williams,Junior Java Developer,Cleveland,OH,computer_science
+c302,ru_SBGI,Sinclair Broadcast,Senior Software Development Engineer,Seattle,WA,computer_science
+c303,f1000_768,Sinclair Broadcast Group,Senior Software Development Engineer,Seattle,WA,computer_science
+c304,nasdaq_SNAP,Snap,Senior Back-end Engineer,Austin,TX,computer_science
+c305,forbes_16,Snowflake,Senior Software Engineer,Seattle,WA,computer_science
+c306,f1000_137,Southwest Airlines,Sr Software Engineer,Dallas,TX,computer_science
+c307,glassdoor_97,SpaceX,Lead Full Stack Software Engineer,Los Angeles,CA,computer_science
+c308,nasdaq_SPA,Sparton,Software Engineer IV,De Leon Springs,FL,computer_science
+c309,ru_SPB,Spectrum Brands,Sr AWS Full Stack Software Engineer,Lake Forest,CA,computer_science
+c310,ru_SR,Spire,Java Programmer III,Birmingham,AL,computer_science
+c311,f1000_859,Spirit Airlines,Manager Software Engineering - Mobile,Miramar,FL,computer_science
+c312,ru_SPOK,Spok,Software Engineer - Front End,Eden Prairie,MN,computer_science
+c313,glassdoor_38,Spreetail,Software Engineer II,Austin,TX,computer_science
+c314,nasdaq_SQ,Square,Software Engineer - Caviar,San Francisco,CA,computer_science
+c315,f1000_249,Stanley Black & Decker,Front-end / Web Developer,Marietta,GA,computer_science
+c316,f1000_32,State Farm Insurance,Software Developer,Richardson,TX,computer_science
+c317,f1000_270,State Street,CRD Software Engineer II,Burlington,MA,computer_science
+c318,f1000_717,Steelcase,Software Developer,Portland,OR,computer_science
+c319,nasdaq_SSYS,Stratasys,Software Engineer,Boston,MA,computer_science
+c320,nasdaq_SPWR,SunPower,Software Developer - Analytics Tools,Richmond,CA,computer_science
+c321,glassdoor_16,Sundance Vacations,Web/Software Developer,Wilkes-Barre,PA,computer_science
+c322,ru_RUN,Sunrun,Sr Software Engineer,Denver,CO,computer_science
+c323,f1000_883,Super Micro Computer,Senior Software Engineer,San Jose,CA,computer_science
+c324,nasdaq_SPRT,Support.com,Full-Stack Application Developer,Sunnyvale,CA,computer_science
+c325,nasdaq_SWCH,Switch,Design and Software Engineer,Weymouth,MA,computer_science
+c326,nasdaq_SYNC,Synacor,Principal Software Engineer,Buffalo,NY,computer_science
+c327,nasdaq_SYNA,Synaptics,Senior Software Engineer,San Jose,CA,computer_science
+c328,f1000_56,Sysco,Software Engineer,Houston,TX,computer_science
+c329,f1000_673,TD Ameritrade,UI Software Developer,Chicago,IL,computer_science
+c330,ru_TPR,Tapestry,Software Engineer I,Maryland Heights,MO,computer_science
+c331,ru_TISI,Team,Software Engineer,Ann Arbor,MI,computer_science
+c332,ru_TTGT,Techtarget,Software Engineer,Newton,MA,computer_science
+c333,ru_TDOC,Teladoc,Software Engineer,Lewisville,TX,computer_science
+c334,f1000_972,Teleflex,Web Developer,Morrisville,NC,computer_science
+c335,ru_TNAV,Telenav,Sr Software Engineer,Santa Clara,CA,computer_science
+c336,nasdaq_TENB,Tenable,Sr Software Engineer - UI,Columbia,MD,computer_science
+c337,f1000_444,Terex,Embedded Software Developer,Redmond,WA,computer_science
+c338,f1000_205,Texas Instruments,Software Engineer,Dallas,TX,computer_science
+c339,ru_TCS,The Container Store,Java Developer,Coppell,TX,computer_science
+c340,f1000_835,Toro,Embedded Software Engineer,Bloomington,MN,computer_science
+c341,f1000_926,Tower,Senior Software Engineer,Cary,NC,computer_science
+c342,f1000_843,Trimble,Software Development Manager,Brentwood,TN,computer_science
+c343,nasdaq_TRUE,TrueCar,Senior Software Engineer,Boston,MA,computer_science
+c344,ru_HEAR,Turtle Beach,Audio Software Engineer,San Diego,CA,computer_science
+c345,f1000_100,Twentieth Century Fox,Software Engineer,Los Angeles,CA,computer_science
+c346,nasdaq_TWLO,Twilio,Software Engineer - Voice Pay,San Francisco,CA,computer_science
+c347,glassdoor_67,Ultimate Software,SOFTWARE ENGINEER,San Francisco,CA,computer_science
+c348,f1000_755,Unisys,Software Development Automation Engineer,Williston,VT,computer_science
+c349,ru_UTHR,United Therapeutics,Senior Clinical Software Developer,Research Triangle Park,NC,computer_science
+c350,ru_UEIC,Universal Electronics,Junior Software Engineer,San Mateo,CA,computer_science
+c351,ru_USNA,Usana Health Sciences,Sr Software Engineer,Salt Lake City,UT,computer_science
+c352,glassdoor_102,VI,Senior Software Engineer IV,Longmont,CO,computer_science
+c353,f1000_636,Vantiv,Senior Software Engineer,Lowell,MA,computer_science
+c354,ru_VREX,Varex Imaging,Software Engineer,Franklin Park,IL,computer_science
+c355,f1000_690,Varian Medical Systems,Software Engineer,Palo Alto,CA,computer_science
+c356,ru_VGR,Vector,C Software Developer,East Greenwich,RI,computer_science
+c357,ru_VEC,Vectrus,Jr Software Engineer,Dahlgren,VA,computer_science
+c358,f1000_657,Ventas,Senior Software Engineer - android,Hopkins,MN,computer_science
+c359,nasdaq_VRNT,Verint Systems,Software Developer - Automation,Columbia,MD,computer_science
+c360,nasdaq_VIAV,Viavi Solutions,Senior Software Engineer,Colorado Springs,CO,computer_science
+c361,ru_VRAY,Viewray,Software Engineer,Mountain View,CA,computer_science
+c362,f1000_692,Visteon,Senior UI Software Engineer,Grace Lake,WY,computer_science
+c363,ru_VSLR,Vivint Solar,Software Development Manager,Lehi,UT,computer_science
+c364,forbes_42,Vlocity,Lead Software Engineer,San Francisco,CA,computer_science
+c365,ru_VG,Vonage,Software Engineer III,Atlanta,GA,computer_science
+c366,f1000_265,Voya Financial,Senior Software Developer,Braintree,MA,computer_science
+c367,nasdaq_VUZI,Vuzix,Senior Software Engineer Android App,Henrietta,NY,computer_science
+c368,f1000_758,Wabco,Software Engineer - Kentucky,Hebron,KY,computer_science
+c369,ru_WAB,Wabtec,Software Engineer,Cedar Rapids,IA,computer_science
+c370,f1000_16,Walgreens,Software Engineer II,Deerfield,IL,computer_science
+c371,ru_WCG,Wellcare,Software Engineer,Tampa,FL,computer_science
+c372,forbes_57,Welltok,Software Engineer,Burlington,MA,computer_science
+c373,ru_WHG,Westwood,BSI Software Developer - Broadcast Systems,Centennial,CO,computer_science
+c374,f1000_340,Weyerhaeuser,Engineer/Industrial Software Developer,Seattle,WA,computer_science
+c375,f1000_505,Williams-Sonoma,Software Engineer,San Francisco,CA,computer_science
+c376,f1000_484,Windstream,Software Engineer I,Rochester,NY,computer_science
+c377,nasdaq_WIT,Wipro Limited,Software Developer,Nashville,TN,computer_science
+c378,bi_1,Wish,Software Engineer - API,San Francisco,CA,computer_science
+c379,forbes_61,Workfront,Software Engineer II,Lehi,UT,computer_science
+c380,glassdoor_148,World Wide Technology,Virtual Software Engineer,St. Louis,MO,computer_science
+c381,f1000_610,Xylem,Software Engineer,Houston,TX,computer_science
+c382,nasdaq_YEXT,Yext,Software Engineer,New York,NY,computer_science
+c383,f1000_638,Zebra Technologies,Software Engineer - I,Holtsville,NY,computer_science
+c384,nasdaq_ZEN,Zendesk,Staff Software Engineer,Madison,WI,computer_science
+c385,nasdaq_ZNGA,Zynga,Senior Software Engineer - Words With Friends,San Francisco,CA,computer_science
+c386,nasdaq_EGAN,eGain,Software Developer - Java,Tampa,FL,computer_science
+c387,f1000_425,iHeartMedia,Software Engineer - Salesforce,San Antonio,TX,computer_science
+c388,nasdaq_JCOM,j2 Global,Software Engineer,Clearwater,FL,computer_science
+c389,ru_FLWS,1-800-Flowers.com,Junior Data Scientist,New York,NY,data_science
+c390,glassdoor_25,23andMe,Research Team Coordinator,Mountain View,CA,data_science
+c391,nasdaq_TWOU,2U,Senior Special Projects Coordinator - Data Science,New York,NY,data_science
+c392,f1000_93,3M,Data Science Research Specialist,Maplewood,MN,data_science
+c393,nasdaq_EGHT,8X8,Machine Learning Engineer,San Jose,CA,data_science
+c394,ru_EGHT,8X8 Inc,Machine Learning Engineer,San Jose,CA,data_science
+c395,f1000_239,ADP,Senior Technical Product Manager - Machine Learning,New York,NY,data_science
+c396,f1000_54,AIG,Network Services Data Engineer,Amarillo,TX,data_science
+c397,f1000_8,AT&T,Senior-Data Scientist,Plano,TX,data_science
+c398,f1000_110,AbbVie,Data Science Program Lead,Lake County,IL,data_science
+c399,f1000_134,Abbott Laboratories,Clinical Research Scientist,Austin,TX,data_science
+c400,ru_AXDX,Accelerate Diagnostics,Associate Scientist - Clinical,Tucson,AZ,data_science
+c401,vault_109,Accenture,Data Science Specialist,Austin,TX,data_science
+c402,ru_ACXM,Acxiom,Principal Data Scientist,Conway,AR,data_science
+c403,nasdaq_ADBE,Adobe,Data Scientist,San Jose,CA,data_science
+c404,f1000_291,Advance Auto Parts,Sr Manager Data Science,Raleigh,NC,data_science
+c405,f1000_564,Advanced Micro Devices,Machine Learning Software Development Eng - 73454,Santa Clara,CA,data_science
+c406,f1000_160,Aecom,Entry Level Data Scientist,New York,NY,data_science
+c407,ru_AGLE,Aeglea Biotherapeutics,Market Research & Analytics Lead,Austin,TX,data_science
+c408,ru_AERI,Aerie Pharmaceuticals,Sr Associate Scientist,Durham,NC,data_science
+c409,f1000_42,Aetna,Data Scientist,New York,NY,data_science
+c410,ru_AGEN,Agenus,Bioinformatics Scientist,Lexington,MA,data_science
+c411,f1000_575,Agilent Technologies,Research Associate,Boulder,CO,data_science
+c412,ru_AIN,Albany,Research Scientist II 3rd Shift,Rensselaer,NY,data_science
+c413,f1000_653,Albemarle,Analytical Research Chemist,Kings Mountain,NC,data_science
+c414,f1000_48,Albertsons,Head of Data Science,Pleasanton,CA,data_science
+c415,ru_ALDX,Aldeyra Therapeutics,Clinical Scientist,Lexington,MA,data_science
+c416,f1000_713,Alexion Pharmaceuticals,Research Scientist II - Discovery Research,New Haven,CT,data_science
+c417,ru_ALGN,Align Technology,Director - Machine Learning,Raleigh,NC,data_science
+c418,ru_ALKS,Alkermes,Scientist/Senior Scientist Modeling & Informatics,Waltham,MA,data_science
+c419,ru_ALGT,Allegiant Travel,Data Scientist,Las Vegas,NV,data_science
+c420,ru_AGN,Allergan,Senior Pharmaceutical Technology Scientist,Waco,TX,data_science
+c421,f1000_955,Alliance,Data Engineer,Springfield,VA,data_science
+c422,f1000_83,Allstate,Machine Learning Engineer,Chicago,IL,data_science
+c423,f1000_285,Ally Financial,AI Developer,Charlotte,NC,data_science
+c424,f1000_11,Amazon,Data Scientist,Seattle,WA,data_science
+c425,ru_AIG,American,Data Scientist,Madison,WI,data_science
+c426,f1000_10,AmerisourceBergen,EPA Scientist,Dayton,NJ,data_science
+c427,f1000_122,Amgen,Core Data Scientist,Thousand Oaks,CA,data_science
+c428,ru_FOLD,Amicus Therapeutics,Senior Clinical Scientist,Cranbury,NJ,data_science
+c429,ru_AMRX,Amneal Pharmaceuticals,Scientist III - Quality Control,Branchburg,NJ,data_science
+c430,f1000_343,Anadarko Petroleum,Analytics and Data Science Supervisor - DJ Basin Subsurface & Technology,Denver,CO,data_science
+c431,nasdaq_APPF,AppFolio,Senior Software Engineer - Machine Learning,Santa Barbara,CA,data_science
+c432,f1000_2,Apple,Data Science Engineer,Santa Clara Valley,CA,data_science
+c433,f1000_264,Applied Materials,People Analytics Data Scientist,Santa Clara,CA,data_science
+c434,f1000_44,Archer Daniels Midland,Scientist I - - IL,Decatur,IL,data_science
+c435,ru_ARGO,Argo Group,Product Owner,New York,NY,data_science
+c436,ru_ARRY,Array Biopharma,BioPhysics Scientist,Boulder,CO,data_science
+c437,nasdaq_AZPN,Aspen Technology,Data Scientist,Bedford,MA,data_science
+c438,ru_ASMB,Assembly Biosciences,Senior Bioinformatics Scientist,South San Francisco,CA,data_science
+c439,ru_ATNX,Athenex,Clinical Pharmacology Data Scientist,Cranford,NJ,data_science
+c440,ru_ATHX,Athersys,Associate Scientist - Pharmaceutical/Biotech,Cleveland,OH,data_science
+c441,ru_ATRC,Atricure,Senior Clinical Research Associate,Minneapolis,MN,data_science
+c442,forbes_37,Automation Anywhere,Researcher - Sr UX,San Jose,CA,data_science
+c443,nasdaq_AVLR,Avalara,Sr UX Researcher,Seattle,WA,data_science
+c444,nasdaq_AVID,Avid Technology,Sr Data Engineer,Burlington,MA,data_science
+c445,ru_CAR,Avis Budget,Decision Scientist,Parsippany,NJ,data_science
+c446,f1000_318,Avis Budget Group,Decision Scientist,Parsippany,NJ,data_science
+c447,f1000_443,Avon Products,Toxicology Analyst/Clinical Scientist 1,Suffern,NY,data_science
+c448,f1000_244,BB&T,Card and Digital Fraud Data Scientist,Charlotte,NC,data_science
+c449,nasdaq_BOX,BOX,Lead User Researcher,Redwood City,CA,data_science
+c450,vault_101,Bain & Company,Senior Manager - Data Science,Atlanta,GA,data_science
+c451,f1000_284,Baker Hughes,Staff Data Scientist - - TX,Houston,TX,data_science
+c452,f1000_305,Ball,Data Scientist I,Boulder,CO,data_science
+c453,f1000_25,Bank of America,Data Scientist I,Charlotte,NC,data_science
+c454,ru_BANR,Banner,Research Compliance Analyst,Phoenix,AZ,data_science
+c455,ru_BLCM,Bellicum Pharmaceuticals,Clinical Scientist/ Senior Clinical Scientist,San Francisco,CA,data_science
+c456,ru_BERY,Berry Global,Product Optimization Engineer/Scientist,Chippewa Falls,WI,data_science
+c457,f1000_71,Best Buy,Data Scientist - Pricing,Richfield,MN,data_science
+c458,ru_TECH,Bio-Techne,Senior Scientist,Newark,CA,data_science
+c459,f1000_247,Biogen,Senior Scientist - Cellular Physiology,Cambridge,MA,data_science
+c460,ru_BEAT,Biotelemetry,BioTel Research,Rochester,NY,data_science
+c461,nasdaq_BKI,Black Knight,Product Manager - Data Sciences,Irvine,CA,data_science
+c462,f1000_254,BlackRock,Senior Data Scientist,Atlanta,GA,data_science
+c463,ru_BLUE,Bluebird Bio,Data Scientist / Computational Biologist,Seattle,WA,data_science
+c464,ru_BPMC,Blueprint Medicines,Scientist - Biology,Cambridge,MA,data_science
+c465,f1000_480,Booz Allen Hamilton,Data Scientist,McLean,VA,data_science
+c466,ru_SAM,Boston Beer,Sensory Scientist,Boston,MA,data_science
+c467,f1000_146,Bristol-Myers Squibb,US Medical Scientist,Princeton,NJ,data_science
+c468,nasdaq_AVGO,Broadcom,Software Engineer - Machine Learning Services,Plano,TX,data_science
+c469,ru_BRKR,Bruker,Sales Applications Scientist /Tribology ,San Jose,CA,data_science
+c470,f1000_582,CA,DATA SCIENTIST,Fenton,MO,data_science
+c471,f1000_614,CACI,Data Scientist/Researcher,Reston,VA,data_science
+c472,nasdaq_CEVA,CEVA,R&D Scientist 1,Kansas City,KS,data_science
+c473,ru_CIT,CIT,AVP - Analytics and Data Science,Pasadena,CA,data_science
+c474,f1000_549,CIT Group,AVP - Analytics and Data Science,Pasadena,CA,data_science
+c475,f1000_6,CVS Health,Analytics - Machine Learning Data Engineer Advisor,Woonsocket,RI,data_science
+c476,f1000_991,Cadence Design Systems,Software Engineer,San Jose,CA,data_science
+c477,ru_CLXT,Calyxt,Research Scientist in Trait Analysis,Minneapolis-Saint Paul,MN,data_science
+c478,ru_ABCD,Cambium Learning,Director - Research & Evaluation,Tucson,AZ,data_science
+c479,f1000_338,Campbell Soup,Scientist,Camden,NJ,data_science
+c480,f1000_99,Capital One,Data Scientist,McLean,VA,data_science
+c481,f1000_173,CarMax,Technology Manager - Data Science and Machine Learning,Richmond,VA,data_science
+c482,nasdaq_CBLK,Carbon Black,Threat Data Engineer,Boulder,CO,data_science
+c483,f1000_14,Cardinal Health,Product Development Scientist,Hazelwood,MO,data_science
+c484,nasdaq_CDLX,Cardlytics,Senior Big Data Engineer,Atlanta,GA,data_science
+c485,forbes_87,Carta,Senior Data Engineer,New York,NY,data_science
+c486,nasdaq_CSLT,Castlight Health,Senior Data Engineer,San Francisco,CA,data_science
+c487,f1000_978,Catalent,Scientist,Saint Petersburg,FL,data_science
+c488,f1000_73,Caterpillar,Research Engineer,Chicago,IL,data_science
+c489,ru_CBRE,Cbre,Data Scientist,Atlanta,GA,data_science
+c490,f1000_253,Celgene,Clinical Research Scientist,San Diego,CA,data_science
+c491,f1000_65,Centene,Data Science Engineer II,St. Louis,MO,data_science
+c492,f1000_159,CenturyLink,Sr DevOps Engineer - Machine Learning,Phoenix,AZ,data_science
+c493,f1000_529,Cerner,Senior Data Scientist at Children's National,Washington,DC,data_science
+c494,f1000_356,Charles Schwab,Data Scientist,Chicago,IL,data_science
+c495,f1000_18,Chevron,Product Development Scientist/Engineer,Richmond,CA,data_science
+c496,vault_139,Cicero Group,Market Research Specialist 1,Salt Lake City,UT,data_science
+c497,f1000_69,Cigna,Data Scientist,Santa Monica,CA,data_science
+c498,ru_CMPR,Cimpress,Lead Data Scientist,Waltham,MA,data_science
+c499,f1000_59,Cisco,Data Scientist,San Jose,CA,data_science
+c500,f1000_29,Citi,Intermediate Data Scientist,Irving,TX,data_science
+c501,ru_CHCO,City,Data Scientist,Dallas,TX,data_science
+c502,f1000_452,Clorox,R&D Process Scientist II,Durham,NC,data_science
+c503,nasdaq_CLDR,Cloudera,Machine Learning/Data Science Technical Writer,Palo Alto,CA,data_science
+c504,f1000_63,Coca-Cola,Scientist II - Packaging Analytical,Atlanta,GA,data_science
+c505,ru_CDXS,Codexis,Upstream Scientist,Redwood City,CA,data_science
+c506,ru_CWBR,Cohbar,Scientist/Senior Scientist Drug Discovery,Menlo Park,CA,data_science
+c507,ru_CHRS,Coherus Biosciences,Scientist/Sr Scientist,Camarillo,CA,data_science
+c508,f1000_181,Colgate-Palmolive,Data Scientist,Piscataway,NJ,data_science
+c509,f1000_840,Columbia Sportswear,Data Engineer III,Portland,OR,data_science
+c510,f1000_30,Comcast,VP - Data Science,Philadelphia,PA,data_science
+c511,glassdoor_81,Compass,Machine Learning Scientist,New York,NY,data_science
+c512,ru_CNDT,Conduent,Data Scientist II,Florham Park,NJ,data_science
+c513,ru_CRBP,Corbus Pharmaceuticals,QC Associate Scientist/Scientist,Norwood,MA,data_science
+c514,f1000_951,CoreLogic,Principal - Data Scientist,San Diego,CA,data_science
+c515,f1000_297,Corning,Scientist - Cell Biology,Bedford,MA,data_science
+c516,f1000_557,Coty,Senior Scientist - Consumer Beauty - Nail Lab,Morris Plains,NJ,data_science
+c517,f1000_656,Country Financial,Machine Learning/Data Engineer,Bloomington,IL,data_science
+c518,cnbc_41,Coursera,Senior Data Scientist - Machine Learning,Mountain View,CA,data_science
+c519,f1000_332,Crown,IT Data Engineer,Canonsburg,PA,data_science
+c520,f1000_595,Crown Castle,IT Data Engineer,Canonsburg,PA,data_science
+c521,ru_CUB,Cubic,Cognitive Data Scientist,Beavercreek,OH,data_science
+c522,forbes_17,Cylance,Sr Data Engineer,Irvine,CA,data_science
+c523,ru_CTMX,Cytomx Therapeutics,Sr Clinical Research Associate,San Francisco,CA,data_science
+c524,f1000_185,DISH Network,Data Scientist/Analyst,American Fork,UT,data_science
+c525,f1000_771,DSW,Marketing Applications Data Engineer,Columbus,OH,data_science
+c526,f1000_446,Dana,Statistician I - Data Sciences,Boston,MA,data_science
+c527,f1000_143,Danaher,Senior QC Scientist,Fremont,CA,data_science
+c528,forbes_58,Dataminr,Research Scientist,New York,NY,data_science
+c529,f1000_40,Dell,Advisor CCO Audience Strategy - Data Science,Round Rock,TX,data_science
+c530,f1000_977,Deluxe,Data Engineer,Santa Monica,CA,data_science
+c531,ru_DNLI,Denali Therapeutics,Scientist - Flow Cytometry Lead,South San Francisco,CA,data_science
+c532,ru_DXCM,Dexcom,Data Scientist 2,San Diego,CA,data_science
+c533,glassdoor_130,Discount Tire,Data Scientist II,Scottsdale,AZ,data_science
+c534,f1000_276,Discover Financial Services,Sr Data Scientist,Riverwoods,IL,data_science
+c535,ru_DISCA,Discovery,Data Science Lead,New York,NY,data_science
+c536,f1000_411,Discovery Communications,Data Science Lead,New York,NY,data_science
+c537,f1000_51,Disney,Data Scientist,New York,NY,data_science
+c538,nasdaq_DOCU,DocuSign,Research Operations Associate,San Francisco,CA,data_science
+c539,f1000_61,Dow Chemical,Technical Service and Development Scientist,Freeport,TX,data_science
+c540,nasdaq_DBX,Dropbox,Head of Data Science - Growth,San Francisco,CA,data_science
+c541,cnbc_34,Duolingo,Learning Researcher - PhD,Pittsburgh,PA,data_science
+c542,vault_198,EY,Senior - Data Scientist,Austin,TX,data_science
+c543,ru_EGRX,Eagle Pharmaceuticals,Associate Scientist - Analytical Development,Cambridge,MA,data_science
+c544,ru_EML,Eastern,Assistant Professor and Program Evaluation and Data Science Specialist,Princess Anne,MD,data_science
+c545,nasdaq_ETN,Eaton,Data Scientist,Eden Prairie,MN,data_science
+c546,ru_EV,Eaton Vance,ESG Research Analyst - Materials Sector,Washington,DC,data_science
+c547,f1000_210,Ecolab,Data Scientist,Naperville,IL,data_science
+c548,f1000_844,Edgewell Personal Care,Associate Scientist,Allendale,NJ,data_science
+c549,f1000_234,Edison,Data Scientist,San Jose,CA,data_science
+c550,ru_EDIT,Editas Medicine,Scientist/Principal Research Associate Neuroscience,Cambridge,MA,data_science
+c551,f1000_733,Edwards Lifesciences,Machine Learning Engineer - R&D Critical Care,Irvine,CA,data_science
+c552,f1000_555,Electronic Arts,Senior Software Engineer II - EADP Data and AI,Redwood City,CA,data_science
+c553,f1000_131,Eli Lilly,Scientist-GO Laboratory,Fort Dodge,IA,data_science
+c554,ru_EBS,Emergent Biosolutions,Principal Scientist,Gaithersburg,MD,data_science
+c555,ru_ENTA,Enanta Pharmaceuticals,Associate Scientist - Biochemistry,Watertown,MA,data_science
+c556,ru_ENTG,Entegris,Materials Scientist,Bloomington,MN,data_science
+c557,f1000_262,Entergy,Data Engineer,The Woodlands,TX,data_science
+c558,f1000_121,Enterprise Products,Specialist - Lead Data Science,Houston,TX,data_science
+c559,f1000_702,Equifax,Data Scientist,Atlanta,GA,data_science
+c560,nasdaq_ERIC,Ericsson,Data Scientist,Plano,TX,data_science
+c561,ru_ETSY,Etsy,Data Scientist - Inference,San Francisco,CA,data_science
+c562,ru_EXAS,Exact Sciences,Senior Statistician - Research & Development,Madison,WI,data_science
+c563,ru_EXEL,Exelixis,Assistant Research Scientist II,Alameda,CA,data_science
+c564,f1000_316,Expedia,Big Data Engineer,Bellevue,WA,data_science
+c565,ru_EXPO,Exponent,Scientist,Bellevue,WA,data_science
+c566,f1000_680,FMC,Environmental Fate/Modeling Scientist,Newark,DE,data_science
+c567,f1000_97,Facebook,Machine Learning Engineer,Menlo Park,CA,data_science
+c568,f1000_195,FirstEnergy,IT SOC Data Engineer,Wadsworth,OH,data_science
+c569,f1000_470,Fiserv,Data Engineer,Chicago,IL,data_science
+c570,ru_FLIR,Flir Systems,Scientist,West Lafayette,IN,data_science
+c571,f1000_148,Fluor,Environmental Engineer/Scientist II,Idaho Falls,ID,data_science
+c572,f1000_9,Ford Motor,Data Scientist,Dearborn,MI,data_science
+c573,ru_FMI,Foundation Medicine,Scientist I,Cambridge,MA,data_science
+c574,f1000_38,Freddie Mac,Data Scientist Senior,McLean,VA,data_science
+c575,f1000_177,GAP,Senior SAR Image Scientist,Quantico,VA,data_science
+c576,ru_GEO,GEO,JAIL OFFICER,Alhambra,CA,data_science
+c577,f1000_721,Gannett,Data Scientist,McLean,VA,data_science
+c578,ru_GRMN,Garmin,Data Scientist - Weather Radar,Cary,NC,data_science
+c579,f1000_820,Gartner,Manager - Market Research and Customer Insights,Irving,TX,data_science
+c580,f1000_89,General Dynamics,Data Scientist,Chantilly,VA,data_science
+c581,f1000_12,General Electric,Data Scientist,Hoffman Estates,IL,data_science
+c582,f1000_164,General Mills,Sensory Scientist,Minneapolis,MN,data_science
+c583,ru_GNMK,Genmark Diagnostics,Data Scientist,Carlsbad,CA,data_science
+c584,ru_GHDX,Genomic Health,Scientist I,Redwood City,CA,data_science
+c585,ru_G,Genpact,AVP - PVAI - Inhouse SB Data Scientist - CPG - US,New York,NY,data_science
+c586,f1000_91,Gilead Sciences,Research Scientist - HTS,Foster City,CA,data_science
+c587,ru_GOGO,Gogo,Sr Software Data Engineer,Chicago,IL,data_science
+c588,f1000_77,Goldman Sachs,GSAM - AIMS Imprint - Publics Team - Analyst,San Francisco,CA,data_science
+c589,f1000_183,Goodyear,Data Scientist,Akron,OH,data_science
+c590,glassdoor_57,Google,Data Science Manager - Finance,Sunnyvale,CA,data_science
+c591,f1000_281,Grainger,Data Scientist,Lake Forest,IL,data_science
+c592,f1000_807,Granite Construction,TRAINING & DEVP MGR,The Woodlands,TX,data_science
+c593,f1000_410,Great American Insurance Group,Data Engineer,Cincinnati,OH,data_science
+c594,f1000_703,Groupon,Data Scientist - Optimize,Chicago,IL,data_science
+c595,f1000_217,Guardian Life Insurance Company,Data Scientist III - PHD Preferred,New York,NY,data_science
+c596,nasdaq_GWRE,Guidewire Software,Data Scientist - Cyber Risk Analytics - - CA,San Mateo,CA,data_science
+c597,f1000_60,HP,Data Scientist,Spring,TX,data_science
+c598,f1000_172,Halliburton,Geoscientist I,Houston,TX,data_science
+c599,ru_THG,Hanover Insurance,Sr Data Scientist,Worcester,MA,data_science
+c600,f1000_516,Hanover Insurance Group,Sr Data Scientist,Worcester,MA,data_science
+c601,f1000_362,Harris,Data Scientsit,Melbourne,FL,data_science
+c602,f1000_508,Hasbro,Data Scientist,East Providence,RI,data_science
+c603,forbes_70,Health Catalyst,NLP Data Scientist,Boston,MA,data_science
+c604,ru_HCSG,Healthcare,Lead Data Scientist,New York,NY,data_science
+c605,ru_HRTX,Heron Therapeutics,In-house Clinical Research Associate,San Diego,CA,data_science
+c606,f1000_368,Hershey,Research Assistant Transformational Innovation,Hershey,PA,data_science
+c607,ru_HSY,Hershey Company,Research Assistant Transformational Innovation,Hershey,PA,data_science
+c608,f1000_58,Hewlett Packard Enterprise,Consulting Architect - AI & Hadoop,Houston,TX,data_science
+c609,ru_HIL,Hill,Data Scientist/Statistician,St. Louis,MO,data_science
+c610,f1000_754,Hologic,Machine Learning Architecture Scientist,Santa Clara,CA,data_science
+c611,f1000_22,Home Depot,Data Scientist - Online,Atlanta,GA,data_science
+c612,f1000_72,Honeywell,AI Scientist II,Plymouth,MN,data_science
+c613,ru_HHC,Howard Hughes,Research Technician I,New York,NY,data_science
+c614,f1000_52,Humana,Senior Data Scientist,Boston,MA,data_science
+c615,ru_ICFI,ICF,Data Scientist,Fairfax,VA,data_science
+c616,nasdaq_INFO,IHS Markit,Data Scientist I,Rockville,MD,data_science
+c617,vault_134,Ignyte Group,Data Engineer,Washington,DC,data_science
+c618,f1000_832,Illumina,Senior Scientist,San Diego,CA,data_science
+c619,ru_INCY,Incyte,Director - Clinical Research Scientist,Wilmington,DE,data_science
+c620,ru_IHC,Independence,Data Scientist,Philadelphia,PA,data_science
+c621,glassdoor_46,Indigo,Data Engineer - Geoinnovation,Boston,MA,data_science
+c622,ru_III,Information Services,Senior DIrector Machine Learning AI System Analysis 1,Ipswich,MA,data_science
+c623,f1000_455,Ingredion,Sensory Scientist,Bridgewater,NJ,data_science
+c624,f1000_472,Insight Enterprises,Data Engineer,Boston,MA,data_science
+c625,bi_15,Instacart,Data Science Manager,San Francisco,CA,data_science
+c626,ru_INSY,Insys Therapeutics,Stability Scientist I,Chandler,AZ,data_science
+c627,f1000_46,Intel,GPGPU Machine Learning Engineer,Folsom,CA,data_science
+c628,forbes_19,Intercom,Senior Product Researcher,San Francisco,CA,data_science
+c629,f1000_436,Intercontinental Exchange,Senior Data Engineer,New York,NY,data_science
+c630,f1000_526,Intuit,Senior Data Scientist,Mountain View,CA,data_science
+c631,f1000_772,Intuitive Surgical,Research Associate,Sunnyvale,CA,data_science
+c632,ru_IVZ,Invesco,Data Scientist-Pricing,Houston,TX,data_science
+c633,ru_IONS,Ionis Pharmaceuticals,Scientist,Carlsbad,CA,data_science
+c634,ru_IQV,Iqvia,Sr Machine Learning Engineer,Cambridge,MA,data_science
+c635,ru_IRBT,Irobot,Sr Software Engineer - Machine Learning,Bedford,MA,data_science
+c636,f1000_220,J.C. Penney,Data Scientist - Sourcing Analytics,Plano,TX,data_science
+c637,f1000_151,Jabil,Sterilization Scientist,Albuquerque,NM,data_science
+c638,vault_174,Jefferies,Equity Research Associate Medical Devices,New York,NY,data_science
+c639,f1000_566,KBR,Data Science Instructor - Journeyman,Dayton,OH,data_science
+c640,f1000_732,KLA-Tencor,Research Scientist,Milpitas,CA,data_science
+c641,vault_111,KPMG,Manager - Data Scientist,Salt Lake City,UT,data_science
+c642,glassdoor_147,Kaiser Permanente,User Researcher,Pasadena,CA,data_science
+c643,f1000_853,Kansas City Southern,Network Services Data Scientist,Kansas City,MO,data_science
+c644,f1000_701,Kar Auction Services,Jr Data Scientist,Chicago,IL,data_science
+c645,glassdoor_106,Keller Williams,Senior Data Engineer,Austin,TX,data_science
+c646,f1000_489,Kelly Services,Scientist II - Cell Culture - - CA,Carlsbad,CA,data_science
+c647,f1000_802,Kemper,Data Scientist,Chicago,IL,data_science
+c648,f1000_744,Keysight Technologies,Data Scientist,Santa Clara,CA,data_science
+c649,f1000_154,Kimberly-Clark,Senior Director - Marketing Research Innovation,Chicago,IL,data_science
+c650,f1000_105,Kraft Heinz,Head of Data Science,Chicago,IL,data_science
+c651,glassdoor_93,Kronos,Senior Scientist - Drug Discovery Cancer Biology,Cambridge,MA,data_science
+c652,f1000_272,L3 Technologies,Sr Software Engineer - Artificial Intelligence for RF Systems,Salt Lake City,UT,data_science
+c653,nasdaq_LN,LINE,Senior Data Scientist,Cincinnati,OH,data_science
+c654,glassdoor_73,Lawrence Livermore National Laboratory,Cybersecurity Data Scientist,Livermore,CA,data_science
+c655,f1000_380,Leidos,Data Scientist,McLean,VA,data_science
+c656,f1000_541,Levi Strauss,Senior Data Engineer,San Francisco,CA,data_science
+c657,f1000_74,Liberty Mutual,Director I - Data Science,Boston,MA,data_science
+c658,nasdaq_RAMP,LiveRamp,Head of Data Science,San Francisco,CA,data_science
+c659,f1000_55,Lockheed Martin,Data Science Analyst,Trumbull,CT,data_science
+c660,nasdaq_LOGM,LogMein,Staff Data Scientist,Boston,MA,data_science
+c661,f1000_39,Lowe's,Big Data Engineer,Mooresville,NC,data_science
+c662,cnbc_4,Lyft,Data Scientist,New York,NY,data_science
+c663,glassdoor_117,MD Anderson Cancer Center,IMAGING RESEARCH SPECIALIST,Houston,TX,data_science
+c664,f1000_109,Macy's,Data Scientist,New York,NY,data_science
+c665,bi_11,Magic Leap,Senior Data Scientist,Fort Lauderdale,FL,data_science
+c666,ru_MNK,Mallinckrodt,Manager - Scientific Communications,Bedminster,NJ,data_science
+c667,f1000_50,Marathon Petroleum,Data Scientist,Findlay,OH,data_science
+c668,ru_MBII,Marrone Bio Innovations,FORMULATIONS CHEMIST - PRINCIPAL SCIENTIST,Davis,CA,data_science
+c669,ru_MASI,Masimo,Associate Artificial Intelligence/Machine Learning Engineer,Irvine,CA,data_science
+c670,glassdoor_133,Massachusetts General Hospital,Research Scientist,Boston,MA,data_science
+c671,f1000_266,Mastercard,Consultant - Data Scientist-2,Purchase,NY,data_science
+c672,ru_MTCH,Match,Bioinformatics Scientist,Minneapolis,MN,data_science
+c673,f1000_473,Mattel,Jr Data Scientist,El Segundo,CA,data_science
+c674,f1000_552,McCormick,Principal Scientist - Sensory,Hunt Valley,MD,data_science
+c675,f1000_4,McKesson,Data Scientist,Dallas-Fort Worth,TX,data_science
+c676,vault_100,McKinsey & Company,Agriculture Data Scientist - Agriculture Commodity Research Engine,Denver,CO,data_science
+c677,f1000_615,Mead Johnson Nutrition,New Graduate - R&D Lab Research Scientist,Montvale,NJ,data_science
+c678,ru_MDCO,Medicines,Scientist - Biology,Cambridge,MA,data_science
+c679,ru_MEDP,Medpace,Bioinformatics Scientist,Cincinnati,OH,data_science
+c680,ru_MDT,Medtronic,Sr Scientist,Fridley,MN,data_science
+c681,glassdoor_115,Memorial Sloan Kettering,Machine Learning Scientist - Digital & Computational Pathology,New York,NY,data_science
+c682,f1000_68,Merck,Postdoctoral Research Fellow Molecular Machine Learning,West Point,PA,data_science
+c683,ru_MDP,Meredith,Data Scientist,Los Angeles,CA,data_science
+c684,ru_KORS,Michael Kors,Senior Data Engineer,East Rutherford,NJ,data_science
+c685,f1000_27,Microsoft,DATA SCIENTIST,Chicago,IL,data_science
+c686,nasdaq_MB,Mindbody,Head of Machine Learning,San Francisco,CA,data_science
+c687,nasdaq_MITK,Mitek Systems,Sr Data Engineer / Data Manager,San Diego,CA,data_science
+c688,bi_13,Moderna Therapeutics,Research Associate - Data Science,Cambridge,MA,data_science
+c689,ru_MTEM,Molecular Templates,Research Associate - Cell Biology,Austin,TX,data_science
+c690,ru_MNTA,Momenta Pharmaceuticals,Research Associate/Senior Research Associate - Protein Purifications,Cambridge,MA,data_science
+c691,f1000_108,Mondelez,Senior Scientist I - Data Science,East Hanover,NJ,data_science
+c692,nasdaq_MDB,MongoDB,Data Scientist - Growth,New York,NY,data_science
+c693,f1000_630,Moody's,Machine Learning /NLP-Research Scientist/ Engineer,New York,NY,data_science
+c694,f1000_75,Morgan Stanley,Data Scientist,New York,NY,data_science
+c695,f1000_432,Motorola Solutions,Data Scientist - Natural Language Processing,Chicago,IL,data_science
+c696,ru_MBIO,Mustang Bio,Princiapal/Senior Scientist Translational and Correlative Sciences,Worcester,MA,data_science
+c697,ru_MYGN,Myriad Genetics,Scientist - Computational Biologist,South San Francisco,CA,data_science
+c698,glassdoor_88,NIH,Research Scientist,Rockville,MD,data_science
+c699,ru_NK,Nantkwest,Sr Scientist,San Diego,CA,data_science
+c700,ru_NBHC,National Bank,Digital Data Scientist,Los Angeles,CA,data_science
+c701,f1000_67,Nationwide,Specialist - Data Science,Columbus,OH,data_science
+c702,glassdoor_78,Navy Federal Credit Union,Member Research Strategist II,Vienna,VA,data_science
+c703,ru_NEOG,Neogen,Research Technician,Lansing,MI,data_science
+c704,ru_NEO,Neogenomics,Clinical Laboratory Scientist II,Carlsbad,CA,data_science
+c705,f1000_313,Netflix,Senior Data Scientist,Los Gatos,CA,data_science
+c706,ru_NBIX,Neurocrine Biosciences,Scientist/Sr Scientist - Product Development,San Diego,CA,data_science
+c707,nasdaq_NEWR,New Relic,Machine Learning Software Engineer - Data Exploration Team,Portland,OR,data_science
+c708,f1000_64,New York Life Insurance,Project Manager for Center of Analytics & Data Science,New York,NY,data_science
+c709,ru_NYT,New York Times,Data Engineer,New York,NY,data_science
+c710,f1000_207,Newell Brands,Associate Manager - Data Scientist,Atlanta,GA,data_science
+c711,f1000_169,NextEra Energy,Enterprise Data Engineering Lead,Jupiter,FL,data_science
+c712,ru_NLSN,Nielsen,Sr Data Scientist,San Francisco,CA,data_science
+c713,f1000_187,Nordstrom,Data Scientist - Operations Research,Seattle,WA,data_science
+c714,glassdoor_101,Northside Hospital,Clinical Research Coordinator,Atlanta,GA,data_science
+c715,ru_NWE,Northwestern,Scientific Editor,Chicago,IL,data_science
+c716,ru_NVAX,Novavax,Scientist II,Gaithersburg,MD,data_science
+c717,nasdaq_NTNX,Nutanix,Data Engineer,San Jose,CA,data_science
+c718,f1000_386,Nvidia,NVIDIA Enterprise Solution Engineer Machine Learning / RAPIDS,Santa Clara,CA,data_science
+c719,f1000_322,O'Reilly Auto Parts,Data Engineer II,Springfield,MO,data_science
+c720,nasdaq_OKTA,Okta,Senior Data Engineer,San Francisco,CA,data_science
+c721,nasdaq_OMCL,Omnicell,Data Engineer,Pittsburgh,PA,data_science
+c722,f1000_424,Oshkosh,Data Scientist,Oshkosh,WI,data_science
+c723,forbes_91,Outreach,Data Science Engineering Manager,Seattle,WA,data_science
+c724,f1000_998,Overstock.com,Senior Research Analyst,Midvale,UT,data_science
+c725,f1000_165,PNC Financial Services Group,Data Scientist,Pittsburgh,PA,data_science
+c726,f1000_182,PPG Industries,Research Chemist I - Functional Surface Coatings,Hampton Township,PA,data_science
+c727,ru_PRAA,PRA,Data Scientist 2,Lenexa,KS,data_science
+c728,nasdaq_PRO,PROS,research staff,Chicago,IL,data_science
+c729,nasdaq_PTC,PTC,Sr Scientist - Bioanalysis,South Plainfield,NJ,data_science
+c730,f1000_163,Paccar,Data Scientist,Renton,WA,data_science
+c731,nasdaq_PANW,Palo Alto Networks,Big Data Engineer,Santa Clara,CA,data_science
+c732,ru_P,Pandora Media,Data Engineer,Boulder,CO,data_science
+c733,ru_PGRE,Paramount,Senior Data Scientist ,San Francisco,CA,data_science
+c734,f1000_823,Parexel,Scientist - Scientific & Medical Services,Billerica,MA,data_science
+c735,f1000_263,PayPal,Sr Machine Learning Engineer,San Jose,CA,data_science
+c736,f1000_736,Paychex,Sr Manager - Data Science & Predictive Analytics,Rochester,NY,data_science
+c737,nasdaq_PCTY,Paylocity,Data Engineer,Schaumburg,IL,data_science
+c738,cnbc_19,Peloton,Scientist - Medicinal Chemistry,Dallas,TX,data_science
+c739,f1000_43,PepsiCo,Data Scientist,New York,NY,data_science
+c740,ru_PRGO,Perrigo,Lab Information Systems Administrator / Scientist,Allegan,MI,data_science
+c741,nasdaq_PRSP,Perspecta,Data Engineer,Chantilly,VA,data_science
+c742,ru_PFNX,Pfenex,Associate Scientist - Downstream,San Diego,CA,data_science
+c743,f1000_53,Pfizer,Senior Data Scientist,Groton,CT,data_science
+c744,f1000_794,Plexus,User Research & Human Factors Lead,Raleigh,NC,data_science
+c745,nasdaq_PS,Pluralsight,Senior Machine Learning Engineer,Boston,MA,data_science
+c746,ru_PNC,Pnc Financial,Data Scientist,Pittsburgh,PA,data_science
+c747,ru_COOL,Polarityte,Clinical Research Associate II,Salt Lake City,UT,data_science
+c748,f1000_959,Portland General Electric,Data Scientist,Portland,OR,data_science
+c749,f1000_507,Post,Food Scientist - Quality Food Safety,Northfield,MN,data_science
+c750,ru_PRAH,Pra Health Sciences,Data Scientist 2,Lenexa,KS,data_science
+c751,f1000_274,Praxair,Senior Data Scientist,Tonawanda,NY,data_science
+c752,ru_PINC,Premier,Data Engineer,Knoxville,TN,data_science
+c753,f1000_226,Principal Financial,Data Engineer,Des Moines,IA,data_science
+c754,f1000_35,Procter and Gamble,Research and Development Engineer Co-op,Cincinnati,OH,data_science
+c755,f1000_119,Progressive,Senior Manager - Data Science,Mayfield Heights,OH,data_science
+c756,nasdaq_PFPT,Proofpoint,Data Scientist,Broomfield,CO,data_science
+c757,f1000_47,Prudential,Big Data Engineer,Newark,NJ,data_science
+c758,ru_PTCT,Ptc Therapeutics,Sr Scientist - Bioanalysis,South Plainfield,NJ,data_science
+c759,nasdaq_QTWO,Q2,Senior Scientist - Immunology/Vaccines,Atlanta,GA,data_science
+c760,ru_QGEN,Qiagen,Field Application Scientist Variant,West,TX,data_science
+c761,f1000_118,Qualcomm,Compiler Engineer Machine Learning,Austin,TX,data_science
+c762,ru_QTRX,Quanterix,Senior Research Associate - Lab Services,Lexington,MA,data_science
+c763,nasdaq_QTM,Quantum,Operations Research Systems Analyst,Arlington,VA,data_science
+c764,f1000_365,Quest Diagnostics,Forensic Scientist,Norristown,PA,data_science
+c765,ru_QDEL,Quidel,Complement Scientist,Athens,OH,data_science
+c766,f1000_370,Ralph Lauren,Data Engineer - Global Analytics,Lyndhurst,NJ,data_science
+c767,nasdaq_RPD,Rapid7,Data Scientist - Business Intelligence,Boston,MA,data_science
+c768,f1000_115,Raytheon,Data Scientist,Dulles,VA,data_science
+c769,f1000_522,Regeneron Pharmaceuticals,Sr Imaging Scientist - Clinical Imaging,Tarrytown,NY,data_science
+c770,ru_RGNX,Regenxbio,Scientist - Target Discovery,Rockville,MD,data_science
+c771,cnbc_8,Rent the Runway,Data Engineer,New York,NY,data_science
+c772,f1000_298,Republic Services,Data Scientist,Phoenix,AZ,data_science
+c773,ru_ROKU,Roku,VP Data Science,Los Gatos,CA,data_science
+c774,glassdoor_70,Ryan,Research Prosthetist-Orthothist - Center for Bionic Medicine - Full-time,Chicago,IL,data_science
+c775,f1000_458,S&P Global,Lead Machine Learning Engineer,Charlottesville,VA,data_science
+c776,glassdoor_76,SAP,Senior Developer Machine Learning,Palo Alto,CA,data_science
+c777,forbes_54,SMS Assist,Senior Data Scientist,Chicago,IL,data_science
+c778,nasdaq_SSNC,SS&C Technologies,Sr Software Engineer - Machine Learning - SS&C Technologies,Boston,MA,data_science
+c779,ru_SAGE,Sage Therapeutics,Medical Scientist - Experimental Medicine,Cambridge,MA,data_science
+c780,f1000_325,Salesforce,Data Scientist/Sr Analyst - Monetization Strategy,Indianapolis,IN,data_science
+c781,bi_17,Samumed,Scientist / Senior Scientist - Cellular and Molecular Biology,San Diego,CA,data_science
+c782,ru_SGMO,Sangamo Therapeutics,Associate Scientist,Richmond,CA,data_science
+c783,f1000_739,Scotts Miracle-Gro,Research Horticulturist,Marysville,OH,data_science
+c784,nasdaq_STX,Seagate Technology,Staff Engineer - R&D Surface Scientist,Longmont,CO,data_science
+c785,ru_SGEN,Seattle Genetics,Quality Control Scientist,Bothell,WA,data_science
+c786,f1000_562,Select Medical,Clinical Research Scientist,Mechanicsburg,PA,data_science
+c787,f1000_728,Service,Sr Data Scientist,Atlanta,GA,data_science
+c788,nasdaq_NOW,ServiceNow,Senior Data Scientist,Santa Clara,CA,data_science
+c789,ru_SFLY,Shutterfly,Data Engineer,Redwood City,CA,data_science
+c790,nasdaq_SSTK,Shutterstock,Data Engineer,New York,NY,data_science
+c791,forbes_1,Slack,Data Scientist - Sales,New York,NY,data_science
+c792,glassdoor_63,Slalom,Data Scientist - Data & Analytics,Charlotte,NC,data_science
+c793,cnbc_49,SoFi,Staff Data Scientist - Modeler,San Francisco,CA,data_science
+c794,nasdaq_SWI,SolarWinds,Associate Data Scientist,Austin,TX,data_science
+c795,ru_SLDB,Solid Biosciences,Associate/Senior Associate Scientist - Analytical Development,Cambridge,MA,data_science
+c796,ru_SONC,Sonic,Clinical Laboratory Scientist ,San Luis Obispo,CA,data_science
+c797,f1000_144,Southern,Data Scientist Lead,Costa Mesa,CA,data_science
+c798,ru_ONCE,Spark Therapeutics,Research Associate,Philadelphia,PA,data_science
+c799,f1000_95,Spectrum,Sr Data Scientist,Stamford,CT,data_science
+c800,ru_SPPI,Spectrum Pharmaceuticals,Sr Clinical Research Associate,Irvine,CA,data_science
+c801,ru_SPRO,Spero Therapeutics,Senior/Principal Process Development Scientist,Cambridge,MA,data_science
+c802,nasdaq_SPLK,Splunk,Data Scientist,Boulder,CO,data_science
+c803,glassdoor_62,St. Jude Children's Research Hospital,Research Technologist,Memphis,TN,data_science
+c804,f1000_139,Staples,Senior Data Scientist,Seattle,WA,data_science
+c805,f1000_130,Starbucks,lead data scientist - Data & Measurement Sciences - SSC - - WA,Seattle,WA,data_science
+c806,ru_STE,Steris,Senior Scientist,St. Louis,MO,data_science
+c807,f1000_251,Stryker,Principal Biosignal Algorithm Engineer /Scientist,Redmond,WA,data_science
+c808,ru_SRDX,Surmodics,Associate Scientist,Eden Prairie,MN,data_science
+c809,forbes_12,SurveyMonkey,Research Scientist - Customer Experience,San Mateo,CA,data_science
+c810,f1000_464,Symantec,Principal Data Scientist/Analyst,Tempe,AZ,data_science
+c811,ru_SYNH,Syneos Health,Safety Scientist III,South San Francisco,CA,data_science
+c812,glassdoor_108,T-Mobile,Data Scientist,Bellevue,WA,data_science
+c813,f1000_572,T. Rowe Price,Senior Data Scientist - NYC,New York,NY,data_science
+c814,f1000_79,TIAA,User Experience Researcher I,Jacksonville,FL,data_science
+c815,f1000_86,TJX,Data Scientist,Marlborough,MA,data_science
+c816,ru_TRHC,Tabula Rasa Healthcare,Research Data Scientist,Lake Nona,FL,data_science
+c817,f1000_666,Tailored Brands,Data Engineer - Data Modeler/Data Warehouse Developer,Houston,TX,data_science
+c818,f1000_37,Target,Lead Data Scientist - DFE,Minneapolis,MN,data_science
+c819,nasdaq_TLRA,Telaria,Data Engineer,Mountain View,CA,data_science
+c820,ru_TLGT,Teligent,Senior Research Scientist - Product Development,Buena,NJ,data_science
+c821,f1000_858,Teradata,Principal Data Scientist - Financial Services,New York,NY,data_science
+c822,f1000_382,Tesla,Machine Learning Scientist,Palo Alto,CA,data_science
+c823,f1000_788,Tetra Tech,Environmental Scientist or Geologist,Honolulu,HI,data_science
+c824,glassdoor_96,The Clorox Company,R&D Process Scientist II,Durham,NC,data_science
+c825,f1000_152,The Hartford,Project Manager - Data Science,Hartford,CT,data_science
+c826,nasdaq_TTD,The Trade Desk,Lead Data Scientist,New York,NY,data_science
+c827,f1000_153,Thermo Fisher Scientific,Data Scientist,Durham,NC,data_science
+c828,f1000_715,Time,Data Science Fellow,Boston,MA,data_science
+c829,f1000_94,Time Warner,Data Science Fellow,Boston,MA,data_science
+c830,ru_TJX,Tjx Companies,Data Scientist,Marlborough,MA,data_science
+c831,forbes_28,Toast,Senior Data Scientist,Boston,MA,data_science
+c832,ru_TRU,Transunion,MACHINE LEARNING ENGINEER,Boca Raton,FL,data_science
+c833,f1000_98,Travelers,Machine Learning Data Scientist,Hartford,CT,data_science
+c834,f1000_538,Trinity Industries,Data Science Analyst,Dallas,TX,data_science
+c835,vault_132,Trinity Partners,Senior Consultant - Primary Market Research,Waltham,MA,data_science
+c836,nasdaq_TRIP,TripAdvisor,Senior Data Science Manager,Needham,MA,data_science
+c837,f1000_801,Twitter,Data Scientist,San Francisco,CA,data_science
+c838,f1000_124,U.S. Bank,Data Science Engineer,Richfield,MN,data_science
+c839,f1000_101,USAA,Data Scientist Lead,Plano,TX,data_science
+c840,cnbc_1,Uber,Behavioral Data Scientist,San Francisco,CA,data_science
+c841,cnbc_7,Udacity,Data Scientist,Mountain View,CA,data_science
+c842,f1000_523,Ulta Beauty,Data Scientist,Bolingbrook,IL,data_science
+c843,f1000_527,Under Armour,SENIOR DATA SCIENTIST,San Francisco,CA,data_science
+c844,f1000_82,United Airlines,Senior Manager - Data Science,Chicago,IL,data_science
+c845,ru_UFCS,United Fire,Sr Data Engineer,Cedar Rapids,IA,data_science
+c846,f1000_45,United Parcel Service,Sr Data Scientist,Atlanta,GA,data_science
+c847,f1000_49,United Technologies Corp. Headquarters,Product Security Data Scientist,East Hartford,CT,data_science
+c848,f1000_5,UnitedHealth Group,Data Scientist,Santa Ana,CA,data_science
+c849,ru_UNH,Unitedhealth,Data Scientist,Santa Ana,CA,data_science
+c850,f1000_903,Universal,Staff Scientist,Lake Worth,FL,data_science
+c851,ru_UNM,Unum,Scientist I/II - High Throughput Analytics,Cambridge,MA,data_science
+c852,ru_UMRX,Unum Therapeutics,Scientist I/II - High Throughput Analytics,Cambridge,MA,data_science
+c853,nasdaq_UPWK,Upwork,Senior Data Engineer,Mountain View,CA,data_science
+c854,ru_MTN,Vail Resorts,Senior Data Science Analyst,Broomfield,CO,data_science
+c855,f1000_13,Verizon,Senior Data Scientist,Branchburg,NJ,data_science
+c856,ru_VSM,Versum Materials,SENIOR RESEARCH SCIENTIST - ENGINEER,Tempe,AZ,data_science
+c857,ru_VRTX,Vertex Pharmaceuticals,Data Science Quality Engineer,Boston,MA,data_science
+c858,nasdaq_VSAT,ViaSat,Data Scientist,Carlsbad,CA,data_science
+c859,f1000_223,Viacom,Associate Data Scientist,New York,NY,data_science
+c860,f1000_186,Visa,Senior Staff SW Engineer - Data Science MAP PD,Foster City,CA,data_science
+c861,nasdaq_VMW,Vmware,Open Source Data Scientist,Palo Alto,CA,data_science
+c862,ru_VYGR,Voyager Therapeutics,Scientist I - In vivo pharmacology,Cambridge,MA,data_science
+c863,f1000_353,W.R. Berkley,Data Scientist,Rutherford,NJ,data_science
+c864,ru_WEX,WEX,Software Development Engineer / Machine Learning Engineer,South Portland,ME,data_science
+c865,f1000_0,Walmart,Data Scientist,San Bruno,CA,data_science
+c866,f1000_200,Waste Management,Data Scientist,Houston,TX,data_science
+c867,f1000_898,Waters,Experience Design Researcher,Milford,MA,data_science
+c868,ru_WVE,Wave Life Sciences,Manager/ Senior Manager - Scientific Communications,Lexington,MA,data_science
+c869,f1000_665,Wayfair,Technical Product Manager - Data Science,Boston,MA,data_science
+c870,f1000_26,Waymo,Software Engineer - Full Stack - Machine Learning Infrastructure,Mountain View,CA,data_science
+c871,cnbc_22,WeWork,Cohort Lead - Data Science,New York,NY,data_science
+c872,f1000_24,Wells Fargo,NLP DATA SCIENTIST / ANALYTIC CONSULTANT 4,Irving,TX,data_science
+c873,f1000_863,West,Data Scientist - Marketing,Raleigh,NC,data_science
+c874,f1000_189,WestRock,Senior Data Scientist - - GA,Atlanta,GA,data_science
+c875,f1000_216,Western Digital,Research Staff Member,Milpitas,CA,data_science
+c876,ru_WNEB,Western New England,Associate Director of Prospect Research and Management,Springfield,MA,data_science
+c877,f1000_175,Whole Foods Market,Sr Data Engineer,Austin,TX,data_science
+c878,f1000_366,Williams,Senior Data Engineer,Austin,TX,data_science
+c879,ru_WTFC,Wintrust Financial,Data Engineer,Tampa,FL,data_science
+c880,nasdaq_WDAY,Workday,Director - Data Science,Palo Alto,CA,data_science
+c881,nasdaq_WK,Workiva,Data Scientist,Chicago,IL,data_science
+c882,ru_WMGI,Wright Medical,Clinical Research Coordinator,Bloomington,MN,data_science
+c883,ru_XL,XL,Director - Data Science & Business Analytics,Canton,MA,data_science
+c884,f1000_190,XPO Logistics,Data Scientist,Grand Blanc,MI,data_science
+c885,f1000_884,Xilinx,Machine Learning Engineer,San Jose,CA,data_science
+c886,ru_YELP,Yelp,Applied Data Scientist,San Francisco,CA,data_science
+c887,vault_124,ZS,Data Science Consultant,Evanston,IL,data_science
+c888,ru_ZG,Zillow,Data Scientist,Seattle,WA,data_science
+c889,f1000_351,Zimmer Biomet,Research Principal Engineer,Warsaw,IN,data_science
+c890,f1000_520,Zoetis,Data Scientist,Kalamazoo,MI,data_science
+c891,nasdaq_ZS,Zscaler,Senior Big Data Engineer,Atlanta,GA,data_science
+c892,f1000_309,eBay,Data Scientist,Bellevue,WA,data_science
+c893,glassdoor_15,iCIMS,UX Research Analyst,Holmdel,NJ,data_science
+c894,ru_AIR,AAR,Project Manager,Fairbanks,AK,mba
+c895,f1000_499,ABM Industries,JANITORIAL PROJECT MANAGER,Savannah,GA,mba
+c896,ru_ADT,ADT,Program Manager,Arlington,TX,mba
+c897,ru_XLRN,Acceleron Pharma,Senior Associate - Program Management,Cambridge,MA,mba
+c898,ru_ACCO,Acco Brands,Product Marketing Associate,Lake Zurich,IL,mba
+c899,ru_ARAY,Accuray,Engineering Project Manager Delivery Systems,Madison,WI,mba
+c900,ru_ASIX,Advansix,Project Manager - Mechanical,Philadelphia,PA,mba
+c901,cnbc_2,Airbnb,Growth Product Manager - Lux,New York,NY,mba
+c902,ru_ALG,Alamo,Product Manager,Leavenworth,KS,mba
+c903,f1000_299,Alcoa,Senior Project manager - FP&A,Pittsburgh,PA,mba
+c904,ru_AIMC,Altra Industrial Motion,Director of Global Product Marketing,Radford,VA,mba
+c905,ru_AMRC,Ameresco,Assistant Construction Project Manager,Framingham,MA,mba
+c906,forbes_74,American Well,Product Marketing Manager,Boston,MA,mba
+c907,f1000_423,Amphenol,Program Manager,Wallingford,CT,mba
+c908,ru_AMRS,Amyris,Program Manager/Executive Assistant,Emeryville,CA,mba
+c909,cnbc_47,Apeel Sciences,Product Manager,Santa Barbara,CA,mba
+c910,nasdaq_ANET,Arista Networks,Software Product Manager - EOS,Santa Clara,CA,mba
+c911,nasdaq_ARRS,Arris,Program Manager,Santa Clara,CA,mba
+c912,ru_ATRO,Astronics,Production Program Manager,East Aurora,NY,mba
+c913,ru_ATH,Athene,Salesforce Project Manager,Herndon,VA,mba
+c914,f1000_927,Autodesk,Senior Program Manager - Brand Activations,San Francisco,CA,mba
+c915,ru_AGR,Avangrid,Project Manager - CT - US,Orange,CT,mba
+c916,f1000_429,Avery Dennison,Sr Product Manager - Specialty,Mentor,OH,mba
+c917,f1000_107,Avnet,Sr Program Manager - Supplier Marketing,Phoenix,AZ,mba
+c918,f1000_740,B/E Aerospace,Program Manager,Bohemia,NY,mba
+c919,glassdoor_122,BAYADA Home Health Care,Program Manager - Home Health Senior Living,Lansdale,PA,mba
+c920,glassdoor_142,BOK Financial,IT Asset Management Program Manager,Tulsa,OK,mba
+c921,ru_BOH,Bank of Hawaii,Digital Payments Product Manager,Oahu Island,HI,mba
+c922,ru_B,Barnes,VP - Project Management Office,Basking Ridge,NJ,mba
+c923,f1000_280,Baxter,Sr Project Manager-Renal Care,Round Lake,IL,mba
+c924,ru_BKH,Black Hills,Senior Manager - Gas Utilities Project Management,Papillion,NE,mba
+c925,vault_91,Blank Rome,Practice Technology Project Manager,Los Angeles,CA,mba
+c926,f1000_596,Boise Cascade,General Line Product Manager,Tulsa,OK,mba
+c927,ru_BKNG,Booking,Connectivity Partner Business Manager,Orlando,FL,mba
+c928,ru_BRC,Brady,Controls Project Manager,Durham,NC,mba
+c929,f1000_729,Brink's,Sr Product Manager,Coppell,TX,mba
+c930,f1000_683,Brinker,Operations Services Project Manager,Dallas,TX,mba
+c931,f1000_462,Burlington Stores,Project Manager Industrial Engineer,Redlands,CA,mba
+c932,ru_BWXT,Bwx Technologies,HR Program Manager,Lynchburg,VA,mba
+c933,f1000_198,CDW,Program Manager - Events Strategy,Lincolnshire,IL,mba
+c934,f1000_92,CHS,Senior Project Manager,Inver Grove Heights,MN,mba
+c935,f1000_828,Cabot,Product Manager,Fort Worth,TX,mba
+c936,nasdaq_CARS,Cars.com,Transformation Program Manager,Chicago,IL,mba
+c937,ru_CRI,Carter,Business Project Manager,Martinsville,VA,mba
+c938,ru_CVNA,Carvana,Senior Product Manager - Pre-sales Operations,Tempe,AZ,mba
+c939,f1000_866,Cheesecake Factory,Project Manager of Strategic Initiatives,Calabasas,CA,mba
+c940,forbes_11,Cloudflare,Technical Program Manager - Network Services,San Francisco,CA,mba
+c941,ru_CLVS,Clovis Oncology,Product Manager/Senior Product Manager - Patient Marketing,Boulder,CO,mba
+c942,ru_KO,Coca Cola,Red Classic - Project Manager II,Charlotte,NC,mba
+c943,f1000_700,Coca-Cola Bottling,Business Manager - RCCB,Sacramento,CA,mba
+c944,ru_COHR,Coherent,Product Manufacturing Engineer Senior,Portland,OR,mba
+c945,f1000_517,CommScope,Project Manager,Shakopee,MN,mba
+c946,f1000_196,Conagra Brands,Customer Business Manager,Kansas City,KS,mba
+c947,ru_CNMD,Conmed,Associate Product Manager,Denver,CO,mba
+c948,ru_CNSL,Consolidated Communications,Installation Project Manager,Gibsonia,PA,mba
+c949,ru_CVON,Convergeone,Cloud Project Manager,Saint Paul,MN,mba
+c950,ru_OFC,Corporate Office Properties,Project Manager Interior Construction,Huntsville,AL,mba
+c951,ru_BREW,Craft Brew Alliance,Product Manager - the pH Experiment,Portland,OR,mba
+c952,vault_208,Crowe,ERP Project Manager,Indianapolis,IN,mba
+c953,ru_CUBE,Cubesmart,Marketing Project Manager,Malvern,PA,mba
+c954,ru_CW,Curtiss Wright,Program Manager,Gilbert,AZ,mba
+c955,f1000_271,DTE Energy,Senior Project Manager,Philadelphia,PA,mba
+c956,forbes_98,Dialpad,Project Manager,San Ramon,CA,mba
+c957,f1000_671,Diebold Nixdorf,Associate Project Manager,North Canton,OH,mba
+c958,f1000_416,Dillard's,Business Manager,Fairview,TX,mba
+c959,f1000_135,Dollar Tree,Associate Product Manager - Hardware/Pet,Chesapeake,VA,mba
+c960,f1000_881,Donaldson,Supply Chain Project Manager,Bloomington,MN,mba
+c961,bi_3,DoorDash,Product Manager - Internal Tools,San Francisco,CA,mba
+c962,ru_DORM,Dorman Products,Product Manager,Colmar,PA,mba
+c963,ru_DOVA,Dova Pharmaceuticals,Sr Territory Business Manager North,Chicago,IL,mba
+c964,glassdoor_135,Edward Jones,Product Manager - Client Strategies Group,St. Louis,MO,mba
+c965,vault_213,Eide Bailly,NetSuite Project Manager,Phoenix,AZ,mba
+c966,ru_EME,Emcor,Controls Project Manager,Sacramento,CA,mba
+c967,ru_EHC,Encompass Health,Program Manager - Patient Experience,Henderson,NV,mba
+c968,ru_ECPG,Encore Capital,Project Manager,San Diego,CA,mba
+c969,f1000_860,EnerSys,Product Manager,Bellingham,WA,mba
+c970,f1000_78,Energy Transfer Family of Partnerships,Project Manager - Construction,San Antonio,TX,mba
+c971,ru_ETM,Entercom Communications,HR Compliance Program Manager,Philadelphia,PA,mba
+c972,ru_EPZM,Epizyme,Product Manager/Sr Product Manager MARKETING,Cambridge,MA,mba
+c973,ru_EVH,Evolent Health,Project Manager - Partner Delivery,Arlington,VA,mba
+c974,f1000_88,Exelon,Senior Project Manager,Baltimore,MD,mba
+c975,f1000_388,Fifth Third Bank,Bancorp Security Project Manager,Cincinnati,OH,mba
+c976,f1000_967,Finish Line,Associate Project Manager - Macy's Construction,Indianapolis,IN,mba
+c977,ru_FRME,First Merchants,Project Manager,Daleville,IN,mba
+c978,f1000_737,First Solar,IT Program Manager II,Perrysburg,OH,mba
+c979,vault_69,Fish & Richardson,Financial Systems Business Analyst & Project Manager,Minneapolis,MN,mba
+c980,ru_FND,Floor & Decor,Drayage Program Manager,Smyrna,GA,mba
+c981,ru_FRTA,Forterra,Program Manager - Communications,Seattle,WA,mba
+c982,ru_FOSL,Fossil,Connected Devices - Hardware Product Manager,Burlingame,CA,mba
+c983,f1000_722,Fossil Group,Connected Devices - Hardware Product Manager,Burlingame,CA,mba
+c984,ru_FELE,Franklin Electric,Senior Product Manager,Fort Wayne,IN,mba
+c985,vault_214,Friedman,Property Management Project Manager,Cherry Hill,NJ,mba
+c986,glassdoor_24,Front,Deputy Project Manager,Arlington,VA,mba
+c987,ru_FRO,Frontline,Technical Project Manager,Winter Park,FL,mba
+c988,ru_FNKO,Funko,Project Manager - Customer Onboarding,Everett,WA,mba
+c989,nasdaq_GDI,Gardner Denver,Product Manager - Process Pumps,Quincy,IL,mba
+c990,f1000_812,Graham,Senior Project Manager - Mechanical - Missouri,Kansas City,MO,mba
+c991,glassdoor_17,Grand Rounds,Program Manager - InfoSec and IT,San Francisco,CA,mba
+c992,ru_GDOT,Green Dot,Product Manager - Payments Processing Systems,Pasadena,CA,mba
+c993,f1000_886,Guess,Communications Project Manager,Los Angeles,CA,mba
+c994,ru_HUBG,HUB,Project Manager & Process Improvement - Human Services Experience Required,Washington,DC,mba
+c995,ru_HWKN,Hawkins,Assistant Project Manager,Deer Park,NY,mba
+c996,ru_HAYN,Haynes,Construction Project Manager,New Haven,CT,mba
+c997,ru_HCA,Hca Healthcare,Diversity and Inclusion Project Manager,Nashville,TN,mba
+c998,ru_HR,Healthcare Realty Trust,Regional Project Manager,Seattle,WA,mba
+c999,ru_HQY,Healthequity,IT Project Manager II,Draper,UT,mba
+c1000,f1000_873,Herman Miller,Digital Marketing Project Manager,Holland,MI,mba
+c1001,f1000_240,Hilton Corporate,Lead - Product Manager,Addison,TX,mba
+c1002,ru_HZNP,Horizon Pharma,Director - R&D Portfolio & Program Management,Lake Forest,IL,mba
+c1003,f1000_649,Hubbell,Product Manager,Shelton,CT,mba
+c1004,ru_HUD,Hudson,Project Manager,New York,NY,mba
+c1005,f1000_829,ITT,Aerospace and Defense Product Manager,Orchard Park,NY,mba
+c1006,nasdaq_INOV,Inovalon,Senior Project Manager - Technology,Bowie,MD,mba
+c1007,ru_IART,Integra Lifesciences,Global Senior Product Manager,Plainsboro,NJ,mba
+c1008,ru_IIN,Intricon,Project Manager,Vadnais Heights,MN,mba
+c1009,ru_NVTA,Invitae,Program Manager - Medical Affairs,San Francisco,CA,mba
+c1010,ru_INVH,Invitation Homes,Project Manager - Rehab & Turn,Scottsdale,AZ,mba
+c1011,f1000_932,Itron,Deployment Project Manager,San Jose,CA,mba
+c1012,ru_JELD,Jeld-Wen,Program Manager,Portland,OR,mba
+c1013,f1000_997,Kaman,Temporary Technical Project Manager,Bloomfield,CT,mba
+c1014,f1000_215,Kellogg,Food Technologist/Technical Program Manager,Battle Creek,MI,mba
+c1015,f1000_911,Kennametal,Product Manager Marketing,Latrobe,PA,mba
+c1016,f1000_214,Kinder Morgan,Project Manager - Tank Integrity,Houston,TX,mba
+c1017,ru_KNL,Knoll,Project Manager Global Business,Seattle,WA,mba
+c1018,ru_LHCG,LHC,Hospice Business Manager FT,Montoursville,PA,mba
+c1019,f1000_570,Laureate Education,Legal Project Manager/Sr Paralegal,Baltimore,MD,mba
+c1020,ru_LFGR,Leaf,Program Manager,Scottsdale,AZ,mba
+c1021,f1000_259,Lennar,Land Project Manager,Vancouver,WA,mba
+c1022,ru_LCUT,Lifetime Brands,Program Manager,Seattle,WA,mba
+c1023,cnbc_21,Lisnr,Associate Product Manager,Oakland,CA,mba
+c1024,ru_LFUS,Littelfuse,Senior Program Manager - Global Quality Management System,Chicago,IL,mba
+c1025,ru_LMNX,Luminex,MOLECULAR BUSINESS MANAGER - SEATTLE,Seattle,WA,mba
+c1026,f1000_725,MRC Global,IT Analyst,Charleston,WV,mba
+c1027,ru_MYRG,MYR,Project Manager,Indianapolis,IN,mba
+c1028,ru_MSG,Madison Square Garden,Director Program Management,New York,NY,mba
+c1029,ru_MNKD,Mannkind,District Business Manager,San Francisco,CA,mba
+c1030,f1000_209,Marsh & McLennan,Commercial Lines Select Business Manager,Clearwater,FL,mba
+c1031,f1000_606,Martin Marietta Materials,Asphalt & Paving Project Manager,Lakewood,CO,mba
+c1032,f1000_501,MasTec,Project Manager II,Carolina,PR,mba
+c1033,ru_DOOR,Masonite,Product Manager,Tampa,FL,mba
+c1034,ru_MDR,Mcdermott,Learning Program Manager,Houston,TX,mba
+c1035,forbes_14,Medallia,Senior Product Manager,San Mateo,CA,mba
+c1036,ru_MBIN,Merchants Bank,Project Manager,Daleville,IN,mba
+c1037,ru_MTD,Mettler Toledo,Product Manager - Rapid Microbial Detection Analyzers,Billerica,MA,mba
+c1038,f1000_310,Mohawk Industries,Marketing Project Manager,Calhoun,GA,mba
+c1039,nasdaq_NICE,NICE,Product Manager - Communications Surveillance,Hoboken,NJ,mba
+c1040,ru_NLS,Nautilus,Senior Project Manager,Los Angeles,CA,mba
+c1041,f1000_336,Navistar,Senior Program Manager - Channel Readiness,Lisle,IL,mba
+c1042,glassdoor_113,NewYork-Presbyterian Hospital,Program Manager - Nursing Education-Gracie Square Hospital - Part-Time,Manhattan,NY,mba
+c1043,f1000_544,NiSource,Electric Transmission & Distribution Project Manager Job Family,Merrillville,IN,mba
+c1044,f1000_500,Northern Trust,Fee Product Manager,Chicago,IL,mba
+c1045,ru_NOVT,Novanta,Program Manager - Design to Order,Bedford,MA,mba
+c1046,ru_OMC,Omnicom,Senior Project Manager,Chicago,IL,mba
+c1047,f1000_178,Omnicom Group,Senior Project Manager,Chicago,IL,mba
+c1048,ru_ORN,Orion,Project Manager,Smithfield,RI,mba
+c1049,ru_ORA,Ormat Technologies,Electrical Project Manager,Reno,NV,mba
+c1050,f1000_457,Owens Corning,Senior Electrical Engineer Project Manager - Capital Delivery,Atlanta,GA,mba
+c1051,f1000_334,PVH,Project Manager - Digital Product Creation - PVH Corp,New York,NY,mba
+c1052,f1000_156,Pacific Gas and Electric Company,Associate Project Manager - ESC - DCPP,San Luis Obispo,CA,mba
+c1053,f1000_301,Pacific Life,Cloud Program Manager,Newport Beach,CA,mba
+c1054,ru_PKG,Packaging Corporation of America,Corrugated Business Associate,Olive Branch,MS,mba
+c1055,vault_9,Paul Weiss Rifkind Wharton & Garrison,E-Discovery Project Manager - DC Office,Washington,DC,mba
+c1056,f1000_790,Pool,Project Manager,Largo,FL,mba
+c1057,nasdaq_PSDO,Presidio,Project Manager - Corporate IT,Fulton,MO,mba
+c1058,nasdaq_PRGS,Progress Software,Senior Product Marketing Specialist,Morrisville,NC,mba
+c1059,f1000_793,Public Storage,Project Manager,Glendale,CA,mba
+c1060,f1000_387,R.R. Donnelley & Sons,Project Manager - Internet Services,Logan,UT,mba
+c1061,f1000_528,RPM,Project Manager,Palm Desert,CA,mba
+c1062,ru_RDUS,Radius Health,Director of Project Management,Waltham,MA,mba
+c1063,ru_RDI,Reading,Program Manager,Racine,WI,mba
+c1064,ru_RLH,Red Lion Hotels,Vince Lombardi's Steakhouse - Host,Appleton,WI,mba
+c1065,f1000_999,Regis,Water Resources Program Manager,Akwesasne,NY,mba
+c1066,vault_20,Ropes & Gray,Senior Legal Project Management Specialist,New York,NY,mba
+c1067,glassdoor_109,Rose,Assistant Project Manager,New York,NY,mba
+c1068,ru_RCL,Royal Caribbean Cruises,Construction Project Manager,Miami,FL,mba
+c1069,forbes_20,Rubrik,Sr Product Manager - Virtualization,Palo Alto,CA,mba
+c1070,f1000_413,Sanmina,Program Manager - IMS,Huntsville,AL,mba
+c1071,ru_ST,Sensata Technologies,Program Manager,Carpinteria,CA,mba
+c1072,vault_83,Seyfarth Shaw,Legal Project Manager,Chicago,IL,mba
+c1073,vault_224,Sikich,Salesforce - Project Manager,Chicago,IL,mba
+c1074,ru_SIRI,Sirius Xm,Program Manager,Miami,FL,mba
+c1075,ru_SND,Smart Sand,Project Manager,Oakdale,WI,mba
+c1076,nasdaq_SMAR,Smartsheet,Senior Product Manager - Solutions,Bellevue,WA,mba
+c1077,f1000_617,Snap-on,Associate Product Manager,Kenosha,WI,mba
+c1078,f1000_392,Spirit AeroSystems,Project Management 4,Wichita,KS,mba
+c1079,ru_S,Sprint,Sales Project/Program Manager III,Overland Park,KS,mba
+c1080,f1000_584,Sprouts Farmers Market,Tasting Ambassador,Mesa,AZ,mba
+c1081,ru_SCL,Stepan,Project Manager-Business Transformation,Northbrook,IL,mba
+c1082,f1000_641,Stericycle,Project Manager IT,Indianapolis,IN,mba
+c1083,ru_TSRO,Tesaro,Director - Program Management,Waltham,MA,mba
+c1084,f1000_199,Textron,Product Manager,Sterling,VA,mba
+c1085,ru_CC,The Chemours Company,Sr Project Manager,Wilmington,DE,mba
+c1086,f1000_587,Tiffany,Unemployment Insurance Claims Program Manager,Phoenix,AZ,mba
+c1087,ru_TWI,Titan,Project Manager/Senior Electrical Engineer,Minneapolis-Saint Paul,MN,mba
+c1088,f1000_395,Tractor Supply,Master Data Project Manager,Brentwood,TN,mba
+c1089,f1000_895,Tribune Media,Digital Project Manager,Minneapolis,MN,mba
+c1090,ru_TGI,Triumph,Project Manager,Vienna,VA,mba
+c1091,f1000_600,Triumph Group,Mgr Project Management 2,Arlington,TX,mba
+c1092,f1000_512,Tutor Perini,HVAC Project Managers,Mount Vernon,NY,mba
+c1093,nasdaq_TYL,Tyler Technologies,Project Manager - Eagle Recorder,Plano,TX,mba
+c1094,f1000_123,US Foods,FSQA Supplier Program Manager,Chicago,IL,mba
+c1095,ru_UMBF,Umb Financial,Deposit Product Manager - Consumer Deposits,Kansas City,MO,mba
+c1096,ru_UMPQ,Umpqua,Card Product Manager ,Portland,OR,mba
+c1097,f1000_451,United Rentals,Software Project Manager,Stamford,CT,mba
+c1098,f1000_686,Universal Forest Products,Project Manager,Sauk Rapids,MN,mba
+c1099,f1000_229,VF,Creative Project Manager,Denver,CO,mba
+c1100,f1000_330,Veritiv,Customer Program Manager III,Austin,TX,mba
+c1101,f1000_871,Vista Outdoor,Director - Product Management Soft Goods and Sport - CamelBak,Petaluma,CA,mba
+c1102,ru_WEB,Web.com,IT Project Manager,Jacksonville,FL,mba
+c1103,ru_WTW,Weight Watchers,Product Manager,San Francisco,CA,mba
+c1104,f1000_372,Wesco,Project Manager,Renton,WA,mba
+c1105,ru_WAIR,Wesco Aircraft,Customer Program Manager,Oshkosh,WI,mba
+c1106,ru_WAL,Western Alliance Bank,Senior Business Project Manager-Temporary,Phoenix,AZ,mba
+c1107,f1000_477,Western Union,Head of Product Analytics / Senior Product Manager Analytics,San Francisco,CA,mba
+c1108,f1000_136,Whirlpool,Human Resources Operations Project Manager,Benton Harbor,MI,mba
+c1109,ru_WMB,Williams Companies,Engineering Project Manager,Connellsville,PA,mba
+c1110,ru_WLTW,Willis Towers Watson,Project Manager,Tempe,AZ,mba
+c1111,vault_19,WilmerHale,Project Manager,Dayton,OH,mba
+c1112,f1000_930,Woodward,PROGRAM MANAGER,Rockford,IL,mba
+c1113,ru_WH,Wyndham Hotels & Resorts,Manager - Loyalty Product Management,Parsippany,NJ,mba
+c1114,f1000_255,Xcel Energy,Product Manager Job,Minneapolis,MN,mba
+c1115,f1000_161,Xerox,Channel Business Manager,Dallas,TX,mba
+c1116,ru_ZAYO,Zayo,Product Marketing Manager,Denver,CO,mba
+c1117,f1000_815,Zions Bancorporation,Product Manager,West Valley City,UT,mba
+c1118,nasdaq_ZUO,Zuora,Senior Project Manager,San Mateo,CA,mba
+c1119,nasdaq_PLUS,ePlus,Senior Project Manager,Milpitas,CA,mba
+c1120,vault_119,Alvarez & Marsal,Analyst,New York,NY,mba_finance
+c1121,vault_232,BKD,Transaction Advisory Services / Financial Due Diligence Manager,Chicago,IL,mba_finance
+c1122,vault_185,Baird,Business Process Sr Analyst - Robotics,Milwaukee,WI,mba_finance
+c1123,vault_209,Baker Tilly Virchow Krause,Senior Consultant - Financial Services RIAC,Philadelphia,PA,mba_finance
+c1124,vault_96,Ballard Spahr,Manager - Financial Planning and Analysis,Philadelphia,PA,mba_finance
+c1125,vault_199,Brown Brothers Harriman,Compliance Analyst II,New York,NY,mba_finance
+c1126,vault_137,Charles River Associates,Analyst,Tallahassee,FL,mba_finance
+c1127,hedge_16,Citadel,Collections Analyst 1,Exton,PA,mba_finance
+c1128,vault_26,Cooley,Automotive Finance Manager,Rensselaer,NY,mba_finance
+c1129,vault_170,Credit Suisse,Financial Analyst - Global Repo,Raleigh,NC,mba_finance
+c1130,vault_68,Crowell & Moring,Financial Analyst,Washington,DC,mba_finance
+c1131,vault_32,DLA Piper,Practice Support Analyst,Washington,DC,mba_finance
+c1132,vault_17,Debevoise & Plimpton,Senior Financial Analyst,New York,NY,mba_finance
+c1133,vault_51,Dechert,Competitive Intelligence Analyst,New York,NY,mba_finance
+c1134,vault_203,Deloitte,SOC Analyst,Bowie,MD,mba_finance
+c1135,vault_251,Doeren Mayhew,Analyst,Troy,MI,mba_finance
+c1136,vault_205,Grant Thornton,Federal Financial Analyst,Washington,DC,mba_finance
+c1137,vault_33,K&L Gates,Sr Desktop Support Analyst,New York,NY,mba_finance
+c1138,vault_81,Katten Muchin Rosenman,Financial Analyst,Chicago,IL,mba_finance
+c1139,vault_42,King & Spalding,Director of Finance,Atlanta,GA,mba_finance
+c1140,vault_4,Latham & Watkins,Tax Analyst,Los Angeles,CA,mba_finance
+c1141,vault_181,Macquarie Group,Operational Risk - Corporate Finance - Manager,New York,NY,mba_finance
+c1142,vault_234,Marcum,Supply Chain Analyst,White Plains,NY,mba_finance
+c1143,vault_56,McDermott Will & Emery,Business Analyst,Chicago,IL,mba_finance
+c1144,vault_23,Morrison & Foerster,Business Development Manager - Energy - Project Finance - Impact Investing,San Francisco,CA,mba_finance
+c1145,vault_210,Moss Adams,Outsourced Finance & Accounting Consultant,San Francisco,CA,mba_finance
+c1146,vault_104,Oliver Wyman,NERA FP&A Analyst,White Plains,NY,mba_finance
+c1147,vault_202,PWC,Workday Financial Analyst - Senior Associate,Atlanta,GA,mba_finance
+c1148,vault_62,Reed Smith,Client Value Analyst,Leeds,AL,mba_finance
+c1149,vault_211,Rsm Us,Financial Analyst,Schaumburg,IL,mba_finance
+c1150,vault_40,Shearman & Sterling,Financial Systems Analyst,New York,NY,mba_finance
+c1151,vault_75,Sheppard Mullin Richter & Hampton,Senior Systems Engineer,Los Angeles,CA,mba_finance
+c1152,vault_145,Smartronix,Financial Anlayst,Tampa,FL,mba_finance
+c1153,vault_102,The Boston Consulting Group,Financial Analyst,Atlanta,GA,mba_finance
+c1154,vault_108,The Bridgespan Group,Finance Associate,Boston,MA,mba_finance
+c1155,hedge_57,Bracebridge Capital,Quantitative Investment Analyst,Boston,MA,quant
+c1156,vault_166,Cowen,Equity Research Associate,New York,NY,quant
+c1157,hedge_40,Fortress Investment Group,FTAI Accounting Manager,New York,NY,quant
+c1158,vault_162,Houlihan Lokey,Programmer Analyst - Data Science,Los Angeles,CA,quant
+c1159,hedge_6,Millennium Management,Quant Developer - Stat Arb,New York,NY,quant
+c1160,hedge_4,Two Sigma,Quantitative Engineer,Houston,TX,quant
+c1161,vault_167,UBS,Quantitative Researcher,New York,NY,quant
