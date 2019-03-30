@@ -443,7 +443,7 @@ c0441,f1000_574,Rush Enterprises,Software Engineer,New Braunfels,TX,computer_sci
 c0442,f1000_575,Agilent Technologies,R&D Data Engineer,Santa Clara,CA,data_science,576.0,fortune1000,1
 c0443,f1000_58,Hewlett Packard Enterprise,Data Scientist,Houston,TX,data_science,59.0,fortune1000,1
 c0444,f1000_581,Beacon Roofing Supply,Pricing Analyst,Westminster,MD,mba_finance,582.0,fortune1000,1
-c0445,f1000_582,CA,Data Scientist,Fenton,MO,data_science,583.0,fortune1000,1
+c0445,f1000_582,CA Technologies,Data Scientist,Fenton,MO,data_science,583.0,fortune1000,1
 c0446,f1000_583,LPL Financial,Associate Java Developer,San Diego,CA,computer_science,584.0,fortune1000,1
 c0447,f1000_584,Sprouts Farmers Market,Tasting Ambassador,Oviedo,FL,mba,585.0,fortune1000,1
 c0448,f1000_585,Swift Transportation,Transportation Analyst - Ma,East Longmeadow,MA,mba_analyst,586.0,fortune1000,1
@@ -475,7 +475,7 @@ c0473,f1000_614,CACI,Data Scientist,Austin,TX,data_science,615.0,fortune1000,1
 c0474,f1000_615,Mead Johnson Nutrition,Project Manager - New Growth Platforms,Parsippany,NJ,mba,616.0,fortune1000,1
 c0475,f1000_617,Snap-on,Associate Product Manager,Kenosha,WI,mba,618.0,fortune1000,1
 c0476,f1000_619,Nasdaq,Economic and Statistical Research Specialist,Philadelphia,PA,data_science,620.0,fortune1000,1
-c0477,f1000_62,HCA,Sr Big Data Engineer,Nashville,TN,data_science,63.0,fortune1000,1
+c0477,f1000_62,HCA Healthcare,Sr Big Data Engineer,Nashville,TN,data_science,63.0,fortune1000,1
 c0478,f1000_620,Avaya,Data Scientist,Thornton,CO,data_science,621.0,fortune1000,1
 c0479,f1000_621,CF Industries,Business Systems Analyst II,Deerfield,IL,mba_analyst,622.0,fortune1000,1
 c0480,f1000_622,Carlisle,C Embedded SR Software Engineer,Dayton,OH,computer_science,623.0,fortune1000,1
@@ -1288,7 +1288,7 @@ c1286,ru_CBIO,Catalyst Biosciences,Director - Translational Research,South San F
 c1287,ru_CBM,Cambrex,Data Review Scientist,Charles City,IA,data_science,489.0,ru3000,1
 c1288,ru_CBRE,Cbre,Data Scientist,Atlanta,GA,data_science,548.0,ru3000,1
 c1289,ru_CBZ,Cbiz,Forensic and Financial Services Group Sr Manager,Plymouth Meeting,PA,mba_finance,545.0,ru3000,1
-c1290,ru_CC,The Chemours Company,Process Analyzer Engineer / Scientist,Wilmington,DE,data_science,2657.0,ru3000,1
+c1290,ru_CC,Chemours,Process Analyzer Engineer / Scientist,Wilmington,DE,data_science,2657.0,ru3000,1
 c1291,ru_CCBG,Capital City Bank,Financial Advisor,Spring Hill,FL,mba_finance,498.0,ru3000,1
 c1292,ru_CCF,Chase,Finance Analyst - Internal Audit,Westwood,MA,mba_finance,584.0,ru3000,1
 c1293,ru_CCL,Carnival,Strategic Planning Analyst,Miami,FL,mba_finance,519.0,ru3000,1
@@ -1415,7 +1415,7 @@ c1413,ru_ENZ,Enzo Biochem,Director of Scientific Affairs and Business Developmen
 c1414,ru_EPE,Ep Energy,Analyst - Info Technology,Houston,TX,mba_analyst,953.0,ru3000,1
 c1415,ru_EPZM,Epizyme,Scientist - Biological Sciences,Cambridge,MA,data_science,955.0,ru3000,1
 c1416,ru_EQT,EQT,Lead Quantitative Analyst,Pittsburgh,PA,quant,958.0,ru3000,1
-c1417,ru_ERA,ERA,Project Manager Assistant,Tarzana,CA,mba,965.0,ru3000,1
+c1417,ru_ERA,Era Group,Project Manager Assistant,Tarzana,CA,mba,965.0,ru3000,1
 c1418,ru_ERI,Eldorado Resorts,Corporate Web Developer,Reno,NV,computer_science,902.0,ru3000,1
 c1419,ru_ESNT,Essent,Pricing Analyst,Radnor,PA,mba_finance,974.0,ru3000,1
 c1420,ru_ESRT,Empire State Realty,IT Project Manager,New York,NY,mba,917.0,ru3000,1
@@ -1628,7 +1628,7 @@ c1626,ru_MBII,Marrone Bio Innovations,Formulations Chemist - Principal Scientist
 c1627,ru_MBIN,Merchants Bank,Project Manager,Daleville,IN,mba,1765.0,ru3000,1
 c1628,ru_MBIO,Mustang Bio,Princiapal/Senior Scientist Translational and Correlative Sciences,Worcester,MA,data_science,1852.0,ru3000,1
 c1629,ru_MBWM,Mercantile Bank,Credit Analyst II,Costa Mesa,CA,mba_finance,1764.0,ru3000,1
-c1630,ru_MCS,Marcus,Lead Data Engineer,Dallas,TX,data_science,1709.0,ru3000,1
+c1630,ru_MCS,Marcus Corporation,Lead Data Engineer,Dallas,TX,data_science,1709.0,ru3000,1
 c1631,ru_MDCO,Medicines,Scientist - Biology,Cambridge,MA,data_science,1755.0,ru3000,1
 c1632,ru_MDP,Meredith,Data Scientist,Los Angeles,CA,data_science,1769.0,ru3000,1
 c1633,ru_MDR,Mcdermott,Data Scientist,Houston,TX,data_science,1746.0,ru3000,1
@@ -1955,7 +1955,7 @@ c1953,ru_WAL,Western Alliance Bank,Product Manager Senior,Phoenix,AZ,mba,2923.0,
 c1954,ru_WCG,Wellcare,Data Scientist,Tampa,FL,data_science,2913.0,ru3000,1
 c1955,ru_WD,Walker & Dunlop,Analyst,Orlando,FL,mba_finance,2890.0,ru3000,1
 c1956,ru_WDFC,Wd-40,Innovation Project Manager,San Diego,CA,mba,2904.0,ru3000,1
-c1957,ru_WDR,Waddell and Reed,Quality Assurance Analyst,Overland Park,KS,mba_finance,2887.0,ru3000,1
+c1957,ru_WDR,Waddell & Reed Financial,Quality Assurance Analyst,Overland Park,KS,mba_finance,2887.0,ru3000,1
 c1958,ru_WEB,Web.com,Software Engineer,New York,NY,computer_science,2906.0,ru3000,1
 c1959,ru_WEC,Wec Energy,Accounting Analyst,Milwaukee,WI,mba_finance,2908.0,ru3000,1
 c1960,ru_WEX,WEX,Data Scientist 3,South Portland,ME,data_science,2931.0,ru3000,1
@@ -2111,7 +2111,7 @@ c2109,f1000_213,CBRE Group,Data Engineer - Analytics,Seattle,WA,data_science,214
 c2110,f1000_221,Farmers Insurance Exchange,Business Management,Elmhurst,IL,mba,222.0,fortune1000,2
 c2111,f1000_225,Micron Technology,Data Scientist,Manassas,VA,data_science,226.0,fortune1000,2
 c2112,f1000_257,Unum Group,Senior Software Engineer,Portland,ME,computer_science,258.0,fortune1000,2
-c2113,f1000_258,Jacobs Engineering Group,Scientist III,Las Cruces,NM,data_science,259.0,fortune1000,2
+c2113,f1000_258,Jacobs Engineering,Scientist III,Las Cruces,NM,data_science,259.0,fortune1000,2
 c2114,f1000_279,Sempra Energy,Category Management Analyst,San Diego,CA,mba_finance,280.0,fortune1000,2
 c2115,f1000_293,Air Products & Chemicals,Data Scientist,Allentown,PA,data_science,294.0,fortune1000,2
 c2116,f1000_294,Hormel Foods,Associate Packaging Scientist/Packaging Scientist,Austin,MN,data_science,295.0,fortune1000,2
@@ -2269,7 +2269,7 @@ c2274,vault_103,Deloitte Consulting,Data Scientist,Huntsville,AL,data_science,4.
 c2275,vault_152,Goldman Sachs & Co,CIMD Consumer Wealth Management UX Researcher Analyst City,New York,NY,quant,1.0,vault-banking-50,2
 c2276,vault_173,Citi Institutional Clients Group,Quantitative Analyst,Buffalo,NY,quant,22.0,vault-banking-50,2
 c2277,vault_179,RBC Capital Markets,QIS Quant Developer,New York,NY,quant,28.0,vault-banking-50,2
-c2278,vault_180,Wells Fargo & Company,Quantitative Analytics Cons 1,McLean,VA,quant,29.0,vault-banking-50,2
+c2278,vault_180,Wells Fargo,Quantitative Analytics Cons 1,McLean,VA,quant,29.0,vault-banking-50,2
 c2279,vault_182,Piper Jaffray Companies,Equity Research Associate,New York,NY,quant,31.0,vault-banking-50,2
 c2280,vault_186,Deloitte Corporate Finance,Lead Data Scientist,McLean,VA,data_science,35.0,vault-banking-50,2
 c2281,vault_189,HSBC North America,Investment Banking Origination Analyst,New York,NY,mba_finance,38.0,vault-banking-50,2

@@ -609,7 +609,7 @@ protocol_outfile, protocol_df = main(
     )
 
 
-batches = make_batches(protocol_outfile, limit=300)
+batches = make_batches(protocol_outfile, limit=1000)
 print([protocol_outfile]+batches)
 
 

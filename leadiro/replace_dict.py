@@ -12,7 +12,16 @@ emp_key_adjustments = {
 	'Healthcare':'Healthcare Services Group, Inc.',
 	'Quad / Graphics':'Quad/Graphics',
 	"Frank'S":"Frank's International",
-	
+	'Jacobs Engineering Group':'Jacobs Engineering',
+	'The Chemours Company':'Chemours',
+	'Wells Fargo & Company':'Wells Fargo',
+	'ERA':'Era Group',
+	'CA':'CA Technologies',
+	'Marcus':'Marcus Corporation',
+	'Waddell and Reed':'Waddell & Reed Financial',
+	'HCA':'HCA Healthcare',
+
+
 }
 
 
@@ -40,11 +49,16 @@ leadiro_changes = {
 	'Slalom, LLC (Two Degrees)':'Slalom',
 	'Owens Corning (Owens Corning)':'Owens Corning',
 	'Lamb Weston Inc (Lamb Weston)':'Lamb Weston',
+	'Nic Inc. (Nic)':'NIC',
+	'Omnicell, Inc. (OMNICELL)':'Omnicell',
+	'Waddell & Reed, Inc.':'Waddell & Reed Financial',
+	'HCA Inc. (Hospital Coporation of America)':'HCA Healthcare'
 
 }
 
 
 blacklist_companies = {
-	'Speedway LLC':None
+	'Speedway LLC':None,
+	'Williams-Sonoma, Inc. (WILLIAMS SONOMA)':None,
 }
 
