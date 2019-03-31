@@ -1,7 +1,6 @@
 import random
 import pandas as pd
 import numpy as np
-#from new_messages import *
 import textwrap
 import inspect
 import textile
@@ -11,6 +10,7 @@ from send_email import *
 import pdb
 import time, datetime
 import sys
+import subprocess
 
 
 def get_date():
@@ -18,6 +18,39 @@ def get_date():
 	now = datetime.datetime.now()
 	date = now.strftime("%Y-%m-%d-%X").replace(':','')
 	return date
+
+
+def status_bar(start_val, end_val, bar_length=20, form='progress'):
+
+    #Core Progress
+    progress = float(start_val) / end_val
+    arrow = '-' * int(round(progress * bar_length-1)) + '>'
+    spaces = ' ' * (bar_length - len(arrow))
+    bar = arrow + spaces
+
+    if form == 'progress':
+        #Progress
+        completed = int(round(progress * 100))
+        out = "\rPercent: [{0}] {1: >5}%".format(bar, completed)
+
+    elif form == 'countdown':
+        #Countdown
+        remainder = int(round(end_val - start_val))
+        out = "\rCountdown: [{0}] {1: >5} seconds".format(bar, remainder)
+
+    #Updater
+    sys.stdout.write(out)
+    sys.stdout.flush()
+
+
+def countdown(seconds):
+
+    for i in range(seconds+1):
+        time.sleep(1)
+        status_bar(i, seconds, form='countdown')
+
+    sys.stdout.write('\n')
+    sys.stdout.flush()
 
 
 def join_profiles_credentials():
@@ -522,7 +555,11 @@ def display_time_elapsed(start, end, companies=None, version=None):
 
 
 
-def deploy_emails(experiment_csv):
+def deploy_emails(experiment_csv, delay=86400):
+
+	#Ensure Latest Resumes Templates Are In Place
+	subprocess.call('bash make_folders.sh', shell=True)
+
 	batch_datetime = get_date()
 
 	s1 = time.time()
@@ -539,11 +576,8 @@ def deploy_emails(experiment_csv):
 	deploy_matched_pairs_emails(df_A, experiment_csv, "A", batch_datetime)
 	e1 = time.time()
 
-	for i in range(10,0,-1):
-	    sys.stdout.write(str(i)+' ')
-	    sys.stdout.flush()
-	    time.sleep(1)
-
+	#Delay Before Sending Pair B
+	countdown(delay)
 
 	#Matched Pairs B
 	s2 = time.time()
@@ -555,18 +589,58 @@ def deploy_emails(experiment_csv):
 	display_time_elapsed(s2, e2, df_B.shape[0], "B")
 
 
-deploy_emails("protocols/experiment_test.csv")
-
-#deploy_emails("experiment_test_2019-03-26-005950_batch1.csv")
-#deploy_emails("experiment_test_2019-03-26-005950_batch2.csv")
-
-#deploy_emails("experiment_test_smtp_limits.csv")
-
-#Test null emails hault
-#deploy_emails("experiment_2019-03-26-234721.csv")
-#deploy_emails("experiment_test.csv")
 
 
-#SMTP Tests
-#deploy_emails("experiment_test_smtp_limits.csv")
-#deploy_emails("smtp_test2_experiment_2019-03-26-224927.csv")
+def start_experiment(protocol, n, delay):
+
+	#Start Message
+	sm = '\n\n[*] you are about to deploy an experiment using the file:\n'
+	start_message = '{} {}'.format(sm, protocol)
+	print(start_message)
+
+	#Delay Message
+	hours = round(float(delay/3600), 3)
+	dm = '[*] a delay of {} hours between waves has been set'.format(hours)
+	print('\n{}\n'.format(dm))
+
+	#Experimental Protocol Shape
+	ep_df = pd.read_csv(protocol)
+	end_message = '[*] number of observations: {}'.format(ep_df.shape[0])
+	print(ep_df.head())
+	print('\n[*} missing data summary:\n')
+	print(ep_df.isna().sum())
+	print('\n[*] the experiment will proceed in {} seconds'.format(n))
+	countdown(n)
+
+	#Deploy
+	deploy_emails(protocol, delay=delay)
+
+
+
+
+#Set Experiment Protocol File
+experimental_protocols = ["protocols/experiment_test.csv", 
+						  "protocols/experiment_test.csv"]
+
+#Warning Second Delay
+n = 15
+
+#Set Delay Between Waves
+delay = 10
+
+#Batch Delay
+batch_delay = 86400
+batch_delay = 5
+
+#Run Protocol / Protocol Batches
+for protocol in experimental_protocols:
+	if len(experimental_protocols) > 1:
+		start_experiment(protocol, n, delay)
+		countdown(batch_delay)
+	else:
+		start_experiment(protocol, n, delay)
+
+
+
+
+
