@@ -606,7 +606,7 @@ def start_experiment(protocol, n, delay):
 	#Experimental Protocol Shape
 	ep_df = pd.read_csv(protocol)
 	end_message = '[*] number of observations: {}'.format(ep_df.shape[0])
-	print(ep_df.head())
+	print(ep_df)
 	print('\n[*} missing data summary:\n')
 	print(ep_df.isna().sum())
 	print('\n[*] the experiment will proceed in {} seconds'.format(n))
