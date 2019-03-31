@@ -29,6 +29,16 @@ emp_key_adjustments = {
 	'Automatic Data Processing':'ADP',
 	'Automatic Data Process':'ADP',
 	'International Business Machines':'IBM',
+	'American Axle & Mfg':'American Axle & Manufacturing',
+	'HUB':'Hub Group',
+	'American Eagle Outfitter':'American Eagle Outfitters',
+	'EY':'Ernst & Young',
+	'EY-Parthenon':'Ernst & Young',
+	'Kohls':"Kohl's",
+	'Hilton Corporate':'Hilton',
+	'Chase':'Chase Corp',
+	'Procter and Gamble':'Procter & Gamble',
+
 
 }
 
@@ -45,6 +55,7 @@ emp_key_blacklist = {
 	'Cooper':None,
 	'Southern':None,
 	'PVH':None,
+	'American':None,
 
 
 	
@@ -139,9 +150,28 @@ leadiro_changes = {
 	'Heinz Kraft Foods Company':'Kraft Heinz',
 	'Agile Enterprise Solutions, Inc. (AES)':'AES',
 	'Archer-Daniels-Midland Company (ADM)':'Archer Daniels Midland',
-	'Becton, Dickinson and Company (B D)':'Becton, Dickinson and Company (B D)',
-
-
+	'Becton, Dickinson and Company (B D)':'Becton Dickinson & Company',
+	'Harmonic Inc. (HARMONIC)':'Harmonic',
+	'Hollyfrontier Corporation (Hollyfrontier)':'HollyFrontier',
+	'Williams-Sonoma, Inc. (WILLIAMS SONOMA)':'Williams-Sonoma',
+	'Harmonic Inc. (HARMONIC)':'Harmonic',
+	'Conocophillips Company':'ConocoPhillips',
+	'American Axle & Manufacturing, Inc. (AAMCO Transmissions)':'American Axle & Manufacturing',
+	'Audioeye, Inc.':'AudioEye',
+	'American Electric Power Company, Inc. (AEP)':'American Electric Power',
+	'Costco Wholesale Corporation':'Costco',
+	'Quanta Services, Inc. (QUANTA SERVICES)':'Quanta Services',
+	'Leaf Group Ltd. (Demand Media)':'Leaf Group',
+	'American Eagle Outfitters, Inc. (AMERICAN EAGLE OUTFITTERS)':'American Eagle Outfitters',
+	'Sonic Automotive, Inc. (Sonic Automotive)':'Sonic Automotive',
+	'Welltower Inc. (Welltower)':'Welltower',
+	'Norfolk Southern Corporation':'Norfolk Southern',
+	'The Valspar Corporation (Sherwin-Williams)':'Sherwin-Williams',
+	"Kohl's Department Stores, Inc. (Kohl's)":"Kohl's",
+	'Tri Pointe Group, Inc. (TRI POINTE GROUP)':'Tri Pointe',
+	"The Procter & Gamble Company (P&G)":'Procter & Gamble',
+	'First Merchants Bank':'First Merchants Corporation',
+	'Jpmorgan Chase & Co.':'JP Morgan Chase',
 
 
 
@@ -158,6 +188,8 @@ blacklist_companies = {
 	'Roberts Markel Weinberg Butler Hailey PC':None,
 	'Gap Solutions, Inc.':None,
 	'Loews Hotels Holding Corporation (Loews Hotels & Resorts)':None,
+	'Deere Hitachi':None,
+	'Asbury Automotive Group (Spectrum Sound)':None,
 
 }
 

@@ -146,9 +146,13 @@ def make_emp_key_replacements(emp_key):
 
 	# Adhoc Value Replacements (To Correct Fuzzy Mismatch)
 	df['company'] = df['company'].replace(emp_key_adjustments)
-	df.to_csv(emp_key, index=False)
+
+	#Emp Key Blacklist
+	df['company'] = df['company'].replace(emp_key_blacklist)
+	df = df.dropna(subset=['company'])	
+
 	print('[*] modifying {} and overwriting file...'.format(emp_key))
-	
+	df.to_csv(emp_key, index=False)
 	return df
 
 

@@ -67,10 +67,9 @@ c0065,f1000_137,Southwest Airlines,Sr Software Engineer,Dallas,TX,computer_scien
 c0066,f1000_139,Staples,Senior Data Scientist,Seattle,WA,data_science,140.0,fortune1000,2
 c0067,f1000_14,Cardinal Health,Product Development Scientist,Hazelwood,MO,data_science,15.0,fortune1000,2
 c0068,f1000_143,Danaher,Senior QC Scientist,Fremont,CA,data_science,144.0,fortune1000,2
-c0069,f1000_144,Southern,Data Scientist Lead,Costa Mesa,CA,data_science,145.0,fortune1000,2
 c0070,f1000_146,Bristol-Myers Squibb,US Medical Scientist,Princeton,NJ,data_science,147.0,fortune1000,2
 c0071,f1000_148,Fluor,Environmental Engineer/Scientist II,Idaho Falls,ID,data_science,149.0,fortune1000,2
-c0072,f1000_149,Kohls,Software Engineer,Milpitas,CA,computer_science,150.0,fortune1000,2
+c0072,f1000_149,Kohl's,Software Engineer,Milpitas,CA,computer_science,150.0,fortune1000,2
 c0073,f1000_15,Costco,Software Developer,Issaquah,WA,computer_science,16.0,fortune1000,2
 c0074,f1000_152,The Hartford,Project Manager - Data Science,Hartford,CT,data_science,153.0,fortune1000,2
 c0075,f1000_153,Thermo Fisher Scientific,Data Scientist,Durham,NC,data_science,154.0,fortune1000,2
@@ -135,7 +134,7 @@ c0133,f1000_235,Sherwin-Williams,Junior Java Developer,Cleveland,OH,computer_sci
 c0134,f1000_238,Ameriprise Financial,Senior Software Engineer,Minneapolis,MN,computer_science,239.0,fortune1000,2
 c0135,f1000_239,ADP,Senior Technical Product Manager - Machine Learning,New York,NY,data_science,240.0,fortune1000,2
 c0136,f1000_24,Wells Fargo,Nlp Data Scientist / Analytic Consultant 4,Irving,TX,data_science,25.0,fortune1000,2
-c0137,f1000_240,Hilton Corporate,Lead - Product Manager,Addison,TX,mba,241.0,fortune1000,2
+c0137,f1000_240,Hilton,Lead - Product Manager,Addison,TX,mba,241.0,fortune1000,2
 c0138,f1000_242,Henry Schein,Software Engineer I,American Fork,UT,computer_science,243.0,fortune1000,2
 c0139,f1000_244,BB&T,Card and Digital Fraud Data Scientist,Charlotte,NC,data_science,245.0,fortune1000,2
 c0140,f1000_247,Biogen,Senior Scientist - Cellular Physiology,Cambridge,MA,data_science,248.0,fortune1000,2
@@ -192,8 +191,6 @@ c0190,f1000_322,O'Reilly Auto Parts,Data Engineer II,Springfield,MO,data_science
 c0191,f1000_325,Salesforce,Data Scientist/Sr Analyst - Monetization Strategy,Indianapolis,IN,data_science,326.0,fortune1000,2
 c0192,f1000_326,Boston Scientific,Senior Software Engineer,Valencia,CA,computer_science,327.0,fortune1000,2
 c0193,f1000_330,Veritiv,Customer Program Manager III,Austin,TX,mba,331.0,fortune1000,2
-c0194,f1000_332,Crown,IT Data Engineer,Canonsburg,PA,data_science,333.0,fortune1000,2
-c0195,f1000_334,PVH,Project Manager - Digital Product Creation,New York,NY,mba,335.0,fortune1000,2
 c0196,f1000_336,Navistar,Senior Program Manager - Channel Readiness,Lisle,IL,mba,337.0,fortune1000,2
 c0197,f1000_338,Campbell Soup,Scientist,Camden,NJ,data_science,339.0,fortune1000,2
 c0198,f1000_339,Dick's Sporting Goods,Software Engineer - A/R,Coraopolis,PA,computer_science,340.0,fortune1000,2
@@ -202,7 +199,7 @@ c0200,f1000_342,Chesapeake Energy,Software Developer II,Oklahoma City,OK,compute
 c0201,f1000_343,Anadarko Petroleum,Analytics and Data Science Supervisor - DJ Basin Subsurface & Technology,Denver,CO,data_science,344.0,fortune1000,2
 c0202,f1000_344,Interpublic Group,Cybersecurity Software Developer,New York,NY,computer_science,345.0,fortune1000,2
 c0203,f1000_347,Foot Locker,Peoplesoft Software Engineer,Camp Hill,PA,computer_science,348.0,fortune1000,2
-c0204,f1000_35,Procter and Gamble,Research and Development Engineer Co-op,Cincinnati,OH,data_science,36.0,fortune1000,2
+c0204,f1000_35,Procter & Gamble,Research and Development Engineer Co-op,Cincinnati,OH,data_science,36.0,fortune1000,2
 c0205,f1000_351,Zimmer Biomet,Research Principal Engineer,Warsaw,IN,data_science,352.0,fortune1000,2
 c0206,f1000_353,W.R. Berkley,Data Scientist,Rutherford,NJ,data_science,354.0,fortune1000,2
 c0207,f1000_356,Charles Schwab,Data Scientist,Chicago,IL,data_science,357.0,fortune1000,2
@@ -499,7 +496,6 @@ c0497,f1000_930,Woodward,Program Manager,Rockford,IL,mba,931.0,fortune1000,2
 c0498,f1000_931,Esterline Technologies,Software Engineer,Cedar Rapids,IA,computer_science,932.0,fortune1000,2
 c0499,f1000_932,Itron,Deployment Project Manager,San Jose,CA,mba,933.0,fortune1000,2
 c0500,f1000_94,Time Warner,Data Science Fellow,Boston,MA,data_science,95.0,fortune1000,2
-c0501,f1000_947,Cooper,Software Developer,Findlay,OH,computer_science,948.0,fortune1000,2
 c0502,f1000_95,Spectrum,Sr Data Scientist,Stamford,CT,data_science,96.0,fortune1000,2
 c0503,f1000_951,CoreLogic,Principal - Data Scientist,San Diego,CA,data_science,952.0,fortune1000,2
 c0504,f1000_954,Popular,Software Engineer,Chicago,IL,computer_science,955.0,fortune1000,2
@@ -764,7 +760,6 @@ c0762,ru_AGEN,Agenus,Bioinformatics Scientist,Lexington,MA,data_science,79.0,ru3
 c0763,ru_AGLE,Aeglea Biotherapeutics,Market Research & Analytics Lead,Austin,TX,data_science,68.0,ru3000,2
 c0764,ru_AGN,Allergan,Senior Pharmaceutical Technology Scientist,Waco,TX,data_science,118.0,ru3000,2
 c0765,ru_AGR,Avangrid,Project Manager - US,Orange,CT,mba,300.0,ru3000,2
-c0766,ru_AIG,American,Data Scientist,Madison,WI,data_science,161.0,ru3000,2
 c0767,ru_AIMC,Altra Industrial Motion,Director of Global Product Marketing,Radford,VA,mba,136.0,ru3000,2
 c0768,ru_AIN,Albany,Research Scientist II 3Rd Shift,Rensselaer,NY,data_science,99.0,ru3000,2
 c0769,ru_AIR,AAR,Project Manager,Fairbanks,AK,mba,14.0,ru3000,2
@@ -794,7 +789,6 @@ c0792,ru_ATRO,Astronics,Production Program Manager,East Aurora,NY,mba,275.0,ru30
 c0793,ru_AVA,Avista,Software Engineer,Cedar Rapids,IA,computer_science,307.0,ru3000,2
 c0794,ru_AVAV,Aerovironment,Software Engineer Sr,Simi Valley,CA,computer_science,72.0,ru3000,2
 c0795,ru_AXDX,Accelerate Diagnostics,Associate Scientist - Clinical,Tucson,AZ,data_science,29.0,ru3000,2
-c0796,ru_B,Barnes,VP - Project Management Office,Basking Ridge,NJ,mba,346.0,ru3000,2
 c0797,ru_BANR,Banner,Research Compliance Analyst,Phoenix,AZ,data_science,342.0,ru3000,2
 c0798,ru_BEAT,Biotelemetry,BioTel Research,Rochester,NY,data_science,387.0,ru3000,2
 c0799,ru_BERY,Berry Global,Product Optimization Engineer/Scientist,Chippewa Falls,WI,data_science,371.0,ru3000,2
@@ -919,7 +913,7 @@ c0917,ru_HRTX,Heron Therapeutics,In-house Clinical Research Associate,San Diego,
 c0918,ru_HSC,Harsco,Software Development Engineer Test,Columbia,SC,computer_science,1285.0,ru3000,2
 c0919,ru_HSY,Hershey,Research Assistant Transformational Innovation,Hershey,PA,data_science,1328.0,ru3000,2
 c0920,ru_HTH,Hilltop,Software Developer,Dallas,TX,computer_science,1341.0,ru3000,2
-c0921,ru_HUBG,HUB,Project Manager & Process Improvement - Human Services Experience Required,Washington,DC,mba,1373.0,ru3000,2
+c0921,ru_HUBG,Hub Group,Project Manager & Process Improvement - Human Services Experience Required,Washington,DC,mba,1373.0,ru3000,2
 c0922,ru_HUD,Hudson,Project Manager,New York,NY,mba,1376.0,ru3000,2
 c0923,ru_HURN,Huron Consulting,Software Engineer - ECC,Chicago,IL,computer_science,1383.0,ru3000,2
 c0924,ru_HVT,Haverty Furniture,Software Engineer,Atlanta,GA,computer_science,1289.0,ru3000,2
@@ -934,7 +928,6 @@ c0932,ru_IIN,Intricon,Project Manager,Vadnais Heights,MN,mba,1470.0,ru3000,2
 c0933,ru_IMPV,Imperva,Senior Software Engineer - Rust/C/C,Los Angeles,CA,computer_science,1407.0,ru3000,2
 c0934,ru_INCY,Incyte,Director - Clinical Research Scientist,Wilmington,DE,data_science,1409.0,ru3000,2
 c0935,ru_INSY,Insys Therapeutics,Stability Scientist I,Chandler,AZ,data_science,1443.0,ru3000,2
-c0936,ru_INVH,Invitation Homes,Project Manager - Rehab & Turn,Scottsdale,AZ,mba,1482.0,ru3000,2
 c0937,ru_IONS,Ionis Pharmaceuticals,Scientist,Carlsbad,CA,data_science,1484.0,ru3000,2
 c0938,ru_IQV,Iqvia,Sr Machine Learning Engineer,Cambridge,MA,data_science,1487.0,ru3000,2
 c0939,ru_IRBT,Irobot,Sr Software Engineer - Machine Learning,Bedford,MA,data_science,1491.0,ru3000,2
@@ -956,7 +949,6 @@ c0954,ru_MANT,Mantech,Software Engineer,Quantico,VA,computer_science,1705.0,ru30
 c0955,ru_MASI,Masimo,Associate Artificial Intelligence/Machine Learning Engineer,Irvine,CA,data_science,1724.0,ru3000,2
 c0956,ru_MATW,Matthews,Software Engineer,Pittsburgh,PA,computer_science,1734.0,ru3000,2
 c0957,ru_MBII,Marrone Bio Innovations,Formulations Chemist - Principal Scientist,Davis,CA,data_science,1718.0,ru3000,2
-c0958,ru_MBIN,Merchants Bank,Project Manager,Daleville,IN,mba,1765.0,ru3000,2
 c0959,ru_MBIO,Mustang Bio,Princiapal/Senior Scientist Translational and Correlative Sciences,Worcester,MA,data_science,1852.0,ru3000,2
 c0960,ru_MCS,Marcus Corporation,Cloud Engineer/Full Stack Developer,Irving,TX,computer_science,1709.0,ru3000,2
 c0961,ru_MDCO,Medicines,Scientist - Biology,Cambridge,MA,data_science,1755.0,ru3000,2
@@ -1133,7 +1125,7 @@ c1131,vault_174,Jefferies,Equity Research Associate Medical Devices,New York,NY,
 c1132,vault_181,Macquarie Group,Operational Risk - Corporate Finance,New York,NY,mba_finance,30.0,vault-banking-50,2
 c1133,vault_185,Baird,Business Process Sr Analyst - Robotics,Milwaukee,WI,mba_finance,34.0,vault-banking-50,2
 c1134,vault_19,WilmerHale,Project Manager,Dayton,OH,mba,20.0,vault-law-100,2
-c1135,vault_198,EY,Senior - Data Scientist,Austin,TX,data_science,47.0,vault-banking-50,2
+c1135,vault_198,Ernst & Young,Senior - Data Scientist,Austin,TX,data_science,47.0,vault-banking-50,2
 c1136,vault_199,Brown Brothers Harriman,Compliance Analyst II,New York,NY,mba_finance,48.0,vault-banking-50,2
 c1137,vault_20,Ropes & Gray,Senior Legal Project Management Specialist,New York,NY,mba,21.0,vault-law-100,2
 c1138,vault_202,PWC,Workday Financial Analyst - Senior Associate,Atlanta,GA,mba_finance,1.0,vault-accounting-50,2
@@ -1375,7 +1367,6 @@ c1373,f1000_817,Tops,Consumer Insights Analyst,Williamsville,NY,mba_analyst,818.
 c1374,f1000_824,Equity Residential,Data Scientist,Chicago,IL,data_science,825.0,fortune1000,3
 c1375,f1000_825,J. Crew Group,Project Manager,Long Island City,NY,mba,826.0,fortune1000,3
 c1376,f1000_826,Synopsys,Software Engineer - I,Mountain View,CA,computer_science,827.0,fortune1000,3
-c1377,f1000_830,TRI Pointe Group,Construction Project Manager - Maracay Homes,Scottsdale,AZ,mba,831.0,fortune1000,3
 c1378,f1000_834,Alere,Data Scientist,San Diego,CA,data_science,835.0,fortune1000,3
 c1379,f1000_837,G-III Apparel Group,Jr eCommerce Data Analyst,New York,NY,mba_finance,838.0,fortune1000,3
 c1380,f1000_84,Publix Super Markets,Data Scientist - Marketing Analytics,Lakeland,FL,data_science,85.0,fortune1000,3
@@ -1656,7 +1647,7 @@ c1654,ru_CBIO,Catalyst Biosciences,Director - Translational Research,South San F
 c1655,ru_CBM,Cambrex,Data Review Scientist,Charles City,IA,data_science,489.0,ru3000,3
 c1656,ru_CBZ,Cbiz,Forensic and Financial Services Group Sr Manager,Plymouth Meeting,PA,mba_finance,545.0,ru3000,3
 c1657,ru_CCBG,Capital City Bank,Financial Advisor,Spring Hill,FL,mba_finance,498.0,ru3000,3
-c1658,ru_CCF,Chase,Finance Analyst - Internal Audit,Westwood,MA,mba_finance,584.0,ru3000,3
+c1658,ru_CCF,Chase Corp,Finance Analyst - Internal Audit,Westwood,MA,mba_finance,584.0,ru3000,3
 c1659,ru_CCL,Carnival,Strategic Planning Analyst,Miami,FL,mba_finance,519.0,ru3000,3
 c1660,ru_CCS,Century Communities,IT Application Analyst IBM TM1 Planning Analytics,Greenwood Village,CO,mba_finance,572.0,ru3000,3
 c1661,ru_CDE,Coeur Mining,IT Project Manager - Corporate,Chicago,IL,mba,657.0,ru3000,3
@@ -1682,7 +1673,6 @@ c1680,ru_CNX,Cnx Resources,Senior Analyst - IS&T,Canonsburg,PA,mba_analyst,651.0
 c1681,ru_COHU,Cohu,Product Marketing Manager,Saint Paul,MN,mba,665.0,ru3000,3
 c1682,ru_COKE,Coca Cola Bottling,Red Classic - Project Manager II,Charlotte,NC,mba,653.0,ru3000,3
 c1683,ru_COLL,Collegium Pharmaceutical,Product Manager - Marketing,Stoughton,MA,mba,668.0,ru3000,3
-c1684,ru_COO,Cooper Companies,Project Manager - Construction,Charlotte,NC,mba,714.0,ru3000,3
 c1685,ru_CORT,Corcept Therapeutics,Clinical Research Associate II,Menlo Park,CA,data_science,720.0,ru3000,3
 c1686,ru_COTV,Cotiviti,Software Engineer - Java,Atlanta,GA,computer_science,736.0,ru3000,3
 c1687,ru_CPK,Chesapeake Utilities,Sr Business Planning Analyst,Fernandina Beach,FL,mba_finance,597.0,ru3000,3
@@ -1779,7 +1769,6 @@ c1777,ru_HAIN,Hain Celestial,Supply Chain Finance Manager,Lake Success,NY,mba_fi
 c1778,ru_HALL,Hallmark Financial,Senior Project Manager,Dallas,TX,mba,1271.0,ru3000,3
 c1779,ru_HALO,Halozyme Therapeutics,Vice President,San Francisco,CA,data_science,1272.0,ru3000,3
 c1780,ru_HBNC,Horizon Bank,Commercial Credit Analyst,Austin,TX,mba_finance,1359.0,ru3000,3
-c1781,ru_HCI,HCI,Program Manager,Fort Hood,TX,mba,1298.0,ru3000,3
 c1782,ru_HCKT,Hackett,Solutions and Implementation Project Manager,Roswell,GA,mba,1265.0,ru3000,3
 c1783,ru_HEES,H&E Equipment Services,Project Manager,Baton Rouge,LA,mba,1263.0,ru3000,3
 c1784,ru_HELE,Helen of Troy,Product Manager - OXO,New York,NY,mba,1313.0,ru3000,3
@@ -1860,7 +1849,6 @@ c1858,ru_MED,Medifast,Financial Analyst,Owings Mills,MD,mba_finance,1758.0,ru300
 c1859,ru_MEET,The Meet,Senior Data Engineer,Philadelphia,PA,data_science,2660.0,ru3000,3
 c1860,ru_MG,Mistras,Acoustic Emission Research Scientist,Princeton Junction,NJ,data_science,1810.0,ru3000,3
 c1861,ru_MGNX,Macrogenics,Scientist III - Analytical Sciences,Rockville,MD,data_science,1688.0,ru3000,3
-c1862,ru_MHO,M/I Homes,Land Project Manager,Sarasota,FL,mba,1682.0,ru3000,3
 c1863,ru_MINI,Mobile Mini,Senior Financial Analyst,Phoenix,AZ,mba_finance,1813.0,ru3000,3
 c1864,ru_MKTX,Marketaxess,Full Stack Software Engineer-Salt Lake City-Utah,Draper,UT,computer_science,1714.0,ru3000,3
 c1865,ru_MMI,Marcus & Millichap,Financial Analyst,Philadelphia,PA,mba_finance,1708.0,ru3000,3
@@ -2218,7 +2206,7 @@ c2219,ru_AAXN,Axon Enterprise,Senior Business Analyst - Operations,Scottsdale,AZ
 c2220,ru_ABMD,Abiomed,Senior Financial Analyst 1,Danvers,MA,mba_finance,21.0,ru3000,4
 c2221,ru_ACHN,Achillion Pharm,Director - Clinical Supply Chain & CMC Project Management,Blue Bell,PA,mba,36.0,ru3000,4
 c2222,ru_ADVM,Adverum Biotech,Associate Scientist - Assay Development,Menlo Park,CA,data_science,65.0,ru3000,4
-c2223,ru_AEO,American Eagle Outfitter,Data Scientist,Pittsburgh,PA,data_science,155.0,ru3000,4
+c2223,ru_AEO,American Eagle Outfitters,Data Scientist,Pittsburgh,PA,data_science,155.0,ru3000,4
 c2224,ru_AJG,Gallagher Arthur J & Company,Director - Data Science,Chicago,IL,data_science,1155.0,ru3000,4
 c2225,ru_ALK,Alaska Air,Software Engineering Manager,Burlingame,CA,computer_science,98.0,ru3000,4
 c2226,ru_ALNY,Alnylam Pharmaceuticals,Associate Data Scientist - Statistical Genetics,Cambridge,MA,data_science,128.0,ru3000,4
