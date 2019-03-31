@@ -619,7 +619,7 @@ def start_experiment(protocol, n, delay):
 
 
 #Set Experiment Protocol File
-experimental_protocols = ["protocols/experiment_test.csv", "experiment_test_m1.csv"]
+experimental_protocols = ["protocols/experiment_test.csv"]
 
 #Warning Second Delay
 n = 15
