@@ -53,6 +53,10 @@ emp_key_adjustments = {
 	'Citigroup':'Citibank',
 	'World Fuel':'World Fuel Services',
 	'Biomarin Pharmaceutical':'BioMarin Pharmaceutical',
+	'American Airlines Group':'American Airlines',
+	'United Technologies Corp. Headquarters':'United Technologies',
+	'Bankunited':'BankUnited',
+	'Liberty Mutual Insurance Group':'Liberty Mutual',
 
 
 
@@ -240,6 +244,12 @@ leadiro_changes = {
 	'Fossil Partners, L.P. (Sketchers)':'Fossil',
 	'Cabot Microelectronics Corporation':'Cabot Microelectronics',
 	'Aspen Insurance U.S. Services, Inc. (Aspen Specialty)':'Aspen Insurance',
+	'Keurig Dr Pepper Inc. (Dr Pepper Snapple)':'Dr Pepper Snapple Group',
+	'Westwood Financial Corp.':'Westwood',
+	'Hilltop Holdings Inc. (Hilltop Holdings)':'Hilltop',
+	'American Airlines, Inc.':'American Airlines',
+	'United Technologies Corporation (UTC)':'United Technologies',
+	'Bankunited, Inc. (BANKUNITED)':'BankUnited',
 
 
 
