@@ -17,13 +17,15 @@ def get_leads(df,
 				leads_key='keys/leadiro_matched_key.csv'
 				):
 
+	#Initial Merge
 	leads = pd.read_csv(leads_key)
 	df = df.merge(leads, how='left')
 
+	#Drop Any Rows Without Contact Information
+	df = df.dropna(subset=['contact_email'])
 
-	#TODO Issue a Warning if name/email have NAN 
-	#after the merge
-	print(df)
+	#Drop Duplicate List ID's Keeping the First
+	df = df.drop_duplicates(subset='contact_email')
 	return df
 
 
@@ -609,7 +611,7 @@ protocol_outfile, protocol_df = main(
     )
 
 
-batches = make_batches(protocol_outfile, limit=1000)
+batches = make_batches(protocol_outfile, limit=500)
 print([protocol_outfile]+batches)
 
 
