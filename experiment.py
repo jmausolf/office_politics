@@ -619,13 +619,13 @@ def start_experiment(protocol, n, delay):
 
 
 #Set Experiment Protocol File
-experimental_protocols = ["protocols/experiment_test.csv"]
+#experimental_protocols = ["protocols/experiment_2019-04-01-045835.csv"]
 
 #Warning Second Delay
-n = 15
+n = 300
 
 #Set Delay Between Waves
-delay = 10
+delay = 91400
 
 #Batch Delay
 batch_delay = 86400
