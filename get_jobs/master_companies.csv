@@ -1,6 +1,7 @@
 list_id,company,rank,source,job_type_1,job_type_2,job_type_3,job_type_4,job_type_5,job_type_6,job_type_7
 f1000_0,Walmart,1,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_1,Geico,2,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
+f1000_01,Berkshire Hathaway,2,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_2,Apple,3,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_3,ExxonMobil,4,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst
 f1000_4,McKesson,5,fortune1000,data_science,computer_science,mba,mba_finance,stats,quant,mba_analyst

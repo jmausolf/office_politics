@@ -52,6 +52,8 @@ emp_key_adjustments = {
 	'Deloitte Consulting':'Deloitte',
 	'Citigroup':'Citibank',
 	'World Fuel':'World Fuel Services',
+	'Biomarin Pharmaceutical':'BioMarin Pharmaceutical',
+
 
 
 
@@ -77,6 +79,12 @@ emp_key_blacklist = {
 	'Tower':None,
 	'Northwestern':None,
 	'Orion':None,
+	'Idera Pharmaceuticals':None,
+	'Inovio Pharmaceuticals':None,
+	'Calyxt':None,
+	'Corvus Pharmaceuticals':None,
+	'Amicus Therapeutics':None,
+	'Versum Materials':None,
 
 
 	
@@ -143,7 +151,7 @@ leadiro_changes = {
 	'Caleres, Inc. (FAMOUS FOOTWEAR)':'Caleres',
 	'Garmin International, Inc.':'Garmin',
 	'Syntel, Inc. (Atos Syntel)':'Syntel',
-	'Haynes International, Inc.':'Haynes',
+	'Haynes International, Inc.':'Haynes International',
 	'Fanatics, Inc. (Football Fanatics)':'Fanatics',
 	'Verastem, Inc. (Verastem Oncology)':'Verastem',
 	'Guess , Inc. (GUESS?)':'Guess',
@@ -252,6 +260,12 @@ blacklist_companies = {
 	'Asbury Automotive Group (Spectrum Sound)':None,
 	'Cellular Plus (T-Mobile Authorized Retailer)':None,
 	'Citizens, Inc.':None,
+	'Idera Pharmaceuticals, Inc. (Idera)':None,
+	'Inovio Pharmaceuticals, Inc. (Inovio)':None,
+	'Calyxt, Inc.':None,
+	'Corvus Pharmaceuticals, Inc. (Corvus Pharmaceuticals)':None,
+	'Amicus Therapeutics, Inc.':None,
+	'Versum Materials, Inc.':None,
 
 }
 

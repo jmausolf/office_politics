@@ -262,7 +262,10 @@ def join_emp_key_master_companies(emp_key, master_key):
     #Fill NA Values in Last Column
     df_master = df_master.fillna(axis=0, method='bfill')
     df_master = df_master.fillna(axis=0, method='ffill')
-    df = pd.merge(df_employ, df_master, on=['list_id', 'company'], how='left')
+
+    #Only Join On List ID, Since There May Be Changed Company Names
+    df = pd.merge(df_employ, df_master, on=['list_id'], how='left')
+    df = df.rename(columns={'company_x':'company'})
     df = df.dropna(axis=0)
     return df
 
@@ -352,6 +355,7 @@ def reclassify_jobs(emp_key,
     print('[*] extracting job keys, order for all job ranks and types....')
     df['keys'] = df.apply(get_keys, axis=1)
     print(df)
+    print(df.shape)
     
     #Main Reclassification and Arbitration
     df['reclass'] = df.apply(reclass, axis=1)
