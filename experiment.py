@@ -607,8 +607,25 @@ def deploy_emails(experiment_csv, delay=86400, version=None):
 			sys.exit()
 
 
-		#Load Matched Experiment Output File
+		#Extract Batch Datetime from Matched Input File
 		batch_datetime = experiment_csv.split('_protocol_')[0].split('logs/')[1]
+		protocol = experiment_csv.split('_protocol_')[1].split('_matched_')[0]
+
+
+		#Check that Intended Experiment Has Not Already Run
+		experiment_log = "logs/{0}_protocol_{1}_results_pair_{2}.csv".format(
+												batch_datetime,
+												protocol,
+												version)
+		exists = os.path.isfile(experiment_log)
+		if exists:
+			print('[*] requested experiment already run...')
+			print('[*] exiting...')
+			sys.exit()
+		else:
+			pass
+
+		#Load Matched Experiment Output File
 		df = pd.read_csv(experiment_csv)
 		print(df)
 
@@ -668,14 +685,14 @@ experimental_protocols = ["protocols/experiment_test.csv"]
 
 #Run Single Batch of Matched Output
 single_matched_pair = True
-protocol_matched_output = 'logs/2019-04-02-170559_protocol_experiment_test_matched_output.csv'
+protocol_matched_output = 'logs/2019-04-02-230731_protocol_experiment_test_matched_output.csv'
 version = 'B'
 
 #Warning Second Delay
 n = 30
 
 #Set Delay Between Waves
-delay = 87500
+delay = 10
 
 #Batch Delay
 batch_delay = 86400
@@ -692,7 +709,9 @@ if single_matched_pair is False:
 else:
 	#start_experiment(protocol, n, delay)
 	print('[*] WARNING you have requested to send ONLY one version of a matched pair...')
-	print('[*] version {} requested...'.format(version))
+	print('[*] matched output log: {}...'.format(protocol_matched_output))
+	print('[*] version: {} requested to run ...'.format(version))
+	countdown(30)
 	start_experiment(protocol_matched_output, n, delay, version)	
 
 
