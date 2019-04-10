@@ -77,7 +77,8 @@ def mbox_extractor(mboxfile, writer):
 						from_email, 
 						message['to'], 
 						message['date'], 
-						message['subject'], 
+						message['subject'],
+						message['x-gmail-labels'],
 						body,
 						mboxfile
 						])
@@ -91,7 +92,8 @@ def csv_from_mboxes(filename='mbox.csv'):
 				'from_email',
 				'to_email',
 				'date',
-				'subject', 
+				'subject',
+				'labels', 
 				'message',
 				'mbox']
 		writer.writerow(cols)
