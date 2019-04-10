@@ -7,6 +7,7 @@ import argparse
 from glob import glob
 import pandas as pd
 from bs4 import BeautifulSoup
+from email_reply_parser import EmailReplyParser
 
 
 def remove_non_ascii_2(text):
@@ -17,6 +18,12 @@ def rm_email_punct(text):
     tmp = re.sub(r'[]\\?!\"\'+*/`\\[<=>\\^]', "", text)
     return re.sub(r'\s{2,}', " ", tmp)
     #return text
+
+
+def replace_soup_tags(text):
+	text = text.replace("&gt;", "")
+	text = text.replace("&lt;", "")
+	return text
 
 def replace_unicode_literals(text):
 	text = text.replace("\\xe2\\x80\\x90", "-")
@@ -57,14 +64,36 @@ def more_payloads(message):
 			#'text/html'
 			pass
 
+	
 
-	o = remove_non_ascii_2(str(body))
+	#Remove HTML/CSS
+	soup = BeautifulSoup(body, "html5lib")
+	[s.extract() for s in soup('style')]
+	o = EmailReplyParser.parse_reply(str(soup))
+	o = remove_non_ascii_2(str(o))
+
+	#Remove GT/LT Tags
+	o = replace_soup_tags(o)
+
+	#o = remove_non_ascii_2(str(body))
 	o = "\n".join(o.splitlines())
 	o = o.replace("\\r\\n", "\n")
 	o = o.replace("\\n\\n", "\n").replace("\\n", "\n")
 	o = o.replace("\b'", '').replace("b'", '')
 	o = replace_unicode_literals(o)
+
+	#Add Spaces to From/Reply History
+	#TODO split on reply texts not caught
+	o = o.replace('From: ', "\r\nFrom: ")
+	o = o.replace('*From:*', "\r\nFrom: ")
+	o = o.replace('On ', "\r\nOn ")
+
 	o = '''{}'''.format(replace_links(o))
+
+
+	#soup = BeautifulSoup(o, "html5lib")
+	#[s.extract() for s in soup('style')]
+	#o = str(soup)
 
 	if len(o) > 20000:
 		return o[0:20000]
