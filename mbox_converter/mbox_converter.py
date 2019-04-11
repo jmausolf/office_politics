@@ -300,7 +300,9 @@ def filter_bounces_main(df):
 
 	df_type_1 = df.loc[type_1_crit].copy()
 	df_type_1 = df_type_1.drop(['extracted_email', 'isprofile'], axis=1)
+	df_type_1['bounce_email'] = df_type_1['to_email']
 	print(df_type_1)
+	bounce_1 = df_type_1['bounce_email']
 
 
 	#Get Type 2
@@ -312,12 +314,22 @@ def filter_bounces_main(df):
 					)
 	df_type_2 = df.loc[type_2_crit].copy().dropna()
 	df_type_2 = df_type_2.drop_duplicates(subset=['extracted_email'])
+	df_type_2['bounce_email'] = df_type_2['extracted_email']
+	bounce_2 = df_type_2['bounce_email']
 
 	#TODO, left join df_type_2['extracted_email'] with sent items 
 
 	#df_type_2['extracted_email'] = df_type_2['message'].apply(extract_email)
 	print(df_type_2)
+	bounces = pd.concat([bounce_1, bounce_2]).sort_values()
+	bounces = bounces.drop_duplicates()
+	print(bounces)
+	print(bounces.shape)
 
+
+
+	#Email Test
+	#bounce_emails = 
 	#Get Type 1
 	#type_1 = df.loc[(df[])]
 
