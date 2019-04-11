@@ -10,6 +10,12 @@ from bs4 import BeautifulSoup
 from email_reply_parser import EmailReplyParser
 
 
+
+#######################################
+## MBOX LOADING
+#######################################
+
+
 def remove_non_ascii_2(text):
     return re.sub(r'[^\x00-\x7F]+', "", text)
 
@@ -215,6 +221,114 @@ def csv_from_mboxes(filename='mbox.csv'):
 
 
 
+#######################################
+## MBOX CLEANING
+#######################################
+
+#####################################
+##your message to
+
+##TODO
+##need code to extract from the messages the email address following
+## 'your message to' 
+## and create a new row with certain properties
+## to artificially create the 'sent' data
+
+def extract_failed_email(message):
+
+	#was a problem delivering your message to aliesch.sutton@lsccom.com.
+	#was a problem delivering your message to tara.huber@booz.com.
+
+	#Your message to ashley.straley@dsw.com couldn't be delivered.
+
+	#a temporary problem delivering your message to mchoo@rossstores.com. Gmail 
+
+	#Your message wasn't delivered to gege.thompson@pw.utc.com
+	#Your message to ekraft@skydrive3m.mail.onmicrosoft.com
+
+	#need to split after '. ' or ' '
+	email = None
+	key0 = 'your message to the following addresses: '
+	key1 = 'your message to '
+
+
+	#Try Key 0
+	try:
+		email = message.split(key0)[1].split(' ')[0]
+	except:
+		try:
+			email = message.split(key0)[1].split(' ')[0]
+		except:
+
+			#Try Key 1
+			try:
+				email = message.split(key1)[1].split('. ')[0]
+			except:
+				try:
+					email = message.split(key1)[1].split(' ')[0]
+				except:
+					pass
+	#else:
+	#	email is None
+	#	pass
+
+	if email is not None:
+		print(email)
+
+	return email
+
+
+def extract_email(message):
+	try:
+		match = re.search(r'[\w\.-]+@[\w\.-]+', message)
+		email = match.group(0)
+	except:
+		email = None
+
+	if email is not None:
+		if email[-1:] == '.':
+			email = email[:-1]
+		else:
+			pass
+		print(email)
+		#print(email[-1:])
+
+	return email
+
+def modify_mbox_csv(filename='mbox.csv'):
+
+	df = pd.read_csv(filename)
+
+	#Parse Profile, Wave, and Outcome from Mbox Filename
+	tmp = df['mbox'].apply(lambda x: x.replace('-', '_').split('.mbox')[0])
+	tmp = tmp.str.split('_', n = 2, expand = True)
+	df['profile'], df['wave'], df['outcome'] = tmp[0], tmp[1], tmp[2]
+
+
+	#Parse Sent, Infer Received from Labels
+
+	print(df)
+	print(df.columns)
+
+	#Write Results
+	outfile = filename.split('.csv')[0]+'_analysis.csv'
+	df.to_csv(outfile, index=False)
+	#print(tmp)
+	return df
+
+
+
+
+
+def modify_main():
+	df = modify_mbox_csv(args.filename)
+
+	dfb = df.loc[(df['outcome'] == 'Bounce')].copy()
+
+	dfb['emails'] = dfb['message'].apply(extract_email)
+	#print(dfb)
+	dfb.to_csv('bounce_test.csv', index=False)
+
 			
 if __name__=='__main__':
 	parser = argparse.ArgumentParser()
@@ -228,17 +342,37 @@ if __name__=='__main__':
 						default=False,
 						type=bool, 
 						help="open outfile?")
+	parser.add_argument("-l", 
+						"--load",
+						default=False,
+						type=bool, 
+						help="load mbox files")
+	parser.add_argument("-m", 
+						"--modify",
+						default=False,
+						type=bool, 
+						help="modify mbox csv")
 	args = parser.parse_args()
 
-	if not (args.filename or args.open):
-	    parser.error('No action requested, add argument...')
+	if not (args.load or args.modify):
+		parser.error('No action requested, add argument...')
 
+	if args.load is True:
+		print("[*] Running requested tasks...")
+		csv_from_mboxes(args.filename)
+		print(pd.read_csv(args.filename))
+		print(pd.read_csv(args.filename).isna().sum())
+		if args.open is True:
+			subprocess.call("open {}".format(args.filename), shell=True)
+		print("[*] Done.")
+	
 
-	print("[*] Running requested tasks...")
-	csv_from_mboxes(args.filename)
-	print(pd.read_csv(args.filename))
-	print(pd.read_csv(args.filename).isna().sum())
-	if args.open is True:
-		subprocess.call("open {}".format(args.filename), shell=True)
-	print("[*] Done.")
+	if args.modify is True:
 
+		#Working on Editing Mbox
+		#modify_mbox_csv(args.filename)
+		modify_main()
+
+		if args.open is True:
+			subprocess.call("open {}".format(args.filename), shell=True)
+		print("[*] Done.")
