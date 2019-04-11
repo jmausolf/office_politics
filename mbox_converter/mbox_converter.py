@@ -48,6 +48,26 @@ def replace_links(link_text):
 	#return link
 
 
+def rm_history(message):
+	m = message
+
+	try:
+		m = m.split('From: ')[0]
+	except:
+		pass
+	try:
+		m = m.split('*From:*')[0]
+	except:
+		pass
+	try:
+		m = m.split('On ')[0]
+	except:
+		pass
+
+	return m
+
+
+
 def more_payloads(message):
 	body = ""
 	if message.is_multipart():
@@ -82,18 +102,10 @@ def more_payloads(message):
 	o = o.replace("\b'", '').replace("b'", '')
 	o = replace_unicode_literals(o)
 
-	#Add Spaces to From/Reply History
-	#TODO split on reply texts not caught
-	o = o.replace('From: ', "\r\nFrom: ")
-	o = o.replace('*From:*', "\r\nFrom: ")
-	o = o.replace('On ', "\r\nOn ")
-
+	#Remove Additional Reply History
+	o = rm_history(o)
 	o = '''{}'''.format(replace_links(o))
 
-
-	#soup = BeautifulSoup(o, "html5lib")
-	#[s.extract() for s in soup('style')]
-	#o = str(soup)
 
 	if len(o) > 20000:
 		return o[0:20000]
@@ -158,7 +170,7 @@ def get_message_id(message):
 
 
 def mbox_extractor(mboxfile, writer):
-	print("[*] extracting emails from mbox,: {}...".format(mboxfile))
+	print("[*] extracting emails from mbox: {}...".format(mboxfile))
 	for message in mailbox.mbox(mboxfile):
 			
 		from_name, from_email = get_sender(message)
