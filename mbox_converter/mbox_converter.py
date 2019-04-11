@@ -8,6 +8,7 @@ from glob import glob
 import pandas as pd
 from bs4 import BeautifulSoup
 from email_reply_parser import EmailReplyParser
+from profile_dict import *
 
 
 
@@ -234,49 +235,6 @@ def csv_from_mboxes(filename='mbox.csv'):
 ## and create a new row with certain properties
 ## to artificially create the 'sent' data
 
-def extract_failed_email(message):
-
-	#was a problem delivering your message to aliesch.sutton@lsccom.com.
-	#was a problem delivering your message to tara.huber@booz.com.
-
-	#Your message to ashley.straley@dsw.com couldn't be delivered.
-
-	#a temporary problem delivering your message to mchoo@rossstores.com. Gmail 
-
-	#Your message wasn't delivered to gege.thompson@pw.utc.com
-	#Your message to ekraft@skydrive3m.mail.onmicrosoft.com
-
-	#need to split after '. ' or ' '
-	email = None
-	key0 = 'your message to the following addresses: '
-	key1 = 'your message to '
-
-
-	#Try Key 0
-	try:
-		email = message.split(key0)[1].split(' ')[0]
-	except:
-		try:
-			email = message.split(key0)[1].split(' ')[0]
-		except:
-
-			#Try Key 1
-			try:
-				email = message.split(key1)[1].split('. ')[0]
-			except:
-				try:
-					email = message.split(key1)[1].split(' ')[0]
-				except:
-					pass
-	#else:
-	#	email is None
-	#	pass
-
-	if email is not None:
-		print(email)
-
-	return email
-
 
 def extract_email(message):
 	try:
@@ -290,12 +248,86 @@ def extract_email(message):
 			email = email[:-1]
 		else:
 			pass
-		print(email)
+		#print(email)
 		#print(email[-1:])
 
 	return email
 
-def modify_mbox_csv(filename='mbox.csv'):
+
+#bounce types seen
+#type 1: sent is True
+	#keep as is
+
+#type 2: sent is False
+	#extacted email exists != profile sender
+	#join these with sent mbox
+	#df1 = filter from bounces
+	#df2 = filter from sent
+	#join
+
+#other type is sent is False but equals profile email
+
+#append type 1 and type 2, need to keep unique to_email
+#join with protocol (deduped by to_email) to get a list of firms to resent
+#(after getting new emails/jobs)
+
+def get_disjoint_bounces(df_bounce):
+	pass
+
+
+def isprofile(email):
+
+	if email in profile_emails:
+		return True
+	else:
+		return False
+
+def filter_bounces_main(df):
+
+	print(profile_emails)
+
+	#Get Bounces DF
+	df = df.loc[(df['outcome'] == 'Bounce')].copy()
+	df['extracted_email'] = df['message'].apply(extract_email)
+	df['isprofile'] = df['extracted_email'].apply(isprofile)
+
+	#Get Type 1
+	type_1_crit = 	(
+						(df['outcome'] == 'Bounce') &
+						(df['sent'] == True)	
+
+					)
+
+	df_type_1 = df.loc[type_1_crit].copy()
+	df_type_1 = df_type_1.drop(['extracted_email', 'isprofile'], axis=1)
+	print(df_type_1)
+
+
+	#Get Type 2
+	type_2_crit = 	(
+						(df['outcome'] == 'Bounce') &
+						(df['sent'] == False) &
+						(df['isprofile'] == False) 
+
+					)
+	df_type_2 = df.loc[type_2_crit].copy().dropna()
+	df_type_2 = df_type_2.drop_duplicates(subset=['extracted_email'])
+
+	#TODO, left join df_type_2['extracted_email'] with sent items 
+
+	#df_type_2['extracted_email'] = df_type_2['message'].apply(extract_email)
+	print(df_type_2)
+
+	#Get Type 1
+	#type_1 = df.loc[(df[])]
+
+	#df['extracted_email'] = df['message'].apply(extract_email)
+	#print(dfb)
+	#df.to_csv('bounce_test.csv', index=False)
+	#pass	
+
+
+def modify_main_mbox_csv(filename='mbox.csv'):
 
 	df = pd.read_csv(filename)
 
@@ -305,7 +337,19 @@ def modify_mbox_csv(filename='mbox.csv'):
 	df['profile'], df['wave'], df['outcome'] = tmp[0], tmp[1], tmp[2]
 
 
-	#Parse Sent, Infer Received from Labels
+	#Parse Sent from Labels
+	df['sent'] = False
+	sent_crit = (df['labels'].str.contains(r'[sS]ent'))
+	df.loc[sent_crit, 'sent'] = True
+
+
+	#TODO
+	#Make method of callback cols
+
+
+	#TODO
+	#filter bounces with different protocols from types
+
 
 	print(df)
 	print(df.columns)
@@ -321,13 +365,9 @@ def modify_mbox_csv(filename='mbox.csv'):
 
 
 def modify_main():
-	df = modify_mbox_csv(args.filename)
+	df = modify_main_mbox_csv(args.filename)
 
-	dfb = df.loc[(df['outcome'] == 'Bounce')].copy()
-
-	dfb['emails'] = dfb['message'].apply(extract_email)
-	#print(dfb)
-	dfb.to_csv('bounce_test.csv', index=False)
+	filter_bounces_main(df)
 
 			
 if __name__=='__main__':
