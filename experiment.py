@@ -569,63 +569,6 @@ def deploy_emails(experiment_csv, delay=86400, version=None):
 	if version is None:
 
 		batch_datetime = get_date()
-<<<<<<< HEAD
-
-		s1 = time.time()
-		df = join_experiment_profiles_counter(experiment_csv)
-
-		infile = experiment_csv.split('protocols/')[1].split('.')[0]
-		ex_out = "logs/{0}_protocol_{1}_matched_output.csv".format(
-																batch_datetime,
-																infile)
-		df.to_csv(ex_out, index=False)
-
-		#Matched Pairs A
-		df_A = df.loc[(df['matched_pair']=='A')].copy()
-		deploy_matched_pairs_emails(df_A, experiment_csv, "A", batch_datetime)
-		e1 = time.time()
-
-		#Delay Before Sending Pair B
-		countdown(delay)
-
-		#Matched Pairs B
-		s2 = time.time()
-		df_B = df.loc[(df['matched_pair']=='B')].copy()
-		deploy_matched_pairs_emails(df_B, experiment_csv, "B", batch_datetime)
-		e2 = time.time()
-
-		display_time_elapsed(s1, e1, df_A.shape[0], "A")
-		display_time_elapsed(s2, e2, df_B.shape[0], "B")
-
-	else:
-		#Read in already generated matched protocol outfile
-		# :: experiment file but be the logs/date_time_protocol...
-		try:
-			f = experiment_csv.split('logs/')[1].split('_matched_output')[1]
-		except Exception as e:
-			print('[*] error: {}'.format(e))
-			print('[*] please ensure you have passed a matched log/output file...') 
-			sys.exit()
-
-
-		#Extract Batch Datetime from Matched Input File
-		batch_datetime = experiment_csv.split('_protocol_')[0].split('logs/')[1]
-		protocol = experiment_csv.split('_protocol_')[1].split('_matched_')[0]
-
-
-		#Check that Intended Experiment Has Not Already Run
-		experiment_log = "logs/{0}_protocol_{1}_results_pair_{2}.csv".format(
-												batch_datetime,
-												protocol,
-												version)
-		exists = os.path.isfile(experiment_log)
-		if exists:
-			print('[*] requested experiment already run...')
-			print('[*] exiting...')
-			sys.exit()
-		else:
-			pass
-=======
 
 		s1 = time.time()
 		df = join_experiment_profiles_counter(experiment_csv)
@@ -707,39 +650,9 @@ def deploy_emails(experiment_csv, delay=86400, version=None):
 		else:
 			print('[*] version must be either A or B....')
 			sys.exit()
->>>>>>> a55ac314a752f9a5b606dacba4b2340be71f91cb
-
-		#Load Matched Experiment Output File
-		df = pd.read_csv(experiment_csv)
-		print(df)
-
-		if version == 'A':
-
-<<<<<<< HEAD
-			#Matched Pairs A
-			s1 = time.time()
-			df_A = df.loc[(df['matched_pair']=='A')].copy()
-			deploy_matched_pairs_emails(df_A, experiment_csv, "A", batch_datetime)
-			e1 = time.time()
-			display_time_elapsed(s1, e1, df_A.shape[0], "A")
-
-		elif version == 'B':
-
-			#Matched Pairs B
-			s2 = time.time()
-			df_B = df.loc[(df['matched_pair']=='B')].copy()
-			deploy_matched_pairs_emails(df_B, experiment_csv, "B", batch_datetime)
-			e2 = time.time()
-			display_time_elapsed(s2, e2, df_B.shape[0], "B")
-
-		else:
-			print('[*] version must be either A or B....')
-			sys.exit()
 
 
 
-=======
->>>>>>> a55ac314a752f9a5b606dacba4b2340be71f91cb
 def start_experiment(protocol, n, delay, version):
 
 	#Start Message
@@ -776,29 +689,11 @@ single_matched_pair = True
 protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_P05RH_select_resend_matched_output_edit.csv'
 version = 'B'
 
-#Run Single Batch of Matched Output
-single_matched_pair = True
-protocol_matched_output = 'logs/2019-04-02-230731_protocol_experiment_test_matched_output.csv'
-version = 'B'
-
-#Run Single Batch of Matched Output
-single_matched_pair = True
-protocol_matched_output = 'logs/2019-04-02-230731_protocol_experiment_test_matched_output.csv'
-version = 'B'
-
 #Warning Second Delay
 n = 30
 
 #Set Delay Between Waves
-<<<<<<< HEAD
-<<<<<<< HEAD
 delay = 87500
-=======
-delay = 10
->>>>>>> a55ac314a752f9a5b606dacba4b2340be71f91cb
-=======
-delay = 10
->>>>>>> a55ac314a752f9a5b606dacba4b2340be71f91cb
 
 #Batch Delay
 batch_delay = 86400
