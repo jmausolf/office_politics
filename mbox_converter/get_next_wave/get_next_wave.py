@@ -32,30 +32,18 @@ def get_domain(email):
 
 def prepare_emails(protocol_file, bounces_file):
 
-
 	#Prepare Protocol
 	df_p = pd.read_csv(protocol_file)
 	df_p = df_p.drop_duplicates(['contact_email'])
-
-	#Lowercase emails
 	df_p['contact_email'] = df_p['contact_email'].str.lower()
-
-	#Add domain
 	df_p['domain'] = df_p['contact_email'].apply(get_domain)
 	print(df_p)
 
 	#Prepare Bounces
 	df_b = pd.read_csv(bounces_file)
-	#bounces.columns = ['contact_email', 'count']
-
-	#Lowercase emails
 	df_b['contact_email'] = df_b['bounce_email'].str.lower()
-
-	#Add domain
 	df_b['domain'] = df_b['contact_email'].apply(get_domain)
-	#df_b = df_b.drop_duplicates(['domain'])
 	print(df_b)
-	#pass
 
 	return df_p, df_b
 
@@ -70,7 +58,6 @@ base_protocol, bounces = prepare_emails(protocol_file, bounces_file)
 successful_emails = anti_join(base_protocol, bounces, 'domain')
 successful_emails.to_csv('successful_emails_W1.csv', index=False)
 print(successful_emails)
-print(successful_emails.columns)
 
 #Get Failed Emails
 failed_emails = anti_join(base_protocol, successful_emails, 'contact_email')
@@ -90,4 +77,13 @@ unfound_bounces = anti_join(bounces, failed_emails, 'domain')
 ########################################################
 
 
+master_cid_file = "master_companies_W1.csv"
+master_cid = pd.read_csv(master_cid_file)
+print(master_cid.shape)
 
+new_master_cid = anti_join(master_cid, successful_emails, 'list_id')
+print(new_master_cid)
+new_master_cid.to_csv('master_companies_W2.csv')
+
+#top_priority_cid = master_cid.merge(failed_emails, how='inner', on='list_id')
+#print(top_priority_cid)
