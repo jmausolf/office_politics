@@ -116,6 +116,13 @@ def scroll_page(n, delay=3):
 def find_css(element, css):
     return element.find_element_by_css_selector(css)
 
+def get_alt_location(location_post):
+    l = location_post
+    try:
+        return find_css(l, "span[class='location']").text
+    except:
+        return find_css(l, "div[class='location']").text        
+
 
 def load_job_tiles(counter, job_key, job_type, 
                    company, list_id, filestem='indeed_jobs'):
@@ -127,12 +134,12 @@ def load_job_tiles(counter, job_key, job_type,
 
     #Job Posts
     #Source 1: Main Posts
-    pat1 = "//div[@class='jobsearch-SerpJobCard   row  result clickcard']"
+    pat1 = "//div[@class='jobsearch-SerpJobCard unifiedRow row result clickcard']"
     main_post_loc = "xpath", pat1
     main_posts = d.find_elements(*main_post_loc)
 
     #Source 2: Last Post / First Post (If Only One Post Exists)
-    p2_class = 'jobsearch-SerpJobCard lastRow  row  result clickcard'
+    p2_class = 'jobsearch-SerpJobCard unifiedRow row result clickcard'
     pat2 = "//div[@class='{}']".format(p2_class)
     last_post_loc = "xpath", pat2
     last_post = d.find_elements(*last_post_loc)
@@ -141,7 +148,7 @@ def load_job_tiles(counter, job_key, job_type,
     posts1 = main_posts+last_post
 
     #Job Names Main
-    job_pat1 = "a[class='turnstileLink']"
+    job_pat1 = "a[class='jobtitle turnstileLink ']"
     job_names1 = [find_css(j, job_pat1).get_attribute('title') for j in posts1]
 
 
@@ -150,18 +157,18 @@ def load_job_tiles(counter, job_key, job_type,
     ##--------------------------
     
     #Alt Source 1: Main
-    pat3 = "//div[@class='jobsearch-SerpJobCard row  result clickcard']"
+    pat3 = "//div[@class='jobsearch-SerpJobCard unifiedRow row result clickcard']"
     alt_main_loc = "xpath", pat3
     alt_main = d.find_elements(*alt_main_loc)
 
     #Alt Source 2: Last
-    pat4 = "//div[@class='jobsearch-SerpJobCard row sjlast result clickcard']"
+    pat4 = "//div[@class='jobsearch-SerpJobCard unifiedRow row result clickcard']"
     alt_last_loc = "xpath", pat4
     alt_last = d.find_elements(*alt_last_loc)
 
     posts2 = alt_main+alt_last
 
-    job_pat2 = "a[class='jobtitle turnstileLink']"
+    job_pat2 = "a[class='jobtitle turnstileLink ']"
     job_names2 = [find_css(j, job_pat2).get_attribute('title') for j in posts2]
 
     #Combined Jobs
@@ -174,11 +181,11 @@ def load_job_tiles(counter, job_key, job_type,
 
     # Primary Job Companies and Locations
     companies1 = [find_css(c, "span[class='company']").text for c in posts1]
-    locations1 = [find_css(l, "span[class='location']").text for l in posts1]
+    locations1 = [get_alt_location(l) for l in posts1]
 
     # Sponsored Job Companies and Locations
     companies2 = [find_css(c, "span[class='company']").text for c in posts2]
-    locations2 = [find_css(l, "div[class='location']").text for l in posts2]
+    locations2 = [get_alt_location(l) for l in posts2]
 
     companies = companies1+companies2
     locations = locations1+locations2
