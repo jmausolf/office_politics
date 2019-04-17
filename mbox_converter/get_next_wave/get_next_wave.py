@@ -83,7 +83,7 @@ print(master_cid.shape)
 
 new_master_cid = anti_join(master_cid, successful_emails, 'list_id')
 print(new_master_cid)
-new_master_cid.to_csv('master_companies_W2.csv')
+new_master_cid.to_csv('master_companies_W2.csv', index=False)
 
 #top_priority_cid = master_cid.merge(failed_emails, how='inner', on='list_id')
 #print(top_priority_cid)
