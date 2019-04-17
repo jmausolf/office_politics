@@ -681,18 +681,19 @@ def start_experiment(protocol, n, delay, version):
 
 
 #Set Experiment Protocol File
-experimental_protocols = ["protocols/experiment_test.csv"]
+experimental_protocols = ["protocols/experiment_2019-04-02-001439.csv"]
 
 #Run Single Batch of Matched Output
 single_matched_pair = True
-protocol_matched_output = 'logs/2019-04-02-230731_protocol_experiment_test_matched_output.csv'
+#protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_matched_output.csv'
+protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_P05RH_select_resend_matched_output_edit.csv'
 version = 'B'
 
 #Warning Second Delay
 n = 30
 
 #Set Delay Between Waves
-delay = 10
+delay = 87500
 
 #Batch Delay
 batch_delay = 86400
