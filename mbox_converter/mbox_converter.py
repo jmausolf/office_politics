@@ -144,8 +144,12 @@ def get_recipient(message):
 		to_name = rm_email_punct(terms[0])
 		to_email = rm_email_punct(terms[1])
 	except:
-		to_email = rm_email_punct(to_text)
-		to_name = to_email
+		try:
+			to_email = rm_email_punct(to_text)
+			to_name = to_email
+		except:
+			to_email = to_text
+			to_name = to_email
 
 	return to_name, to_email
 
@@ -163,8 +167,12 @@ def get_sender(message):
 		from_name = rm_email_punct(terms[0])
 		from_email = rm_email_punct(terms[1])
 	except:
-		from_email = rm_email_punct(from_text)
-		from_name = from_email
+		try:
+			from_email = rm_email_punct(from_text)
+			from_name = from_email
+		except:
+			from_email = from_text
+			from_name = from_email
 
 	return from_name, from_email
 
@@ -286,10 +294,15 @@ def filter_bounces_main(df):
 
 	print(profile_emails)
 
+	#Filter Profile
+	#df = df.loc[(df['profile'] == 'P04NL')]
+
 	#Get Bounces DF
 	df = df.loc[(df['outcome'] == 'Bounce')].copy()
 	df['extracted_email'] = df['message'].apply(extract_email)
 	df['isprofile'] = df['extracted_email'].apply(isprofile)
+
+	df.to_csv("bounce_test1.csv")
 
 	#Get Type 1
 	type_1_crit = 	(
@@ -301,7 +314,6 @@ def filter_bounces_main(df):
 	df_type_1 = df.loc[type_1_crit].copy()
 	df_type_1 = df_type_1.drop(['extracted_email', 'isprofile'], axis=1)
 	df_type_1['bounce_email'] = df_type_1['to_email']
-	print(df_type_1)
 	bounce_1 = df_type_1['bounce_email']
 
 
@@ -317,26 +329,34 @@ def filter_bounces_main(df):
 	df_type_2['bounce_email'] = df_type_2['extracted_email']
 	bounce_2 = df_type_2['bounce_email']
 
-	#TODO, left join df_type_2['extracted_email'] with sent items 
 
-	#df_type_2['extracted_email'] = df_type_2['message'].apply(extract_email)
-	print(df_type_2)
-	bounces = pd.concat([bounce_1, bounce_2]).sort_values()
+	#Get Type 3
+	type_3_crit = 	(
+						(df['outcome'] == 'Bounce') &
+						(df['sent'] == False) &
+						(df['isprofile'] == False) 
+
+					)
+	df_type_3 = df.loc[type_3_crit].copy().dropna()
+	df_type_3 = df_type_3
+	df_type_3['bounce_email'] = df_type_3['from_email']
+	bounce_3 = df_type_3['bounce_email']
+
+
+	#Append Bounce Type Emails
+	bounces = pd.concat([bounce_1, bounce_2, bounce_3]).sort_values().to_frame()
+	gb = ['bounce_email']
+	bounces['count'] = bounces.groupby(gb)['bounce_email'].transform('count')
+	bounces = bounces.sort_values(['count'])
 	bounces = bounces.drop_duplicates()
+
+	#Remove Profile Emails and Save
+	bounces['isprofile'] = bounces['bounce_email'].apply(isprofile)
+	bounces = bounces.loc[(bounces['isprofile'] == False)]
+	bounces.drop(['isprofile'], axis=1, inplace=True)
+	bounces.to_csv("bounce_emails_W1.csv", index=False)
 	print(bounces)
-	print(bounces.shape)
 
-
-
-	#Email Test
-	#bounce_emails = 
-	#Get Type 1
-	#type_1 = df.loc[(df[])]
-
-	#df['extracted_email'] = df['message'].apply(extract_email)
-	#print(dfb)
-	#df.to_csv('bounce_test.csv', index=False)
-	#pass	
 
 
 def modify_main_mbox_csv(filename='mbox.csv'):
