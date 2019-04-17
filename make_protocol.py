@@ -425,7 +425,7 @@ def main(employers,
 
 	#Store Detailed File in Logs
 	emp = details[0]
-	log_exp_details = emp.to_csv(log)
+	log_exp_details = emp.to_csv(log, index=False)
 
 
 	#Remove Default Columns
