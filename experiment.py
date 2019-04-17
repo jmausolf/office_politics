@@ -689,11 +689,20 @@ single_matched_pair = True
 protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_P05RH_select_resend_matched_output_edit.csv'
 version = 'B'
 
+#Run Single Batch of Matched Output
+single_matched_pair = True
+protocol_matched_output = 'logs/2019-04-02-230731_protocol_experiment_test_matched_output.csv'
+version = 'B'
+
 #Warning Second Delay
 n = 30
 
 #Set Delay Between Waves
+<<<<<<< HEAD
 delay = 87500
+=======
+delay = 10
+>>>>>>> a55ac314a752f9a5b606dacba4b2340be71f91cb
 
 #Batch Delay
 batch_delay = 86400
