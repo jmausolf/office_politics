@@ -96,6 +96,11 @@ def combine_emp_keys(outfile_tail='_ranked_data.csv',
 	cols = ['cid', 'list_id', 'company', 'position', 'office', 
 			'office_state', 'job_type', 'filename', 'file_rank']
 	df.columns = cols
+
+
+	# Keep Only Companies in Current Master Companies
+	mc = pd.read_csv('master_companies.csv')['list_id'].to_frame()
+	df = df.merge(mc, how='inner', on='list_id')
 	print(df)
 
 	#Save Full File
