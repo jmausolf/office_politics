@@ -123,7 +123,7 @@ def select_ga(row, count):
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
-		df = ga.ix[rows]
+		df = ga.loc[rows]
 
 		#Drop Selection from GA to Avoid Selection for Pair 2
 		ga_selection = df['ga_sid'].values.tolist()[0]
@@ -165,7 +165,7 @@ def select_ga(row, count):
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ga.index.values, 1)
-		df = ga.ix[rows]
+		df = ga.loc[rows]
 
 		#Return Results
 		df = df.drop(['region', 'job_type', 'prestige'], axis=1)
@@ -194,7 +194,7 @@ def select_ug(row, count):
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ug.index.values, 1)
-		df = ug.ix[rows]
+		df = ug.loc[rows]
 
 		#Drop Selection from UG to Avoid Selection for Pair 2
 		ug_selection = df['ug_sid'].values.tolist()[0]
@@ -219,7 +219,7 @@ def select_ug(row, count):
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(ug.index.values, 1)
-		df = ug.ix[rows]
+		df = ug.loc[rows]
 
 		#Return Results
 		df = df.drop(['region', 'profile', 'sid'], axis=1)
@@ -243,7 +243,7 @@ def internships_general(job_type, prestige, company, count):
 
 		#Random Selection of Internships Meeting Criteria
 		rows = np.random.choice(int_df.index.values, 2, replace=False)
-		df = int_df.ix[rows]
+		df = int_df.loc[rows]
 		#Drop Selections from Internship to Avoid Selection for Pair 2
 		int_selection = df['int_id'].values.tolist()
 		tmp = intf[((intf.int_id != int_selection[0]) &
@@ -269,7 +269,7 @@ def internships_general(job_type, prestige, company, count):
 
 		#Random Selection of Schools Meeting Criteria
 		rows = np.random.choice(int_df.index.values, 2, replace=False)
-		df = int_df.ix[rows]
+		df = int_df.loc[rows]
 
 
 		#Return Results
@@ -300,12 +300,12 @@ def internships_ordered(job_type, prestige, company, count):
 		#First Internship
 		int_1 = int_df.loc[(int_df['int_type']=='first')]
 		i1 = np.random.choice(int_1.index.values, 1, replace=False)
-		df_1 = int_1.ix[i1]
+		df_1 = int_1.loc[i1]
 
 		#Second Internship
 		int_2 = int_df.loc[(int_df['int_type']=='second')]
 		i2 = np.random.choice(int_2.index.values, 1, replace=False)
-		df_2 = int_2.ix[i2]
+		df_2 = int_2.loc[i2]
 
 		#Both Internships
 		df = pd.concat([df_1, df_2], axis=0)
@@ -336,12 +336,12 @@ def internships_ordered(job_type, prestige, company, count):
 		#First Internship
 		int_1 = int_df.loc[(int_df['int_type']=='first')]
 		i1 = np.random.choice(int_1.index.values, 1, replace=False)
-		df_1 = int_1.ix[i1]
+		df_1 = int_1.loc[i1]
 
 		#Second Internship
 		int_2 = int_df.loc[(int_df['int_type']=='second')]
 		i2 = np.random.choice(int_2.index.values, 1, replace=False)
-		df_2 = int_2.ix[i2]
+		df_2 = int_2.loc[i2]
 
 		#Both Internships
 		df = pd.concat([df_1, df_2], axis=0)
@@ -681,19 +681,21 @@ def start_experiment(protocol, n, delay, version):
 
 
 #Set Experiment Protocol File
-experimental_protocols = ["protocols/experiment_2019-04-02-001439.csv"]
+#experimental_protocols = ["protocols/experiment_2019-04-02-001439.csv"]
+experimental_protocols = ["protocols/experiment_test.csv"]
 
 #Run Single Batch of Matched Output
-single_matched_pair = True
+single_matched_pair = False
 #protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_matched_output.csv'
-protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_P05RH_select_resend_matched_output_edit.csv'
+#protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_P05RH_select_resend_matched_output_edit.csv'
 version = 'B'
 
 #Warning Second Delay
-n = 30
+n = 3
 
 #Set Delay Between Waves
-delay = 87500
+#delay = 87500
+delay = 20
 
 #Batch Delay
 batch_delay = 86400
