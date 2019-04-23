@@ -681,20 +681,34 @@ def start_experiment(protocol, n, delay, version):
 
 
 #Set Experiment Protocol File
+
+##################################
+## Main Protocol
+
+#Wave 1
 #experimental_protocols = ["protocols/experiment_2019-04-02-001439.csv"]
+
+#Wave 2
+#experimental_protocols = ["protocols/experiment_2019-04-23-014656.csv"]
 experimental_protocols = ["protocols/experiment_test.csv"]
 
 #Run Single Batch of Matched Output
 single_matched_pair = False
+
+
+##################################
+## Second Pair Only
+
+#Wave 1 - Second Pair Efforts
 #protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_matched_output.csv'
 #protocol_matched_output = 'logs/2019-04-02-100810_protocol_experiment_2019-04-02-001439_P05RH_select_resend_matched_output_edit.csv'
 version = 'B'
 
 #Warning Second Delay
-n = 3
+n = 30
 
 #Set Delay Between Waves
-#delay = 87500
+#delay = 172300
 delay = 20
 
 #Batch Delay

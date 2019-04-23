@@ -121,7 +121,7 @@ def check_single_protocol(df_file):
 
 
 w1 = "../protocols/experiment_2019-04-02-001439.csv"
-w2 = "../protocols/experiment_2019-04-23-000703.csv"
+w2 = "../protocols/experiment_2019-04-23-014656.csv"
 compare_protocol_waves(w1, w2)
 
 #TODO Consider Reclassing All Those In a Single Protocol
