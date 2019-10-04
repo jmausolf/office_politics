@@ -370,10 +370,20 @@ def modify_main_mbox_csv(filename='mbox.csv'):
 
 
 	#Parse Sent from Labels
-	df['sent'] = False
-	sent_crit = (df['labels'].str.contains(r'[sS]ent'))
-	df.loc[sent_crit, 'sent'] = True
+	#df['sent'] = False
+	#sent_crit = (df['labels'].str.contains(r'[sS]ent'))
+	#df.loc[sent_crit, 'sent'] = True
 
+	#Determine if Profile Sent Email
+	df['sent'] = df['from_email'].apply(profile_sender, profiles_list=profile_emails)
+
+	#Remove Sent Emails
+	df = df.loc[df['sent'] != True]
+	df = df.loc[df['outcome'] != 'Sent']
+
+
+	#Create an Mbox Email for Matching with Protocol
+	df['mbox_email'] = df['mbox'].apply(ret_mbox_email)
 
 	#TODO
 	#Make method of callback cols
