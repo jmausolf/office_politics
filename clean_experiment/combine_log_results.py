@@ -198,19 +198,30 @@ def combine_result_files(wave_pairs):
 
 	#Sort and Save Combined File
 	results.sort_values(by=['index_wave', 'wave_pair'], inplace=True)
-	results.to_csv("combined_experimental_wave_results.csv", index=False)	
+	results.to_csv("complete_experimental_wave_results.csv", index=False)	
 
 	print(results.columns)
 	print(results)
 	return results
 
 
-combine_result_files(wave_pairs)
+df = combine_result_files(wave_pairs)
 
 
 # Step 3: Additional Cleaning
 
+## keep only the non-error results (these emails never sent on gmail side)
+#df.loc[df['metadata'].str.contains]
 
+def clean_results(df):
+
+	print(df.shape)
+	df = df.loc[df['metadata'].str.contains('metadata::')]
+	print(df.shape)
+
+	df.to_csv("cleaned_experimental_wave_results.csv", index=False)
+
+clean_results(df)
 
 #Import Waves and Add Wave
 
