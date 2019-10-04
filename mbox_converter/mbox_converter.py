@@ -392,6 +392,10 @@ def modify_main_mbox_csv(filename='mbox.csv'):
 	#TODO
 	#filter bounces with different protocols from types
 
+	#TODO 
+	#clean fron email col
+	df['from_email_clean'] = df['from_email'].str.extract(r'([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)')
+
 
 	print(df)
 	print(df.columns)
