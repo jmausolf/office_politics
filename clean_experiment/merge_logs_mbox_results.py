@@ -26,18 +26,51 @@ print(ex.shape)
 print(ex.columns)
 
 
-#Step 1: First Pass Merge
-df = mb.merge(ex, how='left',
-			  left_on=['mbox_email', 'from_email_clean'],
-			  right_on=['gmail_user', 'contact_email'])
-print(df)
+#Step A: First Pass Merge
+dfA = mb.merge(ex, how='left',
+			  left_on=['profile', 'wave', 'mbox_email', 'from_email_clean'],
+			  right_on=['profile', 'wave', 'gmail_user', 'contact_email'])
+
+
+
+#Step B: User Merge 
+#(same user, different full email, e.g.
+# k.linda@jpmorganchase.com vs. k.linda@chase.com)
+dfB = mb.merge(ex, how='left',
+			  left_on=['profile', 'wave', 'mbox_email', 'from_user'],
+			  right_on=['profile', 'wave', 'gmail_user', 'contact_user'])
+
+
+#Step C: Domain Merge
+dfC = mb.merge(ex, how='left',
+			  left_on=['profile', 'wave', 'mbox_email', 'from_domain'],
+			  right_on=['profile', 'wave', 'gmail_user', 'contact_domain'])
+
+
+
+#Step D: Grasshopper appid, tbd
+
+## Append the Results and Dedupe
+
+df = pd.concat([dfA, dfB, dfC], axis=0).reset_index(drop=True)
+
+#Drop Pure Duplicates
+df = df.drop_duplicates()
+
+#Separate Data Into Those with AppID and Those Still Missing
+df_app = df.dropna(subset=['index_wave'])
+print(df_app.shape)
+
+df_app.to_csv('found_appid.csv', index=False)
+
+#TODO
+#antijoin df_app with mb to get mbox data still missing app id
+
+
+print(df.shape)
+#print(df.isna().sum())
 
 df.to_csv('test.csv', index=False)
-
-#Step 2: Domain Merge
-
-#Step 3: Grasshopper appid, tbd
-
 
 ## Phase 2: Take MBOX Data Linked to App ID's and spread into new columns
 ##(for response type: direct, third-party reply, phone reply)

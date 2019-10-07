@@ -58,6 +58,11 @@ def get_domain(email, simple=True):
 		return domain_base
 
 
+def get_user(email):
+	user = email.split('@')[0]
+	return user
+
+
 def remove_punct(text):
 	tmp = re.sub(r'[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]', "", text)
 	return re.sub(r'\s{2,}', "", tmp)
@@ -177,9 +182,10 @@ def prep_results(results_file, wave_pair):
 
 	#Convert the Index to a Sortable Wave Index to Sort by Pair and Wave
 	r['index'] = r.apply(make_id, axis=1)
-	r['wave_pair'] = wave_pair
-	r['wave'] = wave_pair.split('_')[0]
-	r['index_wave'] = r['wave'] + '_' + r['index'] 
+	r['wave_pair'] = wave_pair.upper()
+	r['wave'] = wave_pair.split('_')[0].upper()
+	r['index_wave'] = r['wave'] + '_' + r['index']
+	r['index_wave'] = r['index_wave'].str.upper()
 
 	#Ensure Emails Lowercase
 	r['contact_email'] = r['contact_email'].str.lower()
@@ -187,8 +193,13 @@ def prep_results(results_file, wave_pair):
 	#Add Other Data
 	r['protocol_ts'] = results_file.split('experiment_')[1].split('_')[0]
 	r['output_ts'] = results_file.split('_protocol')[0].split('logs/')[1]
-	r['domain'] = r['contact_email'].apply(get_domain)
-	r['full_domain'] = r['contact_email'].apply(get_domain, simple=False)
+
+	#Add Contact Domain and User
+	r['contact_domain'] = r['contact_email'].apply(get_domain)
+	r['contact_full_domain'] = r['contact_email'].apply(get_domain, simple=False)
+	r['contact_user'] = r['contact_email'].apply(get_user)
+
+	#TODO add email user, e.g. something@domain
 
 	return r
 
@@ -219,6 +230,10 @@ print(df)
 
 def clean_results(df):
 
+
+
+
+	#Keep Only Sent Emails (Drop Errors)
 	print(df.shape)
 	df = df.loc[df['metadata'].str.contains('metadata::')]
 	print(df.shape)
