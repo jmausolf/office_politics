@@ -395,7 +395,7 @@ def modify_main_mbox_csv(filename='mbox.csv'):
 	#TODO 
 	#clean fron email col
 	df['from_email_clean'] = df['from_email'].str.extract(r'([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)')
-
+	df['from_email_clean'] = df['from_email_clean'].str.lower()
 
 	print(df)
 	print(df.columns)

@@ -22,7 +22,8 @@ mbox_dict = {
 'P05RH_W1A': 'matthewzchartman@gmail.com',
 'P05RH_W2': 'matthewzchartman@gmail.com',
 'P05RH_W1B': 'matthewzrhartman@gmail.com',
-'P06RL': 'codyhtwalsh@gmail.com'
+'P06RL_W1': 'codyhtwalsh@gmail.com',
+'P06RL_W2': 'codyhtwalsh@gmail.com'
 }
 
 
@@ -38,6 +39,7 @@ def mbox_email(mbox_key):
 
 def ret_mbox_email(mbox_name):
 	mbox_key = mbox_name.split('-')[0]
+	mbox_key = mbox_key.split('.mbox')[0]
 	to_email = mbox_email(mbox_key)
 	return to_email
 

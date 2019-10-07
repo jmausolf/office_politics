@@ -181,6 +181,9 @@ def prep_results(results_file, wave_pair):
 	r['wave'] = wave_pair.split('_')[0]
 	r['index_wave'] = r['wave'] + '_' + r['index'] 
 
+	#Ensure Emails Lowercase
+	r['contact_email'] = r['contact_email'].str.lower()
+
 	#Add Other Data
 	r['protocol_ts'] = results_file.split('experiment_')[1].split('_')[0]
 	r['output_ts'] = results_file.split('_protocol')[0].split('logs/')[1]
@@ -206,6 +209,7 @@ def combine_result_files(wave_pairs):
 
 
 df = combine_result_files(wave_pairs)
+print(df)
 
 
 # Step 3: Additional Cleaning
@@ -222,6 +226,8 @@ def clean_results(df):
 	df.to_csv("cleaned_experimental_wave_results.csv", index=False)
 
 clean_results(df)
+
+
 
 #Import Waves and Add Wave
 
