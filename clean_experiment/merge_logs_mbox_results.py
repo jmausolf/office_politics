@@ -147,6 +147,8 @@ df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_mb'] == True]
 print(df_app_dupes)
 
 
+
+
 #df_app_dupes = df_app
 #df_app_dupes['dupe_appid'] = df_app_dupes.duplicated(subset=['index_wave'], keep=False)
 #df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_appid'] == True]
@@ -167,6 +169,20 @@ missing_emails.to_csv('missing_emails.csv', index=False)
 
 #missing post rm wave = 135
 #found post rm wave = 901
+
+#Current missing is manageable, some dupes and lots of grasshopper
+#TODO prog a method to incorporate manual keep, reject and app key
+
+
+#Also #TODO
+#currently all bounces are dropped, but will need bounces later
+#because I need to mark all ones that sent but did not bounce as 
+#no-replies. I don't want to label bounces no-replies, just drop from analysis
+
+#Also TODO, need a pair ID. For example, I want to ensure I end up with complete pairs
+#not partial pairs if one half bounced and the other did not
+#rm if count (post spread) for pair is != 2
+
 
 #print(df.shape)
 #print(df.columns)
