@@ -45,57 +45,83 @@ def make_id(row, prefix):
 ## - domain replies (cc, third party)
 ## - grasshopper
 
-#Step 0: Load Data
+#Step 0A: Load Main Data
 mb = pd.read_csv("mbox_analysis.csv")
 ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 
-#Remove Bounces
-mb = mb.loc[mb['outcome'] != 'Bounce']
+print(mb.shape)
+#print(mb.columns)
+#print(mb)
+print(ex.shape)
+#print(ex.columns)
+
+#Step 0B: Load Bounce Linkages
+dfb = pd.read_csv("extracted_bounce_emails.csv")
+bf = dfb[['mb_id', 'extracted_email']]
+#print(bf)
+
 
 # Add MB Index
 mb = mb.reset_index()
 mb['mb_id'] = mb.apply(make_id, prefix='MB_', axis=1)
 mb = mb.drop(columns=['wave'])
 
-print(mb.shape)
-print(mb.columns)
+# Add MB Bounce Linkage Column and Merge with Ex Log
+mb = mb.merge(bf, how='left')
+
+#Step A: Merge Bounced Emails
+dfA = mb.merge(ex, how='left',
+			  left_on=['profile', 'mbox_email', 'extracted_email'],
+			  right_on=['profile', 'gmail_user', 'contact_email'])
+dfA['merge_match_type'] = 'bounce_email_match'
+dfA = dfA.dropna(subset=['index_wave'])
+mb_rem = anti_join(mb, dfA, key='mb_id')
+print("MB A: remaining:", mb_rem.shape)
+
+
+#Remove Bounces
+#mb = mb.loc[mb['outcome'] != 'Bounce']
+
+
+#print(mb.shape)
+#print(mb.columns)
 #print(mb)
 #print(ex.shape)
 #print(ex.columns)
 
 #TODO add match type cols
 
-#Step A: First Pass Merge
-dfA = mb.merge(ex, how='left',
+#Step B: First Pass Merge
+dfB = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_email_clean'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
-dfA['merge_match_type'] = 'full_email_match'
-dfA = dfA.dropna(subset=['index_wave'])
-mb_rem = anti_join(mb, dfA, key='mb_id')
-print("MB A: remaining:", mb_rem.shape)
-
-
-#Step B: User Merge 
-#(same user, different full email, e.g.
-# k.linda@jpmorganchase.com vs. k.linda@chase.com)
-dfB = mb_rem.merge(ex, how='left',
-			  left_on=['profile', 'mbox_email', 'from_user'],
-			  right_on=['profile', 'gmail_user', 'contact_user'])
-dfB['merge_match_type'] = 'username_match'
+dfB['merge_match_type'] = 'full_email_match'
 dfB = dfB.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb_rem, dfB, key='mb_id')
 print("MB B: remaining:", mb_rem.shape)
 
 
-
-#Step C: Domain Merge
+#Step C: User Merge 
+#(same user, different full email, e.g.
+# k.linda@jpmorganchase.com vs. k.linda@chase.com)
 dfC = mb_rem.merge(ex, how='left',
-			  left_on=['profile', 'mbox_email', 'from_domain'],
-			  right_on=['profile', 'gmail_user', 'contact_domain'])
-dfC['merge_match_type'] = 'domain_match'
+			  left_on=['profile', 'mbox_email', 'from_user'],
+			  right_on=['profile', 'gmail_user', 'contact_user'])
+dfC['merge_match_type'] = 'username_match'
 dfC = dfC.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb_rem, dfC, key='mb_id')
 print("MB C: remaining:", mb_rem.shape)
+
+
+
+#Step D: Domain Merge
+dfD = mb_rem.merge(ex, how='left',
+			  left_on=['profile', 'mbox_email', 'from_domain'],
+			  right_on=['profile', 'gmail_user', 'contact_domain'])
+dfD['merge_match_type'] = 'domain_match'
+dfD = dfD.dropna(subset=['index_wave'])
+mb_rem = anti_join(mb_rem, dfD, key='mb_id')
+print("MB D: remaining:", mb_rem.shape)
 
 
 
@@ -129,7 +155,7 @@ print("MB C: remaining:", mb_rem.shape)
 
 ## Append the Results and Dedupe
 
-df = pd.concat([dfA, dfB, dfC], axis=0).reset_index(drop=True)
+df = pd.concat([dfA, dfB, dfC, dfD], axis=0).reset_index(drop=True)
 
 #Drop Pure Duplicates
 df = df.drop_duplicates()
@@ -144,7 +170,7 @@ df_app_dupes = df_app
 df_app_dupes = df_app_dupes.drop_duplicates(subset=['mb_id', 'index_wave'])
 df_app_dupes['dupe_mb'] = df_app_dupes.duplicated(subset=['mb_id'], keep=False)
 df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_mb'] == True]
-print(df_app_dupes)
+print(df_app_dupes.shape)
 
 
 
@@ -160,7 +186,7 @@ df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 #antijoin df_app with mb to get mbox data still missing app id
 #found_
 missing_emails = anti_join(mb, df_app, 'mb_id')
-print(missing_emails)
+#print(missing_emails)
 print(missing_emails.shape)
 missing_emails.to_csv('missing_emails.csv', index=False)
 
