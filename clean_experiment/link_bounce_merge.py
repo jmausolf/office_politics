@@ -33,31 +33,6 @@ def make_id(row, prefix):
 	return index_to_n(index, prefix)
 
 
-
-#Step 0: Load Data
-mb = pd.read_csv("mbox_analysis.csv")
-ex = pd.read_csv("cleaned_experimental_wave_results.csv")
-
-# Add MB Index
-mb = mb.reset_index()
-mb['mb_id'] = mb.apply(make_id, prefix='MB_', axis=1)
-mb = mb.drop(columns=['wave'])
-
-#Goals of this file
-#1. isolate true bounces / other (other has grasshopper and some bounce)
-#2. extract email from bounce to merge
-#3. drop mbox id's with these features
-
-
-#Isolate Bounces
-mb = mb.loc[mb['outcome'].isin(['Bounce', 'Other'])]
-#print(mb.shape)
-
-#Drop Grasshopper Voicemails 
-mb = mb.loc[~mb['from_email'].str.contains('grasshopper')]
-print(mb.shape)
-#print(mb)
-
 def extract_email(message):
 	try:
 		match = re.search(r'[\w\.-]+@[\w\.-]+', message)
@@ -202,11 +177,31 @@ def fill_bounce_email_legit(row):
 		return None
 
 
+#Load Data
+def load_bounce_data():
 
+	#Step 0: Load Data
+	mb = pd.read_csv("mbox_analysis.csv")
+	ex = pd.read_csv("cleaned_experimental_wave_results.csv")
+
+	# Add MB Index
+	mb = mb.reset_index()
+	mb['mb_id'] = mb.apply(make_id, prefix='MB_', axis=1)
+	mb = mb.drop(columns=['wave'])
+
+	#Isolate Bounces
+	mb = mb.loc[mb['outcome'].isin(['Bounce', 'Other'])]
+	#print(mb.shape)
+
+	#Drop Grasshopper Voicemails 
+	mb = mb.loc[~mb['from_email'].str.contains('grasshopper')]
+	print(mb.shape)
+	#print(mb)
+	return mb, ex
 
 
 #Extract Bounce Emails
-def filter_bounces_merge(df):
+def link_bounces_merge(df):
 
 	#Get Bounces DF
 	df['extracted_email'] = df['message'].apply(extract_email)
@@ -257,7 +252,7 @@ def filter_bounces_merge(df):
 	dfb = pd.concat([df1, df2, df3, df4, df5, df_m])
 	dfb['isprofile'] = dfb['extracted_email'].apply(isprofile)
 
-	dfb.to_csv("extracted_bounce_emails.csv")
+	dfb.to_csv("extracted_bounce_emails.csv", index=False)
 	print(dfb.shape)
 	#print(dfb.columns)
 
@@ -267,8 +262,11 @@ def filter_bounces_merge(df):
 
 	#see if bounces appear in found id's, if so, drop pair or no?
 
-filter_bounces_merge(mb)
+
 #print(ex.columns)
 
+if __name__=='__main__':
+	mb, ex = load_bounce_data()
+	link_bounces_merge(mb)
 
 

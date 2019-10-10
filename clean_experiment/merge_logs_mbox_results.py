@@ -58,6 +58,9 @@ print(ex.shape)
 #Step 0B: Load Bounce Linkages
 dfb = pd.read_csv("extracted_bounce_emails.csv")
 bf = dfb[['mb_id', 'extracted_email']]
+
+dfm = pd.read_csv("linked_missing_emails.csv")
+me = dfm[['mb_id', 'missing_email']]
 #print(bf)
 
 
@@ -68,6 +71,7 @@ mb = mb.drop(columns=['wave'])
 
 # Add MB Bounce Linkage Column and Merge with Ex Log
 mb = mb.merge(bf, how='left')
+mb = mb.merge(me, how='left')
 
 #Step A: Merge Bounced Emails
 dfA = mb.merge(ex, how='left',
@@ -78,18 +82,6 @@ dfA = dfA.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb, dfA, key='mb_id')
 print("MB A: remaining:", mb_rem.shape)
 
-
-#Remove Bounces
-#mb = mb.loc[mb['outcome'] != 'Bounce']
-
-
-#print(mb.shape)
-#print(mb.columns)
-#print(mb)
-#print(ex.shape)
-#print(ex.columns)
-
-#TODO add match type cols
 
 #Step B: First Pass Merge
 dfB = mb_rem.merge(ex, how='left',
@@ -124,6 +116,22 @@ mb_rem = anti_join(mb_rem, dfD, key='mb_id')
 print("MB D: remaining:", mb_rem.shape)
 
 
+
+#TODO: Try Running a Linking Script Using Bounce Links Methods
+#On Remaining Missing Data
+
+#Step E: Remaining Missing Attempt
+dfE = mb_rem.merge(ex, how='left',
+			  left_on=['profile', 'mbox_email', 'missing_email'],
+			  right_on=['profile', 'gmail_user', 'contact_email'])
+dfE['merge_match_type'] = 'domain_match'
+dfE = dfE.dropna(subset=['index_wave'])
+mb_rem = anti_join(mb_rem, dfE, key='mb_id')
+print("MB E: remaining:", mb_rem.shape)
+
+
+
+#Manual Search After These Fail
 
 
 #Other Types:
@@ -186,9 +194,18 @@ df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 #antijoin df_app with mb to get mbox data still missing app id
 #found_
 missing_emails = anti_join(mb, df_app, 'mb_id')
+missing_emails = missing_emails.sort_values(by=['mbox_email', 'from_domain'])
+missing_emails['verified_linkage'] = None 
 #print(missing_emails)
 print(missing_emails.shape)
 missing_emails.to_csv('missing_emails.csv', index=False)
+
+
+#TODO
+#Manually search for missing links, write a new script that 
+#Builds off deduped results, foundapp results, and missing links connected
+
+
 
 #missing, was 270
 #found app was 705
