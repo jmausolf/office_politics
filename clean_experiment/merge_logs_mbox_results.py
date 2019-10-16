@@ -78,9 +78,11 @@ dfA = mb.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'extracted_email'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
 dfA['merge_match_type'] = 'bounce_email_match'
+dfA['verified_link'] = None
+dfA['linkage'] = dfA['extracted_email']
 dfA = dfA.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb, dfA, key='mb_id')
-print("MB A: remaining:", mb_rem.shape)
+print("MB A: remaining:", mb_rem.shape, dfA.shape)
 
 
 #Step B: First Pass Merge
@@ -88,9 +90,11 @@ dfB = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_email_clean'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
 dfB['merge_match_type'] = 'full_email_match'
+dfB['verified_link'] = None
+dfB['linkage'] = dfB['from_email_clean']
 dfB = dfB.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb_rem, dfB, key='mb_id')
-print("MB B: remaining:", mb_rem.shape)
+print("MB B: remaining:", mb_rem.shape, dfB.shape)
 
 
 #Step C: User Merge 
@@ -100,9 +104,11 @@ dfC = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_user'],
 			  right_on=['profile', 'gmail_user', 'contact_user'])
 dfC['merge_match_type'] = 'username_match'
+dfC['verified_link'] = None
+dfC['linkage'] = dfC['from_user']
 dfC = dfC.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb_rem, dfC, key='mb_id')
-print("MB C: remaining:", mb_rem.shape)
+print("MB C: remaining:", mb_rem.shape, dfC.shape)
 
 
 
@@ -111,9 +117,11 @@ dfD = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_domain'],
 			  right_on=['profile', 'gmail_user', 'contact_domain'])
 dfD['merge_match_type'] = 'domain_match'
+dfD['verified_link'] = None
+dfD['linkage'] = dfD['from_domain']
 dfD = dfD.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb_rem, dfD, key='mb_id')
-print("MB D: remaining:", mb_rem.shape)
+print("MB D: remaining:", mb_rem.shape, dfD.shape)
 
 
 
@@ -124,15 +132,49 @@ print("MB D: remaining:", mb_rem.shape)
 dfE = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'missing_email'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
-dfE['merge_match_type'] = 'domain_match'
+dfE['merge_match_type'] = 'missing_email_extraction_full_match'
 dfE = dfE.dropna(subset=['index_wave'])
+dfE['verified_link'] = None
+dfE['linkage'] = dfE['missing_email']
 mb_rem = anti_join(mb_rem, dfE, key='mb_id')
-print("MB E: remaining:", mb_rem.shape)
-
+print("MB E: remaining:", mb_rem.shape, dfE.shape)
+#print(mb_rem.columns)
+#print(dfE.columns)
 
 
 #Manual Search After These Fail
+#Load Converted XLS Missing Verified Links
+lf = pd.read_csv("MASTER_linked_missing_emails.csv")
+lf = lf[['mb_id', 'verified_linkage']]
 
+#Merge Verified Links with Missing Emails
+mb_rem = mb_rem.merge(lf, how='left', on='mb_id')
+#ml = pd.read_csv("missing_emails.csv")
+#ml = ml.merge(lf, how='left', on='mb_id')
+
+#Drop Invalid Verifed Links
+mb_rem = mb_rem.loc[mb_rem['verified_linkage'] != 'INVALID']
+
+#Load Experiment Data
+ex = pd.read_csv("cleaned_experimental_wave_results.csv")
+
+
+#Step F: Merge Missing Link Emails
+dfF = mb_rem.merge(ex, how='left',
+			  left_on=['mbox_email', 'verified_linkage'],
+			  right_on=['gmail_user', 'contact_email'])
+dfF['merge_match_type'] = 'verified_linkage_full_email_match'
+dfF = dfF.dropna(subset=['index_wave'])
+
+dfF['verified_link'] = dfF['verified_linkage']
+dfF['linkage'] = dfF['verified_linkage']
+dfF = dfF.drop(columns=['verified_linkage'])
+#print(dfF)
+mb_rem = anti_join(mb_rem, dfF, key='mb_id')
+mb_rem = mb_rem.drop(columns=['verified_linkage'])
+print("MB F: remaining:", mb_rem.shape, dfF.shape)
+#print(mb_rem.columns)
+#print(dfF.columns)
 
 #Other Types:
 '''
@@ -163,7 +205,7 @@ print("MB E: remaining:", mb_rem.shape)
 
 ## Append the Results and Dedupe
 
-df = pd.concat([dfA, dfB, dfC, dfD], axis=0).reset_index(drop=True)
+df = pd.concat([dfA, dfB, dfC, dfD, dfE], axis=0).reset_index(drop=True)
 
 #Drop Pure Duplicates
 df = df.drop_duplicates()
@@ -195,7 +237,7 @@ df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 #found_
 missing_emails = anti_join(mb, df_app, 'mb_id')
 missing_emails = missing_emails.sort_values(by=['mbox_email', 'from_domain'])
-missing_emails['verified_linkage'] = None 
+
 #print(missing_emails)
 print(missing_emails.shape)
 missing_emails.to_csv('missing_emails.csv', index=False)
