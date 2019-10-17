@@ -195,29 +195,41 @@ df_app_dupes = df_app
 #df_app_dupes = df_app_dupes.drop_duplicates(subset=['mb_id', 'index_wave'])
 df_app_dupes['dupe_mb'] = df_app_dupes.duplicated(subset=['mb_id'], keep=False)
 df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_mb'] == True]
-print(df_app_dupes.shape)
-print(df_app_dupes.columns)
-
-
-
-
-
-#df_app_dupes = df_app
-#df_app_dupes['dupe_appid'] = df_app_dupes.duplicated(subset=['index_wave'], keep=False)
-#df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_appid'] == True]
-#print(df_app_dupes)
 df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 
 
-#TODO
-#antijoin df_app with mb to get mbox data still missing app id
-#found_
+
+#Load Valid/Invalid Dupes
+du = pd.read_csv("MASTER_dupes_to_review.csv")
+du = du[['mb_id', 'index_wave', 'valid_dupe']]
+
+#Merge Verified Links with Original Found App ID
+df_app = df_app.merge(du, how='left', on=['mb_id', 'index_wave'])
+
+
+#Drop Invalid Dupes
+df_app = df_app.loc[df_app['valid_dupe'] != 'INVALID']
+df_app = df_app.drop(columns=['dupe_mb', 'valid_dupe'])
+print(df_app.shape)
+print(df_app.columns)
+
+
+#Load Experiment Data
+#ex = pd.read_csv("cleaned_experimental_wave_results.csv")
+
+
+
+#Evaluate Missing Emails
 missing_emails = anti_join(mb, df_app, 'mb_id')
 missing_emails = missing_emails.sort_values(by=['mbox_email', 'from_domain'])
 
-#print(missing_emails)
-print(missing_emails.shape)
-missing_emails.to_csv('missing_emails.csv', index=False)
+
+#Ignore If Verfied Link if Invalid
+me = missing_emails
+me = me.merge(lf, how='left', on='mb_id')
+me = me.loc[me['verified_linkage'] != 'INVALID']
+print("Missing Emails: remaining:", me.shape)
+me.to_csv('missing_emails.csv', index=False)
 
 
 #TODO
