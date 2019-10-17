@@ -181,41 +181,23 @@ print(df_app.shape)
 df_app.to_csv('found_appid.csv', index=False)
 
 
-#Identify Duplicates for Review
-#Purpose. Esp w/ domain matches, there is the possibility of returning a match
-#for the incorrect experiment id (wave_index), especially if the company was reapplied for
-#from the same profile id/email but to a different address
-#one contact will be correct and typically one will not
-
-#TODO manually review and create an invalid or verify link col
-#drop invalids from "found_appid.csv"
-
-
+#Identify Duplicates Domain Matches for Review
 df_app_dupes = df_app
-#df_app_dupes = df_app_dupes.drop_duplicates(subset=['mb_id', 'index_wave'])
 df_app_dupes['dupe_mb'] = df_app_dupes.duplicated(subset=['mb_id'], keep=False)
 df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_mb'] == True]
 df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 
-
-
-#Load Valid/Invalid Dupes
+#Load/Merge Manual Verfified Valid/Invalid Dupes
 du = pd.read_csv("MASTER_dupes_to_review.csv")
 du = du[['mb_id', 'index_wave', 'valid_dupe']]
-
-#Merge Verified Links with Original Found App ID
 df_app = df_app.merge(du, how='left', on=['mb_id', 'index_wave'])
 
-
-#Drop Invalid Dupes
+#Drop Invalid Dupes and Save
 df_app = df_app.loc[df_app['valid_dupe'] != 'INVALID']
 df_app = df_app.drop(columns=['dupe_mb', 'valid_dupe'])
+df_app.to_csv('found_appid_deduped.csv', index=False)
 print(df_app.shape)
 print(df_app.columns)
-
-
-#Load Experiment Data
-#ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 
 
 
@@ -232,40 +214,11 @@ print("Missing Emails: remaining:", me.shape)
 me.to_csv('missing_emails.csv', index=False)
 
 
-#TODO
-#Manually search for missing links, write a new script that 
-#Builds off deduped results, foundapp results, and missing links connected
-
-
-
-#missing, was 270
-#found app was 705
-
-#missing post rm wave = 135
-#found post rm wave = 901
-
-#Current missing is manageable, some dupes and lots of grasshopper
-#TODO prog a method to incorporate manual keep, reject and app key
-
-
-#Also #TODO
-#currently all bounces are dropped, but will need bounces later
-#because I need to mark all ones that sent but did not bounce as 
-#no-replies. I don't want to label bounces no-replies, just drop from analysis
-
 #Also TODO, need a pair ID. For example, I want to ensure I end up with complete pairs
 #not partial pairs if one half bounced and the other did not
 #rm if count (post spread) for pair is != 2
 
 
-#print(df.shape)
-#print(df.columns)
-#print(df.isna().sum())
-
-#print(df.shape)
-#print(df_app.shape[0]+missing_emails.shape[0])
-
-#df.to_csv('test.csv', index=False)
 
 ## Phase 2: Take MBOX Data Linked to App ID's and spread into new columns
 ##(for response type: direct, third-party reply, phone reply)
