@@ -124,10 +124,6 @@ mb_rem = anti_join(mb_rem, dfD, key='mb_id')
 print("MB D: remaining:", mb_rem.shape, dfD.shape)
 
 
-
-#TODO: Try Running a Linking Script Using Bounce Links Methods
-#On Remaining Missing Data
-
 #Step E: Remaining Missing Attempt
 dfE = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'missing_email'],
@@ -138,19 +134,16 @@ dfE['verified_link'] = None
 dfE['linkage'] = dfE['missing_email']
 mb_rem = anti_join(mb_rem, dfE, key='mb_id')
 print("MB E: remaining:", mb_rem.shape, dfE.shape)
-#print(mb_rem.columns)
-#print(dfE.columns)
 
 
-#Manual Search After These Fail
+#Step F: Joining Verified Links Post Manual Search
+
 #Load Converted XLS Missing Verified Links
 lf = pd.read_csv("MASTER_linked_missing_emails.csv")
 lf = lf[['mb_id', 'verified_linkage']]
 
 #Merge Verified Links with Missing Emails
 mb_rem = mb_rem.merge(lf, how='left', on='mb_id')
-#ml = pd.read_csv("missing_emails.csv")
-#ml = ml.merge(lf, how='left', on='mb_id')
 
 #Drop Invalid Verifed Links
 mb_rem = mb_rem.loc[mb_rem['verified_linkage'] != 'INVALID']
@@ -161,51 +154,21 @@ ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 
 #Step F: Merge Missing Link Emails
 dfF = mb_rem.merge(ex, how='left',
-			  left_on=['mbox_email', 'verified_linkage'],
-			  right_on=['gmail_user', 'contact_email'])
+			  left_on=['profile', 'mbox_email', 'verified_linkage'],
+			  right_on=['profile', 'gmail_user', 'contact_email'])
 dfF['merge_match_type'] = 'verified_linkage_full_email_match'
 dfF = dfF.dropna(subset=['index_wave'])
 
 dfF['verified_link'] = dfF['verified_linkage']
 dfF['linkage'] = dfF['verified_linkage']
 dfF = dfF.drop(columns=['verified_linkage'])
-#print(dfF)
 mb_rem = anti_join(mb_rem, dfF, key='mb_id')
 mb_rem = mb_rem.drop(columns=['verified_linkage'])
 print("MB F: remaining:", mb_rem.shape, dfF.shape)
-#print(mb_rem.columns)
-#print(dfF.columns)
 
-#Other Types:
-'''
-#A. both domain and user are different
-	e.g.	mb: michael_berube@uhg.com
-			ex: monica_hamling@uhc.com
-
-			Email from michael_berube@uhg.com 
-			mentions 'Monica Hamling'
-			need a 'full name' column in ex
-			then a match based on the gmail/mbox user and the full name
-			being found in the message
-
-
-#B			Email from Betsy Makwinski	notification@jobvite.com
-			mentions in subject line company Benefitfocus
-
-			company Benefitfocus in company col in experiment
-
-#C 			Mbox waves are incorrect, problematic, causing issues
-			TL;DR, don't merge on wave, drop wave from mbox df
-
-
-
-'''
-
-#Step D: Grasshopper appid, tbd
 
 ## Append the Results and Dedupe
-
-df = pd.concat([dfA, dfB, dfC, dfD, dfE], axis=0).reset_index(drop=True)
+df = pd.concat([dfA, dfB, dfC, dfD, dfE, dfF], axis=0).reset_index(drop=True)
 
 #Drop Pure Duplicates
 df = df.drop_duplicates()
@@ -213,14 +176,28 @@ df = df.drop_duplicates()
 #Separate Data Into Those with AppID and Those Still Missing
 df_app = df.dropna(subset=['index_wave'])
 df_app = df_app.sort_values(by=['index_wave'])
+df_app = df_app.drop(columns=['index_x', 'index_y'])
 print(df_app.shape)
 df_app.to_csv('found_appid.csv', index=False)
 
+
+#Identify Duplicates for Review
+#Purpose. Esp w/ domain matches, there is the possibility of returning a match
+#for the incorrect experiment id (wave_index), especially if the company was reapplied for
+#from the same profile id/email but to a different address
+#one contact will be correct and typically one will not
+
+#TODO manually review and create an invalid or verify link col
+#drop invalids from "found_appid.csv"
+
+
 df_app_dupes = df_app
-df_app_dupes = df_app_dupes.drop_duplicates(subset=['mb_id', 'index_wave'])
+#df_app_dupes = df_app_dupes.drop_duplicates(subset=['mb_id', 'index_wave'])
 df_app_dupes['dupe_mb'] = df_app_dupes.duplicated(subset=['mb_id'], keep=False)
 df_app_dupes = df_app_dupes.loc[df_app_dupes['dupe_mb'] == True]
 print(df_app_dupes.shape)
+print(df_app_dupes.columns)
+
 
 
 
