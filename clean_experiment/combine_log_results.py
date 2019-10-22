@@ -41,8 +41,24 @@ def make_id(row):
 
 def make_pair_id(row):
 
-	#Make Initial Correction for
-	i = row['index']
+	#Get App Index from Pair Number
+	i = row['id_index']
+	i = int(i.split('n')[1])
+
+	#Get Wave, Add Fixed N to W2 i?
+	w = row['wave']
+
+	#Get Max Id
+	m = row['max_id_index']
+	m = int(m.split('n')[1])
+
+	#Extend I in Wave 2
+	if w == 'W1':
+		i = i
+
+	elif w == 'W2':
+		i = i+m
+
 
 	#Make Pairs
 	if i % 2 == 1:
@@ -212,9 +228,6 @@ def prep_results(results_file, wave_pair):
 	r['index_wave'] = r['wave'] + '_' + r['id_index']
 	r['index_wave'] = r['index_wave'].str.upper()
 
-	#Add Pair ID
-	#r['pair_index'] = r.apply(make_pair_id, axis=1)
-
 	#Ensure Emails Lowercase
 	r['contact_email'] = r['contact_email'].str.lower()
 
@@ -244,11 +257,17 @@ def combine_result_files(wave_pairs):
 	#TODO add pair id
 	results = results.rename(columns={'index':'wave_index'})
 	results = results.reset_index(drop=True)
-	results = results.reset_index()
-	results['index'] = results['index'] + 1
+	results = results.reset_index(drop=True)
+	#results['index'] = results['index'] + 1
+
+	#Add N Max Column
+	results['max_id_index'] = results['id_index'].max()
 
 	#Add Pair ID
 	results['pair_index'] = results.apply(make_pair_id, axis=1)
+
+	#Drop Max ID Col
+	results = results.drop(columns=['max_id_index'])
 
 	return results
 
@@ -265,6 +284,26 @@ def clean_results(df):
 	print(df.shape)
 	df = df.loc[df['metadata'].str.contains('metadata::')]
 	print(df.shape)
+
+	#Remove Gmail Spam/Reject Errors That Appeared to Send
+	#These Were Sent Again From Alt Email in W1_B2
+
+	#Add Pair Count Col
+	tmp = df.groupby(['pair_index']).agg({'gmail_user':['count']})
+	tmp = pd.DataFrame(tmp.to_records())
+	tmp.columns = ['pair_index', 'pair_index_count']
+	df = df.merge(tmp)
+
+	#Keep Criteria
+	keep_crit = (
+					( 	df['pair_index_count'] == 2 ) |
+					(
+						(df['pair_index_count'] > 2 ) &
+						(df['wave_pair'] != 'W1_B1') 
+					)
+
+				)
+	df = df.loc[keep_crit]
 
 	df.to_csv("cleaned_experimental_wave_results.csv", index=False)
 	print(df)

@@ -176,8 +176,6 @@ df = df.drop_duplicates()
 #Separate Data Into Those with AppID and Those Still Missing
 df_app = df.dropna(subset=['index_wave'])
 df_app = df_app.sort_values(by=['index_wave'])
-df_app = df_app.drop(columns=['index_x', 'index_y'])
-print(df_app.shape)
 df_app.to_csv('found_appid.csv', index=False)
 
 
@@ -195,21 +193,18 @@ df_app = df_app.merge(du, how='left', on=['mb_id', 'index_wave'])
 #Drop Invalid Dupes and Save
 df_app = df_app.loc[df_app['valid_dupe'] != 'INVALID']
 df_app = df_app.drop(columns=['dupe_mb', 'valid_dupe'])
-df_app.to_csv('found_appid_deduped.csv', index=False)
-print(df_app.shape)
-print(df_app.columns)
-
-
 
 #Evaluate Missing Emails
 missing_emails = anti_join(mb, df_app, 'mb_id')
 missing_emails = missing_emails.sort_values(by=['mbox_email', 'from_domain'])
 
-
 #Ignore If Verfied Link if Invalid
 me = missing_emails
 me = me.merge(lf, how='left', on='mb_id')
 me = me.loc[me['verified_linkage'] != 'INVALID']
+
+#Also Ignore If Outome is Other (Blocked)
+me = me.loc[me['outcome'] != 'Other']
 print("Missing Emails: remaining:", me.shape)
 me.to_csv('missing_emails.csv', index=False)
 
@@ -226,10 +221,8 @@ me.to_csv('missing_emails.csv', index=False)
 
 
 
-## Phase 3: Fill Out Links from Grasshopper Calls to App ID's
 
-
-## Phase 4: Left Join Log File with Cleaned App-ID level mbox results
+## Phase 3: Left Join Log File with Cleaned App-ID level mbox results
 ## Summarize Result Types, Analysis
 
 
