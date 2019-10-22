@@ -39,6 +39,31 @@ def make_id(row):
 	index = row['index']
 	return index_to_n(index)
 
+def make_pair_id(row):
+
+	#Make Initial Correction for
+	i = row['index']
+
+	#Make Pairs
+	if i % 2 == 1:
+		s = (i+1)/2
+		i = int(s)
+	elif i % 2 == 0:
+		s = i/2
+		i = int(i-s)
+
+	letter = 'P'
+
+	#Return as String
+	if i < 10:
+		return letter+'000'+str(i)
+	elif i < 100:
+		return letter+'00'+str(i)
+	elif i < 1000:
+		return letter+'0'+str(i)
+	else:
+		return letter+str(i)
+
 
 ## Base Functions 
 
@@ -181,11 +206,14 @@ def prep_results(results_file, wave_pair):
 	r = pd.read_csv(results_file)
 
 	#Convert the Index to a Sortable Wave Index to Sort by Pair and Wave
-	r['index'] = r.apply(make_id, axis=1)
+	r['id_index'] = r.apply(make_id, axis=1)
 	r['wave_pair'] = wave_pair.upper()
 	r['wave'] = wave_pair.split('_')[0].upper()
-	r['index_wave'] = r['wave'] + '_' + r['index']
+	r['index_wave'] = r['wave'] + '_' + r['id_index']
 	r['index_wave'] = r['index_wave'].str.upper()
+
+	#Add Pair ID
+	#r['pair_index'] = r.apply(make_pair_id, axis=1)
 
 	#Ensure Emails Lowercase
 	r['contact_email'] = r['contact_email'].str.lower()
@@ -200,7 +228,6 @@ def prep_results(results_file, wave_pair):
 	r['contact_user'] = r['contact_email'].apply(get_user)
 
 	#TODO add email user, e.g. something@domain
-
 	return r
 
 
@@ -214,24 +241,25 @@ def combine_result_files(wave_pairs):
 	results.sort_values(by=['index_wave', 'wave_pair'], inplace=True)
 	results.to_csv("complete_experimental_wave_results.csv", index=False)	
 
-	print(results.columns)
-	print(results)
+	#TODO add pair id
+	results = results.rename(columns={'index':'wave_index'})
+	results = results.reset_index(drop=True)
+	results = results.reset_index()
+	results['index'] = results['index'] + 1
+
+	#Add Pair ID
+	results['pair_index'] = results.apply(make_pair_id, axis=1)
+
 	return results
 
 
 df = combine_result_files(wave_pairs)
-print(df)
+
 
 
 # Step 3: Additional Cleaning
 
-## keep only the non-error results (these emails never sent on gmail side)
-#df.loc[df['metadata'].str.contains]
-
 def clean_results(df):
-
-
-
 
 	#Keep Only Sent Emails (Drop Errors)
 	print(df.shape)
@@ -239,25 +267,7 @@ def clean_results(df):
 	print(df.shape)
 
 	df.to_csv("cleaned_experimental_wave_results.csv", index=False)
+	print(df)
 
 clean_results(df)
 
-
-
-#Import Waves and Add Wave
-
-
-
-#TODO Consider Reclassing All Those In a Single Protocol
-#with full_domain >=4 & mismatch = True as a bounce / error
-#from fuzzy matching error, wrong company
-#check_single_protocol(w2)
-
-#TODO remove possible accidental resends
-#that occur from a dupe in the master_cid_csv
-#that had a successfull send
-#but reappear in W2 from a match on the dupe cid_master
-#under a different email address
-#so those companies that may have been send a w2 when they received a w1
-#find by isolating unique w1 successful domains join w2 domains and drop the matches 
-#from w2 results?
