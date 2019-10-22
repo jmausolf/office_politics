@@ -38,13 +38,12 @@ def get_reply_types_bool(df):
 
 	#Other Email Reply
 	oer_crit = (
-					(
-						(df['merge_match_type'] == 'domain_match') &
-						(df['outcome'].isin(['Callback', 'Reply']))
-					) |
 
 					(
-						(df['merge_match_type'] == 'verified_linkage_full_email_match') &
+						(df['merge_match_type'].isin(['domain_match', 
+													  'verified_linkage_full_email_match',
+													  'missing_email_extraction_full_match']
+													  )) &
 						(df['outcome'].isin(['Callback', 'Reply'])) &
 						(df['from_full_domain'] != 'grasshopper.com' )
 					)
@@ -95,13 +94,12 @@ def get_reply_types_str(df):
 
 	#Other Email Reply
 	oer_crit = (
-					(
-						(df['merge_match_type'] == 'domain_match') &
-						(df['outcome'].isin(['Callback', 'Reply']))
-					) |
 
 					(
-						(df['merge_match_type'] == 'verified_linkage_full_email_match') &
+						(df['merge_match_type'].isin(['domain_match', 
+													  'verified_linkage_full_email_match',
+													  'missing_email_extraction_full_match']
+													  )) &
 						(df['outcome'].isin(['Callback', 'Reply'])) &
 						(df['from_full_domain'] != 'grasshopper.com' )
 					)
@@ -204,6 +202,38 @@ df = mbla.pivot_table(index=['index_wave'],
                                      columns='outcome_detailed', 
                                      values='count')
                                      #aggfunc=lambda x: ' '.join(x))
+
+
+#Add Total Callbacks_Mes, Total Replies, Total Response Cols
+callback_cols = ['CALLBACK-direct_email_reply',
+				 'CALLBACK-other_email_reply',
+				 'CALLBACK-phone_reply']
+
+reply_cols =   ['REPLY-direct_email_reply',
+				'REPLY-other_email_reply',
+				'REPLY-phone_reply']
+
+df['total_callback_messages'] = df[callback_cols].sum(axis=1)
+df['total_reply_messages'] = df[reply_cols].sum(axis=1)
+df['total_reponse_messages'] = df['total_callback_messages'] + df['total_reply_messages']
+
+#Add Binary Cols
+df.loc[(df['total_callback_messages'] >= 1), 'callback_binary'] = 1
+df.loc[(df['total_reply_messages'] >= 1), 'reply_binary'] = 1
+df.loc[(df['total_reponse_messages'] >= 1), 'response_binary'] = 1
+
+
+#Clean and Lower Column Names
+def clean_cols(col):
+    return str(col).lower().replace(' ', '_')
+
+old_cols = df.columns.tolist()
+new_cols = [clean_cols(c) for c in old_cols]
+df.columns = new_cols
+
+
+#Fill NAN Values with 0
+df = df.fillna(0)
 
 
 print(df.shape)
