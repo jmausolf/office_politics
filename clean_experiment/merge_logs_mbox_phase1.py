@@ -1,6 +1,12 @@
 import pandas as pd
 import re
 
+
+
+#################################################################
+# Utility Functions
+#################################################################
+
 def anti_join(df_A, df_B, key):
 
 	set_diff = set(df_A[key]).difference(df_B[key])
@@ -31,38 +37,27 @@ def make_id(row, prefix):
 	return index_to_n(index, prefix)
 
 
-#No response will be those that were sent (in log)
-#but did not have any result (direct, domain, or call in mbox)
 
-## Phase 0:
-## rm the ones that never sent from log (blocked pre-send gmail)
-## rm bounces (never reached target, ergo, irrelevant)
-## rm sent emails
+#################################################################
+# Phase 1: Join MBOX Results to Applicant Wave ID's
+#################################################################
 
-
-## Phase 1: Left Joins on MBOX to link log app id's to mbox results
-## - direct replies
-## - domain replies (cc, third party)
-## - grasshopper
+###################################
+# Step 0: Load Data Frames
+###################################
 
 #Step 0A: Load Main Data
 mb = pd.read_csv("mbox_analysis.csv")
 ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 
-print(mb.shape)
-#print(mb.columns)
-#print(mb)
-print(ex.shape)
-#print(ex.columns)
 
 #Step 0B: Load Bounce Linkages
 dfb = pd.read_csv("extracted_bounce_emails.csv")
 bf = dfb[['mb_id', 'extracted_email']]
 
+#Step 0C: Load Missing Email Linkages
 dfm = pd.read_csv("linked_missing_emails.csv")
 me = dfm[['mb_id', 'missing_email']]
-#print(bf)
-
 
 # Add MB Index
 mb = mb.reset_index()
@@ -73,7 +68,12 @@ mb = mb.drop(columns=['wave'])
 mb = mb.merge(bf, how='left')
 mb = mb.merge(me, how='left')
 
-#Step A: Merge Bounced Emails
+
+###########################################
+# Step 1: Join MBOX in Stepwise Methods
+###########################################
+
+#Step 1A: Merge Bounced Emails
 dfA = mb.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'extracted_email'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
@@ -85,7 +85,7 @@ mb_rem = anti_join(mb, dfA, key='mb_id')
 print("MB A: remaining:", mb_rem.shape, dfA.shape)
 
 
-#Step B: First Pass Merge
+#Step 1B: First Pass Merge
 dfB = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_email_clean'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
@@ -97,7 +97,7 @@ mb_rem = anti_join(mb_rem, dfB, key='mb_id')
 print("MB B: remaining:", mb_rem.shape, dfB.shape)
 
 
-#Step C: User Merge 
+#Step 1C: User Merge 
 #(same user, different full email, e.g.
 # k.linda@jpmorganchase.com vs. k.linda@chase.com)
 dfC = mb_rem.merge(ex, how='left',
@@ -112,7 +112,7 @@ print("MB C: remaining:", mb_rem.shape, dfC.shape)
 
 
 
-#Step D: Domain Merge
+#Step 1D: Domain Merge
 dfD = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_domain'],
 			  right_on=['profile', 'gmail_user', 'contact_domain'])
@@ -124,7 +124,7 @@ mb_rem = anti_join(mb_rem, dfD, key='mb_id')
 print("MB D: remaining:", mb_rem.shape, dfD.shape)
 
 
-#Step E: Remaining Missing Attempt
+#Step 1E: Remaining Missing Attempt
 dfE = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'missing_email'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
@@ -136,7 +136,7 @@ mb_rem = anti_join(mb_rem, dfE, key='mb_id')
 print("MB E: remaining:", mb_rem.shape, dfE.shape)
 
 
-#Step F: Joining Verified Links Post Manual Search
+#Step 1F0: Joining Verified Links Post Manual Search
 
 #Load Converted XLS Missing Verified Links
 lf = pd.read_csv("MASTER_linked_missing_emails.csv")
@@ -152,7 +152,7 @@ mb_rem = mb_rem.loc[mb_rem['verified_linkage'] != 'INVALID']
 ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 
 
-#Step F: Merge Missing Link Emails
+#Step 1F1: Merge Missing Link Emails
 dfF = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'verified_linkage'],
 			  right_on=['profile', 'gmail_user', 'contact_email'])
@@ -167,17 +167,20 @@ mb_rem = mb_rem.drop(columns=['verified_linkage'])
 print("MB F: remaining:", mb_rem.shape, dfF.shape)
 
 
-## Append the Results and Dedupe
+## Step 1Z: Append the Results and Dedupe
 df = pd.concat([dfA, dfB, dfC, dfD, dfE, dfF], axis=0).reset_index(drop=True)
 
 #Drop Pure Duplicates
 df = df.drop_duplicates()
 
-#Separate Data Into Those with AppID and Those Still Missing
+
+##############################################################
+#Step 2: Isolate Linked Data, Dupes, and Missing
+##############################################################
+
 df_app = df.dropna(subset=['index_wave'])
 df_app = df_app.sort_values(by=['index_wave'])
 df_app.to_csv('found_appid.csv', index=False)
-
 
 #Identify Duplicates Domain Matches for Review
 df_app_dupes = df_app
@@ -189,8 +192,6 @@ df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 du = pd.read_csv("MASTER_dupes_to_review.csv")
 du = du[['mb_id', 'index_wave', 'valid_dupe']]
 df_app = df_app.merge(du, how='left', on=['mb_id', 'index_wave'])
-
-#Drop Invalid Dupes and Save
 df_app = df_app.loc[df_app['valid_dupe'] != 'INVALID']
 df_app = df_app.drop(columns=['dupe_mb', 'valid_dupe'])
 
@@ -208,11 +209,8 @@ me = me.loc[me['outcome'] != 'Other']
 print("Missing Emails: remaining:", me.shape)
 me.to_csv('missing_emails.csv', index=False)
 
-
-#Also TODO, need a pair ID. For example, I want to ensure I end up with complete pairs
-#not partial pairs if one half bounced and the other did not
-#rm if count (post spread) for pair is != 2
-
+#Save Final Version - Phase 1
+df_app.to_csv('found_appid_deduped.csv', index=False)
 
 
 ## Phase 2: Take MBOX Data Linked to App ID's and spread into new columns

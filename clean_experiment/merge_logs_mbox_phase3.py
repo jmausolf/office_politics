@@ -2,20 +2,28 @@ import pandas as pd
 
 
 #################################################################
-## Phase 2: Take MBOX-level data (linked to app id's)
-##			determine outcomes, and spread into outcomes
-##			at app-id level columns
+## Phase 3: Left Join Log File with Cleaned App-ID Mbox Results
+## Summarize Result Types, Pre-analyis QC/Cleaning
 #################################################################
 
 
 
 #################################################################
-## Step 1: Load and Make Detailed Outcome Columns
+## Step 1: Load Data and Join
 #################################################################
 
 #Load Data
-mb = pd.read_csv('found_appid_deduped.csv')
-mb = mb[[	'index_wave', 'outcome', 'from_full_domain', 'merge_match_type']]
+mb = pd.read_csv('appid_level_mbox_results.csv')
+ex = pd.read_csv("cleaned_experimental_wave_results.csv")
+print(mb.shape, ex.shape)
+
+#Join Data
+df = ex.merge(mb, how='left', on='index_wave')
+print(df)
+
+df.to_csv("test_joined_data.csv", index=False)
+
+#mb = mb[[	'index_wave', 'outcome', 'from_full_domain', 'merge_match_type']]
 
 
 def get_reply_types_str(df):
@@ -140,10 +148,10 @@ def spread_outcomes_sum(df):
 	return df
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
 
-	mb = make_detailed_outcomes(mb)
-	mb = spread_outcomes_sum(mb)
+	#mb = make_detailed_outcomes(mb)
+	#mb = spread_outcomes_sum(mb)
 
-	print(mb)
+#	print(mb)
 
