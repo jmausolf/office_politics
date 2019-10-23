@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+from qc_phase_1_manual_recoding import *
 
 
 
@@ -209,18 +210,15 @@ me = me.loc[me['outcome'] != 'Other']
 print("Missing Emails: remaining:", me.shape)
 me.to_csv('missing_emails.csv', index=False)
 
+#Add Recodings from QC Review
+df_app = recode_outcomes(df_app)
+
 #Save Final Version - Phase 1
 df_app.to_csv('found_appid_deduped.csv', index=False)
 
 
-## Phase 2: Take MBOX Data Linked to App ID's and spread into new columns
-##(for response type: direct, third-party reply, phone reply)
+#TODO
+#QC corrections of outcome coding - pre-phase-2
 
-
-
-
-
-## Phase 3: Left Join Log File with Cleaned App-ID level mbox results
-## Summarize Result Types, Analysis
 
 

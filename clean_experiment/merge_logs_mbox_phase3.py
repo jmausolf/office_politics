@@ -17,11 +17,36 @@ mb = pd.read_csv('appid_level_mbox_results.csv')
 ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 print(mb.shape, ex.shape)
 
-#Join Data
+#Join Data and Fill NA with Zero
 df = ex.merge(mb, how='left', on='index_wave')
-print(df)
+df = df.fillna(0)
+#print(df)
+#print(df.isna().sum())
 
-df.to_csv("test_joined_data.csv", index=False)
+
+df2 = df.loc[df['callback_binary'] == 1]
+print(df2.sum())
+
+
+df2.to_csv("test_joined_data.csv", index=False)
+
+
+#################################################################
+## Step 2: Add Columns for QC on Bounce/Error/Other & Response
+#################################################################
+
+'''
+df['bounce_error_binary']
+df.loc[(	df['response_binary'] +
+			df['bounce'] df >= 1), 'bounce_error_binary'] = 1
+
+df['response_binary']
+'''
+#df.loc[(df['total_reponse_messages'] >= 1), 'response_binary'] = 1
+
+#dfqc = df.groupby(['pair_index']).
+
+
 
 #mb = mb[[	'index_wave', 'outcome', 'from_full_domain', 'merge_match_type']]
 
