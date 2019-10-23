@@ -1,9 +1,10 @@
 import pandas as pd
 import re
 
+#####################################################
 ## Define Experiment Wave Pairs Dictionary
 ## (results files created from matched output during experiments)
-
+#####################################################
 
 wave_pairs = {
 	
@@ -18,6 +19,11 @@ wave_pairs = {
 
 
 }
+
+
+#####################################################
+# Base Functions
+#####################################################
 
 def index_to_n(index_number, letter='n'):
 
@@ -39,6 +45,7 @@ def make_id(row):
 	index = row['index']
 	return index_to_n(index)
 
+
 def make_pair_id(row):
 
 	#Get App Index from Pair Number
@@ -58,7 +65,6 @@ def make_pair_id(row):
 
 	elif w == 'W2':
 		i = i+m
-
 
 	#Make Pairs
 	if i % 2 == 1:
@@ -80,8 +86,6 @@ def make_pair_id(row):
 	else:
 		return letter+str(i)
 
-
-## Base Functions 
 
 def get_domain(email, simple=True):
 
@@ -119,96 +123,10 @@ def possible_mismatch(row):
 	return domain not in company 
 
 
-## Misc 
 
-def compare_protocol_waves(w1_file, w2_file):
-
-	#First Wave
-	w1 = pd.read_csv(w1_file)
-	w1['wave'] = 'wave1'
-	w1['timestamp'] = w1_file.split('experiment_')[1].split('.csv')[0]
-	w1['domain'] = w1['contact_email'].apply(get_domain)
-	w1['full_domain'] = w1['contact_email'].apply(get_domain, simple=False)
-
-	#Second Wave
-	w2 = pd.read_csv(w2_file)
-	w2['wave'] = 'wave2'
-	w2['timestamp'] = w2_file.split('experiment_')[1].split('.csv')[0]
-	w2['domain'] = w2['contact_email'].apply(get_domain)
-	w2['full_domain'] = w2['contact_email'].apply(get_domain, simple=False)
-
-	#Append Waves
-	df = pd.concat([w1, w2], axis=0)
-
-
-	#Get Counts Email
-	gb = ['contact_email']
-	sm = 'contact_email'
-	df['count_email'] = df.groupby(gb)[sm].transform('count')
-
-
-	#Get Counts Domain
-	gb = ['domain']
-	sm = 'domain'
-	df['count_domain'] = df.groupby(gb)[sm].transform('count')
-
-
-	#Get Counts Full Domain
-	gb = ['full_domain']
-	sm = 'full_domain'
-	df['count_full_domain'] = df.groupby(gb)[sm].transform('count')
-
-	#Add Domain Flag
-	df['mismatch'] = df.apply(possible_mismatch, axis=1)
-
-	#Sort
-	df = df.sort_values(['count_domain', 'full_domain', 
-						 'count_email', 'mismatch'], ascending=False)
-	df.to_csv('compare_protocol_waves.csv', index=False)
-	print(df)
-
-
-
-def check_single_protocol(df_file):
-
-	#First Wave
-	df = pd.read_csv(df_file)
-	df['timestamp'] = df_file.split('experiment_')[1].split('.csv')[0]
-	df['domain'] = df['contact_email'].apply(get_domain)
-	df['full_domain'] = df['contact_email'].apply(get_domain, simple=False)
-
-	#Get Counts Email
-	gb = ['contact_email']
-	sm = 'contact_email'
-	df['count_email'] = df.groupby(gb)[sm].transform('count')
-
-
-	#Get Counts Domain
-	gb = ['domain']
-	sm = 'domain'
-	df['count_domain'] = df.groupby(gb)[sm].transform('count')
-
-
-	#Get Counts Full Domain
-	gb = ['full_domain']
-	sm = 'full_domain'
-	df['count_full_domain'] = df.groupby(gb)[sm].transform('count')
-
-	#Add Domain Flag
-	df['mismatch'] = df.apply(possible_mismatch, axis=1)
-
-	#Sort
-	df = df.sort_values(['count_domain', 'full_domain', 
-						 'count_email', 'mismatch'], ascending=False)
-	df.to_csv('compare_single_protocol.csv', index=False)
-	print(df)
-
-
-
-# Step 1: Combine Matched Output Cols with A/B Results
-#not needed, the results is the same as output but with a metadata col
-
-# Step 2: Combine Matched Output/Result Files
+#####################################################
+# Step 1: Combine Matched Output/Result Files
+#####################################################
 
 def prep_results(results_file, wave_pair):
 	'''
@@ -275,8 +193,9 @@ def combine_result_files(wave_pairs):
 df = combine_result_files(wave_pairs)
 
 
-
-# Step 3: Additional Cleaning
+#####################################################
+# Step 2: Additional Cleaning
+#####################################################
 
 def clean_results(df):
 
@@ -287,8 +206,6 @@ def clean_results(df):
 
 	#Remove Gmail Spam/Reject Errors That Appeared to Send
 	#These Were Sent Again From Alt Email in W1_B2
-
-	#Add Pair Count Col
 	tmp = df.groupby(['pair_index']).agg({'gmail_user':['count']})
 	tmp = pd.DataFrame(tmp.to_records())
 	tmp.columns = ['pair_index', 'pair_index_count']

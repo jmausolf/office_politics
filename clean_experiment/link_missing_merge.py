@@ -8,7 +8,6 @@ from link_bounce_merge import *
 def extract_email(message):
 	try:
 		match = re.search(r"([a-zA-Z0-9_.+-]+@[a-zA-Z]+\.[a-zA-Z]+)", message)
-		#match = re.search(r'[\w\.-]+@[\w\.-]+', message)
 		email = match.group(0)
 	except:
 		email = None
@@ -135,8 +134,6 @@ def lookup_email_domain(from_domain, to_email, df):
 	return c
 
 
-
-
 def fill_bounce_email_legit(row):
 
 	from_user = row['from_user']
@@ -163,8 +160,6 @@ def load_bounce_data():
 	print(mb.shape)
 
 	return mb, ex
-
-
 
 
 #Extract Bounce Emails
@@ -208,7 +203,6 @@ def link_missing_merge(df):
 	#Still Missing, Found
 	df_m = df4.loc[df4['missing_email'].isna()]
 	df4 = df4.dropna(subset=['missing_email'])
-	print(df_m.shape)
 
 	#Try Looking Up Using Company and To Email
 	df5 = df_m.copy()
@@ -217,24 +211,12 @@ def link_missing_merge(df):
 	#Still Missing, Found
 	df_m = df5.loc[df5['missing_email'].isna()]
 	df5 = df5.dropna(subset=['missing_email'])
-	print(df_m.shape)
 
 	#Bounces All
 	dfb = pd.concat([df1, df2, df3, df4, df5, df_m])
 	dfb['isprofile'] = dfb['missing_email'].apply(isprofile)
-
 	dfb.to_csv("linked_missing_emails.csv", index=False)
-	print(dfb.shape)
-	print(dfb.columns)
 
-
-	#Some 15 are still left, just manually code them
-	#before finding these, try merging with the other code base
-
-	#see if bounces appear in found id's, if so, drop pair or no?
-
-
-#print(ex.columns)
 
 if __name__=='__main__':
 	mb, ex = load_bounce_data()

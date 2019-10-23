@@ -162,8 +162,6 @@ def lookup_email_domain(from_domain, to_email, df):
 	return c
 
 
-
-
 def fill_bounce_email_legit(row):
 
 	from_user = row['from_user']
@@ -237,7 +235,6 @@ def link_bounces_merge(df):
 	#Still Missing, Found
 	df_m = df4.loc[df4['extracted_email'].isna()]
 	df4 = df4.dropna(subset=['extracted_email'])
-	print(df_m.shape)
 
 	#Try Looking Up Using Company and To Email
 	df5 = df_m.copy()
@@ -246,24 +243,12 @@ def link_bounces_merge(df):
 	#Still Missing, Found
 	df_m = df5.loc[df5['extracted_email'].isna()]
 	df5 = df5.dropna(subset=['extracted_email'])
-	print(df_m.shape)
 
 	#Bounces All
 	dfb = pd.concat([df1, df2, df3, df4, df5, df_m])
 	dfb['isprofile'] = dfb['extracted_email'].apply(isprofile)
-
 	dfb.to_csv("extracted_bounce_emails.csv", index=False)
-	print(dfb.shape)
-	#print(dfb.columns)
 
-
-	#Some 15 are still left, just manually code them
-	#before finding these, try merging with the other code base
-
-	#see if bounces appear in found id's, if so, drop pair or no?
-
-
-#print(ex.columns)
 
 if __name__=='__main__':
 	mb, ex = load_bounce_data()
