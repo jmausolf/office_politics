@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 
 #################################################################
 ## Phase 3: Left Join Log File with Cleaned App-ID Mbox Results
@@ -35,20 +35,49 @@ df2.to_csv("test_joined_data.csv", index=False)
 ## Step 2: Add Columns for QC on Bounce/Error/Other & Response
 #################################################################
 
-'''
-df['bounce_error_binary']
-df.loc[(	df['response_binary'] +
-			df['bounce'] df >= 1), 'bounce_error_binary'] = 1
+#Add Combined Bounce/Error/Other + Response Cols
+df['bounce_error_other_sum'] = df['bounce'] + df['error'] + df['other']
+df['bounce_error_other_binary'] = np.where((df['bounce_error_other_sum'] >= 1), 1, 0)
+#df['beo_and_response_binary'] = df['bounce_error_other_binary'] + df['response_binary']
 
-df['response_binary']
-'''
-#df.loc[(df['total_reponse_messages'] >= 1), 'response_binary'] = 1
+#Get Groupby Sums of Bounce_Error_Other_Binary & Response by Pair ID
+dfqc_cols = ['pair_index', 'bounce_error_other_binary', 'response_binary']
+dfqc = df[dfqc_cols].groupby(['pair_index']).sum()
+print(dfqc)
 
-#dfqc = df.groupby(['pair_index']).
+#TODO
+#add qc filters to review beo where pair sum == 1
+#also add qc filter when beo >= 1 & response >= 1
+#review those pairs or consider just dropping them
+
+qc_crit = (
+				#(
+				#	(dfqc['bounce_error_other_binary'] == 1) 
+				#) |
+
+				(
+					(dfqc['bounce_error_other_binary'] >= 1) &
+					(dfqc['response_binary'] >= 1)
+				)
+
+			)
+
+dfqc = dfqc.loc[qc_crit]
+dfqc = pd.DataFrame(dfqc.to_records())
 
 
+dfqc.columns = ['pair_index', 'pair_beo_bin', 'pair_response_bin']
+print(dfqc)
 
-#mb = mb[[	'index_wave', 'outcome', 'from_full_domain', 'merge_match_type']]
+
+df_qc = df.merge(dfqc, on='pair_index', how = 'inner')
+print(df_qc)
+
+
+df_qc.to_csv("qc_pair_evaluation.csv", index=False)
+
+#print(df)
+#print(df.isna().sum())
 
 
 def get_reply_types_str(df):
