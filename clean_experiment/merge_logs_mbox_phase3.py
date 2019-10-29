@@ -40,7 +40,6 @@ dfqc = pd.DataFrame(dfqc.to_records())
 dfqc.columns = ['pair_index', 'pair_beo_bin', 'pair_response_bin']
 
 
-
 #Filter to Identify QC Cases to Review
 #These are reviewd manually in Phase 1
 qc_crit = (
@@ -60,36 +59,20 @@ print(df_qc)
 
 
 #################################################################
-## Step 3: TODO
+## Step 3: Save Two Analysis Sets
 #################################################################
 
-## Drop Pairs where the bounce count >= 1
-## So drop pairs where both bounced or where at least one bounced
-## QC resolved false bounces
-## With one exception, all bounces where one definitively bounced and 
-	#the other is in question is small
-## Ones with a bounce and one or more responses have been resolved
-
-#print(df)
-
-#Add Pair Results Columns
+## Add Pair Count Metrics to Full Dataset
 df = df.merge(dfqc, on='pair_index', how = 'inner')
 print(df.shape)
 
 #Save Full Results with Bounces
 df.to_csv("ANALYSIS_experiment_results_with_bounces_errors.csv", index=False)
 
-#Keep Only Pairs without Any Bounces/Error/Other Results
+#Save Only Pairs without Any Bounces/Error/Other Results
 df = df.loc[df['pair_beo_bin'] == 0]
 df.to_csv("ANALYSIS_experiment_results.csv", index=False)
 print(df.shape)
 
 
-
-#if __name__ == '__main__':
-
-	#mb = make_detailed_outcomes(mb)
-	#mb = spread_outcomes_sum(mb)
-
-#	print(mb)
 
