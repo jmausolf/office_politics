@@ -1,8 +1,6 @@
 import pandas as pd
 import re
 from qc_phase_1_manual_recoding import *
-from df_app_col import df_app_cols
-
 
 #################################################################
 # Utility Functions
@@ -105,7 +103,6 @@ mb_rem = anti_join(mb_rem, df1A, key='mb_id')
 print("MB 1A: remaining:", mb_rem.shape, df1A.shape)
 
 
-
 #Step 1B: First Pass Merge
 df1B = mb_rem.merge(ex, how='left',
 			  left_on=['profile', 'mbox_email', 'from_email_clean'],
@@ -128,7 +125,6 @@ df1C['linkage'] = df1C['from_user']
 df1C = df1C.dropna(subset=['index_wave'])
 mb_rem = anti_join(mb_rem, df1C, key='mb_id')
 print("MB 1C: remaining:", mb_rem.shape, df1C.shape)
-
 
 
 #Step 1D: Domain Merge
@@ -177,13 +173,12 @@ df1F = df1F.dropna(subset=['index_wave'])
 df1F['verified_link'] = df1F['verified_linkage']
 df1F['linkage'] = df1F['verified_linkage']
 df1F = df1F.drop(columns=['verified_linkage'])
-#df1F.columns = df_app_cols
 mb_rem = anti_join(mb_rem, df1F, key='mb_id')
 mb_rem = mb_rem.drop(columns=['verified_linkage'])
 print("MB 1F: remaining:", mb_rem.shape, df1F.shape)
 
 
-## Step 1Z: Append the Results and Dedupe
+##Append the Results and Dedupe
 df = pd.concat([df0A, df1A, df1B, df1C, df1D, df1E, df1F], 
 				axis=0, sort=True).reset_index(drop=True)
 
@@ -197,7 +192,6 @@ df = df.drop_duplicates()
 
 df_app = df.dropna(subset=['index_wave'])
 df_app = df_app.sort_values(by=['index_wave'])
-#df_app.columns = df_app_cols
 df_app.to_csv('found_appid.csv', index=False)
 
 #Identify Duplicates Domain Matches for Review
@@ -210,7 +204,6 @@ df_app_dupes.to_csv('dupes_to_review.csv', index=False)
 du = pd.read_csv("MASTER_dupes_to_review.csv")
 du = du[['mb_id', 'index_wave', 'valid_dupe']]
 df_app = df_app.merge(du, how='left', on=['mb_id', 'index_wave'])
-#df_app.columns = df_app_cols
 df_app = df_app.loc[df_app['valid_dupe'] != 'INVALID']
 df_app = df_app.drop(columns=['dupe_mb', 'valid_dupe'])
 
@@ -232,14 +225,30 @@ me.to_csv('missing_emails.csv', index=False)
 
 #Add Outcome Recodings from QC Review
 df_app = recode_outcomes(df_app)
+
+
+#Set Column Order
+df_app_cols = ['index', 'from_name', 'from_email', 'to_name', 'to_email', 'date',
+       'subject', 'labels', 'message', 'message_id', 'mbox', 'profile',
+       'outcome', 'sent', 'mbox_email', 'from_email_clean', 'from_domain',
+       'from_full_domain', 'from_user', 'mb_id', 'extracted_email',
+       'missing_email', 'index_wave', 'pair_index', 'pair_index_count',
+       'wave_index', 'id', 'cid', 'list_id', 'company', 'contact_name', 
+       'contact_last_name', 'contact_email', 'office', 'office_state', 
+       'region', 'proximal_region', 'position', 'job_type', 'version', 
+       'leadership', 'department', 'sid', 'ga_sid', 'school', 'school_ctyst', 
+       'school_cszip', 'school_address', 'title', 'rgb', 'matched_pair',
+       'ug_sid', 'ug_school', 'ug_school_short', 'ug_ctyst', 'treatment',
+       'prestige', 'int_id1', 'internship1', 'int1_ctyst', 'int1_title',
+       'int1_type', 'int_id2', 'internship2', 'int2_ctyst', 'int2_title',
+       'int2_type', 'gmail_user', 'gmail_pass', 'phone', 'prestige_level',
+       'party', 'name', 'metadata', 'id_index','wave_pair', 'wave', 
+       'protocol_ts', 'output_ts', 'contact_domain', 'contact_full_domain',
+       'contact_user', 'merge_match_type', 'verified_link', 'linkage']
 df_app = df_app[df_app_cols]
 
 #Save Final Version - Phase 1
 df_app.to_csv('found_appid_deduped.csv', index=False)
 print("Final DF App: ", df_app.shape)
-
-#TODO
-#QC corrections of outcome coding - pre-phase-2
-
 
 
