@@ -32,12 +32,12 @@ df['bounce_error_other_sum'] = df['bounce'] + df['error'] + df['other']
 df['bounce_error_other_binary'] = np.where((df['bounce_error_other_sum'] >= 1), 1, 0)
 
 #Get Groupby Sums of Bounce_Error_Other_Binary & Response by Pair ID
-dfqc_cols = ['pair_index', 'bounce_error_other_binary', 'response_binary']
+dfqc_cols = ['pair_index', 'bounce_error_other_binary', 'response_binary', 'callback_binary']
 dfqc = df[dfqc_cols].groupby(['pair_index']).sum()
 
 #Clean Up Group By
 dfqc = pd.DataFrame(dfqc.to_records())
-dfqc.columns = ['pair_index', 'pair_beo_bin', 'pair_response_bin']
+dfqc.columns = ['pair_index', 'pair_beo_bin', 'pair_response_bin', 'pair_callback_bin']
 
 
 #Filter to Identify QC Cases to Review
