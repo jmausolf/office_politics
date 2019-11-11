@@ -15,13 +15,18 @@ import numpy as np
 #Load Data
 mb = pd.read_csv('appid_level_mbox_results.csv')
 ex = pd.read_csv("cleaned_experimental_wave_results.csv")
-print(mb.shape, ex.shape)
+le = pd.read_csv("full_leadiro_master_abm.csv")
+print(mb.shape, ex.shape, le.shape)
 
 #Join Data and Fill NA with Zero
 df = ex.merge(mb, how='left', on='index_wave')
 df = df.fillna(0)
 print(df.shape)
 
+#Add Raw Company Names
+#df = df.merge(le, how='left', on=['list_id', 'company'])
+df = df.merge(le, how='left', on=['list_id'])
+print(df.shape)
 
 #################################################################
 ## Step 2: Add Columns for QC on Bounce/Error/Other & Response
@@ -67,12 +72,18 @@ df = df.merge(dfqc, on='pair_index', how = 'inner')
 print(df.shape)
 
 #Save Full Results with Bounces
-df.to_csv("ANALYSIS_experiment_results_with_bounces_errors.csv", index=False)
+outfile0 = "ANALYSIS_experiment_results_with_bounces_errors.csv"
+df.to_csv(outfile0, index=False)
+print("[*] saving dataset {} ...".format(outfile0))
 
 #Save Only Pairs without Any Bounces/Error/Other Results
 df = df.loc[df['pair_beo_bin'] == 0]
-df.to_csv("ANALYSIS_experiment_results.csv", index=False)
+print(df)
 print(df.shape)
+
+outfile1 = "ANALYSIS_experiment_results.csv"
+df.to_csv(outfile1, index=False)
+print("[*] saving dataset {} ...".format(outfile1))
 
 
 
