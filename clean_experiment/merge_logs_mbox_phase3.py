@@ -16,6 +16,7 @@ import numpy as np
 mb = pd.read_csv('appid_level_mbox_results.csv')
 ex = pd.read_csv("cleaned_experimental_wave_results.csv")
 le = pd.read_csv("full_leadiro_master_abm.csv")
+le.columns = ['list_id', 'leadiro_company', 'raw_company']
 print(mb.shape, ex.shape, le.shape)
 
 #Join Data and Fill NA with Zero
@@ -25,6 +26,8 @@ print(df.shape)
 
 #Add Raw Company Names
 #df = df.merge(le, how='left', on=['list_id', 'company'])
+print(le.columns)
+
 df = df.merge(le, how='left', on=['list_id'])
 print(df.shape)
 
@@ -64,26 +67,27 @@ print(df_qc)
 
 
 #################################################################
-## Step 3: Save Two Analysis Sets
+## Step 3: Save Current Results
 #################################################################
 
 ## Add Pair Count Metrics to Full Dataset
 df = df.merge(dfqc, on='pair_index', how = 'inner')
 print(df.shape)
+print(df)
 
 #Save Full Results with Bounces
-outfile0 = "ANALYSIS_experiment_results_with_bounces_errors.csv"
+outfile0 = "experiment_results_with_bounces_errors.csv"
 df.to_csv(outfile0, index=False)
 print("[*] saving dataset {} ...".format(outfile0))
 
 #Save Only Pairs without Any Bounces/Error/Other Results
-df = df.loc[df['pair_beo_bin'] == 0]
-print(df)
-print(df.shape)
+#df = df.loc[df['pair_beo_bin'] == 0]
+#print(df)
+#print(df.shape)
 
-outfile1 = "ANALYSIS_experiment_results.csv"
-df.to_csv(outfile1, index=False)
-print("[*] saving dataset {} ...".format(outfile1))
+#outfile1 = "ANALYSIS_experiment_results.csv"
+#df.to_csv(outfile1, index=False)
+#print("[*] saving dataset {} ...".format(outfile1))
 
 
 
