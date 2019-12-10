@@ -2,6 +2,10 @@
 ## CORE LIBRARIES
 ####################################
 
+
+setwd("~/Box Sync/Dissertation_v2/CH2_OfficePolitics/office_politics/analysis/")
+
+
 ##Load Libraries
 library(tidyverse)
 library(stargazer)
@@ -19,6 +23,7 @@ library(magrittr)
 library(qwraps2)
 library(RColorBrewer)
 library(ggthemes)
+library(fastDummies)
 
 #Overwrite bbplot finalise_plot() function
 source("bb_finalise_plot_academic.R")
@@ -57,7 +62,7 @@ wout <- function(plt_type, cid){
 
 
 
-df <- read_csv("ANALYSIS_experiment_results_with_bounces_errors.csv")
+dfb <- read_csv("ANALYSIS_experiment_results_with_bounces_errors.csv")
 print(df)
 
 
@@ -66,7 +71,7 @@ print(df)
 ####################################
 
 
-df <- read_csv("ANALYSIS_experiment_results_fec.csv")
+dfa <- read_csv("ANALYSIS_experiment_results.csv")
 print(df)
 
 
@@ -77,7 +82,7 @@ print(df)
 ## CORE DATA SOURCE - FEC 
 ####################################
 
-df <- read_csv("ANALYSIS_experiment_results_fec.csv")
+dfec <- read_csv("ANALYSIS_experiment_results_fec.csv")
 print(df)
 
 

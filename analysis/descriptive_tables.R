@@ -6,7 +6,6 @@
 #source("indiv_vartab_varplot_functions.R")
 
 
-
 ####################################
 ## Make Descriptive Stats Tables
 ####################################
@@ -21,9 +20,6 @@ options(qwraps2_markup = "latex")
 
 
 
-
-
-
 #Method for Total Applicants
 total_applicants <- 
   list(
@@ -33,19 +29,13 @@ total_applicants <-
   )
 
 
-
-#Method for Sent Applicant Stats (Received/Failed)
-# sent_stats <- 
-#   list(
-#     "Received Applications" =
-#       list("Received Applicants" = ~ n_perc(sent_stats_all$app_sent == "1"),
-#            "Received Applicant Pairs" = ~ n_perc(sent_stats_all$pair_sent == "1")),
-#     
-#     "Failed Applications" =
-#       list("Failed Applicants" = ~ n_perc(sent_stats_all$app_sent == "0"),
-#            "Failed Applicant Pairs" = ~ n_perc(sent_stats_all$pair_sent == "0"))
-#   )
-
+total_applicant_stats <- 
+  list(
+    "Total Job Applicants" =
+      list("Sent Applicants" = ~ n_distinct(.data$index_wave),
+           "Received Applicants" = ~ n_perc(.data$app_sent == "1"),
+           "Failed Applicants" = ~ n_perc(.data$app_sent == "0"))
+  )
 
 sent_stats_apps <- 
   list(
@@ -63,7 +53,7 @@ sent_stats_pairs <-
 
 
 
-#Method for Total Contrib
+#Method for Profiles
 total_profiles <-
   list(
     "Applicant Profiles" =
@@ -90,6 +80,31 @@ total_profiles <-
 
 
 
+#Method for Job Types, Locations
+total_jobs <-
+  list(
+    "Job Type" =
+      list("Data Science" = ~ n_perc(.data$job_type_data_science),
+           "Quantitative Finance" = ~ n_perc(.data$job_type_quant),
+           "Statistics" = ~ n_perc(.data$job_type_stats),
+           "Computer Science" = ~ n_perc(.data$job_type_computer_science),
+           "MBA - Analyst" = ~ n_perc(.data$job_type_mba_analyst),
+           "MBA - Finance" = ~ n_perc(.data$job_type_mba_finance),
+           "MBA - Project Management" = ~ n_perc(.data$job_type_mba)
+      ),
+    
+    "Job Region" =
+      list("Northeast" = ~ n_perc(.data$region_northeast),
+           "Mid-Atlantic" = ~ n_perc(.data$region_midatlantic),
+           "Midwest" = ~ n_perc(.data$region_midwest),
+           "South" = ~ n_perc(.data$region_south),
+           "West" = ~ n_perc(.data$region_westcoast)
+      )
+    
+  )
+
+
+
 #Method for Results
 result_stats_apps <- 
   list(
@@ -104,30 +119,35 @@ result_stats_apps <-
 
 
 
-################################
-## Main Table / All Periods
-################################
+#########################################
+## All Applicants (Received and Failed)
+#########################################
 
 df <- dfb
 
 
 #Make Applicants Data
-applicants_all <- df %>% 
+applicants <- df %>% 
   summary_table(total_applicants)
 
 
 #Make Waves, Successfully Sent, Failed
-sent_stats_all <- df %>% 
+sent_stats <- df %>% 
   select(index_wave, pair_index, bounce_error_other_binary, pair_beo_bin) %>% 
   mutate(app_sent = if_else(bounce_error_other_binary != 1, 1, 0)) %>% 
   mutate(pair_sent = if_else(pair_beo_bin == 0, 1, 0))
 
+#Applicant All Stats
+applicant_stats <- sent_stats %>% 
+  summary_table(total_applicant_stats)
+
+
 #Applicants Stats
-ssa <- sent_stats_all %>% 
+ssa <- sent_stats %>% 
   summary_table(sent_stats_apps) 
 
 #Pair Stats
-ssp <- sent_stats_all %>% 
+ssp <- sent_stats %>% 
   distinct(pair_index, .keep_all = TRUE)  %>% 
   summary_table(sent_stats_pairs) 
 colnames(ssp) <- ". (N = 3,856)"
@@ -141,13 +161,16 @@ df_stats <- dummy_cols(df, select_columns = c("profile",
                                               "party",
                                               "region",
                                               "job_type"))
-profiles_all <- df_stats %>% 
+profiles <- df_stats %>% 
   summary_table(total_profiles) 
+
+jobs <- df_stats %>% 
+  summary_table(total_jobs) 
 
 
 
 #Callback Stats
-cb_stats_all <- df %>% 
+cb_stats <- df %>% 
   select(index_wave, callback_binary, reply_binary, response_binary) %>% 
   mutate(reply_only = if_else( (reply_binary == 1 & callback_binary !=1), 1, 0)) %>% 
   summary_table(result_stats_apps) 
@@ -156,12 +179,134 @@ cb_stats_all <- df %>%
 
 
 #Combined Table for All Data
-tab_all <- rbind(applicants_all, ssa, ssp, profiles_all, cb_stats_all) 
+#tab_all <- rbind(applicants, ssa, ssp, profiles, cb_stats) 
+tab_all <- rbind(applicant_stats, cb_stats, profiles, jobs)
 tab_all
 
 
-capture.output(print(tab_all,
-                     rtitle = "Summary Statistics",
-                     cnames = c("All Applicants")), 
-               file="output/tables/table_descriptive_stats_test.tex")
 
+
+
+#########################################
+## Received Applicants Only
+#########################################
+
+
+df <- dfa
+
+
+#Make Waves, Successfully Sent, Failed
+sent_stats <- df %>% 
+  select(index_wave, pair_index, bounce_error_other_binary, pair_beo_bin) %>% 
+  mutate(app_sent = if_else(bounce_error_other_binary != 1, 1, 0)) %>% 
+  mutate(pair_sent = if_else(pair_beo_bin == 0, 1, 0))
+
+#Applicant All Stats
+applicant_stats <- sent_stats %>% 
+  summary_table(total_applicant_stats)
+
+
+
+#Make Applicants Profiles
+df_stats <- dummy_cols(df, select_columns = c("profile", 
+                                              "prestige",
+                                              "party",
+                                              "region",
+                                              "job_type"))
+profiles <- df_stats %>% 
+  summary_table(total_profiles) 
+
+jobs <- df_stats %>% 
+  summary_table(total_jobs) 
+
+
+
+#Callback Stats
+cb_stats <- df %>% 
+  select(index_wave, callback_binary, reply_binary, response_binary) %>% 
+  mutate(reply_only = if_else( (reply_binary == 1 & callback_binary !=1), 1, 0)) %>% 
+  summary_table(result_stats_apps) 
+
+
+
+
+#Combined Table for All Data
+#tab_all <- rbind(applicants, ssa, ssp, profiles, cb_stats) 
+tab_received <- rbind(applicant_stats, cb_stats, profiles, jobs)
+tab_received
+
+
+
+
+
+
+#########################################
+## FEC Matched, Received Applicants Only
+#########################################
+
+
+df <- dfec
+
+
+#Make Applicants Data
+applicants <- df %>% 
+  summary_table(total_applicants)
+
+
+#Make Waves, Successfully Sent, Failed
+sent_stats <- df %>% 
+  select(index_wave, pair_index, bounce_error_other_binary, pair_beo_bin) %>% 
+  mutate(app_sent = if_else(bounce_error_other_binary != 1, 1, 0)) %>% 
+  mutate(pair_sent = if_else(pair_beo_bin == 0, 1, 0))
+
+#Applicant All Stats
+applicant_stats <- sent_stats %>% 
+  summary_table(total_applicant_stats)
+
+
+#Make Applicants Profiles
+df_stats <- dummy_cols(df, select_columns = c("profile", 
+                                              "prestige",
+                                              "party",
+                                              "region",
+                                              "job_type"))
+profiles <- df_stats %>% 
+  summary_table(total_profiles) 
+
+jobs <- df_stats %>% 
+  summary_table(total_jobs) 
+
+
+
+#Callback Stats
+cb_stats <- df %>% 
+  select(index_wave, callback_binary, reply_binary, response_binary) %>% 
+  mutate(reply_only = if_else( (reply_binary == 1 & callback_binary !=1), 1, 0)) %>% 
+  summary_table(result_stats_apps) 
+
+
+
+
+#Combined Table for All Data
+#tab_all <- rbind(applicants, ssa, ssp, profiles, cb_stats) 
+tab_fec <- rbind(applicant_stats, cb_stats, profiles, jobs)
+tab_fec
+
+
+
+
+
+#########################################
+## Make Final Table
+#########################################
+
+
+final_table <- cbind(tab_all, tab_received, tab_fec)
+final_table
+
+
+
+capture.output(print(final_table,
+                     rtitle = "Summary Statistics",
+                     cnames = c("Sent Applicants", "Received Applicants", "FEC Matched Applicants")), 
+               file="output/tables/table_descriptive_stats_test.tex")
