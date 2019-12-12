@@ -38,9 +38,9 @@ source("bb_finalise_plot_academic.R")
 #source file and cleaning
 
 dfec_edit <- dfec %>% 
-  mutate(pm_var = pm1f) %>% 
+  mutate(pm_var = pmXf) 
   #filter(matched_pair == "A") %>% 
-  #filter(version == "B")
+  #filter(version == "B") 
   #filter(pair_callback_bin != 2) %>%
   #TODO more qc on results, get more results
 
@@ -152,7 +152,7 @@ make_bar_app_match_party <- function(df_in){
     theme(legend.position = "none")
   #guides(shape = guide_legend(override.aes = list(fill = colors_parties2)))
   
-  finalise_plot(g, "", "test_bar_partisan_match_X_party.png", footer=FALSE)
+  finalise_plot(g, "", "output/plots/test_bar_partisan_match_X_party_new.png", footer=FALSE)
   return(g)
   
 }
@@ -223,7 +223,7 @@ make_bar_app_match_only <- function(df_in){
     theme(legend.position = "none")
   #guides(shape = guide_legend(override.aes = list(fill = colors_parties2)))
   
-  finalise_plot(g, "", "test_bar_partisan_match_only.png", footer=FALSE)
+  finalise_plot(g, "", "output/plots/test_bar_partisan_match_only_new.png", footer=FALSE)
   return(g)
   
 }

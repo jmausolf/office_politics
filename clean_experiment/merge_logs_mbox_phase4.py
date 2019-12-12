@@ -167,3 +167,8 @@ outfile2 = "ANALYSIS_experiment_results_fec.csv"
 df.to_csv(outfile2, index=False)
 print("[*] saving dataset {} ...".format(outfile2))
 
+
+outfile2 = "../analysis/ANALYSIS_experiment_results_fec.csv"
+df.to_csv(outfile2, index=False)
+print("[*] saving dataset {} ...".format(outfile2))
+

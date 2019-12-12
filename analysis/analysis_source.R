@@ -76,7 +76,8 @@ print(df)
 
 
 
-
+dfa2 <- dfa %>% 
+  select(list_id, company, party, callback_binary, pair_callback_bin)
 
 ####################################
 ## CORE DATA SOURCE - FEC 
@@ -105,6 +106,9 @@ dfec <- dfec %>%
   mutate(party4 = if_else(median_ps <= 0.00, "DEM", "REP")) %>% 
   mutate(party5 = if_else(pid2_percent_rank < 0.500, "DEM", "REP")) %>%
   mutate(party6 = if_else(partisan_score_percent_rank < 0.500, "DEM", "REP")) %>%
+  
+  #Make Blended Party with OpenSecrets Data
+  mutate(partyX = if_else(!is.na(os_party), os_party, party1)) %>% 
 
   #make partisan dummy
   mutate(partisan = if_else(party != "NEU", 1, 0))  %>% 
@@ -137,6 +141,9 @@ dfec <- dfec %>%
   mutate(pm6 = 
            ifelse((party == party6 & party != "NEU"), 1,
                   ifelse((party != party6 & party != "NEU"), -1, 0))) %>%
+  mutate(pmX = 
+           ifelse((party == partyX & party != "NEU"), 1,
+                  ifelse((party != partyX & party != "NEU"), -1, 0))) %>%
 
   #make factors
   mutate(pm0f = ordered(pm0, levels = c(-1, 0, 1), 
@@ -152,30 +159,38 @@ dfec <- dfec %>%
   mutate(pm5f = ordered(pm5, levels = c(-1, 0, 1), 
          labels=c("mismatch", "neutral", "match"))) %>%
   mutate(pm6f = ordered(pm6, levels = c(-1, 0, 1), 
-         labels=c("mismatch", "neutral", "match")))
+         labels=c("mismatch", "neutral", "match"))) %>% 
+  mutate(pmXf = ordered(pmX, levels = c(-1, 0, 1), 
+                        labels=c("mismatch", "neutral", "match")))
 
 
 
 
-dfc <- dfec %>% 
-  select(callback_binary, pm0, pm1, pm2, pm3, pm4, pm5, pm6, pair_callback_bin) %>%
+dfc1 <- dfec %>% 
+  select(company, party, callback_binary, pm0, pm1, pm2, pm3, pm4, pm5, pm6, pmX, pair_callback_bin) %>%
+  filter(pair_callback_bin >= 1)
+
+
+dfc2 <- dfec %>% 
+  select(company, party, callback_binary, pm0, pm1, pm2, pm3, pm4, pm5, pm6, pmX, pair_callback_bin) %>%
   filter(pair_callback_bin >= 1) %>% 
-  select(callback_binary, pm0, pm1, pm2, pm3, pm4, pm5, pm6)
+  select(callback_binary, pm0, pm1, pm2, pm3, pm4, pm5, pm6, pmX)
 
 
-cor(dfc, method = c("spearman"))
+cor(dfc2, method = c("spearman"))
 
 
-table(dfc$callback_binary, dfc$pm0)
-table(dfc$callback_binary, dfc$pm1)
-table(dfc$callback_binary, dfc$pm2)
-table(dfc$callback_binary, dfc$pm3)
-table(dfc$callback_binary, dfc$pm4)
-table(dfc$callback_binary, dfc$pm5)
-table(dfc$callback_binary, dfc$pm6)
+table(dfc1$callback_binary, dfc1$pm0)
+table(dfc1$callback_binary, dfc1$pm1)
+table(dfc1$callback_binary, dfc1$pm2)
+table(dfc1$callback_binary, dfc1$pm3)
+table(dfc1$callback_binary, dfc1$pm4)
+table(dfc1$callback_binary, dfc1$pm5)
+table(dfc1$callback_binary, dfc1$pm6)
+table(dfc1$callback_binary, dfc1$pmX)
 
 
-#number 1 or 2 seem best
+#number  1 or 2 seem best
 
 
 
