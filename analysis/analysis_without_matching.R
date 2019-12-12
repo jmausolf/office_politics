@@ -24,21 +24,8 @@ colors_parties1 = c(colors_dem[1], colors_neutral[1], colors_rep[1])
 colors_parties0 = c("#2129B0", "#3A084A", "#BF1200")
 show_col(colors_parties0)
 
-show_col(brewer.pal.all())
-
 #Display a Pallete
 show_col(colors_dem)
-
-colors(colors_dem)
-plot(colors_dem)
-
-show_col(colors_dem)
-
-showCols(colors_dem)
-display.pal(colors_dem)
-display.brewer.pal(n = 4, name = 'colors_dem')
-
-scale_color_manual("", values=colors_vec, labels=occ_labels)
 
 #Overwrite bbplot finalise_plot() function
 source("bb_finalise_plot_academic.R")
