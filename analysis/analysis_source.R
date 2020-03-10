@@ -55,6 +55,31 @@ wout <- function(plt_type, cid){
   return(outfile)
 }
 
+#Function for Fixing Odds Ratios Pvals (from glm)
+stargazer2 <- function(model, odd.ratio = F, ...) {
+  if(!("list" %in% class(model))) model <- list(model)
+  
+  if (odd.ratio) {
+    coefOR2 <- lapply(model, function(x) exp(coef(x)))
+    seOR2 <- lapply(model, function(x) exp(coef(x)) * summary(x)$coef[, 2])
+    p2 <- lapply(model, function(x) summary(x)$coefficients[, 4])
+    stargazer(model, coef = coefOR2, se = seOR2, p = p2, ...)
+    
+  } else {
+    stargazer(model, ...)
+  }
+}
+
+
+#Change Append = TRUE to Not Overwrite Files
+save_stargazer2 <- function(output.file, ...) {
+  output <- capture.output(stargazer2(...))
+  cat(paste(output, collapse = "\n"), "\n", file=output.file, append = FALSE)
+}
+
+
+
+
 
 ####################################
 ## CORE DATA SOURCE - All 
@@ -164,6 +189,8 @@ dfec <- dfec %>%
                         labels=c("mismatch", "neutral", "match")))
 
 
+#Save a Copy
+write.csv(dfec, "ANALYSIS_experiment_results_fec_cleaned.csv", row.names = FALSE)
 
 
 dfc1 <- dfec %>% 
@@ -193,5 +220,6 @@ table(dfc1$callback_binary, dfc1$pmX)
 #number  1 or 2 seem best
 
 
+dfec2 <- dfec %>% select(list_id, company, party, callback_binary, pair_callback_bin, partyX, pmXf)
 
-
+dfec3 <- anti_join(dfa2, dfec2)

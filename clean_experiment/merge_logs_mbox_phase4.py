@@ -34,7 +34,7 @@ fk.columns = ['fec_company', 'list_id']
 fkb = pd.DataFrame({'fec_company':['Berkshire Hathaway'],
 				    'list_id':['f1000_01']})
 fk = fk.append(fkb, ignore_index=False)
-
+fk.to_csv("fortune1000-list_id.csv", index=False)
 print(fk)
 #print(fk.columns)
 

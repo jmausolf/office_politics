@@ -30,7 +30,7 @@ show_col(colors_dem)
 #Overwrite bbplot finalise_plot() function
 source("bb_finalise_plot_academic.R")
 
-
+source("analysis_source.R")
 ######################################
 ## Load Data
 ######################################
@@ -43,6 +43,34 @@ dfec_edit <- dfec %>%
   #filter(version == "B") 
   #filter(pair_callback_bin != 2) %>%
   #TODO more qc on results, get more results
+
+
+
+df1 <- dfec_edit %>% 
+  #filter(pair_callback_bin != 2) %>% 
+  select(callback_binary, pm_var, partyX) %>% 
+  group_by(pm_var, partyX) %>% 
+  add_tally(callback_binary, name = "total_callbacks") %>% 
+  add_count(pm_var, name = "total_applications") %>% 
+  mutate(proportion_callback = total_callbacks / total_applications) %>% 
+  select(-callback_binary) %>% 
+  distinct()
+
+df1
+
+#Get Upper and Lower CI
+df1_err <- binconf(df1$total_callbacks, df1$total_applications, alpha=0.05, method=c("asymptotic"))
+df1_err <- as.data.frame(df1_err) %>% 
+  mutate(pe = PointEst, 
+         lci = Lower,
+         uci = Upper) %>% 
+  select(pe, lci, uci)
+df1_full <- bind_cols(df1, df1_err)
+
+
+
+
+
 
 df2 <- dfec_edit %>% 
   #filter(pair_callback_bin != 2) %>% 
@@ -57,13 +85,18 @@ df2 <- dfec_edit %>%
 df2
 
 #Get Upper and Lower CI
-df2_err <- binconf(df2$total_callbacks, df2$total_applications, alpha=0.05, method=c("wilson"))
+df2_err <- binconf(df2$total_callbacks, df2$total_applications, alpha=0.05, method=c("asymptotic"))
 df2_err <- as.data.frame(df2_err) %>% 
   mutate(pe = PointEst, 
          lci = Lower,
          uci = Upper) %>% 
   select(pe, lci, uci)
 df2_full <- bind_cols(df2, df2_err)
+
+
+
+
+
 
 
 
@@ -77,16 +110,18 @@ df3 <- dfec_edit %>%
   select(-callback_binary) %>% 
   distinct()
 
+
 df3
 
 #Get Upper and Lower CI
-df3_err <- binconf(df3$total_callbacks, df3$total_applications, alpha=0.05, method=c("wilson"))
+df3_err <- binconf(df3$total_callbacks, df3$total_applications, alpha=0.05, method=c("asymptotic"))
 df3_err <- as.data.frame(df3_err) %>% 
   mutate(pe = PointEst, 
          lci = Lower,
          uci = Upper) %>% 
   select(pe, lci, uci)
 df3_full <- bind_cols(df3, df3_err)
+
 
 
 

@@ -105,6 +105,74 @@ df4 <- df %>%
 #Should also look at matched pair analyses vs. single pair
 #twice as many neutral apps...
 
+
+prestige_types <- c(
+  "H" = "High Prestige",
+  "L" = "Low Prestige"
+)
+
+
+make_bar_app_prestige_party <- function(df_in){
+  
+  g <- ggplot(df_in, aes(party, proportion_callback, fill=party)) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(ymin=lci, ymax=uci), width=0.4) + 
+    facet_grid(~prestige, labeller = as_labeller(prestige_types)) +
+    
+    #Add bbcstyle
+    bbc_style() +
+    
+    scale_y_continuous(labels = scales::percent)  +
+    
+    scale_fill_manual("", values=colors_parties2) +
+    
+    #Xaxis Line
+    geom_hline(yintercept = 0, size = 1, colour="#333333") +
+    
+    #Add axis titles
+    theme(axis.title = element_text(size = 18)) +
+    xlab("Applicant Political Party") +
+    ylab("Percentage Callbacks") +
+    labs(title = "Callbacks by Applicant Party and Prestige",
+         caption = "") +
+    theme(plot.title = element_text(hjust = 0.5)) +
+    
+    
+    #Add x axis ticks
+    theme(
+      axis.ticks.x = element_line(colour = "#333333"), 
+      axis.ticks.length =  unit(0.26, "cm"),
+      axis.text = element_text(size=14, color="#222222")) +
+    
+    theme(
+      #Blank Background
+      panel.background = ggplot2::element_blank(),
+      
+      #Grid lines
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major.y = ggplot2::element_line(color="#cbcbcb"),
+      panel.grid.major.x = ggplot2::element_blank(),
+      
+      #Facet Wrap Background
+      strip.background = ggplot2::element_rect(fill="white"),
+      strip.text = ggplot2::element_text(size  = 18,  hjust = 0.5),
+      
+      #Axis Text
+      axis.text = ggplot2::element_text(size=14,
+                                        color="#222222")
+    ) +
+    
+    #Remove Legend
+    theme(legend.position = "none")
+  #guides(shape = guide_legend(override.aes = list(fill = colors_parties2)))
+  
+  finalise_plot(g, "", "output/plots/parties_X_prestige_bar_app.png", footer=FALSE)
+  return(g)
+  
+}
+
+make_bar_app_prestige_party(df2_full)
+
 ## Graph Percentages
 
 

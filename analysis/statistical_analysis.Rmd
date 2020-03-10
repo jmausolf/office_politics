@@ -1,0 +1,154 @@
+---
+title: "statistical_analysis"
+author: "Joshua G. Mausolf"
+date: "3/7/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = FALSE, message=FALSE, warning=FALSE)
+```
+
+
+```{r}
+source("analysis_source.R")
+```
+
+
+```{r}
+####################################
+## Matches by Mismatch or Match 
+####################################
+
+tt0 <- dfec %>% 
+  select(callback_binary, pmX, pmXf) %>% 
+  filter(pmXf != "neutral")
+
+t.test(callback_binary ~ pmXf, data = tt0)
+
+```
+
+```{r}
+tt1 <- dfec %>% 
+  select(callback_binary, pmX, pmXf) %>% 
+  filter(pmXf != "match")
+
+t1 <- t.test(callback_binary ~ pmXf, data = tt1)
+t1
+
+
+
+```
+
+
+```{r}
+tt2 <- dfec %>% 
+  select(callback_binary, pmX, pmXf) %>% 
+  filter(pmXf != "mismatch")
+
+t.test(callback_binary ~ pmXf, data = tt2)
+
+```
+
+# T-tests for the (by firm party graphs)
+
+```{r}
+tt0r <- dfec %>% 
+  select(callback_binary, pmX, pmXf, partyX) %>% 
+  filter(pmXf != "neutral") %>% 
+  filter(partyX == "REP")
+
+t.test(callback_binary ~ pmXf, data = tt0r)
+```
+
+```{r}
+tt0d <- dfec %>% 
+  select(callback_binary, pmX, pmXf, partyX) %>% 
+  filter(pmXf != "neutral") %>% 
+  filter(partyX == "DEM")
+
+t.test(callback_binary ~ pmXf, data = tt0d)
+```
+
+
+
+```{r}
+a1 <- aov(callback_binary ~ pmXf, data=dfec)
+summary(a1)
+```
+
+```{r}
+df <- dfec %>% 
+  mutate(pmXf = factor(pmXf))
+```
+
+
+```{r}
+
+df <- dfec %>% 
+  mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(prestige_level = factor(prestige_level)) %>% 
+  mutate(job_type = factor(job_type)) %>% 
+  mutate(pair_order = factor(matched_pair)) %>% 
+  mutate(resume_version = factor(version)) %>% 
+  mutate(exp_wave = factor(wave))
+  #select(callback_binary, pmXf, prestige_level)
+
+m1 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match"),
+          data = df, family = binomial(link = "logit"))
+summary(m1)
+
+
+m2 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m2)
+
+
+m3 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(prestige_level, ref="Low") +
+            job_type,
+          data = df, family = binomial(link = "logit"))
+summary(m3)
+
+m4 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(prestige_level, ref="Low") +
+            job_type +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m4)
+
+
+m5 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(prestige_level, ref="Low") +
+            region +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m5)
+
+
+models <- list(m1, m2, m3, m4, m5)
+
+stargazer2(models,
+           odd.ratio = T,
+           type = "text",
+           star.cutoffs = c(0.1, 0.05, 0.01, 0.001),
+           star.char = c("+", "*", "**", "***"),
+           notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
+```
+
+
+
+```{r}
+source("analysis_with_matching.R")
+```
+
