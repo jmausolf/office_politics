@@ -46,29 +46,6 @@ dfec_edit <- dfec %>%
 
 
 
-df1 <- dfec_edit %>% 
-  #filter(pair_callback_bin != 2) %>% 
-  select(callback_binary, pm_var, partyX) %>% 
-  group_by(pm_var, partyX) %>% 
-  add_tally(callback_binary, name = "total_callbacks") %>% 
-  add_count(pm_var, name = "total_applications") %>% 
-  mutate(proportion_callback = total_callbacks / total_applications) %>% 
-  select(-callback_binary) %>% 
-  distinct()
-
-df1
-
-#Get Upper and Lower CI
-df1_err <- binconf(df1$total_callbacks, df1$total_applications, alpha=0.05, method=c("asymptotic"))
-df1_err <- as.data.frame(df1_err) %>% 
-  mutate(pe = PointEst, 
-         lci = Lower,
-         uci = Upper) %>% 
-  select(pe, lci, uci)
-df1_full <- bind_cols(df1, df1_err)
-
-
-
 
 
 

@@ -87,6 +87,8 @@ df <- dfec %>%
 
 df <- dfec %>% 
   mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(party_firm = factor(partyX)) %>% 
+  mutate(party_app = factor(party)) %>% 
   mutate(prestige_level = factor(prestige_level)) %>% 
   mutate(job_type = factor(job_type)) %>% 
   mutate(pair_order = factor(matched_pair)) %>% 
@@ -100,11 +102,47 @@ m1 <- glm(callback_binary ~
 summary(m1)
 
 
+#alt model approach, appendix
+# m3 <- glm(callback_binary ~
+#             relevel(party_app, ref = "NEU")*
+#             relevel(party_firm, ref="DEM"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m3)
+
+m3 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="DEM"),
+          data = df, family = binomial(link = "logit"))
+summary(m3)
+
+m3 <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP"),
+          data = df, family = binomial(link = "logit"))
+summary(m3)
+
+
+
 m2 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
             relevel(prestige_level, ref="Low"),
           data = df, family = binomial(link = "logit"))
 summary(m2)
+
+
+m3 <- glm(callback_binary ~
+            relevel(pmXf, ref = "neutral")*
+            relevel(party_firm, ref="DEM") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m3)
+
+m3 <- glm(callback_binary ~
+            relevel(pmXf, ref = "neutral") +
+            relevel(party_firm, ref="DEM") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m3)
 
 
 m3 <- glm(callback_binary ~
