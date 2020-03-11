@@ -12,6 +12,9 @@ knitr::opts_chunk$set(echo = FALSE, cache = FALSE, message=FALSE, warning=FALSE)
 
 ```{r}
 source("analysis_source.R")
+
+library(car)
+library(forcats)
 ```
 
 
@@ -93,13 +96,31 @@ df <- dfec %>%
   mutate(job_type = factor(job_type)) %>% 
   mutate(pair_order = factor(matched_pair)) %>% 
   mutate(resume_version = factor(version)) %>% 
-  mutate(exp_wave = factor(wave))
+  mutate(exp_wave = factor(wave)) 
+  #select(job_type)
   #select(callback_binary, pmXf, prestige_level)
 
-m1 <- glm(callback_binary ~
-            relevel(pmXf, ref = "match"),
-          data = df, family = binomial(link = "logit"))
-summary(m1)
+df <- df %>% 
+  mutate(job_type2 = fct_recode(job_type,
+                               ds_quant = "data_science",
+                               ds_quant = "quant",
+                               ds_quant = "stats",
+                               mba = "mba",
+                               mba = "mba_analyst",
+                               mba = "mba_finance"
+                               )) %>% 
+  mutate(region2 = fct_recode(region,
+                               east = "northeast",
+                               east = "midatlantic"
+                               ))
+
+table(df$job_type, df$job_type2)
+table(df$region)
+table(df$region, df$region2)
+# m1 <- glm(callback_binary ~
+#             relevel(pmXf, ref = "match"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m1)
 
 
 #alt model approach, appendix
@@ -108,54 +129,76 @@ summary(m1)
 #             relevel(party_firm, ref="DEM"),
 #           data = df, family = binomial(link = "logit"))
 # summary(m3)
+# 
+# m3 <- glm(callback_binary ~
+#             relevel(pmXf, ref = "match") +
+#             relevel(party_firm, ref="DEM"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m3)
+# 
+# m3 <- glm(callback_binary ~
+#             relevel(pmXf, ref = "match") +
+#             relevel(party_firm, ref="REP"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m3)
+# vif(m3)
 
-m3 <- glm(callback_binary ~
+
+# m2 <- glm(callback_binary ~
+#             relevel(pmXf, ref = "match") +
+#             relevel(party_firm, ref="REP"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m2)
+
+
+# m3 <- glm(callback_binary ~
+#             relevel(pmXf, ref = "match")*
+#             relevel(party_firm, ref="DEM") +
+#             relevel(prestige_level, ref="Low"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m3)
+
+# m3 <- glm(callback_binary ~
+#             relevel(pmXf, ref = "neutral") +
+#             relevel(party_firm, ref="DEM") +
+#             relevel(prestige_level, ref="Low"),
+#           data = df, family = binomial(link = "logit"))
+# summary(m3)
+
+m1 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
-            relevel(party_firm, ref="DEM"),
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low"),
           data = df, family = binomial(link = "logit"))
-summary(m3)
-
-m3 <- glm(callback_binary ~
-            relevel(pmXf, ref = "match") +
-            relevel(party_firm, ref="REP"),
-          data = df, family = binomial(link = "logit"))
-summary(m3)
-
+summary(m1)
 
 
 m2 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
-            relevel(prestige_level, ref="Low"),
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            job_type2,
           data = df, family = binomial(link = "logit"))
 summary(m2)
 
-
-m3 <- glm(callback_binary ~
-            relevel(pmXf, ref = "neutral")*
-            relevel(party_firm, ref="DEM") +
-            relevel(prestige_level, ref="Low"),
-          data = df, family = binomial(link = "logit"))
-summary(m3)
-
-m3 <- glm(callback_binary ~
-            relevel(pmXf, ref = "neutral") +
-            relevel(party_firm, ref="DEM") +
-            relevel(prestige_level, ref="Low"),
-          data = df, family = binomial(link = "logit"))
-summary(m3)
-
-
 m3 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP") +
             relevel(prestige_level, ref="Low") +
-            job_type,
+            relevel(job_type2, ref="ds_quant") +
+            pair_order +
+            resume_version +
+            exp_wave,
           data = df, family = binomial(link = "logit"))
 summary(m3)
+
 
 m4 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP") +
             relevel(prestige_level, ref="Low") +
-            job_type +
+            relevel(job_type2, ref="ds_quant") +
+            relevel(region2, ref="east") +
             pair_order +
             resume_version +
             exp_wave,
@@ -163,18 +206,7 @@ m4 <- glm(callback_binary ~
 summary(m4)
 
 
-m5 <- glm(callback_binary ~
-            relevel(pmXf, ref = "match") +
-            relevel(prestige_level, ref="Low") +
-            region +
-            pair_order +
-            resume_version +
-            exp_wave,
-          data = df, family = binomial(link = "logit"))
-summary(m5)
-
-
-models <- list(m1, m2, m3, m4, m5)
+models <- list(m1, m2, m3, m4)
 
 stargazer2(models,
            odd.ratio = T,
@@ -186,7 +218,5 @@ stargazer2(models,
 
 
 
-```{r}
-source("analysis_with_matching.R")
-```
+
 

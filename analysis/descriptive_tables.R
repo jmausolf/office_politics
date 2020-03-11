@@ -2,9 +2,7 @@
 ## Load SOURCE
 ####################################
 
-#source("indiv_source.R")
-#source("indiv_vartab_varplot_functions.R")
-
+source("analysis_source.R")
 
 ####################################
 ## Make Descriptive Stats Tables
@@ -307,6 +305,7 @@ final_table
 
 
 capture.output(print(final_table,
+                     booktabs = TRUE,
                      rtitle = "Summary Statistics",
                      cnames = c("Sent Applicants", "Received Applicants", "FEC Matched Applicants")), 
                file="output/tables/table_descriptive_stats_test.tex")
