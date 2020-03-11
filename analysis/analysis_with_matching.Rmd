@@ -6,11 +6,11 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, cache = FALSE, message=FALSE, warning=FALSE)
 ```
 
 
-```{r}
+```{r load lib and data}
 ######################################
 ## Load Libraries & Data
 ######################################
@@ -23,6 +23,7 @@ library(bbplot)
 library(scales)
 library(RColorBrewer)
 library(ggthemes)
+library(gtools)
 
 
 colors_neutral = rev(brewer.pal(n = 8, name = "Purples")[5:8])
@@ -57,7 +58,7 @@ dfec_edit <- dfec %>%
 
 
 
-```{r}
+```{r df1-matchXfirms}
 
 df1 <- dfec_edit %>%
   #filter(pair_callback_bin != 2) %>%
@@ -122,6 +123,7 @@ df1_full <- left_join(df1_full, pvals_df_firm) %>%
                                levels = c("match_DEM", "neutral_DEM", "match_REP",
                                           "mismatch_DEM", "neutral_REP", "mismatch_REP"),
                                )) %>%
+  ungroup() %>% 
   mutate(pm_var = factor(pm_var, labels = c("MISMATCH", "NEUTRAL", "MATCH"))) %>% 
   select(pm_var_party, pm_var, partyX, everything())
 
@@ -129,7 +131,7 @@ table(df1_full$pm_var_party)
 ```
 
 
-```{r}
+```{r matchXfirm fig}
 colors_parties6= c("#2129B0", "#969696", "#BF1200", "#BF1200", "#969696", "#2129B0")
 
 party_types <- c(
@@ -214,7 +216,7 @@ make_bar_app_match_party(df1_full)
 
 
 
-```{r}
+```{r df2-match by party}
 df2 <- dfec_edit %>% 
   #filter(pair_callback_bin != 2) %>% 
   select(callback_binary, pm_var, party) %>% 
@@ -311,7 +313,7 @@ make_bar_app_match_party(df2_full)
 
 
 
-```{r}
+```{r df3 matches only}
 df3 <- dfec_edit %>% 
   #filter(pair_callback_bin != 2) %>% 
   select(callback_binary, pm_var) %>% 
@@ -364,7 +366,8 @@ df3_full <- bind_cols(df3_full, dft)
 
 #Add T-test Star Results
 source("ttest_loop_matrices.R")
-df3_full <- left_join(df3_full, pvals_df_matches) %>% 
+df3_full <- left_join(df3_full, pvals_df_matches) %>%
+  ungroup() %>% 
   mutate(pm_var = factor(pm_var,
                          levels = c('mismatch', 'neutral', 'match'),
                          labels = c("MISMATCH", "NEUTRAL", "MATCH"))) %>% 
