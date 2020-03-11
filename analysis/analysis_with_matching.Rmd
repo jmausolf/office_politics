@@ -32,6 +32,7 @@ colors_rep = c("#700009", "#99000D", "#D80012", "#EF3B2C")
 colors_grey = rev(brewer.pal(n = 8, name = "Greys")[5:8])
 show_col(colors_grey)
 
+colors_parties6= c("#2129B0", "#969696", "#BF1200", "#BF1200", "#969696", "#2129B0")
 colors_parties2 = c("#2129B0", "#969696", "#BF1200")
 colors_parties1 = c(colors_dem[1], colors_neutral[1], colors_rep[1])
 colors_parties0 = c("#2129B0", "#3A084A", "#BF1200")
@@ -84,6 +85,10 @@ df1_err <- as.data.frame(df1_err) %>%
 party_matches <- c("mismatch", "neutral", "match")
 parties <- c("DEM", "REP")
 
+#Add ttest upper, lower ci (one-sided)
+party_matches <- c("mismatch", "neutral", "match")
+parties <- c("DEM", "REP")
+
 output <- list()
 for(i in seq_along(parties)){
   for(j in seq_along(party_matches)){
@@ -113,63 +118,29 @@ dft <- bind_rows(output)
 
 
 df1_full <- bind_cols(df1, df1_err) %>% arrange(partyX, pm_var)
+df1_full <- bind_cols(df1_full, dft)
 
-#df1_fullb <- inner_join(df1_full, dft)
+df1_full <- df1_full %>% 
+  #Make Special Column for Graph
+  mutate(pm_var_party = str_c(pm_var, partyX, sep = '_')) 
 
-df1_fullb <- bind_cols(df1_full, dft)
+#Must run ttest_loop_matrics
+df1_full <- left_join(df1_full, pvals_df_firm) %>% 
+#df1_full <- df1_full %>% 
+  mutate(pm_var_party = factor(pm_var_party,
+                               levels = c("match_DEM", "neutral_DEM", "match_REP",
+                                          "mismatch_DEM", "neutral_REP", "mismatch_REP"),
+                               )) %>%
+  select(pm_var_party, pm_var, partyX, everything())
 
-
-
+table(df1_full$pm_var_party)
 ```
 
 
 ```{r}
-
-
-#detach(package:Hmisc)
-# detach(package:Rmisc)
-# detach(package:plyr)
-# library(dplyr)
-
-# df1a <- dfec_edit %>%
-#   select(callback_binary, pm_var, partyX) %>%
-#   group_by(pm_var, partyX) %>%
-#   add_tally(callback_binary, name = "total_callbacks") %>%
-#   add_count(pm_var, name = "total_applications") %>%
-#   summarise(total_callbacks = unique(total_callbacks),
-#             total_applications = unique(total_applications),
-#             smean = mean(callback_binary, na.rm = TRUE),
-#             ssd = sd(callback_binary, na.rm = TRUE),
-#             count = n()) %>%
-#   mutate(se = ssd / sqrt(count),
-#          lower.ci.mpg = smean - qt(1 - (0.05 / 2), count - 1) * se,
-#          upper.ci.mpg = smean + qt(1 - (0.05 / 2), count - 1) * se)
-# 
-# df1 <- dfec_edit %>%
-#   #filter(pair_callback_bin != 2) %>%
-#   select(callback_binary, pm_var, partyX) %>%
-#   group_by(pm_var, partyX) %>%
-#   add_tally(callback_binary, name = "total_callbacks") %>%
-#   add_count(pm_var, name = "total_applications") %>%
-#   mutate(proportion_callback = total_callbacks / total_applications) %>%
-#   select(-callback_binary) %>%
-#   distinct()
-# 
-# df1
-# 
-# #Get Upper and Lower CI
-# df1_err <- binconf(df1$total_callbacks, df1$total_applications, alpha=0.05, method=c("asymptotic"))
-# df1_err <- as.data.frame(df1_err) %>% 
-#   mutate(pe = PointEst, 
-#          lci = Lower,
-#          uci = Upper) %>% 
-#   select(pe, lci, uci)
-# df1_full <- bind_cols(df1, df1_err)
-# 
-# df1a_full <- bind_cols(df1a, df1_err)
-# 
-
-
+#colors_parties6= c("#2129B0", "#BF1200", "#BF1200", "#2129B0", "#969696", "#969696")
+#X, neu, X, mismatch dem, neu, mismatch rep
+colors_parties6= c("#2129B0", "#969696", "#BF1200", "#BF1200", "#969696", "#2129B0")
 
 party_types <- c(
   "DEM" = "Democratic Firm",
@@ -177,10 +148,11 @@ party_types <- c(
 )
 
 make_bar_app_match_party <- function(df_in){
-  
-  g <- ggplot(df_in, aes(pm_var, proportion_callback, fill=pm_var)) +
+
+  g <- ggplot(df_in, aes(pm_var, proportion_callback, fill=pm_var_party)) +
+  # ggplot(df1_full, aes(pm_var, proportion_callback, fill=pm_var_party)) +
     geom_bar(stat = "identity") +
-    geom_errorbar(aes(ymin=li1, ymax=ui2), width=0.4) + 
+    geom_errorbar(aes(ymin=li, ymax=ui), width=0.4) + 
     facet_grid(~partyX, labeller = as_labeller(party_types)) +
     
     #Add bbcstyle
@@ -188,25 +160,28 @@ make_bar_app_match_party <- function(df_in){
     
     scale_y_continuous(labels = scales::percent)  +
     
-    scale_fill_manual("", values=colors_parties2) +
+    #scale_fill_manual("", values=colors_parties6) +
     
     #Xaxis Line
     geom_hline(yintercept = 0, size = 1, colour="#333333") +
     
     #Add axis titles
     theme(axis.title = element_text(size = 18)) +
-    xlab("Applicant Partisan Match") +
+    xlab("Applicant Partisanship") +
     ylab("Percentage Callbacks") +
-    labs(title = "Callbacks by Applicant Party and Partisan Match",
+    labs(title = "Callbacks by Applicant and Firm Party",
          caption = "") +
     theme(plot.title = element_text(hjust = 0.5)) +
     
-    
+
     #Add x axis ticks
     theme(
-      axis.ticks.x = element_line(colour = "#333333"), 
-      axis.ticks.length =  unit(0.26, "cm"),
-      axis.text = element_text(size=14, color="#222222")) +
+      #Remove X axis
+      #axis.title.x=element_blank(),
+      axis.ticks.x = element_blank(),
+      axis.text.x = element_blank()) +
+      #axis.text = element_text(size=14, color="#222222")) +
+      
     
     theme(
       #Blank Background
@@ -226,16 +201,33 @@ make_bar_app_match_party <- function(df_in){
                                         color="#222222")
     ) +
     
-    #Remove Legend
-    theme(legend.position = "none")
+    #Legend Text and Fill
+    scale_fill_manual(name="",
+                      breaks=c("match_DEM", "neutral_REP", "match_REP"),
+                      labels=c("Democrat", "Neutral", "Republican"),
+                      values=colors_parties6) +
+    
+    #Adjust Legend Position
+    theme(
+      legend.position = 'bottom',
+      #legend.justification='right',
+      legend.direction='horizontal',
+      legend.spacing.x = unit(3.5, 'mm'),
+      #legend.position=c(0.0,.9)
+      legend.text=element_text(size=16)
+    ) +
+
+    #Add text, star labels    
+    geom_text(aes(label = star_range, y = ui), vjust = -0.25) 
+
   #guides(shape = guide_legend(override.aes = list(fill = colors_parties2)))
-  
+
   finalise_plot(g, "", "output/plots/bar_partisan_match_X_firm_party.png", footer=FALSE)
   return(g)
-  
+
 }
 
-make_bar_app_match_party(df1_fullb)
+make_bar_app_match_party(df1_full)
 
 
 ```
