@@ -31,9 +31,22 @@ keep if pmxf != "mismatch"
 ttest callback_binary, by(pmxf) unequal
 restore
 
+// Graphs by Firm Type
 
 preserve
 keep if pmxf != "neutral"
+keep if partyx == "REP"
+ttest callback_binary, by(pmxf) unequal
+restore
+
+preserve
+keep if pmxf != "match"
+keep if partyx == "REP"
+ttest callback_binary, by(pmxf) unequal
+restore
+
+preserve
+keep if pmxf != "mismatch"
 keep if partyx == "REP"
 ttest callback_binary, by(pmxf) unequal
 restore
@@ -45,6 +58,11 @@ keep if pmxf != "neutral"
 keep if partyx == "DEM"
 ttest callback_binary, by(pmxf) unequal
 restore
+
+
+
+
+
 
 // Close Log
 log close __ttests_analysis

@@ -1,5 +1,5 @@
 ####################################################
-## Ttests and Loop by Firm
+## Ttests Loop by Firm and Match
 ####################################################
 
 #Ttest Loop, Print Results
@@ -86,4 +86,56 @@ pvals_df_firm <- rbind(pval_df1, pval_df2)
 pvals_df_firm
 
 
+####################################################
+## Ttests Loop by Match
+####################################################
+
+
+#Ttest Loop, Print Results
+party_matches <- c("mismatch", "neutral", "match")
+output_ttest <- list()
+for(i in seq_along(party_matches)){
+    pm = party_matches[i]
+    ttd <- dfec %>% select(callback_binary, partyX, pmXf) %>% filter(pmXf != pm)
+    tt <- t.test(callback_binary~pmXf, data = ttd)
+    
+    print(tt)
+}
+
+
+tWrap <- function(x) t.test(x$Var1, x$Var2)$p.value
+
+df_ttests <- dfec %>% select(callback_binary, pmXf, partyX) 
+L <- split(df_ttests$callback_binary, df_ttests$pmXf)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=3)
+pval_pm <- pvals_mat
+pval_df_pm <- as.data.frame(pval_pm)
+pval_df_pm
+colnames(pval_df_pm) <- c('pval1', 'pval2', 'pval3')
+rownames(pval_df_pm) <- c('mismatch', 'neutral', 'match')
+pval_df_pm$pm_var = rownames(pval_df_pm)
+pval_df_pm
+
+
+#library(gtools)
+pvals_df_matches <- pval_df_pm %>% 
+  mutate(stars1 = str_replace(stars.pval(pval1), '\\.', '+')) %>% 
+  mutate(stars2 = str_replace(stars.pval(pval2), '\\.', '+')) %>% 
+  mutate(stars3 = str_replace(stars.pval(pval3), '\\.', '+')) %>% 
+
+
+  mutate(star_range1 = paste(stars1, ' ^ ', stars2, sep = '')) %>%
+  mutate(star_range2 = paste(stars1, ' ^ ', stars3, sep = '')) %>%
+  mutate(star_range3 = paste(stars2, ' ^ ', stars3, sep = '')) %>% 
+
+
+  mutate(star_range1 = ifelse( stars1 == " " | stars2 == " ", "", star_range1)) %>% 
+  mutate(star_range2 = ifelse( stars1 == " " | stars3 == " ", "", star_range2)) %>%
+  mutate(star_range3 = ifelse( stars2 == " " | stars3 == " ", "", star_range3)) %>% 
+  
+  mutate(star_range = paste0(star_range1, star_range2, star_range3)) %>% 
+  select(pm_var, star_range, pval1, pval2, pval3) 
+
+pvals_df_matches
 
