@@ -37,6 +37,7 @@ colors_parties6= c("#2129B0", "#969696", "#BF1200", "#BF1200", "#969696", "#2129
 colors_parties2 = c("#2129B0", "#969696", "#BF1200")
 colors_parties1 = c(colors_dem[1], colors_neutral[1], colors_rep[1])
 colors_parties0 = c("#2129B0", "#3A084A", "#BF1200")
+colors_parties_bin = c("#2129B0", "#BF1200")
 show_col(colors_parties0)
 
 #Display a Pallete
@@ -78,9 +79,6 @@ df1_err <- as.data.frame(df1_err) %>%
          uci = Upper) %>% 
   select(pe, lci, uci) 
 
-  
-party_matches <- c("mismatch", "neutral", "match")
-parties <- c("DEM", "REP")
 
 #Add ttest upper, lower CI's
 party_matches <- c("mismatch", "neutral", "match")
@@ -121,7 +119,7 @@ source("ttest_loop_matrices.R")
 df1_full <- left_join(df1_full, pvals_df_firm) %>% 
   mutate(pm_var_party = factor(pm_var_party,
                                levels = c("match_DEM", "neutral_DEM", "match_REP",
-                                          "mismatch_DEM", "neutral_REP", "mismatch_REP"),
+                                          "mismatch_DEM", "neutral_REP", "mismatch_REP")
                                )) %>%
   ungroup() %>% 
   mutate(pm_var = factor(pm_var, labels = c("MISMATCH", "NEUTRAL", "MATCH"))) %>% 
@@ -184,7 +182,7 @@ make_bar_app_match_party <- function(df_in){
       
       #Axis Text
       axis.text.y = ggplot2::element_text(size=14, color="#222222"),
-      axis.text.x = ggplot2::element_text(size=12, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
     ) +
     
     #Legend Text and Fill
@@ -218,7 +216,8 @@ make_bar_app_match_party(df1_full)
 
 ```{r df2-match by party}
 df2 <- dfec_edit %>% 
-  #filter(pair_callback_bin != 2) %>% 
+  mutate(pm_var = factor(pm_var, labels = c("MISMATCH", "NEUTRAL", "MATCH"))) %>% 
+  filter(pm_var != "NEUTRAL") %>% 
   select(callback_binary, pm_var, party) %>% 
   group_by(pm_var, party) %>% 
   add_tally(callback_binary, name = "total_callbacks") %>% 
@@ -236,22 +235,69 @@ df2_err <- as.data.frame(df2_err) %>%
          lci = Lower,
          uci = Upper) %>% 
   select(pe, lci, uci)
-df2_full <- bind_cols(df2, df2_err)
+
+
+#Add ttest upper, lower CI's
+party_matches <- c("mismatch", "match")
+parties <- c("DEM", "REP")
+
+output <- list()
+for(i in seq_along(parties)){
+  for(j in seq_along(party_matches)){
+    p = parties[i]
+    pm = party_matches[j]
+    id <- paste(p, pm, sep = '_')
+    ttd <- dfec %>% select(callback_binary, party, pmXf) %>% filter(pmXf == pm, party == p)
+    tt <- t.test(ttd$callback_binary)
+    li <- tt$conf.int[1]
+    ui <- tt$conf.int[2]
+
+    tt1 <- t.test(ttd$callback_binary, alternative = "greater")
+    li1 <- tt1$conf.int[1]
+    
+    tt2 <- t.test(ttd$callback_binary, alternative = "less")
+    ui2 <- tt2$conf.int[2]
+    mean <- tt$estimate[1]
+    
+    df_out <- data.frame(p, pm, mean, li, ui, li1, ui2)
+    output[[id]] <- df_out
+}
+}
+
+
+dft <- bind_rows(output) 
+df2_full <- bind_cols(df2, df2_err) %>% arrange(party, pm_var)
+df2_full <- bind_cols(df2_full, dft)
+
+
+#Add T-test Star Results
+source("ttest_loop_matrices.R")
+df2_full <- left_join(df2_full, pvals_df_matches_party) %>% 
+  select(pm_var, party, everything())
+
+
+
+```
+
+
+```{r df2-match by party2}
+
+
 
 
 
 party_types <- c(
-  "DEM" = "Democrat",
+  "DEM" = "Democrat Applicant",
   "NEU" = "Neutral",
-  "REP" = "Republican"
+  "REP" = "Republican Applicant"
 )
 
 
 make_bar_app_match_party <- function(df_in){
   
-  g <- ggplot(df_in, aes(pm_var, proportion_callback, fill=pm_var)) +
+  g <- ggplot(df_in, aes(pm_var, proportion_callback, fill=party)) +
     geom_bar(stat = "identity") +
-    geom_errorbar(aes(ymin=lci, ymax=uci), width=0.4) + 
+    geom_errorbar(aes(ymin=li, ymax=ui), width=0.4) + 
     facet_grid(~party, labeller = as_labeller(party_types)) +
     
     #Add bbcstyle
@@ -259,16 +305,16 @@ make_bar_app_match_party <- function(df_in){
     
     scale_y_continuous(labels = scales::percent)  +
     
-    scale_fill_manual("", values=colors_parties2) +
+    scale_fill_manual("", values=colors_parties_bin) +
     
     #Xaxis Line
     geom_hline(yintercept = 0, size = 1, colour="#333333") +
     
     #Add axis titles
     theme(axis.title = element_text(size = 18)) +
-    xlab("Applicant Partisan Match") +
+    xlab("Applicant-Firm Partisan Match") +
     ylab("Percentage Callbacks") +
-    labs(title = "Callbacks by Partisan Match",
+    labs(title = "Callbacks by Applicant Party",
          caption = "") +
     theme(plot.title = element_text(hjust = 0.5)) +
     
@@ -293,14 +339,16 @@ make_bar_app_match_party <- function(df_in){
       
       #Axis Text
       axis.text.y = ggplot2::element_text(size=14, color="#222222"),
-      axis.text.x = ggplot2::element_text(size=12, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
     ) +
     
     #Remove Legend
-    theme(legend.position = "none")
-  #guides(shape = guide_legend(override.aes = list(fill = colors_parties2)))
+    theme(legend.position = "none") +
+    
+    #Add text, star labels    
+    geom_text(aes(label = star_range, y = ui), vjust = -0.25) 
   
-  finalise_plot(g, "", "output/plots/test_bar_partisan_match_X_party_new.png", footer=FALSE)
+  finalise_plot(g, "", "output/plots/bar_partisan_match_X_applicant_party.png", footer=FALSE)
   return(g)
   
 }
@@ -426,7 +474,7 @@ make_bar_app_match_only <- function(df_in){
       
       #Axis Text
       axis.text.y = ggplot2::element_text(size=14, color="#222222"),
-      axis.text.x = ggplot2::element_text(size=12, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
     ) +
     
     #Remove Legend

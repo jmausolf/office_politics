@@ -141,3 +141,69 @@ pvals_df_matches <- pval_df_pm %>%
 
 pvals_df_matches
 
+
+
+####################################################
+## Ttests Loop by App Party
+####################################################
+
+
+#Ttest Loop, Print Results
+parties <- c("DEM", "REP")
+output_ttest <- list()
+for(i in seq_along(parties)){
+  p = parties[i]
+  ttd <- dfec %>% select(callback_binary, party, pmXf) %>% filter(pmXf != 'neutral', party==p)
+  tt <- t.test(callback_binary~pmXf, data = ttd)
+  
+  print(p)
+  print(tt)
+}
+
+
+tWrap <- function(x) t.test(x$Var1, x$Var2)$p.value
+
+#Get Dem App Results
+df_ttests <- dfec %>% select(callback_binary, pmXf, party) %>% 
+  filter(pmXf != 'neutral', party == 'DEM') %>% 
+  mutate(pmXf = factor(pmXf, levels = c('mismatch', 'match')))
+L <- split(df_ttests$callback_binary, df_ttests$pmXf)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=2)
+pval_pm <- pvals_mat
+pval_df_pm_dem <- as.data.frame(pval_pm)
+colnames(pval_df_pm_dem) <- c('pval1', 'pval2')
+rownames(pval_df_pm_dem) <- c('mismatch', 'match')
+pval_df_pm_dem$pm_var = rownames(pval_df_pm_dem)
+pval_df_pm_dem$party = 'DEM'
+
+#Get Rep App Results
+df_ttests <- dfec %>% select(callback_binary, pmXf, party) %>% 
+  filter(pmXf != 'neutral', party == 'REP') %>% 
+  mutate(pmXf = factor(pmXf, levels = c('mismatch', 'match')))
+L <- split(df_ttests$callback_binary, df_ttests$pmXf)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=2)
+pval_pm <- pvals_mat
+pval_df_pm_rep <- as.data.frame(pval_pm)
+pval_df_pm_rep <- as.data.frame(pval_pm)
+colnames(pval_df_pm_rep) <- c('pval1', 'pval2')
+rownames(pval_df_pm_rep) <- c('mismatch', 'match')
+pval_df_pm_rep$pm_var = rownames(pval_df_pm_rep)
+pval_df_pm_rep$party = 'REP'
+
+#Join and Get Stars
+pval_df_pm_party <- bind_rows(pval_df_pm_dem, pval_df_pm_rep)
+pvals_df_matches_party <- pval_df_pm_party %>% 
+  mutate(stars1 = str_replace(stars.pval(pval1), '\\.', '+')) %>% 
+  mutate(stars2 = str_replace(stars.pval(pval2), '\\.', '+')) %>% 
+
+  mutate(stars1 = ifelse( stars1 == " ", "", stars1)) %>% 
+  mutate(stars2 = ifelse( stars2 == " ", "", stars2)) %>% 
+  
+  mutate(star_range = paste(stars1, stars2, sep = '')) %>%
+  mutate(pm_var = factor(pm_var, labels = c("MISMATCH", "MATCH"))) %>% 
+  select(pm_var, party, star_range, pval1, pval2) 
+
+pvals_df_matches_party
+
