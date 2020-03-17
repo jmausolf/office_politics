@@ -207,3 +207,96 @@ pvals_df_matches_party <- pval_df_pm_party %>%
 
 pvals_df_matches_party
 
+
+
+####################################################
+## Ttests Loop by App Party Only (Unmatched)
+####################################################
+
+
+#Ttest Loop, Print Results (by Party)
+parties <- c("DEM", "NEU", "REP")
+output_ttest <- list()
+for(i in seq_along(parties)){
+    p = parties[i]
+    id <- paste(p, pm, sep = '_')
+    ttd <- dfa %>% select(callback_binary, party) %>% filter(party != p)
+    tt <- t.test(callback_binary~party, data = ttd)
+    
+    print(tt)
+
+}
+
+#Ttest Prestige
+tt <- t.test(callback_binary~prestige_level, data = dfa)
+print(tt)
+
+
+#Ttest Loop, Print Results (by Party and Prestige)
+parties <- c("DEM", "NEU", "REP")
+prestige <- c("High", "Low")
+output_ttest <- list()
+for(i in seq_along(parties)){
+  for(j in seq_along(prestige)){
+    p = parties[i]
+    pr = prestige[j]
+    
+    #print(p, pr)
+    id <- paste(p, pr, sep = '_')
+    ttd <- dfa %>% select(callback_binary, party, prestige_level) %>% filter(party != p, prestige_level == pr)
+    tt <- t.test(callback_binary~party, data = ttd)
+    
+     print(pr)
+     print(tt)
+    
+  }
+}
+
+
+tWrap <- function(x) t.test(x$Var1, x$Var2)$p.value
+
+df_ttests <- dfa %>% select(callback_binary, party, prestige_level) %>% filter(prestige_level == "High")
+L <- split(df_ttests$callback_binary, df_ttests$party)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=3)
+pval_high <- pvals_mat
+pval_df_high <- as.data.frame(pval_high)
+colnames(pval_df_high) <- c('pval1', 'pval2', 'pval3')
+rownames(pval_df_high) <- c('DEM_High', 'NEU_High', 'REP_High')
+pval_df_high$party_prestige = rownames(pval_df_high)
+
+
+df_ttests <- dfa %>% select(callback_binary, party, prestige_level) %>% filter(prestige_level == "Low")
+L <- split(df_ttests$callback_binary, df_ttests$party)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=3)
+pval_low <- pvals_mat
+pval_df_low <- as.data.frame(pval_low)
+colnames(pval_df_low) <- c('pval1', 'pval2', 'pval3')
+rownames(pval_df_low) <- c('DEM_Low', 'NEU_Low', 'REP_Low')
+pval_df_low$party_prestige = rownames(pval_df_low)
+
+pval_ttests <- bind_rows(pval_df_high, pval_df_low)
+pval_ttests
+
+
+#library(gtools)
+pval_df_party_prestige <- pval_ttests %>% 
+  mutate(stars1 = stars.pval(pval1)) %>% 
+  mutate(stars2 = stars.pval(pval2)) %>% 
+  mutate(stars3 = stars.pval(pval3)) %>% 
+  
+  mutate(stars1 = ifelse( stars1 == " ", "", stars1)) %>% 
+  mutate(stars2 = ifelse( stars2 == " ", "", stars2)) %>% 
+  mutate(stars3 = ifelse( stars3 == " ", "", stars3)) %>% 
+  
+  mutate(star_range1 = paste(stars1, ' ^ ', stars2, sep = '')) %>%
+  mutate(star_range2 = paste(stars1, ' ^ ', stars3, sep = '')) %>%
+  mutate(star_range3 = paste(stars2, ' ^ ', stars3, sep = '')) %>% 
+
+  mutate(star_range = star_range2) %>% 
+  mutate(star_range = ifelse( star_range == ' ^ ', "", star_range)) %>% 
+  select(party_prestige, star_range, pval1, pval2, pval3) 
+
+pval_df_party_prestige
+
