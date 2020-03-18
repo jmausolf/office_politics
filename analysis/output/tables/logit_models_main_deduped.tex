@@ -1,0 +1,37 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Logit Models of the Likelihood that a Job Applicant Receives a Callback, Matched Applicants, Odds Ratios Displayed, Only Deduplicated Firms Included} 
+  \label{} 
+\scriptsize 
+\begin{tabular}{@{\extracolsep{0pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{4}{c}{Pr\{Applicant Receives Callback\}} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\\ 
+\hline \\[-1.8ex] 
+ \textit{Applicant Partisan Matching} \\Mismatched Partisan & 0.173^{***} & 0.175^{***} & 0.166^{***} & 0.166^{***} \\ 
+  Neutral Applicant & 0.525^{*} & 0.530^{*} & 0.513^{*} & 0.515^{*} \\ 
+(Ref: Matched Partisan) \\
+  \\ \textit{Firm Partisanship} \\Democratic Firm & 2.058^{**} & 2.057^{**} & 1.905^{*} & 2.323^{**} \\ 
+(Ref: Republican Firm) \\
+  \\ \textit{Applicant Prestige} \\ High Prestige & 1.483 & 1.494 & 1.428 & 1.496 \\ 
+(Ref: Lower Prestige) \\
+  \\ \textit{Job Type} \\ MS: Computer Scientist &  & 0.821 & 0.819 & 0.792 \\ 
+  MBA: Analyst or Manager &  & 0.831 & 0.883 & 0.820 \\ 
+(Ref: Ph.D. Data Scienctist-Quant) \\
+  \\ \textit{Region} \\ Midwest &  &  &  & 1.271 \\ 
+  South &  &  &  & 1.019 \\ 
+  West Coast &  &  &  & 0.528 \\ 
+(Ref: East Coast) \\
+  \\ \textit{Experiment Features} \\ Received Order: Second &  &  & 1.111 & 1.120 \\ 
+  Resume Version: B &  &  & 1.111 & 1.119 \\ 
+  Experiment Wave: Second Wave &  &  & 0.448^{+} & 0.460^{+} \\ 
+  Constant & 0.118^{***} & 0.128^{***} & 0.138^{***} & 0.131^{***} \\ 
+\hline \\[-1.8ex]
+ \textit{N} & \multicolumn{1}{c}{646} & \multicolumn{1}{c}{646} & \multicolumn{1}{c}{646} & \multicolumn{1}{c}{646} \\ 
+Log Likelihood & \multicolumn{1}{c}{-207.748} & \multicolumn{1}{c}{-207.478} & \multicolumn{1}{c}{-205.421} & \multicolumn{1}{c}{-203.165} \\ 
+AIC & \multicolumn{1}{c}{425.495} & \multicolumn{1}{c}{428.956} & \multicolumn{1}{c}{430.841} & \multicolumn{1}{c}{432.331} \\ 
+\hline \\[-1.8ex] 
+\multicolumn{5}{l}{\parbox[t]{0.9\textwidth}{{\textit{Notes:}} N = 646. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral). Only unique, deduplicated firms included. Although the original models include unique applicant pairs, because of errors in deduplicating list-ids, several firms received more than one pair of applications for different open positions to different firm contacts. These cases were removed from these models. }} \\
+\multicolumn{5}{l}{+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001} \\ 
+\end{tabular} 
+\end{table} 

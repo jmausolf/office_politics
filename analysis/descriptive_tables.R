@@ -19,7 +19,7 @@ options(qwraps2_markup = "latex")
 
 
 #Method for Total Applicants
-total_applicants <- 
+total_applicants <-
   list(
     "Total Job Applicants" =
       list("Applicants Sent" = ~ n_distinct(.data$index_wave),
@@ -48,6 +48,22 @@ sent_stats_pairs <-
       list("Received Applicant Pairs" = ~ n_perc(.data$pair_sent == "1"),
            "Failed Applicant Pairs" = ~ n_perc(.data$pair_sent == "0"))
   )
+
+
+#Method for Experiment
+total_experiment_stats <- 
+  list(
+    "Experiment Stats" =
+      list("Firm Contacts" = ~ n_distinct(.data$contact_email),
+           "Unique Firms" = ~ n_distinct(.data$company),
+           "First Wave" = ~ n_perc(.data$wave == "W1"),
+           "Second Wave" = ~ n_perc(.data$wave == "W2")
+           )
+  )
+
+#Experiment Stats
+# experiment_stats <- df %>% 
+#   summary_table(total_experiment_stats)
 
 
 
@@ -108,8 +124,8 @@ result_stats_apps <-
   list(
     "Application Results" =
       list("Received Callback" = ~ n_perc(.data$callback_binary),
-           "Recieved Other Reply" = ~ n_perc(.data$reply_only),
-           "Recieved Any Response" = ~ n_perc(.data$response_binary))
+           "Received Other Reply" = ~ n_perc(.data$reply_only),
+           "Received Any Response" = ~ n_perc(.data$response_binary))
   )
 
 
@@ -139,6 +155,9 @@ sent_stats <- df %>%
 applicant_stats <- sent_stats %>% 
   summary_table(total_applicant_stats)
 
+#Experiment Stats
+experiment_stats <- df %>%
+  summary_table(total_experiment_stats)
 
 #Applicants Stats
 ssa <- sent_stats %>% 
@@ -178,7 +197,7 @@ cb_stats <- df %>%
 
 #Combined Table for All Data
 #tab_all <- rbind(applicants, ssa, ssp, profiles, cb_stats) 
-tab_all <- rbind(applicant_stats, cb_stats, profiles, jobs)
+tab_all <- rbind(applicant_stats, cb_stats, profiles, jobs, experiment_stats)
 tab_all
 
 
@@ -203,7 +222,9 @@ sent_stats <- df %>%
 applicant_stats <- sent_stats %>% 
   summary_table(total_applicant_stats)
 
-
+#Experiment Stats
+experiment_stats <- df %>%
+  summary_table(total_experiment_stats)
 
 #Make Applicants Profiles
 df_stats <- dummy_cols(df, select_columns = c("profile", 
@@ -230,7 +251,7 @@ cb_stats <- df %>%
 
 #Combined Table for All Data
 #tab_all <- rbind(applicants, ssa, ssp, profiles, cb_stats) 
-tab_received <- rbind(applicant_stats, cb_stats, profiles, jobs)
+tab_received <- rbind(applicant_stats, cb_stats, profiles, jobs, experiment_stats)
 tab_received
 
 
@@ -261,6 +282,10 @@ sent_stats <- df %>%
 applicant_stats <- sent_stats %>% 
   summary_table(total_applicant_stats)
 
+#Experiment Stats
+experiment_stats <- df %>%
+  summary_table(total_experiment_stats)
+
 
 #Make Applicants Profiles
 df_stats <- dummy_cols(df, select_columns = c("profile", 
@@ -287,7 +312,7 @@ cb_stats <- df %>%
 
 #Combined Table for All Data
 #tab_all <- rbind(applicants, ssa, ssp, profiles, cb_stats) 
-tab_fec <- rbind(applicant_stats, cb_stats, profiles, jobs)
+tab_fec <- rbind(applicant_stats, cb_stats, profiles, jobs, experiment_stats)
 tab_fec
 
 
@@ -308,4 +333,4 @@ capture.output(print(final_table,
                      booktabs = TRUE,
                      rtitle = "Summary Statistics",
                      cnames = c("Sent Applicants", "Received Applicants", "FEC Matched Applicants")), 
-               file="output/tables/table_descriptive_stats_test.tex")
+               file="output/tables/table_descriptive_stats.tex")

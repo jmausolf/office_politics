@@ -15,6 +15,8 @@ source("analysis_source.R")
 
 library(car)
 library(forcats)
+
+
 ```
 
 
@@ -86,7 +88,7 @@ df <- dfec %>%
 ```
 
 
-```{r}
+```{r main_models}
 
 df <- dfec %>% 
   mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
@@ -97,8 +99,7 @@ df <- dfec %>%
   mutate(pair_order = factor(matched_pair)) %>% 
   mutate(resume_version = factor(version)) %>% 
   mutate(exp_wave = factor(wave)) 
-  #select(job_type)
-  #select(callback_binary, pmXf, prestige_level)
+
 
 df <- df %>% 
   mutate(job_type2 = fct_recode(job_type,
@@ -117,53 +118,7 @@ df <- df %>%
 table(df$job_type, df$job_type2)
 table(df$region)
 table(df$region, df$region2)
-# m1 <- glm(callback_binary ~
-#             relevel(pmXf, ref = "match"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m1)
 
-
-#alt model approach, appendix
-# m3 <- glm(callback_binary ~
-#             relevel(party_app, ref = "NEU")*
-#             relevel(party_firm, ref="DEM"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m3)
-# 
-# m3 <- glm(callback_binary ~
-#             relevel(pmXf, ref = "match") +
-#             relevel(party_firm, ref="DEM"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m3)
-# 
-# m3 <- glm(callback_binary ~
-#             relevel(pmXf, ref = "match") +
-#             relevel(party_firm, ref="REP"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m3)
-# vif(m3)
-
-
-# m2 <- glm(callback_binary ~
-#             relevel(pmXf, ref = "match") +
-#             relevel(party_firm, ref="REP"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m2)
-
-
-# m3 <- glm(callback_binary ~
-#             relevel(pmXf, ref = "match")*
-#             relevel(party_firm, ref="DEM") +
-#             relevel(prestige_level, ref="Low"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m3)
-
-# m3 <- glm(callback_binary ~
-#             relevel(pmXf, ref = "neutral") +
-#             relevel(party_firm, ref="DEM") +
-#             relevel(prestige_level, ref="Low"),
-#           data = df, family = binomial(link = "logit"))
-# summary(m3)
 
 m1 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
@@ -177,7 +132,7 @@ m2 <- glm(callback_binary ~
             relevel(pmXf, ref = "match") +
             relevel(party_firm, ref="REP") +
             relevel(prestige_level, ref="Low") +
-            job_type2,
+            relevel(job_type2, ref="ds_quant"),
           data = df, family = binomial(link = "logit"))
 summary(m2)
 
@@ -214,9 +169,296 @@ stargazer2(models,
            star.cutoffs = c(0.1, 0.05, 0.01, 0.001),
            star.char = c("+", "*", "**", "***"),
            notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
+
 ```
 
 
+```{r main_models rep}
+
+df <- dfec %>% 
+  mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(party_firm = factor(partyX)) %>% 
+  mutate(party_app = factor(party)) %>% 
+  mutate(prestige_level = factor(prestige_level)) %>% 
+  mutate(job_type = factor(job_type)) %>% 
+  mutate(pair_order = factor(matched_pair)) %>% 
+  mutate(resume_version = factor(version)) %>% 
+  mutate(exp_wave = factor(wave)) 
+
+
+df <- df %>% 
+  mutate(job_type2 = fct_recode(job_type,
+                               ds_quant = "data_science",
+                               ds_quant = "quant",
+                               ds_quant = "stats",
+                               mba = "mba",
+                               mba = "mba_analyst",
+                               mba = "mba_finance"
+                               )) %>% 
+  mutate(region2 = fct_recode(region,
+                               east = "northeast",
+                               east = "midatlantic"
+                               ))
+
+table(df$job_type, df$job_type2)
+table(df$region)
+table(df$region, df$region2)
+
+df <- df %>% filter(partyX == "REP")
+
+
+m1r <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m1r)
+
+
+m2r <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant"),
+          data = df, family = binomial(link = "logit"))
+summary(m2r)
+
+m3r <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m3r)
+
+
+m4r <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            relevel(region2, ref="east") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m4r)
+
+
+models <- list(m1r, m2r, m3r, m4r)
+
+stargazer2(models,
+           odd.ratio = T,
+           type = "text",
+           star.cutoffs = c(0.1, 0.05, 0.01, 0.001),
+           star.char = c("+", "*", "**", "***"),
+           notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
+
+```
+
+```{r main_models dep}
+
+df <- dfec %>% 
+  mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(party_firm = factor(partyX)) %>% 
+  mutate(party_app = factor(party)) %>% 
+  mutate(prestige_level = factor(prestige_level)) %>% 
+  mutate(job_type = factor(job_type)) %>% 
+  mutate(pair_order = factor(matched_pair)) %>% 
+  mutate(resume_version = factor(version)) %>% 
+  mutate(exp_wave = factor(wave)) 
+
+
+df <- df %>% 
+  mutate(job_type2 = fct_recode(job_type,
+                               ds_quant = "data_science",
+                               ds_quant = "quant",
+                               ds_quant = "stats",
+                               mba = "mba",
+                               mba = "mba_analyst",
+                               mba = "mba_finance"
+                               )) %>% 
+  mutate(region2 = fct_recode(region,
+                               east = "northeast",
+                               east = "midatlantic"
+                               ))
+
+table(df$job_type, df$job_type2)
+table(df$region)
+table(df$region, df$region2)
+
+df <- df %>% filter(party_firm == "DEM")
+table(df$party_firm)
+
+m1d <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m1d)
+
+
+m2d <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant"),
+          data = df, family = binomial(link = "logit"))
+summary(m2d)
+
+m3d <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m3d)
+
+
+m4d <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            #relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            relevel(region2, ref="east") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m4d)
+
+
+models <- list(m1d, m2d, m3d, m4d)
+
+stargazer2(models,
+           odd.ratio = T,
+           type = "text",
+           star.cutoffs = c(0.1, 0.05, 0.01, 0.001),
+           star.char = c("+", "*", "**", "***"),
+           notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
+
+```
+
+
+
+
+```{r main_models_deduped}
+
+d1 <- dfec %>% 
+  filter(pair_callback_bin >= 1) %>% 
+  mutate(rank = 1)
+
+d2 <- dfec %>% 
+  filter(pair_callback_bin < 1) %>% 
+  mutate(rank = 2) 
+
+dfec_new_ranked <- bind_rows(d1, d2) %>% 
+  select(company, rank) %>% 
+  distinct() %>% 
+  group_by(company) %>% 
+  filter(n()>1) %>% 
+  ungroup() %>% 
+  filter(rank == 1)
+
+dfec_new_ranked <- inner_join(dfec_new_ranked, dfec) %>% 
+  filter(pair_callback_bin < 1) %>% 
+  mutate(rank = 1)
+
+dfec_new <- anti_join(dfec, dfec_new_ranked) %>% 
+  distinct(company, .keep_all = TRUE) %>% 
+  select(pair_index)
+dfec_deduped <- inner_join(dfec, dfec_new) 
+
+
+
+df <- dfec_deduped %>% 
+  mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(party_firm = factor(partyX)) %>% 
+  mutate(party_app = factor(party)) %>% 
+  mutate(prestige_level = factor(prestige_level)) %>% 
+  mutate(job_type = factor(job_type)) %>% 
+  mutate(pair_order = factor(matched_pair)) %>% 
+  mutate(resume_version = factor(version)) %>% 
+  mutate(exp_wave = factor(wave)) 
+
+
+df <- df %>% 
+  mutate(job_type2 = fct_recode(job_type,
+                               ds_quant = "data_science",
+                               ds_quant = "quant",
+                               ds_quant = "stats",
+                               mba = "mba",
+                               mba = "mba_analyst",
+                               mba = "mba_finance"
+                               )) %>% 
+  mutate(region2 = fct_recode(region,
+                               east = "northeast",
+                               east = "midatlantic"
+                               ))
+
+table(df$job_type, df$job_type2)
+table(df$region)
+table(df$region, df$region2)
+
+
+
+m1_dd <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m1_dd)
+
+
+m2_dd <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant"),
+          data = df, family = binomial(link = "logit"))
+summary(m2_dd)
+
+m3_dd <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m3_dd)
+
+
+m4_dd <- glm(callback_binary ~
+            relevel(pmXf, ref = "match") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            relevel(region2, ref="east") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m4_dd)
+
+
+models <- list(m1_dd, m2_dd, m3_dd, m4_dd)
+
+stargazer2(models,
+           odd.ratio = T,
+           type = "text",
+           star.cutoffs = c(0.1, 0.05, 0.01, 0.001),
+           star.char = c("+", "*", "**", "***"),
+           notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
+
+```
 
 
 
