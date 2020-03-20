@@ -300,3 +300,54 @@ pval_df_party_prestige <- pval_ttests %>%
 
 pval_df_party_prestige
 
+
+####################################################
+## Ttests Loop by PartyXPrestige Matched
+####################################################
+
+tWrap <- function(x) t.test(x$Var1, x$Var2)$p.value
+
+df_ttests <- dfec %>% select(callback_binary, party, prestige_level) %>% filter(prestige_level == "High")
+L <- split(df_ttests$callback_binary, df_ttests$party)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=3)
+pval_high <- pvals_mat
+pval_df_high <- as.data.frame(pval_high)
+colnames(pval_df_high) <- c('pval1', 'pval2', 'pval3')
+rownames(pval_df_high) <- c('DEM_High', 'NEU_High', 'REP_High')
+pval_df_high$party_prestige = rownames(pval_df_high)
+
+
+df_ttests <- dfec %>% select(callback_binary, party, prestige_level) %>% filter(prestige_level == "Low")
+L <- split(df_ttests$callback_binary, df_ttests$party)
+pvals <- apply(expand.grid(L, L), 1, tWrap)
+pvals_mat <- matrix(pvals, ncol=3)
+pval_low <- pvals_mat
+pval_df_low <- as.data.frame(pval_low)
+colnames(pval_df_low) <- c('pval1', 'pval2', 'pval3')
+rownames(pval_df_low) <- c('DEM_Low', 'NEU_Low', 'REP_Low')
+pval_df_low$party_prestige = rownames(pval_df_low)
+
+pval_ttests <- bind_rows(pval_df_high, pval_df_low)
+pval_ttests
+
+
+#library(gtools)
+pval_df_party_prestige_dfec <- pval_ttests %>% 
+  mutate(stars1 = stars.pval(pval1)) %>% 
+  mutate(stars2 = stars.pval(pval2)) %>% 
+  mutate(stars3 = stars.pval(pval3)) %>% 
+  
+  mutate(stars1 = ifelse( stars1 == " ", "", stars1)) %>% 
+  mutate(stars2 = ifelse( stars2 == " ", "", stars2)) %>% 
+  mutate(stars3 = ifelse( stars3 == " ", "", stars3)) %>% 
+  
+  mutate(star_range1 = paste(stars1, ' ^ ', stars2, sep = '')) %>%
+  mutate(star_range2 = paste(stars1, ' ^ ', stars3, sep = '')) %>%
+  mutate(star_range3 = paste(stars2, ' ^ ', stars3, sep = '')) %>% 
+  
+  mutate(star_range = star_range2) %>% 
+  mutate(star_range = ifelse( star_range == ' ^ ', "", star_range)) %>% 
+  select(party_prestige, star_range, pval1, pval2, pval3) 
+
+pval_df_party_prestige_dfec

@@ -6,17 +6,19 @@
 # models <- list(m1r, m2r, m3r, m4r)
 # ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback at a Republican Firm, Matched Applicants, Odds Ratios Displayed"
 # dvar = "Pr\\{Applicant Receives Callback\\}"
+# mlabel = "tab:models_main_rep"
 # outfile = "output/tables/logit_models_main_republican_firms.tex"
 # note_content <- "N = 340. Republican firms only. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
 
 
 
 #Set Options
-models <- list(m1d, m2d, m3d, m4d)
-ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback at a Democratic Firm, Matched Applicants, Odds Ratios Displayed, Only Deduplicated Firms Included"
-dvar = "Pr\\{Applicant Receives Callback\\}"
-outfile = "output/tables/logit_models_main_democratic_firms.tex"
-note_content <- "N = 318. Democratic firms only. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
+# models <- list(m1d, m2d, m3d, m4d)
+# ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback at a Democratic Firm, Matched Applicants, Odds Ratios Displayed, Only Deduplicated Firms Included"
+# dvar = "Pr\\{Applicant Receives Callback\\}"
+# mlabel = "tab:models_main_dem"
+# outfile = "output/tables/logit_models_main_democratic_firms.tex"
+# note_content <- "N = 318. Democratic firms only. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
 
 
 
@@ -68,6 +70,7 @@ tables <- stargazer2(models,
                      style = "asr",
                      title = ttitle,
                      dep.var.labels   = dvar,
+                     label = mlabel,
                      covariate.labels = c("\\textit{Applicant Partisan Matching} \\\\Mismatched Partisan",
                                           "Neutral Applicant",
 

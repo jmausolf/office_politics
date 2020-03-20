@@ -496,3 +496,155 @@ make_bar_app_match_only(df3_full)
 
 ```
 
+
+
+```{r party_prestige df4}
+
+df4 <- dfec %>% 
+  #filter(pair_callback_bin != 2) %>% 
+  select(profile, callback_binary, prestige_level, party) %>% 
+  group_by(profile) %>% 
+  add_tally(callback_binary, name = "total_callbacks") %>% 
+  add_count(profile, name = "total_applications") %>% 
+  mutate(proportion_callback = total_callbacks / total_applications) %>% 
+  select(-callback_binary) %>% 
+  distinct()
+
+
+#Get Upper and Lower CI
+df4_err <- binconf(df4$total_callbacks, df4$total_applications, alpha=0.05, method=c("wilson"))
+df4_err <- as.data.frame(df4_err) %>% 
+  mutate(pe = PointEst, 
+         lci = Lower,
+         uci = Upper) %>% 
+  select(pe, lci, uci)
+
+
+
+
+#Add ttest upper, lower CI's
+parties <- c("DEM", "NEU", "REP")
+prestige <- c("High", "Low")
+output <- list()
+for(i in seq_along(parties)){
+  for(j in seq_along(prestige)){
+    p = parties[i]
+    pr = prestige[j]
+    id <- paste(p, pr, sep = '_')
+    ttd <- dfec %>% select(callback_binary, party, prestige_level) %>% filter(party == p, prestige_level == pr)
+    #ttd <- dfec %>% select(callback_binary, partyX, pmXf) %>% filter(pmXf == pm, partyX == p)
+    tt <- t.test(ttd$callback_binary)
+    li <- tt$conf.int[1]
+    ui <- tt$conf.int[2]
+
+    tt1 <- t.test(ttd$callback_binary, alternative = "greater")
+    li1 <- tt1$conf.int[1]
+    
+    tt2 <- t.test(ttd$callback_binary, alternative = "less")
+    ui2 <- tt2$conf.int[2]
+    mean <- tt$estimate[1]
+    
+    df_out <- data.frame(p, pr, mean, li, ui, li1, ui2)
+    output[[id]] <- df_out
+}
+}
+
+dft <- bind_rows(output) 
+df4_full <- bind_cols(df4, df4_err) %>% arrange(party, prestige_level)
+df4_full <- bind_cols(df4_full, dft) %>% 
+  mutate(party_prestige = str_c(party, prestige_level, sep = '_')) 
+
+
+
+#Add T-test Star Results
+source("ttest_loop_matrices.R")
+df4_full <- left_join(df4_full, pval_df_party_prestige_dfec) 
+
+
+colors_parties2b = c("#2129B0", "#2129B0", "#969696", "#969696", "#BF1200", "#BF1200")
+
+prestige_types <- c(
+  "High" = "High Prestige",
+  "Low" = "Low Prestige"
+)
+
+
+
+
+make_bar_app_prestige_party <- function(df_in){
+  
+  g <- ggplot(df_in, aes(profile, proportion_callback, fill=party_prestige)) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(ymin=li, ymax=ui), width=0.4) + 
+    facet_grid(~prestige_level, labeller = as_labeller(prestige_types),
+               drop = TRUE, scales = "free_x") +
+    
+    #Add bbcstyle
+    bbc_style() +
+    
+    scale_y_continuous(labels = scales::percent)  +
+    
+    scale_fill_manual("", values=colors_parties2) +
+    
+    #Xaxis Line
+    geom_hline(yintercept = 0, size = 1, colour="#333333") +
+    
+    #Add axis titles
+    theme(axis.title = element_text(size = 18)) +
+    xlab("Applicant Political Party") +
+    ylab("Percentage Callbacks") +
+    labs(title = "Callbacks by Applicant Profile",
+         caption = "") +
+    theme(plot.title = element_text(hjust = 0.5)) +
+    
+    
+    #Add x axis ticks
+    theme(
+      axis.ticks.x = element_line(colour = "#333333"), 
+      axis.ticks.length =  unit(0.26, "cm"),
+      axis.text = element_text(size=14, color="#222222")) +
+    
+    theme(
+      #Blank Background
+      panel.background = ggplot2::element_blank(),
+      
+      #Grid lines
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major.y = ggplot2::element_line(color="#cbcbcb"),
+      panel.grid.major.x = ggplot2::element_blank(),
+      
+      #Facet Wrap Background
+      strip.background = ggplot2::element_rect(fill="white"),
+      strip.text = ggplot2::element_text(size  = 18,  hjust = 0.5),
+      
+      #Axis Text
+      axis.text.y = ggplot2::element_text(size=14, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
+    ) +
+    
+    #Legend Text and Fill
+    scale_fill_manual(name="",
+                      breaks=c("DEM_High", "NEU_High", "REP_High"),
+                      labels=c("Democrat", "Neutral", "Republican"),
+                      values=colors_parties2b) +
+    
+    #Adjust Legend Position
+    theme(
+      legend.position = 'bottom',
+      legend.direction='horizontal',
+      legend.spacing.x = unit(3.5, 'mm'),
+      legend.text=element_text(size=16)
+    ) +
+
+    #Add text, star labels    
+    geom_text(aes(label = star_range, y = ui), vjust = -0.25) 
+
+  finalise_plot(g, "", "output/plots/matched_bar_parties_X_prestige.png", footer=FALSE)
+  return(g)
+  
+}
+
+make_bar_app_prestige_party(df4_full)
+
+
+```

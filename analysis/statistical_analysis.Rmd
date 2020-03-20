@@ -16,7 +16,8 @@ source("analysis_source.R")
 library(car)
 library(forcats)
 
-
+colors_parties2 = c("#2129B0", "#969696", "#BF1200")
+colors_parties1 = c("#2129B0", "#BF1200")
 ```
 
 
@@ -171,6 +172,18 @@ stargazer2(models,
            notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
 
 ```
+```{r}
+#Set Options
+models <- list(m1, m2, m3, m4)
+ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback, Matched Applicants, Odds Ratios Displayed"
+dvar = "Pr\\{Applicant Receives Callback\\}"
+mlabel = "tab:models_main"
+outfile = "output/tables/logit_models_main.tex"
+note_content <- "N = 658. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
+
+source("make_main_models_table.R")
+```
+
 
 
 ```{r main_models rep}
@@ -258,6 +271,19 @@ stargazer2(models,
            notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
 
 ```
+```{r}
+#Set Options
+models <- list(m1r, m2r, m3r, m4r)
+ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback at a Republican Firm, Matched Applicants, Odds Ratios Displayed"
+dvar = "Pr\\{Applicant Receives Callback\\}"
+mlabel = "tab:models_main_rep"
+outfile = "output/tables/logit_models_main_republican_firms.tex"
+note_content <- "N = 340. Republican firms only. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
+
+source("make_main_models_table_parties.R")
+```
+
+
 
 ```{r main_models dep}
 
@@ -344,7 +370,17 @@ stargazer2(models,
            notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
 
 ```
+```{r}
+#Set Options
+models <- list(m1d, m2d, m3d, m4d)
+ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback at a Democratic Firm, Matched Applicants, Odds Ratios Displayed, Only Deduplicated Firms Included"
+dvar = "Pr\\{Applicant Receives Callback\\}"
+mlabel = "tab:models_main_dem"
+outfile = "output/tables/logit_models_main_democratic_firms.tex"
+note_content <- "N = 318. Democratic firms only. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
 
+source("make_main_models_table_parties.R")
+```
 
 
 
@@ -459,6 +495,256 @@ stargazer2(models,
            notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
 
 ```
+```{r}
+#Set Options
+models <- list(m1_dd, m2_dd, m3_dd, m4_dd)
+ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback, Matched Applicants, Odds Ratios Displayed, Only Deduplicated Firms Included"
+dvar = "Pr\\{Applicant Receives Callback\\}"
+mlabel = "tab:models_main_deduped"
+outfile = "output/tables/logit_models_main_deduped.tex"
+note_content <- "N = 646. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral). Only unique, deduplicated firms included. Although the original models include unique applicant pairs, because of errors in deduplicating list-ids, several firms received more than one pair of applications for different open positions to different firm contacts. These cases were removed from these models."
+
+source("make_main_models_table.R")
+```
 
 
+
+```{r main_models neutral}
+
+df <- dfec %>% 
+  mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(party_firm = factor(partyX)) %>% 
+  mutate(party_app = factor(party)) %>% 
+  mutate(prestige_level = factor(prestige_level)) %>% 
+  mutate(job_type = factor(job_type)) %>% 
+  mutate(pair_order = factor(matched_pair)) %>% 
+  mutate(resume_version = factor(version)) %>% 
+  mutate(exp_wave = factor(wave)) 
+
+
+df <- df %>% 
+  mutate(job_type2 = fct_recode(job_type,
+                               ds_quant = "data_science",
+                               ds_quant = "quant",
+                               ds_quant = "stats",
+                               mba = "mba",
+                               mba = "mba_analyst",
+                               mba = "mba_finance"
+                               )) %>% 
+  mutate(region2 = fct_recode(region,
+                               east = "northeast",
+                               east = "midatlantic"
+                               ))
+
+table(df$job_type, df$job_type2)
+table(df$region)
+table(df$region, df$region2)
+
+
+m1n <- glm(callback_binary ~
+            relevel(pmXf, ref = "neutral") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low"),
+          data = df, family = binomial(link = "logit"))
+summary(m1n)
+
+
+m2n <- glm(callback_binary ~
+            relevel(pmXf, ref = "neutral") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant"),
+          data = df, family = binomial(link = "logit"))
+summary(m2n)
+
+m3n <- glm(callback_binary ~
+            relevel(pmXf, ref = "neutral") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m3n)
+
+
+m4n <- glm(callback_binary ~
+            relevel(pmXf, ref = "neutral") +
+            relevel(party_firm, ref="REP") +
+            relevel(prestige_level, ref="Low") +
+            relevel(job_type2, ref="ds_quant") +
+            relevel(region2, ref="east") +
+            pair_order +
+            resume_version +
+            exp_wave,
+          data = df, family = binomial(link = "logit"))
+summary(m4n)
+
+
+models <- list(m1n, m2n, m3n, m4n)
+
+stargazer2(models,
+           odd.ratio = T,
+           type = "text",
+           star.cutoffs = c(0.1, 0.05, 0.01, 0.001),
+           star.char = c("+", "*", "**", "***"),
+           notes = c("+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001"))
+
+```
+```{r}
+
+#Set Options
+models <- list(m1n, m2n, m3n, m4n)
+ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback, Matched Applicants, Odds Ratios Displayed"
+dvar = "Pr\\{Applicant Receives Callback\\}"
+mlabel = "tab:models_neutral"
+outfile = "output/tables/logit_models_main_neutral.tex"
+note_content <- "N = 658. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
+
+source("make_main_models_neutral_table.R")
+```
+
+
+
+
+```{r graph1}
+
+library(ggiraph)
+library(ggiraphExtra)
+
+df <- dfec %>% 
+  mutate(pmXf = factor(pmXf, ordered=FALSE)) %>% 
+  mutate(party_firm = factor(partyX)) %>% 
+  mutate(party_app = factor(party)) %>% 
+  mutate(prestige_level = factor(prestige_level)) %>% 
+  mutate(job_type = factor(job_type)) %>% 
+  mutate(pair_order = factor(matched_pair)) %>% 
+  mutate(resume_version = factor(version)) %>% 
+  mutate(exp_wave = factor(wave)) 
+
+
+df <- df %>% 
+  mutate(job_type2 = fct_recode(job_type,
+                               ds_quant = "data_science",
+                               ds_quant = "quant",
+                               ds_quant = "stats",
+                               mba = "mba",
+                               mba = "mba_analyst",
+                               mba = "mba_finance"
+                               )) %>% 
+  mutate(region2 = fct_recode(region,
+                               east = "northeast",
+                               east = "midatlantic"
+                               ))
+
+table(df$job_type, df$job_type2)
+table(df$region)
+table(df$region, df$region2)
+
+
+```
+
+
+
+
+
+```{r graphs3}
+m1g <- glm(callback_binary ~
+            #prestige_level +
+            party_firm +
+            pmXf,
+          data = df, family = binomial(link = "logit"))
+summary(m1g)
+
+ggPredict(m1g,se=TRUE,digits=3)
+```
+
+```{r graphs4}
+m1g <- glm(callback_binary ~
+            #prestige_level +
+            pmXf +
+            party_firm, 
+
+          data = df, family = binomial(link = "logit"))
+summary(m1g)
+
+g <- ggPredict(m1g,se=TRUE,digits=3, jitter=TRUE)
+
+g <- g +
+    #Add bbcstyle
+    bbc_style() +
+    scale_color_manual("", values=colors_parties2) +
+    scale_fill_manual("", values=colors_parties2)
+
+g
+```
+
+
+```{r graphs5}
+m1g <- glm(callback_binary ~
+            #prestige_level +
+            pmXf +
+            party, 
+
+          data = df, family = binomial(link = "logit"))
+summary(m1g)
+
+g <- ggPredict(m1g,se=TRUE,digits=3, jitter=TRUE)
+
+g <- g +
+    #Add bbcstyle
+    bbc_style() 
+
+g
+```
+
+
+```{r graphs6}
+colors_parties1 = c("#2129B0", "#BF1200")
+
+
+
+m1g <- glm(callback_binary ~
+            party_app*party_firm,
+          data = df, family = binomial(link = "logit"))
+summary(m1g)
+
+g <-  ggPredict(m1g,se=TRUE,digits=3, point=FALSE, jitter=FALSE)
+
+g <- g +
+    #Add bbcstyle
+    bbc_style() +
+    scale_color_manual("", values=colors_parties1) +
+    scale_fill_manual("", values=colors_parties1) +
+    scale_y_continuous(labels = scales::percent)  
+    #scale_x_discrete(trans = "reverse")
+
+g
+```
+
+
+
+```{r graphs7}
+m1g <- glm(callback_binary ~
+            #prestige_level +
+            party_firm*party_app,
+          data = df, family = binomial(link = "logit"))
+summary(m1g)
+
+colors_parties2 = c("#2129B0", "#969696", "#BF1200")
+g <-  ggPredict(m1g,se=TRUE,digits=3, point=FALSE, jitter=FALSE)
+
+g <- g +
+    #Add bbcstyle
+    bbc_style() +
+  
+    scale_y_continuous(labels = scales::percent)  +
+    
+    scale_color_manual("", values=colors_parties2) +
+    scale_fill_manual("", values=colors_parties2)
+
+
+g
+```
 

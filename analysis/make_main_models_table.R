@@ -6,6 +6,7 @@
 # models <- list(m1, m2, m3, m4)
 # ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback, Matched Applicants, Odds Ratios Displayed"
 # dvar = "Pr\\{Applicant Receives Callback\\}"
+# mlabel = "tab:models_main"
 # outfile = "output/tables/logit_models_main.tex"
 # note_content <- "N = 658. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral)."
 
@@ -15,6 +16,7 @@
 # models <- list(m1_dd, m2_dd, m3_dd, m4_dd)
 # ttitle = "Logit Models of the Likelihood that a Job Applicant Receives a Callback, Matched Applicants, Odds Ratios Displayed, Only Deduplicated Firms Included"
 # dvar = "Pr\\{Applicant Receives Callback\\}"
+# mlabel = "tab:models_main_deduped"
 # outfile = "output/tables/logit_models_main_deduped.tex"
 # note_content <- "N = 646. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral). Only unique, deduplicated firms included. Although the original models include unique applicant pairs, because of errors in deduplicating list-ids, several firms received more than one pair of applications for different open positions to different firm contacts. These cases were removed from these models."
 
@@ -68,6 +70,7 @@ tables <- stargazer2(models,
                      style = "asr",
                      title = ttitle,
                      dep.var.labels   = dvar,
+                     label = mlabel,
                      covariate.labels = c("\\textit{Applicant Partisan Matching} \\\\Mismatched Partisan",
                                           "Neutral Applicant",
                                           
