@@ -1,0 +1,459 @@
+---
+title: "analysis without matching"
+author: "Joshua G. Mausolf"
+date: "3/17/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = FALSE, message=FALSE, warning=FALSE)
+```
+
+
+```{r load lib and data}
+######################################
+## Load Libraries & Data
+######################################
+
+
+library(Rmisc)
+library(Hmisc)
+library(tidyverse)
+library(bbplot)
+library(scales)
+library(RColorBrewer)
+library(ggthemes)
+library(gtools)
+
+
+colors_neutral = rev(brewer.pal(n = 8, name = "Purples")[5:8])
+colors_dem = rev(brewer.pal(n = 8, name = "Blues")[5:8])
+colors_rep = c("#700009", "#99000D", "#D80012", "#EF3B2C")
+
+colors_grey = rev(brewer.pal(n = 8, name = "Greys")[5:8])
+show_col(colors_grey)
+
+colors_parties6= c("#2129B0", "#969696", "#BF1200", "#BF1200", "#969696", "#2129B0")
+colors_parties2 = c("#2129B0", "#969696", "#BF1200")
+colors_parties2b = c("#2129B0", "#969696", "#BF1200", "#2129B0", "#969696", "#BF1200")
+colors_parties1 = c(colors_dem[1], colors_neutral[1], colors_rep[1])
+colors_parties0 = c("#2129B0", "#3A084A", "#BF1200")
+colors_parties_bin = c("#2129B0", "#BF1200")
+show_col(colors_parties0)
+
+#Display a Pallete
+show_col(colors_dem)
+
+#Overwrite bbplot finalise_plot() function
+source("bb_finalise_plot_academic.R")
+
+
+######################################
+## Load Data
+######################################
+
+source("analysis_source.R")
+
+
+```
+
+
+
+```{r df1 parties}
+df1 <- dfa %>% 
+  select(callback_binary, party) %>% 
+  group_by(party) %>% 
+  add_tally(callback_binary, name = "total_callbacks") %>% 
+  add_count(party, name = "total_applications") %>% 
+  mutate(proportion_callback = total_callbacks / total_applications) %>% 
+  select(-callback_binary) %>% 
+  distinct()
+
+
+df1
+
+#Get Upper and Lower CI
+df1_err <- binconf(df1$total_callbacks, df1$total_applications, alpha=0.05, method=c("asymptotic"))
+df1_err <- as.data.frame(df1_err) %>% 
+  mutate(pe = PointEst, 
+         lci = Lower,
+         uci = Upper) %>% 
+  select(pe, lci, uci)
+
+
+
+#Add ttest upper, lower CI's
+#party_matches <- c("mismatch", "neutral", "match")
+parties <- c("DEM", "NEU", "REP")
+output <- list()
+for(i in seq_along(parties)){
+    p = parties[i]
+    id <- paste(p, sep = '_')
+    ttd <- dfa %>% select(callback_binary, party) %>% filter(party == p)
+    tt <- t.test(ttd$callback_binary)
+    print(p)
+    print(tt)
+    li <- tt$conf.int[1]
+    ui <- tt$conf.int[2]
+
+    tt1 <- t.test(ttd$callback_binary, alternative = "greater")
+    li1 <- tt1$conf.int[1]
+    
+    tt2 <- t.test(ttd$callback_binary, alternative = "less")
+    ui2 <- tt2$conf.int[2]
+    mean <- tt$estimate[1]
+    
+    df_out <- data.frame(p, mean, li, ui, li1, ui2)
+    output[[id]] <- df_out
+}
+
+dft <- bind_rows(output) 
+df1_full <- bind_cols(df1, df1_err) %>% arrange(party)
+df1_full <- bind_cols(df1_full, dft)
+
+
+#Add T-test Star Results
+#no sig diff, not needed
+
+make_bar_app_match_only <- function(df_in){
+  
+  g <- ggplot(df_in, aes(party, proportion_callback, fill=party)) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(ymin=li, ymax=ui), width=0.4) + 
+
+    
+    #Add bbcstyle
+    bbc_style() +
+    
+    scale_y_continuous(labels = scales::percent)  +
+    
+    scale_fill_manual("", values=colors_parties2) +
+    
+    #Xaxis Line
+    geom_hline(yintercept = 0, size = 1, colour="#333333") +
+    
+    #Add axis titles
+    theme(axis.title = element_text(size = 18)) +
+    xlab("Applicant Party") +
+    ylab("Percentage Callbacks") +
+    labs(title = "Callbacks by Applicant Party",
+         caption = "") +
+    theme(plot.title = element_text(hjust = 0.5)) +
+    
+    
+    #Add x axis ticks
+    theme(
+      axis.ticks.x = element_line(colour = "#333333"), 
+      axis.ticks.length =  unit(0.26, "cm")) +
+      
+    
+    theme(
+      #Blank Background
+      panel.background = ggplot2::element_blank(),
+      
+      #Grid lines
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major.y = ggplot2::element_line(color="#cbcbcb"),
+      panel.grid.major.x = ggplot2::element_blank(),
+      
+      #Facet Wrap Background
+      strip.background = ggplot2::element_rect(fill="white"),
+      strip.text = ggplot2::element_text(size  = 18,  hjust = 0.5),
+      
+      #Axis Text
+      axis.text.y = ggplot2::element_text(size=14, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
+    ) +
+    
+    #Remove Legend
+    theme(legend.position = "none") 
+    
+    #Add text, star labels    
+    #geom_text(aes(label = star_range, y = ui), vjust = -0.25) 
+  
+  finalise_plot(g, "", "output/plots/unmatched_bar_party.png", footer=FALSE)
+  return(g)
+  
+}
+
+make_bar_app_match_only(df1_full)
+
+```
+
+
+```{r df2 prestige}
+df2 <- dfa %>% 
+  select(callback_binary, prestige_level) %>% 
+  group_by(prestige_level) %>% 
+  add_tally(callback_binary, name = "total_callbacks") %>% 
+  add_count(prestige_level, name = "total_applications") %>% 
+  mutate(proportion_callback = total_callbacks / total_applications) %>% 
+  select(-callback_binary) %>% 
+  distinct()
+
+
+df2
+
+#Get Upper and Lower CI
+df2_err <- binconf(df2$total_callbacks, df2$total_applications, alpha=0.05, method=c("asymptotic"))
+df2_err <- as.data.frame(df2_err) %>% 
+  mutate(pe = PointEst, 
+         lci = Lower,
+         uci = Upper) %>% 
+  select(pe, lci, uci)
+
+
+ttd <- dfa %>% select(callback_binary, party) %>% filter(party == p)
+
+#Add ttest upper, lower CI's
+prestige_levels <- c("High", "Low")
+output <- list()
+for(i in seq_along(prestige_levels)){
+    p = prestige_levels[i]
+    id <- paste(p, sep = '_')
+    ttd <- dfa %>% select(callback_binary, prestige_level) %>% filter(prestige_level == p)
+    tt <- t.test(ttd$callback_binary)
+    print(p)
+    print(tt)
+    li <- tt$conf.int[1]
+    ui <- tt$conf.int[2]
+
+    tt1 <- t.test(ttd$callback_binary, alternative = "greater")
+    li1 <- tt1$conf.int[1]
+    
+    tt2 <- t.test(ttd$callback_binary, alternative = "less")
+    ui2 <- tt2$conf.int[2]
+    mean <- tt$estimate[1]
+    
+    df_out <- data.frame(p, mean, li, ui, li1, ui2)
+    output[[id]] <- df_out
+}
+
+dft <- bind_rows(output) 
+df2_full <- bind_cols(df2, df2_err) %>% arrange(prestige_level)
+df2_full <- bind_cols(df2_full, dft)
+
+
+#Add T-test Star Results
+#no sig diff, not needed
+
+make_bar_app_match_only <- function(df_in){
+  
+  g <- ggplot(df_in, aes(prestige_level, proportion_callback, fill=prestige_level)) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(ymin=li, ymax=ui), width=0.4) + 
+
+    
+    #Add bbcstyle
+    bbc_style() +
+    
+    scale_y_continuous(labels = scales::percent)  +
+    
+    scale_fill_manual("", values=colors_grey) +
+    
+    #Xaxis Line
+    geom_hline(yintercept = 0, size = 1, colour="#333333") +
+    
+    #Add axis titles
+    theme(axis.title = element_text(size = 18)) +
+    xlab("Applicant Prestige") +
+    ylab("Percentage Callbacks") +
+    labs(title = "Callbacks by Applicant Prestige",
+         caption = "") +
+    theme(plot.title = element_text(hjust = 0.5)) +
+    
+    
+    #Add x axis ticks
+    theme(
+      axis.ticks.x = element_line(colour = "#333333"), 
+      axis.ticks.length =  unit(0.26, "cm")) +
+      
+    
+    theme(
+      #Blank Background
+      panel.background = ggplot2::element_blank(),
+      
+      #Grid lines
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major.y = ggplot2::element_line(color="#cbcbcb"),
+      panel.grid.major.x = ggplot2::element_blank(),
+      
+      #Facet Wrap Background
+      strip.background = ggplot2::element_rect(fill="white"),
+      strip.text = ggplot2::element_text(size  = 18,  hjust = 0.5),
+      
+      #Axis Text
+      axis.text.y = ggplot2::element_text(size=14, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
+    ) +
+    
+    #Remove Legend
+    theme(legend.position = "none") 
+    
+    #Add text, star labels    
+    #geom_text(aes(label = star_range, y = ui), vjust = -0.25) 
+  
+  finalise_plot(g, "", "output/plots/unmatched_bar_prestige.png", footer=FALSE)
+  return(g)
+  
+}
+
+make_bar_app_match_only(df2_full)
+
+```
+
+
+
+```{r party_prestige df3}
+
+df3 <- dfa %>% 
+  #filter(pair_callback_bin != 2) %>% 
+  select(profile, callback_binary, prestige_level, party) %>% 
+  group_by(profile) %>% 
+  add_tally(callback_binary, name = "total_callbacks") %>% 
+  add_count(profile, name = "total_applications") %>% 
+  mutate(proportion_callback = total_callbacks / total_applications) %>% 
+  select(-callback_binary) %>% 
+  distinct()
+
+
+#Get Upper and Lower CI
+df3_err <- binconf(df3$total_callbacks, df3$total_applications, alpha=0.05, method=c("wilson"))
+df3_err <- as.data.frame(df3_err) %>% 
+  mutate(pe = PointEst, 
+         lci = Lower,
+         uci = Upper) %>% 
+  select(pe, lci, uci)
+
+
+
+
+#Add ttest upper, lower CI's
+parties <- c("DEM", "NEU", "REP")
+prestige <- c("High", "Low")
+output <- list()
+for(i in seq_along(parties)){
+  for(j in seq_along(prestige)){
+    p = parties[i]
+    pr = prestige[j]
+    id <- paste(p, pr, sep = '_')
+    ttd <- dfa %>% select(callback_binary, party, prestige_level) %>% filter(party == p, prestige_level == pr)
+    #ttd <- dfec %>% select(callback_binary, partyX, pmXf) %>% filter(pmXf == pm, partyX == p)
+    tt <- t.test(ttd$callback_binary)
+    li <- tt$conf.int[1]
+    ui <- tt$conf.int[2]
+
+    tt1 <- t.test(ttd$callback_binary, alternative = "greater")
+    li1 <- tt1$conf.int[1]
+    
+    tt2 <- t.test(ttd$callback_binary, alternative = "less")
+    ui2 <- tt2$conf.int[2]
+    mean <- tt$estimate[1]
+    
+    df_out <- data.frame(p, pr, mean, li, ui, li1, ui2)
+    output[[id]] <- df_out
+}
+}
+
+dft <- bind_rows(output) 
+df3_full <- bind_cols(df3, df3_err) %>% arrange(party, prestige_level)
+df3_full <- bind_cols(df3_full, dft) %>% 
+  mutate(party_prestige = str_c(party, prestige_level, sep = '_')) 
+
+
+
+#Add T-test Star Results
+source("ttest_loop_matrices.R")
+df3_full <- left_join(df3_full, pval_df_party_prestige) 
+
+
+colors_parties2b = c("#2129B0", "#2129B0", "#969696", "#969696", "#BF1200", "#BF1200")
+
+prestige_types <- c(
+  "High" = "High Prestige",
+  "Low" = "Low Prestige"
+)
+
+
+
+
+make_bar_app_prestige_party <- function(df_in){
+  
+  g <- ggplot(df_in, aes(profile, proportion_callback, fill=party_prestige)) +
+    geom_bar(stat = "identity") +
+    geom_errorbar(aes(ymin=li, ymax=ui), width=0.4) + 
+    facet_grid(~prestige_level, labeller = as_labeller(prestige_types),
+               drop = TRUE, scales = "free_x") +
+    
+    #Add bbcstyle
+    bbc_style() +
+    
+    scale_y_continuous(labels = scales::percent)  +
+    
+    scale_fill_manual("", values=colors_parties2) +
+    
+    #Xaxis Line
+    geom_hline(yintercept = 0, size = 1, colour="#333333") +
+    
+    #Add axis titles
+    theme(axis.title = element_text(size = 18)) +
+    xlab("Applicant Political Party") +
+    ylab("Percentage Callbacks") +
+    labs(title = "Callbacks by Applicant Profile",
+         caption = "") +
+    theme(plot.title = element_text(hjust = 0.5)) +
+    
+    
+    #Add x axis ticks
+    theme(
+      axis.ticks.x = element_line(colour = "#333333"), 
+      axis.ticks.length =  unit(0.26, "cm"),
+      axis.text = element_text(size=14, color="#222222")) +
+    
+    theme(
+      #Blank Background
+      panel.background = ggplot2::element_blank(),
+      
+      #Grid lines
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major.y = ggplot2::element_line(color="#cbcbcb"),
+      panel.grid.major.x = ggplot2::element_blank(),
+      
+      #Facet Wrap Background
+      strip.background = ggplot2::element_rect(fill="white"),
+      strip.text = ggplot2::element_text(size  = 18,  hjust = 0.5),
+      
+      #Axis Text
+      axis.text.y = ggplot2::element_text(size=14, color="#222222"),
+      axis.text.x = ggplot2::element_text(size=12, color="#222222")
+    ) +
+    
+    #Legend Text and Fill
+    scale_fill_manual(name="",
+                      breaks=c("DEM_High", "NEU_High", "REP_High"),
+                      labels=c("Democrat", "Neutral", "Republican"),
+                      values=colors_parties2b) +
+    
+    #Adjust Legend Position
+    theme(
+      legend.position = 'bottom',
+      legend.direction='horizontal',
+      legend.spacing.x = unit(3.5, 'mm'),
+      legend.text=element_text(size=16)
+    ) +
+
+    #Add text, star labels    
+    geom_text(aes(label = star_range, y = ui), vjust = -0.25) 
+
+  finalise_plot(g, "", "output/plots/unmatched_bar_parties_X_prestige.png", footer=FALSE)
+  return(g)
+  
+}
+
+make_bar_app_prestige_party(df3_full)
+
+
+```
+
+
+

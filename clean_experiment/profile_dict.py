@@ -56,8 +56,6 @@ for k, v in profiles_dict.items():
 print('[*] loading the following profile email addresses...')
 print(profile_emails)
 
-mbox_email('P05RH_W1B')
-
 #tests = ["jgm346@gmail.com", 'grahamsrandersen@gmail.com', 'matthewzchartman@gmail.com', 'jmausolf@uchicago.edu']
 #tr = [profile_sender(t, profile_emails) for t in tests]
 #print(tr)

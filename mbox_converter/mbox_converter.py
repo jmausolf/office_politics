@@ -229,6 +229,26 @@ def csv_from_mboxes(filename='mbox.csv'):
 			mbox_extractor(m, writer)
 
 
+def get_domain(email, simple=True):
+
+	domain_base = email.split('@')[1]
+	dot_count = domain_base.count('.')
+	max_split = dot_count - 1
+
+	if simple is True:
+		if dot_count > 1:
+			domain = domain_base.split('.', max_split)[-1]
+			return domain
+		else:
+			return domain_base
+	else:
+		return domain_base
+
+
+def get_user(email):
+	user = email.split('@')[0]
+	return user
+	
 
 #######################################
 ## MBOX CLEANING
@@ -370,10 +390,19 @@ def modify_main_mbox_csv(filename='mbox.csv'):
 
 
 	#Parse Sent from Labels
-	df['sent'] = False
-	sent_crit = (df['labels'].str.contains(r'[sS]ent'))
-	df.loc[sent_crit, 'sent'] = True
+	#df['sent'] = False
+	#sent_crit = (df['labels'].str.contains(r'[sS]ent'))
+	#df.loc[sent_crit, 'sent'] = True
 
+	#Determine if Profile Sent Email
+	df['sent'] = df['from_email'].apply(profile_sender, profiles_list=profile_emails)
+
+	#Remove Sent Emails
+	df = df.loc[df['sent'] != True]
+	df = df.loc[df['outcome'] != 'Sent']
+
+	#Create an Mbox Email for Matching with Protocol
+	df['mbox_email'] = df['mbox'].apply(ret_mbox_email)
 
 	#TODO
 	#Make method of callback cols
@@ -381,6 +410,17 @@ def modify_main_mbox_csv(filename='mbox.csv'):
 
 	#TODO
 	#filter bounces with different protocols from types
+
+	# Clean From Email Col
+	df['from_email_clean'] = df['from_email'].str.extract(r'([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)')
+	df['from_email_clean'] = df['from_email_clean'].str.lower()
+
+	# Add Domain Columns and From Email User
+	df['from_domain'] = df['from_email_clean'].apply(get_domain)
+	df['from_full_domain'] = df['from_email_clean'].apply(get_domain, simple=False)
+	df['from_user'] = df['from_email_clean'].apply(get_user)
+
+	#TODO add email user, e.g. something@domain
 
 
 	print(df)

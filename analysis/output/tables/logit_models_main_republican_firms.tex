@@ -1,0 +1,36 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Logit Models of the Likelihood that a Job Applicant Receives a Callback at a Republican Firm, Matched Applicants, Odds Ratios Displayed} 
+  \label{tab:models_main_rep} 
+\scriptsize 
+\begin{tabular}{@{\extracolsep{0pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{4}{c}{Pr\{Applicant Receives Callback\}} \\ 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\\ 
+\hline \\[-1.8ex] 
+ \textit{Applicant Partisan Matching} \\Mismatched Partisan & 0.091^{*} & 0.107^{*} & 0.094^{*} & 0.093^{*} \\ 
+  Neutral Applicant & 0.431^{*} & 0.454^{+} & 0.424^{*} & 0.420^{*} \\ 
+(Ref: Matched Partisan) \\
+  \\ \textit{Applicant Prestige} \\ High Prestige & 0.970 & 1.050 & 0.925 & 1.017 \\ 
+(Ref: Republican Firm) \\
+  \\ \textit{Job Type} \\ MS: Computer Scientist &  & 0.805 & 0.817 & 0.785 \\ 
+(Ref: Lower Prestige) \\
+  MBA: Analyst or Manager &  & 0.173^{*} & 0.210^{*} & 0.209^{*} \\ 
+  \\ \textit{Region} \\ Midwest &  &  &  & 1.557 \\ 
+(Ref: Ph.D. Data Scienctist-Quant) \\
+  South &  &  &  & 0.790 \\ 
+  West Coast &  &  &  & 0.312 \\ 
+  \\ \textit{Experiment Features} \\ Received Order: Second &  &  & 1.499 & 1.611 \\ 
+(Ref: East Coast) \\
+  Resume Version: B &  &  & 1.401 & 1.366 \\ 
+  Experiment Wave: Second Wave &  &  & 0.376 & 0.381 \\ 
+  Constant & 0.180^{***} & 0.229^{**} & 0.200^{**} & 0.183^{**} \\ 
+\hline \\[-1.8ex]
+ \textit{N} & \multicolumn{1}{c}{340} & \multicolumn{1}{c}{340} & \multicolumn{1}{c}{340} & \multicolumn{1}{c}{340} \\ 
+Log Likelihood & \multicolumn{1}{c}{-93.653} & \multicolumn{1}{c}{-89.604} & \multicolumn{1}{c}{-87.286} & \multicolumn{1}{c}{-85.363} \\ 
+AIC & \multicolumn{1}{c}{195.305} & \multicolumn{1}{c}{191.208} & \multicolumn{1}{c}{192.572} & \multicolumn{1}{c}{194.727} \\ 
+\hline \\[-1.8ex] 
+\multicolumn{5}{l}{\parbox[t]{0.9\textwidth}{{\textit{Notes:}} N = 340. Republican firms only. Matched applicants are those applicants who applied to a firm where the partisanship of the firm could be determined, resulting in three match conditions (mismatch, neutral, and match) based on the partisanship of the firm (Democratic or Republican) and the partisanship of the test applicant (Democratic or Republican) and control applicant (Neutral). }} \\
+\multicolumn{5}{l}{+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001} \\ 
+\end{tabular} 
+\end{table} 
